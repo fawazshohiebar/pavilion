@@ -1,0 +1,91 @@
+<section id="about" class="py-20 bg-white relative overflow-hidden">
+    <!-- Decorative Elements -->
+    <div class="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-[#827654] opacity-5"></div>
+    <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-[#827654] opacity-5"></div>
+    
+    <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <!-- Image Section -->
+            <div class="w-full lg:w-1/2" 
+                x-data="{}" 
+                x-intersect="$el.classList.add('animate-fade-slide-right')">
+                <div class="relative">
+                    <img 
+                        src="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/shutterstock_1111453718-scaled.jpg" 
+                        alt="Falconry at Al Ain Exhibition" 
+                        class="w-full h-auto rounded-lg shadow-xl"
+                    />
+                    <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-[#827654] rounded-lg flex items-center justify-center text-white">
+                        <div class="text-center">
+                            <span class="block text-2xl font-bold">1st</span>
+                            <span class="text-xs uppercase">Edition</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Content Section -->
+            <div class="w-full lg:w-1/2" 
+                x-data="{}" 
+                x-intersect="$el.classList.add('animate-fade-slide-left')">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-1 bg-[#827654]"></div>
+                    <span class="ml-4 text-[#827654] font-medium uppercase tracking-wider">About the Exhibition</span>
+                </div>
+                
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">A Celebration of Hunting & Equestrian Heritage</h2>
+                
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    Celebrating the rich legacy of hunting and equestrianism, and highlighting Al Ain as a distinguished destination 
+                    for hunting and outdoor sports, while seeking to reach new markets with purchasing power to expand the exhibition's brand.
+                </p>
+                
+                <p class="text-gray-700 mb-8 leading-relaxed">
+                    The first edition of the Al Ain International Hunting & Equestrian Exhibition 2025 will be launched from November 26 to 30, 2025, 
+                    at ADNEC Al Ain Centre.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#register" class="px-6 py-3 bg-[#827654] text-white font-medium rounded-md shadow transition-all duration-300 hover:bg-[#9a8c63] hover:shadow-lg transform hover:scale-105 text-center">
+                        Register Now
+                    </a>
+                    <a href="#contact" class="px-6 py-3 border border-[#827654] text-[#827654] font-medium rounded-md transition-all duration-300 hover:bg-[#827654] hover:text-white transform hover:scale-105 text-center">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .animate-fade-slide-right {
+        animation: fadeSlideRight 1s ease forwards;
+    }
+    
+    .animate-fade-slide-left {
+        animation: fadeSlideLeft 1s ease forwards;
+    }
+    
+    @keyframes fadeSlideRight {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes fadeSlideLeft {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>

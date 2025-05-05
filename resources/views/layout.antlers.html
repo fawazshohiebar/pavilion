@@ -5,11 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title ?? site:name }}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
     </head>
-    <body class="bg-slate-100 dark:bg-gray-800 font-sans leading-normal text-slate-800 dark:text-gray-400">
-        <div class="mx-auto px-2 lg:min-h-screen flex flex-col items-center justify-center">
+    <body class="font-sans leading-normal text-gray-800 antialiased">
+        <!-- Header (includes patronage banner) -->
+        {{ partial:partials/header }}
+        
+        <!-- Main Content -->
+        <main class="relative" style="margin-top: -112px;">
             {{ template_content }}
-        </div>
+        </main>
+        
+        <!-- Footer -->
+        {{ partial:partials/footer }}
     </body>
 </html>

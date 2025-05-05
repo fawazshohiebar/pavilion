@@ -1,0 +1,237 @@
+<section id="gallery" class="py-20 bg-white relative overflow-hidden">
+    <!-- Decorative Elements -->
+    <div class="absolute right-0 top-0 w-64 h-64 rounded-full bg-[#827654] opacity-5 -translate-y-1/2 translate-x-1/2"></div>
+    <div class="absolute left-0 bottom-0 w-64 h-64 rounded-full bg-[#827654] opacity-5 translate-y-1/2 -translate-x-1/2"></div>
+    
+    <div class="container mx-auto px-4 md:px-6 relative z-10"
+         x-data="{ 
+            lightboxOpen: false, 
+            currentImage: '',
+            openLightbox(imageUrl) {
+                this.currentImage = imageUrl;
+                this.lightboxOpen = true;
+                document.body.classList.add('overflow-hidden');
+            },
+            closeLightbox() {
+                this.lightboxOpen = false;
+                document.body.classList.remove('overflow-hidden');
+            }
+         }">
+        <!-- Section Header -->
+        <div class="max-w-3xl mx-auto text-center mb-16"
+            x-data="{}" 
+            x-intersect="$el.classList.add('animate-fade-in')">
+            <div class="inline-flex items-center justify-center mb-4">
+                <div class="w-8 h-1 bg-[#827654]"></div>
+                <span class="mx-4 text-[#827654] font-medium uppercase tracking-wider">Exhibition Highlights</span>
+                <div class="w-8 h-1 bg-[#827654]"></div>
+            </div>
+            
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Gallery</h2>
+            
+            <p class="text-gray-700 text-lg mb-0">
+                Explore visuals from past exhibitions and get a glimpse of what to expect at the 
+                Al Ain International Hunting & Equestrian Exhibition 2025.
+            </p>
+        </div>
+        
+        <!-- Gallery Grid with Parallax Effect -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" x-data="galleryParallax()">
+            <!-- Gallery Item 1 -->
+            <div class="relative group h-80 overflow-hidden rounded-lg shadow-lg" 
+                x-intersect="$el.classList.add('animate-scale-in')"
+                style="animation-delay: 0.1s">
+                <div 
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-5000 group-hover:scale-110"
+                    style="background-image: url('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2023/08/DSC08182-scaled.jpg');"
+                    x-ref="parallaxItem"
+                ></div>
+                <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button 
+                        @click="$parent.openLightbox('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2023/08/DSC08182-scaled.jpg')"
+                        class="px-4 py-2 bg-[#827654] text-white rounded-md transform transition-transform duration-300 hover:scale-110"
+                    >
+                        View Image
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Gallery Item 2 -->
+            <div class="relative group h-80 overflow-hidden rounded-lg shadow-lg" 
+                x-intersect="$el.classList.add('animate-scale-in')"
+                style="animation-delay: 0.2s">
+                <div 
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-5000 group-hover:scale-110"
+                    style="background-image: url('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2024/03/MB60436-scaled.jpg');"
+                    x-ref="parallaxItem"
+                ></div>
+                <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button 
+                        @click="$parent.openLightbox('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2024/03/MB60436-scaled.jpg')"
+                        class="px-4 py-2 bg-[#827654] text-white rounded-md transform transition-transform duration-300 hover:scale-110"
+                    >
+                        View Image
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Gallery Item 3 -->
+            <div class="relative group h-80 overflow-hidden rounded-lg shadow-lg" 
+                x-intersect="$el.classList.add('animate-scale-in')"
+                style="animation-delay: 0.3s">
+                <div 
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-5000 group-hover:scale-110"
+                    style="background-image: url('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/3E8Y1912-scaled.jpg');"
+                    x-ref="parallaxItem"
+                ></div>
+                <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button 
+                        @click="$parent.openLightbox('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/3E8Y1912-scaled.jpg')"
+                        class="px-4 py-2 bg-[#827654] text-white rounded-md transform transition-transform duration-300 hover:scale-110"
+                    >
+                        View Image
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Gallery Item 4 -->
+            <div class="relative group h-80 overflow-hidden rounded-lg shadow-lg" 
+                x-intersect="$el.classList.add('animate-scale-in')"
+                style="animation-delay: 0.4s">
+                <div 
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-5000 group-hover:scale-110"
+                    style="background-image: url('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/IMG_5492-scaled.jpg');"
+                    x-ref="parallaxItem"
+                ></div>
+                <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button 
+                        @click="$parent.openLightbox('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/IMG_5492-scaled.jpg')"
+                        class="px-4 py-2 bg-[#827654] text-white rounded-md transform transition-transform duration-300 hover:scale-110"
+                    >
+                        View Image
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Gallery Item 5 -->
+            <div class="relative group h-80 overflow-hidden rounded-lg shadow-lg" 
+                x-intersect="$el.classList.add('animate-scale-in')"
+                style="animation-delay: 0.5s">
+                <div 
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-5000 group-hover:scale-110"
+                    style="background-image: url('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/shutterstock_1111453718-scaled.jpg');"
+                    x-ref="parallaxItem"
+                ></div>
+                <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button 
+                        @click="$parent.openLightbox('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/shutterstock_1111453718-scaled.jpg')"
+                        class="px-4 py-2 bg-[#827654] text-white rounded-md transform transition-transform duration-300 hover:scale-110"
+                    >
+                        View Image
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Gallery Item 6 -->
+            <div class="relative group h-80 overflow-hidden rounded-lg shadow-lg" 
+                x-intersect="$el.classList.add('animate-scale-in')"
+                style="animation-delay: 0.6s">
+                <div 
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-5000 group-hover:scale-110"
+                    style="background-image: url('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2024/03/MB60436-scaled.jpg');"
+                    x-ref="parallaxItem"
+                ></div>
+                <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <button 
+                        @click="$parent.openLightbox('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2024/03/MB60436-scaled.jpg')"
+                        class="px-4 py-2 bg-[#827654] text-white rounded-md transform transition-transform duration-300 hover:scale-110"
+                    >
+                        View Image
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lightbox -->
+        <div 
+            x-show="lightboxOpen" 
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0"
+            x-transition:enter-end="opacity-100"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+            class="fixed inset-0 z-50 flex items-center justify-center bg-black opacity-90"
+            @click.self="closeLightbox"
+            x-cloak
+        >
+            <div class="relative max-w-5xl max-h-screen p-4">
+                <button @click="closeLightbox" class="absolute top-4 right-4 text-white hover:text-[#827654] transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <img :src="currentImage" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function galleryParallax() {
+        return {
+            init() {
+                // Parallax effect for gallery items
+                const parallaxItems = document.querySelectorAll('[x-ref="parallaxItem"]');
+                
+                window.addEventListener('mousemove', (e) => {
+                    const x = e.clientX / window.innerWidth;
+                    const y = e.clientY / window.innerHeight;
+                    
+                    parallaxItems.forEach(item => {
+                        const rect = item.getBoundingClientRect();
+                        const itemX = (rect.left + rect.width / 2) / window.innerWidth;
+                        const itemY = (rect.top + rect.height / 2) / window.innerHeight;
+                        
+                        // Only apply parallax if mouse is near the item
+                        const distance = Math.sqrt(Math.pow(x - itemX, 2) + Math.pow(y - itemY, 2));
+                        if (distance < 0.5) {
+                            const moveX = (x - 0.5) * 20;
+                            const moveY = (y - 0.5) * 20;
+                            item.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.1)`;
+                        } else {
+                            item.style.transform = '';
+                        }
+                    });
+                });
+            }
+        }
+    }
+</script>
+
+<style>
+    .animate-scale-in {
+        opacity: 0;
+        transform: scale(0.8);
+        animation: scaleIn 0.8s ease forwards;
+    }
+    
+    @keyframes scaleIn {
+        from {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    [x-cloak] { display: none !important; }
+</style>

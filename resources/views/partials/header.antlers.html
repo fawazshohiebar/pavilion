@@ -1,0 +1,83 @@
+<header 
+    class="sticky top-0 left-0 w-full z-50"
+    x-data="{ mobileMenuOpen: false, scrolled: true }" 
+    {{# x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })" #}}
+>
+    <!-- Patronage Banner -->
+    <div class="bg-[#827654] text-white py-2 px-4 text-center">
+        <p class="text-sm font-light">Under the Patronage of His Highness Sheikh Hazaa bin Zayed Al Nahyan, Ruler's Representative in Al Ain Region</p>
+    </div>
+    
+    <!-- Navigation -->
+    <nav 
+        class="w-full transition-all duration-300 ease-in-out"
+        :class="scrolled ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'"
+    >
+        <div class="container mx-auto px-4 md:px-6 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="{{site:url}}" class="flex-shrink-0">
+                <img 
+                    :src="scrolled ? '/images/logo-colored.png' : '/images/logo-white.png'" 
+                    alt="Al Ain International Hunting & Equestrian Exhibition"
+                    class="h-12 md:h-16 transition-all duration-300"
+                />
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#about" class="text-base font-medium transition-all duration-200 hover:text-[#827654]" :class="scrolled ? 'text-gray-800' : 'text-white'">About</a>
+                <a href="#sectors" class="text-base font-medium transition-all duration-200 hover:text-[#827654]" :class="scrolled ? 'text-gray-800' : 'text-white'">Sectors</a>
+                <a href="#gallery" class="text-base font-medium transition-all duration-200 hover:text-[#827654]" :class="scrolled ? 'text-gray-800' : 'text-white'">Gallery</a>
+                <a href="#contact" class="text-base font-medium transition-all duration-200 hover:text-[#827654]" :class="scrolled ? 'text-gray-800' : 'text-white'">Contact</a>
+
+                {{partial:language-switcher /}}
+
+                {{ partial:partials/buttons/button url="#stand" type="filled" color="primary" icon="paper-airplane" }}
+                    Book Your Stand
+                {{ /partial:partials/buttons/button }}
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden flex items-end gap-4">
+                {{partial:language-switcher /}}
+                <button 
+                    @click="mobileMenuOpen = !mobileMenuOpen" 
+                    class="lg:hidden focus:outline-none"
+                    :class="scrolled ? 'text-gray-800' : 'text-white'"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!mobileMenuOpen">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="mobileMenuOpen">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div 
+            x-show="mobileMenuOpen"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-4"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-4"
+            class="lg:hidden bg-white shadow-xl py-4 absolute top-full left-0 right-0"
+        >
+            <div class="container mx-auto px-4 md:px-6 flex flex-col space-y-4">
+                <a href="#about" class="text-base font-medium text-gray-800 hover:text-[#827654]">About</a>
+                <a href="#sectors" class="text-base font-medium text-gray-800 hover:text-[#827654]">Sectors</a>
+                <a href="#gallery" class="text-base font-medium text-gray-800 hover:text-[#827654]">Gallery</a>
+                <a href="#contact" class="text-base font-medium text-gray-800 hover:text-[#827654]">Contact</a>
+                <a 
+                    href="#register" 
+                    class="px-6 py-2 rounded-md bg-[#827654] text-white font-medium text-center"
+                >
+                    Register Now
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>

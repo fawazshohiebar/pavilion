@@ -1,0 +1,206 @@
+<section class="relative h-screen overflow-hidden">
+    <!-- YouTube Video Background -->
+    <div class="absolute inset-0 w-full h-full z-0 youtube-container">
+        <div id="youtube-player" class="youtube-player"></div>
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30 z-10"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div
+        class="container mx-auto relative z-20 h-full flex flex-col justify-center items-start text-left px-4 md:px-6 lg:px-10 pt-20">
+        <div class="max-w-2xl">
+            {{# <img src="/images/logo-white.png" alt="Al Ain International Hunting & Equestrian Exhibition" class="w-56 md:w-72 mb-8 animate-fade-in-down"> #}}
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up leading-tight"
+                style="text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+                Al Ain International<br>Hunting & Equestrian<br>Exhibition 2025
+            </h1>
+
+            <p class="text-white/90 text-lg md:text-xl mb-8 max-w-xl animate-fade-in-up"
+                style="animation-delay: 0.15s; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">
+                Experience the rich heritage of hunting and equestrianism in the Middle East's premier exhibition.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 mb-10 animate-fade-in-up"
+                style="animation-delay: 0.3s">
+                <div class="flex items-center">
+                    <div class="bg-[#827654]/20 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#827654]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <span class="text-white font-medium">ADNEC Al Ain Center</span>
+                </div>
+
+                <div class="flex items-center">
+                    <div class="bg-[#827654]/20 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#827654]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <span class="text-white font-medium">November 26 - 30, 2025</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-fade-in-up" style="animation-delay: 0.45s">
+                {{ partial:partials/buttons/button url="#register" type="filled" color="primary" icon="arrow-right" }}
+                    Book Your Stand
+                {{ /partial:partials/buttons/button }}
+                {{ partial:partials/buttons/button url="#stand" type="outline" color="light" icon="arrow-right" }}
+                    Buy Your Tickets
+                {{ /partial:partials/buttons/button }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Down Indicator - Repositioned to bottom right for elegance -->
+    <div class="absolute bottom-8 right-8 z-20 animate-bounce">
+        <a href="#about" class="flex flex-col items-center text-white opacity-80 hover:opacity-100 transition-opacity">
+            <span class="text-sm font-light mb-2 tracking-wider">SCROLL</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </a>
+    </div>
+</section>
+
+<script>
+    // YouTube API Script
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // YouTube Player
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('youtube-player', {
+            videoId: '4KnqDeXRNtg',
+            playerVars: {
+                autoplay: 1,
+                controls: 0,
+                disablekb: 1,
+                fs: 0,
+                modestbranding: 1,
+                loop: 1,
+                playlist: '4KnqDeXRNtg',
+                mute: 1,
+                showinfo: 0,
+                rel: 0
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange,
+                'onResize': onPlayerResize
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+        resizeVideo();
+        window.addEventListener('resize', resizeVideo);
+    }
+
+    function onPlayerStateChange(event) {
+        if (event.data === YT.PlayerState.ENDED) {
+            player.playVideo();
+        }
+    }
+
+    function onPlayerResize() {
+        resizeVideo();
+    }
+
+    // Function to resize the video to cover the container
+    function resizeVideo() {
+        var iframe = document.querySelector('#youtube-player');
+        if (!iframe) return;
+
+        var container = document.querySelector('.youtube-container');
+        var containerWidth = container.offsetWidth;
+        var containerHeight = container.offsetHeight;
+        var containerRatio = containerWidth / containerHeight;
+
+        // Standard YouTube video aspect ratio is 16:9
+        var videoRatio = 16 / 9;
+
+        var newWidth, newHeight;
+
+        // Decide whether to fit by width or height to ensure complete coverage
+        if (containerRatio > videoRatio) {
+            // Container is wider than video aspect ratio
+            newWidth = containerWidth;
+            newHeight = containerWidth / videoRatio;
+        } else {
+            // Container is taller than video aspect ratio
+            newWidth = containerHeight * videoRatio;
+            newHeight = containerHeight;
+        }
+
+        // Position the iframe to center it
+        var iframe = player.getIframe();
+        iframe.style.width = newWidth + 'px';
+        iframe.style.height = newHeight + 'px';
+        iframe.style.position = 'absolute';
+        iframe.style.left = ((containerWidth - newWidth) / 2) + 'px';
+        iframe.style.top = ((containerHeight - newHeight) / 2) + 'px';
+    }
+
+    // CSS Animation for the hero section
+    document.addEventListener('DOMContentLoaded', function() {
+        document.head.insertAdjacentHTML('beforeend', `
+            <style>
+                .youtube-container {
+                    overflow: hidden;
+                }
+                
+                .youtube-player {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                .animate-fade-in-down {
+                    animation: fadeInDown 1s ease forwards;
+                }
+                
+                .animate-fade-in-up {
+                    animation: fadeInUp 1s ease forwards;
+                }
+                
+                @keyframes fadeInDown {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            </style>
+        `);
+    });
+</script>
