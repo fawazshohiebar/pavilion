@@ -408,7 +408,7 @@ page_builder:
         description: 'احجز مكانك في النسخة الأولى من معرض العين الدولي للصيد والفروسية 2025. تواصل مع فريق المبيعات لدينا اليوم لاستكشاف مساحات العرض المتاحة وفرص الشراكة. سيرشدك فريقنا خلال العملية ويساعدك على تحقيق أقصى استفادة من تجربة العرض الخاصة بك.'
         image: misc/shutterstock_1111453718-scaled.jpg
         phone_number: '+97124446900'
-        email: sales@alainhex.com
+        email: sales@alainihex.com
         business_hours_title: 'ساعات العمل'
         business_hours_days: 'الأحد - الخميس'
         business_hours_time: '8:00 صباحًا - 5:00 مساءً'

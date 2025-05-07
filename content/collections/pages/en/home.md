@@ -415,7 +415,7 @@ page_builder:
         description: 'Secure your place at the inaugural Al Ain International Hunting & Equestrian Exhibition 2025. Contact our sales team today to explore available exhibition spaces and partnership opportunities. Our team will guide you through the process and help you maximize your exhibition experience.'
         image: misc/shutterstock_1111453718-scaled.jpg
         phone_number: '+97124446900'
-        email: 'sales@alainhex.com'
+        email: 'sales@alainihex.com'
         business_hours_title: 'Business Hours'
         business_hours_days: 'Sunday-Thursday'
         business_hours_time: '8:00 AM - 5:00 PM'
