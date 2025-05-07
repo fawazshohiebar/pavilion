@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746594829
+updated_at: 1746645423
 fine_seo_title: Home
 fine_seo_is_title_custom: false
 fine_seo_preview: Home
@@ -315,12 +315,9 @@ page_builder:
         description: 'Choose from a variety of ticket options to experience the Al Ain International Hunting & Equestrian Exhibition 2025.'
         coming_soon: true
         coming_soon_title: 'Tickets Coming Soon'
-        coming_soon_description: 'We are finalizing our ticket options for the Al Ain International Hunting & Equestrian Exhibition 2025. Tickets will be available for purchase starting June 1, 2025. Mark your calendar and check back soon!'
+        coming_soon_description: 'We are finalizing our ticket options for the Al Ain International Hunting & Equestrian Exhibition 2025. Tickets will be available for purchase soon. Please check back soon!'
         coming_soon_countdown_date: '2025-06-01 09:00:00'
-        coming_soon_form_enabled: true
-        coming_soon_form_text: 'Sign up to be notified when tickets become available and get access to early bird discounts!'
-        coming_soon_form_placeholder: 'Enter your email address'
-        coming_soon_form_button: 'Notify Me'
+        coming_soon_form_enabled: false
         ticket_types:
           -
             id: maeixvf8
@@ -401,10 +398,6 @@ page_builder:
                 text: 'Family photo opportunity with falcons'
             button_text: 'Buy Family Package'
             button_url: '#buy-family'
-        notes: 'Children under 6 years enter for free. Senior citizens (65+) and people of determination receive a 50% discount on all ticket types.'
-        callout_message: 'Looking for group tickets? Special rates available for groups of 10 or more visitors.'
-        callout_button_text: 'Request Group Quote'
-        callout_button_url: '#group-tickets'
   -
     type: set
     attrs:
@@ -415,9 +408,9 @@ page_builder:
         description: 'Secure your place at the inaugural Al Ain International Hunting & Equestrian Exhibition 2025. Contact our sales team today to explore available exhibition spaces and partnership opportunities. Our team will guide you through the process and help you maximize your exhibition experience.'
         image: misc/shutterstock_1111453718-scaled.jpg
         phone_number: '+97124446900'
-        email: 'sales@alainihex.com'
+        email: sales@alainihex.com
         business_hours_title: 'Business Hours'
-        business_hours_days: 'Sunday-Thursday'
+        business_hours_days: Sunday-Thursday
         business_hours_time: '8:00 AM - 5:00 PM'
   -
     type: paragraph
