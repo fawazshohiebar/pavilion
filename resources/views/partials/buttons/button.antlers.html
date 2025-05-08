@@ -64,6 +64,6 @@ Elegant button component with the following parameters:
     <span>{{ slot ?? label ?? text }}</span>
     
     {{ if icon }}
-        {{heroicon variant="outline" :icon="icon" class="h-5 w-5 rtl:mr-2 ltr:ml-2 transition-transform duration-300 group-hover:translate-x-1 {{(icon | contains('paper-airplane')) ?= 'rtl:rotate-180'}}" }}
+        {{heroicon variant="outline" :icon="icon" class="h-5 w-5 rtl:mr-2 ltr:ml-2 transition-transform duration-300 group-hover:translate-x-1 {{(icon | contains('paper-airplane')) ?= 'rtl:rotate-180'}} {{ iconClass }}" }}
     {{ /if }}
 </a>
