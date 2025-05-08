@@ -15,3 +15,25 @@ social_media:
     id: macihl2y
     platform: instagram
     social_media_link: 'https://www.instagram.com/alainihex/?igsh=MXN1YXQxdGZjcGN5MQ%3D%3D#'
+logos:
+  -
+    id: mafjvh3f
+    title: 'Organised By'
+    image: brand/logos/adnecgroup-logo-white-(2).svg
+    url: 'https://adnecgroup.ae'
+    type: logo
+    enabled: true
+  -
+    id: mafjy4ai
+    title: 'Belongs To'
+    image: brand/logos/efc-logo_white.png
+    url: '#'
+    type: logo
+    enabled: true
+  -
+    id: mafjze11
+    title: 'Host Venue'
+    image: brand/logos/adnecalain-logo-darkmode-400.png
+    url: 'https://www.adnecalain.ae'
+    type: logo
+    enabled: true

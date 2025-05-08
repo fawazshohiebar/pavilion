@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746707449
+updated_at: 1746719337
 fine_seo_title: Home
 fine_seo_is_title_custom: false
 fine_seo_preview: Home
@@ -145,7 +145,7 @@ page_builder:
             title: Equestrian
             description: 'Experience the world of horses, riding gear, stable equipment, and learn about traditional and modern equestrian sports.'
             link: '#equestrian'
-            image: sectors/camels.jpg
+            image: sectors/horse.jpeg
           -
             id: mab5i92p
             type: sector
@@ -153,7 +153,7 @@ page_builder:
             title: 'Hunting & Safari Trips'
             description: 'Explore sustainable hunting practices and safari adventures from local providers and international destinations.'
             link: '#hunting'
-            image: sectors/falcons-practice.jpg
+            image: sectors/camping-vehicle.jpeg
           -
             id: mab5iwmq
             type: sector
@@ -177,7 +177,7 @@ page_builder:
             title: 'Outdoor Recreation Vehicles (4×4)'
             description: 'Explore specialized vehicles and equipment for off-road adventures, desert excursions, and outdoor activities.'
             link: '#vehicles'
-            image: sectors/outside-camping.jpg
+            image: sectors/dsc08182-scaled.jpg
           -
             id: mab5ks58
             type: sector
@@ -248,6 +248,7 @@ page_builder:
     type: set
     attrs:
       id: mac9k6lp
+      enabled: false
       values:
         type: gallery
         heading:
@@ -348,6 +349,7 @@ page_builder:
     type: set
     attrs:
       id: maeixta1
+      enabled: false
       values:
         type: tickets
         title: 'Get Your Tickets'

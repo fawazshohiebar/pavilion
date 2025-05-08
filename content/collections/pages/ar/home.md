@@ -50,7 +50,7 @@ page_builder:
         section_label: 'حول المعرض'
         title: 'المعرض الدولي للصيد والفروسية - العين'
         description: |-
-          احتفاءً بالإرث العريق للصيد والفروسية، وإبرازًا لمدينة العين كوجهة متميزة للصيد والرياضات الخارجية، وسعيًا للوصول إلى أسواق جديدة ذات قوة شرائية، بهدف توسيع العلامة التجارية للمعرض. سيتم إطلاق النسخة الاولى المعرض الدولي للصيد والفروسية - العين 2025 خلال الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين. 
+          احتفاءً بالإرث العريق للصيد والفروسية، وإبرازًا لمدينة العين كوجهة متميزة للصيد والرياضات الخارجية، وسعيًا للوصول إلى أسواق جديدة ذات قوة شرائية، بهدف توسيع العلامة التجارية للمعرض. أُطلقت النسخة الاولى المعرض الدولي للصيد والفروسية - العين 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين. 
 
           يركز المعرض على 9 قطاعات وهي: الصقارة، الفروسية، رحلات الصيد والسفاري، الحفاظ على البيئة والتراث الثقافي، معدات الصيد والتخييم، مركبات ومعدات الترفيه في الهواء الطلق (4×4)، الفنون والحِرف اليدوية، والمنتجات والخدمات البيطرية بالإضافة الى مجموعة واسعة من الأنشطة التفاعلية والمسابقات وورش العمل والمنافسات الحية والعديد من الفعاليات الترفيهية.
         image: misc/mountain-city-view.jpg
@@ -168,7 +168,6 @@ page_builder:
             type: sector
             enabled: true
             title: الصقارة
-            description: 'Discover the ancient art of falconry, its traditions, equipment, training techniques, and breeding practices.'
             image: sectors/falcon.jpg
             link: '#falconry'
           -
@@ -176,23 +175,20 @@ page_builder:
             type: sector
             enabled: true
             title: الفروسية
-            description: 'Experience the world of horses, riding gear, stable equipment, and learn about traditional and modern equestrian sports.'
             link: '#equestrian'
-            image: sectors/camels.jpg
+            image: sectors/horse.jpeg
           -
             id: mab5i92p
             type: sector
             enabled: true
             title: 'رحلات الصيد والسفاري'
-            description: 'Explore sustainable hunting practices and safari adventures from local providers and international destinations.'
             link: '#hunting'
-            image: sectors/falcons-practice.jpg
+            image: sectors/camping-vehicle.jpeg
           -
             id: mab5iwmq
             type: sector
             enabled: true
             title: 'الحفاظ على البيئة والتراث الثقافي'
-            description: 'Learn about conservation efforts, wildlife protection initiatives, and the preservation of cultural heritage.'
             link: '#environmental'
             image: sectors/img_5492-scaled.jpg
           -
@@ -200,40 +196,36 @@ page_builder:
             type: sector
             enabled: true
             title: 'معدات الصيد والتخييم'
-            description: 'Discover the latest hunting gear, firearms, ammunition, optics, and camping equipment for your outdoor adventures.'
             link: '#equipment'
-            image: sectors/coffice.jpg
+            image: sectors/outside-camping.jpg
           -
             id: mab5k5yw
             type: sector
             enabled: true
-            title: 'مركبات ومعدات الترفيه في الهواء الطلق (4×4)'
-            description: 'Explore specialized vehicles and equipment for off-road adventures, desert excursions, and outdoor activities.'
+            title: 'مركبات ومعدات الترفيه في الهواء الطلق'
             link: '#vehicles'
-            image: sectors/outside-camping.jpg
+            image: sectors/dsc08182-scaled.jpg
           -
             id: mab5ks58
             type: sector
             enabled: true
             title: 'الفنون والحِرف اليدوية'
-            description: 'Admire traditional craftsmanship, artwork, and products that celebrate the cultural heritage of hunting and equestrianism.'
             link: '#arts'
-            image: sectors/traditional-art-2.jpg
+            image: sectors/traditional-arts.jpg
           -
             id: mab5ldeq
             type: sector
             enabled: true
             title: 'المنتجات والخدمات البيطرية'
-            description: 'Learn about healthcare for hunting animals and horses, including nutrition, medication, and veterinary equipment.'
             link: '#veterinary'
-            image: sectors/traditional-arts.jpg
+            image: sectors/vet-falcon.jpg
           -
             id: mab5m19y
             type: sector
             enabled: true
             title: الجِمال
             link: '#camels'
-            image: sectors/dsc08182-scaled.jpg
+            image: sectors/camels.jpg
           -
             id: madin5gp
             title: السلوقي
@@ -462,5 +454,5 @@ fine_seo_title: الرئيسية
 fine_seo_is_title_custom: false
 fine_seo_preview: الرئيسية
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746707463
+updated_at: 1746722426
 ---

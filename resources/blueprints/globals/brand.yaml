@@ -86,3 +86,50 @@ tabs:
                     display: 'Social Media Link'
                     localizable: false
                     width: 50
+      -
+        display: 'Footer Logos'
+        fields:
+          -
+            handle: logos
+            field:
+              type: replicator
+              display: Logos
+              localizable: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    logo:
+                      display: Logo
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                            localizable: false
+                            width: 33
+                            validate:
+                              - required
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: Image
+                            localizable: false
+                            width: 33
+                            validate:
+                              - required
+                              - image
+                        -
+                          handle: url
+                          field:
+                            input_type: url
+                            type: text
+                            display: Url
+                            localizable: false
+                            width: 33
+                            validate:
+                              - required

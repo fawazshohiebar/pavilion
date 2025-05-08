@@ -63,6 +63,18 @@
             </div>
 
             {{# {{ partial:partials/footer_newsletter }} #}}
+            <div>
+                <div class="">
+                    <div class="grid grid-cols-3 gap-4">
+                        {{brand:logos}}
+                            <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80">
+                                <div class="text-center text-lg text-gray-400 mb-2 group-hover:text-[#827654] transition-colors">{{title}}</div>
+                                <img src="{{ image }}" alt="{{ title }}" class="h-14 object-contain mx-auto">
+                            </a>
+                        {{/brand:logos}}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
