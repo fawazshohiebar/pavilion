@@ -169,12 +169,12 @@ page_builder:
             title: 'Hunting & Camping Equipment'
             description: 'Discover the latest hunting gear, firearms, ammunition, optics, and camping equipment for your outdoor adventures.'
             link: '#equipment'
-            image: sectors/coffice.jpg
+            image: sectors/outside-camping.jpg
           -
             id: mab5k5yw
             type: sector
             enabled: true
-            title: 'Outdoor Recreation Vehicles (4×4)'
+            title: 'Outdoor Recreation Vehicles'
             description: 'Explore specialized vehicles and equipment for off-road adventures, desert excursions, and outdoor activities.'
             link: '#vehicles'
             image: sectors/dsc08182-scaled.jpg
@@ -193,15 +193,20 @@ page_builder:
             title: 'Veterinary Products & Services'
             description: 'Learn about healthcare for hunting animals and horses, including nutrition, medication, and veterinary equipment.'
             link: '#veterinary'
-            image: sectors/traditional-arts.jpg
+            image: sectors/vet-falcon.jpg
           -
             id: mab5m19y
             type: sector
             enabled: true
-            title: 'Interactive Activities & Workshops'
-            description: 'Participate in hands-on workshops, competitions, live demonstrations, and educational sessions for all ages.'
-            link: '#activities'
-            image: sectors/dsc08182-scaled.jpg
+            title: Camels
+            link: '#camels'
+            image: sectors/camels.jpg
+          -
+            id: madin5gp
+            title: Sloughi
+            image: sectors/sloughi.jpg
+            type: sector
+            enabled: true
         show_fact_description: false
   -
     type: set
