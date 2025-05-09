@@ -1,158 +1,69 @@
 <section class="relative min-h-dvh overflow-hidden -mt-34 pt-34 flex items-center">
     <!-- YouTube Video Background -->
-    <div class="absolute inset-0 w-full h-full z-0 youtube-container">
-        <div id="youtube-player" class="youtube-player"></div>
+    <div class="absolute inset-0 w-full h-full z-0 video-container">
+        <div class="youtube-player" id="youtube-player" data-video-id="{{youtube_id}}">
+            <!-- YouTube iframe will be inserted here -->
+        </div>
         <!-- Dark Overlay -->
         <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30 z-10"></div>
     </div>
-
+    
     {{partial:hero/content}}
 
     {{ partial:hero/scroll }}
 </section>
 
 <script>
-    // YouTube API integration
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    var player;
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('youtube-player', {
-            videoId: '{{youtube_id}}',
-            playerVars: {
-                autoplay: 1,
-                controls: 0,
-                disablekb: 1,
-                fs: 0,
-                modestbranding: 1,
-                loop: 1,
-                playlist: '{{youtube_id}}',
-                mute: 1,
-                showinfo: 0,
-                rel: 0
-            },
-            events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange,
-                'onResize': onPlayerResize
-            }
-        });
-    }
-
-    function onPlayerReady(event) {
-        event.target.playVideo();
-        resizeVideo();
-        
-        // Ensure the player is responsive
-        window.addEventListener('resize', resizeVideo);
-        window.addEventListener('orientationchange', resizeVideo);
-    }
-
-    function onPlayerStateChange(event) {
-        if (event.data === YT.PlayerState.ENDED) {
-            player.playVideo();
-        }
-    }
-
-    function onPlayerResize() {
-        resizeVideo();
-    }
-
-    // Function to ensure the YouTube video covers the container
-    function resizeVideo() {
-        if (!player || !player.getIframe) return;
-        
-        var container = document.querySelector('.youtube-container');
-        if (!container) return;
-        
-        var iframe = player.getIframe();
-        if (!iframe) return;
-        
-        // Set the iframe to cover the entire container
-        iframe.style.position = 'absolute';
-        iframe.style.top = '50%';
-        iframe.style.left = '50%';
-        iframe.style.transform = 'translate(-50%, -50%)';
-        iframe.style.width = '100%';
-        iframe.style.height = '100%';
-        iframe.style.minWidth = '100%';
-        iframe.style.minHeight = '100%';
-        iframe.style.objectFit = 'cover';
-    }
-
-    // CSS Animation for the hero section
+    // Initialize YouTube player
     document.addEventListener('DOMContentLoaded', function() {
-        document.head.insertAdjacentHTML('beforeend', `
-            <style>
-                .youtube-container {
-                    overflow: hidden;
-                    position: relative;
-                }
-                
-                .youtube-player {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-                
-                .youtube-player iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    pointer-events: none;
-                }
-                
-                @media (min-aspect-ratio: 16/9) {
-                    .youtube-player iframe {
-                        height: 300%;
-                        top: -100%;
-                    }
-                }
-                
-                @media (max-aspect-ratio: 16/9) {
-                    .youtube-player iframe {
-                        width: 300%;
-                        left: -100%;
-                    }
-                }
-                
-                .animate-fade-in-down {
-                    animation: fadeInDown 1s ease forwards;
-                }
-                
-                .animate-fade-in-up {
-                    animation: fadeInUp 1s ease forwards;
-                }
-                
-                @keyframes fadeInDown {
-                    from {
-                        opacity: 0;
-                        transform: translateY(-30px);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-                
-                @keyframes fadeInUp {
-                    from {
-                        opacity: 0;
-                        transform: translateY(30px);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-            </style>
-        `);
+        // Create YouTube player
+        var playerElement = document.getElementById('youtube-player');
+        if (!playerElement) return;
+        
+        var videoId = playerElement.getAttribute('data-video-id');
+        if (!videoId) return;
+        
+        // Create iframe
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=' + videoId);
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allowfullscreen', '1');
+        
+        // Add iframe to player element
+        playerElement.appendChild(iframe);
     });
 </script>
+
+<style>
+    .youtube-player {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+    }
+    
+    .youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    
+    @media (min-aspect-ratio: 16/9) {
+        .youtube-player iframe {
+            height: 300%;
+            top: -100%;
+        }
+    }
+    
+    @media (max-aspect-ratio: 16/9) {
+        .youtube-player iframe {
+            width: 300%;
+            left: -100%;
+        }
+    }
+</style>

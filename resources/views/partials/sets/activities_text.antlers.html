@@ -37,11 +37,11 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {{ featured_activities }}
-                    <div class="relative overflow-hidden rounded-lg shadow-md bg-white p-6 group"
+                    <div class="relative transform transition duration-300 overflow-hidden rounded-lg shadow-md bg-white p-6 group"
                          x-data="{ show: false }"
                          x-intersect="show = true"
-                         :class="show ? 'animate-card-reveal' : 'opacity-0'"
-                         style="animation-delay: {{ index * 150 }}ms">
+                         :class="show ? 'ease-linear motion-reduce:opacity-100 -translate-y-0' : 'opacity-0 translate-y-4'"
+                         style="transition-delay: {{ count * 200 }}ms">
                         <div class="w-14 h-14 bg-[#827654]/10 rounded-full flex items-center justify-center mb-4">
                             {{ heroicon variant="outline" icon="fire" class="text-[#827654] h-6 w-6 mb-2" }}
                         </div>
@@ -55,21 +55,3 @@
        
     </div>
 </section>
-
-<style>
-    .animate-card-reveal {
-        animation: cardReveal 0.8s ease forwards;
-    }
-    
-    @keyframes cardReveal {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-</style>

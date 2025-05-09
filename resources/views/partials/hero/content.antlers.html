@@ -1,21 +1,29 @@
 <div
-    class="container mx-auto relative z-20 h-full flex flex-col justify-center items-start px-4 md:px-6 lg:px-10 pt-20">
+    class="container mx-auto relative z-20 h-full flex flex-col justify-center items-start px-4 md:px-6 lg:px-10">
     <div class="max-w-3xl">
         {{ if heading }}
-            <h1 class="ltr:text-2xl rtl:text-3xl ltr:md:text-5xl rtl:md:text-5xl ltr:lg:text-6xl rtl:lg:text-6xl font-bold text-white mb-6 animate-fade-in-up leading-tight"
+            <h1 class="ltr:text-2xl rtl:text-3xl ltr:md:text-5xl rtl:md:text-5xl ltr:lg:text-6xl rtl:lg:text-6xl font-bold text-white mb-6 opacity-0 translate-y-6 transition-all duration-200 transform ease-linear motion-reduce:opacity-100 motion-reduce:translate-y-0"
+                x-data="{ show: false }" 
+                x-init="setTimeout(() => show = true, 0)"
+                :class="{ 'opacity-100 translate-y-0': show }"
                 style="text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
                 {{ heading | widont(2) }}
             </h1>
         {{ /if }}
         {{ if subheading }}
-            <p class="text-white/90 text-lg md:text-xl mb-8 max-w-xl animate-fade-in-up"
-                style="animation-delay: 0.15s; text-shadow: 0 1px 2px rgba(0,0,0,0.2);">
+            <p class="text-white/90 text-lg md:text-xl mb-8 max-w-xl opacity-0 translate-y-6 transition-all duration-200 transform ease-linear delay-150 motion-reduce:opacity-100 motion-reduce:translate-y-0"
+                x-data="{ show: false }" 
+                x-init="setTimeout(() => show = true, 150)"
+                :class="{ 'opacity-100 translate-y-0': show }"
+                style="text-shadow: 0 1px 2px rgba(0,0,0,0.2);">
                 {{ subheading }}
             </p>
         {{ /if }}
         <!-- Enhanced Event Details Section -->
-        <div class="bg-black/30 backdrop-blur-sm rounded-lg p-2 border border-[#827654]/30 shadow-xl mb-10 animate-fade-in-up w-full"
-            style="animation-delay: 0.3s">
+        <div class="bg-black/30 backdrop-blur-sm rounded-lg p-2 border border-[#827654]/30 shadow-xl mb-10 opacity-0 translate-y-6 transition-all duration-200 transform ease-linear delay-200 motion-reduce:opacity-100 motion-reduce:translate-y-0 w-full"
+            x-data="{ show: false }" 
+            x-init="setTimeout(() => show = true, 300)"
+            :class="{ 'opacity-100 translate-y-0': show }">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {{ icons }}
                     <div class="flex items-center gap-2 transform transition-all duration-300 hover:translate-x-1">
@@ -30,7 +38,10 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-fade-in-up" style="animation-delay: 0.45s">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 opacity-0 translate-y-6 transition-all duration-200 transform ease-linear delay-300 motion-reduce:opacity-100 motion-reduce:translate-y-0"
+            x-data="{ show: false }" 
+            x-init="setTimeout(() => show = true, 450)"
+            :class="{ 'opacity-100 translate-y-0': show }">
             {{ hero_actions }}
                 {{ partial:partials/buttons/button :url="url" :type="style" :color="color" :size="size" :icon="icon" }}
                     {{ label }}
