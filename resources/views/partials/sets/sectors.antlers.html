@@ -21,12 +21,16 @@
                     :class="show ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'">
                     <div class="relative h-60 overflow-hidden">
                         {{if image}}
+                        {{ glide :src="image" format="webp" width="400" quality="100" }}
                         <img 
-                            src="{{ glide :src="image" format="webp" }}" 
+                            src="{{url}}" 
                             alt="{{ alt ?? title + ' Image' }}" 
+                            width="{{width}}"
+                            height="{{height}}"
                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        {{ /glide }}
                         {{ else }}
                         <div class="absolute inset-0 bg-[#827654]"></div>
                         {{ /if }}
