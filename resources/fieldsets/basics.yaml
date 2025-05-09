@@ -227,14 +227,21 @@ fields:
                         handle: icon
                         field: basics.icon
                         config:
-                          width: 50
+                          width: 33
                       -
                         handle: label
                         field:
                           type: text
                           display: Label
                           localizable: false
-                          width: 50
+                          width: 33
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+                          localizable: false
+                          width: 33
                 -
                   handle: hero_actions
                   field: basics.button_group
@@ -872,6 +879,7 @@ fields:
                     display: 'Show Main CTA Button'
                     default: true
                     width: 33
+                    localizable: false
                 -
                   handle: cta_text
                   field:
@@ -937,6 +945,7 @@ fields:
                     display: 'Show Secondary CTA'
                     default: true
                     width: 33
+                    localizable: false
                 -
                   handle: secondary_cta_text
                   field:
