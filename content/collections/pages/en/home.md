@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746724229
+updated_at: 1746774083
 fine_seo_title: Home
 fine_seo_is_title_custom: false
 fine_seo_preview: Home
@@ -125,49 +125,16 @@ page_builder:
         type: sectors
         heading:
           heading: 'Our Exhibition Sectors'
-          subheading: 'Explore the 9 diverse sectors that make up the International Hunting & Equestrian Exhibition - Al Ain, offering something for enthusiasts and professionals alike.'
+          subheading: 'Explore the 11 diverse sectors that make up the International Hunting & Equestrian Exhibition - Al Ain, offering something for enthusiasts and professionals alike.'
           focus_icon: false
           heading_focus_word: 'Exhibition Focus'
           icon: null
         sectors:
           -
-            id: mab5h7bv
-            type: sector
-            enabled: true
-            title: Falconry
-            description: 'Discover the ancient art of falconry, its traditions, equipment, training techniques, and breeding practices.'
-            image: sectors/falcon.jpg
-            link: '#falconry'
-          -
-            id: mab5hpd7
-            type: sector
-            enabled: true
-            title: Equestrian
-            description: 'Experience the world of horses, riding gear, stable equipment, and learn about traditional and modern equestrian sports.'
-            link: '#equestrian'
-            image: sectors/horse.jpeg
-          -
-            id: mab5i92p
-            type: sector
-            enabled: true
-            title: 'Hunting & Safari Trips'
-            description: 'Explore sustainable hunting practices and safari adventures from local providers and international destinations.'
-            link: '#hunting'
-            image: sectors/camping-vehicle.jpeg
-          -
-            id: mab5iwmq
-            type: sector
-            enabled: true
-            title: 'Environmental Preservation'
-            description: 'Learn about conservation efforts, wildlife protection initiatives, and the preservation of cultural heritage.'
-            link: '#environmental'
-            image: sectors/img_5492-scaled.jpg
-          -
             id: mab5jjqp
             type: sector
             enabled: true
             title: 'Hunting & Camping Equipment'
-            description: 'Discover the latest hunting gear, firearms, ammunition, optics, and camping equipment for your outdoor adventures.'
             link: '#equipment'
             image: sectors/outside-camping.jpg
           -
@@ -175,25 +142,50 @@ page_builder:
             type: sector
             enabled: true
             title: 'Outdoor Recreation Vehicles'
-            description: 'Explore specialized vehicles and equipment for off-road adventures, desert excursions, and outdoor activities.'
             link: '#vehicles'
-            image: sectors/dsc08182-scaled.jpg
+            image: sectors/v4x4-tent-equipments.jpg
+          -
+            id: magf3osd
+            type: sector
+            enabled: true
+            title: RVs
+            link: '#rvs'
+            image: sectors/camping-vehicle.jpeg
+          -
+            id: mab5h7bv
+            type: sector
+            enabled: true
+            title: Falconry
+            image: sectors/falcon.jpg
+            link: '#falconry'
+          -
+            id: mab5hpd7
+            type: sector
+            enabled: true
+            title: Equestrian
+            link: '#equestrian'
+            image: sectors/horse.jpeg
+          -
+            id: mab5i92p
+            type: sector
+            enabled: true
+            title: 'Hunting & Safari Trips'
+            link: '#hunting'
+            image: sectors/gazal.jpg
+          -
+            id: mab5iwmq
+            type: sector
+            enabled: true
+            title: 'Environmental Preservation'
+            link: '#environmental'
+            image: sectors/heritage.jpg
           -
             id: mab5ks58
             type: sector
             enabled: true
             title: 'Arts & Handicrafts'
-            description: 'Admire traditional craftsmanship, artwork, and products that celebrate the cultural heritage of hunting and equestrianism.'
             link: '#arts'
-            image: sectors/traditional-art-2.jpg
-          -
-            id: mab5ldeq
-            type: sector
-            enabled: true
-            title: 'Veterinary Products & Services'
-            description: 'Learn about healthcare for hunting animals and horses, including nutrition, medication, and veterinary equipment.'
-            link: '#veterinary'
-            image: sectors/vet-falcon.jpg
+            image: sectors/traditional-arts.jpg
           -
             id: mab5m19y
             type: sector
@@ -207,6 +199,13 @@ page_builder:
             image: sectors/sloughi.jpg
             type: sector
             enabled: true
+          -
+            id: mab5ldeq
+            type: sector
+            enabled: true
+            title: 'Veterinary Products & Services'
+            link: '#veterinary'
+            image: sectors/vet-falcon.jpg
         show_fact_description: false
   -
     type: set
@@ -454,8 +453,8 @@ page_builder:
         title: 'Book Your Stand'
         description: 'Secure your place at the inaugural International Hunting & Equestrian Exhibition - Al Ain 2025. Contact our sales team today to explore available exhibition spaces and partnership opportunities. Our team will guide you through the process and help you maximize your exhibition experience.'
         image: misc/shutterstock_1111453718-scaled.jpg
-        phone_number: '+97124446900'
-        email: sales@alainihex.com
+        phone_number: '+971 2 406 3593'
+        email: khaled.taha@adnec.ae
         business_hours_title: 'Business Hours'
         business_hours_days: Sunday-Thursday
         business_hours_time: '8:00 AM - 5:00 PM'
