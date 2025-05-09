@@ -48,7 +48,7 @@ page_builder:
       values:
         type: about
         section_label: 'حول المعرض'
-        title: 'المعرض الدولي للصيد والفروسية - العين'
+        title: 'المعرض الدولي للصيد والفروسية - العين 2025'
         description: |-
           احتفاءً بالإرث العريق للصيد والفروسية، وإبرازًا لمدينة العين كوجهة متميزة للصيد والرياضات الخارجية، وسعيًا للوصول إلى أسواق جديدة ذات قوة شرائية، بهدف توسيع العلامة التجارية للمعرض. أُطلقت النسخة الاولى من المعرض الدولي للصيد والفروسية - العين 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين. 
 
@@ -83,7 +83,7 @@ page_builder:
       values:
         type: facts
         heading:
-          heading: بالأرقام
+          heading: 'المتوقع من المعرض'
           subheading: null
           focus_icon: true
           heading_focus_word: null
@@ -97,7 +97,7 @@ page_builder:
           -
             id: macfpg3f
             value: '6'
-            label: 'دولة مشاركة'
+            label: 'دول مشاركة'
             icon: globe-alt
           -
             id: macfphk2
@@ -107,7 +107,7 @@ page_builder:
           -
             id: macfpimy
             value: '350'
-            label: 'عارضون وعلامات تجارية'
+            label: 'عارض وعلامات تجارية'
             icon: building-storefront
   -
     type: set
@@ -300,7 +300,7 @@ page_builder:
           heading: 'نشاطات المعرض'
           subheading: 'انغمس في مجموعة متنوعة من التجارب التفاعلية والترفيه في المعرض الدولي للصيد والفروسية - العين'
           focus_icon: false
-          heading_focus_word: 'تجربة وانخراط'
+          heading_focus_word: null
           icon: null
         main_activities:
           -
@@ -325,22 +325,18 @@ page_builder:
           -
             id: madhqgv4
             title: 'مسابقة تحضير القهوة العربية للصغار'
-            description: 'مسابقة تحضير القهوة العربية للأطفال'
             image: sectors/dsc08182-scaled.jpg
           -
             id: madhqhsw
             title: 'مسابقة طهاة المأكولات الشعبية'
-            description: 'مسابقة طبخ الأطعمة التقليدية'
             image: sectors/mb60436-scaled.jpg
           -
             id: madhqitk
             title: 'عروض الخيل الترفيهية وركوب الخيل للأطفال'
-            description: 'عروض ترفيهية للخيول وركوب الخيل للأطفال'
             image: sectors/3e8y1912-scaled.jpg
           -
             id: madhqjqw
             title: 'عروض التلواح'
-            description: 'عروض الصقارة وتجارب التعامل مع الصقور'
             image: sectors/img_5492-scaled.jpg
         cta_text: 'سجل للأنشطة'
         cta_url: '#register'
@@ -475,5 +471,5 @@ fine_seo_is_title_custom: true
 fine_seo_description: 'إطلاق النسخة الاولى من المعرض الدولي للصيد والفروسية - العين 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين.'
 fine_seo_preview: الرئيسية
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746778922
+updated_at: 1746784111
 ---

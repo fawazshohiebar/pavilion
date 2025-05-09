@@ -82,12 +82,14 @@
     <div class="bg-gray-950 py-6">
         <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center">
             <div class="text-gray-500 text-sm mb-4 md:mb-0">
-                &copy; {{ now format="Y" }} {{'International Hunting & Equestrian Exhibition - Al Ain' | trans}}. {{'All rights reserved' | trans}}.
+                &copy; {{'All rights reserved' | trans}} {{ now format="Y" }} <a class="text-[#827654]" href="https://www.adnecgroup.ae" target="_blank" rel="noopener noreferrer">
+                    {{'ADNEC Group' | trans}}
+                </a>
             </div>
-
+{{# 
             <div class="flex items-center">
                 <span class="text-gray-300">{{'ADNEC Group' | trans}}</span>
-            </div>
+            </div> #}}
         </div>
     </div>
 </footer>

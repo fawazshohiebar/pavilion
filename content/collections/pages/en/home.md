@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746775871
+updated_at: 1746784627
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -125,7 +125,7 @@ page_builder:
         type: sectors
         heading:
           heading: 'Our Exhibition Sectors'
-          subheading: 'Explore the 11 diverse sectors that make up the International Hunting & Equestrian Exhibition - Al Ain, offering something for enthusiasts and professionals alike.'
+          subheading: 'Explore the 11 diverse sectors that make up the International Hunting & Equestrian Exhibition - Al Ain 2025, offering something for enthusiasts and professionals alike.'
           focus_icon: false
           heading_focus_word: 'Exhibition Focus'
           icon: null
@@ -306,9 +306,9 @@ page_builder:
         type: activities
         heading:
           heading: 'Exhibition Activities'
-          subheading: 'Immerse yourself in a variety of interactive experiences and entertainment at the International Hunting & Equestrian Exhibition - Al Ain'
+          subheading: 'Immerse yourself in a variety of interactive experiences and entertainment at the International Hunting & Equestrian Exhibition - Al Ain 2025'
           focus_icon: false
-          heading_focus_word: 'Experience & Engage'
+          heading_focus_word: null
           icon: null
         main_activities:
           -
@@ -330,22 +330,18 @@ page_builder:
           -
             id: madgpimy
             title: 'Arabic Coffee Competition'
-            description: 'Arabic coffee preparation competition for children'
             image: sectors/dsc08182-scaled.jpg
           -
             id: madgpjcm
             title: 'Traditional Cooking Contest'
-            description: 'Traditional food cooking competition'
             image: sectors/mb60436-scaled.jpg
           -
             id: madgpkcn
             title: 'Horse Shows for Children'
-            description: 'Entertainment horse shows and horseback riding for children'
             image: sectors/3e8y1912-scaled.jpg
           -
             id: madgpldo
             title: 'Falconry Demonstrations'
-            description: 'Falconry demonstrations and handling experiences'
             image: sectors/img_5492-scaled.jpg
         cta_text: 'Register for Activities'
         cta_url: '#register'
