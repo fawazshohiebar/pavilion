@@ -27,7 +27,7 @@ page_builder:
             style: filled
             type: button
             enabled: true
-            label: 'احجز مساحتك'
+            label: 'احجز مكانك اليوم'
             icon: paper-airplane
             url: '#stand'
           -
@@ -58,7 +58,7 @@ page_builder:
         actions:
           -
             id: mab3kjf9
-            label: 'احجز مساحتك'
+            label: 'احجز مكانك اليوم'
             url: '#stand'
             size: medium
             color: primary
@@ -441,7 +441,7 @@ page_builder:
       id: maehwt64
       values:
         type: book_your_stand
-        title: 'احجز مساحتك'
+        title: 'احجز مكانك اليوم'
         description: 'احجز مكانك في النسخة الأولى من المعرض الدولي للصيد والفروسية - العين 2025. تواصل مع فريق المبيعات لدينا اليوم لاستكشاف مساحات العرض المتاحة وفرص الشراكة. سيرشدك فريقنا خلال العملية ويساعدك على تحقيق أقصى استفادة من تجربة العرض الخاصة بك.'
         image: misc/shutterstock_1111453718-scaled.jpg
         contacts:
