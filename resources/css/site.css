@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Offset for sticky header */
 }
 @theme {
   --font-mont: "montserrat", sans-serif;
