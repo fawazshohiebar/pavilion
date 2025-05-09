@@ -136,7 +136,7 @@ page_builder:
             id: my2p3btr
             icon: chart-bar
             title: 'توسيع شبكتك التجارية'
-            description: 'من خلال أسواق جديدة ذو قوة شرائية'
+            description: 'من خلال أسواق جديدة ذات قوة شرائية'
           -
             id: my2p3zcw
             icon: eye
