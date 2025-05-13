@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746796537
+updated_at: 1747136501
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -37,7 +37,7 @@ page_builder:
             enabled: true
             label: 'Book your stand'
             icon: paper-airplane
-            url: '#stand'
+            url: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
           -
             id: mab2yq0r
             size: medium
@@ -68,7 +68,7 @@ page_builder:
           -
             id: mab3kjf9
             label: 'Book Your Stand'
-            url: '#stand'
+            url: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
             size: medium
             color: primary
             style: filled
@@ -460,9 +460,15 @@ page_builder:
           -
             id: maf8q2d9
             type: contact
-            enabled: false
+            enabled: true
             phone_number: '+971 2 406 3594'
             email: bilal.adada@adnec.ae
+          -
+            id: mamfxssj
+            type: contact
+            enabled: true
+            phone_number: '+971 2 406 3245'
+            email: sara.aljaberi@adnec.ae
   -
     type: paragraph
     attrs:

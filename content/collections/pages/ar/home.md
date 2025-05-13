@@ -30,7 +30,7 @@ page_builder:
             enabled: true
             label: 'احجز مكانك اليوم'
             icon: paper-airplane
-            url: '#stand'
+            url: 'entry::9da38cbf-673a-4dee-af4f-f5d561dcc3d4'
           -
             id: mab2yq0r
             size: medium
@@ -60,7 +60,7 @@ page_builder:
           -
             id: mab3kjf9
             label: 'احجز مكانك اليوم'
-            url: '#stand'
+            url: 'entry::9da38cbf-673a-4dee-af4f-f5d561dcc3d4'
             size: medium
             color: primary
             style: filled
@@ -455,9 +455,16 @@ page_builder:
           -
             id: maf8q2d9
             type: contact
-            enabled: false
+            enabled: true
             phone_number: '+971 2 406 3594'
             email: bilal.adada@adnec.ae
+          -
+            id: mamfxssj
+            type: contact
+            enabled: true
+            phone_number: '+971 2 406 3245'
+            email: sara.aljaberi@adnec.ae
+        
   -
     type: paragraph
     attrs:
@@ -467,5 +474,5 @@ fine_seo_is_title_custom: true
 fine_seo_description: 'إطلاق النسخة الاولى من المعرض الدولي للصيد والفروسية - العين 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين.'
 fine_seo_preview: الرئيسية
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1746795576
+updated_at: 1747136672
 ---

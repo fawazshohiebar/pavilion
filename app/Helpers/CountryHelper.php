@@ -6,6 +6,16 @@ use Illuminate\Support\Facades\Cache;
 
 class CountryHelper
 {
+
+    public static function getCountryName(string $countryCode, string $locale): string
+    {
+        return match ($locale) {
+            'en' => self::getCountriesListInEnglish()[$countryCode] ?? '',
+            'ar' => self::getCountriesListInArabic()[$countryCode] ?? '',
+            default => '',
+        };
+    }
+
     public static function getCountries(string $locale): array
     {
         return match ($locale) {
