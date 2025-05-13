@@ -2,7 +2,7 @@
     class="container mx-auto relative z-20 h-full flex flex-col justify-center items-start px-4 md:px-6 lg:px-10">
     <div class="max-w-3xl">
         {{ if heading }}
-            <h1 class="ltr:text-2xl ltr:leading-16 rtl:leading-snug rtl:text-3xl ltr:md:text-5xl rtl:md:text-5xl ltr:lg:text-6xl rtl:lg:text-6xl font-bold text-white mb-6 opacity-0 translate-y-6 transition-all duration-200 transform ease-linear motion-reduce:opacity-100 motion-reduce:translate-y-0"
+            <h1 class="ltr:text-2xl ltr:lg:leading-16 rtl:leading-snug rtl:text-3xl ltr:md:text-5xl rtl:md:text-5xl ltr:lg:text-6xl rtl:lg:text-6xl font-bold text-white mb-6 opacity-0 translate-y-6 transition-all duration-200 transform ease-linear motion-reduce:opacity-100 motion-reduce:translate-y-0"
                 x-data="{ show: false }" 
                 x-init="setTimeout(() => show = true, 0)"
                 :class="{ 'opacity-100 translate-y-0': show }"
