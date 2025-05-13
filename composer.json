@@ -14,6 +14,7 @@
         "ali-awwad/fine-seo": "^0.1.9",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
+        "league/flysystem-aws-s3-v3": "^3.0",
         "statamic/cms": "^5.0",
         "statamic/eloquent-driver": "^4.21",
         "stefangalescu/statamic-heroicons": "^3.1"
