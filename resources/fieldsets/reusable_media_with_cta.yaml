@@ -1,0 +1,69 @@
+title: 'Reusable Media with CTA'
+fields:
+  -
+    handle: section_label
+    field:
+      type: text
+      display: 'Section Label'
+      localizable: true
+      width: 50
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+      localizable: true
+      width: 50
+  -
+    handle: description
+    field:
+      buttons:
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - quote
+        - link
+        - table
+        - strikethrough
+      type: markdown
+      display: Description
+      localizable: true
+  -
+    handle: image
+    field:
+      container: assets
+      max_files: 1
+      type: assets
+      display: Image
+      localizable: false
+      width: 50
+  -
+    handle: flipped
+    field:
+      type: toggle
+      display: 'Flipped?'
+      localizable: false
+      width: 50
+  -
+    handle: badge_text
+    field:
+      type: text
+      display: 'Badge Text'
+      instructions: 'The text to show in the badge overlay on the image (e.g. "1st")'
+      localizable: true
+      width: 50
+  -
+    handle: badge_subtext
+    field:
+      type: text
+      display: 'Badge Subtext'
+      instructions: 'Smaller text below the main badge text (e.g. "Edition")'
+      localizable: true
+      width: 50
+  -
+    handle: actions
+    field: basics.button_group
+    config:
+      display: Actions
+      width: 100

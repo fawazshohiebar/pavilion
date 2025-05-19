@@ -1,0 +1,37 @@
+title: 'Reusable Gallery with Heading'
+fields:
+  -
+    handle: heading
+    field: basics.heading_group
+    config:
+      display: 'Section Heading'
+      localizable: true
+  -
+    handle: gallery_items
+    field:
+      type: replicator
+      display: 'Gallery Items'
+      localizable: true
+      sets:
+        item:
+          display: 'Gallery Item'
+          fields:
+            -
+              handle: image
+              field:
+                container: assets
+                restrict: false
+                allow_uploads: true
+                max_files: 1
+                type: assets
+                display: Image
+                localizable: false
+                instructions: 'Image for the gallery'
+                width: 100
+            -
+              handle: title
+              field:
+                type: text
+                display: Title
+                localizable: false
+                instructions: 'Optional title for the image (used for alt text)'

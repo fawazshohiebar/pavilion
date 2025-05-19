@@ -1,0 +1,222 @@
+title: 'Reusable Tickets'
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+      localizable: true
+      instructions: 'Main heading for the tickets section'
+  -
+    handle: subheading
+    field:
+      type: text
+      display: Subheading
+      localizable: true
+      instructions: 'Smaller text displayed above the main title'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+      localizable: true
+      instructions: 'Brief description about ticket options'
+  -
+    handle: coming_soon
+    field:
+      type: toggle
+      display: 'Coming Soon Mode'
+      instructions: 'Toggle to show a "Coming Soon" message instead of ticket pricing'
+      width: 50
+      localizable: false
+  -
+    handle: coming_soon_title
+    field:
+      type: text
+      display: 'Coming Soon Title'
+      localizable: true
+      instructions: 'Title for the coming soon section (e.g. "Tickets Coming Soon")'
+      width: 50
+      if:
+        coming_soon: 'equals true'
+  -
+    handle: coming_soon_description
+    field:
+      type: textarea
+      display: 'Coming Soon Description'
+      localizable: true
+      instructions: 'Description text for the coming soon section'
+      if:
+        coming_soon: 'equals true'
+  -
+    handle: coming_soon_countdown_date
+    field:
+      type: date
+      display: 'Countdown Date'
+      localizable: false
+      instructions: 'Set a date for the countdown timer (leave empty for no countdown)'
+      time_enabled: true
+      width: 50
+      if:
+        coming_soon: 'equals true'
+      format: 'Y-m-d H:i:s'
+  -
+    handle: coming_soon_form_enabled
+    field:
+      type: toggle
+      display: 'Show Notification Form'
+      instructions: 'Enable to show an email notification form'
+      width: 50
+      if:
+        coming_soon: 'equals true'
+      localizable: false
+  -
+    handle: coming_soon_form_text
+    field:
+      type: text
+      display: 'Form Text'
+      localizable: true
+      instructions: 'Text above the notification form (e.g. "Get notified when tickets are available")'
+      if:
+        coming_soon_form_enabled: 'equals true'
+        coming_soon: 'equals true'
+  -
+    handle: coming_soon_form_placeholder
+    field:
+      type: text
+      display: 'Email Placeholder'
+      localizable: true
+      instructions: 'Placeholder text for the email input'
+      width: 50
+      if:
+        coming_soon_form_enabled: 'equals true'
+        coming_soon: 'equals true'
+  -
+    handle: coming_soon_form_button
+    field:
+      type: text
+      display: 'Button Text'
+      localizable: true
+      instructions: 'Text for the form submission button'
+      width: 50
+      if:
+        coming_soon_form_enabled: 'equals true'
+        coming_soon: 'equals true'
+  -
+    handle: ticket_types
+    field:
+      type: replicator
+      display: 'Ticket Types'
+      localizable: true
+      instructions: 'Define the different types of tickets available'
+      sets:
+        ticket:
+          display: 'Ticket Option'
+          fields:
+            -
+              handle: name
+              field:
+                type: text
+                display: 'Ticket Name'
+                localizable: true
+                instructions: 'Name of the ticket type (e.g. Standard, VIP)'
+                width: 50
+            -
+              handle: category
+              field:
+                type: text
+                display: Category
+                localizable: true
+                instructions: 'Category label (e.g. Adult, Child, Family)'
+                width: 50
+            -
+              handle: price
+              field:
+                type: text
+                display: Price
+                localizable: false
+                instructions: 'Ticket price (e.g. AED 50)'
+                width: 50
+            -
+              handle: price_suffix
+              field:
+                type: text
+                display: 'Price Suffix'
+                localizable: true
+                instructions: 'Text to show after price (e.g. per person, per day)'
+                width: 50
+            -
+              handle: featured
+              field:
+                type: toggle
+                display: 'Featured Ticket'
+                instructions: 'Highlight this ticket option'
+                width: 100
+            -
+              handle: features
+              field:
+                type: grid
+                display: Features
+                instructions: 'List of features included in this ticket'
+                min_rows: 1
+                fields:
+                  -
+                    handle: text
+                    field:
+                      type: text
+                      display: 'Feature Text'
+                      localizable: true
+            -
+              handle: button_text
+              field:
+                type: text
+                display: 'Button Text'
+                localizable: true
+                instructions: 'Text for the ticket purchase button'
+                width: 50
+            -
+              handle: button_url
+              field:
+                type: text
+                display: 'Button URL'
+                localizable: false
+                instructions: 'Link for the ticket purchase button'
+                width: 50
+  -
+    handle: notes
+    field:
+      type: textarea
+      display: Notes
+      localizable: true
+      instructions: 'Optional small text notes about tickets (e.g. terms and conditions)'
+      if:
+        coming_soon: 'equals false'
+  -
+    handle: callout_message
+    field:
+      type: text
+      display: 'Callout Message'
+      localizable: true
+      instructions: 'Special message to highlight at the bottom (e.g. group discounts)'
+      if:
+        coming_soon: 'equals false'
+  -
+    handle: callout_button_text
+    field:
+      type: text
+      display: 'Callout Button Text'
+      localizable: true
+      instructions: 'Text for the callout button'
+      width: 50
+      if:
+        coming_soon: 'equals false'
+  -
+    handle: callout_button_url
+    field:
+      type: text
+      display: 'Callout Button URL'
+      localizable: false
+      instructions: 'Link for the callout button'
+      width: 50
+      if:
+        coming_soon: 'equals false'

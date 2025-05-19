@@ -1,0 +1,55 @@
+title: 'Reusable Image Grid with Heading'
+fields:
+  -
+    handle: heading
+    field: basics.heading_group
+    config:
+      display: 'Section Heading'
+      localizable: true
+  -
+    handle: show_fact_description
+    field:
+      default: true
+      type: toggle
+      display: 'Show Fact Description'
+      localizable: true
+  -
+    handle: sectors
+    field:
+      type: replicator
+      display: Sectors
+      localizable: true
+      sets:
+        main:
+          display: Main
+          sets:
+            sector:
+              display: Sector
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                    localizable: false
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: Description
+                    localizable: false
+                -
+                  handle: image
+                  field:
+                    container: assets
+                    max_files: 1
+                    type: assets
+                    display: Image
+                    localizable: false
+                -
+                  handle: link
+                  field:
+                    type: link
+                    display: Link
+                    localizable: false
+                    instructions: 'Optional link to make the sector card clickable'

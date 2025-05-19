@@ -1,0 +1,66 @@
+title: 'Reusable Why Participate'
+fields:
+  -
+    handle: heading
+    field: basics.heading_group
+    config:
+      display: 'Section Heading'
+      localizable: true
+  -
+    handle: main_title
+    field:
+      type: text
+      display: 'Main Call to Action Title'
+      localizable: true
+      instructions: 'The title of the main call to action section'
+  -
+    handle: main_subtitle
+    field:
+      type: text
+      display: 'Main Call to Action Subtitle'
+      localizable: true
+      instructions: 'The subtitle or description for the main call to action'
+  -
+    handle: cta_buttons
+    field: basics.button_group
+    config:
+      display: 'CTA Buttons'
+      width: 100
+  -
+    handle: benefits
+    field:
+      type: grid
+      display: 'Benefits & Features'
+      min_rows: 1
+      add_row: 'Add Benefit'
+      localizable: true
+      fields:
+        -
+          handle: icon
+          field:
+            options:
+              - users
+              - chart-bar
+              - eye
+              - sparkles
+              - globe-alt
+              - shield-check
+              - trophy
+              - arrows-right-left
+            type: select
+            display: Icon
+            width: 25
+        -
+          handle: title
+          field:
+            type: text
+            display: Title
+            localizable: true
+            width: 25
+        -
+          handle: description
+          field:
+            type: text
+            display: Description
+            localizable: true
+            width: 50

@@ -1,0 +1,53 @@
+title: 'Reusable Hero'
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+      localizable: true
+  -
+    handle: subheading
+    field:
+      type: text
+      display: Subheading
+      localizable: true
+  -
+    handle: video
+    field:
+      type: text
+      display: Video
+      instructions: 'Can you URL or YouTube ID'
+      localizable: true
+  -
+    handle: icons
+    field:
+      type: grid
+      display: Icons
+      localizable: true
+      fields:
+        -
+          handle: icon
+          field: basics.icon
+          config:
+            width: 33
+        -
+          handle: label
+          field:
+            type: text
+            display: Label
+            localizable: false
+            width: 33
+        -
+          handle: link
+          field:
+            type: link
+            display: Link
+            localizable: false
+            width: 33
+  -
+    handle: hero_actions
+    field: basics.button_group
+    config:
+      display: 'Hero Actions'
+      width: 100

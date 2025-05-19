@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747140253
+updated_at: 1747639031
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -13,467 +13,77 @@ page_builder:
   -
     type: set
     attrs:
-      id: mab2pvkr
+      id: maur3re1
       values:
-        type: hero
-        heading: 'Launching the first edition of the <span>International Hunting & Equestrian Exhibition</span> – Al Ain  2025'
-        icons:
-          -
-            id: mab2w0r4
-            icon: map-pin
-            label: 'ADNEC Al Ain Center'
-            link: 'https://maps.app.goo.gl/WizsELNyd5P8N5qj8'
-          -
-            id: mab2whla
-            icon: calendar-days
-            label: 'November 26 - 30, 2025'
-        hero_actions:
-          -
-            id: mab2wp5q
-            size: medium
-            color: primary
-            style: filled
-            type: button
-            enabled: true
-            label: 'Book your stand'
-            icon: paper-airplane
-            url: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
-          -
-            id: mab2yq0r
-            size: medium
-            color: light
-            style: outline
-            type: button
-            enabled: false
-            label: 'Get Your Tickets'
-            icon: ticket
-            url: '#tickets'
-        video: /videos/alain-video.webm
+        type: reusable_block
+        entry:
+          - 1da0b009-5464-456d-8cbc-4736b92d7931
   -
     type: set
     attrs:
-      id: mab3jfwq
+      id: mapbduo9
       values:
-        type: about
-        section_label: 'About the Exhibition'
-        title: 'A Celebration of Hunting & Equestrian Heritage'
-        description: |-
-          Celebrating the rich legacy of hunting and equestrianism, and highlighting Al Ain as a distinguished destination for hunting and outdoor sports, while seeking to reach new markets with purchasing power to expand the exhibition's brand.
-
-          The first edition of the International Hunting & Equestrian Exhibition - Al Ain 2025 will be launched from November 26 to 30, 2025, at ADNEC Al Ain Centre.
-        image: misc/mountain-city-view.jpg
-        badge_text: 1st
-        badge_subtext: Edition
-        actions:
-          -
-            id: mab3kjf9
-            label: 'Book Your Stand'
-            url: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
-            size: medium
-            color: primary
-            style: filled
-            icon: paper-airplane
-            type: button
-            enabled: true
-          -
-            id: mab3m0ur
-            label: 'Buy Your Ticket'
-            url: '#tickets'
-            size: medium
-            color: primary
-            style: outline
-            icon: ticket
-            type: button
-            enabled: false
+        type: reusable_block
+        entry:
+          - 39f8c616-eb93-4ada-9310-0e1f4b0b324b
   -
     type: set
     attrs:
-      id: macfpexs
+      id: mapbqlao
       values:
-        type: facts
-        heading:
-          heading: 'Expected Figures'
-          subheading: null
-          focus_icon: true
-          heading_focus_word: null
-          icon: sparkles
-        stats:
-          -
-            id: macfpfr4
-            value: '15000'
-            label: 'Number of Visitors'
-            icon: users
-          -
-            id: macfpg3f
-            value: '6'
-            label: 'Participating Countries'
-            icon: globe-alt
-          -
-            id: macfphk2
-            value: '12000'
-            label: 'Exhibition Area (m²)'
-            icon: map
-          -
-            id: macfpimy
-            value: '350'
-            label: 'Exhibitors & Brands'
-            icon: building-storefront
+        type: reusable_block
+        entry:
+          - e955ebf9-b57f-4438-9219-b44ef9f10681
   -
     type: set
     attrs:
-      id: macjkw62
+      id: mapc76ng
       values:
-        type: sectors
-        heading:
-          heading: 'Our Exhibition Sectors'
-          subheading: 'Explore the 11 diverse sectors that make up the International Hunting & Equestrian Exhibition - Al Ain 2025, offering something for enthusiasts and professionals alike.'
-          focus_icon: false
-          heading_focus_word: 'Exhibition Focus'
-          icon: null
-        sectors:
-          -
-            id: mab5jjqp
-            type: sector
-            enabled: true
-            title: 'Hunting & Camping Equipment'
-            link: '#equipment'
-            image: sectors/outside-camping.jpg
-          -
-            id: mab5k5yw
-            type: sector
-            enabled: true
-            title: 'Outdoor Recreation Vehicles'
-            link: '#vehicles'
-            image: sectors/v4x4-tent-equipments.jpg
-          -
-            id: magf3osd
-            type: sector
-            enabled: true
-            title: RVs
-            link: '#rvs'
-            image: sectors/camping-vehicle.jpeg
-          -
-            id: mab5h7bv
-            type: sector
-            enabled: true
-            title: Falconry
-            image: sectors/falcon.jpg
-            link: '#falconry'
-          -
-            id: mab5hpd7
-            type: sector
-            enabled: true
-            title: Equestrian
-            link: '#equestrian'
-            image: sectors/horse.jpeg
-          -
-            id: mab5i92p
-            type: sector
-            enabled: true
-            title: 'Hunting & Safari Trips'
-            link: '#hunting'
-            image: sectors/gazal.jpg
-          -
-            id: mab5iwmq
-            type: sector
-            enabled: true
-            title: 'Environmental Preservation'
-            link: '#environmental'
-            image: sectors/heritage.jpg
-          -
-            id: mab5ks58
-            type: sector
-            enabled: true
-            title: 'Arts & Handicrafts'
-            link: '#arts'
-            image: sectors/traditional-arts.jpg
-          -
-            id: mab5m19y
-            type: sector
-            enabled: true
-            title: Camels
-            link: '#camels'
-            image: sectors/camels.jpg
-          -
-            id: madin5gp
-            title: Sloughi
-            image: sectors/sloughi.jpg
-            type: sector
-            enabled: true
-          -
-            id: mab5ldeq
-            type: sector
-            enabled: true
-            title: 'Veterinary Products & Services'
-            link: '#veterinary'
-            image: sectors/vet-falcon.jpg
-        show_fact_description: false
+        type: reusable_block
+        entry:
+          - ab350943-ebc0-4207-b60a-edd99a606cbd
   -
     type: set
     attrs:
-      id: mafci64q
+      id: mapcgnu1
       values:
-        type: why_participate
-        heading:
-          heading: 'Why Participate?'
-          subheading: 'Join the International Hunting & Equestrian Exhibition - Al Ain 2025 and enjoy exceptional opportunities to showcase your products and services'
-          focus_icon: false
-          heading_focus_word: 'Join Us'
-          icon: null
-        main_title: 'Be Among the First to Participate in the International Hunting & Equestrian Exhibition - Al Ain 2025'
-        main_subtitle: 'Launch your brand at the biggest and most important event in the Al Ain region'
-        benefits:
-          -
-            id: my2p6xm1
-            icon: users
-            title: '10 Diverse Sectors'
-            description: 'With more than 350 exhibitors and brands from over 6 countries'
-          -
-            id: my2p7btr
-            icon: chart-bar
-            title: 'Expand Your Business Network'
-            description: 'Through new markets with strong purchasing power'
-          -
-            id: my2p8zcw
-            icon: eye
-            title: 'Connect with 15,000+ Visitors'
-            description: 'Expected at the first edition of the exhibition'
-          -
-            id: my2p9e2p
-            icon: sparkles
-            title: 'Extensive Media Coverage'
-            description: 'Enhancing your brand reach and market presence'
-        cta_buttons:
-          -
-            id: mami6gui
-            label: 'Book Your Stand'
-            size: medium
-            color: primary
-            style: filled
-            icon: chevron-right
-            url: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
-            type: button
-            enabled: true
+        type: reusable_block
+        entry:
+          - 307b3fb3-dafc-4ca5-8b48-f9361a6f69f1
   -
     type: set
     attrs:
-      id: mac9k6lp
+      id: maun3kai
       enabled: false
       values:
-        type: gallery
-        heading:
-          heading: Gallery
-          subheading: 'Explore visuals from past exhibitions and get a glimpse of what to expect at the International Hunting & Equestrian Exhibition - Al Ain 2025.'
-          focus_icon: false
-          heading_focus_word: 'Exhibition Highlights'
-          icon: null
-        gallery_items:
-          -
-            id: mac9ldxq
-            type: item
-            enabled: true
-            image: sectors/3e8y1912-scaled.jpg
-            title: 'Falconry Display'
-          -
-            id: mac9m4al
-            type: item
-            enabled: true
-            image: sectors/dsc08182-scaled.jpg
-            title: 'Horse Show'
-          -
-            id: mac9mjpq
-            type: item
-            enabled: true
-            image: sectors/img_5492-scaled.jpg
-            title: 'Hunting Demonstration'
-          -
-            id: mac9n6qy
-            type: item
-            enabled: true
-            image: sectors/dsc08182-scaled.jpg
-            title: 'Environmental Conservation Exhibit'
-          -
-            id: mac9noxl
-            type: item
-            enabled: true
-            image: misc/shutterstock_1111453718-scaled.jpg
-            title: 'Camping Equipment Display'
-          -
-            id: mac9o7m5
-            type: item
-            enabled: true
-            image: sectors/mb60436-scaled.jpg
-            title: 'Equestrian Show'
+        type: reusable_block
+        entry:
+          - 8c9021e1-4ffc-42e6-a3e4-d9bca93065d3
   -
     type: set
     attrs:
-      id: madgpexs
+      id: maune94b
       values:
-        type: activities
-        heading:
-          heading: 'Exhibition Activities'
-          subheading: 'Immerse yourself in a variety of interactive experiences and entertainment at the International Hunting & Equestrian Exhibition - Al Ain 2025'
-          focus_icon: false
-          heading_focus_word: null
-          icon: null
-        main_activities:
-          -
-            id: madgpfr4
-            title: 'Interactive Activities'
-            description: 'Interactive activities in pavilions, workshops, and demonstration areas'
-            icon: user-group
-          -
-            id: madgpg3f
-            title: 'Live Competitions'
-            description: 'Live competitions such as cooking, shooting, and handicrafts'
-            icon: trophy
-          -
-            id: madgphk2
-            title: 'Food & Beverage Village'
-            description: 'Experience culinary delights from traditional cuisines to modern fusion in our dedicated food village'
-            icon: cake
-        featured_activities:
-          -
-            id: madgpimy
-            title: 'Arabic Coffee Competition'
-            image: sectors/dsc08182-scaled.jpg
-          -
-            id: madgpjcm
-            title: 'Traditional Cooking Contest'
-            image: sectors/mb60436-scaled.jpg
-          -
-            id: madgpkcn
-            title: 'Horse Shows for Children'
-            image: sectors/3e8y1912-scaled.jpg
-          -
-            id: madgpldo
-            title: 'Falconry Demonstrations'
-            image: sectors/img_5492-scaled.jpg
-        cta_text: 'Register for Activities'
-        cta_url: '#register'
+        type: reusable_block
+        entry:
+          - d3542e34-4109-478a-9525-8739e1c13af5
   -
     type: set
     attrs:
-      id: maeixta1
+      id: maunthoo
       enabled: false
       values:
-        type: tickets
-        title: 'Get Your Tickets'
-        subtitle: 'TICKETS & PASSES'
-        description: 'Choose from a variety of ticket options to experience the International Hunting & Equestrian Exhibition - Al Ain 2025.'
-        coming_soon: true
-        coming_soon_title: 'Tickets Coming Soon'
-        coming_soon_description: 'We are finalizing our ticket options for the International Hunting & Equestrian Exhibition - Al Ain 2025. Tickets will be available for purchase soon. Please check back soon!'
-        coming_soon_countdown_date: '2025-06-01 09:00:00'
-        coming_soon_form_enabled: false
-        ticket_types:
-          -
-            id: maeixvf8
-            type: ticket
-            enabled: true
-            name: 'Standard Pass'
-            category: 'Adult Admission'
-            price: 'AED 50'
-            featured: false
-            features:
-              -
-                id: maeixwfz
-                text: 'Single-day entry to all exhibition areas'
-              -
-                id: maeixxgt
-                text: 'Access to all demonstrations and displays'
-              -
-                id: maeixye7
-                text: 'Free exhibition guide'
-              -
-                id: maeixzf0
-                text: 'Access to food and beverage outlets'
-            button_text: 'Buy Standard Pass'
-            button_url: '#buy-standard'
-          -
-            id: maeiy0ec
-            type: ticket
-            enabled: true
-            name: 'VIP Experience'
-            category: 'Premium Access'
-            price: 'AED 150'
-            price_suffix: 'per person'
-            featured: true
-            features:
-              -
-                id: maeiy1e4
-                text: 'Single-day entry with priority access'
-              -
-                id: maeiy2e7
-                text: 'Exclusive access to VIP lounge'
-              -
-                id: maeiy3e8
-                text: 'Complimentary refreshments'
-              -
-                id: maeiy4f5
-                text: 'Guided tour with exhibition experts'
-              -
-                id: maeiy5g0
-                text: 'Reserved seating for special events'
-              -
-                id: maeiy6gy
-                text: 'Exclusive gift bag'
-            button_text: 'Buy VIP Experience'
-            button_url: '#buy-vip'
-          -
-            id: maeiy7h1
-            type: ticket
-            enabled: true
-            name: 'Family Package'
-            category: 'Family Admission'
-            price: 'AED 120'
-            featured: false
-            features:
-              -
-                id: maeiy8hm
-                text: 'Entry for 2 adults and 2 children (under 12)'
-              -
-                id: maeiy9ii
-                text: 'Access to all exhibition areas'
-              -
-                id: maeiyajj
-                text: 'Special family activities'
-              -
-                id: maeiyakh
-                text: 'Discounted meals at select outlets'
-              -
-                id: maeiylj8
-                text: 'Family photo opportunity with falcons'
-            button_text: 'Buy Family Package'
-            button_url: '#buy-family'
+        type: reusable_block
+        entry:
+          - 189cb780-fd09-4831-bdcd-c022fa861da2
   -
     type: set
     attrs:
-      id: maehwt63
+      id: mauokcx3
       values:
-        type: book_your_stand
-        title: 'Book Your Stand'
-        description: 'Secure your place at the inaugural International Hunting & Equestrian Exhibition - Al Ain 2025. Contact our sales team today to explore available exhibition spaces and partnership opportunities. Our team will guide you through the process and help you maximize your exhibition experience.'
-        image: misc/shutterstock_1111453718-scaled.jpg
-        contacts:
-          -
-            id: maf8q1c8
-            type: contact
-            enabled: true
-            phone_number: '+971 2 406 3593'
-            email: khaled.taha@adnec.ae
-          -
-            id: maf8q2d9
-            type: contact
-            enabled: true
-            phone_number: '+971 2 406 3594'
-            email: bilal.adada@adnec.ae
-          -
-            id: mamfxssj
-            type: contact
-            enabled: true
-            phone_number: '+971 2 406 3245'
-            email: sara.aljaberi@adnec.ae
+        type: reusable_block
+        entry:
+          - 96d67b24-84cb-4e38-8dc7-e8833cbc5ed7
   -
     type: paragraph
     attrs:

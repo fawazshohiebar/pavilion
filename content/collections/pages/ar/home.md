@@ -6,475 +6,76 @@ page_builder:
   -
     type: set
     attrs:
-      id: mab2pvkr
+      id: mapb3fbo
       values:
-        type: hero
-        heading: 'إطلاق النسخة الأولى من <span>المعرض الدولي للصيد والفروسية</span> - العين 2025'
-        icons:
-          -
-            id: mab2w0r4
-            icon: map-pin
-            label: 'مركز أدنيك العين'
-            link: 'https://maps.app.goo.gl/WizsELNyd5P8N5qj8'
-          -
-            id: mab2whla
-            icon: calendar-days
-            label: '26 - 30 نوفمبر 2025'
-        hero_actions:
-          -
-            id: mab2wp5q
-            size: medium
-            color: primary
-            style: filled
-            type: button
-            enabled: true
-            label: 'احجز مكانك اليوم'
-            icon: paper-airplane
-            url: 'entry::9da38cbf-673a-4dee-af4f-f5d561dcc3d4'
-          -
-            id: mab2yq0r
-            size: medium
-            color: light
-            style: outline
-            type: button
-            enabled: false
-            label: 'اشترِ تذكرتك'
-            icon: ticket
-            url: '#tickets'
-        video: /videos/alain-video.webm
+        type: reusable_block
+        entry:
+          - 1da0b009-5464-456d-8cbc-4736b92d7931
   -
     type: set
     attrs:
-      id: mab3jfwq
+      id: mapbduo9
       values:
-        type: about
-        section_label: 'حول المعرض'
-        title: 'المعرض الدولي للصيد والفروسية - العين 2025'
-        description: |-
-          احتفاءً بالإرث العريق للصيد والفروسية، وإبرازًا لمدينة العين كوجهة متميزة للصيد والرياضات الخارجية، وسعيًا للوصول إلى أسواق جديدة ذات قوة شرائية، بهدف توسيع العلامة التجارية للمعرض. أُطلقت النسخة الاولى من المعرض الدولي للصيد والفروسية - العين 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين. 
-
-          يركز المعرض على 11 قطاعاً وهي: معدات الصيد والتخييم، ومركبات ومعدات الترفيه في الهواء الطلق، والبيوت المتنقلة، والصقارة، والفروسية، ورحلات الصيد والسفاري، والحفاظ على البيئة والتراث الثقافي، والفنون والحِرف اليدوية، والجِمال، والسلوقي، والمنتجات والخدمات البيطرية.
-        image: misc/mountain-city-view.jpg
-        badge_text: 'النسخة الأولى'
-        actions:
-          -
-            id: mab3kjf9
-            label: 'احجز مكانك اليوم'
-            url: 'entry::9da38cbf-673a-4dee-af4f-f5d561dcc3d4'
-            size: medium
-            color: primary
-            style: filled
-            icon: paper-airplane
-            type: button
-            enabled: true
-          -
-            id: mab3m0ur
-            label: 'اشترِ تذكرتك'
-            url: '#tickets'
-            size: medium
-            color: primary
-            style: outline
-            icon: ticket
-            type: button
-            enabled: false
+        type: reusable_block
+        entry:
+          - 39f8c616-eb93-4ada-9310-0e1f4b0b324b
   -
     type: set
     attrs:
-      id: macfpexs
+      id: mapbqlao
       values:
-        type: facts
-        heading:
-          heading: 'المتوقع من المعرض'
-          subheading: null
-          focus_icon: true
-          heading_focus_word: null
-          icon: sparkles
-        stats:
-          -
-            id: macfpfr4
-            value: '15000'
-            label: 'عدد الزوار'
-            icon: users
-          -
-            id: macfpg3f
-            value: '6'
-            label: 'دول مشاركة'
-            icon: globe-alt
-          -
-            id: macfphk2
-            value: '12000'
-            label: 'مساحة المعرض (m²)'
-            icon: map
-          -
-            id: macfpimy
-            value: '350'
-            label: 'عارض وعلامات تجارية'
-            icon: building-storefront
+        type: reusable_block
+        entry:
+          - e955ebf9-b57f-4438-9219-b44ef9f10681
   -
     type: set
     attrs:
-      id: my2p1rt7
+      id: mapc76ng
       values:
-        type: why_participate
-        heading:
-          heading: 'لماذا تشارك؟'
-          subheading: 'انضم إلى المعرض الدولي للصيد والفروسية - العين 2025 واستمتع بفرص استثنائية لعرض منتجاتك وخدماتك'
-          focus_icon: false
-          heading_focus_word: 'شارك معنا'
-          icon: null
-        main_title: 'كن من الأوائل وشارك اليوم في المعرض الدولي للصيد والفروسية - العين 2025'
-        main_subtitle: 'أطلق علامتك التجارية في الحدث الأكبر والأهم في منطقة العين'
-        cta_enabled: true
-        cta_text: 'سجل الآن'
-        cta_url: '#stand'
-        benefits:
-          -
-            id: my2p2xm1
-            icon: users
-            title: '11 قطاعاً متنوعاً'
-            description: 'يشارك فيها مايزيد عن 350 عارض وعلامة تجارية من أكثر من 6 دول'
-          -
-            id: my2p3btr
-            icon: chart-bar
-            title: 'توسيع شبكتك التجارية'
-            description: 'من خلال أسواق جديدة ذات قوة شرائية'
-          -
-            id: my2p3zcw
-            icon: eye
-            title: 'تواصل مع أكثر من 15،000 زائر'
-            description: 'متوقع في نسخة المعرض الأولى'
-          -
-            id: my2p4e2p
-            icon: sparkles
-            title: 'مشاركة وتغطية إعلامية واسعة'
-            description: 'تعزز من انتشار علامتك التجارية وتواجدك في السوق'
-        secondary_cta_enabled: true
-        secondary_cta_text: 'تواصل معنا للمزيد من المعلومات'
-        secondary_cta_url: '#stand'
-        cta_buttons:
-          -
-            id: mami0btv
-            label: 'احجز مكانك اليوم'
-            size: medium
-            color: primary
-            style: filled
-            icon: chevron-left
-            url: 'entry::9da38cbf-673a-4dee-af4f-f5d561dcc3d4'
-            type: button
-            enabled: true
+        type: reusable_block
+        entry:
+          - ab350943-ebc0-4207-b60a-edd99a606cbd
   -
     type: set
     attrs:
-      id: macjkw62
+      id: mapcgnu1
       values:
-        type: sectors
-        heading:
-          heading: 'قطاعات المعرض'
-          subheading: 'استكشف القطاعات المتنوعة التي يضمها المعرض الدولي للصيد والفروسية - العين، والتي تقدم ما يناسب الهواة والمحترفين على حد سواء'
-          focus_icon: true
-          heading_focus_word: null
-          icon: squares-2x2
-        sectors:
-          -
-            id: mab5jjqp
-            type: sector
-            enabled: true
-            title: 'معدات الصيد والتخييم'
-            link: '#equipment'
-            image: sectors/outside-camping.jpg
-          -
-            id: mab5k5yw
-            type: sector
-            enabled: true
-            title: 'مركبات ومعدات الترفيه في الهواء الطلق'
-            link: '#vehicles'
-            image: sectors/v4x4-tent-equipments.jpg
-          -
-            id: magf3osd
-            type: sector
-            enabled: true
-            title: 'البيوت المتنقلة'
-            link: '#vehicles'
-            image: sectors/camping-vehicle.jpeg
-          -
-            id: mab5h7bv
-            type: sector
-            enabled: true
-            title: الصقارة
-            image: sectors/falcon.jpg
-            link: '#falconry'
-          -
-            id: mab5hpd7
-            type: sector
-            enabled: true
-            title: الفروسية
-            link: '#equestrian'
-            image: sectors/horse.jpeg
-          -
-            id: mab5i92p
-            type: sector
-            enabled: true
-            title: 'رحلات الصيد والسفاري'
-            link: '#hunting'
-            image: sectors/gazal.jpg
-          -
-            id: mab5iwmq
-            type: sector
-            enabled: true
-            title: 'الحفاظ على البيئة والتراث الثقافي'
-            link: '#environmental'
-            image: sectors/heritage.jpg
-          -
-            id: mab5ks58
-            type: sector
-            enabled: true
-            title: 'الفنون والحِرف اليدوية'
-            link: '#arts'
-            image: sectors/traditional-arts.jpg
-          -
-            id: mab5m19y
-            type: sector
-            enabled: true
-            title: الجِمال
-            link: '#camels'
-            image: sectors/camels.jpg
-          -
-            id: madin5gp
-            title: السلوقي
-            image: sectors/sloughi.jpg
-            type: sector
-            enabled: true
-          -
-            id: mab5ldeq
-            type: sector
-            enabled: true
-            title: 'المنتجات والخدمات البيطرية'
-            link: '#veterinary'
-            image: sectors/vet-falcon.jpg
-        show_fact_description: false
+        type: reusable_block
+        entry:
+          - 307b3fb3-dafc-4ca5-8b48-f9361a6f69f1
   -
     type: set
     attrs:
-      id: mac9k6lp
+      id: maun3kai
       enabled: false
       values:
-        type: gallery
-        heading:
-          heading: الصور
-          subheading: 'استعرض الصور من المعارض السابقة وتعرّف على لمحة مما يمكن توقّعه في المعرض الدولي للصيد والفروسية - العين 2025.'
-          focus_icon: false
-          heading_focus_word: 'أبرز معالم المعرض'
-          icon: null
-        gallery_items:
-          -
-            id: mac9ldxq
-            type: item
-            enabled: true
-            image: sectors/3e8y1912-scaled.jpg
-            title: 'Falconry Display'
-          -
-            id: mac9m4al
-            type: item
-            enabled: true
-            image: sectors/dsc08182-scaled.jpg
-            title: 'Horse Show'
-          -
-            id: mac9mjpq
-            type: item
-            enabled: true
-            image: sectors/img_5492-scaled.jpg
-            title: 'Hunting Demonstration'
-          -
-            id: mac9n6qy
-            type: item
-            enabled: true
-            image: sectors/dsc08182-scaled.jpg
-            title: 'Environmental Conservation Exhibit'
-          -
-            id: mac9noxl
-            type: item
-            enabled: true
-            image: misc/shutterstock_1111453718-scaled.jpg
-            title: 'Camping Equipment Display'
-          -
-            id: mac9o7m5
-            type: item
-            enabled: true
-            image: sectors/mb60436-scaled.jpg
-            title: 'Equestrian Show'
+        type: reusable_block
+        entry:
+          - 8c9021e1-4ffc-42e6-a3e4-d9bca93065d3
   -
     type: set
     attrs:
-      id: madhpytk
+      id: maune94b
       values:
-        type: activities
-        heading:
-          heading: 'نشاطات المعرض'
-          subheading: 'انغمس في مجموعة متنوعة من التجارب التفاعلية والترفيه في المعرض الدولي للصيد والفروسية - العين'
-          focus_icon: false
-          heading_focus_word: null
-          icon: null
-        main_activities:
-          -
-            id: madhqcmp
-            title: 'النشاطات التفاعلية'
-            description: 'النشاطات التفاعلية في الأجنحة، وورش العمل، ومناطق العروض التوضيحية'
-            icon: user-group
-            image: sectors/3e8y1912-scaled.jpg
-          -
-            id: madhqdnp
-            title: 'المنافسات الحية'
-            description: 'منافسات حية مثل الطهي، والرماية، والحرف اليدوية'
-            icon: trophy
-            image: sectors/img_5492-scaled.jpg
-          -
-            id: madhqep3
-            title: 'قرية المأكولات والمشروبات'
-            description: 'استمتع بالمأكولات من المطابخ التقليدية إلى الطهي الحديث في قرية الطعام المخصصة'
-            icon: cake
-            image: sectors/coffice.jpg
-        featured_activities:
-          -
-            id: madhqgv4
-            title: 'مسابقة تحضير القهوة العربية للصغار'
-            image: sectors/dsc08182-scaled.jpg
-          -
-            id: madhqhsw
-            title: 'مسابقة طهاة المأكولات الشعبية'
-            image: sectors/mb60436-scaled.jpg
-          -
-            id: madhqitk
-            title: 'عروض الخيل الترفيهية وركوب الخيل للأطفال'
-            image: sectors/3e8y1912-scaled.jpg
-          -
-            id: madhqjqw
-            title: 'عروض التلواح'
-            image: sectors/img_5492-scaled.jpg
-        cta_text: 'سجل للأنشطة'
-        cta_url: '#register'
+        type: reusable_block
+        entry:
+          - d3542e34-4109-478a-9525-8739e1c13af5
   -
     type: set
     attrs:
-      id: maeixta2
-      enabled: false
+      id: maunthoo
       values:
-        type: tickets
-        title: 'اشترِ تذكرتك'
-        subtitle: 'التذاكر والباقات'
-        description: 'اختر من بين مجموعة متنوعة من خيارات التذاكر لتجربة المعرض الدولي للصيد والفروسية - العين 2025.'
-        coming_soon: true
-        coming_soon_title: 'التذاكر قريباً'
-        coming_soon_description: 'نحن نعمل على وضع اللمسات الأخيرة على خيارات التذاكر لالمعرض الدولي للصيد والفروسية - العين 2025.'
-        coming_soon_countdown_date: '2025-06-02 10:00:00'
-        coming_soon_form_enabled: false
-        ticket_types:
-          -
-            id: maeixvf9
-            type: ticket
-            enabled: true
-            name: 'تذكرة قياسية'
-            category: 'دخول للكبار'
-            price: '50 د.إ'
-            featured: false
-            features:
-              -
-                id: maeixwg0
-                text: 'دخول ليوم واحد إلى جميع مناطق المعرض'
-              -
-                id: maeixxgt
-                text: 'الوصول إلى جميع العروض التوضيحية والمعروضات'
-              -
-                id: maeixye8
-                text: 'دليل المعرض المجاني'
-              -
-                id: maeixzf1
-                text: 'الوصول إلى منافذ الطعام والشراب'
-            button_text: 'اشترِ التذكرة القياسية'
-            button_url: '#buy-standard'
-          -
-            id: maeiy0ed
-            type: ticket
-            enabled: true
-            name: 'تجربة VIP'
-            category: 'وصول متميز'
-            price: '150 د.إ'
-            price_suffix: للشخص
-            featured: true
-            features:
-              -
-                id: maeiy1e5
-                text: 'دخول ليوم واحد مع أولوية الوصول'
-              -
-                id: maeiy2e8
-                text: 'وصول حصري إلى صالة كبار الشخصيات'
-              -
-                id: maeiy3e9
-                text: 'مرطبات مجانية'
-              -
-                id: maeiy4f6
-                text: 'جولة مع خبراء المعرض'
-              -
-                id: maeiy5g1
-                text: 'أماكن محجوزة للفعاليات الخاصة'
-              -
-                id: maeiy6gz
-                text: 'حقيبة هدايا حصرية'
-            button_text: 'اشترِ تجربة VIP'
-            button_url: '#buy-vip'
-          -
-            id: maeiy7h2
-            type: ticket
-            enabled: true
-            name: 'باقة العائلة'
-            category: 'دخول للعائلات'
-            price: '120 د.إ'
-            featured: false
-            features:
-              -
-                id: maeiy8hn
-                text: 'دخول لشخصين بالغين وطفلين (دون 12 عامًا)'
-              -
-                id: maeiy9ij
-                text: 'الوصول إلى جميع مناطق المعرض'
-              -
-                id: maeiyajk
-                text: 'أنشطة عائلية خاصة'
-              -
-                id: maeiyaki
-                text: 'وجبات مخفضة في منافذ مختارة'
-              -
-                id: maeiylj9
-                text: 'فرصة للتصوير العائلي مع الصقور'
-            button_text: 'اشترِ باقة العائلة'
-            button_url: '#buy-family'
+        type: reusable_block
+        entry:
+          - 189cb780-fd09-4831-bdcd-c022fa861da2
   -
     type: set
     attrs:
-      id: maehwt64
+      id: mauokcx3
       values:
-        type: book_your_stand
-        title: 'احجز مكانك اليوم'
-        description: 'احجز مكانك في النسخة الأولى من المعرض الدولي للصيد والفروسية - العين 2025. تواصل مع فريق المبيعات لدينا اليوم لاستكشاف مساحات العرض المتاحة وفرص الشراكة. سيرشدك فريقنا خلال العملية ويساعدك على تحقيق أقصى استفادة من تجربة العرض الخاصة بك.'
-        image: misc/shutterstock_1111453718-scaled.jpg
-        contacts:
-          -
-            id: maf8q1c8
-            type: contact
-            enabled: true
-            phone_number: '+971 2 406 3593'
-            email: khaled.taha@adnec.ae
-          -
-            id: maf8q2d9
-            type: contact
-            enabled: true
-            phone_number: '+971 2 406 3594'
-            email: bilal.adada@adnec.ae
-          -
-            id: mamfxssj
-            type: contact
-            enabled: true
-            phone_number: '+971 2 406 3245'
-            email: sara.aljaberi@adnec.ae
+        type: reusable_block
+        entry:
+          - 96d67b24-84cb-4e38-8dc7-e8833cbc5ed7
   -
     type: paragraph
     attrs:
@@ -484,5 +85,5 @@ fine_seo_is_title_custom: true
 fine_seo_description: 'إطلاق النسخة الاولى من المعرض الدولي للصيد والفروسية - العين 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين.'
 fine_seo_preview: الرئيسية
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747140043
+updated_at: 1747635187
 ---

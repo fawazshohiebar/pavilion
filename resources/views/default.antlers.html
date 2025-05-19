@@ -1,24 +1,25 @@
 {{# Elegant inner page header with beautiful breadcrumbs - more compact and left-aligned #}}
 {{ if url != '/' && url != site:url }}
-{{ partial:innert_page_heading }}
+    {{ partial:innert_page_heading }}
 {{ /if }}
-
 {{# Page content #}}
 {{# Page Builder Content #}}
 {{ page_builder }}
-{{ if type === 'reusable' }}
-    {{ entry }}
-        {{ partial:if_exists src="sets/{blueprint}" }}
-    {{ /entry }}
-{{ elseif type === 'text' }}
-    <div class="prose prose-lg max-w-none">
-        {{ text }}
-    </div>
-{{ elseif type === 'html_block' }}
-    {{ code }}
-{{ elseif type === 'embed' }}
-    {{ partial :src="embed_template" /}}
-{{ else }}
-    {{ partial:if_exists src="sets/{type}" }}
-{{ /if }}
+    {{ if type === 'reusable_block' }}
+        {{ entry }}
+            {{ partial:if_exists src="sets/{blueprint}" }}
+        {{ /entry }}
+    {{ elseif type === 'text' }}
+        <div class="prose prose-lg max-w-none">
+            {{ text }}
+        </div>
+    {{ elseif type === 'html_block' }}
+        {{ code }}
+    {{ elseif type === 'embed' }}
+        {{ partial :src="embed_template" /}}
+    {{ elseif type=='activities' }}
+        {{ partial:if_exists src="sets/activities_text" }}
+    {{ else }}
+        {{ partial:if_exists src="sets/{type}" }}
+    {{ /if }}
 {{ /page_builder }}

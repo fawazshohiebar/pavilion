@@ -193,730 +193,72 @@ fields:
           display: Landing
           icon: addon-boxes-stack
           sets:
+            reusable_block:
+              display: 'Reusable Block'
+              icon: addon-boxes-stack
+              fields:
+                -
+                  handle: entry
+                  field:
+                    collections:
+                      - reusables
+                    type: entries
+                    display: Entry
+                    localizable: false
             hero:
               display: Hero
               icon: align-object-center
               fields:
                 -
-                  handle: heading
-                  field:
-                    type: text
-                    display: Heading
-                    localizable: false
-                -
-                  handle: subheading
-                  field:
-                    type: text
-                    display: Subheading
-                    localizable: false
-                -
-                  handle: video
-                  field:
-                    type: text
-                    display: Video
-                    instructions: 'Can you URL or YouTube ID'
-                    localizable: false
-                -
-                  handle: icons
-                  field:
-                    type: grid
-                    display: Icons
-                    localizable: false
-                    fields:
-                      -
-                        handle: icon
-                        field: basics.icon
-                        config:
-                          width: 33
-                      -
-                        handle: label
-                        field:
-                          type: text
-                          display: Label
-                          localizable: false
-                          width: 33
-                      -
-                        handle: link
-                        field:
-                          type: link
-                          display: Link
-                          localizable: false
-                          width: 33
-                -
-                  handle: hero_actions
-                  field: basics.button_group
-                  config:
-                    display: 'Hero Actions'
-                    width: 100
+                  import: reusable_hero
             about:
               display: About
               icon: text-box-multiple
               fields:
                 -
-                  handle: section_label
-                  field:
-                    type: text
-                    display: 'Section Label'
-                    localizable: false
-                    width: 33
-                -
-                  handle: title
-                  field:
-                    type: text
-                    display: Title
-                    localizable: false
-                    width: 66
-                -
-                  handle: description
-                  field:
-                    buttons:
-                      - bold
-                      - italic
-                      - unorderedlist
-                      - orderedlist
-                      - quote
-                      - link
-                      - table
-                      - strikethrough
-                    type: markdown
-                    display: Description
-                    localizable: false
-                -
-                  handle: image
-                  field:
-                    container: assets
-                    max_files: 1
-                    type: assets
-                    display: Image
-                    localizable: false
-                    width: 33
-                -
-                  handle: badge_text
-                  field:
-                    type: text
-                    display: 'Badge Text'
-                    instructions: 'The text to show in the badge overlay on the image (e.g. "1st")'
-                    localizable: false
-                    width: 33
-                -
-                  handle: badge_subtext
-                  field:
-                    type: text
-                    display: 'Badge Subtext'
-                    instructions: 'Smaller text below the main badge text (e.g. "Edition")'
-                    localizable: false
-                    width: 33
-                -
-                  handle: actions
-                  field: basics.button_group
-                  config:
-                    display: Actions
-                    width: 100
-            book_your_stand:
+                  import: reusable_media_with_cta
+            contact_team:
               display: 'Book Your Stand'
               icon: document-text
               fields:
                 -
-                  handle: title
-                  field:
-                    type: text
-                    display: Title
-                    localizable: true
-                    instructions: 'Main heading for the booking section'
-                -
-                  handle: description
-                  field:
-                    type: textarea
-                    display: Description
-                    localizable: true
-                    instructions: 'Main text content for the booking section'
-                -
-                  handle: image
-                  field:
-                    container: assets
-                    max_files: 1
-                    type: assets
-                    display: Image
-                    localizable: false
-                    instructions: 'Background image for the left side of the section'
-                -
-                  handle: contacts
-                  field:
-                    type: replicator
-                    display: 'Sales Contacts'
-                    localizable: true
-                    instructions: 'Add one or more sales contact persons'
-                    sets:
-                      contact:
-                        display: 'Contact Person'
-                        fields:
-                          -
-                            handle: name
-                            field:
-                              type: text
-                              display: 'Contact Name'
-                              localizable: true
-                              instructions: 'Name or title of the contact person'
-                              width: 100
-                          -
-                            handle: phone_number
-                            field:
-                              type: text
-                              display: 'Phone Number'
-                              localizable: false
-                              instructions: 'Contact phone number with international code'
-                              width: 50
-                          -
-                            handle: email
-                            field:
-                              type: text
-                              display: 'Email Address'
-                              localizable: false
-                              instructions: 'Contact email address'
-                              width: 50
-                -
-                  handle: business_hours_title
-                  field:
-                    type: text
-                    display: 'Business Hours Title'
-                    localizable: true
-                    instructions: 'Title for business hours section (e.g. "Business Hours")'
-                    width: 50
-                -
-                  handle: business_hours_days
-                  field:
-                    type: text
-                    display: 'Business Days'
-                    localizable: true
-                    instructions: 'Business days (e.g. "Sunday-Thursday")'
-                    width: 50
-                -
-                  handle: business_hours_time
-                  field:
-                    type: text
-                    display: 'Business Hours Time'
-                    localizable: false
-                    instructions: 'Business hours time (e.g. "8:00 AM - 5:00 PM")'
+                  import: reusable_contact_team
             tickets:
               display: Tickets
               icon: ticket
               fields:
                 -
-                  handle: title
-                  field:
-                    type: text
-                    display: Title
-                    localizable: true
-                    instructions: 'Main heading for the tickets section'
-                -
-                  handle: subtitle
-                  field:
-                    type: text
-                    display: Subtitle
-                    localizable: true
-                    instructions: 'Smaller text displayed above the main title'
-                -
-                  handle: description
-                  field:
-                    type: textarea
-                    display: Description
-                    localizable: true
-                    instructions: 'Brief description about ticket options'
-                -
-                  handle: coming_soon
-                  field:
-                    type: toggle
-                    display: 'Coming Soon Mode'
-                    instructions: 'Toggle to show a "Coming Soon" message instead of ticket pricing'
-                    width: 50
-                    localizable: false
-                -
-                  handle: coming_soon_title
-                  field:
-                    type: text
-                    display: 'Coming Soon Title'
-                    localizable: true
-                    instructions: 'Title for the coming soon section (e.g. "Tickets Coming Soon")'
-                    width: 50
-                    if:
-                      coming_soon: 'equals true'
-                -
-                  handle: coming_soon_description
-                  field:
-                    type: textarea
-                    display: 'Coming Soon Description'
-                    localizable: true
-                    instructions: 'Description text for the coming soon section'
-                    if:
-                      coming_soon: 'equals true'
-                -
-                  handle: coming_soon_countdown_date
-                  field:
-                    type: date
-                    display: 'Countdown Date'
-                    localizable: false
-                    instructions: 'Set a date for the countdown timer (leave empty for no countdown)'
-                    time_enabled: true
-                    width: 50
-                    if:
-                      coming_soon: 'equals true'
-                    format: 'Y-m-d H:i:s'
-                -
-                  handle: coming_soon_form_enabled
-                  field:
-                    type: toggle
-                    display: 'Show Notification Form'
-                    instructions: 'Enable to show an email notification form'
-                    width: 50
-                    if:
-                      coming_soon: 'equals true'
-                    localizable: false
-                -
-                  handle: coming_soon_form_text
-                  field:
-                    type: text
-                    display: 'Form Text'
-                    localizable: true
-                    instructions: 'Text above the notification form (e.g. "Get notified when tickets are available")'
-                    if:
-                      coming_soon_form_enabled: 'equals true'
-                      coming_soon: 'equals true'
-                -
-                  handle: coming_soon_form_placeholder
-                  field:
-                    type: text
-                    display: 'Email Placeholder'
-                    localizable: true
-                    instructions: 'Placeholder text for the email input'
-                    width: 50
-                    if:
-                      coming_soon_form_enabled: 'equals true'
-                      coming_soon: 'equals true'
-                -
-                  handle: coming_soon_form_button
-                  field:
-                    type: text
-                    display: 'Button Text'
-                    localizable: true
-                    instructions: 'Text for the form submission button'
-                    width: 50
-                    if:
-                      coming_soon_form_enabled: 'equals true'
-                      coming_soon: 'equals true'
-                -
-                  handle: ticket_types
-                  field:
-                    type: replicator
-                    display: 'Ticket Types'
-                    localizable: true
-                    instructions: 'Define the different types of tickets available'
-                    sets:
-                      ticket:
-                        display: 'Ticket Option'
-                        fields:
-                          -
-                            handle: name
-                            field:
-                              type: text
-                              display: 'Ticket Name'
-                              localizable: true
-                              instructions: 'Name of the ticket type (e.g. Standard, VIP)'
-                              width: 50
-                          -
-                            handle: category
-                            field:
-                              type: text
-                              display: Category
-                              localizable: true
-                              instructions: 'Category label (e.g. Adult, Child, Family)'
-                              width: 50
-                          -
-                            handle: price
-                            field:
-                              type: text
-                              display: Price
-                              localizable: false
-                              instructions: 'Ticket price (e.g. AED 50)'
-                              width: 50
-                          -
-                            handle: price_suffix
-                            field:
-                              type: text
-                              display: 'Price Suffix'
-                              localizable: true
-                              instructions: 'Text to show after price (e.g. per person, per day)'
-                              width: 50
-                          -
-                            handle: featured
-                            field:
-                              type: toggle
-                              display: 'Featured Ticket'
-                              instructions: 'Highlight this ticket option'
-                              width: 100
-                          -
-                            handle: features
-                            field:
-                              type: grid
-                              display: Features
-                              instructions: 'List of features included in this ticket'
-                              min_rows: 1
-                              fields:
-                                -
-                                  handle: text
-                                  field:
-                                    type: text
-                                    display: 'Feature Text'
-                                    localizable: true
-                          -
-                            handle: button_text
-                            field:
-                              type: text
-                              display: 'Button Text'
-                              localizable: true
-                              instructions: 'Text for the ticket purchase button'
-                              width: 50
-                          -
-                            handle: button_url
-                            field:
-                              type: text
-                              display: 'Button URL'
-                              localizable: false
-                              instructions: 'Link for the ticket purchase button'
-                              width: 50
-                -
-                  handle: notes
-                  field:
-                    type: textarea
-                    display: Notes
-                    localizable: true
-                    instructions: 'Optional small text notes about tickets (e.g. terms and conditions)'
-                    if:
-                      coming_soon: 'equals false'
-                -
-                  handle: callout_message
-                  field:
-                    type: text
-                    display: 'Callout Message'
-                    localizable: true
-                    instructions: 'Special message to highlight at the bottom (e.g. group discounts)'
-                    if:
-                      coming_soon: 'equals false'
-                -
-                  handle: callout_button_text
-                  field:
-                    type: text
-                    display: 'Callout Button Text'
-                    localizable: true
-                    instructions: 'Text for the callout button'
-                    width: 50
-                    if:
-                      coming_soon: 'equals false'
-                -
-                  handle: callout_button_url
-                  field:
-                    type: text
-                    display: 'Callout Button URL'
-                    localizable: false
-                    instructions: 'Link for the callout button'
-                    width: 50
-                    if:
-                      coming_soon: 'equals false'
-            facts:
-              display: Facts
+                  import: reusable_tickets
+            facts_figures:
+              display: 'Facts & Figures'
               icon: chart-bar
               fields:
                 -
-                  handle: heading
-                  field: basics.heading_group
-                  config:
-                    display: 'Section Heading'
-                -
-                  handle: stats
-                  field:
-                    type: grid
-                    display: Statistics
-                    localizable: false
-                    min_rows: 1
-                    fields:
-                      -
-                        handle: value
-                        field:
-                          type: text
-                          display: Value
-                          localizable: false
-                          instructions: 'The numeric value to display (e.g. "15,000")'
-                          width: 25
-                      -
-                        handle: label
-                        field:
-                          type: text
-                          display: Label
-                          localizable: false
-                          instructions: 'The label for this statistic (e.g. "Number of Visitors")'
-                          width: 50
-                      -
-                        handle: icon
-                        field: basics.icon
-                        config:
-                          width: 25
-                          instructions: 'Icon to display with this statistic'
+                  import: reusable_facts_figures
             activities:
               display: Activities
               icon: ticket
               fields:
                 -
-                  handle: heading
-                  field: basics.heading_group
-                  config:
-                    display: 'Section Heading'
-                -
-                  handle: main_activities
-                  field:
-                    type: grid
-                    display: 'Main Activities'
-                    localizable: false
-                    min_rows: 1
-                    fields:
-                      -
-                        handle: title
-                        field:
-                          type: text
-                          display: Title
-                          localizable: false
-                          width: 25
-                      -
-                        handle: description
-                        field:
-                          type: text
-                          display: Description
-                          localizable: false
-                          width: 25
-                      -
-                        handle: icon
-                        field: basics.icon
-                        config:
-                          width: 15
-                          instructions: 'Icon to display with this activity'
-                      -
-                        handle: image
-                        field:
-                          container: assets
-                          restrict: false
-                          allow_uploads: true
-                          max_files: 1
-                          type: assets
-                          display: Image
-                          localizable: false
-                          width: 35
-                -
-                  handle: featured_activities
-                  field:
-                    type: grid
-                    display: 'Featured Activities'
-                    localizable: false
-                    min_rows: 1
-                    fields:
-                      -
-                        handle: title
-                        field:
-                          type: text
-                          display: Title
-                          localizable: false
-                          width: 33
-                      -
-                        handle: description
-                        field:
-                          type: text
-                          display: Description
-                          localizable: false
-                          width: 33
-                      -
-                        handle: image
-                        field:
-                          container: assets
-                          restrict: false
-                          allow_uploads: true
-                          max_files: 1
-                          type: assets
-                          display: Image
-                          localizable: false
-                          width: 33
-                -
-                  handle: cta_text
-                  field:
-                    type: text
-                    display: 'Call to Action Text'
-                    localizable: false
-                    width: 50
-                -
-                  handle: cta_url
-                  field:
-                    type: text
-                    display: 'Call to Action URL'
-                    localizable: false
-                    width: 50
+                  import: reusable_activities
             gallery:
               display: Gallery
               icon: photo
               fields:
                 -
-                  handle: heading
-                  field: basics.heading_group
-                  config:
-                    display: 'Section Heading'
-                -
-                  handle: gallery_items
-                  field:
-                    type: replicator
-                    display: 'Gallery Items'
-                    localizable: false
-                    sets:
-                      item:
-                        display: 'Gallery Item'
-                        fields:
-                          -
-                            handle: image
-                            field:
-                              container: assets
-                              restrict: false
-                              allow_uploads: true
-                              max_files: 1
-                              type: assets
-                              display: Image
-                              localizable: false
-                              instructions: 'Image for the gallery'
-                              width: 100
-                          -
-                            handle: title
-                            field:
-                              type: text
-                              display: Title
-                              localizable: false
-                              instructions: 'Optional title for the image (used for alt text)'
-            sectors:
-              display: Sectors
+                  import: reusable_gallery_with_heading
+            image_grid_with_heading:
+              display: 'Sectors (Image Grid)'
               icon: categories
               fields:
                 -
-                  handle: heading
-                  field: basics.heading_group
-                  config:
-                    display: 'Section Heading'
-                -
-                  handle: show_fact_description
-                  field:
-                    default: true
-                    type: toggle
-                    display: 'Show Fact Description'
-                    localizable: false
-                -
-                  handle: sectors
-                  field:
-                    type: replicator
-                    display: Sectors
-                    localizable: false
-                    sets:
-                      main:
-                        display: Main
-                        sets:
-                          sector:
-                            display: Sector
-                            fields:
-                              -
-                                handle: title
-                                field:
-                                  type: text
-                                  display: Title
-                                  localizable: false
-                              -
-                                handle: description
-                                field:
-                                  type: textarea
-                                  display: Description
-                                  localizable: false
-                              -
-                                handle: image
-                                field:
-                                  container: assets
-                                  max_files: 1
-                                  type: assets
-                                  display: Image
-                                  localizable: false
-                              -
-                                handle: link
-                                field:
-                                  type: link
-                                  display: Link
-                                  localizable: false
-                                  instructions: 'Optional link to make the sector card clickable'
+                  import: reusable_image_grid_with_heading
             why_participate:
               display: 'Why Participate'
               icon: hand-raised
               fields:
                 -
-                  handle: heading
-                  field: basics.heading_group
-                  config:
-                    display: 'Section Heading'
-                -
-                  handle: main_title
-                  field:
-                    type: text
-                    display: 'Main Call to Action Title'
-                    localizable: true
-                    instructions: 'The title of the main call to action section'
-                -
-                  handle: main_subtitle
-                  field:
-                    type: text
-                    display: 'Main Call to Action Subtitle'
-                    localizable: true
-                    instructions: 'The subtitle or description for the main call to action'
-                -
-                  handle: cta_buttons
-                  field: basics.button_group
-                  config:
-                    display: 'CTA Buttons'
-                    width: 100
-                -
-                  handle: benefits
-                  field:
-                    type: grid
-                    display: 'Benefits & Features'
-                    min_rows: 1
-                    add_row: 'Add Benefit'
-                    localizable: true
-                    fields:
-                      -
-                        handle: icon
-                        field:
-                          options:
-                            - users
-                            - chart-bar
-                            - eye
-                            - sparkles
-                            - globe-alt
-                            - shield-check
-                            - trophy
-                            - arrows-right-left
-                          type: select
-                          display: Icon
-                          width: 25
-                      -
-                        handle: title
-                        field:
-                          type: text
-                          display: Title
-                          localizable: true
-                          width: 25
-                      -
-                        handle: description
-                        field:
-                          type: text
-                          display: Description
-                          localizable: true
-                          width: 50
-                
+                  import: reusable_why_participate
         forms:
           display: Forms
           icon: form-drop-down-menu
@@ -928,6 +270,17 @@ fields:
               fields:
                 -
                   import: form_box
+        typography:
+          display: Typography
+          icon: text-formatting-all-caps
+          sets:
+            heading_group:
+              display: 'Heading Group'
+              icon: text-formatting-all-caps
+              fields:
+                -
+                  handle: heading
+                  field: basics.heading_group
   -
     handle: heading_group
     field:

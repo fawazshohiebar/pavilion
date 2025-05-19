@@ -1,0 +1,80 @@
+title: 'Reusable Activities'
+fields:
+  -
+    handle: heading
+    field: basics.heading_group
+    config:
+      display: 'Section Heading'
+      localizable: true
+  -
+    handle: main_activities
+    field:
+      type: grid
+      display: 'Main Activities'
+      localizable: true
+      min_rows: 1
+      fields:
+        -
+          handle: title
+          field:
+            type: text
+            display: Title
+            localizable: false
+            width: 25
+        -
+          handle: description
+          field:
+            type: text
+            display: Description
+            localizable: false
+            width: 25
+        -
+          handle: icon
+          field: basics.icon
+          config:
+            width: 15
+            instructions: 'Icon to display with this activity'
+        -
+          handle: image
+          field:
+            container: assets
+            restrict: false
+            allow_uploads: true
+            max_files: 1
+            type: assets
+            display: Image
+            localizable: false
+            width: 35
+  -
+    handle: featured_activities
+    field:
+      type: grid
+      display: 'Featured Activities'
+      localizable: true
+      min_rows: 1
+      fields:
+        -
+          handle: title
+          field:
+            type: text
+            display: Title
+            localizable: false
+            width: 33
+        -
+          handle: description
+          field:
+            type: text
+            display: Description
+            localizable: false
+            width: 33
+        -
+          handle: image
+          field:
+            container: assets
+            restrict: false
+            allow_uploads: true
+            max_files: 1
+            type: assets
+            display: Image
+            localizable: false
+            width: 33

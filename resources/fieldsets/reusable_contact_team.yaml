@@ -1,0 +1,83 @@
+title: 'Reusable Contact Team'
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+      localizable: true
+      instructions: 'Main heading for the booking section'
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+      localizable: true
+      instructions: 'Main text content for the booking section'
+  -
+    handle: image
+    field:
+      container: assets
+      max_files: 1
+      type: assets
+      display: Image
+      localizable: false
+      instructions: 'Background image for the left side of the section'
+  -
+    handle: contacts
+    field:
+      type: replicator
+      display: 'Sales Contacts'
+      localizable: true
+      instructions: 'Add one or more sales contact persons'
+      sets:
+        contact:
+          display: 'Contact Person'
+          fields:
+            -
+              handle: name
+              field:
+                type: text
+                display: 'Contact Name'
+                localizable: true
+                instructions: 'Name or title of the contact person'
+                width: 100
+            -
+              handle: phone_number
+              field:
+                type: text
+                display: 'Phone Number'
+                localizable: false
+                instructions: 'Contact phone number with international code'
+                width: 50
+            -
+              handle: email
+              field:
+                type: text
+                display: 'Email Address'
+                localizable: false
+                instructions: 'Contact email address'
+                width: 50
+  -
+    handle: business_hours_title
+    field:
+      type: text
+      display: 'Business Hours Title'
+      localizable: true
+      instructions: 'Title for business hours section (e.g. "Business Hours")'
+      width: 50
+  -
+    handle: business_hours_days
+    field:
+      type: text
+      display: 'Business Days'
+      localizable: true
+      instructions: 'Business days (e.g. "Sunday-Thursday")'
+      width: 50
+  -
+    handle: business_hours_time
+    field:
+      type: text
+      display: 'Business Hours Time'
+      localizable: false
+      instructions: 'Business hours time (e.g. "8:00 AM - 5:00 PM")'

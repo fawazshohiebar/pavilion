@@ -6,12 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {{ partial:favicon /}}
         {{ partial:fonts /}}
+        {{ partial:tracking_scripts_head /}}
         {{ partial:fine-seo::components/meta /}}
         <link rel="stylesheet" href="https://use.typekit.net/slb6fmc.css">
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
     </head>
     <body class="leading-normal text-gray-800 antialiased {{ site:short_locale === 'ar' ? 'font-noto' : 'font-mont' }}">
-        <!-- Header (includes patronage banner) -->
+        {{ partial:tracking_scripts_body /}}
+        {{# Header (includes patronage banner) #}}
         {{ partial:partials/header }}
         
         <!-- Main Content -->

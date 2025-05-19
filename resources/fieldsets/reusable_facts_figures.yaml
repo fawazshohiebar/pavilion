@@ -1,0 +1,38 @@
+title: 'Reusable Facts & Figures'
+fields:
+  -
+    handle: heading
+    field: basics.heading_group
+    config:
+      display: 'Section Heading'
+      localizable: true
+  -
+    handle: stats
+    field:
+      type: grid
+      display: Statistics
+      localizable: true
+      min_rows: 1
+      fields:
+        -
+          handle: value
+          field:
+            type: text
+            display: Value
+            localizable: false
+            instructions: 'The numeric value to display (e.g. "15,000")'
+            width: 25
+        -
+          handle: label
+          field:
+            type: text
+            display: Label
+            localizable: false
+            instructions: 'The label for this statistic (e.g. "Number of Visitors")'
+            width: 50
+        -
+          handle: icon
+          field: basics.icon
+          config:
+            width: 25
+            instructions: 'Icon to display with this statistic'

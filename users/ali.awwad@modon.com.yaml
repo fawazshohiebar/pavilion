@@ -6,3 +6,5 @@ preferences:
   collections:
     pages:
       after_save: continue_editing
+    reusables:
+      after_save: continue_editing
