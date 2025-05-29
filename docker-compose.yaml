@@ -1,0 +1,88 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: docker/nginx.Dockerfile
+    ports:
+      - "8001:80"
+      - "5111:5111"
+    volumes:
+      - ./:/var/www/html/
+    depends_on:
+      - app
+      - db
+
+  app:
+    build:
+      context: .
+      dockerfile: docker/php.Dockerfile
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: test
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "33061:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+
+  composer:
+    build:
+      context: .
+      dockerfile: docker/composer.Dockerfile
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    depends_on:
+      - db
+
+  npm:
+    image: node:current-alpine
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    
+    entrypoint: [ "npm" ]
+
+  vite:
+    image: node:current-alpine
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - "5173:5173"
+    depends_on:
+      - app
+
+  artisan:
+    build:
+      context: .
+      dockerfile: docker/artisan.Dockerfile
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: [ "php", "/var/www/html/artisan" ]
+    depends_on:
+      - db
+
+  pma:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_USER: user
+      PMA_PASSWORD: password
+      APACHE_SERVER_NAME: localhost
+    depends_on:
+      - db

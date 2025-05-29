@@ -1,0 +1,45 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: docker/nginx.prod.Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www/html/
+    depends_on:
+      - app
+
+  app:
+    build:
+      context: .
+      dockerfile: docker/php.Dockerfile
+    volumes:
+      - ./:/var/www/html
+
+  composer:
+    build:
+      context: .
+      dockerfile: docker/composer.Dockerfile
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+
+  npm:
+    image: node:current-alpine
+    # ports:
+    #   - "5173:5173"
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: ["npm"]
+
+  artisan:
+    build:
+      context: .
+      dockerfile: docker/artisan.Dockerfile
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: ["php", "/var/www/html/artisan"]
