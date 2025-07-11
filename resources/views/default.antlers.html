@@ -10,8 +10,10 @@
             {{ partial:if_exists src="sets/{blueprint}" }}
         {{ /entry }}
     {{ elseif type === 'text' }}
-        <div class="prose prose-lg max-w-none">
-            {{ text }}
+        <div class="container mx-auto px-4 md:px-6 relative z-10 my-4">
+            <div class="prose prose-lg">
+                {{ text }}
+            </div>
         </div>
     {{ elseif type === 'html_block' }}
         {{ code }}

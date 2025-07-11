@@ -17,6 +17,7 @@ page_builder:
           icon: null
         form: book_your_stand
         show_labels: true
+        redirect_to_url: 'entry::8e4084c1-fc45-48a6-94cf-18472639cc68'
   -
     type: set
     attrs:
@@ -32,5 +33,5 @@ page_builder:
 fine_seo_title: 'استفسر عن المشاركة'
 fine_seo_description: 'يوفر لك المعرض الدولي للصيد والفروسية - العين 2025 منصة استراتيجية لعرض علامتك التجارية، والتواصل مع العملاء المحتملين، والانضمام إلى روّاد القطاع.'
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747643023
+updated_at: 1752243310
 ---

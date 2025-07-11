@@ -3,3 +3,6 @@ tree:
     entry: home
   -
     entry: 37949eb0-4e08-4fb8-8142-58b586022cd1
+    children:
+      -
+        entry: 275ecc1e-5364-4ceb-906a-16601a396d77

@@ -4,7 +4,7 @@ blueprint: page
 title: 'Enquire to Exhibit'
 fine_seo_is_title_custom: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747643737
+updated_at: 1752243294
 page_builder:
   -
     type: set
@@ -20,6 +20,7 @@ page_builder:
           icon: null
         form: book_your_stand
         show_labels: true
+        redirect_to_url: 'entry::275ecc1e-5364-4ceb-906a-16601a396d77'
   -
     type: set
     attrs:
