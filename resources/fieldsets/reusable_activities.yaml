@@ -78,3 +78,6 @@ fields:
             display: Image
             localizable: false
             width: 33
+  -
+    handle: button_group
+    field: basics.button_group

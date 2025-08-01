@@ -3,14 +3,14 @@ tree:
     id: 67b8ff46-b809-4190-99ef-43e1777b3e12
     entry: home
   -
-    id: bc8964b0-f1fa-4071-96b0-52e2faa8c818
-    title: 'About the Exhibition'
-    url: '#about'
+    id: c51ffba1-ba96-4962-80af-5cc2d279b2f6
+    entry: 22227610-dc48-4f42-9394-c222c87592a8
   -
-    id: d0fd2cc9-ae55-4054-b064-5cdc822a23fe
-    title: Sectors
-    url: '#sectors'
+    id: 4bd40818-92db-4de2-9734-0925452ed88d
+    entry: 8ab494c3-b905-44b4-b2f1-ec25f4fe8bed
   -
-    id: 631bfbd7-c702-414e-99f1-ba1dd924742f
-    title: Participate
-    url: '#participate'
+    id: 70ee5bed-2053-497b-9bdb-9e0a6146b824
+    entry: fef0a386-0f63-45a3-94c7-97f83529c830
+  -
+    id: b352611e-27ee-41fc-a253-e79de1943e13
+    entry: 8cc63d1c-8cec-40c0-9eff-689c72f40539

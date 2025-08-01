@@ -1,0 +1,37 @@
+<div class=" py-[50px] relative bg-[#F5F2EB] bg-gradient-to-b from-gray-50 to-gray-100">
+
+
+        <div class="grid grid-cols-1 md:grid-cols-[40%_60%]    min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto    rounded-[8px]  overflow-hidden shadow-lg   transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl animate-fade-in">
+            <div class="  flex flex-col  bg-[#F5F2EB] justify-center gap-[20px] p-[30px]">
+                <p class="text-xl font-bold text-gray-900 leading-[130%] ">{{heading}}</p>
+                <div class="flex flex-col gap-[10px]">
+                   {{icon_list}}
+                        <a href="{{link}}" class=" gap-[10px]  grid grid-cols-[30px_auto] items-center" >
+                            <div class="w-[30px] h-[30px] bg-[#827654]/10 rounded-full flex items-center justify-center ">
+                                 {{ if icons }}
+                                     <!-- Show this if "icons" exists or is not empty -->
+                                     {{ icons }}
+                        
+                                             {{ heroicon  variant="outline" :icon="icons" class="h-[17px] w-[17px] text-[#827654]" }}
+                        
+                                         <!-- your icon rendering logic -->
+                                     {{ /icons }}
+                                 {{ else }}
+                                     <!-- Show this if "icons" is not present or empty -->
+                                     {{ if image_upload }}
+                                         {{ image_upload }}
+                                     {{ /if }}
+                                 {{ /if }}
+                            </div>
+                            <p class=" text-gray-700 " >{{text}}</p>
+                        </a>
+                      {{/icon_list}}
+                </div>
+            </div>
+            <div class="   [&>iframe]:w-full [&>iframe]:h-[400px] [&>iframe]:rounded-[8px]">
+                {{map_iframe}}
+            </div>
+
+        </div>
+
+</div>

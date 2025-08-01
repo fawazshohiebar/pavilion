@@ -1,0 +1,107 @@
+title: Sponsors
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: false
+              validate:
+                - required
+          -
+            handle: premium_sponsors
+            field:
+              type: replicator
+              display: 'Premium Sponsors'
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: premium_sponsors_logos
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: 'Premium Sponsors Logos'
+                            localizable: false
+                        -
+                          handle: sponsor_title
+                          field:
+                            type: text
+                            display: 'Sponsor Title'
+                            localizable: false
+          -
+            handle: medium_sposnsors
+            field:
+              type: replicator
+              display: 'Medium Sposnsors'
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: medium_sponsors_logos
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: 'Medium Sponsors Logos'
+                            localizable: false
+                        -
+                          handle: medium_sponsor_title
+                          field:
+                            type: text
+                            display: 'Medium Sponsor Title'
+                            localizable: false
+          -
+            handle: normal_sponsors
+            field:
+              type: replicator
+              display: 'Normal Sponsors'
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: normal_sponsors_logos
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: 'Normal Sponsors Logos'
+                            localizable: false
+                        -
+                          handle: normal_sponsor_title
+                          field:
+                            type: text
+                            display: 'Normal Sponsor Title'
+                            localizable: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

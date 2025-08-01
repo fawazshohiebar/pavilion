@@ -1,29 +1,44 @@
 title: 'International Hunting & Equestrian Exhibition - Al Ain'
-logo: brand/logo-colored.png
-logo_dark: brand/logo-white.png
+logo: brand/image-(1).svg
+logo_dark: brand/image-(2).svg
 patronage: "Under the Patronage of His Highness Sheikh Hazaa bin Zayed Al Nahyan, Ruler's Representative in Al Ain Region."
 social_media:
   -
     id: macihl2y
     platform: instagram
-    social_media_link: 'https://www.instagram.com/aaihex?igsh=MTVsZDljemtndHYwaA=='
+    social_media_link: 'https://www.instagram.com/adihex/?hl=en'
   -
     id: map2nygi
     platform: facebook
-    social_media_link: 'https://www.facebook.com/profile.php?id=61575913176951'
+    social_media_link: 'https://www.facebook.com/adihex/'
   -
     id: map2of2t
     platform: linkedin
-    social_media_link: 'https://www.linkedin.com/company/al-ain-international-hunting-equestrian-exhibition'
+    social_media_link: 'https://www.linkedin.com/company/adihex/about/'
   -
     id: map2oq30
     platform: youtube
-    social_media_link: 'https://www.youtube.com/channel/UCJa_1__Bh6aHQqFUF_WgvgQ'
+    social_media_link: 'https://www.youtube.com/channel/UCp3mg-yFzWguXXxhz69JYzQ'
+  -
+    id: mdsjn9cm
+    platform: twitter
+    social_media_link: 'https://twitter.com/ADIHEX'
+  -
+    id: mdsjng1t
+    platform: tiktok
+    social_media_link: 'https://www.tiktok.com/@adihex_official'
+countdown_date_picker: '2025-08-12 10:58:58'
+location: 'ADNEC Centre Abu Dhabi'
+location_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
+date: '30 Aug - 7 Sept 2025'
+date_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
+time: '11:00 AM to 10:00 PM'
+time_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
 logos:
   -
     id: mafjvh3f
-    title: 'Organised & Hosted By'
-    image: brand/logos/adnecgroup-alaincenter-logos.png
+    title: 'Partner  & Organiser'
+    image: added-images/adnec-group_logo_modon_white-1024x580-(1).png
     url: 'https://adnecgroup.ae'
     type: logo
     enabled: true

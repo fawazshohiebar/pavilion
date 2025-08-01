@@ -1,0 +1,32 @@
+
+
+
+
+
+
+<div class="bg-gradient-to-b from-gray-50 to-gray-100">
+
+<section class=" min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto py-[50px] ">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <!-- Speaker Card -->
+             {{speaker_replicator}}
+
+      <div class="bg-[#f9f9f9] shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-2xl  hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+        {{profile_image}}
+        <img src="{{url}}" alt="Hamad Al Ansari" class="w-full h-72 object-cover rounded-t-2xl">
+          {{/profile_image}}
+        <div class="p-5 text-center">
+          <h3 class="text-xl font-semibold text-[#1a1a1a] mb-[20px]">{{name}}</h3>
+          <p class="text-sm text-[#666] mt-2 leading-snug mb-[20px]">{{position}}</p>
+          <p class="text-sm text-[#666] mt-2 leading-snug">{{company}}</p>
+        </div>
+      </div>
+        {{/speaker_replicator}}
+
+
+      <!-- End Speaker Card -->
+    </div>
+
+ </section>
+</div>

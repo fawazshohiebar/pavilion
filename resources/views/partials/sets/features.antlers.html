@@ -1,0 +1,19 @@
+<div class="flex flex-col min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto gap-[40px] py-[40px]" >
+
+    {{features_replicator}}
+        <div style="background-color:{{background_color}} " class="shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-[8px] overflow-hidden">
+            <div class="md:grid md:grid-cols-[40%_60%] flex flex-col  ">
+                {{image}}
+                    <div class="p-[15px] ">
+                        <img  class="rounded-[8px] h-[100%] w-[100%] object-cover  " src="{{url}}" alt="">
+                    </div>
+                {{/image}}
+                <div class="flex flex-col justify-center xl:p-[30px] p-[20px]">
+                    <p class="text-xl font-bold text-gray-900 mb-3 " >{{title}}</p>
+                    <p class="text-gray-700 mb-4" >{{textarea_field}}</p>
+                
+                </div>
+            </div>
+        </div>
+    {{/features_replicator}}
+</div>

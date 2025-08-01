@@ -1,0 +1,75 @@
+title: Features
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: false
+              validate:
+                - required
+          -
+            handle: features_replicator
+            field:
+              type: replicator
+              display: 'Features Replicator'
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: image
+                          field:
+                            container: assets
+                            type: assets
+                            display: Image
+                            localizable: false
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                            localizable: false
+                        -
+                          handle: textarea_field
+                          field:
+                            type: textarea
+                            display: 'Textarea Field'
+                            localizable: false
+                        -
+                          handle: background_color
+                          field:
+                            options:
+                              -
+                                key: '#f5f2eb'
+                                value: 'Light Brown'
+                              -
+                                key: '#f9fafc'
+                                value: 'Light Blue'
+                              -
+                                key: '#fff'
+                                value: White
+                            taggable: true
+                            type: select
+                            display: 'Background Color'
+                            localizable: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

@@ -32,3 +32,36 @@ html {
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   @apply text-amber-100;
 }
+
+
+
+.slicking-slider .slick-list{
+  margin:0 10px;
+  overflow:hidden;
+}
+
+.slider-feedback .slick-list{
+  height:100%;
+overflow: hidden;
+margin: 0 40px;
+}
+.slider-feedback .slick-track{
+  height:100%;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+ .slider-feedback .slick-list{
+   height:100%;
+   overflow: hidden;
+   margin: 0 0px;
+  }
+
+}
+
+
+
+

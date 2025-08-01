@@ -2,7 +2,7 @@
 
 return [
 
-    'pro' => env('STATAMIC_PRO_ENABLED', false),
+    'pro' => true,
 
     'addons' => [
         //

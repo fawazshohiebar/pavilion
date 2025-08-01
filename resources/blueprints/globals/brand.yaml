@@ -86,6 +86,56 @@ tabs:
                     display: 'Social Media Link'
                     localizable: false
                     width: 50
+          -
+            handle: countdown_date_picker
+            field:
+              time_enabled: true
+              time_seconds_enabled: true
+              type: date
+              display: 'Countdown Date Picker'
+              localizable: false
+          -
+            handle: location
+            field:
+              type: text
+              display: Location
+              localizable: false
+              width: 50
+          -
+            handle: location_link
+            field:
+              type: text
+              display: 'Location Link'
+              localizable: false
+              width: 50
+          -
+            handle: date
+            field:
+              type: text
+              display: Date
+              localizable: false
+              width: 50
+          -
+            handle: date_link
+            field:
+              type: text
+              display: 'Date Link'
+              localizable: false
+              width: 50
+          -
+            handle: time
+            field:
+              type: text
+              display: Time
+              localizable: false
+              width: 50
+          -
+            handle: time_link
+            field:
+              type: text
+              display: 'Time Link'
+              localizable: false
+              width: 50
       -
         display: 'Footer Logos'
         fields:

@@ -7,12 +7,12 @@ icons:
   -
     id: mab2w0r4
     icon: map-pin
-    label: 'ADNEC Al Ain Center'
+    label: 'ADNEC Centre Abu Dhabi'
     link: 'https://maps.app.goo.gl/WizsELNyd5P8N5qj8'
   -
     id: mab2whla
     icon: calendar-days
-    label: 'November 26 - 30, 2025'
+    label: '30 Aug - 7 Sept 2025'
 hero_actions:
   -
     id: mab2wp5q
@@ -21,7 +21,7 @@ hero_actions:
     style: filled
     type: button
     enabled: true
-    label: 'Book your stand'
+    label: 'Book your ticket'
     icon: paper-airplane
     url: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
   -
@@ -35,6 +35,6 @@ hero_actions:
     icon: ticket
     url: '#tickets'
 video: 'https://d1v5cjer294zl8.cloudfront.net/alainihex-assets/videos/alain-video.webm'
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747631734
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1753442172
 ---

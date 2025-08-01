@@ -1,0 +1,58 @@
+<div class="countdown" data-end-time="{{ countdown_end }}">
+  <div class="countdown-item">
+    <span class="days">00</span><span class="label">Days</span>
+  </div>
+  <div class="countdown-item">
+    <span class="hours">00</span><span class="label">Hours</span>
+  </div>
+  <div class="countdown-item">
+    <span class="minutes">00</span><span class="label">Minutes</span>
+  </div>
+
+</div>
+ 
+
+<style>
+.countdown { display: flex; gap: 1rem; font-family: sans-serif; }
+.countdown-item { text-align: center; }
+.countdown-item span { display: block; font-size: 16px; line-height: 130%; }
+.label { font-size: 0.8rem; color: #666; }
+
+
+@media only screen and (max-width: 921px) {
+  .countdown{
+    display: none;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const countdownEl = document.querySelector(".countdown");
+  const endTimeStr = countdownEl.getAttribute("data-end-time");
+  const endTime = new Date(endTimeStr).getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = endTime - now;
+
+    if (distance < 0) {
+      countdownEl.innerHTML = "<strong>Expired</strong>";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
+
+    countdownEl.querySelector(".days").textContent = String(days).padStart(2, "0");
+    countdownEl.querySelector(".hours").textContent = String(hours).padStart(2, "0");
+    countdownEl.querySelector(".minutes").textContent = String(minutes).padStart(2, "0");
+    countdownEl.querySelector(".seconds").textContent = String(seconds).padStart(2, "0");
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+});
+</script>

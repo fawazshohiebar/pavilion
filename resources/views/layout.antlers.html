@@ -9,19 +9,145 @@
         {{ partial:tracking_scripts_head /}}
         {{ partial:fine-seo::components/meta /}}
         <link rel="stylesheet" href="https://use.typekit.net/slb6fmc.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
     </head>
     <body class="leading-normal text-gray-800 antialiased {{ site:short_locale === 'ar' ? 'font-noto' : 'font-mont' }}">
         {{ partial:tracking_scripts_body /}}
-        {{# Header (includes patronage banner) #}}
         {{ partial:partials/header }}
         
-        <!-- Main Content -->
         <main class="relative">
             {{ template_content }}
         </main>
         
-        <!-- Footer -->
         {{ partial:partials/footer }}
-    </body>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+        jQuery(document).ready(function () {
+          jQuery('.container-slider-carousel').slick({
+            speed: 3000,                
+            autoplay: true,
+            autoplaySpeed: 0,           
+            cssEase: 'linear',          
+            slidesToShow: 4,           
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: false,
+            pauseOnHover: false,
+            variableWidth: true        
+          });
+        });
+    
+
+        jQuery(document).ready(function () {
+          jQuery('.slicking-slider').slick({
+            autoplay: true,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: true,
+            pauseOnHover: false,
+            variableWidth: false ,
+            infinite: true,
+            slidesToShow: 3,
+            prevArrow: '<button class="slick-prev slick-arrow custom-prev absolute md:top-1/2 md:-translate-y-1/2 lg:left-[-30px] md:left-[-20px] z-10  left-1/2 bottom-[-60px]  md:translate-x-[0px] translate-x-[-65px] lg:bottom-auto  " aria-label="Previous" type="button"><svg class="w-[35px] h-auto border border-[#1e2939] rounded-full"  width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>',
+            nextArrow: '<button class="slick-next slick-arrow custom-next absolute md:top-1/2 md:-translate-y-1/2  lg:right-[-30px] md:right-[-20px] z-10  md:left-auto left-1/2 bottom-[-60px] md:translate-x-[20px] translate-x-[45px] lg:bottom-auto"  aria-label="Next" type="button"><svg class="w-[35px] h-auto border border-[#1e2939] rounded-full" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>',
+  responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+          });
+        });
+
+
+
+
+         jQuery(document).ready(function () {
+          jQuery('.slider-feedback').slick({
+            autoplay: true,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: true,
+            pauseOnHover: false,
+            variableWidth: false ,
+            infinite: true,
+            slidesToShow: 1,
+            prevArrow: '<button class="slick-prev slick-arrow custom-prev absolute md:top-1/2 md:-translate-y-1/2   md:left-[0px] z-10  left-1/2 bottom-[-45px]  md:translate-x-[0px] translate-x-[-65px] lg:bottom-auto  " aria-label="Previous" type="button"><svg class="w-[35px] h-auto border border-[#1e2939] rounded-full"  width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>',
+            nextArrow: '<button class="slick-next slick-arrow custom-next absolute md:top-1/2 md:-translate-y-1/2    md:right-[20px] z-10  md:left-auto left-1/2 bottom-[-45px] md:translate-x-[20px] translate-x-[45px] lg:bottom-auto"  aria-label="Next" type="button"><svg class="w-[35px] h-auto border border-[#1e2939] rounded-full" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>',
+
+          });
+        });
+
+
+
+
+
+    //  jQuery(document).ready(function () {
+    //       jQuery('.header-carousel').slick({
+    //         speed: 3000,                
+    //         autoplay: true,
+    //         autoplaySpeed: 0,           
+    //         cssEase: 'linear',          
+    //         slidesToShow: 4,           
+    //         slidesToScroll: 1,
+    //         infinite: true,
+    //         arrows: false,
+    //         pauseOnHover: false,
+    //         variableWidth: true        
+    //       });
+    //     });
+    
+
+
+        jQuery(document).ready(function () {
+  jQuery('.header-carousel').slick({
+    speed: 3000,                    // Longer duration
+    autoplay: true,
+    autoplaySpeed: 0,              // No delay between scrolls
+    cssEase: 'linear',             // Smooth animation
+    slidesToShow: 1,               // Required for continuous scroll
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: false,
+    pauseOnHover: false,
+    variableWidth: true,           // Needed for seamless scroll
+    centerMode: true               // Prevents jitter
+  });
+});
+
+
+
+ 
+  function updateContainerSliderClass() {
+    const slider = document.getElementById('header-slider');
+    if (!slider) return;
+
+    if (window.innerWidth < 768) {
+      slider.classList.add('header-carousel');
+    } else {
+      slider.classList.remove('header-carousel');
+    }
+  }
+
+  // Run on page load
+  updateContainerSliderClass();
+
+  // Run on window resize
+  window.addEventListener('resize', updateContainerSliderClass);
+ 
+
+        </script>
+
+            </body>
 </html>

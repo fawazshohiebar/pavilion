@@ -1,0 +1,14 @@
+
+
+<div class="container-slider-carousel" style="background-color:{{background_color}}">
+    {{image_and_text_replicator}}
+        <div class="flex flex-col px-[10px] md:w-[200px] w-[150px] h-[215px] group cursor-pointer">   
+             <div class="flex flex-col md:flex-row gap-[20px] rounded-[12px] overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 group-hover:scale-105 bg-white border border-gray-100">
+                {{image_feild}}
+                <img src="{{url}}" alt="{{text_field}}" class="w-full h-[140px] object-cover group-hover:brightness-110 transition-all duration-300">
+                {{/image_feild}}
+            </div>
+             <p class="text-sm font-medium text-[#5b4526] text-center mt-3 group-hover:text-[#4a3d1f] transition-colors duration-300">{{text_field}}</p>
+        </div>
+    {{/image_and_text_replicator}}
+</div>

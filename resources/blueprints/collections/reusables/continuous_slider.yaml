@@ -1,0 +1,66 @@
+title: 'Continuous Slider'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: false
+              validate:
+                - required
+          -
+            handle: image_and_text_replicator
+            field:
+              type: replicator
+              display: 'Image And Text Replicator'
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: image_feild
+                          field:
+                            container: assets
+                            type: assets
+                            display: 'Image Feild'
+                            localizable: false
+                        -
+                          handle: text_field
+                          field:
+                            type: text
+                            display: 'Text Field'
+                            localizable: false
+          -
+            handle: background_color
+            field:
+              options:
+                -
+                  key: '#F9FAFC'
+                  value: 'Light Blue'
+                -
+                  key: '#f5f2eb'
+                  value: 'Light Brown'
+              taggable: true
+              type: select
+              display: 'Background Color'
+              localizable: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

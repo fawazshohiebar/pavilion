@@ -1,0 +1,8 @@
+name: fawaz
+super: true
+id: ac775259-f1c4-4a12-b768-668149cb0e1a
+password_hash: $2y$12$2lkGF8NBVi4M/WmNtTS6COQk1FnHtv20/NKIMEmG8lpeIe8c2PIQ2
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

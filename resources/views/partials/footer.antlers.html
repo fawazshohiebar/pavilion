@@ -1,9 +1,15 @@
+
+
+
+
+
+
 <footer class="bg-gray-900 text-white">
     <!-- Main Footer Content -->
-    <div class="container mx-auto px-4 md:px-6 py-16">
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-12">
+    <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto py-16">
+        <div class="flex flex-col sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-[40px] gap-x-[15px] md:gap-[30px] ">
             {{# Column 1: Logo & About #}}
-            <div class="space-y-6 col-span-2 md:col-span-1 flex flex-col items-center md:justify-start md:items-start justify-center">
+            <div class="space-y-6 col-span-2 md:col-span-1 flex flex-col items-start md:justify-start md:items-start justify-center">
                 {{ glide :src="brand:logo_dark" format="webp" }}
                 <img src="{{url}}" alt="{{alt ?? 'International Hunting & Equestrian Exhibition - Al Ain' | trans}}"
                     width="{{width}}" height="{{height}}"
@@ -54,24 +60,25 @@
                     <li class="flex items-start">
                         {{heroicon:outline:map-pin class="h-5 w-5 text-[#827654] rtl:ml-3 ltr:mr-3 mt-0.5" /}}
                         <span class="text-gray-400 text-sm">
+                            {{'ADNEC Group'}}<br>
                             {{ 'P.O. Box 5546' | trans }}<br>
-                            {{ 'Al Ain, United Arab Emirates' | trans }}
+                            {{ 'Abu Dhabi, United Arab Emirates' | trans }}
                         </span>
                     </li>
-                    {{# <li class="flex items-start">
+                    <li class="flex items-start">
                         {{heroicon:outline:envelope class="h-5 w-5 text-[#827654] rtl:ml-3 ltr:mr-3 mt-0.5" /}}
-                        
-                        <span class="text-gray-400">info@alainihex.ae</span>
-                    </li> #}}
-                    {{# <li class="flex items-start">
+                       
+                        <span class="text-gray-400">info@adihex.com</span>
+                    </li> 
+                    {{ <li class="flex items-start">
                         {{heroicon:outline:phone class="h-5 w-5 text-[#827654] rtl:ml-3 ltr:mr-3 mt-0.5" /}}
                         <span class="text-gray-400">+971 2 673 8888</span>
-                    </li> #}}
+                    </li> }}
                 </ul>
             </div>
 
             {{# {{ partial:partials/footer_newsletter }} #}}
-            <div class="col-span-2 md:col-span-3 lg:col-span-2 mt-10 md:mt-0">
+            <div class="col-span-2 md:col-span-3 lg:col-span-2 mt-0">
                 <div class="max-w-sm mx-auto">
                     <div class="flex items-center justify-between gap-4">
                         {{brand:logos}}
@@ -94,7 +101,7 @@
 
     <!-- Footer Bottom -->
     <div class="bg-gray-950 py-6">
-        <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center">
+        <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="text-gray-500 text-sm mb-4 md:mb-0">
                 &copy; {{'All rights reserved' | trans}} {{ now format="Y" }} <a class="text-white" href="https://www.adnecgroup.ae" target="_blank" rel="noopener noreferrer">
                     {{'ADNEC Group' | trans}}

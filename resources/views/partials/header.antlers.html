@@ -9,9 +9,9 @@
     <!-- Navigation -->
     <nav 
         class="w-full transition-all duration-300 ease-in-out"
-        :class="scrolled ? 'bg-white shadow-lg py-4' : 'bg-transparent py-4'"
+        :class="scrolled ? 'bg-white shadow-lg pt-4' : 'bg-transparent pt-4'"
     >
-        <div class="container mx-auto px-4 md:px-6 flex items-center justify-between">
+        <div class=" min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto md:flex md:items-center md:justify-between grid grid-cols-[65%_30%]   ">
             <!-- Logo -->
             <a href="{{site:url}}" class="flex-shrink-0">
                 <img 
@@ -22,45 +22,42 @@
                 />
             </a>
 
-            <!-- Desktop Menu -->
-            <div class="hidden lg:flex items-center gap-2 xl:gap-8">
-                {{ nav:main_nav include_home="true" }}
-                    <a href="{{ url }}"
-                    class="{{ is_current || is_parent ? 'font-bold' : 'font-medium' }} flex items-center gap-1 text-nowrap text-base transition-all duration-200 hover:text-[#827654]" 
+      
+            <!-- Mobile Menu Button -->
+            <div class=" flex  justify-end gap-4 items-center">
 
-                    :class="scrolled ? 'text-gray-800' : 'text-white'"
-                        
-                        >
-                        {{ if url == '/' }}
-                            <x-dynamic-component component="icons.home" class="h-4 w-4 inline-block mr-1 rtl:ml-1 rtl:mr-0" />
-                        {{ /if }}
-                        {{ title }}
-                    </a>
-            {{ /nav:main_nav }}
+                {{ partial:partials/sets/countdown_date_picker countdown_end="{  brand:countdown_date_picker format='Y-m-d\\TH:i:s' }" }}
 
-                {{partial:language-switcher /}}
 
-                {{ partial:partials/buttons/button url="{{link to="enquire-to-exhibit"}}" type="filled" color="primary" icon="paper-airplane" }}
+
+                <div class="hidden md:block">
+                
+                
+                          {{ partial:partials/buttons/button url="{{link to="enquire-to-exhibit"}}" type="filled" color="primary" icon="paper-airplane" }}
                     {{'Book Your Stand' | trans}}
                 {{ /partial:partials/buttons/button }}
             </div>
 
-            <!-- Mobile Menu Button -->
-            <div class="lg:hidden flex items-end gap-4">
+
                 {{partial:language-switcher /}}
+
+ 
+
                 <button 
                     @click="mobileMenuOpen = !mobileMenuOpen" 
-                    class="lg:hidden focus:outline-none"
+                    class=" focus:outline-none"
                     :class="scrolled ? 'text-gray-800' : 'text-white'"
                     aria-label="Toggle mobile menu"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!mobileMenuOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 lg:w-10 h-7 lg:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!mobileMenuOpen">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="mobileMenuOpen">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
+
+     
             </div>
         </div>
 
@@ -74,12 +71,12 @@
             x-transition:leave="transition ease-in duration-150"
             x-transition:leave-start="opacity-100 translate-y-0"
             x-transition:leave-end="opacity-0 -translate-y-4"
-            class="lg:hidden bg-white shadow-xl py-4 absolute top-full left-0 right-0"
+            class=" bg-white shadow-xl py-4 absolute top-full left-0 right-0"
         >
             <div class="container mx-auto px-4 md:px-6 flex flex-col space-y-4">
                 {{nav:main_nav include_home="true" }}
                     <a href="{{ url }}"
-                        class="{{ is_current || is_parent ? 'font-bold' : 'font-medium' }} flex items-center gap-1 text-nowrap text-base transition-all duration-200 hover:text-[#827654]"
+                        class="{{ is_current || is_parent ? 'font-bold' : 'font-medium' }} flex items-center gap-1 text-wrap text-base transition-all duration-200 hover:text-[#827654]"
                         :class="scrolled ? 'text-gray-800' : 'text-white'"
                     >
                         {{ if url == '/' }}
@@ -88,11 +85,80 @@
                         {{ title }}
                     </a>
                 {{ /nav:main_nav }}
-                
+
+                <div class=" block md:hidden">
                 {{ partial:partials/buttons/button url="{{link to="enquire-to-exhibit"}}" type="filled" color="primary" icon="paper-airplane" }}
                     {{'Book Your Stand' | trans}}
                 {{ /partial:partials/buttons/button }}
+                </div>
             </div>
         </div>
-    </nav>
+          
+
+
+
+
+
+                    <div class="flex flex-row flex-nowrap gap-[10px] justify-center bg-gradient-to-b from-gray-50 to-gray-100 py-[5px] mt-[20px] "  id="header-slider" style="display:flex; flex-direction: row; flex-wrap: nowrap;">
+                        
+                        <div class=" w-[1px] bg-[#827654] !md:h-auto  md:hidden block  !h-[24px]"></div>
+                        
+                        <div class=" flex flex-row flex-nowrap items-center gap-[10px] " style="display:flex; flex-direction: row; flex-wrap: nowrap; margin: 0 10px;">
+                            <div> 
+                                    {{ heroicon variant="outline" icon="map-pin" class="h-[20px] w-20px text-[#827654]" /}}
+                            </div>
+                            <div>
+                                <a class=" text-gray-700  leading-relaxed   text-[15px]" href="{{brand:location_link}}">{{brand:location}} </a>
+                            </div>
+                        
+                        </div>
+                        <div class=" w-[1px] bg-[#827654] !md:h-auto block  !h-[24px]"></div>
+
+
+
+
+
+
+                        <div class=" flex  flex-nowrap items-center gap-[10px] " style="display:flex; flex-direction: row; flex-wrap: nowrap; margin: 0 10px;">
+                            <div>
+                                    {{ heroicon variant="outline" icon="calendar-date-range" class="h-[20px] w-20px text-[#827654]" /}}
+                            </div>
+                            <div>
+                                <a class=" text-gray-700  leading-relaxed   text-[15px]" href="{{brand:date_link}}">{{brand:date}} </a>
+                            </div>
+                        
+                        </div>
+                        <div class=" w-[1px] bg-[#827654] !md:h-auto block  !h-[24px]"></div>
+
+
+
+
+                        <div class="  flex flex-nowrap items-center gap-[10px] " style="display:flex; flex-direction: row; flex-wrap: nowrap; margin: 0 10px;">
+                            <div>
+                                    {{ heroicon variant="outline" icon="clock" class="h-[20px] w-20px text-[#827654]" /}}
+                            </div>
+                            <div>
+                                <a class=" text-gray-700  leading-relaxed   text-[15px]" href="{{brand:time_link}}">{{brand:time}}</a>
+                            </div>
+                        
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+        </nav>  
+                        
+
+   
+
+
+
+
 </header>
+
+
+ 

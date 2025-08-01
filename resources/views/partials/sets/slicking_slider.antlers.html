@@ -1,0 +1,27 @@
+<div style="background-color: {{background_color}};">
+<div class=" min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto  relative pt-[50px] md:pb-[70px] pb-[100px] ">
+
+    {{if title_feild }}
+<div>
+    <p class="  text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 text-center"> {{title_feild}}</p>
+</div>
+{{/if}}
+
+<div  class="slicking-slider ">
+{{images_and_text_replicator}}
+<div class="px-[15px] ">
+<div class="rounded-[8px] overflow-hidden">
+    
+    {{image}}
+    <img src="{{url}}" alt="">
+        {{/image}}
+</div>
+{{if text}}
+<p class=" pt-[10px] text-[#bc9772] font-['Montserrat',sans-serif] font-semibold text-[16px]">{{text}}</p>
+    {{/if}}
+</div>
+{{/images_and_text_replicator}}
+</div>
+
+</div>
+</div>

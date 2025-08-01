@@ -1,0 +1,59 @@
+
+
+
+<section class=" py-[45px] md:py-[50px] lg:py-[70px]  bg-gradient-to-b from-gray-50 to-gray-100 relative overflow-hidden">
+
+    <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto  relative">
+    <div>
+        <p class="  text-[28px] md:text-[35px] lg:text-[40px] font-bold text-gray-900 mb-6 text-center">{{heading}}</p>
+    </div>
+
+
+<div class="mx-auto flex flex-wrap justify-center gap-6  ">
+    {{replicating_grid}}
+
+<div class="flex flex-col  justify-between   h-auto  items-start items-start  gap-[10px]   bg-white/60 backdrop-blur-md rounded-xl p-6 text-center transform transition-all duration-500 hover:-translate-y-2 hover:shadow-lg border border-gray-200/50 shadow-sm    w-[100%]  md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]   2xl:w-[calc(25%-1.2rem)]">
+
+ <div class=" flex flex-col gap-[10px] items-start">
+       <p class="text-xl font-bold text-gray-900 leading-[130%] ">{{heading}}</p>
+
+       <p class="text-base font-semibold text-gray-900 leading-[130%]">{{sub_heading}}</p>
+</div>
+
+<div class="flex flex-col gap-[10px]">
+   {{icon_list}}
+       <a href="{{link}}" class="flex flex-row gap-[10px] flex-nowrap" >
+
+      
+
+         <div class="w-[30px] h-[30px] bg-[#827654]/10 rounded-full flex items-center justify-center ">
+                 {{ if icons }}
+                     <!-- Show this if "icons" exists or is not empty -->
+                     {{ icons }}
+ 
+                             {{ heroicon  variant="outline" :icon="icons" class="h-[17px] w-[17px] text-[#827654]" }}
+
+                         <!-- your icon rendering logic -->
+                     {{ /icons }}
+                 {{ else }}
+                     <!-- Show this if "icons" is not present or empty -->
+                     {{ if image_upload }}
+                         {{ image_upload }}
+                     {{ /if }}
+                 {{ /if }}
+        </div>
+
+
+            <p class=" text-gray-700 " >{{text}}</p>
+       
+        </a>
+          {{/icon_list}}
+          </div>
+     
+</div>
+
+    {{/replicating_grid}}
+    </div>
+
+    </div>
+    </section>

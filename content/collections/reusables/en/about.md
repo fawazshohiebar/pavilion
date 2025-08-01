@@ -2,18 +2,17 @@
 id: 39f8c616-eb93-4ada-9310-0e1f4b0b324b
 blueprint: media_with_cta
 title: 'About The Show'
-section_label: 'About the Exhibition'
-heading: 'A Celebration of Hunting & Equestrian Heritage'
+heading: 'THE LEGACY LIVES ON'
 description: |-
-  Celebrating the rich legacy of hunting and equestrianism, and highlighting Al Ain as a distinguished destination for hunting and outdoor sports, while seeking to reach new markets with purchasing power to expand the exhibition's brand
-  The first edition of the International Hunting & Equestrian Exhibition - Al Ain 2025 will be launched from November 26 to 30, 2025, at ADNEC Al Ain Centre.
-image: misc/mountain-city-view-copy.jpg
+  Heritage is the guiding force that shapes our values and practices. Just as our ancestors passed down their knowledge and skills through generations, ADIHEX strives to honour their legacy by offering innovative products and services that merge tradition with modernity. 
+
+  As enthusiasts of hunting and equestrian pursuits, ADIHEX is the event that celebrates shared passion while paying homage to our rich heritage.
 badge_text: 1st
 badge_subtext: Edition
 actions:
   -
     id: mab3kjf9
-    label: 'Book Your Stand'
+    label: 'Buy Your Ticket'
     url: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
     size: medium
     color: primary
@@ -31,7 +30,7 @@ actions:
     icon: ticket
     type: button
     enabled: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747642060
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1753442255
 flipped: false
 ---

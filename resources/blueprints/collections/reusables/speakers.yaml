@@ -1,0 +1,64 @@
+title: Speakers
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: false
+              validate:
+                - required
+          -
+            handle: speaker_replicator
+            field:
+              type: replicator
+              display: 'Speaker Replicator'
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: profile_image
+                          field:
+                            container: assets
+                            type: assets
+                            display: 'Profile Image'
+                            localizable: false
+                        -
+                          handle: name
+                          field:
+                            type: text
+                            display: Name
+                            localizable: false
+                        -
+                          handle: position
+                          field:
+                            type: text
+                            display: Position
+                            localizable: false
+                        -
+                          handle: company
+                          field:
+                            type: text
+                            display: Company
+                            localizable: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

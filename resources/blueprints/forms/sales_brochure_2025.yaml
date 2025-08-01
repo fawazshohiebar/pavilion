@@ -1,0 +1,82 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: first_name
+            field:
+              autocomplete: given-name
+              type: text
+              display: 'First Name'
+              localizable: false
+              width: 50
+              validate:
+                - required
+          -
+            handle: last_name
+            field:
+              autocomplete: family-name
+              type: text
+              display: 'Last Name'
+              localizable: false
+              width: 50
+          -
+            handle: phone
+            field:
+              input_type: tel
+              autocomplete: tel
+              type: text
+              display: Phone
+              localizable: false
+              width: 50
+          -
+            handle: email
+            field:
+              input_type: email
+              autocomplete: email
+              type: text
+              display: Email
+              localizable: false
+              width: 50
+          -
+            handle: company
+            field:
+              autocomplete: organization
+              type: text
+              display: Company
+              localizable: false
+              width: 50
+          -
+            handle: position
+            field:
+              type: text
+              display: Position
+              localizable: false
+              width: 50
+          -
+            handle: address
+            field:
+              autocomplete: address-level1
+              type: text
+              display: Address
+              localizable: false
+              width: 50
+          -
+            handle: country
+            field:
+              autocomplete: country
+              type: text
+              display: Country
+              localizable: false
+              width: 50
+          -
+            handle: turnstile_token
+            field:
+              input_type: hidden
+              type: text
+              display: 'Turnstile Token'
+              instructions: 'Keep Hidden for Turnstile Captcha'
+              localizable: false
+              visibility: hidden

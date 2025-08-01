@@ -1,0 +1,62 @@
+
+<div class=" bg-[#f5f2eb]">
+<section class=" min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto py-[45px] md:py-[50px] lg:py-[70px]   relative ">
+  <!-- Section title -->
+  <div class="text-center mb-12">
+    <h2 class="  text-[28px] md:text-[35px] lg:text-[40px] font-bold text-gray-900 mb-6 text-center">{{title}}</h2>
+    <div class="mt-2 w-16 h-1 bg-[#b99d65] mx-auto"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Top Tier Sponsors -->
+
+    <div class="mx-auto flex flex-wrap justify-center gap-6 mb-12">
+   {{premium_sponsors}}
+    <div class="bg-white rounded-lg p-4 flex flex-col items-center hover:shadow-md transition w-[calc(50%-0.75rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
+        {{premium_sponsors_logos}}
+        <img src="{{url}}" alt="Caracal" class="h-16 mb-2 grayscale hover:grayscale-0 transition">
+          {{/premium_sponsors_logos}}
+      <p class="text-xs text-[#5b4526] text-center">{{sponsor_title}}</p>
+    </div>
+    {{/premium_sponsors}}
+  </div>
+
+
+
+
+
+  <!-- Weaponry & Sector Sponsors -->
+  <div class="mx-auto flex flex-wrap justify-center gap-6 mb-12">
+   {{medium_sposnsors}}
+    <div class="bg-white rounded-lg p-4 flex flex-col items-center hover:shadow-md transition w-[calc(50%-0.75rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
+    {{medium_sponsors_logos}}
+        <img src="{{url}}" alt="Caracal" class="h-16 mb-2 grayscale hover:grayscale-0 transition">
+     {{/medium_sponsors_logos}}
+      <p class="text-xs text-[#5b4526] text-center">{{medium_sponsor_title}}</p>
+    </div>
+    {{/medium_sposnsors}}
+  </div>
+
+  <!-- Normal Sponsors -->
+  <div class="mx-auto flex flex-wrap justify-center gap-6 mb-0">
+   {{normal_sponsors}}
+    <div class="bg-white rounded-lg p-4 flex flex-col items-center hover:shadow-md transition w-[calc(50%-0.75rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
+    {{normal_sponsors_logos}}
+        <img src="{{url}}" alt="Caracal" class="h-16 mb-2 grayscale hover:grayscale-0 transition">
+     {{/normal_sponsors_logos}}
+      <p class="text-xs text-[#5b4526] text-center">{{normal_sponsor_title}}</p>
+    </div>
+    {{/normal_sponsors}}
+  </div>
+
+  <!-- Background flair (optional) -->
+  <div class="absolute inset-0 bg-[url('/desert-pattern.png')] bg-cover opacity-5 pointer-events-none"></div>
+</section>
+</div>
