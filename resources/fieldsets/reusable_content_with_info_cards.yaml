@@ -13,11 +13,26 @@ fields:
       instructions: 'Main content section in markdown format'
       localizable: true
   -
+    handle: card_style
+    field:
+      type: select
+      display: 'Card Style'
+      default: full
+      options:
+        -
+          key: full
+          value: 'Full Cards (Icon + Title + Description)'
+        -
+          key: compact
+          value: 'Compact Cards (Icon + Title Only)'
+      localizable: false
+      instructions: 'Choose between full cards with description or compact cards with just icon and title'
+  -
     handle: info_cards
     field:
       type: replicator
       display: 'Info Cards'
-      max_sets: 8
+      max_sets: 20
       localizable: false
       sets:
         main:
@@ -80,11 +95,9 @@ fields:
                     type: textarea
                     display: 'Card Description'
                     localizable: true
-                    validate:
-                      - required
   -
     handle: cta_actions
     field: basics.buttons
     config:
-      display: 'Hero Actions'
+      display: 'Call to Action'
       width: 100

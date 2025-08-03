@@ -25,7 +25,7 @@
     <!-- Info Cards Grid -->
     {{ if info_cards }}
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ info_cards | length > 4 ? '3' : info_cards | length }} gap-8 mb-16"
+        class="grid grid-cols-1 md:grid-cols-2 {{card_style=='compact' ? 'lg:grid-cols-5' : 'lg:grid-cols-3'}} gap-8 mb-16"
         x-data="{ cardsVisible: false }" x-intersect="cardsVisible = true">
 
         {{ info_cards }}
@@ -35,18 +35,20 @@
             :style="`animation-delay: ${{ { (count - 1) * 150 } }}ms`">
 
             <!-- Icon -->
-            <div class="w-14 h-14 bg-[#827654]/10 rounded-full flex items-center justify-center mb-6">
+            <div class="{{card_style=='compact' ? 'w-full' : 'w-14 h-14'}} bg-[#827654]/10 rounded-full flex items-center justify-center mb-6">
               {{ if icon_type == 'heroicon' }}
-                {{ heroicon:outline :icon="icon" class="h-8 w-8 text-[#827654]" }}
+                {{ heroicon:outline :icon="icon" class="{{card_style=='compact' ? 'w-full h-auto' : 'h-8 w-8'}} text-[#827654]" }}
               {{ elseif icon_type == 'image' }}
-                <img src="{{ image }}" alt="{{ heading }}" class="h-8 w-8 object-contain">
+                <img src="{{ image }}" alt="{{ heading }}" class="{{card_style=='compact' ? 'w-full h-auto rounded-md' : 'h-8 w-8'}} object-contain">
               {{ /if }}
             </div>
 
             <!-- Content -->
-            <h3 class="text-xl font-bold text-gray-900 mb-3">{{ heading }}</h3>
+            <h3 class="text-base lg:text-xl font-semibold text-gray-900 mb-3">{{ heading }}</h3>
             <p class="text-gray-700 mb-4">{{ description }}</p>
-            <div class="w-12 h-1 bg-[#827654]/20"></div>
+            {{ if card_style != 'compact' }}
+              <div class="w-12 h-1 bg-[#827654]/20"></div>
+            {{ /if }}
           </div>
         {{ /info_cards }}
 
@@ -64,37 +66,3 @@
     {{ /if }}
   </div>
 </section>
-
-<style>
-  @keyframes fade-in-up {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .animate-fade-in-up {
-    animation: fade-in-up 0.8s ease-out forwards;
-  }
-
-  .animate-fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-</style>
