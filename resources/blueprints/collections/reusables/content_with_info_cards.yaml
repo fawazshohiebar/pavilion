@@ -1,0 +1,6 @@
+title: Content with Info Cards
+sections:
+  main:
+    display: Content
+    fields:
+      - import: reusable_content_with_info_cards

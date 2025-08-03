@@ -1,131 +1,145 @@
-<!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
-
 <el-dialog>
-  <dialog id="drawer" aria-labelledby="drawer-title" class="fixed inset-0 size-auto max-h-none max-w-none overflow-hidden bg-transparent not-open:hidden backdrop:bg-transparent">
-    <el-dialog-backdrop class="absolute inset-0 bg-gray-900/60 transition-opacity duration-500 ease-in-out data-closed:opacity-0"></el-dialog-backdrop>
+    <dialog id="drawer" aria-labelledby="drawer-title"
+        class="fixed inset-0 size-auto max-h-none max-w-none overflow-hidden bg-transparent not-open:hidden backdrop:bg-transparent">
+        <el-dialog-backdrop
+            class="absolute inset-0 bg-gray-900/60 transition-opacity duration-500 ease-in-out data-closed:opacity-0">
+        </el-dialog-backdrop>
 
-    <div tabindex="0" class="absolute inset-0 pl-4 sm:pl-8 focus:outline-none">
-      <el-dialog-panel class="ml-auto block size-full max-w-sm sm:max-w-md transform transition duration-500 ease-in-out data-closed:translate-x-full sm:duration-700">
-        <div class="flex h-full flex-col overflow-y-auto bg-white shadow-2xl">
-          <!-- Header -->
-          <div class="bg-gradient-to-r from-[#827654] to-[#9d8b65] px-6 py-4">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="h-8 w-8 bg-white/20 rounded-lg flex items-center justify-center">
-                    {{heroicon variant="outline" icon="bars-3" class="h-5 w-5 text-white" /}}
-                </div>
-                <h2 id="drawer-title" class="text-lg font-semibold text-white">{{ 'Navigation' | trans }}</h2>
-              </div>
-              <button type="button" command="close" commandfor="drawer" class="relative rounded-lg bg-white/10 p-2 text-white hover:bg-white/20 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#827654] focus-visible:outline-hidden transition-colors">
-                <span class="absolute -inset-1"></span>
-                <span class="sr-only">{{ 'Close menu' | trans }}</span>
-                {{heroicon variant="outline" icon="x-mark" class="h-5 w-5 text-white" /}}
-              </button>
-            </div>
-          </div>
-          
-          <!-- Content -->
-          <div class="relative flex-1 px-6 py-4">
-            <!-- Navigation Menu -->
-            <nav class="flex flex-col">
-              {{ nav:main_nav include_home="true" }}
-                {{ if children }}
-                  <!-- Parent Item with Children -->
-                  <div x-data="{ open: {{ is_parent ? 'true' : 'false' }} }" class="border-b border-gray-100 last:border-b-0">
-                    <button @click="open = !open" 
-                            class="w-full flex items-center justify-between py-4 text-left group hover:text-[#827654] transition-all duration-200 hover:bg-amber-50 rounded-lg">
-                      <span class="flex items-center gap-3">
-                        {{ if url == '/' }}
-                          <x-dynamic-component component="icons.home" class="h-5 w-5 text-gray-400 group-hover:text-[#827654] transition-colors" />
-                        {{ else }}
-                          <div class="h-2 w-2 bg-gray-300 rounded-full group-hover:bg-[#827654] transition-colors"></div>
-                        {{ /if }}
-                        <span class="font-medium text-gray-900 group-hover:text-[#827654] text-base">{{ title }}</span>
-                      </span>
-                      <div class="flex items-center">
-                        {{heroicon:ouline:chevron-down class="h-5 w-5 text-gray-400 transition-all duration-200 group-hover:text-[#827654]" 
-                             x-bind:class="open ? 'rotate-180' : ''" }}
-                      </div>
-                    </button>
-                    
-                    <!-- Nested Items -->
-                    <div x-show="open" 
-                         x-transition:enter="transition ease-out duration-200" 
-                         x-transition:enter-start="opacity-0 -translate-y-2" 
-                         x-transition:enter-end="opacity-100 translate-y-0" 
-                         x-transition:leave="transition ease-in duration-150" 
-                         x-transition:leave-start="opacity-100 translate-y-0" 
-                         x-transition:leave-end="opacity-0 -translate-y-2"
-                         class="pb-3 pl-8 space-y-1 bg-gray-50/50 -mx-3 rounded-b-lg">
-                      {{ children }}
-                        <a href="{{ url }}" 
-                           class="{{ is_current ? 'text-[#827654] font-medium bg-amber-100' : 'text-gray-600 hover:text-[#827654] hover:bg-white' }} block py-2.5 px-3 text-sm transition-all duration-200 relative rounded-md group">
-                          {{ if is_current }}
-                            <div class="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-4 bg-[#827654] rounded-r"></div>
-                          {{ /if }}
-                          <span class="block truncate">{{ title }}</span>
-                          {{ if is_current }}
-                            {{heroicon:outline:check-circle class="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-[#827654]" /}}
-                          {{ /if }}
-                        </a>
-                      {{ /children }}
+        <div tabindex="0" class="absolute inset-0 pl-4 sm:pl-8 focus:outline-none">
+            <el-dialog-panel
+                class="ml-auto block size-full max-w-sm sm:max-w-md transform transition duration-500 ease-in-out data-closed:translate-x-full sm:duration-700">
+                <div class="flex h-full flex-col overflow-y-auto bg-white shadow-2xl">
+                    <!-- Header -->
+                    <div class="bg-gradient-to-r from-[#827654] to-[#9d8b65] px-6 py-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="h-8 w-8 bg-white/20 rounded-lg flex items-center justify-center">
+                                    {{ heroicon variant="outline" icon="bars-3" class="h-5 w-5 text-white" /}}
+                                </div>
+                                <h2 id="drawer-title" class="text-lg font-semibold text-white">
+                                    {{ 'Navigation' | trans }}</h2>
+                            </div>
+                            <button type="button" command="close" commandfor="drawer"
+                                class="relative rounded-lg bg-white/10 p-2 text-white hover:bg-white/20 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#827654] focus-visible:outline-hidden transition-colors">
+                                <span class="absolute -inset-1"></span>
+                                <span class="sr-only">{{ 'Close menu' | trans }}</span>
+                                {{ heroicon variant="outline" icon="x-mark" class="h-5 w-5 text-white" /}}
+                            </button>
+                        </div>
                     </div>
-                  </div>
-                {{ else }}
-                  <!-- Single Item -->
-                  <a href="{{ url }}" 
-                     class="{{ is_current || is_parent ? 'text-[#827654] font-semibold bg-amber-50 border-amber-200' : 'text-gray-700 hover:text-[#827654] hover:bg-gray-50 border-transparent' }} flex items-center gap-3 py-4 px-3 -mx-3 rounded-lg transition-all duration-200 border relative group">
-                    {{ if url == '/' }}
-                      <x-dynamic-component component="icons.home" 
-                                         class="h-5 w-5 {{ is_current || is_parent ? 'text-[#827654]' : 'text-gray-400 group-hover:text-[#827654]' }} transition-colors" />
-                    {{ else }}
-                      <div class="h-2 w-2 {{ is_current || is_parent ? 'bg-[#827654]' : 'bg-gray-300 group-hover:bg-[#827654]' }} rounded-full transition-colors"></div>
-                    {{ /if }}
-                    <span class="text-base flex-1">{{ title }}</span>
-                    {{ if is_current || is_parent }}
-                        {{# {{heroicon:outline:check-circle class="h-4 w-4 text-[#827654]" /}} #}}
-                    {{ else }}
-                      {{heroicon:outline:chevron-right class="h-5 w-5 rtl:rotate-180 text-gray-300 group-hover:text-gray-400 transition-colors" /}}
-                    {{ /if }}
-                  </a>
-                {{ /if }}
-              {{ /nav:main_nav }}
 
-              <!-- Call to Action Button for Mobile -->
-              <div class="mt-8 pt-6 border-t border-gray-200">
-                <div class="space-y-4">
-                  {{ partial:partials/buttons/button url="{{link to="enquire-to-exhibit"}}" type="fill" color="secondary" icon="paper-airplane" }}
-                        {{ 'Book Your Stand' | trans }}
-                      {{ /partial:partials/buttons/button }}
-                  
-                  <!-- Quick Links -->
-                  <div class="grid grid-cols-2 gap-3 pt-2">
-                    <a href="#" class="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-sm">
-                        {{heroicon:outline:chart-bar class="h-4 w-4 text-gray-600" /}}
-                      <span class="text-gray-700">{{ 'Floor Plan' | trans }}</span>
-                    </a>
-                    <a href="#" class="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-sm">
-                        {{heroicon:outline:calendar class="h-4 w-4 text-gray-600" /}}
-                      <span class="text-gray-700">{{ 'Schedule' | trans }}</span>
-                    </a>
-                  </div>
+                    <!-- Content -->
+                    <div class="relative flex-1 px-6 py-4">
+                        <!-- Navigation Menu -->
+                        <nav class="flex flex-col">
+                            {{ nav:main_nav include_home="true" }}
+                                {{ if children }}
+                                    <!-- Parent Item with Children -->
+                                    <div x-data="{ open: {{ is_parent ? 'true' : 'false' }} }"
+                                        class="border-b border-gray-100 last:border-b-0">
+                                        <button @click="open = !open"
+                                            class="w-full flex items-center justify-between py-4 text-left group hover:text-[#827654] transition-all duration-200 hover:bg-amber-50 rounded-lg">
+                                            <span class="flex items-center gap-3">
+                                                {{ if url == '/' }}
+                                                    <x-dynamic-component component="icons.home"
+                                                        class="h-5 w-5 text-gray-400 group-hover:text-[#827654] transition-colors" />
+                                                {{ else }}
+                                                    <div
+                                                        class="h-2 w-2 bg-gray-300 rounded-full group-hover:bg-[#827654] transition-colors">
+                                                    </div>
+                                                {{ /if }}
+                                                <span
+                                                    class="font-medium text-gray-900 group-hover:text-[#827654] text-base">{{ title }}</span>
+                                            </span>
+                                            <div class="flex items-center">
+                                                {{ heroicon:ouline:chevron-down class="h-5 w-5 text-gray-400 transition-all duration-200 group-hover:text-[#827654]" x-bind:class="open ? 'rotate-180' : ''" }}
+                                            </div>
+                                        </button>
+
+                                        <!-- Nested Items -->
+                                        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                                            x-transition:enter-start="opacity-0 -translate-y-2"
+                                            x-transition:enter-end="opacity-100 translate-y-0"
+                                            x-transition:leave="transition ease-in duration-150"
+                                            x-transition:leave-start="opacity-100 translate-y-0"
+                                            x-transition:leave-end="opacity-0 -translate-y-2"
+                                            class="pb-3 pl-8 space-y-1 bg-gray-50/50 -mx-3 rounded-b-lg">
+                                            {{ children }}
+                                                <a href="{{ url }}"
+                                                    class="{{ is_current ? 'text-[#827654] font-medium bg-amber-100' : 'text-gray-600 hover:text-[#827654] hover:bg-white' }} block py-2.5 px-3 text-sm transition-all duration-200 relative rounded-md group">
+                                                    {{ if is_current }}
+                                                        <div
+                                                            class="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-4 bg-[#827654] rounded-r">
+                                                        </div>
+                                                    {{ /if }}
+                                                    <span class="block truncate">{{ title }}</span>
+                                                    {{ if is_current }}
+                                                        {{ heroicon:outline:check-circle class="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-[#827654]" /}}
+                                                    {{ /if }}
+                                                </a>
+                                            {{ /children }}
+                                        </div>
+                                    </div>
+                                {{ else }}
+                                    <!-- Single Item -->
+                                    <a href="{{ url }}"
+                                        class="{{ is_current || is_parent ? 'text-[#827654] font-semibold bg-amber-50 border-amber-200' : 'text-gray-700 hover:text-[#827654] hover:bg-gray-50 border-transparent' }} flex items-center gap-3 py-4 px-3 -mx-3 rounded-lg transition-all duration-200 border relative group">
+                                        {{ if url == '/' }}
+                                            <x-dynamic-component component="icons.home"
+                                                class="h-5 w-5 {{ is_current || is_parent ? 'text-[#827654]' : 'text-gray-400 group-hover:text-[#827654]' }} transition-colors" />
+                                        {{ else }}
+                                            <div
+                                                class="h-2 w-2 {{ is_current || is_parent ? 'bg-[#827654]' : 'bg-gray-300 group-hover:bg-[#827654]' }} rounded-full transition-colors">
+                                            </div>
+                                        {{ /if }}
+                                        <span class="text-base flex-1">{{ title }}</span>
+                                        {{ if is_current || is_parent }}
+                                            {{# {{heroicon:outline:check-circle class="h-4 w-4 text-[#827654]" /}} #}}
+                                        {{ else }}
+                                            {{ heroicon:outline:chevron-right class="h-5 w-5 rtl:rotate-180 text-gray-300 group-hover:text-gray-400 transition-colors" /}}
+                                        {{ /if }}
+                                    </a>
+                                {{ /if }}
+                            {{ /nav:main_nav }}
+
+                            <!-- Call to Action Button for Mobile -->
+                            <div class="mt-8 pt-6 border-t border-gray-200">
+                                <div class="space-y-4">
+                                    <div class="md:hidden flex flex-col">
+                                        {{ partial:shared/button url="{{link to="enquire-to-exhibit"}}" style="outline" color="secondary" icon="paper-airplane" }}
+                                            {{ 'Book Your Stand' | trans }}
+                                        {{ /partial:shared/button }}
+                                    </div>
+
+                                    <!-- Quick Links -->
+                                    <div class="grid grid-cols-2 gap-3 pt-2">
+                                        <a href="#"
+                                            class="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-sm">
+                                            {{ heroicon:outline:chart-bar class="h-4 w-4 text-gray-600" /}}
+                                            <span class="text-gray-700">{{ 'Floor Plan' | trans }}</span>
+                                        </a>
+                                        <a href="#"
+                                            class="flex items-center gap-2 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-sm">
+                                            {{ heroicon:outline:calendar class="h-4 w-4 text-gray-600" /}}
+                                            <span class="text-gray-700">{{ 'Schedule' | trans }}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="px-6 py-4 bg-gray-50 border-t border-gray-200">
+                        <div class="text-center">
+                            <p class="text-xs text-gray-500 mb-2">{{ 'Follow us for updates' | trans }}</p>
+                            <div class="flex justify-center">
+                                {{ partial:footer_social_media }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </nav>
-          </div>
-          
-          <!-- Footer -->
-          <div class="px-6 py-4 bg-gray-50 border-t border-gray-200">
-            <div class="text-center">
-              <p class="text-xs text-gray-500 mb-2">{{ 'Follow us for updates' | trans }}</p>
-              <div class="flex justify-center">
-                {{ partial:footer_social_media }}
-              </div>
-            </div>
-          </div>
+            </el-dialog-panel>
         </div>
-      </el-dialog-panel>
-    </div>
-  </dialog>
+    </dialog>
 </el-dialog>

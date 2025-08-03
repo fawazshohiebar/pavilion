@@ -16,7 +16,7 @@ stats:
     icon: users
   -
     id: macfpg3f
-    value: '11'
+    value: '13'
     label: Sectors
     icon: cog
   -

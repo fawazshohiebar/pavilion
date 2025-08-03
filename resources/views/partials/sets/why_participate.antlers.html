@@ -12,9 +12,9 @@
                 {{ if cta_buttons }}
                     <div class="flex flex-wrap justify-center gap-4">
                         {{ cta_buttons }}
-                            {{ partial:partials/buttons/button :url="url" :type="style" :color="color" :size="size" :icon="icon" }}
+                            {{ partial:shared/button :url="url" :type="style" :color="color" :size="size" :icon="icon" }}
                                 {{ label }}
-                            {{ /partial:partials/buttons/button }}
+                            {{ /partial:shared/button }}
                         {{ /cta_buttons }}
                     </div>
                 {{ /if }}

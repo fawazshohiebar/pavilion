@@ -62,8 +62,5 @@ fields:
       localizable: true
       width: 50
   -
-    handle: actions
-    field: basics.button_group
-    config:
-      display: Actions
-      width: 100
+    handle: buttons
+    field: basics.buttons

@@ -3,7 +3,7 @@ id: e955ebf9-b57f-4438-9219-b44ef9f10681
 blueprint: facts_figures
 title: 'Facts & Figures'
 heading:
-  heading: null
+  heading: 'Facts and Figures'
   subheading: null
   focus_icon: true
   heading_focus_word: null
@@ -16,7 +16,7 @@ stats:
     icon: users
   -
     id: macfpg3f
-    value: '11'
+    value: '13'
     label: Sectors
     icon: cog
   -
@@ -34,6 +34,6 @@ stats:
     value: '1740'
     label: 'Exhibitors & Brands'
     icon: building-storefront
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1753442589
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754159614
 ---

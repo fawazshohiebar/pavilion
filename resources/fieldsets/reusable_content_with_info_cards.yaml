@@ -1,0 +1,73 @@
+title: Content with Info Cards
+fields:
+  -
+    handle: heading
+    field: basics.heading_group
+    config:
+      width: 100
+  - handle: content
+    field:
+      type: markdown
+      display: Content
+      instructions: Main content section in markdown format
+      localizable: true
+  - handle: info_cards
+    field:
+      type: replicator
+      display: Info Cards
+      max_sets: 8
+      sets:
+        info_card:
+          display: Info Card
+          fields:
+            - handle: type
+              field:
+                type: select
+                display: Icon Type
+                default: heroicon
+                options:
+                  heroicon: Heroicon
+                  image: Image
+                width: 50
+            - handle: heroicon
+              field:
+                type: text
+                display: Heroicon Name
+                instructions: Enter heroicon name (e.g., "globe-alt", "heart", "star")
+                if:
+                  type: 'equals heroicon'
+                width: 50
+            - handle: image
+              field:
+                type: assets
+                display: Icon Image
+                max_files: 1
+                container: assets
+                folder: icons
+                restrict: true
+                allowed_extensions:
+                  - svg
+                  - png
+                  - jpg
+                  - webp
+                if:
+                  type: 'equals image'
+                width: 50
+            - handle: heading
+              field:
+                type: text
+                display: Card Heading
+                required: true
+                localizable: true
+            - handle: description
+              field:
+                type: textarea
+                display: Card Description
+                required: true
+                localizable: true
+  -
+    handle: hero_actions
+    field: basics.button_group
+    config:
+      display: 'Hero Actions'
+      width: 100

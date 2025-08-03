@@ -1,0 +1,55 @@
+{{
+$dButton = $dynamic_button ?? [
+    'button' => [
+        'url' => $url,
+    ],
+    'style' => $style,
+    'text' => $slot ?? $text,
+    'size' => $size,
+    'color' => $color,
+    'icon' => $icon,
+    'icon_position' => $icon_position,
+    'new_tab' => $new_tab ?? false,
+    'button_type' => $button_type ?? 'a',
+];
+}}
+
+{{?
+$sizes = [
+    'small' => [
+        'font' => 'text-sm',
+        'padding' => 'py-2 px-4',
+        'icon' => 'w-4 h-4 transition-transform duration-300 group-hover:translate-x-1',
+    ],
+    'medium' => [
+        'font' => 'text-base',
+        'padding' => 'py-3 px-6',
+        'icon' => 'w-4 h-4 transition-transform duration-300 group-hover:translate-x-1',
+    ],
+    'large' => [
+        'font' => 'text-lg',
+        'padding' => 'py-4 px-8',
+        'icon' => 'w-4 h-4 transition-transform duration-300 group-hover:translate-x-1',
+    ],
+];
+$base_classes = [
+    'group rounded-md overflow-hidden cursor-pointer',
+    'inline-flex items-center justify-center gap-2 font-light',
+    'hover:transform focus:outline-none focus:ring-2 focus:ring-offset-2',
+    'transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2',
+];
+$base_classes = implode(' ', $base_classes);  
+?}}
+{{ dButton }}
+        {{ partial:if_exists 
+            src="shared/buttons/{dButton:style ?? button_options:style}" 
+            :url="dButton:url ?? button:url" 
+            :text="dButton:text ?? button:title" 
+            :size="dButton:size ?? button_options:size"
+            :color="dButton:color ?? button_options:color"
+            :icon="dButton:icon ?? button_options:icon"
+            :new_tab="dButton:new_tab ?? button_options:new_tab"
+            :icon_position="dButton:icon_position ?? button_options:icon_position"
+            :button_type="dButton:button_type ?? button_options:button_type"
+        }}
+{{ /dButton }}

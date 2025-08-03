@@ -24,7 +24,7 @@ benefits:
   -
     id: my2p2xm1
     icon: users
-    title: '11 قطاعاً متنوعاً'
+    title: '13 قطاعاً متنوعاً'
     description: 'يشارك فيها مايزيد عن 350 عارض وعلامة تجارية من أكثر من 6 دول'
   -
     id: my2p3btr

@@ -21,6 +21,7 @@
             </p>
         {{ /if }}
         <!-- Enhanced Event Details Section -->
+        {{if (icons | length) > 0}}
         <div class="bg-black/30 backdrop-blur-sm rounded-lg p-2 border border-[#827654]/30 shadow-xl mb-10 opacity-0 translate-y-6 transition-all duration-200 transform ease-linear delay-200 motion-reduce:opacity-100 motion-reduce:translate-y-0 w-full"
             x-data="{ show: false }" 
             x-init="setTimeout(() => show = true, 300)"
@@ -44,17 +45,18 @@
                 {{ /icons }}
             </div>
         </div>
-
+        {{ /if }}
+        <!-- Hero Actions -->
+        {{ if buttons | length > 0 }}
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 opacity-0 translate-y-6 transition-all duration-200 transform ease-linear delay-300 motion-reduce:opacity-100 motion-reduce:translate-y-0"
             x-data="{ show: false }" 
             x-init="setTimeout(() => show = true, 450)"
             :class="{ 'opacity-100 translate-y-0': show }">
-            {{ hero_actions }}
-                {{ partial:partials/buttons/button :url="url" :type="style" :color="color" :size="size" :icon="icon" }}
-                    {{ label }}
-                {{ /partial:partials/buttons/button }}
-            {{ /hero_actions }}
+            {{ buttons }}
+                {{ partial:shared/button }}
+            {{ /buttons }}
         </div>
+        {{/if}}
     </div>
     </div>
 </div>

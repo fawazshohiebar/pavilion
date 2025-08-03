@@ -4,8 +4,8 @@ blueprint: pages
 title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754041889
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754212079
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -13,11 +13,15 @@ page_builder:
   -
     type: set
     attrs:
-      id: maur3re1
+      id: mdtzdfw4
       values:
         type: reusable_block
         entry:
-          - 1da0b009-5464-456d-8cbc-4736b92d7931
+          - 1c4fea83-e1ee-4471-ad67-39eec819a4de
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
   -
     type: set
     attrs:
@@ -37,33 +41,6 @@ page_builder:
   -
     type: set
     attrs:
-      id: mapc76ng
-      enabled: false
-      values:
-        type: reusable_block
-        entry:
-          - ab350943-ebc0-4207-b60a-edd99a606cbd
-  -
-    type: set
-    attrs:
-      id: mapcgnu1
-      enabled: false
-      values:
-        type: reusable_block
-        entry:
-          - 307b3fb3-dafc-4ca5-8b48-f9361a6f69f1
-  -
-    type: set
-    attrs:
-      id: maun3kai
-      enabled: false
-      values:
-        type: reusable_block
-        entry:
-          - 8c9021e1-4ffc-42e6-a3e4-d9bca93065d3
-  -
-    type: set
-    attrs:
       id: maune94b
       values:
         type: reusable_block
@@ -72,21 +49,15 @@ page_builder:
   -
     type: set
     attrs:
-      id: maunthoo
-      enabled: false
+      id: mdulw2yz
       values:
         type: reusable_block
         entry:
-          - 189cb780-fd09-4831-bdcd-c022fa861da2
+          - 9fe7d3ea-4903-4391-9f52-df30bd35a89e
   -
-    type: set
+    type: paragraph
     attrs:
-      id: mauokcx3
-      enabled: false
-      values:
-        type: reusable_block
-        entry:
-          - 96d67b24-84cb-4e38-8dc7-e8833cbc5ed7
+      textAlign: left
   -
     type: set
     attrs:
@@ -253,6 +224,7 @@ page_builder:
     type: set
     attrs:
       id: mdmra4mo
+      enabled: false
       values:
         type: reusable_block
         entry:

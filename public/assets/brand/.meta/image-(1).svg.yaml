@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'ADIHEX 2025 Logo'
 size: 22488
-last_modified: 1753794121
+last_modified: 1754112591
 width: 306.0
 height: 64.0
 mime_type: image/svg+xml

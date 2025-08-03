@@ -14,10 +14,13 @@
         </div>
 
         <!-- Stats Grid -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8" x-data="{ animateStats: false }"
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8" x-data="{ animateStats: false }"
             x-intersect="animateStats = true">
             {{ stats }}
-                <div class="bg-white/60 backdrop-blur-md rounded-xl p-6 text-center transform transition-all duration-500 hover:-translate-y-2 hover:shadow-lg border border-gray-200/50 shadow-sm"
+                <div class="
+                {{ (count % 2 != 0 && count == {stats | length}) ? 'col-span-2 md:col-span-1' : '' }}
+                
+                bg-white/60 backdrop-blur-md rounded-xl p-6 text-center transform transition-all duration-500 hover:-translate-y-2 hover:shadow-lg border border-gray-200/50 shadow-sm"
                     x-data="{ count: 0, target: {{ value }} }" x-init="$watch('animateStats', value => {
                     if (value) {
                         const interval = setInterval(() => {

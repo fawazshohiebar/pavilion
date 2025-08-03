@@ -46,9 +46,9 @@
                 {{ if actions }}
                     <div class="flex flex-col sm:flex-row gap-4">
                         {{ actions }}
-                            {{ partial:partials/buttons/button :url="url" :type="style" :color="color" :size="size" :icon="icon" }}
+                            {{ partial:shared/button :url="url" :type="style" :color="color" :size="size" :icon="icon" }}
                                 {{ label }}
-                            {{ /partial:partials/buttons/button }}
+                            {{ /partial:shared/button }}
                         {{ /actions }}
                     </div>
                 {{ /if }}

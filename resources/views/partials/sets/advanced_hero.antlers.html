@@ -1,0 +1,145 @@
+<!-- Advanced Hero with Carousel -->
+<section class="relative min-h-dvh md:min-h-[800px] h-dvh overflow-hidden -mt-34 pt-34 bg-black" 
+         x-data="advancedHero({{ media_items | length }})"
+         x-init="init()">
+  
+  <!-- Media Carousel -->
+  <div class="absolute inset-0">
+    {{ media_items }}
+      <div class="absolute inset-0 transition-opacity duration-1000"
+           :class="currentSlide === {{ index }} ? 'opacity-100' : 'opacity-0'"
+           x-show="currentSlide === {{ index }}">
+        
+        {{ if type == 'image' }}
+          <!-- Image Slide -->
+          <img src="{{ image }}" 
+               alt="{{ alt_text ?? title }}"
+               class="w-full h-full object-cover">
+        {{ elseif type == 'video' }}
+          <!-- Local Video Slide -->
+          <video class="w-full h-full object-cover" 
+                 muted 
+                 loop
+                 :autoplay="currentSlide === {{ index }}"
+                 preload="metadata">
+            <source src="{{ video_url }}" type="video/webm">
+            <source src="{{ video_url | replace:'.webm':'.mp4' }}" type="video/mp4">
+          </video>
+        {{ elseif type == 'youtube' }}
+          <!-- YouTube Video Slide -->
+          <div class="w-full h-full">
+            <iframe class="w-full h-full"
+                    :src="currentSlide === {{ index }} ? 'https://www.youtube.com/embed/{{ video_url }}?autoplay=1&mute=1&loop=1&playlist={{ video_url }}&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1' : ''"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+            </iframe>
+          </div>
+        {{ /if }}
+        
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+      </div>
+    {{ /media_items }}
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 flex items-center justify-center h-full">
+    {{partial:hero/content}}
+
+    {{ partial:hero/scroll }}
+  </div>
+
+  <!-- Progress Controls -->
+  {{ if media_items && (media_items | length) > 1 }}
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+      <div class="flex space-x-3">
+        {{ media_items }}
+          <button @click="goToSlide({{ index }})"
+                  class="relative h-[4px] transition-all duration-300 hover:bg-white/50 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  :class="currentSlide === {{ index }} ? 'w-12 bg-white/30' : 'w-6 bg-white/30'">
+            
+            <!-- Progress Bar - Only on Active Slide -->
+            <template x-if="currentSlide === {{ index }}">
+              <div class="absolute inset-0 bg-white origin-left transition-transform duration-75 ease-linear"
+                   :style="`transform: scaleX(${progress / 100})`">
+              </div>
+            </template>
+          </button>
+        {{ /media_items }}
+      </div>
+    </div>
+  {{ /if }}
+
+</section>
+
+<script>
+function advancedHero(mediaItemsLength) {
+  return {
+    currentSlide: 0, // Start from 0 to match Antlers {{ index }}
+    progress: 0,
+    interval: null,
+    progressInterval: null,
+    duration: 5000, // 5 seconds
+    progressStep: 50, // Update progress every 50ms
+    
+    init() {
+      if (mediaItemsLength > 1) {
+        this.startAutoplay();
+      }
+    },
+    
+    startAutoplay() {
+      // Always stop any existing autoplay first
+      this.stopAutoplay();
+      
+      this.startProgress();
+      
+      this.interval = setInterval(() => {
+        this.nextSlide();
+        this.startProgress(); // Restart progress after slide change
+      }, this.duration);
+    },
+    
+    startProgress() {
+      // Clear any existing progress interval
+      if (this.progressInterval) {
+        clearInterval(this.progressInterval);
+      }
+      
+      this.progress = 0;
+      const increment = 100 / (this.duration / this.progressStep);
+      
+      this.progressInterval = setInterval(() => {
+        this.progress += increment;
+        if (this.progress >= 100) {
+          this.progress = 100;
+          clearInterval(this.progressInterval);
+        }
+      }, this.progressStep);
+    },
+    
+    stopAutoplay() {
+      if (this.interval) {
+        clearInterval(this.interval);
+        this.interval = null;
+      }
+      if (this.progressInterval) {
+        clearInterval(this.progressInterval);
+        this.progressInterval = null;
+      }
+    },
+    
+    nextSlide() {
+      this.currentSlide = (this.currentSlide + 1) % mediaItemsLength;
+      // Don't call startProgress here - it's already handled by the interval
+    },
+    
+    goToSlide(index) {
+      this.currentSlide = index;
+      this.stopAutoplay();
+      this.startAutoplay();
+    }
+  }
+}
+</script>

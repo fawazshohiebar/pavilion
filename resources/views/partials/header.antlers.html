@@ -4,7 +4,7 @@
 <!-- Patronage Banner -->
 {{ partial:patronage }}
 <!-- Navigation -->
-<nav x-cloak class="w-full transition-all duration-300 ease-in-out"
+<nav class="w-full transition-all duration-300 ease-in-out"
     x-data="{ scrolled: true }"
     :class="scrolled ? 'bg-white shadow-lg' : 'bg-transparent'"
 >
@@ -24,9 +24,9 @@
         <div class="flex justify-end gap-4 items-center">
             {{ partial:partials/sets/countdown_date_picker countdown_end="{brand:countdown_date_picker format='Y-m-d\TH:i:s'}" }}
             <div class="hidden md:block">
-                {{ partial:partials/buttons/button url="{{link to="enquire-to-exhibit"}}" type="filled" color="primary" icon="paper-airplane" }}
+                {{ partial:shared/button url="{{link to="enquire-to-exhibit"}}" style="filled" color="primary" icon="paper-airplane" }}
                     {{ 'Book Your Stand' | trans }}
-                {{ /partial:partials/buttons/button }}
+                {{ /partial:shared/button }}
             </div>
 
             {{ partial:language-switcher /}}

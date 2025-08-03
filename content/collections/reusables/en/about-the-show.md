@@ -1,0 +1,43 @@
+---
+id: 39f8c616-eb93-4ada-9310-0e1f4b0b324b
+blueprint: media_with_cta
+title: 'About The Show'
+heading: 'THE LEGACY LIVES ON'
+description: |-
+  Heritage is the guiding force that shapes our values and practices. Just as our ancestors passed down their knowledge and skills through generations, ADIHEX strives to honour their legacy by offering innovative products and services that merge tradition with modernity. 
+
+  As enthusiasts of hunting and equestrian pursuits, ADIHEX is the event that celebrates shared passion while paying homage to our rich heritage.
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754213031
+flipped: false
+image: call_to_actions/main_cta.jpg
+buttons:
+  -
+    id: mdvfk921
+    dynamic_button:
+      button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
+      text: 'Book Your Stand'
+      button_options:
+        style: filled
+        color: primary
+        size: large
+        new_tab: false
+        icon: sparkles
+        icon_position: end
+    type: button
+    enabled: true
+  -
+    id: mdvgezfs
+    dynamic_button:
+      button: 'entry::b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7'
+      text: null
+      button_options:
+        style: outline
+        color: primary
+        size: large
+        new_tab: true
+        icon: ticket
+        icon_position: end
+    type: button
+    enabled: true
+---

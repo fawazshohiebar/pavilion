@@ -1,0 +1,29 @@
+{{?
+
+$colors = [
+    'black' => 'bg-transparent text-gray-900 border-2 border-gray-900 hover:bg-gray-900 hover:text-white focus:ring-gray-900',
+    'white' => 'bg-transparent text-white border-2 border-white hover:bg-white hover:text-gray-900 focus:ring-white',
+    'primary' => 'bg-transparent text-primary-600 border-2 border-primary-600 hover:bg-primary-600 hover:text-white focus:ring-primary-600',
+    'secondary' => 'bg-transparent text-gray-600 border-2 border-gray-600 hover:bg-gray-600 hover:text-white focus:ring-gray-600',
+];
+
+?}}
+
+{{
+    $size = size ?? button_options:size ?? 'medium';
+    $color = color ?? button_options:color ?? 'primary';
+    $button_type = button_type ?? 'a';
+    $icon = icon ?? button_options:icon ?? null;
+    $icon_position = icon_position ?? button_options:icon_position ?? 'end';
+}}
+{{? $final_classes = trim("{$base_classes} {$sizes[$size]['padding']} {$sizes[$size]['font']} {$colors[$color]}"); ?}}
+
+<{{ button_type }} href="{{ url }}" 
+    target="{{ new_tab ? '_blank' : '_self' }}"
+    class="{{final_classes}} {{ icon_position == 'start' ? 'flex-row-reverse' : ''}}"
+    {{ slot:attributes }}>
+    <span class="text-nowrap">{{ slot ?? text }}</span>
+    {{ if icon }}
+        {{heroicon variant="outline" :icon="icon" class="{{ sizes[size]['icon'] }} {{(icon | contains('paper-airplane')) ?= 'rtl:rotate-180'}}" }}
+    {{ /if }}
+</{{ button_type ?? 'a' }}>

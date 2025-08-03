@@ -1,0 +1,107 @@
+<!-- Content with Info Cards Section -->
+<section class="py-16 md:py-20 lg:py-24 bg-white relative overflow-hidden">
+  
+  <!-- Decorative Elements -->
+  <div class="absolute right-0 top-0 w-96 h-96 rounded-full bg-[#827654] opacity-5 -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+  <div class="absolute left-0 bottom-0 w-96 h-96 rounded-full bg-[#827654] opacity-5 translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+
+  <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto relative z-10">
+    
+    <!-- Section Header -->
+    {{ if heading || subheading }}
+    <div class="text-center mb-16" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+          {{ partial:partials/sets/heading_group }}
+    </div>
+    {{ /if }}
+
+    <!-- Main Content -->
+    {{ if content }}
+      <div class="max-w-4xl mx-auto mb-16">
+        <div class="prose prose-lg prose-gray max-w-none text-center" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+          {{ content | markdown }}
+        </div>
+      </div>
+    {{ /if }}
+
+    <!-- Info Cards Grid -->
+    {{ if info_cards }}
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-{{ info_cards | length > 4 ? '3' : info_cards | length }} gap-8 mb-16" 
+           x-data="{ cardsVisible: false }" 
+           x-intersect="cardsVisible = true">
+        
+        {{ info_cards }}
+          <div class="bg-gray-50/50 backdrop-blur-sm rounded-xl p-8 text-center transform transition-all duration-700 hover:-translate-y-2 hover:shadow-xl border border-gray-100/50 group"
+               :class="cardsVisible ? 'animate-fade-in-up' : 'opacity-0'"
+               :style="`animation-delay: ${{{ (count - 1) * 150 }}}ms`">
+            
+            <!-- Icon -->
+            <div class="w-20 h-20 bg-[#827654]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#827654]/20 transition-colors duration-300">
+              {{ if type == 'heroicon' }}
+                {{ heroicon:outline :icon="heroicon" class="h-10 w-10 text-[#827654]" }}
+              {{ elseif type == 'image' }}
+                <img src="{{ image }}" alt="{{ heading }}" class="h-10 w-10 object-contain">
+              {{ /if }}
+            </div>
+            
+            <!-- Content -->
+            <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 group-hover:text-[#827654] transition-colors duration-300">
+              {{ heading }}
+            </h3>
+            
+            <p class="text-gray-600 leading-relaxed">
+              {{ description }}
+            </p>
+          </div>
+        {{ /info_cards }}
+        
+      </div>
+    {{ /if }}
+
+    <!-- Call to Action -->
+    {{ if cta_buttons }}
+      <div class="text-center" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          {{ cta_buttons }}
+            {{ if enabled }}
+              {{ partial:shared/button 
+                  url="{url}" 
+                  type="{style}" 
+                  color="{color}" 
+                  size="{size}"
+                  icon="{icon}" }}
+                {{ label }}
+              {{ /partial:shared/button }}
+            {{ /if }}
+          {{ /cta_buttons }}
+        </div>
+      </div>
+    {{ /if }}
+
+  </div>
+</section>
+
+<style>
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
