@@ -1,0 +1,33 @@
+{{?
+    $sizes = [
+        'small' => 'text-xs md:text-sm lg:text-base',
+        'large' => 'text-sm md:text-base lg:text-lg',
+        'xl' => 'text-base md:text-lg lg:text-xl',
+    ];
+
+    $colors = [
+        'black' => 'text-gray-900',
+        'white' => 'text-white',
+        'primary' => 'text-primary-600',
+        'secondary' => 'text-secondary-500',
+    ];
+
+    $tagStyles = [
+        'h1' => 'font-light tracking-wider mb-4',
+        'h2' => 'font-light tracking-wider mb-4',
+        'h3' => 'font-light tracking-wider mb-4',
+        'p' => 'font-light tracking-wider mb-4',
+    ];
+?}}
+
+{{
+    $size = size ?? heading:size ?? 'medium';
+    $color = color ?? heading:color ?? 'primary';
+    $tag = tag ?? heading:tag ?? 'h2';
+    $uppercase = uppercase ?? heading:uppercase ?? false;
+}}
+
+<{{ tag ?? 'h2' }}
+    class="{{ sizes[size] }} {{ colors[color] }} {{tagStyles[tag]}} {{uppercase ? 'uppercase' : ''}}">
+    {{ partial:shared/colored_text :text="text" }}
+</{{ tag ?? 'h2' }}>

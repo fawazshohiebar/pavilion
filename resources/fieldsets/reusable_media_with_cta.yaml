@@ -1,19 +1,19 @@
 title: 'Reusable Media with CTA'
 fields:
   -
+    handle: heading
+    field:
+      type: colored_text
+      display: Heading
+      localizable: true
+      color: black
+      tag: h1
+  -
     handle: section_label
     field:
       type: text
       display: 'Section Label'
       localizable: true
-      width: 50
-  -
-    handle: heading
-    field:
-      type: text
-      display: Heading
-      localizable: true
-      width: 50
   -
     handle: description
     field:

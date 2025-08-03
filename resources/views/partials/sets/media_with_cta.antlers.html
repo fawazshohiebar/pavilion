@@ -1,18 +1,18 @@
-<section id="{{slug}}" class="py-[45px] md:py-[50px] lg:py-[70px]   bg-white relative overflow-hidden">
+<section id="{{ slug }}" class="py-[45px] md:py-[50px] lg:py-[70px]   bg-white relative overflow-hidden">
     <!-- Decorative Elements -->
     <div class="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-[#827654] opacity-5"></div>
     <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-[#827654] opacity-5"></div>
 
     <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto  relative z-10">
-        <div class="flex flex-col lg:flex-row items-center gap-12 {{flipped ? 'lg:flex-row-reverse' : ''}}">
+        <div class="flex flex-col lg:flex-row items-center gap-12 {{ flipped ? 'lg:flex-row-reverse' : '' }}">
             <!-- Image Section -->
-            <div class="w-full lg:w-1/2" x-data="{}"
-                x-intersect="$el.classList.add('animate-fade-slide-right')">
+            <div class="w-full lg:w-1/2" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-right')">
                 <div class="relative">
                     {{ if image }}
-                    {{ glide:image preset="large" }}
-                        <img src="{{url}}" alt="{{ alt ?? title }}" width="{{width}}" height="{{height}}" class="w-full h-auto rounded-lg shadow-xl" />
-                    {{ /glide:image }}
+                        {{ glide:image preset="large" }}
+                            <img src="{{ url }}" alt="{{ alt ?? title }}" width="{{ width }}" height="{{ height }}"
+                                class="w-full h-auto rounded-lg shadow-xl" />
+                        {{ /glide:image }}
                     {{ else }}
                         <!-- Fallback image -->
                         <img src="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/shutterstock_1111453718-scaled.jpg"
@@ -33,16 +33,16 @@
             </div>
 
             <!-- Content Section -->
-            <div class="w-full lg:w-1/2" x-data="{}"
-                x-intersect="$el.classList.add('animate-fade-slide-left')">
+            <div class="w-full lg:w-1/2" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-left')">
                 <div class="flex items-center mb-4">
                     <div class="w-12 h-1 bg-[#827654]"></div>
                     <span
                         class="rtl:mr-4 ltr:ml-4 text-[#827654] font-medium uppercase ltr:tracking-wider">{{ section_label }}</span>
                 </div>
 
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                    {{ heading | widont(3) }}</h2>
+                {{ heading }}
+                    {{ partial:sets/heading :text="text" :size="size" :color="color" :tag="tag" :uppercase="uppercase" }}
+                {{ /heading }}
 
                 <div class="text-gray-700 mb-6 leading-relaxed prose prose-lg">
                     {{ description }}

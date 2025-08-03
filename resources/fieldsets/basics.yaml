@@ -512,13 +512,13 @@ fields:
         -
           handle: heading
           field:
-            type: text
+            type: colored_text
             display: Heading
             localizable: false
         -
           handle: subheading
           field:
-            type: text
+            type: colored_text
             display: SubHeading
             localizable: false
         -
@@ -633,6 +633,13 @@ fields:
       display: Layout
       localizable: false
       default: layout
+  -
+    handle: heading
+    field:
+      type: colored_text
+      display: Heading
+      localizable: false
+      tag: h2
   -
     handle: turnstile_token
     field:

@@ -9,8 +9,10 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Offset for sticky header */
+  scroll-padding-top: 100px;
+  /* Offset for sticky header */
 }
+
 @theme {
   --font-mont: "montserrat", sans-serif;
   --font-noto: "noto-sans-arabic", sans-serif;
@@ -25,6 +27,33 @@ html {
   --color-primary-800: #574c3c;
   --color-primary-900: #4c4237;
   --color-primary-950: #2b241d;
+
+  --color-secondary-50: #f3f6f8;
+  --color-secondary-100: #e1e9ec;
+  --color-secondary-200: #c7d4da;
+  --color-secondary-300: #a0b6c0;
+  --color-secondary-400: #728f9e;
+  --color-secondary-500: #5b7a8a;
+  --color-secondary-600: #4b616f;
+  --color-secondary-700: #41525d;
+  --color-secondary-800: #3b464f;
+  --color-secondary-900: #343d45;
+  --color-secondary-950: #1f262d;
+}
+
+@layer utilities {
+  .colored-text-secondary {
+    @apply text-secondary-500 dark:text-secondary-100;
+  }
+  .colored-text-primary {
+    @apply text-primary-500 dark:text-primary-100;
+  }
+  .colored-text-white {
+    @apply text-white;
+  }
+  .colored-text-black {
+    @apply text-black;
+  }
 }
 
 .animate-fade-in {
@@ -33,34 +62,40 @@ html {
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
 
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+/* h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
   @apply text-amber-100;
+} */
+
+
+
+.slicking-slider .slick-list {
+  margin: 0 10px;
+  overflow: hidden;
 }
 
-
-
-.slicking-slider .slick-list{
-  margin:0 10px;
-  overflow:hidden;
+.slider-feedback .slick-list {
+  height: 100%;
+  overflow: hidden;
+  margin: 0 40px;
 }
 
-.slider-feedback .slick-list{
-  height:100%;
-overflow: hidden;
-margin: 0 40px;
-}
-.slider-feedback .slick-track{
-  height:100%;
+.slider-feedback .slick-track {
+  height: 100%;
 }
 
 
@@ -68,14 +103,10 @@ margin: 0 40px;
 @media only screen and (max-width: 767px) {
 
 
- .slider-feedback .slick-list{
-   height:100%;
-   overflow: hidden;
-   margin: 0 0px;
+  .slider-feedback .slick-list {
+    height: 100%;
+    overflow: hidden;
+    margin: 0 0px;
   }
 
 }
-
-
-
-

@@ -11,10 +11,29 @@
         {{ /if }}
         <div class="w-8 h-1 bg-[#827654]"></div>
     </div>
+    {{ if heading:heading:text }}
+        {{heading}}
+            {{ partial:sets/heading 
+                :text="heading:text" 
+                :size="heading:size"
+                :color="heading:color"
+                :tag="heading:tag"
+                :uppercase="heading:uppercase"
+            }}
+        {{ /heading }}
+    {{ /if }}
+    {{ if heading:subheading:text }}
+        {{heading}}
+            {{ partial:sets/subheading 
+                :text="subheading:text" 
+                :size="subheading:size"
+                :color="subheading:color"
+                :tag="subheading:tag"
+                :uppercase="subheading:uppercase"
+            }}
+        {{ /heading }}
+    {{ /if }}
 
-    <h2 class="text-[28px] md:text-[35px] lg:text-[40px] font-bold text-gray-900 mb-6">{{ heading:heading | widont }}</h2>
-
-    <p class="text-gray-700 text-lg mb-0">
-        {{ heading:subheading | widont }}
-    </p>
+    
+    
 </div>
