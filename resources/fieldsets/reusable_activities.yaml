@@ -80,4 +80,4 @@ fields:
             width: 33
   -
     handle: button_group
-    field: basics.button_group
+    field: basics.buttons

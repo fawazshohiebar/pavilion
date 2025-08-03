@@ -67,7 +67,7 @@ fields:
                 localizable: true
   -
     handle: hero_actions
-    field: basics.button_group
+    field: basics.buttons
     config:
       display: 'Hero Actions'
       width: 100

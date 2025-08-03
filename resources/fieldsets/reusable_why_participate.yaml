@@ -22,7 +22,7 @@ fields:
       instructions: 'The subtitle or description for the main call to action'
   -
     handle: cta_buttons
-    field: basics.button_group
+    field: basics.buttons
     config:
       display: 'CTA Buttons'
       width: 100

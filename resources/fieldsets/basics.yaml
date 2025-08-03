@@ -1,91 +1,6 @@
 title: Basics
 fields:
   -
-    handle: button_group
-    field:
-      type: replicator
-      display: 'Button Group'
-      localizable: true
-      sets:
-        new_set_group:
-          display: 'New Set Group'
-          sets:
-            button:
-              display: Button
-              fields:
-                -
-                  handle: label
-                  field:
-                    type: text
-                    display: Label
-                    localizable: false
-                -
-                  handle: size
-                  field:
-                    options:
-                      -
-                        key: large
-                        value: L
-                      -
-                        key: medium
-                        value: M
-                      -
-                        key: small
-                        value: S
-                    default: medium
-                    type: button_group
-                    display: Size
-                    localizable: false
-                    width: 33
-                -
-                  handle: color
-                  field:
-                    options:
-                      -
-                        key: light
-                        value: W
-                      -
-                        key: dark
-                        value: D
-                      -
-                        key: primary
-                        value: P
-                      -
-                        key: secondary
-                        value: S
-                    default: primary
-                    type: button_group
-                    display: Color
-                    localizable: false
-                    width: 33
-                -
-                  handle: style
-                  field:
-                    options:
-                      -
-                        key: filled
-                        value: Fill
-                      -
-                        key: outline
-                        value: Outline
-                    default: filled
-                    type: button_group
-                    display: Style
-                    localizable: false
-                    width: 33
-                -
-                  handle: icon
-                  field: basics.icon
-                  config:
-                    width: 50
-                -
-                  handle: url
-                  field:
-                    type: link
-                    display: Url
-                    localizable: false
-                    width: 50
-  -
     handle: icon
     field:
       options:
@@ -261,7 +176,6 @@ fields:
                   import: reusable_why_participate
             redirect_to:
               display: 'Redirect To'
-              instructions: null
               icon: arrow-right
               fields:
                 -
