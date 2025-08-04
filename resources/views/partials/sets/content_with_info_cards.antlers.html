@@ -52,6 +52,8 @@ $blockPadding = [
         {{ partial:partials/shared/general/info_card_compact }}
       {{ elseif style_config:variant == 'carousel' }}
         {{ partial:partials/shared/general/info_card_carousel }}
+      {{ elseif style_config:variant == 'grid' }}
+        {{ partial:partials/shared/general/info_card_grid }}
       {{ /if }}
     {{ /if }}
     <!-- Call to Action -->

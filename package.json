@@ -21,6 +21,7 @@
         "@alpinejs/intersect": "^3.14.9",
         "@alpinejs/persist": "^3.14.9",
         "alpine": "^0.2.1",
-        "laravel-precognition-alpine": "^0.7.2"
+        "laravel-precognition-alpine": "^0.7.2",
+        "swiper": "^11.2.10"
     }
 }

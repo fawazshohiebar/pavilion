@@ -34,10 +34,10 @@ info_cards:
   -
     id: mdvzszwd
     icon_type: image
-    image: icons/japanese-art.jpg
     heading: 'Decoden Japanese Art'
     type: info_card
     enabled: true
+    image: icons/japanese-art.jpg
   -
     id: mdvzt1zk
     icon_type: image
@@ -102,6 +102,6 @@ info_cards:
     type: info_card
     enabled: true
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754284275
+updated_at: 1754287215
 ---
 Step into a world where age-old traditions meet modern experiences. ADIHEX 2025 brings heritage to the forefront with immersive zones, live demonstrations, educational workshops, and cultural showcases that highlight the rich history of hunting, equestrianism, and Emirati craftsmanship. Every feature is designed to celebrate and preserve a legacy that continues to inspire.
