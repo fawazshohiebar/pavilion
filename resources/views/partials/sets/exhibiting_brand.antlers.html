@@ -1,0 +1,25 @@
+<div class="bg-[#F9FAFC]">
+<div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto">
+<div id="exhibitors-init" v-cloak class="exhibitors">
+  <section id="exhibitors" v-show="!loading" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li v-for="item in items" class="splide__slide">
+          <div @click="goToExhibitor(item.id)" class="exhibitor-list-item">
+            <img v-if="item.logo_media && item.logo_media.webp" :src="item.logo_media.webp" :alt="item.name">
+            <img v-else-if="item.logo_media" :src="item.logo_media.url" :alt="item.name">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div v-show="loading" class="loading-holder">
+    <svg class="animate-spin h-10 w-10" fill="none" viewBox="0 0 24 24">
+      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0..." />
+    </svg>
+  </div>
+</div>
+</div>
+</div>

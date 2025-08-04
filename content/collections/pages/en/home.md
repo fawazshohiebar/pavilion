@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754041889
+updated_at: 1754051964
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Al Ain 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -121,10 +121,6 @@ page_builder:
         entry:
           - 6363d154-ba9f-4175-ba6b-efd3ac9e97d1
   -
-    type: paragraph
-    attrs:
-      textAlign: left
-  -
     type: set
     attrs:
       id: mdite4xn
@@ -213,6 +209,53 @@ page_builder:
         type: divider
         space_height: 40px
         background_color: '#f5f2eb'
+  -
+    type: set
+    attrs:
+      id: mdssyohe
+      values:
+        type: heading_and_text
+        title_text: 'EXHIBITING BRANDS - ADIHEX 2025'
+        background_color: '#F9FAFC'
+  -
+    type: set
+    attrs:
+      id: mdssx9hu
+      values:
+        type: exhibiting_brand
+        toggle_field: false
+  -
+    type: set
+    attrs:
+      id: mdst7zbl
+      values:
+        type: divider
+        space_height: 40px
+        background_color: '#f9fafc'
+  -
+    type: set
+    attrs:
+      id: mdsszmmn
+      values:
+        type: themed_button
+        button_group:
+          -
+            id: mdsszohb
+            label: 'View exhibitors list'
+            size: medium
+            color: primary
+            style: filled
+            type: button
+            enabled: true
+        background_color: '#f9fafc'
+  -
+    type: set
+    attrs:
+      id: mdst8ppn
+      values:
+        type: divider
+        space_height: 40px
+        background_color: '#f9fafc'
   -
     type: set
     attrs:
@@ -320,10 +363,6 @@ page_builder:
       values:
         type: divider
         space_height: 60px
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
   -
     type: set
     attrs:

@@ -316,6 +316,18 @@ tabs:
                                           type: select
                                           display: 'Button Size'
                                           localizable: false
+                    exhibiting_brand:
+                      display: 'Exhibiting Brand'
+                      instructions: null
+                      icon: null
+                      hide: null
+                      fields:
+                        -
+                          handle: toggle_field
+                          field:
+                            type: toggle
+                            display: 'Toggle Field'
+                            localizable: false
                 forms:
                   display: Forms
                   instructions: null

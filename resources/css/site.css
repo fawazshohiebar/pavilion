@@ -50,6 +50,19 @@ margin: 0 40px;
 }
 
 
+.splide__slide{
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+}
+.splide__slide img{
+  max-height:185px!important;
+}
+.splide__slide .exhibitor-list-item {
+  display: flex!important;
+  justify-content: center!important;
+}
+
 
 @media only screen and (max-width: 767px) {
 
