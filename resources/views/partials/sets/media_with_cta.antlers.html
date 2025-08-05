@@ -20,7 +20,11 @@ $blockPadding = [
 
 ?}}
 
-{{ $variant = style_config:variant ?? 'left_image'; }}
+{{ 
+    $size = style_config:size ?? 'normal';
+$isCompact = $size === 'compact';
+    $variant = style_config:variant ?? 'left_image'; 
+}}
 
 {{# 
 style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
@@ -32,36 +36,36 @@ style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
         <div class="absolute inset-0 z-0">
             {{ if image }}
                 {{ glide:image preset="large" }}
-                    <img src="{{ url }}" alt="{{ alt ?? title }}" width="{{ width }}" height="{{ height }}"
-                        class="w-full h-full object-cover" />
+                    <div class="w-full h-full bg-cover bg-no-repeat" 
+                         style="background-image: url('{{ url }}'); background-position: {{ focus_css ?? 'center' }};"></div>
                 {{ /glide:image }}
             {{ else }}
-                <img src="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/shutterstock_1111453718-scaled.jpg"
-                    alt="Falconry at Al Ain Exhibition" class="w-full h-full object-cover" />
+                <div class="w-full h-full bg-cover bg-no-repeat" 
+                     style="background-image: url('https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/shutterstock_1111453718-scaled.jpg'); background-position: center;"></div>
             {{ /if }}
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
         
         <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto relative z-10">
-            <div class="flex items-center justify-center min-h-[60vh] text-center">
-                <div class="max-w-4xl" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-up')">
-                    <div class="flex items-center justify-center mb-6">
-                        <div class="w-12 h-1 bg-white/80"></div>
-                        <span class="rtl:mr-4 ltr:ml-4 text-white/90 font-medium uppercase ltr:tracking-wider">{{ section_label }}</span>
+            <div class="flex items-center justify-center {{ $isCompact ? 'min-h-[30vh]' : 'min-h-[60vh]' }} text-center">
+                <div class="{{ $isCompact ? 'max-w-2xl' : 'max-w-4xl' }}" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-up')">
+                    <div class="flex items-center justify-center {{ $isCompact ? 'mb-3' : 'mb-6' }}">
+                        <div class="{{ $isCompact ? 'w-8 h-0.5' : 'w-12 h-1' }} bg-white/80"></div>
+                        <span class="rtl:mr-4 ltr:ml-4 text-white/90 font-medium uppercase ltr:tracking-wider {{ $isCompact ? 'text-sm' : '' }}">{{ section_label }}</span>
                     </div>
 
-                    <div class="text-white mb-6">
+                    <div class="text-white {{ $isCompact ? 'mb-3' : 'mb-6' }}">
                         {{ heading }}
                             {{ partial:sets/heading :text="text" :size="size" :color="white" :tag="tag" :uppercase="uppercase" }}
                         {{ /heading }}
                     </div>
 
-                    <div class="text-white/90 mb-8 leading-relaxed prose prose-lg prose-invert max-w-none">
+                    <div class="text-white/90 {{ $isCompact ? 'mb-4' : 'mb-8' }} leading-relaxed prose {{ $isCompact ? 'prose-base' : 'prose-lg' }} prose-invert max-w-none">
                         {{ description }}
                     </div>
 
                     {{ if buttons }}
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div class="flex flex-col sm:flex-row {{ $isCompact ? 'gap-2' : 'gap-4' }} justify-center">
                             {{ buttons }}
                                 {{ partial:shared/button }}
                             {{ /buttons }}
@@ -69,11 +73,11 @@ style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
                     {{ /if }}
 
                     {{ if badge_text }}
-                        <div class="mt-8 inline-flex items-center justify-center w-32 h-32 bg-[#827654] rounded-lg text-white">
+                        <div class="{{ $isCompact ? 'mt-4' : 'mt-8' }} inline-flex items-center justify-center {{ $isCompact ? 'w-20 h-20' : 'w-32 h-32' }} bg-[#827654] rounded-lg text-white">
                             <div class="text-center">
-                                <span class="block text-3xl font-bold">{{ badge_text }}</span>
+                                <span class="block {{ $isCompact ? 'text-xl' : 'text-3xl' }} font-bold">{{ badge_text }}</span>
                                 {{ if badge_subtext }}
-                                    <span class="text-sm uppercase">{{ badge_subtext }}</span>
+                                    <span class="{{ $isCompact ? 'text-xs' : 'text-sm' }} uppercase">{{ badge_subtext }}</span>
                                 {{ /if }}
                             </div>
                         </div>
@@ -84,27 +88,27 @@ style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
     {{ elseif $variant == 'no_image' }}
         <!-- Content only variant -->
         <!-- Decorative Elements -->
-        <div class="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-[#827654] opacity-5"></div>
-        <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-[#827654] opacity-5"></div>
+        <div class="absolute {{ $isCompact ? '-right-10 -top-10 w-40 h-40' : '-right-20 -top-20 w-72 h-72' }} rounded-full bg-[#827654] opacity-5"></div>
+        <div class="absolute {{ $isCompact ? '-left-10 -bottom-10 w-48 h-48' : '-left-20 -bottom-20 w-80 h-80' }} rounded-full bg-[#827654] opacity-5"></div>
         
         <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto relative z-10">
-            <div class="flex items-center justify-center min-h-[40vh]">
-                <div class="max-w-4xl text-center" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-up')">
-                    <div class="flex items-center justify-center mb-6">
-                        <div class="w-12 h-1 bg-[#827654]"></div>
-                        <span class="rtl:mr-4 ltr:ml-4 text-[#827654] font-medium uppercase ltr:tracking-wider">{{ section_label }}</span>
+            <div class="flex items-center justify-center {{ $isCompact ? 'min-h-[25vh]' : 'min-h-[40vh]' }}">
+                <div class="{{ $isCompact ? 'max-w-2xl' : 'max-w-4xl' }} text-center" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-up')">
+                    <div class="flex items-center justify-center {{ $isCompact ? 'mb-3' : 'mb-6' }}">
+                        <div class="{{ $isCompact ? 'w-8 h-0.5' : 'w-12 h-1' }} bg-[#827654]"></div>
+                        <span class="rtl:mr-4 ltr:ml-4 text-[#827654] font-medium uppercase ltr:tracking-wider {{ $isCompact ? 'text-sm' : '' }}">{{ section_label }}</span>
                     </div>
 
                     {{ heading }}
                         {{ partial:sets/heading :text="text" :size="size" :color="color" :tag="tag" :uppercase="uppercase" }}
                     {{ /heading }}
 
-                    <div class="text-gray-700 mb-8 leading-relaxed prose prose-lg max-w-none">
+                    <div class="text-gray-700 {{ $isCompact ? 'mb-4' : 'mb-8' }} leading-relaxed prose {{ $isCompact ? 'prose-base' : 'prose-lg' }} max-w-none">
                         {{ description }}
                     </div>
 
                     {{ if buttons }}
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div class="flex flex-col sm:flex-row {{ $isCompact ? 'gap-2' : 'gap-4' }} justify-center">
                             {{ buttons }}
                                 {{ partial:shared/button }}
                             {{ /buttons }}
@@ -112,11 +116,11 @@ style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
                     {{ /if }}
 
                     {{ if badge_text }}
-                        <div class="mt-8 inline-flex items-center justify-center w-32 h-32 bg-[#827654] rounded-lg text-white">
+                        <div class="{{ $isCompact ? 'mt-4' : 'mt-8' }} inline-flex items-center justify-center {{ $isCompact ? 'w-20 h-20' : 'w-32 h-32' }} bg-[#827654] rounded-lg text-white">
                             <div class="text-center">
-                                <span class="block text-3xl font-bold">{{ badge_text }}</span>
+                                <span class="block {{ $isCompact ? 'text-xl' : 'text-3xl' }} font-bold">{{ badge_text }}</span>
                                 {{ if badge_subtext }}
-                                    <span class="text-sm uppercase">{{ badge_subtext }}</span>
+                                    <span class="{{ $isCompact ? 'text-xs' : 'text-sm' }} uppercase">{{ badge_subtext }}</span>
                                 {{ /if }}
                             </div>
                         </div>
@@ -127,27 +131,28 @@ style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
     {{ else }}
         <!-- Standard left/right image variants -->
         <!-- Decorative Elements -->
-        <div class="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-[#827654] opacity-5"></div>
-        <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-[#827654] opacity-5"></div>
+        <div class="absolute {{ $isCompact ? '-right-10 -top-10 w-40 h-40' : '-right-20 -top-20 w-72 h-72' }} rounded-full bg-[#827654] opacity-5"></div>
+        <div class="absolute {{ $isCompact ? '-left-10 -bottom-10 w-48 h-48' : '-left-20 -bottom-20 w-80 h-80' }} rounded-full bg-[#827654] opacity-5"></div>
 
         <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto relative z-10">
-            <div class="flex flex-col lg:flex-row items-center gap-12 {{ $variant == 'right_image' ? 'lg:flex-row-reverse' : '' }}">
+            <div class="flex flex-col lg:flex-row items-center {{ $isCompact ? 'gap-6' : 'gap-12' }} {{ $variant == 'right_image' ? 'lg:flex-row-reverse' : '' }}">
                 <!-- Image Section -->
-                <div class="w-full lg:w-1/2" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-right')">
+                <div class="w-full {{ $isCompact ? 'lg:w-2/5' : 'lg:w-1/2' }}" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-right')">
                     <div class="relative">
                         {{ if image }}
-                            {{ glide:image preset="large" }}
+                            {{ glide:image preset="{{ $isCompact ? 'medium' : 'large' }}" }}
                                 <img src="{{ url }}" alt="{{ alt ?? title }}" width="{{ width }}" height="{{ height }}"
-                                    class="w-full h-auto rounded-lg shadow-xl" />
+                                    style="object-position: {{ focus_css ?? 'center' }};"
+                                    class="w-full max-h-96 object-cover h-auto {{ $isCompact ? 'lg:max-h-96 rounded-md shadow-lg' : 'lg:max-h-max rounded-lg shadow-xl' }}" />
                             {{ /glide:image }}
                         {{ /if }}
                         {{ if badge_text }}
                             <div
-                                class="absolute -bottom-6 ltr:-right-6 rtl:-left-6 w-24 h-24 bg-[#827654] rounded-lg flex items-center justify-center text-white">
+                                class="absolute {{ $isCompact ? '-bottom-3 ltr:-right-3 rtl:-left-3 w-16 h-16' : '-bottom-6 ltr:-right-6 rtl:-left-6 w-24 h-24' }} bg-[#827654] rounded-lg flex items-center justify-center text-white">
                                 <div class="text-center">
-                                    <span class="block text-2xl font-bold">{{ badge_text }}</span>
+                                    <span class="block {{ $isCompact ? 'text-lg' : 'text-2xl' }} font-bold">{{ badge_text }}</span>
                                     {{ if badge_subtext }}
-                                        <span class="text-xs uppercase">{{ badge_subtext }}</span>
+                                        <span class="{{ $isCompact ? 'text-xs' : 'text-xs' }} uppercase">{{ badge_subtext }}</span>
                                     {{ /if }}
                                 </div>
                             </div>
@@ -156,22 +161,22 @@ style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
                 </div>
 
                 <!-- Content Section -->
-                <div class="w-full lg:w-1/2" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-left')">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-1 bg-[#827654]"></div>
+                <div class="w-full {{ $isCompact ? 'lg:w-3/5' : 'lg:w-1/2' }}" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-left')">
+                    <div class="flex items-center {{ $isCompact ? 'mb-2' : 'mb-4' }}">
+                        <div class="{{ $isCompact ? 'w-8 h-0.5' : 'w-12 h-1' }} bg-[#827654]"></div>
                         <span
-                            class="rtl:mr-4 ltr:ml-4 text-[#827654] font-medium uppercase ltr:tracking-wider">{{ section_label }}</span>
+                            class="rtl:mr-4 ltr:ml-4 text-[#827654] font-medium uppercase ltr:tracking-wider {{ $isCompact ? 'text-sm' : '' }}">{{ section_label }}</span>
                     </div>
 
                     {{ heading }}
                         {{ partial:sets/heading :text="text" :size="size" :color="color" :tag="tag" :uppercase="uppercase" }}
                     {{ /heading }}
 
-                    <div class="text-gray-700 mb-6 leading-relaxed prose prose-lg">
+                    <div class="text-gray-700 {{ $isCompact ? 'mb-3' : 'mb-6' }} leading-relaxed prose {{ $isCompact ? 'prose-sm' : 'prose-lg' }}">
                         {{ description }}
                     </div>
                     {{ if buttons }}
-                        <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex flex-col sm:flex-row {{ $isCompact ? 'gap-2' : 'gap-4' }}">
                             {{ buttons }}
                                 {{ partial:shared/button }}
                             {{ /buttons }}
