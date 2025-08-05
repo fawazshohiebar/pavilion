@@ -3,8 +3,8 @@ id: a51b31a8-d8c9-48b9-9fea-92afa0b3b9fc
 blueprint: page
 title: 'Why Visit'
 fine_seo_is_title_custom: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754369435
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754372817
 page_builder:
   -
     type: set
@@ -61,10 +61,6 @@ page_builder:
         type: divider
         space_height: 25px
         background_color: white
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
 fine_seo_title: 'Why Visit'
 fine_seo_preview: 'Why Visit'
 ---

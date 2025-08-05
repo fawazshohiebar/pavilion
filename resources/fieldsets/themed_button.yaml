@@ -1,0 +1,32 @@
+title: 'Themed Button'
+fields:
+  -
+    handle: label
+    field:
+      type: text
+      display: Label
+      localizable: false
+      width: 50
+  -
+    handle: color
+    field:
+      taggable: true
+      type: select
+      display: Color
+      localizable: false
+      width: 50
+  -
+    handle: background_color
+    field:
+      taggable: true
+      type: select
+      display: 'Background Color'
+      localizable: false
+      width: 50
+  -
+    handle: url
+    field:
+      type: text
+      display: Url
+      localizable: false
+      width: 50
