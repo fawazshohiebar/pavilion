@@ -31,7 +31,7 @@ actions:
     type: button
     enabled: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754369432
+updated_at: 1754369720
 flipped: false
 duplicated_from: 39f8c616-eb93-4ada-9310-0e1f4b0b324b
 image: call_to_actions/why_visit.jpg
@@ -39,4 +39,19 @@ style_config:
   padding: small
   color: transparent
   variant: image_left
+buttons:
+  -
+    id: mdy2ej7r
+    dynamic_button:
+      button: 'entry::b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7'
+      text: null
+      button_options:
+        style: filled
+        color: primary
+        size: medium
+        new_tab: true
+        icon: ticket
+        icon_position: end
+    type: button
+    enabled: true
 ---

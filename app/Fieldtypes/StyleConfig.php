@@ -93,6 +93,28 @@ class StyleConfig extends Fieldtype
                         ],
                         'width' => 50
                     ],
+                    'available_sizes' => [
+                        'display' => 'Available Sizes',
+                        'instructions' => 'Choose which sizes content editors can select',
+                        'type' => 'checkboxes',
+                        'default' => ['compact', 'normal'],
+                        'options' => [
+                            'compact' => 'Compact',
+                            'normal' => 'Normal',
+                        ],
+                        'width' => 50
+                    ],
+                    'default_size' => [
+                        'display' => 'Default Size',
+                        'instructions' => 'Choose the default size',
+                        'type' => 'select',
+                        'default' => 'normal',
+                        'options' => [
+                            'compact' => 'Compact',
+                            'normal' => 'Normal',
+                        ],
+                        'width' => 50
+                    ],
                 ]
             ],
             [
@@ -125,6 +147,7 @@ class StyleConfig extends Fieldtype
         return [
             'padding_options' => $this->getPaddingOptions(),
             'color_options' => $this->getColorOptions(),
+            'size_options' => $this->getSizeOptions(),
             'variant_options' => $this->getVariantOptions(),
         ];
     }
@@ -170,6 +193,22 @@ class StyleConfig extends Fieldtype
     }
 
     /**
+     * Get size options.
+     */
+    protected function getSizeOptions(): array
+    {
+        $available = $this->config('available_sizes', ['compact', 'normal']);
+        $options = [
+            'compact' => 'Compact',
+            'normal' => 'Normal',
+        ];
+
+        return collect($available)->mapWithKeys(function ($key) use ($options) {
+            return [$key => $options[$key] ?? ucfirst($key)];
+        })->toArray();
+    }
+
+    /**
      * Get variant options.
      */
     protected function getVariantOptions(): array
@@ -206,6 +245,7 @@ class StyleConfig extends Fieldtype
             return [
                 'padding' => $this->config('default_padding', 'small'),
                 'color' => $this->config('default_color', 'transparent'),
+                'size' => $this->config('default_size', 'normal'),
                 'variant' => $this->config('default_variant', 'style1'),
             ];
         }
@@ -214,6 +254,7 @@ class StyleConfig extends Fieldtype
         return array_merge([
             'padding' => $this->config('default_padding', 'small'),
             'color' => $this->config('default_color', 'transparent'),
+            'size' => $this->config('default_size', 'normal'),
             'variant' => $this->config('default_variant', 'style1'),
         ], $data);
     }
@@ -251,6 +292,11 @@ class StyleConfig extends Fieldtype
         // Color classes
         if (!empty($config['color']) && $config['color'] !== 'transparent') {
             $classes[] = 'color-' . $config['color'];
+        }
+
+        // Size classes
+        if (!empty($config['size']) && $config['size'] !== 'normal') {
+            $classes[] = 'size-' . $config['size'];
         }
 
         // Variant classes
