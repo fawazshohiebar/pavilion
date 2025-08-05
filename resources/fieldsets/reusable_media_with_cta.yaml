@@ -57,13 +57,6 @@ fields:
       localizable: false
       width: 50
   -
-    handle: flipped
-    field:
-      type: toggle
-      display: 'Flipped?'
-      localizable: false
-      width: 50
-  -
     handle: badge_text
     field:
       type: text
