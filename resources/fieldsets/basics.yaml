@@ -571,7 +571,7 @@ fields:
                   handle: ezone_base_url
                   field:
                     default: 'https://ezone.adihex.com/exhibitors-list-top-with-images-resource/'
-                    type: hidden
+                    type: text
                     display: 'EZone Base Url'
                     localizable: false
                 -
@@ -605,6 +605,144 @@ fields:
                     display: 'Style Config'
                     localizable: false
                     variant_labels: 'style1|Style 1'
+            exhibitor_list:
+              display: 'Exhibitor List'
+              fields:
+                -
+                  handle: heading
+                  field: basics.heading_group
+                  config:
+                    display: Heading
+                -
+                  handle: ezone_base_url
+                  field:
+                    default: 'https://ezone.adihex.com'
+                    type: text
+                    display: 'EZone Base Url'
+                    localizable: false
+                -
+                  handle: event_id
+                  field:
+                    default: '4'
+                    type: integer
+                    display: 'Event ID'
+                    localizable: false
+                    width: 50
+                -
+                  handle: event_type
+                  field:
+                    options:
+                      -
+                        key: ADIHEX
+                        value: null
+                      -
+                        key: ADIBS
+                        value: null
+                      -
+                        key: IDEX
+                        value: null
+                      -
+                        key: NAVDEX
+                        value: null
+                    default: ADIHEX
+                    type: select
+                    display: 'Event Type'
+                    localizable: false
+                    width: 50
+                -
+                  handle: style_config
+                  field:
+                    type: style_config
+                    display: 'Style Config'
+                    localizable: false
+                    variant_labels: 'style1|Style 1'
+                -
+                  handle: main_color
+                  field:
+                    default: grey
+                    type: text
+                    display: 'Main Color'
+                    instructions: 'Refer to <a href="https://vuetifyjs.com/en/styles/colors/#material-colors" target="_blank">Color Palette</a>'
+                    localizable: false
+                    width: 50
+                -
+                  handle: color_level
+                  field:
+                    default: darken-4
+                    type: text
+                    display: 'Color Level'
+                    instructions: 'Refer to <a href="https://vuetifyjs.com/en/styles/colors/#material-colors" target="_blank">Color Palette</a>'
+                    localizable: false
+                    width: 50
+                -
+                  handle: has_products
+                  field:
+                    default: true
+                    type: toggle
+                    display: 'Has Products'
+                    localizable: false
+                    width: 33
+                -
+                  handle: show_classification
+                  field:
+                    type: toggle
+                    display: 'show Classification'
+                    localizable: false
+                    width: 33
+                -
+                  handle: show_product_awards
+                  field:
+                    type: toggle
+                    display: 'Show Product Awards'
+                    localizable: false
+                    width: 33
+                -
+                  handle: scroll_margin_top
+                  field:
+                    default: '100'
+                    type: integer
+                    display: 'Scroll Margin Top'
+                    localizable: false
+                    width: 50
+                -
+                  handle: awards_search_active_on
+                  field:
+                    default: 'exhibitors,products'
+                    type: text
+                    display: 'Awards Search Active On'
+                    localizable: false
+                    width: 50
+                -
+                  handle: awards_title
+                  field:
+                    default: 'Innovation Awards'
+                    type: text
+                    display: 'Awards Title'
+                    localizable: false
+                    width: 50
+                -
+                  handle: external_search_prefix
+                  field:
+                    default: 'https://aisearch.idexuae.ae/'
+                    type: text
+                    display: 'External Search Prefix'
+                    localizable: false
+                    width: 50
+                -
+                  handle: show_contact_details
+                  field:
+                    type: toggle
+                    display: 'Show Contact Details'
+                    localizable: false
+                    width: 33
+                -
+                  handle: links_id
+                  field:
+                    type: text
+                    display: 'Links Id'
+                    instructions: 'Used to force clear cache for assets'
+                    localizable: false
+                    width: 50
   -
     handle: heading_group
     field:

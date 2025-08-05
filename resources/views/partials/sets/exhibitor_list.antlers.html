@@ -1,6 +1,5 @@
 <!-- The container for the scoped Vue app -->
-<div id="exhibitor-container" class="exhibitor-containeradnec-container mx-auto" ></div>
-
+<div id="exhibitor-container" class="exhibitor-container adnec-container mx-auto" ></div>
 <script>
   const containerSelector = '.exhibitor-container';
   const container = document.querySelector(containerSelector);
@@ -12,7 +11,7 @@
   document.head.appendChild(mdiFont);
 
   // 2. Fetch and scope the third-party CSS
-  fetch('https://ezone-exhibitor-list.s3.me-central-1.amazonaws.com/assets/index.css?id=123456444')
+  fetch('https://ezone-exhibitor-list.s3.me-central-1.amazonaws.com/assets/index.css?id={{links_id ?? "123456444"}}')
     .then(res => res.text())
     .then(originalCss => {
       const scopedCss = originalCss.replace(/(^|\})\s*([^{@}]+)\s*\{/g, (match, sep, selectors) => {
@@ -33,13 +32,46 @@
     <div
       id="app"
       class="exhibitor-list-app"
-      data-base-url="https://ezone.adihex.com"
-      data-main-color="grey"
-      data-color-level="darken-4"
-      data-event-id="4"
-      data-event-type="ADIHEX"
-      data-has-products
-      data-scroll-margin-top="250"
+      data-base-url="{{ezone_base_url}}"
+      data-main-color="{{main_color}}"
+      data-color-level="{{color_level}}"
+      data-event-id="{{event_id}}"
+      data-event-type="{{event_type}}"
+      {{if has_products == true}}
+      data-has-products="true"
+      {{/if}}
+      {{if has_brands == true}}
+      data-has-brands="true"
+      {{/if}}
+
+      {{if show_classification == true}}
+      data-show-classification="true"
+      {{/if}}
+      {{if show_product_awards == true}}
+      data-show-product-awards="true"
+      {{/if}}
+      data-scroll-margin-top="{{scroll_margin_top}}"
+      
+      {{if invisual_prefix}}
+      data-invisual-prefix="{{invisual_prefix}}"
+      {{/if}}
+
+      {{if awards_search_active_on}}
+      data-awards-search-active-on="{{awards_search_active_on}}"
+      {{/if}}
+
+      {{if awards_title}}
+      data-awards-title="{{awards_title}}"
+      {{/if}}
+
+      {{if external_search_prefix}}
+      data-external-search-prefix="{{external_search_prefix}}"
+      {{/if}}
+
+      {{if show_contact_details}}
+      data-show-contact-details="true"
+      {{/if}}
+
     ></div>
   `;
 
@@ -47,9 +79,13 @@
   const script = document.createElement('script');
   script.type = 'module';
   script.crossOrigin = 'anonymous';
-  script.src = 'https://ezone-exhibitor-list.s3.me-central-1.amazonaws.com/assets/index.js?id=123456444';
+  script.src = 'https://ezone-exhibitor-list.s3.me-central-1.amazonaws.com/assets/index.js?id={{links_id ?? "123456444"}}';
   document.body.appendChild(script);
 </script>
 
-<!-- 5. Optional: Force containment (prevent layout bleed, extra protection) -->
+<style>
+  :root {
+  --v-theme-overlay-multiplier: 1;
+}
+</style>
  
