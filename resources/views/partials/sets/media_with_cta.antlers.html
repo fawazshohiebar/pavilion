@@ -1,62 +1,185 @@
-<section id="{{ slug }}" class="py-[45px] md:py-[50px] lg:py-[70px]   bg-white relative overflow-hidden">
-    <!-- Decorative Elements -->
-    <div class="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-[#827654] opacity-5"></div>
-    <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-[#827654] opacity-5"></div>
+{{?
+  $blockStyles = [
+    'primary' => 'bg-primary-600 text-white kinda-dark',
+    'secondary' => 'bg-secondary-600 text-white kinda-dark',
+    'gray' => 'bg-gray-200 text-gray-800',
+    'lite-primary' => 'bg-primary-50 text-primary-600',
+    'lite-secondary' => 'bg-secondary-50 text-secondary-600',
+    'transparent' => 'bg-transparent text-gray-800 border border-gray-200',
+    'black' => 'bg-black text-white kinda-dark',
+    'white' => 'bg-white text-gray-900',
+    'default' => 'bg-white text-gray-900',
+];
+$blockPadding = [
+  'xlarge' => 'py-16 md:py-20 lg:py-24',
+  'large' => 'py-14 md:py-18 lg:py-22',
+  'medium' => 'py-10 md:py-14 lg:py-18',
+  'small' => 'py-8 md:py-12 lg:py-16',
+  'none' => 'py-0',
+];
 
-    <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto  relative z-10">
-        <div class="flex flex-col lg:flex-row items-center gap-12 {{ flipped ? 'lg:flex-row-reverse' : '' }}">
-            <!-- Image Section -->
-            <div class="w-full lg:w-1/2" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-right')">
-                <div class="relative">
-                    {{ if image }}
-                        {{ glide:image preset="large" }}
-                            <img src="{{ url }}" alt="{{ alt ?? title }}" width="{{ width }}" height="{{ height }}"
-                                class="w-full h-auto rounded-lg shadow-xl" />
-                        {{ /glide:image }}
-                    {{ else }}
-                        <!-- Fallback image -->
-                        <img src="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/shutterstock_1111453718-scaled.jpg"
-                            alt="Falconry at Al Ain Exhibition" class="w-full h-auto rounded-lg shadow-xl" />
+?}}
+
+{{ $variant = style_config:variant ?? 'left_image'; }}
+
+{{# 
+style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
+ #}}
+
+<section id="{{ slug }}" class="{{ blockPadding[{style_config:padding ?? 'medium'}] }} {{ blockStyles[{style_config:color ?? 'default'}] }} relative overflow-hidden">
+    {{ if $variant == 'cover' }}
+        <!-- Cover variant with background image -->
+        <div class="absolute inset-0 z-0">
+            {{ if image }}
+                {{ glide:image preset="large" }}
+                    <img src="{{ url }}" alt="{{ alt ?? title }}" width="{{ width }}" height="{{ height }}"
+                        class="w-full h-full object-cover" />
+                {{ /glide:image }}
+            {{ else }}
+                <img src="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/04/shutterstock_1111453718-scaled.jpg"
+                    alt="Falconry at Al Ain Exhibition" class="w-full h-full object-cover" />
+            {{ /if }}
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto relative z-10">
+            <div class="flex items-center justify-center min-h-[60vh] text-center">
+                <div class="max-w-4xl" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-up')">
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-12 h-1 bg-white/80"></div>
+                        <span class="rtl:mr-4 ltr:ml-4 text-white/90 font-medium uppercase ltr:tracking-wider">{{ section_label }}</span>
+                    </div>
+
+                    <div class="text-white mb-6">
+                        {{ heading }}
+                            {{ partial:sets/heading :text="text" :size="size" :color="white" :tag="tag" :uppercase="uppercase" }}
+                        {{ /heading }}
+                    </div>
+
+                    <div class="text-white/90 mb-8 leading-relaxed prose prose-lg prose-invert max-w-none">
+                        {{ description }}
+                    </div>
+
+                    {{ if buttons }}
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            {{ buttons }}
+                                {{ partial:shared/button }}
+                            {{ /buttons }}
+                        </div>
                     {{ /if }}
+
                     {{ if badge_text }}
-                        <div
-                            class="absolute -bottom-6 ltr:-right-6 rtl:-left-6 w-24 h-24 bg-[#827654] rounded-lg flex items-center justify-center text-white">
+                        <div class="mt-8 inline-flex items-center justify-center w-32 h-32 bg-[#827654] rounded-lg text-white">
                             <div class="text-center">
-                                <span class="block text-2xl font-bold">{{ badge_text }}</span>
+                                <span class="block text-3xl font-bold">{{ badge_text }}</span>
                                 {{ if badge_subtext }}
-                                    <span class="text-xs uppercase">{{ badge_subtext }}</span>
+                                    <span class="text-sm uppercase">{{ badge_subtext }}</span>
                                 {{ /if }}
                             </div>
                         </div>
                     {{ /if }}
                 </div>
             </div>
+        </div>
+    {{ elseif $variant == 'no_image' }}
+        <!-- Content only variant -->
+        <!-- Decorative Elements -->
+        <div class="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-[#827654] opacity-5"></div>
+        <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-[#827654] opacity-5"></div>
+        
+        <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto relative z-10">
+            <div class="flex items-center justify-center min-h-[40vh]">
+                <div class="max-w-4xl text-center" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-up')">
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-12 h-1 bg-[#827654]"></div>
+                        <span class="rtl:mr-4 ltr:ml-4 text-[#827654] font-medium uppercase ltr:tracking-wider">{{ section_label }}</span>
+                    </div>
 
-            <!-- Content Section -->
-            <div class="w-full lg:w-1/2" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-left')">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-1 bg-[#827654]"></div>
-                    <span
-                        class="rtl:mr-4 ltr:ml-4 text-[#827654] font-medium uppercase ltr:tracking-wider">{{ section_label }}</span>
+                    {{ heading }}
+                        {{ partial:sets/heading :text="text" :size="size" :color="color" :tag="tag" :uppercase="uppercase" }}
+                    {{ /heading }}
+
+                    <div class="text-gray-700 mb-8 leading-relaxed prose prose-lg max-w-none">
+                        {{ description }}
+                    </div>
+
+                    {{ if buttons }}
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            {{ buttons }}
+                                {{ partial:shared/button }}
+                            {{ /buttons }}
+                        </div>
+                    {{ /if }}
+
+                    {{ if badge_text }}
+                        <div class="mt-8 inline-flex items-center justify-center w-32 h-32 bg-[#827654] rounded-lg text-white">
+                            <div class="text-center">
+                                <span class="block text-3xl font-bold">{{ badge_text }}</span>
+                                {{ if badge_subtext }}
+                                    <span class="text-sm uppercase">{{ badge_subtext }}</span>
+                                {{ /if }}
+                            </div>
+                        </div>
+                    {{ /if }}
                 </div>
-
-                {{ heading }}
-                    {{ partial:sets/heading :text="text" :size="size" :color="color" :tag="tag" :uppercase="uppercase" }}
-                {{ /heading }}
-
-                <div class="text-gray-700 mb-6 leading-relaxed prose prose-lg">
-                    {{ description }}
-                </div>
-                {{ if buttons }}
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        {{ buttons }}
-                            {{ partial:shared/button }}
-                        {{ /buttons }}
-                {{ /if }}
             </div>
         </div>
-    </div>
-    </div>
+    {{ else }}
+        <!-- Standard left/right image variants -->
+        <!-- Decorative Elements -->
+        <div class="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-[#827654] opacity-5"></div>
+        <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-[#827654] opacity-5"></div>
+
+        <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12 {{ $variant == 'right_image' ? 'lg:flex-row-reverse' : '' }}">
+                <!-- Image Section -->
+                <div class="w-full lg:w-1/2" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-right')">
+                    <div class="relative">
+                        {{ if image }}
+                            {{ glide:image preset="large" }}
+                                <img src="{{ url }}" alt="{{ alt ?? title }}" width="{{ width }}" height="{{ height }}"
+                                    class="w-full h-auto rounded-lg shadow-xl" />
+                            {{ /glide:image }}
+                        {{ /if }}
+                        {{ if badge_text }}
+                            <div
+                                class="absolute -bottom-6 ltr:-right-6 rtl:-left-6 w-24 h-24 bg-[#827654] rounded-lg flex items-center justify-center text-white">
+                                <div class="text-center">
+                                    <span class="block text-2xl font-bold">{{ badge_text }}</span>
+                                    {{ if badge_subtext }}
+                                        <span class="text-xs uppercase">{{ badge_subtext }}</span>
+                                    {{ /if }}
+                                </div>
+                            </div>
+                        {{ /if }}
+                    </div>
+                </div>
+
+                <!-- Content Section -->
+                <div class="w-full lg:w-1/2" x-data="{}" x-intersect="$el.classList.add('animate-fade-slide-left')">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-1 bg-[#827654]"></div>
+                        <span
+                            class="rtl:mr-4 ltr:ml-4 text-[#827654] font-medium uppercase ltr:tracking-wider">{{ section_label }}</span>
+                    </div>
+
+                    {{ heading }}
+                        {{ partial:sets/heading :text="text" :size="size" :color="color" :tag="tag" :uppercase="uppercase" }}
+                    {{ /heading }}
+
+                    <div class="text-gray-700 mb-6 leading-relaxed prose prose-lg">
+                        {{ description }}
+                    </div>
+                    {{ if buttons }}
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            {{ buttons }}
+                                {{ partial:shared/button }}
+                            {{ /buttons }}
+                        {{ /if }}
+                </div>
+            </div>
+        </div>
+    {{ /if }}
 </section>
 
 <style>
@@ -66,6 +189,10 @@
 
     .animate-fade-slide-left {
         animation: fadeSlideLeft 1s ease forwards;
+    }
+
+    .animate-fade-slide-up {
+        animation: fadeSlideUp 1s ease forwards;
     }
 
     @keyframes fadeSlideRight {
@@ -89,6 +216,18 @@
         to {
             opacity: 1;
             transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 </style>

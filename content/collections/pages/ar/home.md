@@ -10,72 +10,87 @@ page_builder:
       values:
         type: reusable_block
         entry:
-          - 1da0b009-5464-456d-8cbc-4736b92d7931
+          - 7ff438ae-3f53-4146-84da-2a1203cd410d
   -
     type: set
     attrs:
-      id: mapbduo9
+      id: mdwwzmpj
       values:
         type: reusable_block
         entry:
-          - 39f8c616-eb93-4ada-9310-0e1f4b0b324b
+          - f1ada786-2ef6-4461-9ccd-05e724136959
   -
     type: set
     attrs:
-      id: mapbqlao
+      id: mdwx0sbw
       values:
         type: reusable_block
         entry:
-          - e955ebf9-b57f-4438-9219-b44ef9f10681
+          - 19dc374f-760d-4313-bef2-d3cfae82b796
   -
     type: set
     attrs:
-      id: mapc76ng
+      id: mdwx11r1
       values:
         type: reusable_block
         entry:
-          - ab350943-ebc0-4207-b60a-edd99a606cbd
+          - ad03629a-055b-41ff-bf87-d3910e80a3fb
   -
     type: set
     attrs:
-      id: mapcgnu1
+      id: mdwx3my7
       values:
         type: reusable_block
         entry:
-          - 307b3fb3-dafc-4ca5-8b48-f9361a6f69f1
+          - bc822cf7-e053-48b9-821b-600f3ad7d9bd
   -
     type: set
     attrs:
-      id: maun3kai
-      enabled: false
+      id: mdwx3x99
       values:
         type: reusable_block
         entry:
-          - 8c9021e1-4ffc-42e6-a3e4-d9bca93065d3
+          - 51fa7374-db89-4101-abf9-a5d2042220da
   -
     type: set
     attrs:
-      id: maune94b
+      id: mdwx4eka
       values:
         type: reusable_block
         entry:
-          - d3542e34-4109-478a-9525-8739e1c13af5
+          - ae608642-8c6c-4bfd-94c2-db400317b029
   -
     type: set
     attrs:
-      id: maunthoo
+      id: mdwx4y7d
       values:
         type: reusable_block
         entry:
-          - 189cb780-fd09-4831-bdcd-c022fa861da2
+          - 4f9536ed-cc6c-4919-8019-a3e95e9c3882
   -
     type: set
     attrs:
-      id: mauokcx3
+      id: mdwx5jeb
       values:
         type: reusable_block
         entry:
-          - 96d67b24-84cb-4e38-8dc7-e8833cbc5ed7
+          - 580cd062-077c-4c6e-ae17-73045ab92acc
+  -
+    type: set
+    attrs:
+      id: mdwx71o3
+      values:
+        type: full_width_image
+        image:
+          - added-images/capital-360-banner-exhibition_728x90-2-1536x190.jpg
+  -
+    type: set
+    attrs:
+      id: mdwx7gg7
+      values:
+        type: reusable_block
+        entry:
+          - 522675f3-5162-4a5f-b88e-cac204bfcc0c
   -
     type: paragraph
     attrs:
@@ -84,6 +99,6 @@ fine_seo_title: 'المعرض الدولي للصيد والفروسية - ال�
 fine_seo_is_title_custom: true
 fine_seo_description: 'إطلاق النسخة الاولى من المعرض الدولي للصيد والفروسية - العين 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين.'
 fine_seo_preview: الرئيسية
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747635187
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754312083
 ---

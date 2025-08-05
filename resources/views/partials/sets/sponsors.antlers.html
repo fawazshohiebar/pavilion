@@ -2,11 +2,12 @@
 <div class=" bg-[#f5f2eb]">
 <section class=" min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto py-[45px] md:py-[50px] lg:py-[70px]   relative ">
   <!-- Section title -->
-  <div class="text-center mb-12">
-    <h2 class="  text-[28px] md:text-[35px] lg:text-[40px] font-bold text-gray-900 mb-6 text-center">{{title}}</h2>
-    <div class="mt-2 w-16 h-1 bg-[#b99d65] mx-auto"></div>
-  </div>
 
+     {{ if heading   }}
+      <div class="text-center mb-16" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+        {{ partial:partials/sets/heading_group }}
+      </div>
+    {{ /if }}
 
 
 

@@ -1,4 +1,4 @@
 title: Collaterals
-disk: local
+disk: s3
 allow_uploads: true
 create_folders: true

@@ -1,12 +1,44 @@
 title: 'المعرض الدولي للصيد والفروسية - العين'
-logo: brand/logo-colored.png
-logo_dark: brand/logo-white.png
-patronage: 'تحت رعاية سمو الشيخ هزاع بن زايد آل نهيان، ممثل الحاكم في منطقة العين.'
+logo: brand/image-(1).svg
+logo_dark: brand/image-(2).svg
+patronage: 'تحت رعاية سمو الشيخ حمدان بن زايد آل نهيان، ممثل الحاكم في منطقة الظفرة.'
+social_media:
+  -
+    id: mdwxv1og
+    platform: instagram
+    social_media_link: 'https://www.instagram.com/adihex/?hl=en'
+  -
+    id: mdwxv8jc
+    platform: facebook
+    social_media_link: 'https://www.facebook.com/adihex/'
+  -
+    id: mdwxve32
+    platform: linkedin
+    social_media_link: 'https://www.linkedin.com/company/adihex/about/'
+  -
+    id: mdwxvkeh
+    platform: youtube
+    social_media_link: 'https://www.youtube.com/channel/UCp3mg-yFzWguXXxhz69JYzQ'
+  -
+    id: mdwxvst1
+    platform: twitter
+    social_media_link: 'https://twitter.com/ADIHEX'
+  -
+    id: mdwxw06k
+    platform: tiktok
+    social_media_link: 'https://www.tiktok.com/@adihex_official'
+countdown_date_picker: '2025-08-03 12:28:50'
+location: 'مركز أدنيك أبوظبي'
+location_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
+date: '30 أغسصس - 7 سبتمبر'
+date_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
+time: '11 صباحاً - 10 مساءً'
+time_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
 logos:
   -
     id: mafk076r
     title: 'الشريك الإستراتيجي والمنظم'
-    image: brand/logos/adnecgroup-alaincenter-logos.png
+    image: added-images/adnec-group_logo_modon_white-1024x580-(1).png
     url: 'https://adnecgroup.ae'
     type: logo
     enabled: true
@@ -17,4 +49,3 @@ logos:
     url: '#'
     type: logo
     enabled: true
-origin: en

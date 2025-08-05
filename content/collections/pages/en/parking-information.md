@@ -4,7 +4,7 @@ blueprint: page
 title: 'Parking Information'
 fine_seo_is_title_custom: false
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1753947154
+updated_at: 1754314223
 page_builder:
   -
     type: set
@@ -53,6 +53,12 @@ page_builder:
             background_color: '#cfa76b'
             type: new_set
             enabled: true
+        heading_group:
+          heading: null
+          subheading: null
+          focus_icon: false
+          heading_focus_word: null
+          icon: null
   -
     type: set
     attrs:
@@ -100,6 +106,12 @@ page_builder:
         last_text: |-
           <br>
           Please review the parking <a href="https://www.adnec.ae/en/terms-and-conditions">General Terms & Conditions</a> before your visit.
+        heading_group:
+          heading: null
+          subheading: null
+          focus_icon: false
+          heading_focus_word: null
+          icon: null
   -
     type: paragraph
     attrs:

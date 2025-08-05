@@ -29,7 +29,7 @@ tabs:
                         -
                           handle: image_feild
                           field:
-                            container: assets
+                            container: collaterals
                             type: assets
                             display: 'Image Feild'
                             localizable: false

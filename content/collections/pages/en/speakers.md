@@ -4,7 +4,7 @@ blueprint: page
 title: Speakers
 fine_seo_is_title_custom: false
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1753785687
+updated_at: 1754315029
 page_builder:
   -
     type: set

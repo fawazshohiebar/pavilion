@@ -2,7 +2,13 @@
 
 <!-- md:pb-[70px] pt-[70px] pb-[100px]  -->
 <div class="  min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto  relative   pt-[50px] pb-[70px]">
-     <p class="  text-[28px] md:text-[35px] lg:text-[40px] font-bold text-gray-900 mb-6 text-center"> {{title}}</p>
+
+         {{ if heading || subheading }}
+      <div class="text-center mb-16" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+        {{ partial:partials/sets/heading_group }}
+      </div>
+    {{ /if }}
+
     <div class="grid lg:grid-cols-[58%_auto] gap-[30px]  grid-cols-1          bg-white/60 backdrop-blur-md rounded-xl text-center transform transition-all duration-500 hover:-translate-y-2 hover:shadow-lg border border-gray-200/50 shadow-sm p-[20px] md:pb-[20px] pb-[80px]">
             <div class="slider-feedback    ">
                     {{replicator_quotes_and_reviews}}
@@ -26,3 +32,12 @@
             </div>
     </div>
 </div>
+
+
+<style>
+
+html[lang="ar"] .slider-feedback .slick-list {
+    direction: ltr!important;
+}
+
+</style>

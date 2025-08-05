@@ -1,35 +1,49 @@
 ---
 id: f1ada786-2ef6-4461-9ccd-05e724136959
 origin: 39f8c616-eb93-4ada-9310-0e1f4b0b324b
-section_label: 'حول المعرض'
-heading: 'المعرض الدولي للصيد والفروسية - العين 2025'
+heading:
+  text: 'تراث يتجدد'
+  size: small
+  color: black
+  tag: h1
+  uppercase: false
+section_label: null
 description: |-
-  احتفاءً بالإرث العريق للصيد والفروسية، وإبرازًا لمدينة العين كوجهة متميزة للصيد والرياضات الخارجية، وسعيًا للوصول إلى أسواق جديدة ذات قوة شرائية، بهدف توسيع العلامة التجارية للمعرض. أُطلقت النسخة الاولى من المعرض الدولي للصيد والفروسية - العين 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين.
-  يركز المعرض على 11 قطاعاً وهي: معدات الصيد والتخييم، ومركبات ومعدات الترفيه في الهواء الطلق، والبيوت المتنقلة، والصقارة، والفروسية، ورحلات الصيد والسفاري، والحفاظ على البيئة والتراث الثقافي، والفنون والحِرف اليدوية، والجِمال، والسلوقي، والمنتجات والخدمات البيطرية.
-image: misc/mountain-city-view.jpg
+  يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض أبوظبي الدولي للصيد والفروسية إلى الاحتفاء بإرثهم من خلال تقديم منتجات وخدمات مبتكرة تجمع بين الهوية التراثية الأصيلة وروح الحداثة.
+
+  ويمثل المعرض -بالنسبة للشغوفين بالصيد والفروسية- الفعالية المثالية التي تحتفي بهذا الشغف المشترك وتُحيي صدى إرثنا العريق.
+image: null
 badge_text: 'النسخة الأولى'
 badge_subtext: null
-actions:
+buttons:
   -
-    id: mab3kjf9
-    label: 'احجز مكانك اليوم'
-    url: 'entry::9da38cbf-673a-4dee-af4f-f5d561dcc3d4'
-    size: medium
-    color: primary
-    style: filled
-    icon: paper-airplane
+    id: mdvfk921
+    dynamic_button:
+      button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
+      text: 'احجز منصتك'
+      button_options:
+        style: filled
+        color: primary
+        size: medium
+        new_tab: false
+        icon: paper-airplane
+        icon_position: end
     type: button
     enabled: true
   -
-    id: mab3m0ur
-    label: 'اشترِ تذكرتك'
-    url: '#tickets'
-    size: medium
-    color: primary
-    style: outline
-    icon: ticket
+    id: mdvgezfs
+    dynamic_button:
+      button: 'entry::b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7'
+      text: null
+      button_options:
+        style: outline
+        color: primary
+        size: medium
+        new_tab: true
+        icon: ticket
+        icon_position: end
     type: button
-    enabled: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747635203
+    enabled: true
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754309026
 ---

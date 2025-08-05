@@ -1,89 +1,55 @@
-<iframe
-  id="exhibitor-app-frame"
-class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto"
-  
-  srcdoc='
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <link
-        rel="stylesheet"
-        href="https://ezone-exhibitor-list.s3.me-central-1.amazonaws.com/assets/index.css?id=123456444"
-        crossorigin="anonymous"
-      />
-      <script
-        type="module"
-        crossorigin
-        src="https://ezone-exhibitor-list.s3.me-central-1.amazonaws.com/assets/index.js?id=123456444"
-      ></script>
-      <style>
-        html,
-        body {
-          margin: 0;
-          padding: 0;
-          overflow-x: hidden;
-        }
-      </style>
-    </head>
-    <body>
-      <div
-        id="app"
-        class="exhibitor-list-app"
-        data-base-url="https://ezone.adihex.com"
-        data-main-color="grey"
-        data-color-level="darken-4"
-        data-event-id="4"
-        data-event-type="ADIHEX"
-        data-has-products
-        data-scroll-margin-top="250"
-      ></div>
-
-      <script>
-        function postHeight() {
-          const height = document.body.scrollHeight;
-          window.parent.postMessage({ type: "resize", height }, "*");
-        }
-
-        window.addEventListener("load", postHeight);
-
-        ["click", "input", "change", "scroll"].forEach((eventType) => {
-          document.addEventListener(
-            eventType,
-            () => {
-              setTimeout(postHeight, 100);
-            },
-            true
-          );
-        });
-
-        // MutationObserver to detect DOM changes (e.g. tab switches)
-        const observer = new MutationObserver(() => {
-          setTimeout(postHeight, 100);
-        });
-        observer.observe(document.body, {
-          attributes: true,
-          childList: true,
-          subtree: true,
-        });
-
-        // Fallback: update height every 3 seconds
-        setInterval(postHeight, 3000);
-      </script>
-    </body>
-    </html>'
-  style="width: 100%; border: none; display: block;"
-></iframe>
+<!-- The container for the scoped Vue app -->
+<div id="exhibitor-container" class="exhibitor-container min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto" ></div>
 
 <script>
-  const iframe = document.getElementById("exhibitor-app-frame");
+  const containerSelector = '.exhibitor-container';
+  const container = document.querySelector(containerSelector);
 
-  window.addEventListener("message", (event) => {
-    // OPTIONAL: restrict origin for security
-    // if (event.origin !== "https://ezone-exhibitor-list.s3.me-central-1.amazonaws.com") return;
+  // 1. Inject Material Design Icons (required for Vuetify icons to show)
+  const mdiFont = document.createElement('link');
+  mdiFont.rel = 'stylesheet';
+  mdiFont.href = 'https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css';
+  document.head.appendChild(mdiFont);
 
-    if (event.data?.type === "resize" && event.data?.height) {
-      iframe.style.height = event.data.height + "px";
-    }
-  });
+  // 2. Fetch and scope the third-party CSS
+  fetch('https://ezone-exhibitor-list.s3.me-central-1.amazonaws.com/assets/index.css?id=123456444')
+    .then(res => res.text())
+    .then(originalCss => {
+      const scopedCss = originalCss.replace(/(^|\})\s*([^{@}]+)\s*\{/g, (match, sep, selectors) => {
+        const scoped = selectors
+          .split(',')
+          .map(sel => `${containerSelector} ${sel.trim()}`)
+          .join(', ');
+        return `${sep} ${scoped} {`;
+      });
+
+      const style = document.createElement('style');
+      style.textContent = scopedCss;
+      document.head.appendChild(style);
+    });
+
+  // 3. Inject the expected HTML structure into the container
+  container.innerHTML = `
+    <div
+      id="app"
+      class="exhibitor-list-app"
+      data-base-url="https://ezone.adihex.com"
+      data-main-color="grey"
+      data-color-level="darken-4"
+      data-event-id="4"
+      data-event-type="ADIHEX"
+      data-has-products
+      data-scroll-margin-top="250"
+    ></div>
+  `;
+
+  // 4. Load the Vue app (JS bundle)
+  const script = document.createElement('script');
+  script.type = 'module';
+  script.crossOrigin = 'anonymous';
+  script.src = 'https://ezone-exhibitor-list.s3.me-central-1.amazonaws.com/assets/index.js?id=123456444';
+  document.body.appendChild(script);
 </script>
+
+<!-- 5. Optional: Force containment (prevent layout bleed, extra protection) -->
+ 

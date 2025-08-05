@@ -30,7 +30,7 @@ fields:
       type: replicator
       display: 'Info Cards'
       max_sets: 20
-      localizable: false
+      localizable: true
       sets:
         main:
           display: Main
@@ -66,7 +66,7 @@ fields:
                     type: assets
                     display: 'Icon Image'
                     max_files: 1
-                    container: assets
+                    container: collaterals
                     folder: icons
                     restrict: true
                     allowed_extensions:

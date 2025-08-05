@@ -20,7 +20,7 @@ $colors = [
 
 <{{ button_type }} href="{{ url }}" 
     target="{{ new_tab ? '_blank' : '_self' }}"
-    class="{{final_classes}} {{ icon_position == 'start' ? 'flex-row-reverse' : ''}}"
+    class="backdrop-blur-xl {{final_classes}} {{ icon_position == 'start' ? 'flex-row-reverse' : ''}}"
     {{ slot:attributes }}>
     <span class="text-nowrap">{{ slot ?? text }}</span>
     {{ if icon }}

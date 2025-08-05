@@ -31,7 +31,7 @@
             autoplay: true,
             autoplaySpeed: 0,           
             cssEase: 'linear',          
-            slidesToShow: 4,           
+            slidesToShow: 1,           
             slidesToScroll: 1,
             infinite: true,
             arrows: false,
@@ -40,6 +40,10 @@
           });
         });
     
+
+
+
+        
 
         jQuery(document).ready(function () {
           jQuery('.slicking-slider').slick({
@@ -93,20 +97,7 @@
 
 
 
-    //  jQuery(document).ready(function () {
-    //       jQuery('.header-carousel').slick({
-    //         speed: 3000,                
-    //         autoplay: true,
-    //         autoplaySpeed: 0,           
-    //         cssEase: 'linear',          
-    //         slidesToShow: 4,           
-    //         slidesToScroll: 1,
-    //         infinite: true,
-    //         arrows: false,
-    //         pauseOnHover: false,
-    //         variableWidth: true        
-    //       });
-    //     });
+    
     
 
 
@@ -147,7 +138,70 @@
   window.addEventListener('resize', updateContainerSliderClass);
  
 
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          loading: true,
+          items: [],
+          listUrl: 'https://ezone.adihex.com/exhibitors-list-top-with-images-resource/4?random=1&count=10'
+        };
+      },
+      methods: {
+  goToExhibitor(id) {
+    const currentLang = window.location.pathname.split('/')[1]; // get 'en' or 'ar'
+    window.location.href = `/${currentLang}/exhibitor-list#${id}`;
+  },
+        get_top_exhibitors() {
+          if (!this.loading) return;
+          const vm = this;
+          fetch(this.listUrl)
+            .then(response => response.json())
+            .then(({ meta, data }) => {
+              vm.items = data;
+              setTimeout(() => {
+                runSplide(meta.to);
+                vm.loading = false;
+              }, 1000);
+            });
+        }
+      },
+      mounted() {
+        this.get_top_exhibitors();
+      }
+    }).mount('#exhibitors-init');
+
+    function runSplide(count) {
+      new Splide('#exhibitors', {
+        type: 'loop',
+        perPage: 5,
+        autoplay: true,
+        interval: 5000,
+        pagination: false,
+        pauseOnHover: true,
+        arrows: count > 4,
+        breakpoints: {
+          450: { perPage: 1, arrows: false, pagination: count > 1 },
+          760: { perPage: 2, arrows: false, pagination: count > 1 },
+          1000: { perPage: 3, arrows: false, pagination: count > 1 },
+          1300: { perPage: 4, arrows: count > 4 },
+        }
+      }).mount();
+    }
+  });
+
+
         </script>
+
+<script src="https://unpkg.com/vue@3"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+
 
             </body>
 </html>

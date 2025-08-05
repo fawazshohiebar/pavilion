@@ -10,15 +10,20 @@ tabs:
             field:
               type: text
               required: true
-              localizable: false
+              localizable: true
               validate:
                 - required
+          -
+            handle: heading
+            field: basics.heading_group
+            config:
+              display: Heading
           -
             handle: premium_sponsors
             field:
               type: replicator
               display: 'Premium Sponsors'
-              localizable: false
+              localizable: true
               sets:
                 new_set_group:
                   display: 'New Set Group'
@@ -30,7 +35,7 @@ tabs:
                           handle: premium_sponsors_logos
                           field:
                             max_files: 1
-                            container: assets
+                            container: collaterals
                             type: assets
                             display: 'Premium Sponsors Logos'
                             localizable: false
@@ -45,7 +50,7 @@ tabs:
             field:
               type: replicator
               display: 'Medium Sposnsors'
-              localizable: false
+              localizable: true
               sets:
                 new_set_group:
                   display: 'New Set Group'
@@ -57,7 +62,7 @@ tabs:
                           handle: medium_sponsors_logos
                           field:
                             max_files: 1
-                            container: assets
+                            container: collaterals
                             type: assets
                             display: 'Medium Sponsors Logos'
                             localizable: false
@@ -72,7 +77,7 @@ tabs:
             field:
               type: replicator
               display: 'Normal Sponsors'
-              localizable: false
+              localizable: true
               sets:
                 new_set_group:
                   display: 'New Set Group'
@@ -84,7 +89,7 @@ tabs:
                           handle: normal_sponsors_logos
                           field:
                             max_files: 1
-                            container: assets
+                            container: collaterals
                             type: assets
                             display: 'Normal Sponsors Logos'
                             localizable: false

@@ -1,0 +1,137 @@
+title: parking_information
+fields:
+  -
+    handle: heading_group
+    field: basics.heading_group
+  -
+    handle: text
+    field:
+      type: markdown
+      display: text
+      localizable: false
+  -
+    handle: button_replicator
+    field:
+      type: replicator
+      display: 'Button Replicator'
+      localizable: true
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: icon_upload_image
+                  field:
+                    container: collaterals
+                    type: assets
+                    display: 'Icon Upload Image'
+                    localizable: false
+                -
+                  handle: icon
+                  field:
+                    options:
+                      -
+                        key: user-group
+                        value: Attendees
+                      -
+                        key: trophy
+                        value: Sectors
+                      -
+                        key: cake
+                        value: Countries
+                      -
+                        key: stop-circle
+                        value: 'Exhibitors & Brands'
+                    taggable: true
+                    type: select
+                    display: icon
+                    localizable: false
+                -
+                  handle: button_text
+                  field:
+                    type: text
+                    display: button_text
+                    localizable: false
+                -
+                  handle: button_link
+                  field:
+                    type: text
+                    display: 'Button Link'
+                    localizable: false
+                -
+                  handle: background_color
+                  field:
+                    options:
+                      -
+                        key: '#827654'
+                        value: brown
+                    taggable: true
+                    type: select
+                    display: 'Background Color'
+                    localizable: false
+  -
+    handle: button_replicator_second
+    field:
+      type: replicator
+      display: 'Button Replicator Second'
+      localizable: true
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: icon_upload_image
+                  field:
+                    container: collaterals
+                    type: assets
+                    display: 'Icon Upload Image'
+                    localizable: false
+                -
+                  handle: icon
+                  field:
+                    options:
+                      -
+                        key: user-group
+                        value: Attendees
+                      -
+                        key: trophy
+                        value: Sectors
+                      -
+                        key: cake
+                        value: Countries
+                      -
+                        key: stop-circle
+                        value: 'Exhibitors & Brands'
+                    taggable: true
+                    type: select
+                    display: icon
+                    localizable: false
+                -
+                  handle: button_text
+                  field:
+                    type: text
+                    display: button_text
+                    localizable: false
+                -
+                  handle: button_link
+                  field:
+                    type: text
+                    display: 'Button Link'
+                    localizable: false
+                -
+                  handle: background_color
+                  field:
+                    options:
+                      -
+                        key: '#827654'
+                        value: brown
+                    taggable: true
+                    type: select
+                    display: 'Background Color'
+                    localizable: false

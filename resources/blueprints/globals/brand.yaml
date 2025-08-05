@@ -23,7 +23,7 @@ tabs:
               instructions: 'The logo of the brand'
               max_files: 1
               width: 50
-              container: assets
+              container: collaterals
               folder: /brand
               localizable: false
           -
@@ -34,7 +34,7 @@ tabs:
               instructions: 'The logo of the brand for dark mode'
               max_files: 1
               width: 50
-              container: assets
+              container: collaterals
               folder: /brand
               localizable: false
           -
@@ -99,7 +99,7 @@ tabs:
             field:
               type: text
               display: Location
-              localizable: false
+              localizable: true
               width: 50
           -
             handle: location_link
@@ -113,7 +113,7 @@ tabs:
             field:
               type: text
               display: Date
-              localizable: false
+              localizable: true
               width: 50
           -
             handle: date_link
@@ -127,7 +127,7 @@ tabs:
             field:
               type: text
               display: Time
-              localizable: false
+              localizable: true
               width: 50
           -
             handle: time_link
@@ -165,7 +165,7 @@ tabs:
                           handle: image
                           field:
                             max_files: 1
-                            container: assets
+                            container: collaterals
                             type: assets
                             display: Image
                             localizable: false

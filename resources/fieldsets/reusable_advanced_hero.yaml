@@ -35,7 +35,7 @@ fields:
           field:
             type: assets
             display: Image
-            container: assets
+            container: collaterals
             max_files: 1
             folder: hero
             width: 33

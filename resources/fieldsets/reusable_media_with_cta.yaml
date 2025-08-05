@@ -1,6 +1,24 @@
 title: 'Reusable Media with CTA'
 fields:
   -
+    handle: style_config
+    field:
+      available_colors:
+        - white
+        - transparent
+        - gray
+        - lite-primary
+        - lite-secondary
+      variant_labels: |-
+        left_image|Left Image
+        right_image|Right Image
+        no_image|No Image
+        cover|Cover
+      default_variant: image_left
+      type: style_config
+      display: 'Style Config'
+      localizable: false
+  -
     handle: heading
     field:
       type: colored_text
@@ -36,13 +54,6 @@ fields:
       max_files: 1
       type: assets
       display: Image
-      localizable: false
-      width: 50
-  -
-    handle: flipped
-    field:
-      type: toggle
-      display: 'Flipped?'
       localizable: false
       width: 50
   -

@@ -1,0 +1,115 @@
+---
+id: bc822cf7-e053-48b9-821b-600f3ad7d9bd
+origin: 4d6cabbc-3042-4ef0-879b-08c0e8ee4465
+heading:
+  heading:
+    text: 'استكشف عالم {primary:التراث، والصيد، والثقافة}'
+    size: small
+    color: black
+    tag: h2
+    uppercase: false
+  subheading:
+    text: null
+    size: small
+    color: secondary
+    tag: p
+    uppercase: false
+  focus_icon: false
+  heading_focus_word: 'قطاعات 2025'
+  icon: null
+info_cards:
+  -
+    id: mdvtxk9v
+    icon_type: image
+    image: icons/safari.jpg
+    heading: 'رحلات الصيد والسفاري'
+    type: info_card
+    enabled: true
+  -
+    id: mdvv3laj
+    icon_type: image
+    image: icons/icon-sectors_2-13-1.jpg
+    heading: 'المنتجات والخدمات البيطرية'
+    type: info_card
+    enabled: true
+  -
+    id: mdvu2jwa
+    icon_type: image
+    image: icons/outdoor-lesiure.jpg
+    heading: 'المركبات الترفيهية الخارجية'
+    type: info_card
+    enabled: true
+  -
+    id: mdvu2iwb
+    icon_type: image
+    image: icons/falconry.jpg
+    heading: الصقارة
+    type: info_card
+    enabled: true
+  -
+    id: mdvu2hoo
+    icon_type: image
+    image: icons/camel-01.jpg
+    heading: الهجن
+    type: info_card
+    enabled: true
+  -
+    id: mdvu2geu
+    icon_type: image
+    image: icons/cultural.jpg
+    heading: 'الحفاظ على البيئة والتراث الثقافي'
+    type: info_card
+    enabled: true
+  -
+    id: mdvu2eve
+    icon_type: image
+    image: icons/hunting.jpg
+    heading: 'أسلحة الصيد'
+    type: info_card
+    enabled: true
+  -
+    id: mdvu2dnb
+    icon_type: image
+    image: icons/equestrain.jpg
+    heading: الفروسية
+    type: info_card
+    enabled: true
+  -
+    id: mdvu29z5
+    icon_type: image
+    image: icons/art.jpg
+    heading: 'الفنون والحرف اليدوية'
+    type: info_card
+    enabled: true
+  -
+    id: mdvu3a1x
+    icon_type: image
+    image: icons/caravan.jpg
+    heading: 'العربات المتنقلة والكرفانات'
+    type: info_card
+    enabled: true
+  -
+    id: mdvu3b2y
+    icon_type: image
+    image: icons/marine.jpg
+    heading: 'معدات صيد الأسماك والرياضات البحرية'
+    type: info_card
+    enabled: true
+  -
+    id: mdvu3c3z
+    icon_type: image
+    image: icons/camping.jpg
+    heading: 'معدات الصيد والتخييم'
+    type: info_card
+    enabled: true
+  -
+    id: mdvu3d4a
+    icon_type: image
+    image: icons/slougi.jpg
+    heading: السلوقي
+    type: info_card
+    enabled: true
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754310513
+---
+يجمع معرض أبوظبي الدولي للصيد والفروسية 2025 مجموعة متنوعة من القطاعات التي تحتفي بالتقاليد، وتُبرز الثقافة، وتربط المجتمعات من مختلف أنحاء العالم. من الصقارة والفروسية والمغامرات الخارجية إلى الفنون والحرف اليدوية والأسلحة والمحافظة على التراث — يقدّم كل قطاع تجربة فريدة لعشاق التراث، والمهنيين، والعائلات على حد سواء. اكتشف العمق والتنوّع الذي يجعل من المعرض وجهة لا مثيل لها.

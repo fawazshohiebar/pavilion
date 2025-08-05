@@ -102,7 +102,7 @@ fields:
       remove_empty_nodes: false
       type: bard
       display: 'Page Builder'
-      localizable: false
+      localizable: true
       sets:
         landing:
           display: Landing
@@ -181,7 +181,7 @@ fields:
                 -
                   handle: redirect_to
                   field:
-                    container: assets
+                    container: collaterals
                     type: link
                     display: 'Redirect To'
                     localizable: false
@@ -264,7 +264,7 @@ fields:
                                 handle: image_feild
                                 field:
                                   max_files: 1
-                                  container: assets
+                                  container: collaterals
                                   type: assets
                                   display: 'Image Feild'
                                   localizable: false
@@ -294,7 +294,7 @@ fields:
                 -
                   handle: image
                   field:
-                    container: assets
+                    container: collaterals
                     type: assets
                     display: Image
                     localizable: false
@@ -393,7 +393,7 @@ fields:
                                 handle: image_upload
                                 field:
                                   max_files: 1
-                                  container: assets
+                                  container: collaterals
                                   type: assets
                                   display: 'Image Upload'
                                   localizable: false
@@ -481,7 +481,7 @@ fields:
                                               handle: image_upload
                                               field:
                                                 max_files: 1
-                                                container: assets
+                                                container: collaterals
                                                 type: assets
                                                 display: 'Image Upload'
                                                 localizable: false
@@ -492,7 +492,7 @@ fields:
                   handle: image
                   field:
                     max_files: 1
-                    container: assets
+                    container: collaterals
                     type: assets
                     display: Image
                     localizable: false
@@ -507,7 +507,7 @@ fields:
     field:
       type: group
       display: 'Heading Group'
-      localizable: false
+      localizable: true
       fields:
         -
           handle: heading
@@ -576,7 +576,7 @@ fields:
     field:
       type: replicator
       display: Buttons
-      localizable: false
+      localizable: true
       sets:
         new_set_group:
           display: 'New Set Group'
@@ -591,7 +591,7 @@ fields:
     handle: image
     field:
       max_files: 1
-      container: assets
+      container: collaterals
       type: assets
       display: Image
       localizable: false
@@ -603,7 +603,7 @@ fields:
     handle: video
     field:
       max_files: 1
-      container: assets
+      container: collaterals
       type: assets
       display: Video
       localizable: false
@@ -631,14 +631,14 @@ fields:
           value: 'No Footer'
       type: select
       display: Layout
-      localizable: false
+      localizable: true
       default: layout
   -
     handle: heading
     field:
       type: colored_text
       display: Heading
-      localizable: false
+      localizable: true
       tag: h2
   -
     handle: turnstile_token

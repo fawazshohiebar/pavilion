@@ -29,7 +29,7 @@ tabs:
                         -
                           handle: image
                           field:
-                            container: assets
+                            container: collaterals
                             type: assets
                             display: Image
                             localizable: false

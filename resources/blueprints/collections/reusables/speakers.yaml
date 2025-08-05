@@ -29,7 +29,7 @@ tabs:
                         -
                           handle: profile_image
                           field:
-                            container: assets
+                            container: collaterals
                             type: assets
                             display: 'Profile Image'
                             localizable: false
