@@ -49,6 +49,28 @@
                 </div>
             </div>
 
+            <!-- Size Selection -->
+            <div class="flex items-center gap-1 bg-white rounded px-2 py-1 border border-gray-200">
+                <span class="text-gray-500 text-xs">Size:</span>
+                <div class="flex gap-1">
+                    <button 
+                        v-for="(label, key) in sizeOptions"
+                        :key="key"
+                        @click="updateSize(key)"
+                        :class="[
+                            'px-2 py-1 rounded transition-colors text-xs font-medium',
+                            currentSize === key
+                                ? 'bg-blue-500 text-white'
+                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        ]"
+                        type="button"
+                        :title="`Size: ${label}`"
+                    >
+                        {{ getSizeAbbreviation(key) }}
+                    </button>
+                </div>
+            </div>
+
             <!-- Variant Selection -->
             <div class="flex items-center gap-1 bg-white rounded px-2 py-1 border border-gray-200">
                 <span class="text-gray-500 text-xs">Variant:</span>
@@ -80,7 +102,7 @@ export default {
 
     computed: {
         replicatorPreview() {
-            return `${this.currentPadding}|${this.currentColor}|${this.currentVariant}`;
+            return `${this.currentPadding}|${this.currentColor}|${this.currentSize}|${this.currentVariant}`;
         },
 
         currentPadding() {
@@ -89,6 +111,10 @@ export default {
 
         currentColor() {
             return this.value?.color || 'transparent';
+        },
+
+        currentSize() {
+            return this.value?.size || 'normal';
         },
 
         currentVariant() {
@@ -117,6 +143,13 @@ export default {
             };
         },
 
+        sizeOptions() {
+            return this.meta?.size_options || {
+                'compact': 'Compact',
+                'normal': 'Normal'
+            };
+        },
+
         variantOptions() {
             return this.meta?.variant_options;
         }
@@ -131,6 +164,10 @@ export default {
             this.updateValue({ color });
         },
 
+        updateSize(size) {
+            this.updateValue({ size });
+        },
+
         updateVariant(variant) {
             this.updateValue({ variant });
         },
@@ -139,6 +176,7 @@ export default {
             const newValue = {
                 padding: this.currentPadding,
                 color: this.currentColor,
+                size: this.currentSize,
                 variant: this.currentVariant,
                 ...updates
             };
@@ -151,6 +189,14 @@ export default {
                 'small': 'S',
                 'large': 'L',
                 'xlarge': 'XL'
+            };
+            return abbreviations[key] || key.charAt(0).toUpperCase();
+        },
+
+        getSizeAbbreviation(key) {
+            const abbreviations = {
+                'compact': 'C',
+                'normal': 'N'
             };
             return abbreviations[key] || key.charAt(0).toUpperCase();
         },

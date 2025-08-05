@@ -6,6 +6,7 @@
 <!-- Navigation -->
 <nav class="w-full transition-all duration-300 ease-in-out"
     x-data="{ scrolled: true }"
+    x-cloak
     :class="scrolled ? 'bg-white shadow-lg' : 'bg-transparent'"
 >
     <div
@@ -24,8 +25,8 @@
         <div class="flex justify-end gap-4 items-center">
             {{ partial:partials/sets/countdown_date_picker countdown_end="{brand:countdown_date_picker format='Y-m-d\TH:i:s'}" }}
             <div class="hidden md:block">
-                {{ partial:shared/button url="{{link to="enquire-to-exhibit"}}" style="filled" color="primary" icon="paper-airplane" }}
-                    {{ 'Book Your Stand' | trans }}
+                {{ partial:shared/button url="{{link id="b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7"}}" style="filled" color="primary" size="medium" icon="ticket" new_tab="true" }}
+                    {{ 'Buy Your Ticket' | trans }}
                 {{ /partial:shared/button }}
             </div>
 

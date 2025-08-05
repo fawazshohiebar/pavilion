@@ -3,8 +3,8 @@ id: a51b31a8-d8c9-48b9-9fea-92afa0b3b9fc
 blueprint: page
 title: 'Why Visit'
 fine_seo_is_title_custom: false
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754372817
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754371340
 page_builder:
   -
     type: set
@@ -41,16 +41,26 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdo574bf
+      id: mdy36lgt
       values:
-        type: themed_button
-        button_group:
+        type: buttons
+        style_config:
+          padding: none
+          color: white
+          variant: flex_centered
+        buttons:
           -
-            id: mdo575r3
-            label: 'Buy your ticket'
-            size: medium
-            color: primary
-            style: filled
+            id: mdy363wl
+            dynamic_button:
+              button: 'entry::b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7'
+              text: null
+              button_options:
+                style: filled
+                color: primary
+                size: large
+                new_tab: true
+                icon: ticket
+                icon_position: end
             type: button
             enabled: true
   -

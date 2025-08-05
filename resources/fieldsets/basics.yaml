@@ -196,6 +196,22 @@ fields:
               fields:
                 -
                   import: parking_information
+            buttons:
+              display: Buttons
+              fields:
+                -
+                  handle: style_config
+                  field:
+                    variant_labels: |-
+                      flex_centered|Flex Centered
+                      grid|Grid
+                    default_variant: flex_centered
+                    type: style_config
+                    display: 'Style Config'
+                    localizable: false
+                -
+                  handle: buttons
+                  field: basics.buttons
         forms:
           display: Forms
           icon: form-drop-down-menu

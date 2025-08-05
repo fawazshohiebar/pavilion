@@ -1,0 +1,32 @@
+{{?
+  $blockStyles = [
+    'primary' => 'bg-primary-600 text-white kinda-dark',
+    'secondary' => 'bg-secondary-600 text-white kinda-dark',
+    'gray' => 'bg-gray-200 text-gray-800',
+    'lite-primary' => 'bg-primary-50 text-primary-600',
+    'lite-secondary' => 'bg-secondary-50 text-secondary-600',
+    'transparent' => 'bg-transparent text-gray-800 border border-gray-200',
+    'black' => 'bg-black text-white kinda-dark',
+    'white' => 'bg-white text-gray-900',
+    'default' => 'bg-white text-gray-900',
+];
+$blockPadding = [
+  'xlarge' => 'py-16 md:py-20 lg:py-24',
+  'large' => 'py-14 md:py-18 lg:py-22',
+  'medium' => 'py-10 md:py-14 lg:py-18',
+  'small' => 'py-8 md:py-12 lg:py-16',
+  'none' => 'py-0',
+];
+
+?}}
+{{ $variant = style_config:variant ?? 'flex_centered'; }}
+{{# variants: flex_centered, grid #}}
+<div
+    class="{{ blockPadding[{style_config:padding ?? 'medium'}] }} {{ blockStyles[{style_config:color ?? 'default'}] }}">
+    <div
+        class="{{ if variant == 'flex_centered' }}flex justify-center gap-4 items-center{{else}}grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4{{ /if }}">
+        {{ buttons }}
+            {{ partial:shared/button }}
+        {{ /buttons }}
+    </div>
+</div>
