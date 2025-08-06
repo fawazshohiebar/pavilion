@@ -95,9 +95,9 @@ page_builder:
     type: paragraph
     attrs:
       textAlign: left
-fine_seo_title: 'المعرض الدولي للصيد والفروسية - العين 2025'
+fine_seo_title: 'المعرض الدولي للصيد والفروسية - أبوظبي 2025'
 fine_seo_is_title_custom: true
-fine_seo_description: 'إطلاق النسخة الاولى من المعرض الدولي للصيد والفروسية - العين 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك العين.'
+fine_seo_description: 'إطلاق النسخة الاولى من المعرض الدولي للصيد والفروسية - أبوظبي 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك أبوظبي.'
 fine_seo_preview: الرئيسية
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
 updated_at: 1754312083

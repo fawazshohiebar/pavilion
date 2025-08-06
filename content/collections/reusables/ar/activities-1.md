@@ -4,7 +4,7 @@ origin: db449970-0ac9-4d2d-8cb6-1fc600429e4e
 published: false
 heading:
   heading: 'نشاطات المعرض'
-  subheading: 'انغمس في مجموعة متنوعة من التجارب التفاعلية والترفيه في المعرض الدولي للصيد والفروسية - العين'
+  subheading: 'انغمس في مجموعة متنوعة من التجارب التفاعلية والترفيه في المعرض الدولي للصيد والفروسية - أبوظبي'
   focus_icon: false
   heading_focus_word: null
   icon: null

@@ -4,10 +4,10 @@ origin: 189cb780-fd09-4831-bdcd-c022fa861da2
 title: 'Tickets Arabic'
 heading: 'اشترِ تذكرتك'
 subheading: 'التذاكر والباقات'
-description: 'اختر من بين مجموعة متنوعة من خيارات التذاكر لتجربة المعرض الدولي للصيد والفروسية - العين 2025.'
+description: 'اختر من بين مجموعة متنوعة من خيارات التذاكر لتجربة المعرض الدولي للصيد والفروسية - أبوظبي 2025.'
 coming_soon: true
 coming_soon_title: 'التذاكر قريباً'
-coming_soon_description: 'نحن نعمل على وضع اللمسات الأخيرة على خيارات التذاكر لالمعرض الدولي للصيد والفروسية - العين 2025.'
+coming_soon_description: 'نحن نعمل على وضع اللمسات الأخيرة على خيارات التذاكر لالمعرض الدولي للصيد والفروسية - أبوظبي 2025.'
 coming_soon_countdown_date: '2025-06-02 10:00:00'
 coming_soon_form_enabled: false
 ticket_types:

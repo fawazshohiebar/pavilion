@@ -4,7 +4,7 @@ origin: 8c9021e1-4ffc-42e6-a3e4-d9bca93065d3
 title: 'Home Page Gallery Arabic'
 heading:
   heading: الصور
-  subheading: 'استعرض الصور من المعارض السابقة وتعرّف على لمحة مما يمكن توقّعه في المعرض الدولي للصيد والفروسية - العين 2025.'
+  subheading: 'استعرض الصور من المعارض السابقة وتعرّف على لمحة مما يمكن توقّعه في المعرض الدولي للصيد والفروسية - أبوظبي 2025.'
   focus_icon: false
   heading_focus_word: 'أبرز معالم المعرض'
   icon: null

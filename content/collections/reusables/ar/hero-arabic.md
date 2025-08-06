@@ -2,13 +2,13 @@
 id: f335e0d0-b915-4888-a3b4-596a6facd8ca
 origin: 1da0b009-5464-456d-8cbc-4736b92d7931
 title: 'Hero Arabic'
-heading: 'إطلاق النسخة الأولى من <span>المعرض الدولي للصيد والفروسية</span> - العين 2025'
+heading: 'إطلاق النسخة الأولى من <span>المعرض الدولي للصيد والفروسية</span> - أبوظبي 2025'
 video: 'https://d1v5cjer294zl8.cloudfront.net/alainihex-assets/videos/alain-video.webm'
 icons:
   -
     id: mab2w0r4
     icon: map-pin
-    label: 'مركز أدنيك العين'
+    label: 'مركز أدنيك أبوظبي'
     link: 'https://maps.app.goo.gl/WizsELNyd5P8N5qj8'
   -
     id: mab2whla
