@@ -78,8 +78,8 @@ return [
     'use_authenticated' => true,
 
     'user' => [
-        'name' => env('STATAMIC_GIT_USER_NAME', 'WebAdmin'),
-        'email' => env('STATAMIC_GIT_USER_EMAIL', 'WebAdmin@alainihex'),
+        'name' => env('STATAMIC_GIT_USER_NAME', 'WebUser'),
+        'email' => env('STATAMIC_GIT_USER_EMAIL', 'WebUser@adihex.com'),
     ],
 
     /*

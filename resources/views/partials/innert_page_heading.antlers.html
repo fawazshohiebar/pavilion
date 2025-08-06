@@ -1,40 +1,38 @@
-<section class="py-12 {{ if feature_banner_image }}bg-gray-900{{ else }}bg-[#F8F7F5]{{ /if }} relative overflow-hidden border-b border-gray-200">
+<section
+    class="py-12 {{ if feature_banner_image }}bg-gray-900{{ else }}bg-[#F8F7F5]{{ /if }} relative overflow-hidden border-b border-gray-200">
     {{# Background Image with overlay #}}
     {{ if feature_banner_image }}
-    <div class="absolute inset-0 z-0">
-        <img src="{{ feature_banner_image }}" 
-             alt="{{ title ? title : 'Page banner' }}"
-             class="w-full h-full object-cover"
-             style="object-position: {{ feature_banner_image:focus_css }};"
-             >
-        {{# Dark overlay for text readability #}}
-        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
-    </div>
+        {{ feature_banner_image }}
+            <div class="absolute inset-0 z-0">
+                <img src="{{ url }}" alt="{{ alt ?? title ?? 'Page banner' }}" class="w-full h-full object-cover"
+                    style="object-position: {{ focus_css }};">
+                {{# Dark overlay for text readability #}}
+                <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+            </div>
+        {{ /feature_banner_image }}
     {{ else }}
-    {{# Subtle background elements with soft gradient (fallback) #}}
-    <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-gradient-to-b from-white/70 via-[#F8F7F5] to-[#F8F7F5]/70"></div>
-    </div>
+        {{# Subtle background elements with soft gradient (fallback) #}}
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-white/70 via-[#F8F7F5] to-[#F8F7F5]/70"></div>
+        </div>
     {{ /if }}
-    
     <div class="adnec-container relative z-10">
         {{# Page Title with elegant animation - left aligned #}}
-        <div class="max-w-3xl mb-8"
-             x-data="{}" 
-             x-intersect="$el.classList.add('animate-fade-in')">
+        <div class="max-w-3xl mb-8" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
             {{ if title }}
-            <h1 class="ltr:text-3xl ltr:leading-tight rtl:leading-snug rtl:text-3xl ltr:md:text-4xl rtl:md:text-4xl font-bold {{ if feature_banner_image }}text-white{{ else }}text-gray-800{{ /if }} mb-4 drop-shadow-lg">
-                {{ title | widont(2) }}
-            </h1>
+                <h1
+                    class="ltr:text-3xl ltr:leading-tight rtl:leading-snug rtl:text-3xl ltr:md:text-4xl rtl:md:text-4xl font-bold {{ if feature_banner_image }}text-white{{ else }}text-gray-800{{ /if }} mb-4 drop-shadow-lg">
+                    {{ title | widont(2) }}
+                </h1>
             {{ /if }}
-            
             {{ if subtitle }}
-            <p class="{{ if feature_banner_image }}text-white/90{{ else }}text-gray-600{{ /if }} text-lg max-w-2xl drop-shadow-md">
-                {{ subtitle }}
-            </p>
+                <p
+                    class="{{ if feature_banner_image }}text-white/90{{ else }}text-gray-600{{ /if }} text-lg max-w-2xl drop-shadow-md">
+                    {{ subtitle }}
+                </p>
             {{ /if }}
         </div>
-        
+
         <!-- Beautiful breadcrumb design with subtle accent - more compact -->
         {{ partial:breadcrumbs }}
     </div>
