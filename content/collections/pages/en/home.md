@@ -151,11 +151,42 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdmubrbn
+      id: mdyt4esn
       values:
-        type: full_width_image
-        image:
-          - added-images/capital-360-banner-exhibition_728x90-2-1536x190.jpg
+        type: banner_carousel
+        heading:
+          heading:
+            text: 'Our Somposers'
+            size: small
+            color: black
+            tag: p
+            uppercase: false
+          subheading: null
+          focus_icon: false
+          heading_focus_word: null
+          icon: null
+        images:
+          -
+            id: hyke8hDT
+            image: banners/adpg_adihex_homepage-banner.jpg
+            link: 'https://www.adportsgroup.com/'
+          -
+            id: mdyt6kjg
+            image: banners/gac_adihex_website_banner.jpg
+            link: 'https://www.gargashgacmotor.com/'
+          -
+            id: mdyt7ja3
+            image: banners/ranaka-banner.png
+            link: 'https://rakna.ae/'
+          -
+            id: mdyt917c
+            image: banners/schiwywaffen.png
+            link: 'https://www.schiwywaffen.com/'
+        new_tab: true
+        width: contained
+        image_style: contain
+        is_div: false
+        use_image_height: true
   -
     type: set
     attrs:

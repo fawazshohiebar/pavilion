@@ -1,5 +1,9 @@
 title: 'Become a Media Partner'
 email:
   -
-    id: mdse2zaq
-    to: fawaz.chuhaibar@adnec.ae
+    id: mamg6evf
+    to: khaled.taha@adnec.ae
+    mailer: smtp
+    markdown: true
+    subject: 'New Media Partner Enquiry'
+    html: emails/new_enquiry

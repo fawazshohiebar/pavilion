@@ -14,6 +14,16 @@ tabs:
               validate:
                 - required
           -
+            handle: feature_banner_image
+            field: basics.image
+            config:
+              display: 'Feature Banner Image'
+              validate:
+                - image
+                - 'max_filesize:9216'
+                - 'mimes:png,jpg,jpeg,gif,tiff,webp,avif'
+              instructions: 'Used for inner pages behind the title'
+          -
             handle: page_builder
             field: basics.page_builder
   sidebar:

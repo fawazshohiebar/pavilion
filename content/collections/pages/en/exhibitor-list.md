@@ -8,6 +8,45 @@ page_builder:
     attrs:
       textAlign: left
   -
+    type: set
+    attrs:
+      id: mdyt4esn
+      values:
+        type: banner_carousel
+        heading:
+          heading:
+            text: 'Our Somposers'
+            size: small
+            color: black
+            tag: p
+            uppercase: false
+          subheading: null
+          focus_icon: false
+          heading_focus_word: null
+          icon: null
+        images:
+          -
+            id: hyke8hDT
+            image: banners/adpg_adihex_homepage-banner.jpg
+            link: 'https://www.adportsgroup.com/'
+          -
+            id: mdyt6kjg
+            image: banners/gac_adihex_website_banner.jpg
+            link: 'https://www.gargashgacmotor.com/'
+          -
+            id: mdyt7ja3
+            image: banners/ranaka-banner.png
+            link: 'https://rakna.ae/'
+          -
+            id: mdyt917c
+            image: banners/schiwywaffen.png
+            link: 'https://www.schiwywaffen.com/'
+        new_tab: true
+        width: contained
+        image_style: contain
+        is_div: false
+        use_image_height: true
+  -
     type: paragraph
     attrs:
       textAlign: left
@@ -54,7 +93,7 @@ page_builder:
       textAlign: left
 fine_seo_is_title_custom: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754413648
+updated_at: 1754415397
 fine_seo_title: 'Exhibitor List'
 fine_seo_preview: 'Exhibitor List'
 ---

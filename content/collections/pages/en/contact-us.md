@@ -3,8 +3,8 @@ id: 8cc63d1c-8cec-40c0-9eff-689c72f40539
 blueprint: page
 title: 'Contact Us'
 fine_seo_is_title_custom: false
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1753868045
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754455096
 page_builder:
   -
     type: set
@@ -34,7 +34,6 @@ page_builder:
       id: mdpjw5wc
       values:
         type: heading_and_grid
-        heading: 'FOR SPACE BOOKING ENQUIRIES PLEASE CONTACT'
         replicating_grid:
           -
             id: V9kglzvL
@@ -134,13 +133,23 @@ page_builder:
                 enabled: true
             type: new_set
             enabled: true
+        heading:
+          heading:
+            text: 'Space Booking Enquiries'
+            size: small
+            color: black
+            tag: p
+            uppercase: false
+          subheading: null
+          focus_icon: false
+          heading_focus_word: null
+          icon: null
   -
     type: set
     attrs:
       id: mdpnnqeb
       values:
         type: heading_and_grid
-        heading: 'FOR OTHER ENQUIRIES PLEASE CONTACT'
         replicating_grid:
           -
             id: 1FCHj9wR
@@ -234,6 +243,17 @@ page_builder:
                 enabled: true
             type: new_set
             enabled: true
+        heading:
+          heading:
+            text: 'Other Enquiries'
+            size: small
+            color: black
+            tag: p
+            uppercase: false
+          subheading: null
+          focus_icon: false
+          heading_focus_word: null
+          icon: null
 fine_seo_title: 'Contact Us'
 fine_seo_preview: 'Contact Us'
 ---

@@ -8,3 +8,6 @@ preferences:
       after_save: continue_editing
     reusables:
       after_save: continue_editing
+  assets:
+    collaterals:
+      mode: grid

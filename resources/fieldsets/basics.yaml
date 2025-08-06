@@ -434,10 +434,9 @@ fields:
               fields:
                 -
                   handle: heading
-                  field:
-                    type: text
+                  field: basics.heading_group
+                  config:
                     display: Heading
-                    localizable: false
                 -
                   handle: replicating_grid
                   field:
@@ -554,6 +553,12 @@ fields:
               fields:
                 -
                   import: reusable_banner
+            banner_carousel:
+              display: 'Banner Carousel'
+              icon: arrows-fit-to-width
+              fields:
+                -
+                  import: reusable_banner_carousel
         exhibition:
           display: Exhibition
           icon: arrow-roadmap-path-flow

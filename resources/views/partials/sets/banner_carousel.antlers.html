@@ -1,0 +1,138 @@
+{{ if images }}
+  {{# Main container wrapper #}}
+  <div class="
+    {{ if width == 'full' }}
+      w-full
+    {{ else }}
+     adnec-container mx-auto
+    {{ /if }}
+    relative py-8 md:py-12 lg:py-16 overflow-hidden
+  ">
+
+    {{ if images | length > 1 }}
+      {{# Multiple images - create carousel #}}
+      <div class="banner-carousel relative" 
+           x-data="{ 
+               swiper: null,
+               initSwiper() {
+                   this.$nextTick(() => {
+                       if (window.Swiper && this.$refs.swiperContainer) {
+                           this.swiper = new window.Swiper(this.$refs.swiperContainer, {
+                               slidesPerView: 1,
+                               spaceBetween: 0,
+                               grabCursor: true,
+                               autoHeight: false,
+                               centeredSlides: false,
+                               loop: true,
+                               autoplay: {
+                                   delay: 5000,
+                                   disableOnInteraction: false,
+                               },
+                               pagination: {
+                                   el: '.banner-carousel-pagination',
+                                   clickable: true,
+                                   dynamicBullets: false,
+                                   bulletClass: 'swiper-pagination-bullet banner-carousel-bullet',
+                                   bulletActiveClass: 'swiper-pagination-bullet-active banner-carousel-bullet-active',
+                               },
+                           });
+                       }
+                   });
+               }
+           }"
+           x-init="initSwiper()">
+           
+        <div class="swiper" x-ref="swiperContainer">
+            <div class="swiper-wrapper">
+                {{ images }}
+                    <div class="swiper-slide">
+                        <a 
+                          href="{{ link:url ?? link ?? 'javascript:void(0)' }}"
+                          {{ if new_tab == true && (link:url || link) }}target="_blank" rel="noopener noreferrer"{{ /if }}
+                          class="block relative transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+                          aria-label="{{ heading:text ?? heading ?? 'Banner link' }}"
+                        >
+                          {{ image }}
+                            <img 
+                              src="{{ url }}" 
+                              alt="{{ alt ?? heading:text ?? heading ?? '' }}"
+                              class="
+                                w-full 
+                                {{ if use_image_height != true && image_height }}
+                                  h-[{{ image_height }}px] object-{{ image_style ?? 'contain' }}
+                                {{ else }}
+                                  h-auto
+                                {{ /if }}
+                                transition-transform duration-700
+                              "
+                              loading="lazy"
+                            />
+                          {{ /image }}
+                          
+                        </a>
+                    </div>
+                {{ /images }}
+            </div>
+        </div>
+        
+        <!-- Pagination with custom styling -->
+        <div class="banner-carousel-pagination text-center mt-4"></div>
+        
+        <!-- Custom pagination styles -->
+        <style>
+            .banner-carousel-bullet {
+                width: 8px !important;
+                height: 8px !important;
+                border-radius: 4px !important;
+                background: #d1d5db !important;
+                opacity: 1 !important;
+                margin: 0 4px !important;
+                transition: all 0.3s ease !important;
+            }
+            
+            .banner-carousel-bullet-active {
+                width: 24px !important;
+                background: #827654 !important; /* Primary color */
+                transform: scale(1.1) !important;
+            }
+            
+            .banner-carousel-bullet:hover {
+                background: #9ca3af !important;
+            }
+            
+            .banner-carousel-bullet-active:hover {
+                background: #6b5d42 !important; /* Darker primary color on hover */
+            }
+        </style>
+      </div>
+    {{ else }}
+      {{# Single image - no carousel needed #}}
+      {{ images }}
+        <a 
+          href="{{ link:url ?? link ?? 'javascript:void(0)' }}"
+          {{ if new_tab == true && (link:url || link) }}target="_blank" rel="noopener noreferrer"{{ /if }}
+          class="block relative transition-all duration-300 hover:scale-[1.02] focus:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+          aria-label="{{ heading:text ?? heading ?? 'Banner link' }}"
+        >
+          {{ image }}
+            <img 
+              src="{{ url }}" 
+              alt="{{ alt ?? heading:text ?? heading ?? '' }}"
+              class="
+                w-full 
+                {{ if use_image_height != true && image_height }}
+                  h-[{{ image_height }}px] object-{{ image_style ?? 'contain' }}
+                {{ else }}
+                  h-auto
+                {{ /if }}
+                transition-transform duration-700 group-hover:scale-105
+              "
+              loading="lazy"
+            />
+          {{ /image }}
+        </a>
+      {{ /images }}
+    {{ /if }}
+
+  </div>
+{{ /if }}

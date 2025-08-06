@@ -4,7 +4,7 @@ blueprint: page
 title: Features
 fine_seo_is_title_custom: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754378855
+updated_at: 1754457152
 fine_seo_title: '2025 Features'
 fine_seo_preview: '2025 Features'
 page_builder:
@@ -295,4 +295,5 @@ page_builder:
     type: paragraph
     attrs:
       textAlign: left
+feature_banner_image: galleries/2024_gallery/2024_gallery_10.jpg
 ---

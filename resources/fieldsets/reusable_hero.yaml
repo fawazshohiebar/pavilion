@@ -17,8 +17,27 @@ fields:
     field:
       type: text
       display: Video
-      instructions: 'Can you URL or YouTube ID'
+      instructions: 'Can be URL or YouTube ID'
       localizable: true
+      default: 'https:// or YOUTUBE_ID'
+  -
+    handle: starting_time
+    field:
+      type: integer
+      display: 'Starting Time'
+      localizable: false
+      width: 50
+      unless:
+        video: 'contains http'
+  -
+    handle: ending_time
+    field:
+      type: integer
+      display: 'Ending Time'
+      localizable: false
+      width: 50
+      unless:
+        video: 'contains http'
   -
     handle: icons
     field:

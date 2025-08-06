@@ -1,0 +1,108 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: first_name
+            field:
+              autocomplete: given-name
+              type: text
+              display: 'First Name'
+              localizable: false
+              width: 50
+              validate:
+                - required
+                - 'max:50'
+          -
+            handle: last_name
+            field:
+              autocomplete: family-name
+              type: text
+              display: 'Last Name'
+              localizable: false
+              width: 50
+              validate:
+                - required
+                - 'max:50'
+          -
+            handle: mobile
+            field:
+              input_type: tel
+              autocomplete: tel
+              type: text
+              display: Mobile
+              localizable: false
+              width: 50
+              validate:
+                - required
+                - 'max:18'
+          -
+            handle: email_address
+            field:
+              input_type: email
+              autocomplete: email
+              type: text
+              display: 'Email Address'
+              localizable: false
+              width: 50
+              validate:
+                - required
+                - 'max:50'
+                - email
+          -
+            handle: company
+            field:
+              type: text
+              display: Company
+              localizable: false
+              width: 50
+              validate:
+                - required
+                - 'max:50'
+          -
+            handle: job_title
+            field:
+              type: text
+              display: 'Job Title'
+              localizable: false
+              width: 50
+              validate:
+                - required
+                - 'max:50'
+          -
+            handle: city
+            field:
+              type: text
+              display: City
+              localizable: false
+              width: 50
+              validate:
+                - 'max:50'
+          -
+            handle: country
+            field:
+              options:
+                -
+                  key: AE
+                  value: 'United Arab Emirates'
+              type: select
+              display: Country
+              localizable: false
+              width: 50
+              validate:
+                - required
+              default: AE
+          -
+            handle: message
+            field:
+              type: textarea
+              display: Message
+              localizable: false
+              validate:
+                - required
+                - 'max:3000'
+          -
+            handle: turnstile_token
+            field: basics.turnstile_token

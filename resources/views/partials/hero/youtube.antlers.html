@@ -1,6 +1,6 @@
 <section class="relative min-h-dvh md:min-h-[800px] h-dvh overflow-hidden -mt-34 pt-34 flex items-center">    <!-- YouTube Video Background -->
     <div class="absolute inset-0 w-full h-full z-0 video-container">
-        <div class="youtube-player" id="youtube-player" data-video-id="{{video}}">
+        <div class="youtube-player" id="youtube-player" data-video-id="{{video}}" data-start-time="{{starting_time}}" data-end-time="{{ending_time}}">
             <!-- YouTube iframe will be inserted here -->
         </div>
         <!-- Dark Overlay -->
@@ -12,58 +12,115 @@
     {{ partial:hero/scroll }}
 </section>
 
+<!-- Load YouTube IFrame API for timing control -->
+<script src="https://www.youtube.com/iframe_api"></script>
+
 <script>
-    // Initialize YouTube player
+    var startTime = 10;
+    var endTime = 60;
+    var videoId = '';
+    var player;
+    var timeCheckInterval;
+    
     document.addEventListener('DOMContentLoaded', function() {
-        // Create YouTube player
         var playerElement = document.getElementById('youtube-player');
         if (!playerElement) return;
         
-        var videoId = playerElement.getAttribute('data-video-id');
+        videoId = playerElement.getAttribute('data-video-id');
+        startTime = parseInt(playerElement.getAttribute('data-start-time')) || 10;
+        endTime = parseInt(playerElement.getAttribute('data-end-time')) || 60;
+        
         if (!videoId) return;
         
-        // Create iframe
+        // Create the original iframe approach for perfect coverage
+        createIframe();
+        
+        // Initialize YouTube API for timing control
+        if (window.YT && window.YT.Player) {
+            initTimingControl();
+        } else {
+            window.onYouTubeIframeAPIReady = initTimingControl;
+        }
+    });
+    
+    function createIframe() {
+        var playerElement = document.getElementById('youtube-player');
         var iframe = document.createElement('iframe');
-        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=' + videoId);
+        iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=' + videoId + '&start=' + startTime + '&end=' + endTime + '&enablejsapi=1');
         iframe.setAttribute('frameborder', '0');
         iframe.setAttribute('allowfullscreen', '1');
+        iframe.setAttribute('id', 'youtube-iframe');
         
-        // Add iframe to player element
         playerElement.appendChild(iframe);
-    });
+    }
+    
+    function initTimingControl() {
+        // Create a hidden player for timing control
+        var hiddenDiv = document.createElement('div');
+        hiddenDiv.style.display = 'none';
+        hiddenDiv.id = 'hidden-player';
+        document.body.appendChild(hiddenDiv);
+        
+        player = new YT.Player('hidden-player', {
+            height: '1',
+            width: '1',
+            videoId: videoId,
+            playerVars: {
+                'autoplay': 1,
+                'controls': 0,
+                'mute': 1
+            },
+            events: {
+                'onReady': function(event) {
+                    event.target.seekTo(startTime);
+                    startTimeMonitoring();
+                }
+            }
+        });
+    }
+    
+    function startTimeMonitoring() {
+        timeCheckInterval = setInterval(function() {
+            if (player && player.getCurrentTime) {
+                var currentTime = player.getCurrentTime();
+                if (currentTime >= endTime) {
+                    // Restart both players
+                    restartVideo();
+                }
+            }
+        }, 500);
+    }
+    
+    function restartVideo() {
+        // Restart the visible iframe
+        var iframe = document.getElementById('youtube-iframe');
+        if (iframe) {
+            var src = iframe.src;
+            iframe.src = src;
+        }
+        
+        // Restart the hidden timing player
+        if (player && player.seekTo) {
+            player.seekTo(startTime);
+        }
+    }
 </script>
 
 <style>
-
-       .video-container {
-                    overflow: hidden;
-                }
-                
-                .youtube-player {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    min-width: 100%;
-                    min-height: 100%;
-                    width: auto;
-                    height: auto;
-                    transform: translateX(-50%) translateY(-50%);
-                    object-fit: cover;
-                    z-index: 0;
-                }
-                
-                .force-cover {
-                    object-fit: cover !important;
-                }
-
-
-    .youtube-player {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 */
-        height: 0;
+    .video-container {
         overflow: hidden;
-        max-width: 100%;
-        background: #000;
+    }
+    
+    .youtube-player {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 0;
     }
     
     .youtube-player iframe {
@@ -86,6 +143,26 @@
         .youtube-player iframe {
             width: 300%;
             left: -100%;
+        }
+    }
+    
+    /* Additional mobile coverage */
+    @media (max-width: 768px) {
+        .youtube-player iframe {
+            width: 300%;
+            height: 300%;
+            left: -100%;
+            top: -100%;
+        }
+    }
+    
+    /* For very tall mobile screens */
+    @media (max-aspect-ratio: 9/16) {
+        .youtube-player iframe {
+            width: 400%;
+            height: 400%;
+            left: -150%;
+            top: -150%;
         }
     }
 </style>

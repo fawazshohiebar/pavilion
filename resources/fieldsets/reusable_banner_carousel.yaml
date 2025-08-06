@@ -1,21 +1,30 @@
-title: 'Reusable Banner'
+title: 'Reusable Banner Carousel'
 fields:
   -
-    handle: image
+    handle: images
     field:
-      container: collaterals
-      folder: banners
-      type: assets
-      display: Image
+      type: grid
+      display: Images
       localizable: false
-      max_files: 1
-  -
-    handle: link
-    field:
-      type: link
-      display: Link
-      localizable: false
-      width: 66
+      min_rows: 1
+      fields:
+        -
+          handle: image
+          field: basics.image
+          config:
+            validate:
+              - image
+              - 'max_filesize:9216'
+              - 'mimes:png,jpg,jpeg,gif,tiff,webp,avif'
+            width: 50
+            folder: banners
+        -
+          handle: link
+          field:
+            type: link
+            display: Link
+            localizable: false
+            width: 50
   -
     handle: new_tab
     field:
@@ -54,20 +63,13 @@ fields:
       width: 33
       default: contain
   -
-    handle: is_div
-    field:
-      type: toggle
-      display: 'Make DIV'
-      localizable: false
-      width: 33
-  -
     handle: use_image_height
     field:
       default: true
       type: toggle
       display: 'Use Image Height'
       localizable: false
-      width: 50
+      width: 33
   -
     handle: image_height
     field:
@@ -76,6 +78,6 @@ fields:
       type: text
       display: 'Image Height'
       localizable: false
-      width: 50
+      width: 33
       unless:
         use_image_height: 'equals true'

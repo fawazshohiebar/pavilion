@@ -4,7 +4,7 @@ blueprint: page
 title: 'Why Visit'
 fine_seo_is_title_custom: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754371340
+updated_at: 1754456824
 page_builder:
   -
     type: set
@@ -47,6 +47,7 @@ page_builder:
         style_config:
           padding: none
           color: white
+          size: normal
           variant: flex_centered
         buttons:
           -
@@ -77,4 +78,5 @@ page_builder:
       textAlign: left
 fine_seo_title: 'Why Visit'
 fine_seo_preview: 'Why Visit'
+feature_banner_image: call_to_actions/main_cta.jpg
 ---

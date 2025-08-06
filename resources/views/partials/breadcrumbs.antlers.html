@@ -1,33 +1,30 @@
+{{isFeatureBannerImage = feature_banner_image ? true : false}}
 <div class="max-w-4xl relative">
             <nav aria-label="Breadcrumb" 
-                class="inline-flex items-center px-4 py-2 bg-white shadow-sm border border-gray-100 rounded-md"
+                class="inline-flex items-center px-4 py-2 {{isFeatureBannerImage ? 'bg-white/20 backdrop-blur-md border-gray-100/20' : 'bg-white border-gray-100'}} shadow-sm border  rounded-md"
                 x-data="{ show: false }" 
                 x-intersect="setTimeout(() => show = true, 100)"
                 :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'"
                 class="transition-all duration-300 ease-out">
                 <ol class="flex items-center space-x-1 rtl:space-x-reverse text-sm">
                     <li class="flex items-center">
-                        <a href="{{ site:url }}" class="text-[#827654] hover:text-[#827654]/80 transition-colors duration-200">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                            </svg>
+                        <a href="{{ site:url }}" class="{{isFeatureBannerImage ? 'text-white/50 hover:text-white' : 'text-[#827654] hover:text-[#827654]/80'}} transition-colors duration-200">
+                            {{heroicon variant="outline" icon="home" class="h-4 w-4"}}
                             <span class="sr-only">{{ site:name }}</span>
                         </a>
                     </li>
                     
                     {{ nav:breadcrumbs include_home="false" }}
                         <li class="flex items-center">
-                            <span class="text-gray-400 mx-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
+                            <span class="{{isFeatureBannerImage ? 'text-white/50 hover:text-white' : 'text-gray-400'}} mx-2">
+                                {{heroicon variant="outline" icon="chevron-right" class="h-3 w-3 rtl:rotate-180"}}
                             </span>
                             {{ if !is_current }}
-                                <a href="{{ url }}" class="text-gray-600 hover:text-[#827654] transition-colors duration-200">
+                                <a href="{{ url }}" class="{{isFeatureBannerImage ? 'text-white/50 hover:text-white' : 'text-gray-600 hover:text-[#827654]'}} transition-colors duration-200">
                                     {{ title }}
                                 </a>
                             {{ else }}
-                                <span class="font-medium text-[#827654]">{{ title }}</span>
+                                <span class="font-medium {{isFeatureBannerImage ? 'text-white/50' : 'text-[#827654]'}}">{{ title }}</span>
                             {{ /if }}
                         </li>
                     {{ /nav:breadcrumbs }}

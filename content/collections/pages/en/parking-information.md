@@ -4,7 +4,7 @@ blueprint: page
 title: 'Parking Information'
 fine_seo_is_title_custom: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754369359
+updated_at: 1754457554
 page_builder:
   -
     type: set
@@ -15,6 +15,7 @@ page_builder:
         style_config:
           padding: small
           color: white
+          size: normal
           variant: no_image
         heading:
           text: 'Premium Parking'
@@ -84,6 +85,7 @@ page_builder:
         style_config:
           padding: small
           color: lite-primary
+          size: normal
           variant: no_image
         heading:
           text: 'Standard Parking'
@@ -160,4 +162,5 @@ page_builder:
             enabled: true
 fine_seo_title: 'Parking Information'
 fine_seo_preview: 'Parking Information'
+feature_banner_image: banners/banner-homepage_adnec.webp
 ---
