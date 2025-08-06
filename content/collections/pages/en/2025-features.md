@@ -4,7 +4,7 @@ blueprint: page
 title: Features
 fine_seo_is_title_custom: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754457152
+updated_at: 1754481540
 fine_seo_title: '2025 Features'
 fine_seo_preview: '2025 Features'
 page_builder:
@@ -17,7 +17,7 @@ page_builder:
         style_config:
           padding: small
           color: transparent
-          size: compact
+          size: normal
           variant: left_image
         heading:
           text: 'Pet Fair'
@@ -51,7 +51,7 @@ page_builder:
         style_config:
           padding: small
           color: lite-secondary
-          size: compact
+          size: normal
           variant: right_image
         heading:
           text: Arena
@@ -92,7 +92,7 @@ page_builder:
         style_config:
           padding: small
           color: white
-          size: compact
+          size: normal
           variant: left_image
         heading:
           text: 'Falcon Auction'
@@ -126,7 +126,7 @@ page_builder:
         style_config:
           padding: small
           color: lite-secondary
-          size: compact
+          size: normal
           variant: right_image
         heading:
           text: 'The Young Falconers’ Village and Emirati Etiquette Learning Zone'
@@ -145,7 +145,7 @@ page_builder:
         style_config:
           padding: small
           color: white
-          size: compact
+          size: normal
           variant: left_image
         heading:
           text: 'Knowledge Hub'
@@ -179,7 +179,7 @@ page_builder:
         style_config:
           padding: small
           color: lite-secondary
-          size: compact
+          size: normal
           variant: right_image
         heading:
           text: 'Shooting Range by Tasleeh'
@@ -213,7 +213,7 @@ page_builder:
         style_config:
           padding: small
           color: white
-          size: compact
+          size: normal
           variant: left_image
         heading:
           text: 'Marbling workshops & Mural Painting'
@@ -232,7 +232,7 @@ page_builder:
         style_config:
           padding: small
           color: lite-secondary
-          size: compact
+          size: normal
           variant: right_image
         heading:
           text: 'Arabian Saluki Zone'
@@ -251,7 +251,7 @@ page_builder:
         style_config:
           padding: small
           color: white
-          size: compact
+          size: normal
           variant: left_image
         heading:
           text: 'Decoden Art, Mosaic & Paint your Night Lamp Workshops'
