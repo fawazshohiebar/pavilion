@@ -1,74 +1,46 @@
-
 <div class="bg-[#f5f2eb]">
-<section class="adnec-container mx-auto py-[45px] md:py-[50px] lg:py-[70px] relative">
-  <!-- Section title -->
+  <section class="adnec-container mx-auto py-[45px] md:py-[50px] lg:py-[70px] relative">
+    {{ if heading }}
+      <div class="text-center mb-16" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+        {{ partial:partials/sets/heading_group }}
+      </div>
+    {{ /if }}
 
-  {{if heading}}
-    <div class="text-center mb-16" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
-      {{partial:partials/sets/heading_group}}
-    </div>
-  {{/if}}
+     {{ taxonomy:sponsor_level sort="order:asc" }}
+      {{ collection:sponsors :sponsor_level:contains="slug" as="sponsors" sort="order:asc" }}
+        {{ if sponsors | length > 0 }}
+          <div class="mb-12" x-data="{}" x-intersect="$el.classList.add('animate-fade-in')">
+            
+     
+               
+  
+                        
+                  <div class="mx-auto flex flex-wrap justify-center gap-6 mb-12">
+                      {{ sponsors}}
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center hover:shadow-md transition w-[calc(50%-0.75rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
+                      <a href="{{sponsor_link}}">
+                      {{sponsors_logos}}
+                      <img src="{{url}}" alt="Caracal" class="h-16 mb-2  mx-auto">
+                        {{/sponsors_logos}}
+                    <p class="text-xs text-[#5b4526] text-center">{{title}}</p>
+                      </a>
+                  </div>
+                      {{ /sponsors}}
+                </div>
 
 
- 
-  <!-- Top Tier Sponsors -->
+            </div>
+        {{ else }}
+          <div class="hidden">No sponsors found for {{ title }} ({{ slug }})</div>
+        {{ /if }}
+      {{ /collection:sponsors }}
+    {{ /taxonomy:sponsor_level }}
+  </section>
 
-    <div class="mx-auto flex flex-wrap justify-center gap-6 mb-12">
-   {{premium_sponsors}}
-    <div class="bg-white rounded-lg p-4 flex flex-col items-center hover:shadow-md transition w-[calc(50%-0.75rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
-        {{premium_sponsors_logos}}
-        <img src="{{url}}" alt="Caracal" class="h-16 mb-2 grayscale hover:grayscale-0 transition">
-          {{/premium_sponsors_logos}}
-      <p class="text-xs text-[#5b4526] text-center">{{sponsor_title}}</p>
-    </div>
-    {{/premium_sponsors}}
-  </div>
+
+          </div>
 
 
 
-
-
-  <!-- Weaponry & Sector Sponsors -->
-  <div class="mx-auto flex flex-wrap justify-center gap-6 mb-12">
-   {{medium_sposnsors}}
-    <div class="bg-white rounded-lg p-4 flex flex-col items-center hover:shadow-md transition w-[calc(50%-0.75rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
-    {{medium_sponsors_logos}}
-        <img src="{{url}}" alt="Caracal" class="h-16 mb-2 grayscale hover:grayscale-0 transition">
-     {{/medium_sponsors_logos}}
-      <p class="text-xs text-[#5b4526] text-center">{{medium_sponsor_title}}</p>
-    </div>
-    {{/medium_sposnsors}}
-  </div>
-
-  <!-- Normal Sponsors -->
-  <div class="mx-auto flex flex-wrap justify-center gap-6 mb-0">
-   {{normal_sponsors}}
-    <div class="bg-white rounded-lg p-4 flex flex-col items-center hover:shadow-md transition w-[calc(50%-0.75rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
-    {{normal_sponsors_logos}}
-        <img src="{{url}}" alt="Caracal" class="h-16 mb-2 grayscale hover:grayscale-0 transition">
-     {{/normal_sponsors_logos}}
-      <p class="text-xs text-[#5b4526] text-center">{{normal_sponsor_title}}</p>
-    </div>
-    {{/normal_sponsors}}
-  </div>
-
-  <!-- Background flair (optional) -->
-  <div class="absolute inset-0 bg-[url('/desert-pattern.png')] bg-cover opacity-5 pointer-events-none"></div>
-</section>
+    <div class="absolute inset-0 bg-[url('/desert-pattern.png')] bg-cover opacity-5 pointer-events-none"></div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-{{ partial:partials/sets/sponsor }}

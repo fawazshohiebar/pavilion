@@ -10,9 +10,17 @@ tabs:
             field:
               type: text
               required: true
-              localizable: false
+              width: 75
               validate:
                 - required
+          -
+            handle: order
+            field:
+              type: integer
+              width: 25
+              display: "Order"
+              default: 999
+              instructions: "Lower numbers appear first"
   sidebar:
     display: Sidebar
     sections:
@@ -22,8 +30,7 @@ tabs:
             handle: slug
             field:
               type: slug
+              from: title
               required: true
               validate:
                 - required
-                - 'max:200'
-              localizable: false

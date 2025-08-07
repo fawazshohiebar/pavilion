@@ -1,0 +1,22 @@
+title: 'Sponsor Level'
+icon: tags
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          display: Title
+          width: 75
+      -
+        handle: order
+        field:
+          type: integer
+          display: Order
+          width: 25
+          default: 999
+          listable: true
+          instructions: Lower numbers appear first
