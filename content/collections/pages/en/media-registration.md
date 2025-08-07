@@ -9,7 +9,7 @@ page_builder:
       id: me1sbesa
       values:
         type: redirect_to
-        redirect_to: 'https://registration.xporience.com/registration/?badge_name=media&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTMwODQ2MzIsImRhdGEiOnsiZXZlbnQiOiIxNCIsImZvcm0iOiI2NyIsImxhbmciOiJlbiJ9fQ.bIuO9jlWdv7V3qPDIRijkMBgG08AMcf1hdcoGHT9muU'
+        redirect_to: 'https://registration.xporience.com/url?redirect=WE708vDctxWR&badge_name=media'
   -
     type: paragraph
     attrs:
