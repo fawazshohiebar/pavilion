@@ -43,92 +43,78 @@ page_builder:
               -
                 id: cQFTGTgt
                 text: '+971 (0)2 406 3235'
-                link: 'tel:helooo'
+                link: 'tel:+971024063235'
                 icons: phone
                 type: new_set
                 enabled: true
               -
                 id: 2JoA77MT
-                text: '+971 (0)2 406 3235'
-                link: 'tel:helooo'
-                icons: phone
+                text: 'saad.alhasani@adnec.ae'
+                link: 'mailto:saad.alhasani@adnec.ae'
+                icons: envelope
                 type: new_set
                 enabled: true
             type: new_set
             enabled: true
           -
             id: ZZV3SXM9
-            heading: 'Saad Al Hasani'
-            sub_heading: 'Event Director'
+            heading: 'Khaled Taha'
+            sub_heading: 'Sales Manager'
             icon_list:
               -
                 id: aZd2zXxh
-                text: '+971 (0)2 406 3235'
-                link: 'tel:helooo'
+                text: '+971 (0)50 908 1859'
+                link: 'tel:+971509081859'
                 icons: phone
+                type: new_set
+                enabled: true
+              -
+                id: bZd2zXxh
+                text: 'khaled.taha@adnec.ae'
+                link: 'mailto:khaled.taha@adnec.ae'
+                icons: envelope
                 type: new_set
                 enabled: true
             type: new_set
             enabled: true
           -
             id: b7NfBp8B
-            heading: 'Saad Al Hasani'
-            sub_heading: 'Event Director'
+            heading: 'Bilal Adada'
+            sub_heading: 'Sales Executive'
             icon_list:
               -
                 id: LEB84TOo
-                text: '+971 (0)2 406 3235'
-                link: 'tel:helooo'
+                text: '+971 (0)50 256 6027'
+                link: 'tel:+971502566027'
                 icons: phone
+                type: new_set
+                enabled: true
+              -
+                id: MEB84TOo
+                text: 'bilal.adada@adnec.ae'
+                link: 'mailto:bilal.adada@adnec.ae'
+                icons: envelope
                 type: new_set
                 enabled: true
             type: new_set
             enabled: true
           -
             id: uLApyVEj
-            heading: 'Saad Al Hasani'
-            sub_heading: 'Event Director'
+            heading: 'Sara Al Jaberi'
+            sub_heading: 'Sales Executive'
             icon_list:
               -
                 id: SimafAzz
-                text: '+971 (0)2 406 3235'
-                link: 'tel:helooo'
-                icons: phone
-                type: new_set
-                enabled: true
-            type: new_set
-            enabled: true
-          -
-            id: MBfA9vxK
-            heading: 'Saad Al Hasani'
-            sub_heading: 'Event Director'
-            icon_list:
-              -
-                id: HpbmNlYI
-                text: '+971 (0)2 406 3235'
-                link: 'tel:helooo'
-                icons: phone
-                type: new_set
-                enabled: true
-            type: new_set
-            enabled: true
-          -
-            id: vg9LWGt2
-            heading: 'Saad Al Hasani'
-            sub_heading: 'Event Director'
-            icon_list:
-              -
-                id: YF9M9f6p
-                text: '+971 (0)2 406 3235'
-                link: 'tel:helooo'
+                text: '+971 (0)2 406 3245'
+                link: 'tel:+971024063245'
                 icons: phone
                 type: new_set
                 enabled: true
               -
-                id: QzoZftMV
-                text: '+971 (0)2 406 3235'
-                link: 'tel:helooo'
-                icons: phone
+                id: TimafAzz
+                text: 'sara.aljaberi@adnec.ae'
+                link: 'mailto:sara.aljaberi@adnec.ae'
+                icons: envelope
                 type: new_set
                 enabled: true
             type: new_set
@@ -158,14 +144,14 @@ page_builder:
               -
                 id: 2xppU4b0
                 text: '+971 (0)50 908 1859'
-                link: 'tel:+971 (0)50 908 1859'
+                link: 'tel:+971509081859'
                 icons: phone
                 type: new_set
                 enabled: true
               -
                 id: NyoArv1s
-                text: '+971 (0)50 908 1859'
-                link: 'tel:+971 (0)50 908 1859'
+                text: '+971 (0)50 256 6027'
+                link: 'tel:+971502566027'
                 icons: phone
                 type: new_set
                 enabled: true
@@ -206,12 +192,12 @@ page_builder:
             enabled: true
           -
             id: ny2nvh7K
-            heading: 'PUBLIC RELATIONS'
+            heading: 'OPERATIONS'
             icon_list:
               -
                 id: lUYcjVV4
-                text: pr@adihex.com
-                link: 'mailto:pr@adihex.com'
+                text: operation@adihex.com
+                link: 'mailto:operation@adihex.com'
                 icons: envelope
                 type: new_set
                 enabled: true
@@ -219,12 +205,12 @@ page_builder:
             enabled: true
           -
             id: e7z8DBlI
-            heading: 'PUBLIC RELATIONS'
+            heading: 'WEAPON INQUIRIES'
             icon_list:
               -
                 id: JJyMVC0w
-                text: pr@adihex.com
-                link: 'mailto:pr@adihex.com'
+                text: weaponry@adihex.com
+                link: 'mailto:weaponry@adihex.com'
                 icons: envelope
                 type: new_set
                 enabled: true
@@ -232,12 +218,39 @@ page_builder:
             enabled: true
           -
             id: 6YEdT17s
-            heading: 'PUBLIC RELATIONS'
+            heading: 'AUCTIONS & COMPETITORS'
             icon_list:
               -
                 id: quBaKu6J
-                text: pr@adihex.com
-                link: 'mailto:pr@adihex.com'
+                text: auctions@adihex.com
+                link: 'mailto:auctions@adihex.com'
+                icons: envelope
+                type: new_set
+                enabled: true
+              -
+                id: ruBaKu6J
+                text: competitions@adihex.com
+                link: 'mailto:competitions@adihex.com'
+                icons: envelope
+                type: new_set
+                enabled: true
+            type: new_set
+            enabled: true
+          -
+            id: 7YEdT17s
+            heading: 'CUSTOMER SERVICE'
+            icon_list:
+              -
+                id: suBaKu6J
+                text: '+971 (0)2 406 3497'
+                link: 'tel:+971024063497'
+                icons: phone
+                type: new_set
+                enabled: true
+              -
+                id: tuBaKu6J
+                text: customerservice@adihex.com
+                link: 'mailto:customerservice@adihex.com'
                 icons: envelope
                 type: new_set
                 enabled: true

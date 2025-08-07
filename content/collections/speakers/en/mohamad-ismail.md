@@ -2,9 +2,9 @@
 id: e5f0919d-1cc5-47d1-968f-781dcdd81bc8
 blueprint: speaker
 title: 'Mohamad Ismail'
-image: mohamad-ismail-opitical-astronomy-al-sadeem-astronomy-1024x1024.jpg
+image: speakers/mohamad-ismail.jpg
 position: 'Opitical Astronomy'
 company: 'Al Sadeem Astronomy'
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754486658
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754601120
 ---

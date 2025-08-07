@@ -4,20 +4,22 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
       <!-- Speaker Card -->
-      {{ speaker_replicator }}
+      {{ speakers }}
 
         <div
-          class="bg-[#f9f9f9] shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-2xl  hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-          {{ profile_image }}
-            <img src="{{ url }}" alt="{{alt}}" class="w-full h-72 object-cover rounded-t-2xl">
-          {{ /profile_image }}
+          class="bg-white shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-2xl  hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          {{ image }}
+            <img src="{{ url }}" alt="{{alt ?? title}}" 
+            style="object-position: {{focus_css}};"
+            class="w-full h-72 object-cover rounded-t-2xl">
+          {{ /image }}
           <div class="p-5 text-center">
-            <h3 class="text-xl font-semibold text-[#1a1a1a] mb-[20px]">{{ name | widont }}</h3>
+            <h3 class="text-xl font-semibold text-[#1a1a1a] mb-[20px]">{{ title | widont }}</h3>
             <p class="text-sm text-gray-400 mt-2 leading-snug mb-[20px]">{{ position | widont }}</p>
             <p class="text-base text-primary-600 mt-2 leading-snug">{{ company | widont }}</p>
           </div>
         </div>
-      {{ /speaker_replicator }}
+      {{ /speakers }}
 
 
       <!-- End Speaker Card -->

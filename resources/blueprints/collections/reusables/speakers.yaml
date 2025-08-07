@@ -10,47 +10,17 @@ tabs:
             field:
               type: text
               required: true
-              localizable: false
+              localizable: true
               validate:
                 - required
           -
-            handle: speaker_replicator
+            handle: speakers
             field:
-              type: replicator
-              display: 'Speaker Replicator'
+              collections:
+                - speakers
+              type: entries
+              display: Speakers
               localizable: false
-              sets:
-                new_set_group:
-                  display: 'New Set Group'
-                  sets:
-                    new_set:
-                      display: 'New Set'
-                      fields:
-                        -
-                          handle: profile_image
-                          field:
-                            container: collaterals
-                            type: assets
-                            display: 'Profile Image'
-                            localizable: false
-                        -
-                          handle: name
-                          field:
-                            type: text
-                            display: Name
-                            localizable: false
-                        -
-                          handle: position
-                          field:
-                            type: text
-                            display: Position
-                            localizable: false
-                        -
-                          handle: company
-                          field:
-                            type: text
-                            display: Company
-                            localizable: false
   sidebar:
     display: Sidebar
     sections:

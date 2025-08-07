@@ -1,0 +1,9 @@
+---
+id: h8i9j0k1-l2m3-4n5o-6p7q-r8s9t0u1v2w3
+origin: 6f7g8h9i-0j1k-2l3m-4n5o-p6q7r8s9t0u1
+title: 'د. مارغيت مولر'
+position: 'المدير التنفيذي'
+company: 'مستشفى أبوظبي للصقور'
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754602517
+---
