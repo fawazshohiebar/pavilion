@@ -6,196 +6,99 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdtzdfw4
+      id: mapb3fbo
       values:
         type: reusable_block
         entry:
-          - 67e0641c-45df-420d-90f1-0a3bbe96b8f1
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
+          - 7ff438ae-3f53-4146-84da-2a1203cd410d
   -
     type: set
     attrs:
-      id: mapbduo9
+      id: mdwwzmpj
       values:
         type: reusable_block
         entry:
-          - 39f8c616-eb93-4ada-9310-0e1f4b0b324b
+          - f1ada786-2ef6-4461-9ccd-05e724136959
   -
     type: set
     attrs:
-      id: mdyi906q
+      id: mdwx0sbw
       values:
         type: reusable_block
         entry:
-          - e955ebf9-b57f-4438-9219-b44ef9f10681
+          - 19dc374f-760d-4313-bef2-d3cfae82b796
   -
     type: set
     attrs:
-      id: mdygki3k
-      values:
-        type: banner
-        new_tab: true
-        is_div: false
-        use_image_height: false
-        image: banners/download-app-now-2025_ar2-(1).jpg
-        link: 'https://onelink.to/hbb8wm'
-        width: full
-        image_style: contain
-        heading:
-          text: null
-          size: small
-          color: white
-          tag: p
-          uppercase: true
-        image_height: 300
-  -
-    type: set
-    attrs:
-      id: mdulw2yz
+      id: mdwx11r1
       values:
         type: reusable_block
         entry:
-          - 9fe7d3ea-4903-4391-9f52-df30bd35a89e
+          - ad03629a-055b-41ff-bf87-d3910e80a3fb
   -
     type: set
     attrs:
-      id: mdvtzyvf
+      id: mdwx3my7
       values:
         type: reusable_block
         entry:
-          - 4d6cabbc-3042-4ef0-879b-08c0e8ee4465
+          - bc822cf7-e053-48b9-821b-600f3ad7d9bd
   -
     type: set
     attrs:
-      id: mdmol3og
-      enabled: false
+      id: mdwx3x99
       values:
         type: reusable_block
         entry:
-          - 424afcd4-bbf9-488d-bc21-fe1343478187
+          - 51fa7374-db89-4101-abf9-a5d2042220da
   -
     type: set
     attrs:
-      id: mdyloxip
-      values:
-        type: exhibiting_brand
-        heading:
-          heading:
-            text: 'العلامات التجارية العارضة'
-            size: small
-            color: black
-            tag: p
-            uppercase: false
-          subheading: null
-          focus_icon: true
-          heading_focus_word: null
-          icon: globe-asia-australia
-        ezone_base_url: 'https://ezone.adihex.com/exhibitors-list-top-with-images-resource/'
-        event_id: 4
-        random: true
-        count: 10
-        in_random_order: true
-        pagination_count: 10
-        style_config_field:
-          padding: small
-          color: black
-          size: normal
-          variant: style1
-        style_config:
-          padding: small
-          color: lite-secondary
-          size: normal
-          variant: style1
-  -
-    type: set
-    attrs:
-      id: mdwr4uxy
+      id: mdwx4eka
       values:
         type: reusable_block
         entry:
-          - a1c926f4-9f14-404a-8bc4-fe0eb1bad1bd
+          - ae608642-8c6c-4bfd-94c2-db400317b029
   -
     type: set
     attrs:
-      id: mdmra4mo
+      id: mdwx4y7d
       values:
         type: reusable_block
         entry:
-          - 6444f21f-a94b-4af6-8e4c-3b5f7e586afb
+          - 4f9536ed-cc6c-4919-8019-a3e95e9c3882
   -
     type: set
     attrs:
-      id: mdms5pe8
+      id: mdwx5jeb
       values:
         type: reusable_block
         entry:
-          - b8dfb5b2-2bfc-4db0-af0a-652b3946372f
+          - 580cd062-077c-4c6e-ae17-73045ab92acc
   -
     type: set
     attrs:
-      id: mdmsh84j
+      id: mdwx71o3
+      values:
+        type: full_width_image
+        image:
+          - added-images/capital-360-banner-exhibition_728x90-2-1536x190.jpg
+  -
+    type: set
+    attrs:
+      id: mdwx7gg7
       values:
         type: reusable_block
         entry:
-          - bc1eb7ab-3eff-461f-ad8d-22d4c7f75cbe
-  -
-    type: set
-    attrs:
-      id: mdyt4esn
-      values:
-        type: banner_carousel
-        heading:
-          heading:
-            text: 'Our Somposers'
-            size: small
-            color: black
-            tag: p
-            uppercase: false
-          subheading: null
-          focus_icon: false
-          heading_focus_word: null
-          icon: null
-        images:
-          -
-            id: hyke8hDT
-            image: banners/adpg_adihex_homepage-banner.jpg
-            link: 'https://www.adportsgroup.com/'
-          -
-            id: mdyt6kjg
-            image: banners/gac_adihex_website_banner.jpg
-            link: 'https://www.gargashgacmotor.com/'
-          -
-            id: mdyt7ja3
-            image: banners/ranaka-banner.png
-            link: 'https://rakna.ae/'
-          -
-            id: mdyt917c
-            image: banners/schiwywaffen.png
-            link: 'https://www.schiwywaffen.com/'
-        new_tab: true
-        width: contained
-        image_style: contain
-        is_div: false
-        use_image_height: true
-  -
-    type: set
-    attrs:
-      id: mdn06z0s
-      values:
-        type: reusable_block
-        entry:
-          - 2551c9b8-1a0e-44d5-aec1-bbbdd94d386d
+          - 522675f3-5162-4a5f-b88e-cac204bfcc0c
   -
     type: paragraph
     attrs:
       textAlign: left
 fine_seo_title: 'المعرض الدولي للصيد والفروسية - أبوظبي 2025'
 fine_seo_is_title_custom: true
-fine_seo_description: 'تراث يتجدد يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض'
+fine_seo_description: 'إطلاق النسخة الاولى من المعرض الدولي للصيد والفروسية - أبوظبي 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك أبوظبي.'
 fine_seo_preview: الرئيسية
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754583609
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754638203
 ---

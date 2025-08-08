@@ -12,8 +12,8 @@ description: |-
   Heritage is the guiding force that shapes our values and practices. Just as our ancestors passed down their knowledge and skills through generations, ADIHEX strives to honour their legacy by offering innovative products and services that merge tradition with modernity. 
 
   As enthusiasts of hunting and equestrian pursuits, ADIHEX is the event that celebrates shared passion while paying homage to our rich heritage.
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754577766
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754635284
 flipped: false
 image: call_to_actions/main_cta.jpg
 buttons:

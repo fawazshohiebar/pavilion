@@ -12,6 +12,21 @@ section_label: null
 description: 'انطلق في عالم يلتقي فيه الماضي بالحاضر. يُعد معرض أبوظبي الدولي للصيد والفروسية أكثر من مجرد فعالية – إنه تجربة ثقافية وتجارية فريدة من نوعها تجمع بين الهواة، والمهتمين، والعائلات، والمحترفين، والعلامات التجارية العالمية من أكثر من 65 دولة.'
 badge_text: null
 badge_subtext: null
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754584110
+buttons:
+  -
+    id: mdy2ej7r
+    dynamic_button:
+      button: 'entry::b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7'
+      text: 'اشتر تذكرتك الآن'
+      button_options:
+        style: filled
+        color: primary
+        size: medium
+        new_tab: true
+        icon: ticket
+        icon_position: end
+    type: button
+    enabled: true
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754639597
 ---

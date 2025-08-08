@@ -23,7 +23,7 @@ tabs:
             handle: sponsors_logos
             field:
               max_files: 1
-              container: assets
+              container: collaterals
               type: assets
               display: 'Sponsors Logos'
               localizable: false

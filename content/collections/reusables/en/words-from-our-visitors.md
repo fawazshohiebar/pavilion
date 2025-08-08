@@ -4,39 +4,47 @@ blueprint: feedback_and_reviews
 title: 'WORDS FROM OUR VISITORS'
 replicator_quotes_and_reviews:
   -
-    id: mdmsej7e
+    id: me2iphb2
+    feedback_text: 'Extremely Satisfied! We visit on a yearly basis and all we can say is that its very informative! Watched live & exclusive shows!'
+    feedback_writer: 'Yasmin Jahnke'
+    type: new_set
+    enabled: true
+  -
+    id: me2iqca8
+    feedback_text: |-
+      ADIHEX is a must visit for me, and I am thoroughly pleased with the diverse exhibits and activities! I hope you consider
+      extending the duration next time.
+    feedback_writer: 'Shah Hassan'
+    type: new_set
+    enabled: true
+  -
+    id: me2ivc8l
     feedback_text: 'I loved it and I am extremely satisfied with the showcases this edition! I intended to buy hunting products and equipment'
     feedback_writer: Afnan
     type: new_set
     enabled: true
   -
-    id: mdo4nl60
-    feedback_text: 'I am extremely satisfied, watched the performances in the Arena the event is very beautiful!'
+    id: me2ix8bp
+    feedback_text: 'I am extremely satisfied, watched the performances in the Arena & the event is very beautiful!'
     feedback_writer: 'Moheir Amr Al Shehi'
     type: new_set
     enabled: true
   -
-    id: mdo4otak
-    feedback_text: 'I am extremely satisfied, watched the performances in the Arena the event is very beautiful!'
-    feedback_writer: 'Moheir Amr Al Shehi'
-    type: new_set
-    enabled: true
-  -
-    id: mdo4p7fi
-    feedback_text: 'Great Work! I amextremely satisfied, heard it from a radio advertising as well as from social media.'
+    id: me2ixtjg
+    feedback_text: 'Great Work! I am extremely satisfied, heard it from a radio advertising as well as from social media.'
     feedback_writer: Lama
     type: new_set
     enabled: true
   -
-    id: mdo4pybn
-    feedback_text: 'Great Work! I amextremely satisfied, heard it from a radio advertising as well as from social media.'
-    feedback_writer: Lama
+    id: me2iyhdn
+    feedback_text: "ADIHEX is beautiful and accessible to all visitors! I am satisfied & it's good to visit!"
+    feedback_writer: 'Omar Mohamed'
     type: new_set
     enabled: true
 image:
   - mohamed-bin-zayed-funds-for-birds-of-prey-2-768x511-(1).jpg
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754370011
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754639367
 duplicated_from: bc1eb7ab-3eff-461f-ad8d-22d4c7f75cbe
 heading:
   heading:

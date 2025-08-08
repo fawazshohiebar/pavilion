@@ -54,8 +54,8 @@ info_cards:
     type: info_card
     enabled: true
     icon: gift
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754228154
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754635474
 hero_actions:
   -
     id: mdvob081
@@ -86,7 +86,12 @@ cta_actions:
         icon_position: end
     type: button
     enabled: true
+style_config:
+  padding: small
+  color: transparent
+  size: normal
+  variant: full
 ---
-The Abu Dhabi International Hunting and Equestrian Exhibition (ADIHEX) is your gateway to experiencing Abu Dhabi’s rich heritage and traditions in hunting and equestrianism. Whether you’re a passionate enthusiast or simply curious about the region’s cultural legacy, ADIHEX invites you to explore a vibrant array of cultural exhibitions, thrilling competitions, and breathtaking traditional performances.  
+The Abu Dhabi International Hunting and Equestrian Exhibition (ADIHEX) is your gateway to experiencing Abu Dhabi’s rich heritage and traditions in hunting and equestrianism. Whether you’re a passionate enthusiast or simply curious about the region’s cultural legacy, ADIHEX invites you to explore a vibrant array of cultural exhibitions, thrilling competitions, and breathtaking traditional performances.
 
 Immerse yourself in live historical displays, discover innovative products across diverse sectors, and enjoy unique features that celebrate the region’s deep-rooted traditions. ADIHEX is your chance to connect with a living heritage and be part of a truly unforgettable experience.

@@ -1,7 +1,7 @@
 ---
 id: e45d483f-bb19-48ac-aedf-fc86ee574383
 origin: 8ab494c3-b905-44b4-b2f1-ec25f4fe8bed
-title: 'مواقف السيارات'
+title: 'معلومات مواقف السيارات'
 page_builder:
   -
     type: set
@@ -85,7 +85,7 @@ page_builder:
           size: normal
           variant: no_image
         heading:
-          text: 'مواقف السيارات العادية'
+          text: 'مواقف  السيارات العاديه'
           size: small
           color: black
           tag: h2
@@ -157,7 +157,6 @@ page_builder:
                 icon_position: start
             type: button
             enabled: true
-fine_seo_title: 'مواقف السيارات'
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754584952
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754643922
 ---
