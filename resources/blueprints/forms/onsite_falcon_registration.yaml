@@ -1,0 +1,106 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: ring_number
+            field:
+              type: text
+              display: 'Ring Number - رقم الحجل'
+              localizable: false
+              width: 50
+              validate:
+                - 'max:50'
+          -
+            handle: falcon_type
+            field:
+              autocomplete: family-name
+              type: text
+              display: 'Falcon Type - نوع الصقر'
+              localizable: false
+              width: 50
+              validate:
+                - 'max:50'
+          -
+            handle: falcon_gender
+            field:
+              options:
+                -
+                  key: Male
+                  value: Male
+                -
+                  key: Female
+                  value: Female
+              type: radio
+              display: 'Falcon Gender - جنس الصقر'
+              localizable: false
+              width: 50
+              inline: true
+          -
+            handle: falcon_age
+            field:
+              type: text
+              display: 'Falcon Age - عمر الصقر'
+              localizable: false
+              width: 50
+              validate:
+                - 'max:50'
+          -
+            handle: falcon_length
+            field:
+              type: text
+              display: 'Falcon Length - طول الصقر'
+              localizable: false
+              width: 50
+              validate:
+                - 'max:50'
+          -
+            handle: falcon_width
+            field:
+              type: text
+              display: 'Falcon Width - عرض الصقر'
+              localizable: false
+              width: 50
+              validate:
+                - 'max:50'
+          -
+            handle: falcon_weight
+            field:
+              type: text
+              display: 'Falcon Weight - وزن الصقر'
+              localizable: false
+              width: 50
+              validate:
+                - 'max:50'
+          -
+            handle: farm
+            field:
+              type: text
+              display: 'Farm - المزرعة'
+              localizable: false
+              width: 50
+              validate:
+                - 'max:50'
+          -
+            handle: country_of_origin
+            field:
+              type: text
+              display: 'Country of Origin - بلد المنشأ'
+              localizable: false
+              width: 50
+              validate:
+                - 'max:50'
+          -
+            handle: falcon_pictures
+            field:
+              container: collaterals
+              folder: onsite_falcon_pictures
+              restrict: true
+              type: assets
+              display: 'Falcon Pictures - صور الصقر'
+              localizable: false
+          -
+            handle: turnstile_token
+            field: basics.turnstile_token

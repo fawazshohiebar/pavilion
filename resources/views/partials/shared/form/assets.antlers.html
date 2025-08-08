@@ -1,10 +1,14 @@
 <input
     type="file"
     name="{{ handle }}{{ if max_files !== 1 }}[]{{ /if }}"
-    {{if has_alpine}} x-model="form.{{ handle }}" :disabled="form.processing"
-    :class="{'animate-pulse': checkingCaptcha}" {{/if}}
+    {{if has_alpine}} 
+    :disabled="form.processing"
+    :class="{'animate-pulse': checkingCaptcha}" 
+    onchange="console.log('File selected:', this.files)"
+    {{/if}}
     {{if !has_alpine}} {{ if js_driver }}{{ js_attributes }}{{ /if }}  {{/if}}
 
     {{ if max_files !== 1 }}multiple{{ /if }}
     {{ if validate|contains:required }}required{{ /if }}
+    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6 {{if input_type === 'tel'}}rtl:text-right{{/if}}"
 >

@@ -1,0 +1,10 @@
+title: 'Onsite Falcon Registration'
+email:
+  -
+    id: mamg6evf
+    to: abeer.mabrouk@adnec.ae
+    mailer: smtp
+    markdown: true
+    subject: 'New Onsite Falcon Submission'
+    html: emails/new_enquiry
+    attachments: true

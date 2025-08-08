@@ -1,51 +1,198 @@
 {{ nocache }}
-    {{ form id="{{form:handle}}" :handle="form" attr:x-ref="form" js="alpine" class="px-2 py-10 lg:px-8" }}
-        <div x-data='
-    {
-        checkingCaptcha: true,
-        captchaError: "",
-        success: false,
-        submitted: false,
-        form: $form(
-            "post",
-            $refs.form.getAttribute("action"),
-            JSON.parse($refs.form.getAttribute("x-data"))
-        ),
-        showCaptchaError(e) {
-            this.captchaError = e.detail.error;
-            this.checkingCaptcha = false;
-        },
-        addToken(e) {
-            $nextTick(() => {
-                this.form.turnstile_token = e.detail.token; // Explicitly set the token in form data
+    {{ form id="{{form:handle}}" :handle="form" attr:x-ref="form" js="alpine" class="px-2 py-10 lg:px-8" enctype="multipart/form-data" }}
+        <div x-data='{
+            checkingCaptcha: true,
+            captchaError: "",
+            success: false,
+            submitted: false,
+            form: $form(
+                "post",
+                $refs.form.getAttribute("action"),
+                JSON.parse($refs.form.getAttribute("x-data"))
+            ),
+            showCaptchaError(e) {
+                this.captchaError = e.detail.error;
                 this.checkingCaptcha = false;
-            });
-        },
-        init() {
-            $refs.form.addEventListener("submit", evt => {
-                evt.preventDefault();
-                this.form.submit().then(response => {
-                        this.form.reset();
-                        this.success = true;
-                    }).catch(error => {
-                        console.log(error);
-                    }).finally(() => {
+            },
+            addToken(e) {
+                $nextTick(() => {
+                    this.form.turnstile_token = e.detail.token; // Explicitly set the token in form data
+                    this.checkingCaptcha = false;
+                });
+            },
+            init() {
+                // Add file inputs to the excluded fields
+                const fileInputs = $refs.form.querySelectorAll("input[type=file]");
+                fileInputs.forEach(input => {
+                    this.form.ignoredFields.push(input.name);
+                });
+                
+                $refs.form.addEventListener("submit", evt => {
+                    evt.preventDefault();
+                    
+                    // Create FormData to handle file uploads
+                    const formData = new FormData();
+                    
+                    // Get all form elements
+                    const formElements = $refs.form.elements;
+                    
+                    // Track file field names to avoid duplication
+                    const fileFieldNames = [];
+                    
+                    // First, add file inputs to FormData and track their names
+                    for (let i = 0; i < formElements.length; i++) {
+                        const field = formElements[i];
+                        if (field.type === `file`) {
+                            fileFieldNames.push(field.name);
+                            if (field.files.length > 0) {
+                                // If multiple files are allowed
+                                if (field.multiple) {
+                                    for (let j = 0; j < field.files.length; j++) {
+                                        formData.append(field.name, field.files[j]);
+                                    }
+                                } else {
+                                    formData.append(field.name, field.files[0]);
+                                }
+                            }
+                        }
+                    }
+                    
+                    // Then add all non-file inputs from the form
+                    for (let i = 0; i < formElements.length; i++) {
+                        const field = formElements[i];
+                        if (field.name && field.type !== `file` && field.type !== `submit`) {
+                            // For radio buttons, only add if checked
+                            if (field.type === `radio`) {
+                                if (field.checked) {
+                                    formData.append(field.name, field.value);
+                                }
+                            }
+                            // For checkboxes, only add if checked
+                            else if (field.type === `checkbox`) {
+                                if (field.checked) {
+                                    formData.append(field.name, field.value);
+                                }
+                            }
+                            // For all other input types
+                            else {
+                                formData.append(field.name, field.value);
+                            }
+                        }
+                    }
+                    
+                    // Add the turnstile token if available
+                    if (this.form.turnstile_token) {
+                        formData.append("turnstile_token", this.form.turnstile_token);
+                        formData.append("cf-turnstile-response", this.form.turnstile_token);
+                    }
+                    
+                    // Add CSRF token
+                    const csrfToken = document.querySelector("meta[name=\"csrf-token\"]")?.getAttribute("content");
+                    if (csrfToken) {
+                        formData.append("_token", csrfToken);
+                    }
+                    
+                    // Add a debug flag
+                    formData.append("_debug", "true");
+                    
+                    // Set processing state
+                    this.form.processing = true;
+                    
+                    // Manual fetch instead of using form.submit()
+                    console.log("Starting form submission to:", $refs.form.getAttribute("action"));
+                    console.log("FormData entries:");
+                    let hasFiles = false;
+                    
+                    for (let pair of formData.entries()) {
+                        const isFile = pair[1] instanceof File;
+                        if (isFile) {
+                            hasFiles = true;
+                        }
+                        console.log(pair[0] + ": " + (isFile ? `File: ${pair[1].name} (${pair[1].size} bytes)` : pair[1]));
+                    }
+                    
+                    if (!hasFiles) {
+                        console.warn("No files detected in the FormData. Check that file inputs are properly included.");
+                    }
+                    
+                    const formAction = $refs.form.getAttribute("action");
+                    console.log("Form action URL:", formAction);
+                    
+                    if (!formAction) {
+                        console.error("Form action URL is empty or missing!");
+                        return;
+                    }
+                    
+                    fetch(formAction, {
+                        method: "POST",
+                        body: formData,
+                        // Do not set Content-Type header for multipart/form-data
+                        // The browser will set it automatically with the correct boundary
+                        headers: {
+                            "Accept": "application/json",
+                            "X-Requested-With": "XMLHttpRequest"
+                        }
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            return response.json().then(data => Promise.reject(data));
+                        }
+                        console.log("Form submission successful, response:", response);
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log("Form submission data:", data);
+                        // Only set success if we have a proper response with submission_created=true
+                        if (data && data.success && data.submission_created) {
+                            this.form.reset();
+                            this.success = true;
+                        } else if (data && data.success) {
+                            // Server says success but submission not created
+                            console.warn("Server returned success but submission_created is false. Check server logs.");
+                            console.log("Form data may not have been properly saved.");
+                            // Dont show success message to user
+                        } else {
+                            console.error("Form submission response did not indicate success:", data);
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Form submission error:", error);
+                        // Log more details about the error
+                        if (error.errors) {
+                            console.error("Validation errors:", error.errors);
+                            this.form.setErrors(error.errors);
+                        } else if (error.message) {
+                            console.error("Error message:", error.message);
+                        } else {
+                            console.error("Unknown error type:", typeof error);
+                        }
+                    })
+                    .finally(() => {
+                        this.form.processing = false;
+                        
+                        // Add debugging output for file uploads
+                        const fileInputs = $refs.form.querySelectorAll("input[type=\"file\"]");
+                        fileInputs.forEach(input => {
+                            console.log(`File input ${input.name}:`, input.files);
+                        });
+                        
                         {{if redirect_to_url}}
                         {{redirect_to_url}}
                         window.location.href = "{{url}}";
                         {{/redirect_to_url}}
                         {{else}}
                         if(this.success) {
+                            console.log("Form submission was successful, resetting form");
                             this.form.reset();
                             $refs.form.reset();
+                        } else {
+                            console.log("Form submission completed but success flag is not set");
                         }
                         {{/if}}
                     });
-
-            });
-        },
-
-    }' @recaptcha-complete.window="addToken" @recaptcha-error.window="showCaptchaError">
+                });
+            }
+        }' @recaptcha-complete.window="addToken" @recaptcha-error.window="showCaptchaError">
             <template x-if="success">
                 <div class="mx-auto mt-4">
                     {{ partial:shared/alerts/success :message="success_message" /}}

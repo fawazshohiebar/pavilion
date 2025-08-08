@@ -27,3 +27,11 @@ preferences:
         - title
         - slug
         - order
+  forms:
+    onsite_falcon_registration:
+      columns:
+        - datestamp
+        - farm
+        - ring_number
+        - falcon_gender
+        - falcon_age

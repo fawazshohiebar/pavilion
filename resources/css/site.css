@@ -108,13 +108,13 @@ html {
     @apply container mx-auto px-4 md:px-6 relative;
   }
   .colored-text-secondary {
-    @apply text-secondary-500 dark:text-secondary-100;
+    @apply text-secondary-500;
   }
   .kinda-dark .colored-text-secondary {
     @apply text-secondary-100;
   }
   .colored-text-primary {
-    @apply text-primary-600 dark:text-primary-100;
+    @apply text-primary-600;
   }
   .kinda-dark .colored-text-primary {
     @apply text-primary-100;
