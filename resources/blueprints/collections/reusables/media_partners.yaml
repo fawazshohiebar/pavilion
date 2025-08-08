@@ -10,7 +10,7 @@ tabs:
             field:
               type: text
               required: true
-              localizable: false
+              localizable: true
               validate:
                 - required
           -
@@ -18,7 +18,7 @@ tabs:
             field:
               type: replicator
               display: 'Replicator Media Partners'
-              localizable: false
+              localizable: true
               sets:
                 new_set_group:
                   display: 'New Set Group'

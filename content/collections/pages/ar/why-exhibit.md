@@ -28,7 +28,7 @@ page_builder:
             id: mdybtmmg
             dynamic_button:
               button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
-              text: null
+              text: 'الاستفسار عن فرص المشاركة في المعرض'
               button_options:
                 style: filled
                 color: primary
@@ -68,6 +68,6 @@ page_builder:
       textAlign: left
 fine_seo_title: 'لماذا تعرضوا منتجاتكم في المعرض'
 fine_seo_description: 'يجمع معرض أبوظبي الدولي للصيد والفروسية 2025 مجموعة متنوعة من القطاعات التي تحتفي بالتقاليد، وتُبرز الثقافة، وتربط المجتمعات من مختلف أنحاء العالم'
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754587346
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754641573
 ---

@@ -3,8 +3,8 @@ id: 56f402bd-ef8f-42f8-bdf0-8cbe736853f6
 blueprint: page
 title: 'Promotional Materials'
 fine_seo_is_title_custom: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754396626
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754641691
 page_builder:
   -
     type: set
@@ -45,4 +45,5 @@ page_builder:
           - cd6337ea-06d8-4d97-9b51-8407fcfbb3ad
 fine_seo_title: 'Promotional Materials'
 fine_seo_preview: 'Promotional Materials'
+template: default
 ---

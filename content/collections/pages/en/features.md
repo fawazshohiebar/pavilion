@@ -3,8 +3,8 @@ id: 22227610-dc48-4f42-9394-c222c87592a8
 blueprint: page
 title: Features
 fine_seo_is_title_custom: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754584669
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754640221
 fine_seo_title: '2025 Features'
 fine_seo_preview: '2025 Features'
 page_builder:

@@ -1,17 +1,16 @@
 tree:
   -
-    id: dcd25c7c-b0c0-4c2d-a90d-44ddf1b27bb4
-    title: 'حول المعرض'
-    url: '#about'
+    id: bf77adef-82e9-42b8-b5b3-a568d206061f
+    entry: a508bba7-3145-41e8-a905-ef46a041d792
   -
-    id: 38d66980-8deb-4d35-8330-b9b261334da0
-    title: القطاعات
-    url: '#sectors'
+    id: ae5bdd18-9d03-41ae-98cf-9b1454307f85
+    entry: abf1d00b-a591-44e5-8c71-b9701e33b901
   -
-    id: b9bf0287-3692-448d-8092-864645695b6a
-    title: النشاطات
-    url: '#activities'
+    id: d575bc6d-745a-4042-a1fd-99892d0a1333
+    entry: e45d483f-bb19-48ac-aedf-fc86ee574383
   -
-    id: b82a66a6-478a-47cf-9443-744413951314
-    title: المشاركة
-    url: '#participate'
+    id: 47468449-a757-4b86-ac14-17a7857dcc48
+    entry: a528e2a8-6ce4-4e52-98a4-5f3e329c1aec
+  -
+    id: bfe167de-7e00-4c69-b2ea-b9998cae3220
+    entry: 88e597e9-2759-4922-a2a3-55ac2ec9e0f5

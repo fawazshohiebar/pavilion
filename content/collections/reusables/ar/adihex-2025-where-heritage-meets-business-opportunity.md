@@ -17,46 +17,46 @@ info_cards:
     id: mdwrzh68
     icon_type: heroicon
     icon: user-group
-    heading: 'Connect with over 347,000 qualified visitors with strong purchasing power and niche interests'
+    heading: 'تواصل مع أكثر من 347,000 زائر مؤهل يتمتعون بقوة شرائية عالية واهتمامات متخصصة'
     type: info_card
-    enabled: false
+    enabled: true
   -
     id: mdwrzxl3
     icon_type: heroicon
     icon: chat-bubble-left-right
-    heading: 'Generate premium business leads and secure high-value sales on-site'
+    heading: 'حقق فرص مبيعات عالية القيمة وتوليد عملاء محتملين مميزين مباشرة من أرض المعرض'
     type: info_card
-    enabled: false
+    enabled: true
   -
     id: mdws0xgt
     icon_type: heroicon
     icon: speaker-wave
-    heading: 'Showcase your brand in front of a global community passionate about hunting, equestrian sports, outdoor adventure, weaponry, falconry, conservation, and heritage'
+    heading: 'عرّف بعلامتك التجارية أمام مجتمع عالمي شغوف بالصيد، ورياضات الفروسية، والمغامرات الخارجية، والأسلحة، والصقارة، والحفاظ على البيئة، والتراث.'
     type: info_card
-    enabled: false
+    enabled: true
   -
     id: mdws1v92
     icon_type: heroicon
     icon: users
-    heading: 'Engage with key decision-makers, VIP buyers, and government stakeholders actively sourcing products and partnerships'
+    heading: 'تفاعل مع صناع القرار، والمشترين من كبار الشخصيات، والجهات الحكومية الباحثة عن المنتجات والشراكات'
     type: info_card
-    enabled: false
+    enabled: true
   -
     id: mdws2a6h
     icon_type: heroicon
     icon: chart-bar
-    heading: 'Maximize your exposure through our integrated marketing support—online, onsite, and in media'
+    heading: 'ضاعف من انتشارك من خلال دعمنا التسويقي المتكامل: عبر الإنترنت، وفي موقع الحدث، ومن خلال وسائل الإعلام'
     type: info_card
-    enabled: false
+    enabled: true
   -
     id: mdws2mux
     icon_type: heroicon
     icon: globe-asia-australia
-    heading: 'Establish your presence in a market known for high-value spending and a deep respect for tradition and innovation'
+    heading: 'عزّز حضورك في سوق يتميز بإنفاقه المرتفع وتقديره العميق للتقاليد والابتكار'
     type: info_card
-    enabled: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754586723
+    enabled: true
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1754641459
 ---
 ضع علامتك التجارية في قلب أكبر حدث عالمي في مجالات الصيد، الفروسية، والحفاظ على التراث. من المتوقع أن يستقطب ADIHEX 2025 أكثر من **347,000 من المشترين والمهتمين والمتخصصين** من أكثر من **65 دولة**، ما يوفر لك وصولاً لا مثيل له إلى جمهور دولي مستهدف بدقة.
 
