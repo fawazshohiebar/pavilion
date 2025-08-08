@@ -30,7 +30,27 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdwx11r1
+      id: mdygki3k
+      values:
+        type: banner
+        new_tab: true
+        is_div: false
+        use_image_height: false
+        image: banners/download-app-now-2025_ar2-(1).jpg
+        link: 'https://onelink.to/hbb8wm'
+        width: full
+        image_style: contain
+        heading:
+          text: null
+          size: small
+          color: white
+          tag: p
+          uppercase: true
+        image_height: 300
+  -
+    type: set
+    attrs:
+      id: mdulw2yz
       values:
         type: reusable_block
         entry:
@@ -54,7 +74,40 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdwx4eka
+      id: mdyloxip
+      values:
+        type: exhibiting_brand
+        heading:
+          heading:
+            text: 'العلامات التجارية العارضة'
+            size: small
+            color: black
+            tag: p
+            uppercase: false
+          subheading: null
+          focus_icon: true
+          heading_focus_word: null
+          icon: globe-asia-australia
+        ezone_base_url: 'https://ezone.adihex.com/exhibitors-list-top-with-images-resource/'
+        event_id: 4
+        random: true
+        count: 10
+        in_random_order: true
+        pagination_count: 10
+        style_config_field:
+          padding: small
+          color: black
+          size: normal
+          variant: style1
+        style_config:
+          padding: small
+          color: lite-secondary
+          size: normal
+          variant: style1
+  -
+    type: set
+    attrs:
+      id: mdwr4uxy
       values:
         type: reusable_block
         entry:
@@ -78,15 +131,46 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdwx71o3
+      id: mdyt4esn
       values:
-        type: full_width_image
-        image:
-          - added-images/capital-360-banner-exhibition_728x90-2-1536x190.jpg
+        type: banner_carousel
+        heading:
+          heading:
+            text: 'Our Somposers'
+            size: small
+            color: black
+            tag: p
+            uppercase: false
+          subheading: null
+          focus_icon: false
+          heading_focus_word: null
+          icon: null
+        images:
+          -
+            id: hyke8hDT
+            image: banners/adpg_adihex_homepage-banner.jpg
+            link: 'https://www.adportsgroup.com/'
+          -
+            id: mdyt6kjg
+            image: banners/gac_adihex_website_banner.jpg
+            link: 'https://www.gargashgacmotor.com/'
+          -
+            id: mdyt7ja3
+            image: banners/ranaka-banner.png
+            link: 'https://rakna.ae/'
+          -
+            id: mdyt917c
+            image: banners/schiwywaffen.png
+            link: 'https://www.schiwywaffen.com/'
+        new_tab: true
+        width: contained
+        image_style: contain
+        is_div: false
+        use_image_height: true
   -
     type: set
     attrs:
-      id: mdwx7gg7
+      id: mdn06z0s
       values:
         type: reusable_block
         entry:
@@ -97,7 +181,7 @@ page_builder:
       textAlign: left
 fine_seo_title: 'المعرض الدولي للصيد والفروسية - أبوظبي 2025'
 fine_seo_is_title_custom: true
-fine_seo_description: 'إطلاق النسخة الاولى من المعرض الدولي للصيد والفروسية - أبوظبي 2025 لتكون في الفترة من 26 إلى 30 نوفمبر 2025، في مركز أدنيك أبوظبي.'
+fine_seo_description: 'تراث يتجدد يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض'
 fine_seo_preview: الرئيسية
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
 updated_at: 1754638203
