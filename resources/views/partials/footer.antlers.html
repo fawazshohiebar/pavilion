@@ -4,9 +4,9 @@
 
 
 
-<footer class="bg-gray-900 text-white">
+<footer class="bg-[#827654] text-white">
     <!-- Main Footer Content -->
-    <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto py-16">
+    <div class="adnec-container mx-auto py-[45px] md:py-[50px] lg:py-[70px] relative">
         <div class="flex flex-col sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-[40px] gap-x-[15px] md:gap-[30px] ">
             {{# Column 1: Logo & About #}}
             <div class="space-y-6 col-span-2 md:col-span-1 flex flex-col items-start md:justify-start md:items-start justify-center">
@@ -36,7 +36,7 @@
                     {{nav:footer_nav include_home="false" }}
                         <li>
                             <a href="{{ url }}"
-                                class="text-gray-400 text-sm hover:text-[#827654] transition-all transform hover:translate-x-1 inline-block">
+                                class="text-[#fff] text-sm   transition-all transform hover:translate-x-1 inline-block">
                                 {{ if url == '/' }}
                                     <x-dynamic-component component="icons.home" class="h-4 w-4 inline-block mr-1 rtl:ml-1 rtl:mr-0" />
                                 {{ else }}
@@ -59,7 +59,7 @@
                 <ul class="space-y-4">
                     <li class="flex items-start">
                         {{heroicon:outline:map-pin class="h-5 w-5 text-[#827654] rtl:ml-3 ltr:mr-3 mt-0.5" /}}
-                        <span class="text-gray-400 text-sm">
+                        <span class="text-[#fff] text-sm">
                             {{'ADNEC Group'}}<br>
                             {{ 'P.O. Box 5546' | trans }}<br>
                             {{ 'Abu Dhabi, United Arab Emirates' | trans }}
@@ -68,11 +68,11 @@
                     <li class="flex items-start">
                         {{heroicon:outline:envelope class="h-5 w-5 text-[#827654] rtl:ml-3 ltr:mr-3 mt-0.5" /}}
                        
-                        <span class="text-gray-400">info@adihex.com</span>
+                        <span class="text-[#fff]">info@adihex.com</span>
                     </li> 
                     {{ <li class="flex items-start">
                         {{heroicon:outline:phone class="h-5 w-5 text-[#827654] rtl:ml-3 ltr:mr-3 mt-0.5" /}}
-                        <span class="text-gray-400">+971 2 673 8888</span>
+                        <span class="text-[#fff]">+971 2 673 8888</span>
                     </li> }}
                 </ul>
             </div>
@@ -83,7 +83,7 @@
                     <div class="flex items-center justify-between gap-4">
                         {{brand:logos}}
                             <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80">
-                                <div class="text-center ltr:text-sm rtl:text-lg text-gray-400 mb-2 group-hover:text-[#827654] transition-colors">{{title}}</div>
+                                <div class="text-center ltr:text-sm rtl:text-lg text-[#fff] mb-2 group-hover:text-[#fff] transition-colors">{{title}}</div>
 
                                 <img src="{{ image }}" alt="{{ image:alt }}" 
                                     width="{{ image:width }}" height="{{ image:height }}" 
@@ -100,9 +100,9 @@
     </div>
 
     <!-- Footer Bottom -->
-    <div class="bg-gray-950 py-6">
-        <div class="min-[1700px]:max-w-[1600px] max-w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="text-gray-500 text-sm mb-4 md:mb-0">
+    <div class="bg-[#726642] py-6">
+        <div class="adnec-container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-[#fff] text-sm mb-4 md:mb-0">
                 &copy; {{'All rights reserved' | trans}} {{ now format="Y" }} <a class="text-white" href="https://www.adnecgroup.ae" target="_blank" rel="noopener noreferrer">
                     {{'ADNEC Group' | trans}}
                 </a>
