@@ -1,0 +1,13 @@
+{{# Custom Code coming from Global #}}
+{{ global_scripts:header_scripts_replicator }}
+  {{ if scripts_available_on | pluck('value') | contains(environment) }}
+    {{ scripts:code | raw }}
+  {{ /if }}
+{{ /global_scripts:header_scripts_replicator }}
+{{# End Custom Code coming from Global #}}
+
+{{# Custom Code coming from Page #}}
+{{ if header_scripts_available_on | pluck('value') | contains(environment) }}
+  {{ header_scripts:code | raw }}
+{{ /if }}
+{{# End Custom Code coming from Page #}}

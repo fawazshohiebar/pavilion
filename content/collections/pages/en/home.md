@@ -4,8 +4,8 @@ blueprint: pages
 title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754637886
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754720993
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Abu Dhabi 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -18,6 +18,19 @@ page_builder:
         type: reusable_block
         entry:
           - 67e0641c-45df-420d-90f1-0a3bbe96b8f1
+  -
+    type: set
+    attrs:
+      id: me3vjibx
+      values:
+        type: banner
+        image: banners/2.-falcon-auction-2000x400-1.jpg
+        link: 'https://auction.adihex.com/en/register'
+        new_tab: true
+        width: full
+        image_style: contain
+        is_div: false
+        use_image_height: true
   -
     type: paragraph
     attrs:
@@ -200,4 +213,13 @@ page_builder:
       textAlign: left
 fine_seo_description: 'Celebrate inherited values at ADIHEX 2025 — An immersive heritage &amp; innovation event merging ancestral traditions with cutting‑edge hunting, falconry & equestrian experiences.'
 fine_seo_image: brand/logos/adihex-logo-social.png
+header_scripts:
+  code: null
+  mode: htmlmixed
+body_start_scripts:
+  code: null
+  mode: htmlmixed
+body_end_scripts:
+  code: null
+  mode: htmlmixed
 ---

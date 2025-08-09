@@ -183,3 +183,15 @@ tabs:
                             width: 33
                             validate:
                               - required
+      -
+        display: 'Extra Event Info'
+        fields:
+          -
+            handle: ai_search_url
+            field:
+              input_type: url
+              placeholder: 'https://aisearch.adihex.com/'
+              type: text
+              display: 'Ai Search Url'
+              instructions: 'Link will be used for AI Search'
+              localizable: false

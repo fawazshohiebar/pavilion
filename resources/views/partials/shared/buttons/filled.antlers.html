@@ -18,10 +18,10 @@ $btnColors = [
     $new_tab = new_tab ?? button_options:new_tab ?? false;
 }}
 
-{{ $final_classes = base_classes + " " + btnSizes[$size]['padding'] + " " + btnSizes[$size]['font'] + " " + btnColors[$color] }}
+{{ $final_classes = base_classes + " border-2 border-transparent  " + btnSizes[$size]['padding'] + " " + btnSizes[$size]['font'] + " " + btnColors[$color] }}
 
 <{{ button_type }} {{if button_type == 'a'}}href="{{ url }}" target="{{ new_tab ? '_blank' : '_self' }}"{{/if}} 
-    
+    title="{{ slot ?? text }}"
     class="{{final_classes}} {{ icon_position == 'start' ? 'flex-row-reverse' : ''}}"
     {{ slot:attributes }}>
     <span class="text-nowrap">{{ slot ?? text }}</span>

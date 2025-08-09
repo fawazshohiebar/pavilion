@@ -5,7 +5,7 @@ title: 'Hero With Video'
 heading: 'The Legacy Lives on'
 video: Fq-8cqfzMt4
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754332753
+updated_at: 1754721126
 icons:
   -
     id: mdwv396j
@@ -25,8 +25,8 @@ hero_actions:
   -
     id: mdwv7m4p
     dynamic_button:
-      button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
-      text: 'Book Your Stand'
+      button: 'https://auction.adihex.com/en/register'
+      text: 'Falcon Auction Registration'
       button_options:
         style: filled
         color: white
@@ -50,4 +50,6 @@ hero_actions:
         icon_position: start
     type: button
     enabled: true
+starting_time: 30
+ending_time: 56
 ---

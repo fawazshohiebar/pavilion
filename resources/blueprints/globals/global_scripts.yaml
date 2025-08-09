@@ -1,0 +1,58 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'Header Scripts'
+        fields:
+          -
+            handle: header_scripts_replicator
+            field:
+              type: replicator
+              display: Scripts
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    script:
+                      display: Script
+                      fields:
+                        -
+                          import: custom_code_block
+      -
+        display: 'Body Start Scripts'
+        fields:
+          -
+            handle: body_start_scripts_replicator
+            field:
+              type: replicator
+              display: Scripts
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    script:
+                      display: Script
+                      fields:
+                        -
+                          import: custom_code_block
+      -
+        display: 'Body End Scripts'
+        fields:
+          -
+            handle: body_end_scripts_replicator
+            field:
+              type: replicator
+              display: Scripts
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    script:
+                      display: Script
+                      fields:
+                        -
+                          import: custom_code_block

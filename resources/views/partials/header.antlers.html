@@ -10,7 +10,7 @@
     :class="scrolled ? 'bg-white shadow-lg' : 'bg-transparent'"
 >
     <div
-        class="adnec-container h-full py-4 mx-auto md:flex md:items-center md:justify-between grid grid-cols-[65%_30%]">
+        class="adnec-container h-full py-4 mx-auto md:flex md:items-center md:justify-between grid grid-cols-[65%_35%]">
         <!-- Logo and Event Info -->
         <div class="flex items-center">
             <a href="{{ site:url }}" class="flex-shrink-0">
@@ -22,7 +22,7 @@
         </div>
 
         <!-- Mobile Menu Button -->
-        <div class="flex justify-end gap-4 items-center">
+        <div class="flex justify-end gap-2 lg:gap-4 items-center">
             {{ partial:partials/sets/countdown_date_picker countdown_end="{brand:countdown_date_picker format='Y-m-d\TH:i:s'}" }}
             <div class="hidden md:block">
                 {{ partial:shared/button url="{{link id="b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7"}}" style="filled" color="primary" size="medium" icon="ticket" new_tab="true" }}
@@ -30,11 +30,18 @@
                 {{ /partial:shared/button }}
             </div>
 
+            {{if brand:ai_search_url}}
+            <a title="{{ 'AI Search' | trans }}" href="{{ brand:ai_search_url }}" target="_blank" class="text-gray-800 hover:underline flex gap-2 items-center">
+                <span class="sr-only">{{ 'AI Search' | trans }}</span>
+                {{ heroicon variant="outline" icon="magnifying-glass" class="w-8 h-8" /}}
+            </a>
+            {{/if}}
+            
             {{ partial:language-switcher /}}
             
             <button command="show-modal" commandfor="drawer" class=" focus:outline-none"
                 :class="scrolled ? 'text-gray-800' : 'text-white'" aria-label="Toggle mobile menu">
-                {{heroicon variant="outline" icon="bars-3" class=" w-10 h-8" /}}
+                {{heroicon variant="outline" icon="bars-3" class=" w-8 h-8" /}}
             </button>
         </div>
     </div>

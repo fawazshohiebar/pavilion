@@ -21,13 +21,13 @@ hero_actions:
   -
     id: mdwv7m4p
     dynamic_button:
-      button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
-      text: 'احجز مكانك اليوم'
+      button: 'https://auction.adihex.com/ar/register'
+      text: 'تسجيل مزاد الصقور'
       button_options:
         style: filled
         color: white
         size: medium
-        new_tab: false
+        new_tab: true
         icon: paper-airplane
         icon_position: start
     type: button
@@ -47,5 +47,5 @@ hero_actions:
     type: button
     enabled: true
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754577434
+updated_at: 1754720780
 ---

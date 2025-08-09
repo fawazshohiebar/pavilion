@@ -1,0 +1,30 @@
+title: 'Custom Code Block'
+fields:
+  -
+    handle: custom_code_title
+    field:
+      type: text
+      display: Title
+      localizable: false
+      width: 66
+  -
+    handle: scripts_available_on
+    field:
+      options:
+        -
+          key: production
+          value: Production
+        -
+          key: local
+          value: Local
+      inline: true
+      type: checkboxes
+      display: 'Available On'
+      localizable: false
+      width: 33
+  -
+    handle: scripts
+    field:
+      type: code
+      display: 'Body Start Scripts'
+      localizable: false

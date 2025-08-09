@@ -7,19 +7,22 @@
   {{ partial:favicon /}}
   {{ partial:fonts /}}
   {{ partial:tracking_scripts_head /}}
+  {{ partial:additional_scripts_head /}}
   {{ partial:meta /}}
   
   <link rel="stylesheet" href="https://use.typekit.net/slb6fmc.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   {{ vite src="resources/js/site.js|resources/css/site.css" }}
 </head>
 <body class="leading-normal text-gray-800 antialiased {{ site:short_locale === 'ar' ? 'font-noto' : 'font-mont' }}">
   {{ partial:tracking_scripts_body /}}
+  {{ partial:additional_scripts_body_start /}}
+
   {{ partial:partials/header }}
   <main class="relative">
     {{ template_content }}
   </main>
 
   {{ partial:partials/footer }}
+  {{ partial:additional_scripts_body_end /}}
 </body>
 </html>

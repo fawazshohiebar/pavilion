@@ -35,15 +35,16 @@ time: '11 AM - 10 PM'
 logos:
   -
     id: mafjvh3f
-    title: 'Partner  & Organiser'
+    title: 'Strategic Partner & Organiser'
     image: added-images/adnec-group_logo_modon_white-1024x580-(1).png
     url: 'https://adnecgroup.ae'
     type: logo
     enabled: true
   -
     id: mafjy4ai
-    title: 'Belongs To'
+    title: 'Owned by'
     image: brand/logos/efc-logo_white.png
     url: '#'
     type: logo
     enabled: true
+ai_search_url: 'https://aisearch.adihex.com/'

@@ -559,6 +559,31 @@ fields:
               fields:
                 -
                   import: reusable_banner_carousel
+            html_block:
+              display: 'Html Block'
+              icon: programming-script-code-brackets
+              fields:
+                -
+                  handle: available_on
+                  field:
+                    options:
+                      -
+                        key: production
+                        value: Production
+                      -
+                        key: local
+                        value: Local
+                    inline: true
+                    default: production
+                    type: checkboxes
+                    display: 'Available On'
+                    localizable: false
+                -
+                  handle: code
+                  field:
+                    type: code
+                    display: Code
+                    localizable: false
         exhibition:
           display: Exhibition
           icon: arrow-roadmap-path-flow

@@ -14,6 +14,19 @@ page_builder:
   -
     type: set
     attrs:
+      id: me3vjibx
+      values:
+        type: banner
+        image: banners/2.-falcon-auction-2000x400-1.jpg
+        link: 'https://auction.adihex.com/ar/register'
+        new_tab: true
+        width: full
+        image_style: contain
+        is_div: false
+        use_image_height: true
+  -
+    type: set
+    attrs:
       id: mdwwzmpj
       values:
         type: reusable_block

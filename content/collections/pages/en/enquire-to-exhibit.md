@@ -4,7 +4,7 @@ blueprint: page
 title: 'Enquire to Exhibit'
 fine_seo_is_title_custom: false
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754588197
+updated_at: 1754679359
 page_builder:
   -
     type: set
@@ -50,4 +50,28 @@ fine_seo_description: 'International Hunting & Equestrian Exhibition - Abu Dhabi
 template: default
 fine_seo_image: dsc_6082-2048x1365.jpg
 feature_banner_image: mb63891-768x511.jpg
+header_scripts:
+  code: |-
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://protect.checkpoint.com/v2/r02/___https://www.googletagmanager.com/lyr.ox?ni=___.YzJlOm1vZG9uOmM6bzpjODY1NmUxMDc2MzhlYjNmMzk5ZWI3Y2VjOTUxNDZkMzo3OjhiNDM6ZTk2MTQxNTJkMWRiZmM1NWNmNTdiOWU3YjNlMjY2YWNkNTQ3MmEzMDlhMGE1MjkxYjAyZjg3YjdlMWVjN2RiZjp0OlQ6VA'+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T7T78K2G');</script>
+    <!-- End Google Tag Manager -->
+  mode: htmlmixed
+body_start_scripts:
+  code: |-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://protect.checkpoint.com/v2/r02/___https://www.googletagmanager.com/sx.myrq?ni=LYR-YaYabP7L&vzty___.YzJlOm1vZG9uOmM6bzpjODY1NmUxMDc2MzhlYjNmMzk5ZWI3Y2VjOTUxNDZkMzo3OmMxMWY6Yzg5MDQwMzFlZmI0NTI1ODJhY2Y4OGIwMDg5MmNmODA0NWMyZThhMmVlNWYxOWRhMWViZjAyOTBmZGQ0MDk0OTp0OlQ6VA;"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  mode: htmlmixed
+body_end_scripts:
+  code: null
+  mode: htmlmixed
+header_scripts_available_on:
+  - production
+body_start_scripts_available_on:
+  - production
 ---
