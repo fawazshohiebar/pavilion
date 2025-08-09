@@ -53,7 +53,26 @@ return [
     */
 
     'widgets' => [
-        'getting_started',
+        [
+            'type' => 'form',
+            'form' => 'onsite_falcon_registration',
+            'fields' => ['ring_number','falcon_type', 'farm'],
+            'limit' => 5,
+            'width' => 50,
+        ],
+        [
+            'type' => 'form',
+            'form' => 'book_your_stand',
+            'fields' => ['first_name','email_address'],
+            'limit' => 5,
+            'width' => 50,
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'pages',
+            'limit' => 5,
+            'width' => 100,
+        ],
     ],
 
     /*
