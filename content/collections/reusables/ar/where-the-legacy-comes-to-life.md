@@ -106,11 +106,11 @@ cta_actions:
         color: primary
         size: medium
         new_tab: false
-        icon: arrow-right
+        icon: arrow-left
         icon_position: end
     type: button
     enabled: true
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754310850
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754726961
 ---
 ادخل إلى عالم تلتقي فيه التقاليد العريقة مع التجارب الحديثة. يقدم معرض أديهيكس 2025 التراث في مقدمة المشهد من خلال مناطق تفاعلية، وعروض حية، وورش عمل تعليمية، وعروض ثقافية تبرز التاريخ الغني للصيد، والفروسية، والحرف الإماراتية. كل عنصر مصمم للاحتفال بهذا الإرث والحفاظ عليه، والذي يستمر في إلهام الأجيال.

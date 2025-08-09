@@ -2,7 +2,7 @@
 
   <section class="adnec-container mx-auto py-[50px] ">
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 lg:gap-8">
       <!-- Speaker Card -->
       {{ speakers }}
 
@@ -11,9 +11,9 @@
           {{ image }}
             <img src="{{ url }}" alt="{{alt ?? title}}" 
             style="object-position: {{focus_css}};"
-            class="w-full h-72 object-cover rounded-t-2xl">
+            class="w-full h-[250px] lg:h-[400px] object-cover rounded-t-2xl">
           {{ /image }}
-          <div class="p-5 text-center">
+          <div class="py-5 px-2 text-center">
             <h3 class="text-xl font-semibold text-[#1a1a1a] mb-[20px]">{{ title | widont }}</h3>
             <p class="text-sm text-gray-400 mt-2 leading-snug mb-[20px]">{{ position | widont }}</p>
             <p class="text-base text-primary-600 mt-2 leading-snug">{{ company | widont }}</p>

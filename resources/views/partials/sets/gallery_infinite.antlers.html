@@ -22,7 +22,7 @@
                         {{ images }}
                             <div class="swiper-slide">
                                 <div class="relative group h-40 lg:h-60 overflow-hidden rounded-lg shadow-lg mx-2 cursor-pointer" @click="openLightbox('{{ url }}')">
-                                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('{{ url }}');"></div>
+                                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('{{ url }}');background-position: {{ focus_css ?? 'center' }};"></div>
                                     <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                 <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
 
                 <div class="swiper gallery-swiper-2">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper gap-2">
                         {{ images }}
                             <div class="swiper-slide">
                                 <div class="relative group h-40 lg:h-60 overflow-hidden rounded-lg shadow-lg mx-2 cursor-pointer" @click="openLightbox('{{ url }}')">

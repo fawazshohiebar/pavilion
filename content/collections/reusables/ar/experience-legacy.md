@@ -53,8 +53,23 @@ info_cards:
     type: info_card
     enabled: true
     icon: gift
+cta_actions:
+  -
+    id: mdvpzmlv
+    dynamic_button:
+      button: 'entry::a51b31a8-d8c9-48b9-9fea-92afa0b3b9fc'
+      text: null
+      button_options:
+        style: filled
+        color: primary
+        size: medium
+        new_tab: false
+        icon: chevron-left
+        icon_position: end
+    type: button
+    enabled: true
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754581533
+updated_at: 1754726901
 ---
 يُعد معرض أبوظبي الدولي للصيد والفروسية  بوابتك لاكتشاف تراث أبوظبي الغني وتقاليدها الأصيلة في عالم الصيد والفروسية. سواء كنت من عشّاق هذه الهوايات أو من المهتمين بالتعرّف على الموروث الثقافي للمنطقة، معرض أبوظبي الدولي للصيد والفروسية يدعوك لاستكشاف مجموعة واسعة من المعارض الثقافية، والمسابقات الحماسية، والعروض التراثية المبهرة.
 
