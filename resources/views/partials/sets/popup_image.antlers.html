@@ -67,8 +67,8 @@
             {{ if popup_link }}
               <a href="{{ popup_link }}" class="block" target="_blank">
                 <img 
-                  src="{{ popup_image }}" 
-                  alt="Popup image"
+                  src="{{ glide :src="popup_image" format="webp" }}" 
+                  alt="{{popup_image:alt ?? 'Popup image'}}"
                   class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)]"
                   width="{{ final_width }}"
                   height="{{ final_height }}"
@@ -77,8 +77,8 @@
               </a>
             {{ else }}
               <img 
-                src="{{ popup_image }}" 
-                alt="Popup image"
+                src="{{ glide :src="popup_image" format="webp" }}" 
+                alt="{{popup_image:alt ?? 'Popup image'}}"
                 class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)]"
                 width="{{ final_width }}"
                 height="{{ final_height }}"
