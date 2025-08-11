@@ -38,8 +38,8 @@ replicator_quotes_and_reviews:
     enabled: true
 image:
   - mohamed-bin-zayed-funds-for-birds-of-prey-2-768x511-(1).jpg
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754637876
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1754924226
 heading_group:
   heading:
     text: '{black:WORDS FROM OUR EXHIBITORS}'
@@ -53,7 +53,7 @@ heading_group:
   icon: null
 heading:
   heading:
-    text: 'Words from our Exhibitors'
+    text: 'WORDS FROM OUR EXHIBITORS'
     size: small
     color: black
     tag: h2
