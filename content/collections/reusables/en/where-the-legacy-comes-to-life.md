@@ -9,7 +9,7 @@ style_config:
   variant: carousel
 heading:
   heading:
-    text: 'Where the Legacy {primary:Comes to Life}'
+    text: 'WHERE THE LEGACY COMES TO LIFE'
     size: small
     color: black
     tag: h2
@@ -102,8 +102,8 @@ info_cards:
     heading: 'Shooting Range'
     type: info_card
     enabled: true
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754481089
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1754923914
 cta_actions:
   -
     id: mdwr333i

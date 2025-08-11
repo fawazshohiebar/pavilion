@@ -3,8 +3,6 @@ id: 22227610-dc48-4f42-9394-c222c87592a8
 blueprint: page
 title: Features
 fine_seo_is_title_custom: false
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754640221
 fine_seo_title: '2025 Features'
 fine_seo_preview: '2025 Features'
 page_builder:
@@ -26,7 +24,6 @@ page_builder:
           tag: p
           uppercase: false
         description: 'Pet Fair debuts at ADIHEX 2025, uniting the pet industry, owners, and enthusiasts for the first time under one roof. This feature hosts exciting competitions and interactive activities for cat and dog lovers alike. It offers a unique opportunity to engage with the vibrant pet community and discover new trends and products.'
-        image: features/ks622965-scaled.jpg
         buttons:
           -
             id: mdy3ups5
@@ -41,7 +38,8 @@ page_builder:
                 icon: null
                 icon_position: start
             type: button
-            enabled: true
+            enabled: false
+        image: features/pet-fashion-show.png
   -
     type: set
     attrs:
@@ -82,7 +80,7 @@ page_builder:
                 icon: null
                 icon_position: start
             type: button
-            enabled: true
+            enabled: false
   -
     type: set
     attrs:
@@ -101,7 +99,7 @@ page_builder:
           tag: p
           uppercase: false
         description: 'Building on ADIHEX’s rich legacy of successful auctions, this year’s falcon auctions will take place before and during exhibition. **The pre-event auctions will be held on August 16 & 17 and August 23 & 24, 2025 in Conference Room A. The in-event auctions will take place on August 30 & 31 and September 6 & 7, 2025, starting at 7:30 PM**. All falcons will be displayed in advance, allowing participants to view them up close and access their full biodata before bidding. This year also features an online auction, enabling participants to join remotely and bid in real time from anywhere in the world.'
-        image: added-images/mb64231-768x511.jpg
+        image: arena-2.jpg
         buttons:
           -
             id: mdy3ups5
@@ -116,7 +114,7 @@ page_builder:
                 icon: null
                 icon_position: start
             type: button
-            enabled: true
+            enabled: false
   -
     type: set
     attrs:
@@ -154,7 +152,7 @@ page_builder:
           tag: p
           uppercase: false
         description: 'Knowledge Hub is a platform that provides exhibitors, experts, innovators, and industry leaders with the opportunity to present their latest innovations, cutting-edge technologies, share industry trends and research findings that shape the future of the different sectors covered in ADIHEX. Also, for governmental entities and NGOs to raise awareness of various initiatives and national campaigns.'
-        image: added-images/dsc_6007-2048x1365.jpg
+        image: 20240906_160645.jpg
         buttons:
           -
             id: mdy3ups5
@@ -260,7 +258,7 @@ page_builder:
           tag: p
           uppercase: false
         description: 'This artistic zone offers fun, hands-on activities for all age groups. Visitors can try Decoden Art, a Japanese craft where charms are placed on icing-like glue to decorate items like phone covers and accessories. Other experiences include painting night lamps with colorful designs and mosaic workshops to create custom coasters.'
-        image: features/dsc_6008-scaled.jpg
+        image: dsc_6007-300x200.jpg
   -
     type: paragraph
     attrs:
@@ -297,4 +295,15 @@ page_builder:
       textAlign: left
 feature_banner_image: galleries/2024_gallery/2024_gallery_10.jpg
 template: default
+header_scripts:
+  code: null
+  mode: htmlmixed
+body_start_scripts:
+  code: null
+  mode: htmlmixed
+body_end_scripts:
+  code: null
+  mode: htmlmixed
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1754926223
 ---

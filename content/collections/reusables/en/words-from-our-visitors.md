@@ -19,32 +19,32 @@ replicator_quotes_and_reviews:
     enabled: true
   -
     id: me2ivc8l
-    feedback_text: 'I loved it and I am extremely satisfied with the showcases this edition! I intended to buy hunting products and equipment'
+    feedback_text: 'I loved it and I was very happy with the showcases this edition! I intended to buy hunting products and equipment'
     feedback_writer: Afnan
     type: new_set
     enabled: true
   -
     id: me2ix8bp
-    feedback_text: 'I am extremely satisfied, watched the performances in the Arena & the event is very beautiful!'
+    feedback_text: 'Best hunting and equestrian exhibition, watched the performances in the Arena & the event is very beautiful!'
     feedback_writer: 'Moheir Amr Al Shehi'
     type: new_set
     enabled: true
   -
     id: me2ixtjg
-    feedback_text: 'Great Work! I am extremely satisfied, heard it from a radio advertising as well as from social media.'
+    feedback_text: 'Great Work! features and sessions were amazing, heard it from a radio advertising as well as from social media.'
     feedback_writer: Lama
     type: new_set
     enabled: true
   -
     id: me2iyhdn
-    feedback_text: "ADIHEX is beautiful and accessible to all visitors! I am satisfied & it's good to visit!"
+    feedback_text: "ADIHEX is beautiful and accessible to all visitors! I am very pleased & it's good to visit!"
     feedback_writer: 'Omar Mohamed'
     type: new_set
     enabled: true
 image:
   - mohamed-bin-zayed-funds-for-birds-of-prey-2-768x511-(1).jpg
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754639367
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1754929135
 duplicated_from: bc1eb7ab-3eff-461f-ad8d-22d4c7f75cbe
 heading:
   heading:

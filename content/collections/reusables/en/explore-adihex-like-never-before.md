@@ -5,10 +5,11 @@ title: 'Explore ADIHEX Like Never Before'
 style_config:
   padding: small
   color: lite-primary
+  size: normal
   variant: full
 heading:
   heading:
-    text: 'Explore ADIHEX Like Never Before'
+    text: 'EXPLORE ADIHEX LIKE NEVER BEFORE'
     size: small
     color: black
     tag: p
@@ -32,12 +33,12 @@ cta_actions:
         style: filled
         color: primary
         size: large
-        new_tab: false
+        new_tab: true
         icon: map
         icon_position: end
     type: button
     enabled: true
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754290382
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1754926829
 ---
 Plan your visit with ease using our interactive map. Navigate exhibition halls, locate exhibitor stands, event features, parking areas, and activity zones—all in one place. Whether you’re attending for business or leisure, this map ensures you don’t miss a moment at ADIHEX 2025.

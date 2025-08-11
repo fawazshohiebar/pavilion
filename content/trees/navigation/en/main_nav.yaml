@@ -16,6 +16,9 @@ tree:
         id: cbb82464-79a6-4aa2-b883-0e62ab6d76ae
         entry: fef0a386-0f63-45a3-94c7-97f83529c830
       -
+        id: 46ff9e8a-e41a-40c9-bf07-55f198d31ad6
+        entry: 8dd178df-e6d0-4739-a021-303b75a974f5
+      -
         id: fdbcef85-b9c9-42f6-b91d-7898893772e4
         title: 'Interactive Map'
         url: 'https://map.adihex.com/?mapId=jKkBVW5WgdZYQ'
@@ -32,6 +35,9 @@ tree:
       -
         id: 6589ee9e-90e9-4f19-a281-00ec34d5af44
         entry: bb37965e-f91b-4ced-8aa3-2df954ced5ab
+      -
+        id: 92cb41a5-7a0c-460a-9657-4e8d93039f2d
+        entry: 4c4e1b1b-f908-4b59-ae8e-3434400f009a
       -
         id: 22be07a6-915d-470a-bcb1-342009c1b158
         title: 'E-Zone Login'

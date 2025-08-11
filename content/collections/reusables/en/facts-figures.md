@@ -3,7 +3,12 @@ id: e955ebf9-b57f-4438-9219-b44ef9f10681
 blueprint: facts_figures
 title: 'Facts & Figures'
 heading:
-  heading: 'Facts and Figures'
+  heading:
+    text: 'ADIHEX AT A GLANCE'
+    size: small
+    color: primary
+    tag: p
+    uppercase: false
   subheading: null
   focus_icon: true
   heading_focus_word: null
@@ -34,6 +39,6 @@ stats:
     value: '1740'
     label: 'Exhibitors & Brands'
     icon: building-storefront
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754159614
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1754929290
 ---

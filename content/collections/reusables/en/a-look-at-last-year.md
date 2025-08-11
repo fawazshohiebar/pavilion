@@ -84,7 +84,7 @@ images_and_text_replicator:
     image: galleries/2024_gallery/gallery_24_people.jpg
     type: new_set
     enabled: true
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754728848
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1754926554
 background_color: '#F9FAFC'
 ---

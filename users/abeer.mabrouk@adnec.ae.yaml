@@ -2,3 +2,22 @@ name: 'Abeer Mabrouk'
 groups:
   - managers
 id: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+preferences:
+  assets:
+    assets:
+      per_page: 100
+  collections:
+    sessions:
+      columns:
+        - title
+        - site
+        - status
+        - agendas
+        - event_date
+        - start_time
+      filters:
+        agenda_2025:
+          display: 'Agenda 2025'
+          filters:
+            site:
+              site: en

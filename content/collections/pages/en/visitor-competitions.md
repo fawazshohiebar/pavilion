@@ -14,8 +14,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754725254
 page_builder:
   -
     type: set
@@ -35,7 +33,8 @@ page_builder:
           tag: h2
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Union (EKC) & Showline'
-        description: 'This competition tests the agility of dogs. Demonstrations and training tips will be provided by experts to dog owners who will be given trial runs followed by the competition where the winners will be given prizes. The competition will be open for both trained and untrained dogs. The ''Dog Agility Contest'' is a thrilling display of speed, agility, and teamwork between dogs and their handlers. This competition will test the dogs'' ability to navigate an obstacle course with precision and speed, providing exciting entertainment for all visitors.'
+        description: "This competition tests the agility of dogs. Demonstrations and training tips will be provided by experts to dog owners who will be given trial runs followed by the competition where the winners will be given prizes. The competition will be open for both trained and untrained dogs. The 'Dog Agility Contest' is a thrilling display of speed, agility, and teamwork between dogs and their handlers. This competition will test the dogs' ability to navigate an obstacle course with precision and speed, providing exciting entertainment for all visitors."
+        image: dog-agility.jpeg
   -
     type: set
     attrs:
@@ -55,6 +54,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Union on August 31 & Sharjah Kennel Club on Sept 7'
         description: 'This competition is for all breeds where the Best Dog of the Show will be selected at the Best in Show Round. The Best Adult, Best Junior, Best Puppy and Best Veteran in show will be awarded Best in Show Certificates and Trophies.'
+        image: dog-championship.jpeg
   -
     type: set
     attrs:
@@ -74,6 +74,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Union (EKC) & Showline'
         description: 'This Competition is for all dog breeds. National judges will select the most beautiful dogs, cutest Puppy, and most popular dog etc, classified under small, medium and large groups. All participants will receive certificates. Winners will receive Medals & Prizes.'
+        image: fun-dog-show.jpeg
   -
     type: set
     attrs:
@@ -93,6 +94,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Dhabian Equestrian Club'
         description: 'Horse riding obstacle course for People of Determination (children only) where the first 3 riders to successfully complete the course will be given prizes.'
+        image: gymkhana.jpeg
   -
     type: set
     attrs:
@@ -112,6 +114,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Sharjah Kennel Club'
         description: 'This is a beauty contest for hunting dogs where winners will be given prizes.'
+        image: azawakh-running-in-the-grass.avif
   -
     type: set
     attrs:
@@ -131,10 +134,12 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
         description: 'This Competition will be limited to American Bullies and Working Dog Groups. Specialist Judges for those breeds will judge and award titles. All participants will receive certificates. Winners will be awarded trophies and medals along with certificates.'
+        image: sighthound.jpeg
   -
     type: set
     attrs:
       id: vcomp007
+      enabled: false
       values:
         type: call_to_action
         style_config:
@@ -188,6 +193,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
         description: 'Dogs wearing latest trends in designer garments and accessories, will walk on the catwalk with models. Stage and catwalk will have seating for the audience to enjoy the show.'
+        image: pet-fashion-show.png
   -
     type: set
     attrs:
@@ -209,4 +215,6 @@ page_builder:
         description: 'An internationally renowned groomer will conduct a workshop for grooming professionals followed by a grooming competition to select the "Best Groomer of the UAE". Winners will receive certificates and prizes.'
 fine_seo_title: 'Visitor Competitions'
 fine_seo_preview: 'Visitor Competitions'
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1754928412
 ---

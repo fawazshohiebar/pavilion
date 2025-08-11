@@ -17,7 +17,7 @@ replicator_media_partners:
       - albawadi-hd-logo-1-768x263-(1).png
     title: 'شريك إعلامي'
     type: new_set
-    enabled: true
+    enabled: false
   -
     id: mdoiwr0d
     link: 'https://thebrewnews.com/'
@@ -34,6 +34,6 @@ replicator_media_partners:
     title: 'شريك إعلامي'
     type: new_set
     enabled: true
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754642333
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1754914284
 ---

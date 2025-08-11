@@ -4,7 +4,7 @@ blueprint: content_with_info_cards
 title: 'Explore 2025 Sectors'
 heading:
   heading:
-    text: 'Explore the World of {primary:Heritage, Hunting, and Culture - 2025 Sectors}'
+    text: 'EXPLORE THE WORLD OF HERITAGE, HUNTING AND CULTURE - 2025 SECTORS'
     size: small
     color: black
     tag: h2
@@ -19,97 +19,97 @@ heading:
   heading_focus_word: '2025 Sectors'
   icon: null
 card_style: compact
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754635544
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1754928970
 info_cards:
   -
     id: mdvtxk9v
     icon_type: image
-    image: icons/safari.jpg
+    image: icons/icon-sectors_4-06.jpg
     heading: 'Hunting Tourism & Safari'
     type: info_card
     enabled: true
   -
     id: mdvv3laj
     icon_type: image
-    image: icons/icon-sectors_2-13-1.jpg
+    image: icons/icon-sectors_4-12.jpg
     heading: 'Veterinary Products & Services'
     type: info_card
     enabled: true
   -
     id: mdvu2jwa
     icon_type: image
-    image: icons/outdoor-lesiure.jpg
+    image: icons/icon-sectors_4-05.jpg
     heading: 'Outdoor Leisure Vehicle Equipment'
     type: info_card
     enabled: true
   -
     id: mdvu2iwb
     icon_type: image
-    image: icons/falconry.jpg
+    image: icons/icon-sectors_4-02.jpg
     heading: Falconry
     type: info_card
     enabled: true
   -
     id: mdvu2hoo
     icon_type: image
-    image: icons/camel-01.jpg
+    image: icons/icon-sectors_4-01.jpg
     heading: Camel
     type: info_card
     enabled: true
   -
     id: mdvu2geu
     icon_type: image
-    image: icons/cultural.jpg
+    image: icons/icon-sectors_4-03.jpg
     heading: 'Preservation of Environment & Cultural Heritage'
     type: info_card
     enabled: true
   -
     id: mdvu2eve
     icon_type: image
-    image: icons/hunting.jpg
+    image: icons/icon-sectors_4-11.jpg
     heading: 'Hunting & Shooting Sports Guns & Equipment'
     type: info_card
     enabled: true
   -
     id: mdvu2dnb
     icon_type: image
-    image: icons/equestrain.jpg
+    image: icons/icon-sectors_4-10.jpg
     heading: Equestrian
     type: info_card
     enabled: true
   -
     id: mdvu29z5
     icon_type: image
-    image: icons/art.jpg
+    image: icons/icon-sectors_4-04.jpg
     heading: 'Arts & Crafts'
     type: info_card
     enabled: true
   -
     id: mdvu3a1x
     icon_type: image
-    image: icons/caravan.jpg
+    image: icons/icon-sectors_4-08.jpg
     heading: "RV's & Caravans"
     type: info_card
     enabled: true
   -
     id: mdvu3b2y
     icon_type: image
-    image: icons/marine.jpg
+    image: icons/icon-sectors_4-07.jpg
     heading: 'Fishing Equipment & Marine Sports'
     type: info_card
     enabled: true
   -
     id: mdvu3c3z
     icon_type: image
-    image: icons/camping.jpg
+    image: icons/icon-sectors_4-13.jpg
     heading: 'Hunting & Camping Equipment'
     type: info_card
     enabled: true
   -
     id: mdvu3d4a
     icon_type: image
-    image: icons/slougi.jpg
+    image: icons/icon-sectors_4-09.jpg
     heading: Saluki
     type: info_card
     enabled: true
