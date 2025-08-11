@@ -1,10 +1,10 @@
 ---
 id: e955ebf9-b57f-4438-9219-b44ef9f10681
 blueprint: facts_figures
-title: 'OUR LEGACY IN NUMBERS'
+title: 'Facts & Figures'
 heading:
   heading:
-    text: 'Facts and Figures'
+    text: 'OUR LEGACY IN NUMBERS'
     size: small
     color: primary
     tag: p
@@ -40,5 +40,5 @@ stats:
     label: 'Exhibitors & Brands'
     icon: building-storefront
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754923742
+updated_at: 1754924172
 ---
