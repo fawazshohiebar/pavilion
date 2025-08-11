@@ -4,7 +4,7 @@ blueprint: content_with_info_cards
 title: 'Explore 2025 Sectors'
 heading:
   heading:
-    text: 'Explore the World of {primary:Heritage, Hunting, and Culture - 2025 Sectors}'
+    text: 'EXPLORE THE WORLD OF HERITAGE, HUNTING AND CULTURE - 2025 SECTORS'
     size: small
     color: black
     tag: h2
@@ -19,8 +19,8 @@ heading:
   heading_focus_word: '2025 Sectors'
   icon: null
 card_style: compact
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754635544
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1754923881
 info_cards:
   -
     id: mdvtxk9v
