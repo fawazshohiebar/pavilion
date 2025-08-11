@@ -15,3 +15,9 @@ preferences:
         - agendas
         - event_date
         - start_time
+      filters:
+        agenda_2025:
+          display: 'Agenda 2025'
+          filters:
+            site:
+              site: en
