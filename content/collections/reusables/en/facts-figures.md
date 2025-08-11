@@ -4,7 +4,7 @@ blueprint: facts_figures
 title: 'Facts & Figures'
 heading:
   heading:
-    text: 'OUR LEGACY IN NUMBERS'
+    text: 'ADIHEX AT A GLANCE'
     size: small
     color: primary
     tag: p
@@ -40,5 +40,5 @@ stats:
     label: 'Exhibitors & Brands'
     icon: building-storefront
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754924172
+updated_at: 1754929290
 ---
