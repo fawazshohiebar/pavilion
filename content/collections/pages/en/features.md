@@ -258,7 +258,7 @@ page_builder:
           tag: p
           uppercase: false
         description: 'This artistic zone offers fun, hands-on activities for all age groups. Visitors can try Decoden Art, a Japanese craft where charms are placed on icing-like glue to decorate items like phone covers and accessories. Other experiences include painting night lamps with colorful designs and mosaic workshops to create custom coasters.'
-        image: shutterstock_132261485-300x200.jpg
+        image: dsc_6007-300x200.jpg
   -
     type: paragraph
     attrs:
@@ -305,5 +305,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754925898
+updated_at: 1754926103
 ---
