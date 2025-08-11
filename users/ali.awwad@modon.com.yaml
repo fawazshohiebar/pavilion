@@ -24,17 +24,6 @@ preferences:
           filters:
             site:
               site: en
-        ali_day1:
-          display: 'Ali Day1'
-          filters:
-            fields:
-              event_date:
-                operator: between
-                range_value:
-                  date:
-                    start: '2025-08-29'
-                    end: '2025-08-30'
-                  time: null
   assets:
     collaterals:
       mode: grid
