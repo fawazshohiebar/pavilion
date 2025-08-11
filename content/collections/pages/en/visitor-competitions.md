@@ -174,7 +174,6 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
         description: 'The show will be open to all breeds of cats including local cats. Judges will select Best Male, Best Female and Best Kitten. Other categories like most popular and well groomed cat etc will also be given. Winners will receive trophies, certificates and various other prizes.'
-        image: download-(4).jpg
   -
     type: set
     attrs:
@@ -214,9 +213,8 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
         description: 'An internationally renowned groomer will conduct a workshop for grooming professionals followed by a grooming competition to select the "Best Groomer of the UAE". Winners will receive certificates and prizes.'
-        image: download-(3).jpg
 fine_seo_title: 'Visitor Competitions'
 fine_seo_preview: 'Visitor Competitions'
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754928331
+updated_at: 1754928412
 ---
