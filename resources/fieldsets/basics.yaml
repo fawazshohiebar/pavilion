@@ -584,6 +584,79 @@ fields:
                     type: code
                     display: Code
                     localizable: false
+            popup_image:
+              display: 'Popup Image'
+              fields:
+                -
+                  handle: popup_width
+                  field:
+                    type: integer
+                    display: 'Popup Width'
+                    instructions: 'It will be the Max Width'
+                    localizable: false
+                    width: 50
+                    default: 600
+                -
+                  handle: popup_height
+                  field:
+                    type: integer
+                    display: 'Popup Height'
+                    instructions: 'It will be the Max Height'
+                    localizable: false
+                    width: 50
+                    default: 300
+                -
+                  handle: close_color
+                  field:
+                    options:
+                      -
+                        key: white
+                        value: White
+                      -
+                        key: black
+                        value: Black
+                    default: white
+                    type: button_group
+                    display: 'Close Color'
+                    localizable: false
+                    width: 33
+                -
+                  handle: popup_position
+                  field:
+                    options:
+                      -
+                        key: center
+                        value: Center
+                      -
+                        key: bottom_left
+                        value: 'Bottom Left'
+                      -
+                        key: bottom_right
+                        value: Bottom right
+                      -
+                        key: 'bottom_center'
+                        value: 'Bottom Center'
+                    default: center
+                    type: button_group
+                    display: 'Popup Position'
+                    localizable: false
+                    width: 66
+                -
+                  handle: popup_image
+                  field: basics.image
+                  config:
+                    validate:
+                      - image
+                      - 'max_filesize:9216'
+                      - 'mimes:png,jpg,jpeg,gif,tiff,webp,avif'
+                    width: 50
+                -
+                  handle: popup_link
+                  field:
+                    type: link
+                    display: 'Popup Link'
+                    localizable: false
+                    width: 50
         exhibition:
           display: Exhibition
           icon: arrow-roadmap-path-flow

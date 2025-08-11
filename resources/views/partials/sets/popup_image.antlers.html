@@ -1,0 +1,94 @@
+
+{{# Generate unique ID for this popup #}}
+{{ popup_id = 'popup-' ~ random:string:length:8 }}
+
+{{# Set position classes based on popup_position #}}
+{{ if popup_position === 'center' }}
+  {{ position_classes = 'items-center justify-center' }}
+{{ elseif popup_position === 'bottom_center' }}
+  {{ position_classes = 'items-end justify-center' }}
+{{ elseif popup_position === 'bottom_left' }}
+  {{ position_classes = 'items-end justify-start' }}
+{{ elseif popup_position === 'bottom_right' }}
+  {{ position_classes = 'items-end justify-end' }}
+{{ else }}
+  {{ position_classes = 'items-center justify-center' }}
+{{ /if }}
+
+{{# Set close button colors #}}
+{{ if close_color === 'black' }}
+  {{ close_btn_classes = 'text-black hover:text-gray-700 bg-white/80 hover:bg-white' }}
+{{ else }}
+  {{ close_btn_classes = 'text-white hover:text-gray-200 bg-black/80 hover:bg-black' }}
+{{ /if }}
+
+{{ if popup_image }}
+{{# Modal popup #}}
+  <el-dialog open>
+    <dialog id="{{ popup_id }}" class="fixed inset-0 size-auto max-h-none max-w-none overflow-hidden bg-transparent backdrop:bg-transparent">
+      {{# Backdrop #}}
+      <el-dialog-backdrop class="fixed inset-0 bg-black/75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+
+      {{# Modal container #}}
+      <div tabindex="0" class="flex min-h-full p-4 focus:outline-none {{ position_classes }}">
+        <el-dialog-panel class="relative transform transition-all data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in data-closed:scale-95 inline-block min-w-0 min-h-0">
+          
+          {{# Close button #}}
+          <button 
+            type="button" 
+            command="close" 
+            commandfor="{{ popup_id }}" 
+            class="absolute -top-2 -right-2 z-10 flex items-center justify-center w-8 h-8 rounded-full transition-colors {{ close_btn_classes }}"
+            aria-label="Close popup"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+
+          {{# Image content #}}
+          {{# Calculate aspect ratio and constrained dimensions #}}
+          {{ image_width = popup_image:width }}
+          {{ image_height = popup_image:height }}
+          {{ max_width = popup_width }}
+          {{ max_height = popup_height }}
+          
+          {{# Calculate scale factor to fit within max dimensions while maintaining aspect ratio #}}
+          {{ width_scale = max_width / image_width }}
+          {{ height_scale = max_height / image_height }}
+          {{ scale = width_scale < height_scale ? width_scale : height_scale }}
+          {{ scale = scale > 1 ? 1 : scale }}
+          
+          {{# Calculate final dimensions #}}
+          {{ final_width = (image_width * scale) | round }}
+          {{ final_height = (image_height * scale) | round }}
+          
+          <div class="popup-image-container">
+            {{ if popup_link }}
+              <a href="{{ popup_link }}" class="block" target="_blank">
+                <img 
+                  src="{{ popup_image }}" 
+                  alt="Popup image"
+                  class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)]"
+                  width="{{ final_width }}"
+                  height="{{ final_height }}"
+                  style="object-fit: contain;"
+                >
+              </a>
+            {{ else }}
+              <img 
+                src="{{ popup_image }}" 
+                alt="Popup image"
+                class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)]"
+                width="{{ final_width }}"
+                height="{{ final_height }}"
+                style="object-fit: contain;"
+              >
+            {{ /if }}
+          </div>
+
+        </el-dialog-panel>
+      </div>
+    </dialog>
+  </el-dialog>
+{{ /if }}

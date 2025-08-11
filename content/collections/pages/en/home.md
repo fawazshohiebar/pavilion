@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754735879
+updated_at: 1754908741
 fine_seo_title: 'International Hunting & Equestrian Exhibition - Abu Dhabi 2025'
 fine_seo_is_title_custom: true
 fine_seo_preview: Home
@@ -208,6 +208,18 @@ page_builder:
         type: reusable_block
         entry:
           - 2551c9b8-1a0e-44d5-aec1-bbbdd94d386d
+  -
+    type: set
+    attrs:
+      id: me6z1rue
+      values:
+        type: popup_image
+        popup_width: 600
+        popup_height: 400
+        close_color: white
+        popup_position: center
+        popup_image: banners/3.-falcon-auction-600x400-1.jpg
+        popup_link: 'https://auction.adihex.com/'
   -
     type: paragraph
     attrs:
