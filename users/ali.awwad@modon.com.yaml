@@ -18,6 +18,12 @@ preferences:
         - end_time
         - speakers
         - agendas
+      filters:
+        test:
+          display: TEst
+          filters:
+            site:
+              site: en
   assets:
     collaterals:
       mode: grid
