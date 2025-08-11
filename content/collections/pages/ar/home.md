@@ -189,6 +189,18 @@ page_builder:
         entry:
           - 522675f3-5162-4a5f-b88e-cac204bfcc0c
   -
+    type: set
+    attrs:
+      id: me6zmk8a
+      values:
+        type: popup_image
+        popup_width: 600
+        popup_height: 400
+        close_color: white
+        popup_position: bottom_right
+        popup_image: banners/3.-falcon-auction-600x400-1.jpg
+        popup_link: 'https://auction.adihex.com'
+  -
     type: paragraph
     attrs:
       textAlign: left
@@ -196,6 +208,6 @@ fine_seo_title: 'المعرض الدولي للصيد والفروسية - أب�
 fine_seo_is_title_custom: true
 fine_seo_description: 'تراث يتجدد يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض'
 fine_seo_preview: الرئيسية
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754638203
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1754909224
 ---
