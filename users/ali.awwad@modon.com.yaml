@@ -19,8 +19,8 @@ preferences:
         - speakers
         - agendas
       filters:
-        test:
-          display: TEst
+        day_1:
+          display: 'Day 1'
           filters:
             site:
               site: en
