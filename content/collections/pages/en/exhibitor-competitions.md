@@ -43,7 +43,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: ADNEC Group'
         description: "The 'Most Beautiful Falcon Hood' competition showcases the intricate craftsmanship and cultural significance of falconry. Competitors will present their finest falcon hoods, which will be judged on the quality of leather and materials used, as well as the craftsmanship and design intricacies. This competition is a tribute to the enduring tradition of falconry, a key element of the region's heritage."
-        image: 68fedb6a-2073-0b7a-db6c-1f9fc6aa80c9.jpg
+        image: competitions/68fedb6a-2073-0b7a-db6c-1f9fc6aa80c9.jpg
   -
     type: set
     attrs:
