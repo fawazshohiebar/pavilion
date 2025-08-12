@@ -99,7 +99,7 @@ page_builder:
           tag: p
           uppercase: false
         description: 'Building on ADIHEX’s rich legacy of successful auctions, this year’s falcon auctions will take place before and during exhibition. **The pre-event auctions will be held on August 16 & 17 and August 23 & 24, 2025 in Conference Room A. The in-event auctions will take place on August 30 & 31 and September 6 & 7, 2025, starting at 7:30 PM**. All falcons will be displayed in advance, allowing participants to view them up close and access their full biodata before bidding. This year also features an online auction, enabling participants to join remotely and bid in real time from anywhere in the world.'
-        image: arena-2.jpg
+        image: competitions/arena-2.jpg
         buttons:
           -
             id: mdy3ups5
