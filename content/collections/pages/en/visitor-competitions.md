@@ -114,7 +114,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Sharjah Kennel Club'
         description: 'This is a beauty contest for hunting dogs where winners will be given prizes.'
-        image: azawakh-running-in-the-grass.avif
+        image: competitions/azawakh-running-in-the-grass.avif
   -
     type: set
     attrs:
