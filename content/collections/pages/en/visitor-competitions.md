@@ -54,7 +54,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Union on August 31 & Sharjah Kennel Club on Sept 7'
         description: 'This competition is for all breeds where the Best Dog of the Show will be selected at the Best in Show Round. The Best Adult, Best Junior, Best Puppy and Best Veteran in show will be awarded Best in Show Certificates and Trophies.'
-        image: dog-championship.jpeg
+        image: competitions/dog-championship.jpeg
   -
     type: set
     attrs:
