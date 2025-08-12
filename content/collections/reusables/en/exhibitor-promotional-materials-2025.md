@@ -46,7 +46,7 @@ featured_activities:
   -
     id: mdiqvg3h
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754986438
+updated_at: 1754986447
 button_group:
   -
     id: mdirjamk
