@@ -6,6 +6,8 @@ preferences:
   assets:
     assets:
       per_page: 100
+    collaterals:
+      per_page: 100
   collections:
     sessions:
       columns:
