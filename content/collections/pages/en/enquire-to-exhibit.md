@@ -48,7 +48,7 @@ fine_seo_title: 'Enquire to Exhibit'
 fine_seo_preview: 'Book Your Stand'
 fine_seo_description: 'International Hunting & Equestrian Exhibition - Abu Dhabi 2025 offers a platform to elevate your brand, meet prospective clients & align with industry excellence.'
 template: default
-fine_seo_image: dsc_6082-2048x1365.jpg
+fine_seo_image: competitions/dsc_6082-2048x1365.jpg
 feature_banner_image: mb63891-768x511.jpg
 header_scripts:
   code: |-
