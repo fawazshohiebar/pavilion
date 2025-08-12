@@ -81,14 +81,13 @@
             {{# {{ partial:partials/footer_newsletter }} #}}
             <div class="col-span-2 md:col-span-3 lg:col-span-2 mt-0">
                 <div class="max-w-sm mx-auto">
-                    <div class="flex items-center justify-between gap-4">
+                    <div class="flex justify-between gap-4">
                         {{brand:logos}}
                             <a href="{{ url }}" class="group transition-all duration-300 hover:opacity-80">
-                                <div class="text-center ltr:text-sm rtl:text-lg text-[#fff] mb-2 group-hover:text-[#fff] transition-colors">{{title}}</div>
-
                                 <img loading="lazy" src="{{ image }}" alt="{{ image:alt }}" 
                                     width="{{ image:width }}" height="{{ image:height }}" 
                                     class="h-14 object-contain mx-auto">
+                                    <div class="text-center ltr:text-sm rtl:text-lg text-[#fff] mt-2 group-hover:text-[#fff] transition-colors">{{title}}</div>
                             </a>
                         {{/brand:logos}}
                     </div>

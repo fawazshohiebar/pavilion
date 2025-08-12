@@ -2,14 +2,6 @@
 {{# Generate unique ID for this popup #}}
 {{ popup_id = 'popup-' ~ random:string:length:8 }}
 
-{{# Preload critical popup image for better LCP #}}
-{{ if popup_image }}
-  {{ max_width = popup_width ?? 1200 }}
-  {{ max_height = popup_height ?? 800 }}
-  {{ preload_image = glide :src="popup_image" width="{ max_width }" height="{ max_height }" fit="contain" format="webp" quality="85" }}
-  <link rel="preload" as="image" href="{{ preload_image }}" fetchpriority="high">
-{{ /if }}
-
 {{# Set position classes based on popup_position #}}
 {{ if popup_position === 'center' }}
   {{ position_classes = 'items-center justify-center' }}
@@ -54,46 +46,44 @@
             </svg>
           </button>
 
-          {{# Image content - Optimized for performance #}}
-          {{# Set max dimensions with fallbacks #}}
-          {{ max_width = popup_width ?? 1200 }}
-          {{ max_height = popup_height ?? 800 }}
+          {{# Image content #}}
+          {{# Calculate aspect ratio and constrained dimensions #}}
+          {{ image_width = popup_image:width }}
+          {{ image_height = popup_image:height }}
+          {{ max_width = popup_width }}
+          {{ max_height = popup_height }}
           
-          {{# Pre-generate optimized image URLs with Glide #}}
-          {{ optimized_image = {glide :src="popup_image" width="{ max_width }" height="{ max_height }" fit="contain" format="webp" quality="85"} }}
-          {{ fallback_image = glide :src="popup_image" width="{ max_width }" height="{ max_height }" fit="contain" format="jpg" quality="85" }}
+          {{# Calculate scale factor to fit within max dimensions while maintaining aspect ratio #}}
+          {{ width_scale = max_width / image_width }}
+          {{ height_scale = max_height / image_height }}
+          {{ scale = width_scale < height_scale ? width_scale : height_scale }}
+          {{ scale = scale > 1 ? 1 : scale }}
+          
+          {{# Calculate final dimensions #}}
+          {{ final_width = (image_width * scale) | round }}
+          {{ final_height = (image_height * scale) | round }}
           
           <div class="popup-image-container">
             {{ if popup_link }}
               <a href="{{ popup_link }}" class="block" target="_blank">
-                <picture>
-                  <source srcset="{{ optimized_image }}" type="image/webp">
-                  <img 
-                    src="{{ fallback_image }}"
-                    alt="{{ popup_image:alt ?? 'Popup image' }}"
-                    class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)] object-contain"
-                    width="{{ popup_image:width }}"
-                    height="{{ popup_image:height }}"
-                    loading="eager"
-                    decoding="sync"
-                    fetchpriority="high"
-                  >
-                </picture>
+                <img 
+                  src="{{ glide :src="popup_image" format="webp" }}" 
+                  alt="{{popup_image:alt ?? 'Popup image'}}"
+                  class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)]"
+                  width="{{ final_width }}"
+                  height="{{ final_height }}"
+                  style="object-fit: contain;"
+                >
               </a>
             {{ else }}
-              <picture>
-                <source srcset="{{ optimized_image }}" type="image/webp">
-                <img 
-                  src="{{ fallback_image }}"
-                  alt="{{ popup_image:alt ?? 'Popup image' }}"
-                  class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)] object-contain"
-                  width="{{ popup_image:width }}"
-                  height="{{ popup_image:height }}"
-                  loading="eager"
-                  decoding="sync"
-                  fetchpriority="high"
-                >
-              </picture>
+              <img 
+                src="{{ glide :src="popup_image" format="webp" }}" 
+                alt="{{popup_image:alt ?? 'Popup image'}}"
+                class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)]"
+                width="{{ final_width }}"
+                height="{{ final_height }}"
+                style="object-fit: contain;"
+              >
             {{ /if }}
           </div>
 

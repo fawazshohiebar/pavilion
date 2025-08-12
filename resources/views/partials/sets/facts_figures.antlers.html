@@ -32,10 +32,9 @@
                     <div class="w-16 h-16 bg-[#827654]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                         {{ heroicon variant="outline" :icon="icon" class="h-8 w-8 text-[#827654]" }}
                     </div>
-                    <h3 class="text-2xl sm:text-3xl md:text-4xl  font-bold text-gray-800 mb-2" x-text="count.toLocaleString()">
-                       
+                    <p class="text-2xl sm:text-3xl md:text-4xl  font-bold text-gray-800 mb-2" x-text="count.toLocaleString()">
                         {{ value }}
-                    </h3>
+                    </p>
                     <p class="rtl:text-lg ltr:text-sm text-gray-600 uppercase ltr:tracking-wider">{{ label }}</p>
                 </div>
             {{ /stats }}
