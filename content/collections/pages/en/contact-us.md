@@ -49,7 +49,7 @@ page_builder:
                 enabled: true
               -
                 id: 2JoA77MT
-                text: 'saad.alhasani@adnec.ae'
+                text: saad.alhasani@adnec.ae
                 link: 'mailto:saad.alhasani@adnec.ae'
                 icons: envelope
                 type: new_set
@@ -70,7 +70,7 @@ page_builder:
                 enabled: true
               -
                 id: bZd2zXxh
-                text: 'khaled.taha@adnec.ae'
+                text: khaled.taha@adnec.ae
                 link: 'mailto:khaled.taha@adnec.ae'
                 icons: envelope
                 type: new_set
@@ -91,7 +91,7 @@ page_builder:
                 enabled: true
               -
                 id: MEB84TOo
-                text: 'bilal.adada@adnec.ae'
+                text: bilal.adada@adnec.ae
                 link: 'mailto:bilal.adada@adnec.ae'
                 icons: envelope
                 type: new_set
@@ -112,7 +112,7 @@ page_builder:
                 enabled: true
               -
                 id: TimafAzz
-                text: 'sara.aljaberi@adnec.ae'
+                text: sara.aljaberi@adnec.ae
                 link: 'mailto:sara.aljaberi@adnec.ae'
                 icons: envelope
                 type: new_set
@@ -192,7 +192,7 @@ page_builder:
             enabled: true
           -
             id: ny2nvh7K
-            heading: 'OPERATIONS'
+            heading: OPERATIONS
             icon_list:
               -
                 id: lUYcjVV4
@@ -271,5 +271,5 @@ fine_seo_title: 'Contact Us'
 fine_seo_preview: 'Contact Us'
 feature_banner_image: mb63891-768x511.jpg
 template: default
-fine_seo_image: dsc_6082-768x512.jpg
+fine_seo_image: competitions/dsc_6082-768x512.jpg
 ---
