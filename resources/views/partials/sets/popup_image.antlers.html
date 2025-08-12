@@ -6,7 +6,7 @@
 {{ if popup_image }}
   {{ max_width = popup_width ?? 1200 }}
   {{ max_height = popup_height ?? 800 }}
-  {{ preload_image = glide :src="popup_image" width="{ max_width }" height="{ max_height }" fit="contain" format="webp" quality="85" }}
+  {{ preload_image = {glide :src="popup_image" width="{ max_width }" height="{ max_height }" fit="contain" format="webp" quality="85"} }}
   <link rel="preload" as="image" href="{{ preload_image }}" fetchpriority="high">
 {{ /if }}
 
@@ -61,7 +61,7 @@
           
           {{# Pre-generate optimized image URLs with Glide #}}
           {{ optimized_image = {glide :src="popup_image" width="{ max_width }" height="{ max_height }" fit="contain" format="webp" quality="85"} }}
-          {{ fallback_image = glide :src="popup_image" width="{ max_width }" height="{ max_height }" fit="contain" format="jpg" quality="85" }}
+          {{ fallback_image = {glide :src="popup_image" width="{ max_width }" height="{ max_height }" fit="contain" format="jpg" quality="85"} }}
           
           <div class="popup-image-container">
             {{ if popup_link }}
