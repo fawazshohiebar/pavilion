@@ -143,7 +143,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Emirates Falconers Club (EFC)'
         description: "The 'Falcon Beauty Contest' is a showcase of the most majestic falcons, with categories including Gyr-Saker, pure gyr and Peregrine falcons, judged on their physical attributes and beauty. This show is a must-see for enthusiasts and professionals alike, highlighting the elegance and nobility of these magnificent birds that are the very cornerstone of Emirati hunting tradition."
-        image: falcon-beauty.jpeg
+        image: competitions/falcon-beauty.jpeg
   -
     type: set
     attrs:
