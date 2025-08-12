@@ -152,7 +152,7 @@ page_builder:
           tag: p
           uppercase: false
         description: 'Knowledge Hub is a platform that provides exhibitors, experts, innovators, and industry leaders with the opportunity to present their latest innovations, cutting-edge technologies, share industry trends and research findings that shape the future of the different sectors covered in ADIHEX. Also, for governmental entities and NGOs to raise awareness of various initiatives and national campaigns.'
-        image: 20240906_160645.jpg
+        image: competitions/20240906_160645.jpg
         buttons:
           -
             id: mdy3ups5
