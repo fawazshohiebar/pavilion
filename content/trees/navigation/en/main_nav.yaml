@@ -13,6 +13,10 @@ tree:
         id: 7b92350d-dad5-4c23-8395-7f4f1c2b84d1
         entry: 22227610-dc48-4f42-9394-c222c87592a8
       -
+        id: de221a88-f79c-4f86-a7b4-726bae604dd9
+        title: 'Falcons Auction'
+        url: 'https://auction.adihex.com/en'
+      -
         id: cbb82464-79a6-4aa2-b883-0e62ab6d76ae
         entry: fef0a386-0f63-45a3-94c7-97f83529c830
       -
