@@ -43,9 +43,13 @@ main_activities:
     id: mdy7nxqj
     title: '<a href="https://ce-adihex.s3.me-central-1.amazonaws.com/website-assets/uploads/2025/07/Social-sharing-banners.zip" target="_blank">لافتات إضافية لوسائل التواصل الاجتماعي</a>'
     icon: arrow-down-tray
+  -
+    id: me9ipal4
+    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/adihex-partners-social-media-deliverables.pdf">المحتوى المطلوب لوسائل التواصل الاجتماعي</a>'
+    icon: arrow-down-tray
 featured_activities:
   -
     id: mdy7osn0
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754641657
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1755062191
 ---
