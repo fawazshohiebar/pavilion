@@ -26,6 +26,12 @@ premium_sponsors:
     type: new_set
     enabled: true
   -
+    id: me9kxbky
+    premium_sponsors_logos: adt_logo_english_notagline_approved_6sep_black_rgb.png
+    sponsor_title: 'الشريك الرسمي للوجهة'
+    type: new_set
+    enabled: true
+  -
     id: mdwyd53e
     premium_sponsors_logos: logos-(1).png
     sponsor_title: 'الشريك اإلستراتيجي'
@@ -124,5 +130,5 @@ normal_sponsors:
     type: new_set
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754981161
+updated_at: 1755065973
 ---
