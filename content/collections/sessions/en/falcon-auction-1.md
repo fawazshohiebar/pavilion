@@ -1,6 +1,5 @@
 ---
 id: b8387d10-398a-47b4-904f-56aac53d0d61
-published: false
 blueprint: session
 title: 'Falcon Auction'
 start_time: '19:30'
