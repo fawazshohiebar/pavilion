@@ -15,6 +15,7 @@ preferences:
         - agendas
         - event_date
         - start_time
+        - status
       filters:
         agenda_2025:
           display: 'Agenda 2025'
