@@ -34,6 +34,22 @@ replicator_media_partners:
     title: 'شريك إعلامي'
     type: new_set
     enabled: true
+  -
+    id: mecraml3
+    link: 'https://worldbusinessoutlook.com/'
+    logo:
+      - wbo-logo---copy.png
+    title: 'شريك إعلامي'
+    type: new_set
+    enabled: true
+  -
+    id: mecrbg1y
+    link: www.industryevents.com
+    logo:
+      - high-res-industry-events-logo.jpg
+    title: 'شريك إعلامي'
+    type: new_set
+    enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754914284
+updated_at: 1755258084
 ---
