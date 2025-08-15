@@ -1,6 +1,5 @@
 ---
 id: 30a410ad-5ae5-4591-b786-7c7c7d90db33
-published: false
 blueprint: session
 title: 'The Creative Experience by ADIHEX'
 start_time: '11:00'
