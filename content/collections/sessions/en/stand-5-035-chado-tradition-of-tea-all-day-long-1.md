@@ -1,6 +1,5 @@
 ---
 id: a86be83a-fd9c-423b-b065-6d6efa7a2377
-published: false
 blueprint: session
 title: 'Stand 5-035 Chado (Tradition of Tea) All day long'
 start_time: '09:30'
