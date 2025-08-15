@@ -12,14 +12,6 @@ replicator_media_partners:
     type: new_set
     enabled: true
   -
-    id: mdoiwomy
-    link: 'https://www.bawaditv.com/'
-    logo:
-      - albawadi-hd-logo-1-768x263-(1).png
-    title: 'Media Partner'
-    type: new_set
-    enabled: false
-  -
     id: mdoiwr0d
     link: 'https://thebrewnews.com/'
     logo:
@@ -35,6 +27,22 @@ replicator_media_partners:
     title: 'Media Partner'
     type: new_set
     enabled: true
+  -
+    id: mdoiwomy
+    link: 'https://worldbusinessoutlook.com/'
+    logo:
+      - wbo-logo---copy.png
+    title: 'Media Partner'
+    type: new_set
+    enabled: true
+  -
+    id: mecr8bhc
+    link: www.industryevents.com
+    logo:
+      - high-res-industry-events-logo.jpg
+    title: 'Media Partner'
+    type: new_set
+    enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754914275
+updated_at: 1755257992
 ---
