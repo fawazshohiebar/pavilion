@@ -1,6 +1,5 @@
 ---
 id: b379abec-359d-411a-86d1-be9e560a5f68
-published: false
 blueprint: session
 title: 'Stand 5-035 - Candy Art'
 start_time: '16:00'
