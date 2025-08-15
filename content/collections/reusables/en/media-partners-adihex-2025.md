@@ -28,6 +28,14 @@ replicator_media_partners:
     type: new_set
     enabled: true
   -
+    id: mectb4ky
+    link: 'https://menews247.com/'
+    logo:
+      - middle-east-news-247-logo.png
+    title: 'Media Partner'
+    type: new_set
+    enabled: true
+  -
     id: mdoiwomy
     link: 'https://worldbusinessoutlook.com/'
     logo:
@@ -44,5 +52,5 @@ replicator_media_partners:
     type: new_set
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755257992
+updated_at: 1755261422
 ---
