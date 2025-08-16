@@ -23,3 +23,6 @@ preferences:
             site:
               site: en
       per_page: 500
+  forms:
+    book_your_stand:
+      per_page: 100
