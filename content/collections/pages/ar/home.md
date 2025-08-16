@@ -7,6 +7,7 @@ page_builder:
     type: set
     attrs:
       id: meeeetnn
+      enabled: false
       values:
         type: divider
         space_height: 20px
@@ -14,6 +15,7 @@ page_builder:
     type: set
     attrs:
       id: meeefb04
+      enabled: false
       values:
         type: heading_group
         heading:
@@ -31,6 +33,7 @@ page_builder:
     type: set
     attrs:
       id: meeef0pp
+      enabled: false
       values:
         type: html_block
         available_on:
@@ -46,6 +49,7 @@ page_builder:
     type: set
     attrs:
       id: meeehgkl
+      enabled: false
       values:
         type: divider
         space_height: 180px
@@ -259,5 +263,5 @@ fine_seo_is_title_custom: true
 fine_seo_description: 'تراث يتجدد يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض'
 fine_seo_preview: الرئيسية
 updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
-updated_at: 1755357469
+updated_at: 1755364420
 ---
