@@ -159,3 +159,13 @@ redirects:
     url_old: /parking
     internal_url: 8ab494c3-b905-44b4-b2f1-ec25f4fe8bed
     response: 302
+  -
+    id: mefkhhk9
+    url_old: /en/parking
+    internal_url: 8ab494c3-b905-44b4-b2f1-ec25f4fe8bed
+    response: 302
+  -
+    id: mefkhrh2
+    url_old: /ar/parking
+    internal_url: 8ab494c3-b905-44b4-b2f1-ec25f4fe8bed
+    response: 302
