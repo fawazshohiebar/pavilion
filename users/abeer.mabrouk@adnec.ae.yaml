@@ -12,10 +12,10 @@ preferences:
     sessions:
       columns:
         - title
-        - agendas
         - event_date
         - start_time
         - status
+        - halls
       filters:
         agenda_2025:
           display: 'Agenda 2025'
