@@ -16,6 +16,7 @@ preferences:
         - start_time
         - status
         - halls
+        - agendas
       filters:
         agenda_2025:
           display: 'Agenda 2025'
