@@ -1,16 +1,15 @@
 ---
 id: 4e1db340-400c-40c7-b094-08df551b84ff
-published: false
 blueprint: session
-title: 'Stand P10-05 (MOOR) (Duplicated)'
+title: 'Stand P10-05 (MOOR)'
 start_time: '17:00'
 end_time: '19:00'
-event_date: '2025-09-04'
+event_date: '2025-09-05'
 agendas:
   - event-programme
 halls: hall-10
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755458358
+updated_at: 1755460969
 duplicated_from: 8aed7ea6-6730-442e-a7d8-8ab7b2122a2a
 ---
 <p>Product Demonstration &amp; Walkthrough Description: Guided tour of the MOOR emergency kits, highlighting key features and use cases.</p>
