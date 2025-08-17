@@ -1,6 +1,5 @@
 ---
 id: a2fcc1ee-3ee1-458c-88d4-53889a5f6cbc
-published: false
 blueprint: session
 title: 'Educational Session'
 start_time: '15:00'
