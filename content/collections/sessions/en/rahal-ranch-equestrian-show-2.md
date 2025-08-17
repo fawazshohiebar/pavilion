@@ -1,14 +1,15 @@
 ---
 id: 62f359b1-e6b7-48a9-9443-9986d2ebb347
-published: false
 blueprint: session
-title: 'Rahal Ranch Equestrian Show (Duplicated) (2)'
+title: 'Rahal Ranch Equestrian Show'
 start_time: '19:00'
 end_time: '19:30'
-event_date: '2025-09-01'
-agendas: event-programme
+event_date: '2025-09-02'
+agendas:
+  - event-programme
+  - arena-schedule
 halls: arena
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755255191
+updated_at: 1755446629
 duplicated_from: 7f90c408-d4eb-47ff-9ae8-c1a965ab544f
 ---
