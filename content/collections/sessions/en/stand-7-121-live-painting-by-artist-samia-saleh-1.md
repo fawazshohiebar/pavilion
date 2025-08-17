@@ -1,6 +1,5 @@
 ---
 id: ec76cdd0-ee5c-45b5-b527-88ef5e7b03c4
-published: false
 blueprint: session
 title: 'Stand 7-121, Live Painting by Artist Samia Saleh'
 start_time: '19:00'

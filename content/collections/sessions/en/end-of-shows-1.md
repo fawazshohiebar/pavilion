@@ -1,6 +1,5 @@
 ---
 id: 3b55792d-255d-4b75-970b-042bdfecb2cc
-published: false
 blueprint: session
 title: 'End of Shows'
 start_time: '21:30'

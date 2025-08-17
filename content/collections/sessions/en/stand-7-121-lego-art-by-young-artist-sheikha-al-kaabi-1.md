@@ -1,6 +1,5 @@
 ---
 id: e37b10bf-5480-4632-8673-992f643fc9ac
-published: false
 blueprint: session
 title: 'Stand 7-121, Lego Art by Young Artist Sheikha Al Kaabi'
 start_time: '16:00'

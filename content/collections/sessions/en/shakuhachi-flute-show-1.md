@@ -1,6 +1,5 @@
 ---
 id: 42ca85a5-40a1-4300-a86a-4b40e6ff5c37
-published: false
 blueprint: session
 title: 'Stand 5-035 - Shakuhachi Flute Show'
 start_time: '18:00'

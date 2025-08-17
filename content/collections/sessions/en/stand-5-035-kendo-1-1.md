@@ -1,6 +1,5 @@
 ---
 id: a1a3f3c3-1a61-4bd1-a1a2-f1aa4777ed18
-published: false
 blueprint: session
 title: 'Stand 5-035 - Kendo'
 start_time: '16:00'

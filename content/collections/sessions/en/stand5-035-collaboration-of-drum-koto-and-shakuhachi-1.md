@@ -1,6 +1,5 @@
 ---
 id: 4e4e7576-0eb8-4f1c-92f8-3dcf54b4f0e3
-published: false
 blueprint: session
 title: 'Stand5-035 - Collaboration of Drum, Koto, and Shakuhachi'
 start_time: '19:00'

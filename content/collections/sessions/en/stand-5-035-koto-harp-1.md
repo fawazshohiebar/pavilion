@@ -1,6 +1,5 @@
 ---
 id: a85f5d9c-d079-4c99-b915-f962e621f995
-published: false
 blueprint: session
 title: 'Stand 5-035 - Koto Harp (Duplicated)'
 start_time: '16:30'

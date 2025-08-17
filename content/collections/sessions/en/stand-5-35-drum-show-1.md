@@ -1,6 +1,5 @@
 ---
 id: b829770c-65dc-478c-b38b-87800828ed94
-published: false
 blueprint: session
 title: 'Stand 5-35 - Drum show'
 start_time: '17:00'

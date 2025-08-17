@@ -1,6 +1,5 @@
 ---
 id: 549f0ee5-4fb3-4b9e-a000-105568d10128
-published: false
 blueprint: session
 title: 'Stand 7-121 - Live Marquetry Art by Artist Nasser Fouda'
 start_time: '17:00'

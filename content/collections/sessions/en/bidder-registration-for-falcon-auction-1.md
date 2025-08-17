@@ -1,6 +1,5 @@
 ---
 id: c0bd122c-a002-4e09-bf5e-1bffd407806b
-published: false
 blueprint: session
 title: 'Bidder Registration for Falcon Auction'
 start_time: '08:00'

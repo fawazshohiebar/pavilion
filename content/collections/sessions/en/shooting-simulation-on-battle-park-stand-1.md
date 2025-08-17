@@ -1,6 +1,5 @@
 ---
 id: 71d4e940-632a-4be4-b916-2dc3f5895715
-published: false
 blueprint: session
 title: 'Shooting Simulation on Battle Park Stand'
 start_time: '11:00'
