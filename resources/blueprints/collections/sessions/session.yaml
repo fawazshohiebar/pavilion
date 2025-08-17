@@ -102,7 +102,7 @@ tabs:
               display: Agendas
               mode: select
               localizable: false
-              max_items: 1
+              max_items: 5
           -
             handle: halls
             field:
