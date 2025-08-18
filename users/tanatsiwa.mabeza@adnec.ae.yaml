@@ -6,3 +6,9 @@ preferences:
   collections:
     sessions:
       per_page: 500
+      columns:
+        - title
+        - site
+        - slug
+        - status
+        - agendas
