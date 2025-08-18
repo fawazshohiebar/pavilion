@@ -26,6 +26,9 @@ tabs:
               container: collaterals
               folder: /brand
               localizable: false
+              validate:
+                - image
+                - 'mimes:png,jpg,jpeg,gif,webp'
           -
             handle: logo_dark
             field:
