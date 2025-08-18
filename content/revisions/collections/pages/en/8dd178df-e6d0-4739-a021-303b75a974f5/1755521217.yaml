@@ -1,5 +1,5 @@
-action: revision
-date: 1755521212
+action: publish
+date: 1755521217
 user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
 attributes:
   id: 8dd178df-e6d0-4739-a021-303b75a974f5
@@ -222,7 +222,6 @@ attributes:
             image: competitions/download-(3).jpg
     fine_seo_title: 'Visitor Competitions'
     fine_seo_preview: 'Visitor Competitions'
-    parent: 8d69b283-c7f1-4131-8fca-237b82c25d3b
     fine_seo_description: null
     fine_seo_image: null
     header_scripts_available_on: {  }

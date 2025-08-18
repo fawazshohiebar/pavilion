@@ -134,7 +134,6 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
         description: 'This Competition will be limited to American Bullies and Working Dog Groups. Specialist Judges for those breeds will judge and award titles. All participants will receive certificates. Winners will be awarded trophies and medals along with certificates.'
-        image: sighthound.jpeg
   -
     type: set
     attrs:
@@ -213,8 +212,9 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
         description: 'An internationally renowned groomer will conduct a workshop for grooming professionals followed by a grooming competition to select the "Best Groomer of the UAE". Winners will receive certificates and prizes.'
+        image: competitions/download-(3).jpg
 fine_seo_title: 'Visitor Competitions'
 fine_seo_preview: 'Visitor Competitions'
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754928412
+updated_at: 1755521217
 ---
