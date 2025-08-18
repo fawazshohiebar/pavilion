@@ -163,6 +163,7 @@ page_builder:
     type: set
     attrs:
       id: mdy7m7yk
+      enabled: false
       values:
         type: call_to_action
         style_config:
@@ -216,6 +217,7 @@ page_builder:
     type: set
     attrs:
       id: mdy7tzdy
+      enabled: false
       values:
         type: call_to_action
         style_config:
@@ -284,6 +286,6 @@ page_builder:
     type: paragraph
     attrs:
       textAlign: left
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1754641120
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1755231388
 ---

@@ -5,10 +5,16 @@
 
 {{# Redirect if current_url is in the Redirects global. #}}
 {{ redirects:redirects | whereIn('url_old', [{current_uri | urldecode}, { {current_uri | urldecode} + '/'}]) }}
-    <p>Debug - Found redirect for: {{ url_old }} → {{ internal_url ?? external_url }}</p>
+    {{?
+        $queryArr = request()->query();
+        $urlExtras = '';
+        if (count($queryArr) > 0) {
+            $urlExtras = '?' . http_build_query($queryArr);
+        }
+    ?}}
     {{ if internal_url }}
-        {{ %redirect :to="internal_url:url" response="{response}" }}
+        {{ %redirect to="{{internal_url:url}}{{urlExtras}}" response="{response}" }}
     {{ elseif external_url }}
-        {{ %redirect :to="external_url" response="{response}" }}
+        {{ %redirect to="{{external_url}}{{urlExtras}}" response="{response}" }}
     {{ /if }}
 {{ /redirects:redirects }}

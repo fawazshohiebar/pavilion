@@ -66,8 +66,8 @@ speaker_replicator:
     company: 'Environment Agency – Abu Dhabi'
     type: new_set
     enabled: true
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754602286
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1755254059
 speakers:
   - 1a2b3c4d-5e6f-7g8h-9i0j-k1l2m3n4o5p6
   - e5f0919d-1cc5-47d1-968f-781dcdd81bc8
@@ -90,4 +90,7 @@ speakers:
   - 7q8r9s0t-1u2v-3w4x-5y6z-a7b8c9d0e1f2
   - 8r9s0t1u-2v3w-4x5y-6z7a-b8c9d0e1f2g3
   - 9s0t1u2v-3w4x-5y6z-7a8b-c9d0e1f2g3h4
+  - e117a7e2-5df4-4b0f-863b-48c283ee29b3
+  - f6c245a3-0990-421b-9561-68c2537ce21d
+  - 63249ae8-7259-4e4c-94a8-60bc69a0a9d5
 ---

@@ -1,12 +1,14 @@
 ---
-id: e54312cd-c26f-4bde-8403-2c5697826b8e
+id: f6598e33-1668-430d-9eba-53a16bcad835
 blueprint: session
-title: 'TSHOULEEB Show'
-agendas: arena-schedule
-halls: icc-hall-features
-start_time: '13:00'
-end_time: '15:30'
-event_date: '2025-09-02'
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754496977
+title: 'Tshouleeb Show'
+start_time: '12:00'
+end_time: '12:30'
+event_date: '2025-08-31'
+agendas:
+  - event-programme
+  - arena-schedule
+halls: arena
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1755459468
 ---

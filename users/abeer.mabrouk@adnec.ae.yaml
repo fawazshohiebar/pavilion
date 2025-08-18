@@ -12,14 +12,18 @@ preferences:
     sessions:
       columns:
         - title
-        - site
-        - status
-        - agendas
         - event_date
         - start_time
+        - status
+        - halls
+        - agendas
       filters:
         agenda_2025:
           display: 'Agenda 2025'
           filters:
             site:
               site: en
+      per_page: 500
+  forms:
+    book_your_stand:
+      per_page: 100

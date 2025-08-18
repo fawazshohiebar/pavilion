@@ -11,11 +11,74 @@ page_builder:
   -
     type: set
     attrs:
-      id: mdtzdfw4
+      id: meed7ocz
+      enabled: false
+      values:
+        type: divider
+        space_height: 20px
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+  -
+    type: set
+    attrs:
+      id: meed4hzu
+      enabled: false
+      values:
+        type: heading_group
+        heading:
+          heading:
+            text: 'Watch Live Falcon Auction Now'
+            size: small
+            color: primary
+            tag: h1
+            uppercase: false
+          subheading:
+            text: null
+            size: small
+            color: black
+            tag: p
+            uppercase: false
+          focus_icon: false
+          heading_focus_word: null
+          icon: null
+  -
+    type: set
+    attrs:
+      id: meed4kfk
+      enabled: false
+      values:
+        type: html_block
+        available_on:
+          - production
+          - local
+        code:
+          code: |-
+            <div class="flex items-center justify-center">
+            <iframe width="660" height="415" src="https://www.youtube.com/embed/D2cRhxbS0tA?si=gBZAJl5m9orOnXET&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          mode: htmlmixed
+  -
+    type: set
+    attrs:
+      id: meed4rjd
+      enabled: false
+      values:
+        type: divider
+        space_height: 180px
+  -
+    type: set
+    attrs:
+      id: meed4f77
       values:
         type: reusable_block
         entry:
           - 67e0641c-45df-420d-90f1-0a3bbe96b8f1
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
   -
     type: set
     attrs:
@@ -240,6 +303,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754938836
+updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
+updated_at: 1755449622
 ---
