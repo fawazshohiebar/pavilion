@@ -21,7 +21,7 @@ tabs:
               validate:
                 - image
                 - 'max_filesize:9216'
-                - 'mimes:png,jpg,jpeg,gif,tiff,webp,avif'
+                - 'mimes:png,jpg,jpeg,gif,webp'
           -
             handle: position
             field:
