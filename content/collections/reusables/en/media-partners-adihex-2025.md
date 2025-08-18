@@ -51,6 +51,14 @@ replicator_media_partners:
     title: 'Media Partner'
     type: new_set
     enabled: true
+  -
+    id: meh37cd3
+    link: www.resourceworld.com
+    logo:
+      - partners/rwm-logo_2277x337.jpg
+    title: 'Media Partner'
+    type: new_set
+    enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755261422
+updated_at: 1755519934
 ---
