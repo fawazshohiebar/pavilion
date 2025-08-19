@@ -15,7 +15,7 @@ heading:
 stats:
   -
     id: macfpfr4
-    value: '347,000+'
+    value: '347000'
     label: الحضور
     icon: users
   -
@@ -30,14 +30,14 @@ stats:
     icon: globe-alt
   -
     id: macfpimy
-    value: '92,000'
+    value: '92000'
     label: 'مساحة المعرض'
     icon: map-pin
   -
     id: mdiqbnww
-    value: '2,007'
+    value: '2007'
     label: 'المشاركين والعلامات التجارية'
     icon: building-storefront
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755586709
+updated_at: 1755586892
 ---
