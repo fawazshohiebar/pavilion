@@ -10,7 +10,7 @@ heading:
     tag: p
     uppercase: false
   subheading:
-    text: 'Position your brand at the heart of the world’s largest hunting, equestrian, and heritage conservation event. ADIHEX 2025 is expected to welcome over 347,000+ buyers, enthusiasts, and professionals from more than 65 countries, offering unrivaled access to a highly targeted, international audience.<br>Whether you’re entering the market or expanding your reach, ADIHEX provides the commercial gateway to the UAE, GCC, and global markets—with B2B networking platforms, live product showcases, and direct engagement with high-intent buyers.'
+    text: 'Position your brand at the heart of the world’s largest hunting, equestrian, and heritage conservation event. ADIHEX 2025 is expected to welcome over 347,000+ buyers, enthusiasts, and professionals from more than 65 countries, offering unrivaled access to a highly targeted, international audience.<br>Whether you’re entering the market or expanding your reach, ADIHEX provides the commercial gateway to the UAE, GCC, and global markets—with B2B networking platforms, live product showcases, and direct engagement with high-intent buyers'
     size: small
     color: primary
     tag: p
