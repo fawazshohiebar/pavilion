@@ -5,7 +5,7 @@ blueprint: tickets
 title: Tickets
 heading: 'Get Your Tickets'
 subheading: 'TICKETS & PASSES'
-description: 'Choose from a variety of ticket options to experience the International Hunting & Equestrian Exhibition - Abu Dhabi 2025.'
+description: 'Choose from a variety of ticket options to experience the International Hunting & Equestrian Exhibition - Abu Dhabi 2025..'
 coming_soon: true
 coming_soon_title: 'Tickets Coming Soon'
 coming_soon_description: 'We are finalizing our ticket options for the International Hunting & Equestrian Exhibition - Abu Dhabi 2025. Tickets will be available for purchase soon. Please check back soon!'
@@ -92,5 +92,5 @@ ticket_types:
     button_text: 'Buy Family Package'
     button_url: '#buy-family'
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1755610555
+updated_at: 1755615199
 ---
