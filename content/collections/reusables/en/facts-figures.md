@@ -16,29 +16,29 @@ heading:
 stats:
   -
     id: macfpfr4
-    value: '347481'
+    value: 347000+
     label: Attendees
     icon: users
   -
     id: macfpg3f
-    value: '13'
+    value: '15'
     label: Sectors
     icon: cog
   -
     id: macfphk2
-    value: '65'
+    value: '68'
     label: Countries
     icon: globe-alt
   -
     id: macfpimy
-    value: '87000'
+    value: '92000'
     label: 'SQM Exhibition Space'
     icon: map-pin
   -
     id: mdiqbnww
-    value: '1740'
+    value: '2007'
     label: 'Exhibitors & Brands'
     icon: building-storefront
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754929290
+updated_at: 1755585449
 ---
