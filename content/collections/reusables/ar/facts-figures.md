@@ -15,29 +15,29 @@ heading:
 stats:
   -
     id: macfpfr4
-    value: '347481'
-    label: الحضور
+    value: '347000'
+    label: 'عدد الزوار'
     icon: users
   -
     id: macfpg3f
-    value: '13'
+    value: '15'
     label: قطاع
     icon: cog
   -
     id: macfphk2
-    value: '65'
+    value: '68'
     label: 'الدول المشاركة'
     icon: globe-alt
   -
     id: macfpimy
-    value: '87000'
+    value: '92000'
     label: 'مساحة المعرض'
     icon: map-pin
   -
     id: mdiqbnww
-    value: '1740'
+    value: '2007'
     label: 'المشاركين والعلامات التجارية'
     icon: building-storefront
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754579719
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1755587180
 ---

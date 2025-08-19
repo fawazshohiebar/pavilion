@@ -1,6 +1,7 @@
 ---
 id: 1983056e-401a-4aa0-9a82-d4dfa519a0dd
 origin: 189cb780-fd09-4831-bdcd-c022fa861da2
+published: false
 title: 'Tickets Arabic'
 heading: 'اشترِ تذكرتك'
 subheading: 'التذاكر والباقات'
@@ -91,5 +92,5 @@ ticket_types:
     button_text: 'اشترِ باقة العائلة'
     button_url: '#buy-family'
 updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1747633383
+updated_at: 1755588793
 ---
