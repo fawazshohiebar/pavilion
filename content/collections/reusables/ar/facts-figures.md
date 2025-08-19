@@ -16,7 +16,7 @@ stats:
   -
     id: macfpfr4
     value: '347000'
-    label: الحضور
+    label: 'عدد الزوار'
     icon: users
   -
     id: macfpg3f
@@ -39,5 +39,5 @@ stats:
     label: 'المشاركين والعلامات التجارية'
     icon: building-storefront
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755586892
+updated_at: 1755587180
 ---
