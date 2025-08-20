@@ -5,6 +5,6 @@ title: 'Dr. Med. Vet. Margit Muller'
 image: speakers/dr.-med.-vet.-margit-muller.jpg
 position: 'Executive Director'
 company: 'Abu Dhabi Falcon Hospital'
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754600968
+updated_by: 1353420a-c76f-4594-9476-b140cd6ac39e
+updated_at: 1755693261
 ---
