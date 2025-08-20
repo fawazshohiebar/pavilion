@@ -6,10 +6,9 @@ start_time: '14:00'
 end_time: '14:30'
 event_date: '2025-08-31'
 agendas:
-  - event-programme
   - arena-schedule
 halls: arena
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755459378
+updated_at: 1755719133
 duplicated_from: 74f6e915-9614-4312-8a48-31fa477d07d8
 ---
