@@ -7,8 +7,7 @@ end_time: '20:00'
 event_date: '2025-09-07'
 agendas:
   - arena-schedule
-  - event-programme
 halls: arena
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755464643
+updated_at: 1755723635
 ---
