@@ -4,8 +4,8 @@ blueprint: hero
 title: 'Hero With Video'
 heading: 'THE LEGACY LIVES ON'
 video: Fq-8cqfzMt4
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754937540
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1755752948
 icons:
   -
     id: mdwv396j
@@ -37,6 +37,20 @@ hero_actions:
     enabled: true
   -
     id: mdwv8omy
+    dynamic_button:
+      button: 'entry::b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7'
+      text: null
+      button_options:
+        style: outline
+        color: white
+        size: medium
+        new_tab: true
+        icon: ticket
+        icon_position: start
+    type: button
+    enabled: true
+  -
+    id: mekxiusb
     dynamic_button:
       button: 'entry::b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7'
       text: null

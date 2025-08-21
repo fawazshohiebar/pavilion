@@ -1,0 +1,22 @@
+action: revision
+date: 1755752923
+user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+attributes:
+  id: 63466c00-5686-42a7-b5bf-36935f3563a0
+  slug: buy-your-ticket
+  published: true
+  date: null
+  data:
+    title: 'احجز موقف سيارتك الآن'
+    page_builder:
+      -
+        type: set
+        attrs:
+          id: mdxg2ep9
+          values:
+            type: redirect_to
+            redirect_to: 'https://www.adihex.com/en/visitor-information/parking-information'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
