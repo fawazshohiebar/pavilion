@@ -5,7 +5,7 @@ title: 'Hero With Video'
 heading: 'THE LEGACY LIVES ON'
 video: Fq-8cqfzMt4
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755753405
+updated_at: 1755754785
 icons:
   -
     id: mdwv396j
@@ -53,7 +53,7 @@ hero_actions:
     id: mekxiusb
     dynamic_button:
       button: 'https://www.adihex.com/en/visitor-information/parking-information'
-      text: 'Secure your Parking Spot'
+      text: 'Parking Information and Online Booking'
       button_options:
         style: outline
         color: white
