@@ -144,20 +144,6 @@ page_builder:
                 icon_position: start
             type: button
             enabled: true
-          -
-            id: mdy1nl92
-            dynamic_button:
-              button: 'https://www.google.com/maps/place/ADNEC+Parking+D/@24.4181602,54.426636,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e6901cb08d555:0x28c5964679352f94!8m2!3d24.4181553!4d54.4292109!16s%2Fg%2F11tsf87kkv?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D'
-              text: 'Car Park D'
-              button_options:
-                style: outline
-                color: primary
-                size: medium
-                new_tab: true
-                icon: null
-                icon_position: start
-            type: button
-            enabled: true
   -
     type: set
     attrs:
@@ -166,7 +152,7 @@ page_builder:
         type: call_to_action
         style_config:
           padding: small
-          color: lite-primary
+          color: white
           size: normal
           variant: no_image
         heading:
@@ -200,20 +186,6 @@ page_builder:
                 icon_position: start
             type: button
             enabled: true
-          -
-            id: mdy1mihl
-            dynamic_button:
-              button: 'https://www.google.com/maps/place/ADNEC+Parking+E+Marina+Hall/@24.4185301,54.4374112,1636m/data=!3m1!1e3!4m6!3m5!1s0x3e5e43af32ec2a69:0x5f843f9b6868b973!8m2!3d24.415052!4d54.441239!16s%2Fg%2F11kb46hk8d?entry=tts&g_ep=EgoyMDI1MDcxNi4wIPu8ASoASAFQAw%3D%3D&skid=b81ff4bf-7697-471d-9f8e-7b2ba331726f'
-              text: 'Car Park E'
-              button_options:
-                style: outline
-                color: primary
-                size: medium
-                new_tab: true
-                icon: null
-                icon_position: start
-            type: button
-            enabled: true
 fine_seo_title: 'Parking Information'
 fine_seo_preview: 'Parking Information'
 feature_banner_image: banners/banner-homepage_adnec.webp
@@ -227,6 +199,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755761015
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1755773183
 ---
