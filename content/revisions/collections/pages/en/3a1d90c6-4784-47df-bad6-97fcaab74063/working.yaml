@@ -1,0 +1,60 @@
+action: revision
+date: 1755775810
+user: ac775259-f1c4-4a12-b768-668149cb0e1a
+attributes:
+  id: 3a1d90c6-4784-47df-bad6-97fcaab74063
+  slug: agenda
+  published: true
+  date: null
+  data:
+    blueprint: page
+    title: Agenda
+    fine_seo_is_title_custom: false
+    fine_seo_title: Agenda
+    fine_seo_preview: Agenda
+    template: default
+    feature_banner_image: galleries/2024_gallery/2024_gallery_8.jpg
+    page_builder:
+      -
+        type: set
+        attrs:
+          id: me7dcj0b
+          enabled: false
+          values:
+            type: redirect_to
+            redirect_to: 'entry::home'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+      -
+        type: set
+        attrs:
+          id: me17i7v1
+          values:
+            type: agenda_component
+            start_date: '2025-08-30'
+            end_date: '2025-09-07'
+            agendas:
+              - event-programme
+              - arena-schedule
+              - knowledge-hub
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+    header_scripts:
+      code: null
+      mode: htmlmixed
+    body_start_scripts:
+      code: null
+      mode: htmlmixed
+    body_end_scripts:
+      code: null
+      mode: htmlmixed
+    fine_seo_description: null
+    fine_seo_image: null
+    header_scripts_available_on: {  }
+    body_start_scripts_available_on: {  }
+    body_end_scripts_available_on: {  }
+    parent: home
