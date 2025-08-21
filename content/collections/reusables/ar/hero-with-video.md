@@ -49,7 +49,7 @@ hero_actions:
     id: meky3w71
     dynamic_button:
       button: 'https://www.adihex.com/ar/parking-information'
-      text: 'احجز موقف سيارتك الآن'
+      text: 'معلومات مواقف السيارات والحجز الإلكتروني'
       button_options:
         style: outline
         color: white
@@ -60,5 +60,5 @@ hero_actions:
     type: button
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755753425
+updated_at: 1755755013
 ---
