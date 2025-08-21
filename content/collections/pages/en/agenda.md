@@ -12,7 +12,6 @@ page_builder:
     type: set
     attrs:
       id: me7dcj0b
-      enabled: false
       values:
         type: redirect_to
         redirect_to: 'entry::home'
@@ -24,6 +23,7 @@ page_builder:
     type: set
     attrs:
       id: me17i7v1
+      enabled: false
       values:
         type: agenda_component
         start_date: '2025-08-30'
@@ -46,5 +46,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755757278
+updated_at: 1755759223
 ---

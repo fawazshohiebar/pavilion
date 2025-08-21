@@ -28,7 +28,7 @@ tabs:
               localizable: false
               validate:
                 - image
-                - 'mimes:png,jpg,jpeg,gif,webp'
+                - 'mimes:jpg,jpeg,png,gif,webp,svg'
           -
             handle: logo_dark
             field:
@@ -42,7 +42,7 @@ tabs:
               localizable: false
               validate:
                 - image
-                - 'mimes:png,jpg,jpeg,gif,webp'
+                - 'mimes:jpg,jpeg,png,gif,webp,svg'
           -
             handle: patronage
             field:
