@@ -58,6 +58,14 @@ replicator_media_partners:
     title: 'شريك إعلامي'
     type: new_set
     enabled: true
+  -
+    id: memtuir5
+    link: 'https://www.instagram.com/destinationabudhabi/'
+    logo:
+      - partners/dad-logo-phase-2-2.png
+    title: 'شريك إعلامي'
+    type: new_set
+    enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755519965
+updated_at: 1755866994
 ---
