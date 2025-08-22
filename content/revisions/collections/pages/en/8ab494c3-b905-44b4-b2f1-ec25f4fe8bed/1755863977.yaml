@@ -1,6 +1,6 @@
-action: revision
-date: 1755773857
-user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+action: publish
+date: 1755863977
+user: ac775259-f1c4-4a12-b768-668149cb0e1a
 attributes:
   id: 8ab494c3-b905-44b4-b2f1-ec25f4fe8bed
   slug: parking-information
@@ -225,4 +225,3 @@ attributes:
     body_end_scripts:
       code: null
       mode: htmlmixed
-    parent: 8d69b283-c7f1-4131-8fca-237b82c25d3b

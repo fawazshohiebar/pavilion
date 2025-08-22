@@ -186,6 +186,20 @@ page_builder:
                 icon_position: start
             type: button
             enabled: true
+          -
+            id: melae7eh
+            dynamic_button:
+              button: 'https://www.google.com/maps/place/ADNEC+Parking+E+Marina+Hall/@24.4185301,54.4374112,2053m/data=!3m1!1e3!4m6!3m5!1s0x3e5e43af32ec2a69:0x5f843f9b6868b973!8m2!3d24.415052!4d54.441239!16s%2Fg%2F11kb46hk8d?entry=ttu&g_ep=EgoyMDI1MDgxOC4wIKXMDSoASAFQAw%3D%3D'
+              text: 'Car Park E'
+              button_options:
+                style: outline
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
 fine_seo_title: 'Parking Information'
 fine_seo_preview: 'Parking Information'
 feature_banner_image: banners/banner-homepage_adnec.webp
@@ -200,5 +214,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1755773183
+updated_at: 1755863977
 ---
