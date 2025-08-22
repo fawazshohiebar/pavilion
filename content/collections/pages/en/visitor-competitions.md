@@ -34,7 +34,7 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Union (EKC) & Showline'
         description: "This competition tests the agility of dogs. Demonstrations and training tips will be provided by experts to dog owners who will be given trial runs followed by the competition where the winners will be given prizes. The competition will be open for both trained and untrained dogs. The 'Dog Agility Contest' is a thrilling display of speed, agility, and teamwork between dogs and their handlers. This competition will test the dogs' ability to navigate an obstacle course with precision and speed, providing exciting entertainment for all visitors."
-        image: competitions/dog-agility.jpeg
+        image: competitions/image.jpg
   -
     type: set
     attrs:
@@ -75,26 +75,21 @@ page_builder:
         section_label: 'Organised by: Emirates Kennel Union (EKC) & Showline'
         description: 'This Competition is for all dog breeds. National judges will select the most beautiful dogs, cutest Puppy, and most popular dog etc, classified under small, medium and large groups. All participants will receive certificates. Winners will receive Medals & Prizes.'
         image: fun-dog-show.jpeg
-  -
-    type: set
-    attrs:
-      id: vcomp004
-      values:
-        type: call_to_action
-        style_config:
-          padding: small
-          color: lite-primary
-          size: normal
-          variant: right_image
-        heading:
-          text: 'GYMKHANA FOR PEOPLE OF DETERMINATION'
-          size: small
-          color: black
-          tag: h2
-          uppercase: false
-        section_label: 'Organised by: Dhabian Equestrian Club'
-        description: 'Horse riding obstacle course for People of Determination (children only) where the first 3 riders to successfully complete the course will be given prizes.'
-        image: gymkhana.jpeg
+        buttons:
+          -
+            id: memtx476
+            dynamic_button:
+              button: 'https://www.emirateskennelclub.com/current-event'
+              text: 'Apply Here'
+              button_options:
+                style: filled
+                color: primary
+                size: large
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
   -
     type: set
     attrs:
@@ -115,25 +110,21 @@ page_builder:
           uppercase: false
         section_label: 'Organised by: Sharjah Kennel Club'
         description: 'This is a beauty contest for hunting dogs where winners will be given prizes'
-  -
-    type: set
-    attrs:
-      id: vcomp006
-      values:
-        type: call_to_action
-        style_config:
-          padding: small
-          color: lite-primary
-          size: normal
-          variant: right_image
-        heading:
-          text: 'MONO BREED SHOW'
-          size: small
-          color: black
-          tag: h2
-          uppercase: false
-        section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
-        description: 'This Competition will be limited to American Bullies and Working Dog Groups. Specialist Judges for those breeds will judge and award titles. All participants will receive certificates. Winners will be awarded trophies and medals along with certificates.'
+        buttons:
+          -
+            id: memtzklu
+            dynamic_button:
+              button: 'https://app.dogshow.pro/dogshowinfo.php?showid=128'
+              text: 'Apply Here'
+              button_options:
+                style: filled
+                color: primary
+                size: large
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
   -
     type: set
     attrs:
@@ -153,7 +144,23 @@ page_builder:
           tag: h2
           uppercase: false
         section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
-        description: 'Competition for single breed.'
+        description: 'Competition for group breed.'
+        image: competitions/snapedit_1755850428182.jpeg
+        buttons:
+          -
+            id: memtzwag
+            dynamic_button:
+              button: 'https://app.dogshow.pro/dogshowinfo.php?showid=127'
+              text: 'Apply Here'
+              button_options:
+                style: filled
+                color: black
+                size: large
+                new_tab: false
+                icon: null
+                icon_position: start
+            type: button
+            enabled: true
   -
     type: set
     attrs:
@@ -166,7 +173,7 @@ page_builder:
           size: normal
           variant: right_image
         heading:
-          text: 'INTERNATIONAL CAT COMPEITION & CAT BEAUTY CONTEST'
+          text: 'INTERNATIONAL CAT COMPETITION & CAT BEAUTY CONTEST'
           size: small
           color: black
           tag: h2
@@ -205,7 +212,7 @@ page_builder:
           size: normal
           variant: right_image
         heading:
-          text: 'PET GROOMING WORKSHOP & COMPETITION'
+          text: 'PET GROOMING COMPETITION'
           size: small
           color: black
           tag: h2
@@ -216,5 +223,5 @@ page_builder:
 fine_seo_title: 'Visitor Competitions'
 fine_seo_preview: 'Visitor Competitions'
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755521217
+updated_at: 1755867386
 ---

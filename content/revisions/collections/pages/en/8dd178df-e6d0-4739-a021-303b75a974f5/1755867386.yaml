@@ -1,5 +1,5 @@
-action: revision
-date: 1755853238
+action: publish
+date: 1755867386
 user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
 attributes:
   id: 8dd178df-e6d0-4739-a021-303b75a974f5
@@ -82,6 +82,21 @@ attributes:
             section_label: 'Organised by: Emirates Kennel Union (EKC) & Showline'
             description: 'This Competition is for all dog breeds. National judges will select the most beautiful dogs, cutest Puppy, and most popular dog etc, classified under small, medium and large groups. All participants will receive certificates. Winners will receive Medals & Prizes.'
             image: fun-dog-show.jpeg
+            buttons:
+              -
+                id: memtx476
+                dynamic_button:
+                  button: 'https://www.emirateskennelclub.com/current-event'
+                  text: 'Apply Here'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: large
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
       -
         type: set
         attrs:
@@ -102,6 +117,21 @@ attributes:
               uppercase: false
             section_label: 'Organised by: Sharjah Kennel Club'
             description: 'This is a beauty contest for hunting dogs where winners will be given prizes'
+            buttons:
+              -
+                id: memtzklu
+                dynamic_button:
+                  button: 'https://app.dogshow.pro/dogshowinfo.php?showid=128'
+                  text: 'Apply Here'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: large
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
       -
         type: set
         attrs:
@@ -123,6 +153,21 @@ attributes:
             section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
             description: 'Competition for group breed.'
             image: competitions/snapedit_1755850428182.jpeg
+            buttons:
+              -
+                id: memtzwag
+                dynamic_button:
+                  button: 'https://app.dogshow.pro/dogshowinfo.php?showid=127'
+                  text: 'Apply Here'
+                  button_options:
+                    style: filled
+                    color: black
+                    size: large
+                    new_tab: false
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
       -
         type: set
         attrs:
@@ -135,7 +180,7 @@ attributes:
               size: normal
               variant: right_image
             heading:
-              text: 'INTERNATIONAL CAT COMPEITION & CAT BEAUTY CONTEST'
+              text: 'INTERNATIONAL CAT COMPETITION & CAT BEAUTY CONTEST'
               size: small
               color: black
               tag: h2
@@ -184,7 +229,6 @@ attributes:
             image: competitions/download-(3).jpg
     fine_seo_title: 'Visitor Competitions'
     fine_seo_preview: 'Visitor Competitions'
-    parent: 8d69b283-c7f1-4131-8fca-237b82c25d3b
     fine_seo_description: null
     fine_seo_image: null
     header_scripts_available_on: {  }
