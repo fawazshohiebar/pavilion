@@ -7,7 +7,6 @@ page_builder:
     type: set
     attrs:
       id: meeeetnn
-      enabled: false
       values:
         type: divider
         space_height: 20px
@@ -15,7 +14,6 @@ page_builder:
     type: set
     attrs:
       id: meeefb04
-      enabled: false
       values:
         type: heading_group
         heading:
@@ -33,7 +31,6 @@ page_builder:
     type: set
     attrs:
       id: meeef0pp
-      enabled: false
       values:
         type: html_block
         available_on:
@@ -42,14 +39,13 @@ page_builder:
         code:
           code: |-
             <div class="flex items-center justify-center">
-            <iframe width="660" height="415" src="https://www.youtube.com/embed/D2cRhxbS0tA?si=gBZAJl5m9orOnXET&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="660" height="415" src="https://www.youtube.com/embed/bm5_KZPdb74?si=gNJP6CmaTWrOVv6-&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           mode: htmlmixed
   -
     type: set
     attrs:
       id: meeehgkl
-      enabled: false
       values:
         type: divider
         space_height: 180px
@@ -263,5 +259,5 @@ fine_seo_is_title_custom: true
 fine_seo_description: 'تراث يتجدد يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض'
 fine_seo_preview: الرئيسية
 updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
-updated_at: 1755449637
+updated_at: 1755962379
 ---
