@@ -8,8 +8,8 @@ event_date: '2025-09-03'
 agendas:
   - event-programme
 halls: hall-7
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756204270
+updated_by: 3ed25610-b330-4ffc-9745-86cde3be2105
+updated_at: 1756205017
 duplicated_from: ba71ead6-0f87-44b3-a139-478866047add
 ---
 <p>Master artist Nasser Fouda will demonstrate the traditional art of marquetry, creating intricate wood inlay designs inspired by Emirati hunting scenes, falcons, and Arabian horses.</p>
