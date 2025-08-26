@@ -30,7 +30,7 @@ page_builder:
           **QR Code**: Sent to your email after purchase – required for entry
           **ADIHEX Entrance Tickets**: Not included – tickets must be purchased separately
 
-          Please select your preferred parking location below
+          Please book your parking and find your preferred parking location below.
         buttons:
           -
             id: mdy1leik
@@ -56,7 +56,7 @@ page_builder:
                 color: primary
                 size: medium
                 new_tab: true
-                icon: null
+                icon: map-pin
                 icon_position: start
             type: button
             enabled: true
@@ -70,7 +70,7 @@ page_builder:
                 color: primary
                 size: medium
                 new_tab: true
-                icon: null
+                icon: map-pin
                 icon_position: start
             type: button
             enabled: true
@@ -98,9 +98,7 @@ page_builder:
           **Price:** AED 20 per vehicle (pay onsite) or buy online to save the hassle by clicking below.
           **ADIHEX Entrance Tickets:** Not included – tickets must be purchased separately
 
-          Please review the parking <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">General Terms & Conditions</a> before your visit.
-
-          Please select your preferred parking location below:
+          Please book your parking and find your preferred parking location below.
         buttons:
           -
             id: mdy1leik
@@ -126,7 +124,7 @@ page_builder:
                 color: primary
                 size: medium
                 new_tab: true
-                icon: null
+                icon: map-pin
                 icon_position: start
             type: button
             enabled: true
@@ -140,7 +138,7 @@ page_builder:
                 color: primary
                 size: medium
                 new_tab: true
-                icon: null
+                icon: map-pin
                 icon_position: start
             type: button
             enabled: true
@@ -182,7 +180,7 @@ page_builder:
                 color: primary
                 size: medium
                 new_tab: true
-                icon: null
+                icon: map-pin
                 icon_position: start
             type: button
             enabled: true
@@ -196,7 +194,7 @@ page_builder:
                 color: primary
                 size: medium
                 new_tab: true
-                icon: null
+                icon: map-pin
                 icon_position: start
             type: button
             enabled: true
@@ -213,6 +211,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1755863977
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1756186106
 ---
