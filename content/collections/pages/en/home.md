@@ -280,6 +280,7 @@ page_builder:
     type: set
     attrs:
       id: me6z1rue
+      enabled: false
       values:
         type: popup_image
         popup_width: 600
@@ -303,6 +304,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1756053002
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1756192234
 ---
