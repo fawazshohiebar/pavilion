@@ -1,15 +1,14 @@
 ---
 id: cd6686be-3281-479b-90bd-5cad028d2e66
-published: false
 blueprint: session
-title: 'YOUNG FALCONERS’ VILLAGE (Duplicated) (5)'
+title: 'YOUNG FALCONERS’ VILLAGE'
 start_time: '21:00'
 end_time: '21:45'
-event_date: '2025-09-05'
+event_date: '2025-09-07'
 agendas:
   - event-programme
 halls: icc-hall-features
-updated_by: 3ed25610-b330-4ffc-9745-86cde3be2105
-updated_at: 1756203147
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1756329756
 duplicated_from: 99d3e0d6-445a-41ed-990f-6b8817543eac
 ---
