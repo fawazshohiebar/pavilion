@@ -1,5 +1,5 @@
-action: revision
-date: 1756278632
+action: publish
+date: 1756278808
 user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
 attributes:
   id: 8ab494c3-b905-44b4-b2f1-ec25f4fe8bed
@@ -195,7 +195,7 @@ attributes:
               tag: h2
               uppercase: false
             description: |-
-              Additional Parking is available at ADNEC Car Parks D and E — and the best part? It’s now completely free!
+              Additional Parking is available at ADNEC Car Parks D and E — and it's free!
 
               Parking is free of charge and available on a first-come, first-served basis — so we still recommend arriving early to secure your spot.
 
@@ -252,4 +252,3 @@ attributes:
     body_end_scripts:
       code: null
       mode: htmlmixed
-    parent: 8d69b283-c7f1-4131-8fca-237b82c25d3b

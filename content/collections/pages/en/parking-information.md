@@ -145,12 +145,40 @@ page_builder:
   -
     type: set
     attrs:
-      id: mel2nbw1
+      id: metmg1cv
       values:
         type: call_to_action
         style_config:
           padding: small
           color: white
+          size: normal
+          variant: no_image
+        heading:
+          text: 'Online Parking Booking'
+          size: small
+          color: primary
+          tag: h2
+          uppercase: false
+        description: |-
+          When booking online, simply register your license plate and a QR code will be sent to your email for hassle-free entry and exit at ADNEC parking facilities.
+
+          **How to Enter Your License Plate:**
+          Abu Dhabi: Category 50, number 12345 → enter 5012345
+          Dubai: Category A, number 12345 → enter A12345
+          Sharjah: Category 1, number 12345 → enter 112345
+
+          **Important Notes:**
+          The QR code is mandatory for accessing the parking facilities.
+          ADIHEX entrance tickets are not included with parking reservations and must be purchased separately.
+  -
+    type: set
+    attrs:
+      id: mel2nbw1
+      values:
+        type: call_to_action
+        style_config:
+          padding: small
+          color: lite-secondary
           size: normal
           variant: no_image
         heading:
@@ -160,15 +188,16 @@ page_builder:
           tag: h2
           uppercase: false
         description: |-
-          Additional Standard Parking is available at ADNEC Car Parks D and E for AED 20.
-          Parking is on a first-come, first-served basis – so we recommend arriving early.
+          Additional Parking is available at ADNEC Car Parks D and E — and it's free!
 
-          **Price:** AED 20 per vehicle (pay onsite) for Car Parks D and E.
-          **ADIHEX Entrance Tickets:** Not included – tickets must be purchased separately
+          Parking is free of charge and available on a first-come, first-served basis — so we still recommend arriving early to secure your spot.
+
+          **ADIHEX Entrance Tickets:** Please note that parking does not include entrance tickets. Tickets must be purchased separately.
+          **Before Your Visit:** Make sure to review the General Terms & Conditions related to parking and entry.
 
           Please review the parking <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">General Terms & Conditions</a> before your visit.
 
-          Please select your preferred parking location below:
+          Please select your preferred parking location below.
         buttons:
           -
             id: mdy1nl92
@@ -212,5 +241,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756186106
+updated_at: 1756278807
 ---
