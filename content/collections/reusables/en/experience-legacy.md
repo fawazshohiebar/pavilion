@@ -49,13 +49,13 @@ info_cards:
   -
     id: mdvoanv5
     icon_type: heroicon
-    heading: '13 Sectors, Endless Experiences'
-    description: 'Explore dedicated zones across 13 unique sectors, including hunting tools, outdoor gear, equestrianism, conservation, arts, and heritage — each offering products and niche experiences.'
+    heading: '15 Sectors, Endless Experiences'
+    description: 'Explore dedicated zones across 15 unique sectors, including hunting tools, outdoor gear, equestrianism, conservation, arts, and heritage — each offering products and niche experiences.'
     type: info_card
     enabled: true
     icon: gift
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1754923809
+updated_at: 1756301972
 hero_actions:
   -
     id: mdvob081

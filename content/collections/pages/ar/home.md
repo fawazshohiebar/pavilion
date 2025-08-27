@@ -69,6 +69,7 @@ page_builder:
     type: set
     attrs:
       id: me3vjibx
+      enabled: false
       values:
         type: banner
         image: banners/2.-falcon-auction-2000x400-1.jpg
@@ -264,5 +265,5 @@ fine_seo_is_title_custom: true
 fine_seo_description: 'تراث يتجدد يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض'
 fine_seo_preview: الرئيسية
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756192292
+updated_at: 1756301667
 ---
