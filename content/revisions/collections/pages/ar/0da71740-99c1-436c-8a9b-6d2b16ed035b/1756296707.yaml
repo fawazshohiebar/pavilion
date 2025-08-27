@@ -1,0 +1,40 @@
+action: publish
+date: 1756296707
+user: ac775259-f1c4-4a12-b768-668149cb0e1a
+attributes:
+  id: 0da71740-99c1-436c-8a9b-6d2b16ed035b
+  slug: adihex-2025-packages
+  published: true
+  date: null
+  data:
+    title: 'باقات معرض أبوظبي الدولي للصيد والفروسية 2025'
+    page_builder:
+      -
+        type: set
+        attrs:
+          id: metss9m7
+          values:
+            type: form
+            heading:
+              heading:
+                text: 'باقات معرض أبوظبي الدولي للصيد والفروسية 2025'
+                size: small
+                color: black
+                tag: p
+                uppercase: false
+              subheading:
+                text: 'املأ النموذج أدناه، وسيتواصل معكم أحد أعضاء فريق المعرض لتقديم كافة التفاصيل.'
+                size: small
+                color: black
+                tag: p
+                uppercase: false
+              focus_icon: false
+              heading_focus_word: null
+              icon: null
+            form: adihex_2025_packages
+            show_labels: true
+            success_message: 'Thank you, our team will be in touch shortly.'
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
