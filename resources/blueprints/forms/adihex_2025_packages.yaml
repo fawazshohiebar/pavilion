@@ -12,6 +12,8 @@ tabs:
               display: 'First Name'
               localizable: false
               width: 50
+              validate:
+                - required
           -
             handle: last_name
             field:
@@ -20,6 +22,8 @@ tabs:
               display: 'Last Name'
               localizable: false
               width: 50
+              validate:
+                - required
           -
             handle: mobile
             field:
@@ -29,6 +33,8 @@ tabs:
               display: Mobile
               localizable: false
               width: 50
+              validate:
+                - required
           -
             handle: email_address
             field:
@@ -38,6 +44,8 @@ tabs:
               display: 'Email Address'
               localizable: false
               width: 50
+              validate:
+                - required
           -
             handle: country
             field:
@@ -50,13 +58,29 @@ tabs:
               display: Country
               localizable: false
               width: 66
+              validate:
+                - required
           -
             handle: turnstile_token
             field: basics.turnstile_token
           -
-            handle: text_field
+            handle: check_in
             field:
               input_type: date
               type: text
-              display: 'Text Field'
+              display: 'Check In'
               localizable: false
+              width: 50
+              validate:
+                - required
+          -
+            handle: check_out
+            field:
+              input_type: date
+              type: text
+              display: 'Check Out'
+              localizable: false
+              width: 50
+              validate:
+                - required
+                - 'after_or_equal:check_in'
