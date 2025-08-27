@@ -83,6 +83,7 @@ page_builder:
     type: set
     attrs:
       id: me3vjibx
+      enabled: false
       values:
         type: banner
         image: banners/2.-falcon-auction-2000x400-1.jpg
@@ -305,5 +306,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756192234
+updated_at: 1756302403
 ---

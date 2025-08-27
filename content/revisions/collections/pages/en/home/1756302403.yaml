@@ -1,5 +1,5 @@
-action: revision
-date: 1756301652
+action: publish
+date: 1756302403
 user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
 attributes:
   id: home
@@ -313,7 +313,6 @@ attributes:
       code: null
       mode: htmlmixed
     feature_banner_image: null
-    parent: null
     header_scripts_available_on: {  }
     body_start_scripts_available_on: {  }
     body_end_scripts_available_on: {  }
