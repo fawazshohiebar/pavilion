@@ -18,6 +18,7 @@ preferences:
         - agendas
         - status
         - halls
+        - site
       filters:
         agenda_2025:
           display: 'Agenda 2025'
