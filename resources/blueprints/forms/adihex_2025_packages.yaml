@@ -53,3 +53,10 @@ tabs:
           -
             handle: turnstile_token
             field: basics.turnstile_token
+          -
+            handle: text_field
+            field:
+              input_type: date
+              type: text
+              display: 'Text Field'
+              localizable: false
