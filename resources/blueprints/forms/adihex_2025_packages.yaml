@@ -57,12 +57,8 @@ tabs:
               type: select
               display: Country
               localizable: false
-              width: 66
               validate:
                 - required
-          -
-            handle: turnstile_token
-            field: basics.turnstile_token
           -
             handle: check_in
             field:
@@ -70,7 +66,7 @@ tabs:
               type: text
               display: 'Check In'
               localizable: false
-              width: 50
+              width: 33
               validate:
                 - required
           -
@@ -80,7 +76,24 @@ tabs:
               type: text
               display: 'Check Out'
               localizable: false
-              width: 50
+              width: 33
               validate:
                 - required
                 - 'after_or_equal:check_in'
+          -
+            handle: stars
+            field:
+              options:
+                -
+                  key: '4 stars'
+                  value: ⭐️⭐️⭐️⭐️
+                -
+                  key: '5 stars'
+                  value: ⭐️⭐️⭐️⭐️⭐️
+              type: select
+              display: Stars
+              localizable: false
+              width: 33
+          -
+            handle: turnstile_token
+            field: basics.turnstile_token
