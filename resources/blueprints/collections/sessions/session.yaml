@@ -68,7 +68,7 @@ tabs:
               container: collaterals
               type: bard
               display: Content
-              localizable: false
+              localizable: true
               save_html: true
       -
         display: Relations

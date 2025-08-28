@@ -1,0 +1,15 @@
+name: Aziz
+super: true
+id: 437f7be4-645e-4361-9093-565db2600099
+password_hash: $2y$12$lotgAYVtshxwkBcIeoo9sOCUNncSEtpJ/o9nQW/cqWczMKwwN7XNC
+preferences:
+  collections:
+    sessions:
+      columns:
+        - title
+        - site
+        - slug
+        - status
+        - start_time
+        - halls
+        - event_date
