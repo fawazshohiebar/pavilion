@@ -1,6 +1,6 @@
-action: revision
-date: 1755775810
-user: ac775259-f1c4-4a12-b768-668149cb0e1a
+action: publish
+date: 1756377591
+user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
 attributes:
   id: 3a1d90c6-4784-47df-bad6-97fcaab74063
   slug: agenda
@@ -57,4 +57,3 @@ attributes:
     header_scripts_available_on: {  }
     body_start_scripts_available_on: {  }
     body_end_scripts_available_on: {  }
-    parent: home

@@ -12,6 +12,7 @@ page_builder:
     type: set
     attrs:
       id: me7dcj0b
+      enabled: false
       values:
         type: redirect_to
         redirect_to: 'entry::home'
@@ -23,15 +24,14 @@ page_builder:
     type: set
     attrs:
       id: me17i7v1
-      enabled: false
       values:
         type: agenda_component
         start_date: '2025-08-30'
         end_date: '2025-09-07'
         agendas:
-          - knowledge-hub
-          - arena-schedule
           - event-programme
+          - arena-schedule
+          - knowledge-hub
   -
     type: paragraph
     attrs:
@@ -46,5 +46,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755759223
+updated_at: 1756377591
 ---
