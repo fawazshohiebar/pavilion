@@ -1,0 +1,15 @@
+action: publish
+date: 1756369002
+user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+attributes:
+  id: 0d81ed8d-33ff-4eba-8d9a-0cab88e48347
+  slug: visitor-competitions
+  published: true
+  date: null
+  data:
+    title: 'مسابقات الزوار'
+    page_builder:
+      -
+        type: paragraph
+        attrs:
+          textAlign: left

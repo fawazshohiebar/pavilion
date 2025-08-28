@@ -1,0 +1,236 @@
+action: revision
+date: 1756368994
+user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+attributes:
+  id: 8dd178df-e6d0-4739-a021-303b75a974f5
+  slug: visitor-competitions
+  published: true
+  date: null
+  data:
+    blueprint: page
+    title: 'Visitor Competitions'
+    feature_banner_image: galleries/2024_gallery/2024_gallery_10.jpg
+    template: default
+    fine_seo_is_title_custom: false
+    header_scripts:
+      code: null
+      mode: htmlmixed
+    body_start_scripts:
+      code: null
+      mode: htmlmixed
+    body_end_scripts:
+      code: null
+      mode: htmlmixed
+    page_builder:
+      -
+        type: set
+        attrs:
+          id: vcomp001
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: white
+              size: normal
+              variant: left_image
+            heading:
+              text: 'DOG AGILITY CONTEST'
+              size: small
+              color: black
+              tag: h2
+              uppercase: false
+            section_label: 'Organised by: Emirates Kennel Union (EKC) & Showline'
+            description: "This competition tests the agility of dogs. Demonstrations and training tips will be provided by experts to dog owners who will be given trial runs followed by the competition where the winners will be given prizes. The competition will be open for both trained and untrained dogs. The 'Dog Agility Contest' is a thrilling display of speed, agility, and teamwork between dogs and their handlers. This competition will test the dogs' ability to navigate an obstacle course with precision and speed, providing exciting entertainment for all visitors."
+            image: competitions/image.jpg
+      -
+        type: set
+        attrs:
+          id: vcomp002
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: lite-primary
+              size: normal
+              variant: right_image
+            heading:
+              text: 'INTERNATIONAL CHAMPIONSHIP DOG SHOW'
+              size: small
+              color: black
+              tag: h2
+              uppercase: false
+            section_label: 'Organised by: Emirates Kennel Union on August 31 & Sharjah Kennel Club on Sept 7'
+            description: 'This competition is for all breeds where the Best Dog of the Show will be selected at the Best in Show Round. The Best Adult, Best Junior, Best Puppy and Best Veteran in show will be awarded Best in Show Certificates and Trophies.'
+            image: competitions/dog-championship.jpeg
+      -
+        type: set
+        attrs:
+          id: vcomp003
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: white
+              size: normal
+              variant: left_image
+            heading:
+              text: 'FUN DOG SHOW'
+              size: small
+              color: black
+              tag: h2
+              uppercase: false
+            section_label: 'Organised by: Emirates Kennel Union (EKC) & Showline'
+            description: 'This Competition is for all dog breeds. National judges will select the most beautiful dogs, cutest Puppy, and most popular dog etc, classified under small, medium and large groups. All participants will receive certificates. Winners will receive Medals & Prizes.'
+            image: fun-dog-show.jpeg
+            buttons:
+              -
+                id: memtx476
+                dynamic_button:
+                  button: 'https://www.emirateskennelclub.com/current-event'
+                  text: 'Apply Here'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: large
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+      -
+        type: set
+        attrs:
+          id: vcomp005
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: white
+              size: normal
+              variant: left_image
+            heading:
+              text: 'SIGHTHOUND SPECIALTY SHOW'
+              size: small
+              color: black
+              tag: h2
+              uppercase: false
+            section_label: 'Organised by: Sharjah Kennel Club'
+            description: 'This is a beauty contest for hunting dogs where winners will be given prizes'
+            buttons:
+              -
+                id: memtzklu
+                dynamic_button:
+                  button: 'https://app.dogshow.pro/dogshowinfo.php?showid=128'
+                  text: 'Apply Here'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: large
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+      -
+        type: set
+        attrs:
+          id: vcomp007
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: white
+              size: normal
+              variant: left_image
+            heading:
+              text: 'MONO BREED GROUP SHOW'
+              size: small
+              color: black
+              tag: h2
+              uppercase: false
+            section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
+            description: 'Competition for group breed.'
+            image: competitions/snapedit_1755850428182.jpeg
+            buttons:
+              -
+                id: memtzwag
+                dynamic_button:
+                  button: 'https://app.dogshow.pro/dogshowinfo.php?showid=127'
+                  text: 'Apply Here'
+                  button_options:
+                    style: filled
+                    color: black
+                    size: large
+                    new_tab: false
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+      -
+        type: set
+        attrs:
+          id: vcomp008
+          enabled: false
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: lite-primary
+              size: normal
+              variant: right_image
+            heading:
+              text: 'INTERNATIONAL CAT COMPETITION & CAT BEAUTY CONTEST'
+              size: small
+              color: black
+              tag: h2
+              uppercase: false
+            section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
+            description: 'The show will be open to all breeds of cats including local cats. Judges will select Best Male, Best Female and Best Kitten. Other categories like most popular and well groomed cat etc will also be given. Winners will receive trophies, certificates and various other prizes.'
+      -
+        type: set
+        attrs:
+          id: vcomp009
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: white
+              size: normal
+              variant: right_image
+            heading:
+              text: 'PET FASHION SHOW'
+              size: small
+              color: black
+              tag: h2
+              uppercase: false
+            section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
+            description: 'Dogs wearing latest trends in designer garments and accessories, will walk on the catwalk with models. Stage and catwalk will have seating for the audience to enjoy the show.'
+            image: pet-fashion-show.png
+      -
+        type: set
+        attrs:
+          id: vcomp010
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: lite-primary
+              size: normal
+              variant: left_image
+            heading:
+              text: 'PET GROOMING COMPETITION'
+              size: small
+              color: black
+              tag: h2
+              uppercase: false
+            section_label: 'Organised by: Emirates Kennel Club (EKC) & Showline'
+            description: 'An internationally renowned groomer will conduct a workshop for grooming professionals followed by a grooming competition to select the "Best Groomer of the UAE". Winners will receive certificates and prizes.'
+            image: competitions/download-(3).jpg
+    fine_seo_title: 'Visitor Competitions'
+    fine_seo_preview: 'Visitor Competitions'
+    parent: 8d69b283-c7f1-4131-8fca-237b82c25d3b
+    fine_seo_description: null
+    fine_seo_image: null
+    header_scripts_available_on: {  }
+    body_start_scripts_available_on: {  }
+    body_end_scripts_available_on: {  }
