@@ -24,13 +24,13 @@
     {{# Program Selector #}}
     {{ partial:agenda/program_selector }}
     {{# End Program Selector #}}
-    
+
     {{# Loading State #}}
     <div x-show="loading" class="flex justify-center items-center py-20">
         <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600"></div>
         <span class="ml-2 text-gray-600">{{'Loading sessions...' | trans}}</span>
     </div>
-    
+
     {{# Selected Day Daily Agenda Details #}}
     <div x-show="!loading">
         {{ partial:agenda/active_day_sessions }}
@@ -49,23 +49,23 @@
             sessions: [],
             schedule: [],
             loading: false,
-            
+
             init() {
                 this.generateDays();
-                
+
                 // Load initial data
                 this.loadSessions();
-                
+
                 // Watch for changes
                 this.$watch('selectedProgram', () => {
                     this.loadSessions();
                 });
-                
+
                 this.$watch('selectedDay', () => {
                     this.loadSessions();
                 });
             },
-            
+
             generateDays() {
                 const start = new Date(this.startDate);
                 const end = new Date(this.endDate);
@@ -93,36 +93,38 @@
 
                 this.days = days;
             },
-            
+
             getApiUrl() {
                 const selectedDay = this.days[this.selectedDay - 1];
                 const selectedProgram = this.programs[this.selectedProgram];
-                
+
                 if (!selectedDay || !selectedProgram) return '';
-                
+
                 const dateString = selectedDay.fullDate.toISOString().split('T')[0];
-                return `/agenda/${selectedProgram.handle}/${dateString}`;
+                //Pass short locale to API to filter based on site language
+                const locale = '{{ site:short_locale }}';
+                return `/${locale}/agenda/${selectedProgram.handle}/${dateString}`;
             },
-            
+
             async loadSessions() {
                 if (!this.days[this.selectedDay - 1] || !this.programs[this.selectedProgram]) {
                     return;
                 }
-                
+
                 this.loading = true;
-                
+
                 try {
                     const url = this.getApiUrl();
-                    
+
                     const response = await fetch(url);
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);
                     }
-                    
+
                     const sessions = await response.json();
                     this.sessions = sessions;
                     this.generateSchedule();
-                    
+
                 } catch (error) {
                     this.sessions = [];
                     this.schedule = [];
@@ -130,7 +132,7 @@
                     this.loading = false;
                 }
             },
-            
+
             generateSchedule() {
                 if (!this.sessions || this.sessions.length === 0) {
                     this.schedule = [];
@@ -157,10 +159,10 @@
 
                     Object.keys(timeSlots).forEach(timeKey => {
                         const slotTime = this.parse24HourTime(timeKey);
-                        
+
                         // Add session to slot if the slot's time is within the session's duration
                         if (slotTime >= sessionStart && slotTime < sessionEnd) {
-                            
+
                             // Avoid adding duplicates if a session is already in the slot
                             if (timeSlots[timeKey].events.some(event => event.id === (session.slug || session.title))) {
                                 return;
@@ -191,7 +193,7 @@
                         return this.parseTime(a.time) - this.parseTime(b.time);
                     });
             },
-            
+
             formatTime(timeString) {
                 // Convert 24-hour time to 12-hour format with AM/PM
                 const [hours, minutes] = timeString.split(':');
@@ -200,19 +202,19 @@
                 const ampm = hour24 >= 12 ? 'PM' : 'AM';
                 return `${hour12}:${minutes} ${ampm}`;
             },
-            
+
             parseTime(timeString) {
                 // Parse time string for sorting (convert back to 24-hour)
                 const [time, ampm] = timeString.split(' ');
                 const [hours, minutes] = time.split(':');
                 let hour24 = parseInt(hours);
-                
+
                 if (ampm === 'PM' && hour24 !== 12) {
                     hour24 += 12;
                 } else if (ampm === 'AM' && hour24 === 12) {
                     hour24 = 0;
                 }
-                
+
                 return hour24 * 60 + parseInt(minutes);
             },
 
@@ -221,7 +223,7 @@
                 const [hours, minutes] = timeString.split(':');
                 return parseInt(hours) * 60 + parseInt(minutes);
             },
-            
+
             getCurrentDaySchedule() {
                 return this.schedule;
             }

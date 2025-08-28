@@ -12,5 +12,5 @@ use App\Http\Controllers\GetAgendaByDateController;
 Route::permanentRedirect('/', '/ar');
 
 
-Route::get('/agenda/{agenda}/{date}', GetAgendaByDateController::class)->name('show_agenda_by_date');
+Route::get('/{locale}/agenda/{agenda}/{date}', GetAgendaByDateController::class)->name('show_agenda_by_date');
 

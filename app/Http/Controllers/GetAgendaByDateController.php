@@ -5,27 +5,26 @@ namespace App\Http\Controllers;
 use App\Helpers\AgendaHelper;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
-use Statamic\Facades\Site;
 
 class GetAgendaByDateController extends Controller
 {
     /**
      * Handle the incoming request.
      */
-    public function __invoke(Request $request, $agenda, $date)
+    public function __invoke(Request $request, $locale, $agenda, $date)
     {
         /** @var \Statamic\Contracts\Entries\EntryQueryBuilder $query */
         $query = \Statamic\Facades\Entry::query();
 
-        //TODO: It still gets in EN all the time - Get the handle of the current site (e.g., 'en' or 'ar')
-        $currentLocale = Site::current()->handle();
+
 
          $sessions = $query
         ->orderBy('start_time', 'asc')
         ->orderBy('order', 'asc')
         ->where('collection', 'sessions')
         ->whereStatus('published')
-        ->where('site', $currentLocale)
+        //Show agenda based on locale (e.g., 'en' or 'ar')
+        ->where('site', $locale)
         ->whereTaxonomy('agendas::' . $agenda)
         ->whereDate('event_date', Carbon::parse($date)->format('Y-m-d'))
         ->select([
