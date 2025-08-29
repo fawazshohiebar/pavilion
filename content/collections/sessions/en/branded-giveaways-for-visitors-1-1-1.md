@@ -1,6 +1,5 @@
 ---
 id: bc3b9857-8b73-4b21-bb3b-dcfb4270bbbb
-published: false
 blueprint: session
 title: 'Branded Giveaways for Visitors'
 start_time: '11:00'
