@@ -1,6 +1,5 @@
 ---
 id: 2f793572-ed65-437d-935f-a59abc1e8450
-published: false
 blueprint: session
 title: 'Traditional Burqa Design and Coloring Activity'
 start_time: '11:00'
