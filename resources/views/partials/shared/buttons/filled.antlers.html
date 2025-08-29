@@ -24,7 +24,7 @@ $btnColors = [
     title="{{ {slot | strip_tags | trim} ?? {text | strip_tags | trim} }}"
     class="{{final_classes}} {{ icon_position == 'start' ? 'flex-row-reverse' : ''}}"
     {{ slot:attributes }}>
-    <span class="text-nowrap">{{ slot ?? text }}</span>
+    <span class="text-wrap">{{ slot ?? text }}</span>
     {{ if icon }}
         {{heroicon variant="outline" :icon="icon" class="{{ btnSizes[size]['icon'] }} {{(icon | contains('paper-airplane')) ?= 'rtl:rotate-180'}}" }}
     {{ /if }}

@@ -1,0 +1,57 @@
+
+
+
+
+
+
+<div id="ai-banner-popup" class=" popup flex flex-row w-full justify-start lg:justify-center px-5 lg:px-0 py-5 bg-[#827654]  fixed z-99 bottom-0" >
+<a class=" flex flex-col lg:flex-row  gap-2 lg:gap-8   justify-center  " href="https://aisearch.adihex.com/">
+    <div class="flex flex-row gap-4">
+        {{heroicon variant="outline" icon="sparkles" class="h-8 w-8 text-[#fff] ltr:mr-2 rtl:ml-2" }}
+
+        <p class="text-stone-200 text-2xl font-bold"> Ai Search </p>
+    </div>
+
+    <div class="flex flex-row gap-4">
+        <p class="text-stone-200 lg:text-lg text-base font-normal">  Find exhibitors, products, and key information instantly with our AI Search.  </p>
+        {{heroicon variant="outline" icon="arrow-up-right" class="h-8 w-8 text-[#fff] ltr:mr-2 rtl:ml-2" }}
+
+        
+
+    </div>
+</a>
+
+
+<button   class="closepopupp absolute lg:top-1/2 lg:transform lg:-translate-y-1/2 top-[10px] right-0 bg-transparent border-none cursor-pointer p-2" 
+ onclick="closeAIBanner()">
+            {{heroicon variant="outline" icon="x-mark" class="h-8 w-8 text-[#fff] ltr:mr-2 rtl:ml-2" }}
+</button>
+
+</div>
+
+
+
+
+
+
+
+<script>
+function closeAIBanner() {
+    const popup = document.getElementById('ai-banner-popup');
+    if (popup) {
+        popup.style.display = 'none';
+        // Store in sessionStorage to remember user's choice for this session only
+        sessionStorage.setItem('ai-banner-dismissed', 'true');
+    }
+}
+
+// Check if user previously dismissed the banner in this session
+document.addEventListener('DOMContentLoaded', function() {
+    if (sessionStorage.getItem('ai-banner-dismissed') === 'true') {
+        const popup = document.getElementById('ai-banner-popup');
+        if (popup) {
+            popup.style.display = 'none';
+        }
+    }
+});
+</script>

@@ -1,0 +1,209 @@
+title: 'Parking Buttons'
+fields:
+  -
+    handle: buttons_v2
+    field:
+      type: replicator
+      display: 'Buttons V2'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: button
+                  field:
+                    type: link
+                    display: Button
+                    localizable: false
+                    width: 50
+                -
+                  handle: text
+                  field:
+                    type: text
+                    display: Text
+                    localizable: false
+                    width: 50
+                -
+                  handle: text_color
+                  field:
+                    options:
+                      -
+                        key: white
+                        value: white
+                      -
+                        key: '#1e2939'
+                        value: 'Dark Blue'
+                      -
+                        key: '#827654'
+                        value: brown
+                    type: select
+                    display: 'Text Color'
+                    localizable: false
+                    width: 25
+                -
+                  handle: before_icon
+                  field:
+                    options:
+                      -
+                        key: null
+                        value: Default
+                      -
+                        key: home-modern
+                        value: 'Home Modern'
+                      -
+                        key: home
+                        value: Home
+                      -
+                        key: arrow-path
+                        value: 'Arrow Path'
+                      -
+                        key: arrow-right
+                        value: 'Arrow Right'
+                      -
+                        key: arrow-left
+                        value: 'Arrow Left'
+                      -
+                        key: sparkles
+                        value: Sparkles
+                      -
+                        key: envelope
+                        value: Envelope
+                      -
+                        key: chevron-right
+                        value: 'Chevron Right'
+                      -
+                        key: chevron-left
+                        value: 'Chevron Left'
+                      -
+                        key: ticket
+                        value: Ticket
+                      -
+                        key: paper-airplane
+                        value: 'Paper Airplane'
+                      -
+                        key: map
+                        value: Map
+                      -
+                        key: map-pin
+                        value: 'Map Pin'
+                      -
+                        key: megaphone
+                        value: Megaphone
+                      -
+                        key: magnifying-glass
+                        value: 'Magnifying Glass'
+                      -
+                        key: magnifying-glass-plus
+                        value: 'Magnifying Glass Plus'
+                      -
+                        key: globe-asia-australia
+                        value: 'Globe Asia Australia'
+                      -
+                        key: globe-alt
+                        value: 'Globe Alt'
+                      -
+                        key: phone
+                        value: Phone
+                      -
+                        key: check-circle
+                        value: 'Check Circle'
+                      -
+                        key: arrow-down-tray
+                        value: 'Arrow Down Tray'
+                    type: select
+                    display: 'Before Icon'
+                    localizable: false
+                    width: 25
+                -
+                  handle: after_icon
+                  field:
+                    options:
+                      -
+                        key: null
+                        value: Default
+                      -
+                        key: home-modern
+                        value: 'Home Modern'
+                      -
+                        key: home
+                        value: Home
+                      -
+                        key: arrow-path
+                        value: 'Arrow Path'
+                      -
+                        key: arrow-right
+                        value: 'Arrow Right'
+                      -
+                        key: arrow-left
+                        value: 'Arrow Left'
+                      -
+                        key: sparkles
+                        value: Sparkles
+                      -
+                        key: envelope
+                        value: Envelope
+                      -
+                        key: chevron-right
+                        value: 'Chevron Right'
+                      -
+                        key: chevron-left
+                        value: 'Chevron Left'
+                      -
+                        key: ticket
+                        value: Ticket
+                      -
+                        key: paper-airplane
+                        value: 'Paper Airplane'
+                      -
+                        key: map
+                        value: Map
+                      -
+                        key: map-pin
+                        value: 'Map Pin'
+                      -
+                        key: megaphone
+                        value: Megaphone
+                      -
+                        key: magnifying-glass
+                        value: 'Magnifying Glass'
+                      -
+                        key: magnifying-glass-plus
+                        value: 'Magnifying Glass Plus'
+                      -
+                        key: globe-asia-australia
+                        value: 'Globe Asia Australia'
+                      -
+                        key: globe-alt
+                        value: 'Globe Alt'
+                      -
+                        key: phone
+                        value: Phone
+                      -
+                        key: check-circle
+                        value: 'Check Circle'
+                      -
+                        key: arrow-down-tray
+                        value: 'Arrow Down Tray'
+                    type: select
+                    display: 'After Icon'
+                    localizable: false
+                    width: 25
+                -
+                  handle: background_color
+                  field:
+                    options:
+                      -
+                        key: '#F5F5F1'
+                        value: 'Light Brown'
+                      -
+                        key: '#FFF'
+                        value: white
+                    taggable: true
+                    type: select
+                    display: 'Background Color'
+                    localizable: false
+                    width: 25

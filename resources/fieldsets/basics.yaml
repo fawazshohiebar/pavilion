@@ -67,6 +67,9 @@ fields:
         -
           key: arrow-down-tray
           value: null
+        -
+          key: lock-closed
+          value: null
       type: select
       display: Icon
       taggable: true

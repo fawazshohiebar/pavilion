@@ -158,6 +158,7 @@ export default {
             selectionStart: 0,
             selectionEnd: 0,
             sizes: [
+                { key: 'xsmall', label: 'XS' },
                 { key: 'small', label: 'S' },
                 { key: 'large', label: 'L' },
                 { key: 'xlarge', label: 'XL' }

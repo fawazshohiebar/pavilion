@@ -1,0 +1,100 @@
+{{?
+  $blockStyles = [
+    'primary' => 'bg-primary-600 text-white kinda-dark',
+    'secondary' => 'bg-secondary-600 text-white kinda-dark',
+    'gray' => 'bg-gray-200 text-gray-800',
+    'lite-primary' => 'bg-primary-50 text-primary-600',
+    'lite-secondary' => 'bg-secondary-50 text-secondary-600',
+    'transparent' => 'bg-transparent text-gray-800 border border-gray-200',
+    'black' => 'bg-black text-white kinda-dark',
+    'white' => 'bg-white text-gray-900',
+    'default' => 'bg-white text-gray-900',
+];
+$blockPadding = [
+  'xlarge' => 'py-16 md:py-20 lg:py-24',
+  'large' => 'py-14 md:py-18 lg:py-22',
+  'medium' => 'py-10 md:py-14 lg:py-18',
+  'small' => 'py-8 md:py-12 lg:py-16',
+  'none' => 'py-0',
+];
+
+?}}
+
+{{ 
+    $size = style_config:size ?? 'normal';
+$isCompact = $size === 'compact';
+    $variant = style_config:variant ?? 'left_image'; 
+}}
+
+{{# 
+style_config:variant options: 'cover', 'no_image', 'left_image', 'right_image'
+ #}}
+
+<section id="{{ slug }}" class="{{ blockPadding[{style_config:padding ?? 'medium'}] }} {{ blockStyles[{style_config:color ?? 'default'}] }} relative overflow-hidden">
+
+        <!-- Standard left/right image variants -->
+        <!-- Decorative Elements -->
+        <div class="absolute {{ $isCompact ? '-right-10 -top-10 w-40 h-40' : '-right-20 -top-20 w-72 h-72' }} rounded-full bg-[#827654] opacity-5"></div>
+        <div class="absolute {{ $isCompact ? '-left-10 -bottom-10 w-48 h-48' : '-left-20 -bottom-20 w-80 h-80' }} rounded-full bg-[#827654] opacity-5"></div>
+
+        <div class="adnec-container z-10">
+            <!-- Content Section -->
+            <div class="w-full  flex  flex-col items-center " x-data="{}"  >
+                    <div class="flex items-center {{ $isCompact ? 'mb-2' : 'mb-4' }}">
+                        <div class="{{ $isCompact ? 'w-8 h-0.5' : 'w-12 h-1' }} bg-[#827654]"></div>
+                        <span
+                            class=" text-[#827654] font-medium uppercase ltr:tracking-wider {{ $isCompact ? 'text-sm' : '' }}">{{ section_label }}</span>
+                    </div>         
+                    {{ heading }}
+                        {{ partial:sets/heading :text="text" :size="size" :color="color" :tag="tag" :uppercase="uppercase" }}
+                    {{ /heading }}
+
+
+
+
+                    <div class="grid    grid-cols-1  md:grid-cols-2    xl:grid-cols-3          w-full gap-10">
+                {{parking_cards}}
+
+                    <div class="border-[#CDCDCD] border-1 rounded-[5px] p-5 " style="background-color: {{card_color}};">
+                
+                        {{parking_heading}}
+                         {{ partial:sets/heading :text="text" :size="size" :color="color" :tag="tag" :uppercase="uppercase" }}
+                    {{/parking_heading}}
+
+
+                   <div class="text-xl  md:text-2xl lg:text-3xl mb-4"> 
+            {{parking_prices}}
+         </div>
+
+
+                        {{ if buttons }}
+                        <div class="flex mb-4 flex-col sm:flex-row {{ $isCompact ? 'gap-2' : 'gap-4' }}">
+                            {{ buttons }}
+                                {{ partial:shared/button }}
+                            {{ /buttons }}
+                              </div>
+                        {{ /if }}
+              
+
+                    <div class="text-gray-700 {{ $isCompact ? 'mb-3' : 'mb-6' }} leading-relaxed prose {{ $isCompact ? 'prose-sm' : 'prose-lg' }}">
+                        {{ description }}
+                    </div>
+                 
+                        <div class="flex flex-col   {{ $isCompact ? 'gap-2' : 'gap-4' }}">
+                            {{ buttons_v2 }}
+                                {{ partial:sets/parking_buttons }}
+                            {{ /buttons_v2 }}
+                        </div>
+
+                </div>
+
+             {{/parking_cards}}
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+</section>

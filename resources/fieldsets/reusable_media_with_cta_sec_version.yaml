@@ -1,0 +1,82 @@
+title: 'Reusable Media with CTA Sec Version'
+fields:
+  -
+    handle: style_config
+    field:
+      available_colors:
+        - white
+        - transparent
+        - gray
+        - lite-primary
+        - lite-secondary
+      variant_labels: |-
+        left_image|Left Image
+        right_image|Right Image
+        no_image|No Image
+        cover|Cover
+      default_variant: image_left
+      type: style_config
+      display: 'Style Config'
+      localizable: false
+  -
+    handle: heading
+    field:
+      color: black
+      tag: h1
+      type: colored_text
+      display: Heading
+      localizable: false
+  -
+    handle: parking_cards
+    field:
+      type: replicator
+      display: 'Parking Cards'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: card_color
+                  field:
+                    type: select
+                    display: 'Card Color'
+                    localizable: false
+                    options:
+                      -
+                        key: '#f5f5f1'
+                        value: 'light brown'
+                      -
+                        key: white
+                        value: white
+                      -
+                        key: '#f3f6f8'
+                        value: 'light blue'
+                -
+                  handle: parking_heading
+                  field:
+                    color: black
+                    tag: h2
+                    type: colored_text
+                    display: 'Parking Heading'
+                    localizable: false
+                -
+                  handle: buttons
+                  field: basics.buttons
+                -
+                  handle: parking_prices
+                  field:
+                    type: markdown
+                    display: 'Parking Prices'
+                    localizable: false
+                -
+                  handle: description
+                  field:
+                    type: markdown
+                    display: Description
+                    localizable: false
+                -
+                  import: parking_buttons
