@@ -1,3 +1,12 @@
 name: 'Abdulaziz Leila'
 super: true
 id: c970e8d9-e297-424a-bad0-93b7dab4d61d
+preferences:
+  collections:
+    sponsors:
+      columns:
+        - title
+        - sponsor_level
+        - site
+        - slug
+        - status
