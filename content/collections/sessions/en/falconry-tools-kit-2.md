@@ -1,5 +1,6 @@
 ---
 id: ef47876f-c135-4bfe-b7e4-b3eddb8a3ab2
+published: false
 blueprint: session
 title: 'Falconry Tools & Kit'
 start_time: '13:00'

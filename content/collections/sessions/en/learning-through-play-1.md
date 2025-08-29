@@ -1,5 +1,6 @@
 ---
 id: 939bd28e-bafd-43f7-9305-bc65fd274f0d
+published: false
 blueprint: session
 title: 'Learning Through Play'
 start_time: '19:00'

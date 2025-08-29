@@ -1,5 +1,6 @@
 ---
 id: 95c4bed1-10b0-417d-a53b-7a09b5a12577
+published: false
 blueprint: session
 title: 'Artist of the Future'
 start_time: '12:00'

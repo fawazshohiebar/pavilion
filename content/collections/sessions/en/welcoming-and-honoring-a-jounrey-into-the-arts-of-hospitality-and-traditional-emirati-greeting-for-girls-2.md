@@ -1,5 +1,6 @@
 ---
 id: 329e5e61-faee-4b03-818d-27f6a33ca591
+published: false
 blueprint: session
 title: 'Welcoming and Honoring | A Jounrey into the Arts of Hospitality and Traditional Emirati Greeting for Girls'
 start_time: '15:00'

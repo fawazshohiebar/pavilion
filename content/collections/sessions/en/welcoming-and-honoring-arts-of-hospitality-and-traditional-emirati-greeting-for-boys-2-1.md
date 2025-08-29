@@ -1,5 +1,6 @@
 ---
 id: 8f8eb8d2-35ee-477e-bd6f-6b590f0e94e5
+published: false
 blueprint: session
 title: 'Welcoming and Honoring | Arts of Hospitality and Traditional Emirati Greeting for Boys'
 start_time: '13:00'

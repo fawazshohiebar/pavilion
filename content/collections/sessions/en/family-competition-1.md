@@ -1,5 +1,6 @@
 ---
 id: 66a6d40c-304a-43ce-9a99-ce41d78ffd81
+published: false
 blueprint: session
 title: 'Family Competition'
 start_time: '16:30'

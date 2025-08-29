@@ -1,5 +1,6 @@
 ---
 id: ec84d81d-ff60-4b03-be5a-12ba8f649175
+published: false
 blueprint: session
 title: 'Archery Range activated b y UAE Archery Federation'
 start_time: '11:00'

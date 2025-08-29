@@ -1,5 +1,6 @@
 ---
 id: d799ca00-3c02-4892-a442-538b6e542fe7
+published: false
 blueprint: session
 title: 'My Desert Journey Book'
 start_time: '11:30'

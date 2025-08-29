@@ -1,5 +1,6 @@
 ---
 id: 30a030b0-17ed-43ab-8983-0b99840dadcc
+published: false
 blueprint: session
 title: 'Story Circle: "Tales from the Desert"'
 start_time: '12:30'

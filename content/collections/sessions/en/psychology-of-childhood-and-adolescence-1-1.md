@@ -1,5 +1,6 @@
 ---
 id: 4e7ed296-e050-4292-9d2a-35a9b319e900
+published: false
 blueprint: session
 title: 'Psychology of Childhood and Adolescence'
 start_time: '17:30'
