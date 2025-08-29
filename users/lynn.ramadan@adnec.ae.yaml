@@ -12,3 +12,4 @@ preferences:
         - start_time
         - status
         - site
+      per_page: 500
