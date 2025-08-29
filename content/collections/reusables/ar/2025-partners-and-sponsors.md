@@ -80,6 +80,12 @@ medium_sposnsors:
     medium_sponsor_title: 'راعي ألاسلحة'
     type: new_set
     enabled: true
+  -
+    id: mewpnjg5
+    medium_sponsors_logos: adnoc-logo-updated.png
+    medium_sponsor_title: 'شريك الفعاليات – قرية الصقار الصغير'
+    type: new_set
+    enabled: true
 normal_sponsors:
   -
     id: mdwyoks0
@@ -130,5 +136,5 @@ normal_sponsors:
     type: new_set
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755065973
+updated_at: 1756464666
 ---

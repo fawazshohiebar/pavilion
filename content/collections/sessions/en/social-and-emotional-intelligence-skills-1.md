@@ -1,5 +1,6 @@
 ---
 id: 8e02ccfa-dddb-4c66-9c6f-b2de8fe307a8
+published: false
 blueprint: session
 title: 'Social and Emotional Intelligence Skills'
 start_time: '17:00'

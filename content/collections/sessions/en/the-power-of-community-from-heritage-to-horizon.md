@@ -6,7 +6,10 @@ start_time: '14:00'
 end_time: '14:30'
 event_date: '2025-08-30'
 updated_by: 1353420a-c76f-4594-9476-b140cd6ac39e
-updated_at: 1756359629
+updated_at: 1756477657
 agendas:
   - knowledge-hub
+speakers:
+  - e47d4f53-87cb-4dd9-9a7d-a199b63f97d7
+halls: hall-7
 ---

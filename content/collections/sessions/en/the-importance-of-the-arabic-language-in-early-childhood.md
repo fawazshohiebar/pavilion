@@ -1,7 +1,7 @@
 ---
 id: 2753a58d-b6b8-429a-9b21-396b0787e3bb
 blueprint: session
-title: 'The Importance of the Arabic Language in Early Childhood'
+title: 'The Importance of Arabic in Early Childhood'
 start_time: '13:00'
 end_time: '14:00'
 event_date: '2025-09-02'
@@ -10,6 +10,6 @@ speakers:
 agendas:
   - knowledge-hub
 halls: hall-7
-updated_by: 1353420a-c76f-4594-9476-b140cd6ac39e
-updated_at: 1756359662
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1756471715
 ---

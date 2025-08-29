@@ -26,6 +26,13 @@ preferences:
             site:
               site: en
       per_page: 500
+    sponsors:
+      columns:
+        - title
+        - sponsor_level
+        - site
+        - slug
+        - status
   forms:
     book_your_stand:
       per_page: 100

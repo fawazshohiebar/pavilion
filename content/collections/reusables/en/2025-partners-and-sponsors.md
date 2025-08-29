@@ -70,6 +70,17 @@ medium_sposnsors:
     medium_sponsor_title: 'Weaponry Sponsor'
     type: new_set
     enabled: true
+  -
+    id: mewjvqai
+    medium_sponsors_logos: adnoc-logo-updated.png
+    medium_sponsor_title: "Young Falconer's Village Feature Partner"
+    type: new_set
+    enabled: true
+  -
+    id: mewjx7yh
+    medium_sponsor_title: 'Official Media Partner'
+    type: new_set
+    enabled: false
 normal_sponsors:
   -
     id: mdwyoks0
@@ -119,8 +130,8 @@ normal_sponsors:
     normal_sponsor_title: 'Fragrance Sponsor'
     type: new_set
     enabled: true
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755066014
+updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
+updated_at: 1756464810
 heading_group:
   heading:
     text: '2025 PARTNERS AND SPONSORS'

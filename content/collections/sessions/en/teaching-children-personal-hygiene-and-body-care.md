@@ -1,5 +1,6 @@
 ---
 id: 87125c2f-448b-42e4-b453-60c6d317afcb
+published: false
 blueprint: session
 title: 'Teaching Children Personal Hygiene and Body Care'
 start_time: '19:30'

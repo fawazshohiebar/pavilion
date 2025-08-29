@@ -4,3 +4,9 @@ updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
 updated_at: 1754552398
 blueprint: agenda
 order: 20
+localizations:
+  ar:
+    title: 'جدول الآرينا'
+    slug: arena-schedule
+    updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
+    updated_at: 1756467090

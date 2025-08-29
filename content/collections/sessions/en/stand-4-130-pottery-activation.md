@@ -1,5 +1,6 @@
 ---
 id: 0ef876df-75ea-4249-8ef1-1a29d2366edd
+published: false
 blueprint: session
 title: 'Stand 4-130 Pottery Activation'
 start_time: '11:00'

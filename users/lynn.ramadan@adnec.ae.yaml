@@ -1,0 +1,15 @@
+name: 'Lynn Ramadan'
+roles:
+  - conference_manager
+id: 0681df41-06fa-45f0-b06b-9d732b05b763
+preferences:
+  collections:
+    sessions:
+      columns:
+        - title
+        - event_date
+        - agendas
+        - start_time
+        - status
+        - site
+      per_page: 500

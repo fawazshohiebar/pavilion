@@ -8,7 +8,7 @@ event_date: '2025-09-04'
 agendas:
   - arena-schedule
 halls: arena
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755722217
+updated_by: 3ed25610-b330-4ffc-9745-86cde3be2105
+updated_at: 1756466726
 duplicated_from: b092b96c-171b-4882-8ea2-04a43663f756
 ---

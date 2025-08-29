@@ -1,5 +1,6 @@
 ---
 id: 48cc389e-3358-4841-9227-ad1e967e197d
+published: false
 blueprint: session
 title: 'Wild Faces: Design your Animal Mask'
 start_time: '10:30'
