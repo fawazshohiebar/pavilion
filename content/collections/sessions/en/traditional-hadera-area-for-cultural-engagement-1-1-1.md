@@ -1,6 +1,5 @@
 ---
 id: 63cf3e22-8942-41c2-9fb4-a3519ced210a
-published: false
 blueprint: session
 title: 'Traditional “Hadera” Area for Cultural Engagement'
 start_time: '11:00'

@@ -1,15 +1,15 @@
 ---
-id: 0706596b-304a-4c13-be75-d1b5ceadad21
+id: f9bbb630-582d-4760-b954-957d5f308411
 published: false
 blueprint: session
 title: 'Falconry Education Activities for Children'
 start_time: '11:00'
 end_time: '22:00'
-event_date: '2025-09-01'
+event_date: '2025-09-03'
 agendas:
   - event-programme
 halls: atrium
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756501038
-duplicated_from: 1d8b3c4c-45f4-4f88-b801-a17d56ce888e
+updated_at: 1756501139
+duplicated_from: 564cf88d-ce82-411f-b6f7-c9616e06b75c
 ---
