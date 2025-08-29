@@ -1,6 +1,5 @@
 ---
 id: e69c0676-bf3a-4ea5-bb02-1f4d2ee54781
-published: false
 blueprint: session
 title: 'Arabic Alphabet Adventure - Tabletop Board Game'
 start_time: '12:30'
