@@ -204,7 +204,7 @@ page_builder:
           padding: small
           color: white
           size: normal
-          variant: left_image
+          variant: right_image
         heading:
           text: 'ورش الترخيم والرسم الجداري'
           size: small
@@ -287,5 +287,5 @@ page_builder:
     attrs:
       textAlign: left
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755231388
+updated_at: 1756528328
 ---
