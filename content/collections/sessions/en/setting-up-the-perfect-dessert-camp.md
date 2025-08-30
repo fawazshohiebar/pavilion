@@ -9,5 +9,6 @@ agendas:
   - event-programme
 halls: hall-5-010
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756147595
+updated_at: 1756539470
 ---
+<p>Alhor Camping &amp; Hunting Tools</p>

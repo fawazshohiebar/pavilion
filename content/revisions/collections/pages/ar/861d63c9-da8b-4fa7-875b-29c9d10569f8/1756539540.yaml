@@ -1,0 +1,10 @@
+action: publish
+date: 1756539540
+user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+attributes:
+  id: 861d63c9-da8b-4fa7-875b-29c9d10569f8
+  slug: agenda
+  published: true
+  date: null
+  data:
+    title: 'جدول الفعاليات'
