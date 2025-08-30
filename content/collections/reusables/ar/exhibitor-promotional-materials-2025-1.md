@@ -4,7 +4,7 @@ origin: 715d825e-e5f4-4358-b20d-90194373e9fc
 title: 'Exhibitor Promotional Materials 2025 (Duplicated)'
 heading:
   heading:
-    text: 'مواد ترويجية للعارضين'
+    text: الارشادات
     size: small
     color: primary
     tag: p
@@ -38,6 +38,6 @@ main_activities:
 featured_activities:
   -
     id: mdy7osn0
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1756540702
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1756550769
 ---
