@@ -17,7 +17,7 @@ main_activities:
   -
     id: madgpfr4
     icon: arrow-down-tray
-    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/english-guidelines/5.-arts-&-crafts-guidelines_english.pdf" target="_blank">Arts and Crafts</a>'
+    title: '<a href="https://d1v5cjer294zl8.cloudfront.net/adihex-assets/guidelines-2025/english-guidelines/5.-arts-&-crafts-guidelines_english.pdf" target="_blank">Arts and Craft Guidelines</a>'
   -
     id: mdoggmxs
     icon: arrow-down-tray
@@ -34,7 +34,7 @@ featured_activities:
   -
     id: mdiqvg3h
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1756540709
+updated_at: 1756547922
 button_group:
   -
     id: mdirjamk
