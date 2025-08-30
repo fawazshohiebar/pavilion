@@ -1,0 +1,518 @@
+action: revision
+date: 1756534833
+user: ac775259-f1c4-4a12-b768-668149cb0e1a
+attributes:
+  id: e45d483f-bb19-48ac-aedf-fc86ee574383
+  slug: parking-information
+  published: true
+  date: null
+  data:
+    title: 'معلومات مواقف السيارات'
+    page_builder:
+      -
+        type: set
+        attrs:
+          id: mex5u1de
+          values:
+            type: html_block
+            available_on:
+              - production
+              - local
+            code:
+              code: |-
+                <style>
+                  #patronage {
+                	display:none;
+                  }
+                </style>
+              mode: htmlmixed
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+      -
+        type: set
+        attrs:
+          id: mdy1jnfs
+          enabled: false
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: white
+              size: normal
+              variant: no_image
+            heading:
+              text: 'مواقف السيارات المميزة'
+              size: small
+              color: primary
+              tag: h2
+              uppercase: false
+            description: |-
+              تجنب المتاعب وضمن مكانك بحجز مواقف السيارات المميزة مسبقًا.
+              استمتع بالراحة المضمونة مع وصول سهل إلى ADIHEX عبر مناطق Grandstand أو Central Plaza.
+
+              **السعر**: 350 درهم إماراتي لكل مركبة
+              **يشمل**: وصول لمرة واحدة إلى إما Grandstand أو Central Plaza
+              **رمز الاستجابة السريعة (QR)**: سيتم إرساله إلى بريدك الإلكتروني بعد الشراء – مطلوب للدخول
+              **تذاكر دخول ADIHEX**: غير مشمولة – يجب شراء التذاكر بشكل منفصل
+
+              يرجى اختيار موقع وقوف السيارات المفضل لديك أدناه
+            buttons:
+              -
+                id: mdy1leik
+                dynamic_button:
+                  button: 'https://business.mamopay.com/pay/adnecgroup-9a34b2'
+                  text: 'انقر هنا لحجز تذكرة موقفك الخاص اليوم!'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+              -
+                id: mdy1mihl
+                dynamic_button:
+                  button: 'https://maps.app.goo.gl/3H9c3Nj3KW45Z4y4A'
+                  text: 'موقف كبار الشخصيات Grandstand'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+              -
+                id: mdy1nl92
+                dynamic_button:
+                  button: 'https://maps.app.goo.gl/QJnWp4a6oqM15XZW6'
+                  text: 'موقف كبار الشخصيات Central Plaza'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+      -
+        type: set
+        attrs:
+          id: mdy1wcb2
+          enabled: false
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: lite-primary
+              size: normal
+              variant: no_image
+            heading:
+              text: 'مواقف  السيارات العادية'
+              size: small
+              color: black
+              tag: h2
+              uppercase: false
+            description: |-
+              مواقف السيارات العادية متوفرة في مواقف السيارات A وB في ADNEC مقابل 20 درهم إماراتي.
+              أو قم بالشراء عبر الإنترنت لتوفير الوقت والعناء من خلال الضغط أدناه.
+
+              **تذاكر دخول ADIHEX**: غير مشمولة – يجب شراء التذاكر بشكل منفصل
+
+              يرجى مراجعة <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">الشروط والأحكام العامة لمواقف السيارات</a> قبل زيارتك.
+
+              يرجى اختيار موقع وقوف السيارات المفضل لديك أدناه:
+            buttons:
+              -
+                id: mdy1leik
+                dynamic_button:
+                  button: 'https://ecom.webhost.skidata.com/ecom/portal/home/adihex_parking/#/products'
+                  text: 'احجز موقفاً عادياً لمواقف السيارات A و B'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+              -
+                id: mel3dnjj
+                dynamic_button:
+                  button: 'https://goo.gl/maps/xE3kYSnrSB7jAE8g6'
+                  text: 'موقف السيارات A'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+              -
+                id: mdy1mihl
+                dynamic_button:
+                  button: 'https://goo.gl/maps/MwF11vzQm1mWVFDf7'
+                  text: 'موقف السيارات B'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+      -
+        type: set
+        attrs:
+          id: mel3fex8
+          enabled: false
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: lite-secondary
+              size: normal
+              variant: no_image
+            heading:
+              text: 'مواقف اضافية'
+              size: small
+              color: black
+              tag: h2
+              uppercase: false
+            description: |-
+              يتوفر موقف سيارات إضافي في مواقف D و E بمركز أدنيك — والأفضل من ذلك؟ المواقف الآن مجانية!
+
+               المواقف مجانية ومتاحة على أساس أسبقية الوصول، لذا نوصي بالحضور مبكرًا لضمان توفر موقف لك.
+
+               **تذاكر الدخول إلى المعرض:** يرجى ملاحظة أن المواقف لا تشمل تذاكر الدخول، ويجب شراء التذاكر بشكل منفصل.
+               
+              يرجى مراجعة <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">الشروط والأحكام العامة لمواقف السيارات</a> قبل زيارتك.
+
+              يرجى اختيار موقع وقوف السيارات المفضل لديك أدناه:
+            buttons:
+              -
+                id: mdy1nl92
+                dynamic_button:
+                  button: 'https://www.google.com/maps/place/ADNEC+Parking+D/@24.4181602,54.426636,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e6901cb08d555:0x28c5964679352f94!8m2!3d24.4181553!4d54.4292109!16s%2Fg%2F11tsf87kkv?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D'
+                  text: 'موقف السيارات D'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+              -
+                id: mdy249g2
+                dynamic_button:
+                  button: 'https://www.google.com/maps/place/ADNEC+Parking+E+Marina+Hall/@24.4150569,54.4386641,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e43af32ec2a69:0x5f843f9b6868b973!8m2!3d24.415052!4d54.441239!16s%2Fg%2F11kb46hk8d?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D'
+                  text: 'موقف السيارات E'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+      -
+        type: set
+        attrs:
+          id: mexv5aqn
+          values:
+            type: parking_information_sec_version
+            style_config:
+              padding: small
+              color: transparent
+              size: normal
+              variant: image_left
+            heading:
+              text: '{primary:خيارات مواقف السيارات}'
+              size: small
+              color: primary
+              tag: p
+              uppercase: false
+            parking_cards:
+              -
+                id: mexv5tv4
+                card_color: white
+                parking_heading:
+                  text: 'مواقف السيارات العادية'
+                  size: small
+                  color: black
+                  tag: p
+                  uppercase: false
+                buttons:
+                  -
+                    id: mexv6b35
+                    dynamic_button:
+                      button: 'https://ecom.webhost.skidata.com/ecom/portal/home/adihex_parking/#/products'
+                      text: 'احجز موقفاً عادياً لمواقف السيارات A و B'
+                      button_options:
+                        style: filled
+                        color: primary
+                        size: small
+                        new_tab: true
+                        icon: lock-closed
+                        icon_position: start
+                    type: button
+                    enabled: true
+                parking_prices: '<b>20 درهم</b> <span class="text-[18px]">/ مركبة</span>'
+                description: |-
+                  مواقف السيارات العادية متوفرة في مواقف السيارات A وB في ADNEC مقابل 20 درهم إماراتي.
+
+                  المواقف متاحة على أساس أسبقية الوصول، لذا نوصي بالحضور مبكرًا لضمان توفر موقف لك.
+
+                  **تفاصيل المواقف**
+
+                  - السعر: 20 درهماً لكل مركبة (يتم الدفع في الموقع) أو يمكن الشراء عبر الإنترنت لتجنب الإزعاج بالضغط على الرابط أدناه.
+
+                  - تذاكر دخول ADIHEX: غير مشمولة – يجب شراؤها بشكل منفصل.
+
+                  يرجى مراجعة <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">الشروط والأحكام العامة لمواقف السيارات</a> قبل زيارتك.
+
+                  **الاتجاهات**
+
+                  يرجى حجز موقفك واختيار موقع الموقف المفضل لديك أدناه.
+                buttons_v2:
+                  -
+                    id: mexv7gy6
+                    button: 'https://goo.gl/maps/xE3kYSnrSB7jAE8g6'
+                    text: 'موقف السيارات A'
+                    text_color: '#1e2939'
+                    before_icon: map-pin
+                    after_icon: arrow-left
+                    background_color: '#F5F5F1'
+                    type: new_set
+                    enabled: true
+                  -
+                    id: mexv88uf
+                    button: 'https://goo.gl/maps/MwF11vzQm1mWVFDf7'
+                    text: 'موقف السيارات B'
+                    text_color: '#1e2939'
+                    before_icon: map-pin
+                    after_icon: arrow-left
+                    background_color: '#F5F5F1'
+                    type: new_set
+                    enabled: true
+                type: new_set
+                enabled: true
+              -
+                id: mexv8tpk
+                card_color: '#f5f5f1'
+                parking_heading:
+                  text: 'مواقف السيارات المميزة'
+                  size: small
+                  color: black
+                  tag: p
+                  uppercase: false
+                buttons:
+                  -
+                    id: mexv9jwe
+                    dynamic_button:
+                      button: 'https://business.mamopay.com/pay/adnecgroup-9a34b2'
+                      text: 'انقر هنا لحجز تذكرة موقفك الخاص اليوم!'
+                      button_options:
+                        style: filled
+                        color: primary
+                        size: small
+                        new_tab: false
+                        icon: lock-closed
+                        icon_position: start
+                    type: button
+                    enabled: true
+                parking_prices: '<b>350 درهم</b> <span class="text-[18px]">/ مركبة</span>'
+                description: |-
+                  تجنب المتاعب وضمن مكانك بحجز مواقف السيارات المميزة مسبقًا.
+
+                  استمتع بالراحة المضمونة مع وصول سهل إلى ADIHEX عبر مناطق Grandstand أو Central Plaza.
+
+                  **تفاصيل المواقف**
+
+                  - السعر: 350 درهماً إماراتياً لكل مركبة
+
+                  - يشمل: وصول لمرة واحدة إلى إما Grandstand أو Central Plaza
+
+                  - رمز الاستجابة السريعة (QR): سيتم إرساله إلى بريدك الإلكتروني بعد الشراء – مطلوب للدخول
+
+                  - تذاكر دخول ADIHEX: غير مشمولة – يجب شراء التذاكر بشكل منفصل
+
+                  **الاتجاهات**
+
+                  يرجى اختيار موقع وقوف السيارات المفضل لديك أدناه.
+                buttons_v2:
+                  -
+                    id: mexvamvo
+                    button: 'https://maps.app.goo.gl/3H9c3Nj3KW45Z4y4A'
+                    text: 'موقف كبار الشخصيات Grandstand'
+                    text_color: '#1e2939'
+                    before_icon: map-pin
+                    after_icon: arrow-left
+                    background_color: '#FFF'
+                    type: new_set
+                    enabled: true
+                  -
+                    id: mexvbcgd
+                    button: 'https://maps.app.goo.gl/QJnWp4a6oqM15XZW6'
+                    text: 'موقف كبار الشخصيات Central Plaza'
+                    text_color: '#1e2939'
+                    before_icon: map-pin
+                    after_icon: arrow-left
+                    background_color: '#FFF'
+                    type: new_set
+                    enabled: true
+                type: new_set
+                enabled: true
+              -
+                id: mexvc0fa
+                card_color: white
+                parking_heading:
+                  text: 'مواقف اضافية'
+                  size: small
+                  color: black
+                  tag: p
+                  uppercase: false
+                buttons:
+                  -
+                    id: mexvcl8t
+                    dynamic_button:
+                      button: null
+                      text: 'ادفع في الموقع'
+                      button_options:
+                        style: filled
+                        color: secondary
+                        size: small
+                        new_tab: false
+                        icon: null
+                        icon_position: start
+                    type: button
+                    enabled: true
+                parking_prices: '<b>مجاناً</b>'
+                description: |-
+                  يتوفر موقف سيارات إضافي في مواقف D و E بمركز ADNEC — والأفضل من ذلك؟ المواقف الآن مجاناً!
+
+                  المواقف مجانية ومتاحة على أساس أسبقية الوصول، لذا نوصي بالحضور مبكرًا لضمان توفر موقف لك.
+
+                  **تفاصيل المواقف**
+
+                  - تذاكر دخول ADIHEX: يرجى ملاحظة أن المواقف لا تشمل تذاكر الدخول، ويجب شراء التذاكر بشكل منفصل.
+
+                  - قبل زيارتك: تأكد من مراجعة الشروط والأحكام العامة لمواقف السيارات والدخول.
+
+                  يرجى مراجعة <a href="https://www.adnec.ae/en/terms-and-conditions" target="_blank">الشروط والأحكام العامة لمواقف السيارات</a> قبل زيارتك.
+
+                  **الاتجاهات**
+
+                  يرجى اختيار موقع وقوف السيارات المفضل لديك أدناه:
+                buttons_v2:
+                  -
+                    id: mexvdk57
+                    button: 'https://www.google.com/maps/place/ADNEC+Parking+E+Marina+Hall/@24.4150569,54.4386641,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e43af32ec2a69:0x5f843f9b6868b973!8m2!3d24.415052!4d54.441239!16s%2Fg%2F11kb46hk8d?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D'
+                    text: 'موقف السيارات D'
+                    text_color: '#1e2939'
+                    before_icon: map-pin
+                    after_icon: arrow-left
+                    background_color: '#F5F5F1'
+                    type: new_set
+                    enabled: true
+                  -
+                    id: mexve8o2
+                    button: 'https://maps.app.goo.gl/ZbNct3o5BnnCuBXN7'
+                    text: 'موقف السيارات E'
+                    text_color: '#1e2939'
+                    before_icon: map-pin
+                    after_icon: arrow-left
+                    background_color: '#F5F5F1'
+                    type: new_set
+                    enabled: true
+                type: new_set
+                enabled: true
+      -
+        type: set
+        attrs:
+          id: mexvg9q8
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: lite-secondary
+              size: normal
+              variant: no_image
+            heading:
+              text: 'حجز مواقف السيارات عبر الإنترنت'
+              size: small
+              color: black
+              tag: h2
+              uppercase: false
+            description: |-
+              عند الحجز عبر الإنترنت، ما عليك سوى تسجيل رقم لوحة سيارتك، وسيتم إرسال رمز QR إلى بريدك الإلكتروني لتسهيل الدخول والخروج من مرافق مواقف أدنيك.
+
+              **كيفية إدخال رقم لوحة السيارة:**
+              أبوظبي: الفئة 50، الرقم 12345 → أدخل: 5012345
+
+              دبي: الفئة A، الرقم 12345 → أدخل: A12345
+
+              الشارقة: الفئة 1، الرقم 12345 → أدخل: 112345
+
+              **ملاحظات مهمة:**
+              رمز الـ QR إلزامي للدخول إلى مرافق المواقف.
+
+              تذاكر دخول ADIHEX غير مشمولة مع حجز المواقف، ويجب شراؤها بشكل منفصل.
+
+              يرجى اختيار موقع وقوف السيارات المفضل لديك أدناه:
+            buttons:
+              -
+                id: mdy1leik
+                dynamic_button:
+                  button: 'https://ecom.webhost.skidata.com/ecom/portal/home/adihex_parking/#/products'
+                  text: 'احجز موقفاً عادياً لمواقف السيارات A و B'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: false
+              -
+                id: mel3dnjj
+                dynamic_button:
+                  button: 'https://goo.gl/maps/xE3kYSnrSB7jAE8g6'
+                  text: 'موقف السيارات A'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: false
+              -
+                id: mdy1mihl
+                dynamic_button:
+                  button: 'https://goo.gl/maps/MwF11vzQm1mWVFDf7'
+                  text: 'موقف السيارات B'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: false
