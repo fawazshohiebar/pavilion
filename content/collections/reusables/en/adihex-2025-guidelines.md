@@ -9,7 +9,12 @@ heading:
     color: black
     tag: p
     uppercase: false
-  subheading: null
+  subheading:
+    text: null
+    size: small
+    color: black
+    tag: p
+    uppercase: false
   focus_icon: false
   heading_focus_word: null
   icon: null
@@ -33,8 +38,10 @@ main_activities:
 featured_activities:
   -
     id: mdiqvg3h
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1756547922
+    title: 'Dress Code'
+    description: 'Traditional attire or smart casual is encouraged. To maintain the event’s cultural standards, visitors wearing shorts, sleeveless tops, or revealing clothing will not be permitted entry. We kindly ask all attendees to respect local customs and dress appropriately.'
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1756655986
 button_group:
   -
     id: mdirjamk
