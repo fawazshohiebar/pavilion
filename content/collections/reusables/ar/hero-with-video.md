@@ -60,5 +60,5 @@ hero_actions:
     type: button
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755755013
+updated_at: 1756641174
 ---
