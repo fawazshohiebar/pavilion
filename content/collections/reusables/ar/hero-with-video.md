@@ -10,7 +10,7 @@ icons:
   -
     id: mdwv6hil
     icon: clock
-    label: '11 صباحاً - 10 مساءً'
+    label: '11 صباحاً - 10 مساءً | آخر موعد للدخول: ٩:٠٠ مساءً'
   -
     id: mdwv2qob
     icon: map-pin
@@ -60,5 +60,5 @@ hero_actions:
     type: button
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756641174
+updated_at: 1756653781
 ---
