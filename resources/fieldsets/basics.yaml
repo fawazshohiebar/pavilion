@@ -116,17 +116,11 @@ fields:
           sets:
             parking_information_sec_version:
               display: 'Parking Information Sec Version'
-              instructions: null
-              icon: null
-              hide: null
               fields:
                 -
                   import: reusable_media_with_cta_sec_version
             image_button_carousel_set:
               display: 'Image button Carousel Set'
-              instructions: null
-              icon: null
-              hide: null
               fields:
                 -
                   import: image_button_carousel
@@ -866,6 +860,12 @@ fields:
                     localizable: false
                     width: 50
                     placeholder: '1234123'
+                -
+                  handle: invisual_prefix
+                  field:
+                    type: text
+                    display: 'Invisual Prefix'
+                    localizable: false
             agenda_component:
               display: 'Agenda Component'
               fields:
