@@ -7,6 +7,7 @@ page_builder:
     type: set
     attrs:
       id: meeeetnn
+      enabled: false
       values:
         type: divider
         space_height: 20px
@@ -14,6 +15,7 @@ page_builder:
     type: set
     attrs:
       id: meeefb04
+      enabled: false
       values:
         type: heading_group
         heading:
@@ -55,7 +57,6 @@ page_builder:
     type: set
     attrs:
       id: mapb3fbo
-      enabled: false
       values:
         type: reusable_block
         entry:
@@ -263,6 +264,6 @@ fine_seo_title: 'المعرض الدولي للصيد والفروسية - أب�
 fine_seo_is_title_custom: true
 fine_seo_description: 'تراث يتجدد يمثل التراث بوصلتنا التي تُشكّل قيمنا وممارساتنا، ولذا نقل إلينا أسلافنا ثقافتهم وحرفهم واهتماماتهم ومهاراتهم من جيل إلى آخر، وبالمثل يسعى معرض'
 fine_seo_preview: الرئيسية
-updated_by: 070ddde5-0fa6-434d-abe9-7bfc92c53639
-updated_at: 1756661483
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1756718445
 ---
