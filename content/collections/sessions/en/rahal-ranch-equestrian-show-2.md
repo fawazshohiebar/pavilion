@@ -1,5 +1,6 @@
 ---
 id: 62f359b1-e6b7-48a9-9443-9986d2ebb347
+published: false
 blueprint: session
 title: 'Rahal Ranch Equestrian Show'
 start_time: '19:00'
