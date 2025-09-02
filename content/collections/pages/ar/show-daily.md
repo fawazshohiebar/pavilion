@@ -13,7 +13,7 @@ page_builder:
           -
             id: mey8n4j6
             image:
-              - added-images/screenshot-2025-08-31-142412.png
+              - show-daily/cover-images/2.png
             dynamic_button:
               button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-day1-digital-2p_compressed-(1).pdf'
               text: 'النشرة اليومية - اليوم 1'
@@ -26,10 +26,42 @@ page_builder:
                 icon_position: start
             type: carousel_item
             enabled: true
+          -
+            id: mf23srg0
+            image:
+              - show-daily/cover-images/4.png
+            dynamic_button:
+              button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-digital-day2-2page.pdf'
+              text: 'النشرة اليومية - اليوم 2'
+              button_options:
+                style: filled
+                color: primary
+                size: medium
+                new_tab: false
+                icon: null
+                icon_position: start
+            type: carousel_item
+            enabled: true
+          -
+            id: mf23t24g
+            image:
+              - show-daily/cover-images/6.png
+            dynamic_button:
+              button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex-2025-show-daily-d3.pdf'
+              text: 'النشرة اليومية - اليوم 3'
+              button_options:
+                style: filled
+                color: primary
+                size: medium
+                new_tab: false
+                icon: null
+                icon_position: start
+            type: carousel_item
+            enabled: true
   -
     type: paragraph
     attrs:
       textAlign: left
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1756726176
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1756791018
 ---

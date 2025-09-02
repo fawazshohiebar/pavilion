@@ -1,0 +1,70 @@
+action: publish
+date: 1756791019
+user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+attributes:
+  id: c369a775-7c31-41ed-bbce-98148aaee301
+  slug: show-daily
+  published: true
+  date: null
+  data:
+    title: 'النشرة اليومية'
+    page_builder:
+      -
+        type: set
+        attrs:
+          id: mey8n38k
+          values:
+            type: image_button_carousel_set
+            replicator_image_button:
+              -
+                id: mey8n4j6
+                image:
+                  - show-daily/cover-images/2.png
+                dynamic_button:
+                  button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-day1-digital-2p_compressed-(1).pdf'
+                  text: 'النشرة اليومية - اليوم 1'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: carousel_item
+                enabled: true
+              -
+                id: mf23srg0
+                image:
+                  - show-daily/cover-images/4.png
+                dynamic_button:
+                  button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-digital-day2-2page.pdf'
+                  text: 'النشرة اليومية - اليوم 2'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: medium
+                    new_tab: false
+                    icon: null
+                    icon_position: start
+                type: carousel_item
+                enabled: true
+              -
+                id: mf23t24g
+                image:
+                  - show-daily/cover-images/6.png
+                dynamic_button:
+                  button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex-2025-show-daily-d3.pdf'
+                  text: 'النشرة اليومية - اليوم 3'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: medium
+                    new_tab: false
+                    icon: null
+                    icon_position: start
+                type: carousel_item
+                enabled: true
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
