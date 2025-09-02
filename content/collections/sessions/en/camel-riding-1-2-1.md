@@ -1,5 +1,6 @@
 ---
 id: e536a8bf-e3dc-4ea5-a75b-8852ac0ac9f7
+published: false
 blueprint: session
 title: 'Camel Riding'
 start_time: '13:10'
