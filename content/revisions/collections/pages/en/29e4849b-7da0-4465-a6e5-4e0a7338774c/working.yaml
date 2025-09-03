@@ -1,0 +1,123 @@
+action: revision
+date: 1756875442
+user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+attributes:
+  id: 29e4849b-7da0-4465-a6e5-4e0a7338774c
+  slug: show-daily
+  published: true
+  date: null
+  data:
+    blueprint: page
+    title: 'Show Daily'
+    template: default
+    fine_seo_is_title_custom: false
+    header_scripts:
+      code: null
+      mode: htmlmixed
+    body_start_scripts:
+      code: null
+      mode: htmlmixed
+    body_end_scripts:
+      code: null
+      mode: htmlmixed
+    page_builder:
+      -
+        type: set
+        attrs:
+          id: mey8n38k
+          values:
+            type: image_button_carousel_set
+            replicator_image_button:
+              -
+                id: mey8n4j6
+                image:
+                  - added-images/screenshot-2025-08-31-142412.png
+                dynamic_button:
+                  button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-day1-digital-2p_compressed-(1).pdf'
+                  text: 'Show Daily - Day 1'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: carousel_item
+                enabled: true
+              -
+                id: mf23g7dn
+                image:
+                  - show-daily/cover-images/3.png
+                dynamic_button:
+                  button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-digital-day2-2page.pdf'
+                  text: 'Show Daily - Day 2'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: carousel_item
+                enabled: true
+              -
+                id: mf23nj3s
+                image:
+                  - show-daily/cover-images/5.png
+                dynamic_button:
+                  button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex-2025-show-daily-d3.pdf'
+                  text: 'Show Daily - Day 3'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: carousel_item
+                enabled: true
+              -
+                id: mf3i5by7
+                image:
+                  - show-daily/cover-images/screenshot-2025-09-03-085036.png
+                dynamic_button:
+                  button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-day4-digital--(1).pdf'
+                  text: 'Show Daily - Day 4'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: carousel_item
+                enabled: true
+              -
+                id: mf3i7a79
+                image:
+                  - show-daily/cover-images/screenshot-2025-09-03-085217.png
+                dynamic_button:
+                  button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihexday-05-digital.pdf'
+                  text: 'Show Daily - Day 5'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: medium
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: carousel_item
+                enabled: true
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+    fine_seo_title: 'New page'
+    fine_seo_preview: 'New page'
+    feature_banner_image: null
+    fine_seo_description: null
+    fine_seo_image: null
+    header_scripts_available_on: {  }
+    body_start_scripts_available_on: {  }
+    body_end_scripts_available_on: {  }
+    parent: 1b98c975-9c5c-43a1-bc8b-556c0370c838
