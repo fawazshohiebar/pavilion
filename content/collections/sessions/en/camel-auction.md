@@ -1,5 +1,6 @@
 ---
 id: 1911ab26-769a-4f22-b260-006cd703161d
+published: false
 blueprint: session
 title: 'Camel Auction'
 start_time: '18:00'
