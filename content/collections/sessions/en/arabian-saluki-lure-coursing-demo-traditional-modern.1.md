@@ -1,5 +1,6 @@
 ---
 id: a476e1ad-a860-4328-b3af-906a626bb47d
+published: false
 blueprint: session
 title: 'ARABIAN SALUKI LURE COURSING DEMO TRADITIONAL & MODERN'
 start_time: '14:10'

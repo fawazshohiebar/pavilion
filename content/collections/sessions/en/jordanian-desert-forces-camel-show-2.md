@@ -1,5 +1,6 @@
 ---
 id: 86fddef5-2318-47ce-96f3-9d184b0d187c
+published: false
 blueprint: session
 title: 'Jordanian Desert Forces Camel Show'
 start_time: '16:10'

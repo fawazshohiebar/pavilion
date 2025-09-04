@@ -1,5 +1,6 @@
 ---
 id: 6ad63c1d-c1a1-4fce-b7b8-7c33c5bdea1c
+published: false
 blueprint: session
 title: 'FALCONRY HUNTING SIMULATION & MONGOLIAN HUNTING WITH EAGLE DEMO'
 start_time: '15:30'

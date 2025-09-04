@@ -1,5 +1,6 @@
 ---
 id: 0a4a3c72-c8d9-4e88-a715-ed2344455864
+published: false
 blueprint: session
 title: 'Equine Couching Demo'
 start_time: '14:40'

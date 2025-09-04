@@ -1,5 +1,6 @@
 ---
 id: 26133eb5-ed5e-491d-9a99-a66d2b12c262
+published: false
 blueprint: session
 title: 'Elite Sports'
 start_time: '10:30'

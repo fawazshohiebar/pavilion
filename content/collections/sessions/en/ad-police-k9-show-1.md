@@ -1,5 +1,6 @@
 ---
 id: 28bf0b21-6dc3-4520-b21b-feca770c622e
+published: false
 blueprint: session
 title: 'AD Police K9 show'
 start_time: '19:00'
