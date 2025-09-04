@@ -90,10 +90,26 @@ page_builder:
             enabled: true
             image:
               - show-daily/cover-images/screenshot-2025-09-03-085147.png
+          -
+            id: mf5rbnfn
+            image:
+              - show-daily/cover-images/7.png
+            dynamic_button:
+              button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-day6-digital.pdf'
+              text: 'النشرة اليومية - اليوم 6'
+              button_options:
+                style: filled
+                color: primary
+                size: medium
+                new_tab: true
+                icon: null
+                icon_position: start
+            type: carousel_item
+            enabled: true
   -
     type: paragraph
     attrs:
       textAlign: left
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756875757
+updated_at: 1757011645
 ---
