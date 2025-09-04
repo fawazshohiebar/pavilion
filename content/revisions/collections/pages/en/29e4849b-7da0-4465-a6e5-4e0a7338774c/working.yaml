@@ -1,5 +1,5 @@
 action: revision
-date: 1756875442
+date: 1757011546
 user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
 attributes:
   id: 29e4849b-7da0-4465-a6e5-4e0a7338774c
@@ -104,6 +104,22 @@ attributes:
                     color: primary
                     size: medium
                     new_tab: true
+                    icon: null
+                    icon_position: start
+                type: carousel_item
+                enabled: true
+              -
+                id: mf5r6u29
+                image:
+                  - show-daily/cover-images/8.png
+                dynamic_button:
+                  button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-day6-digital.pdf'
+                  text: 'Show Daily - Day 6'
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: medium
+                    new_tab: false
                     icon: null
                     icon_position: start
                 type: carousel_item
