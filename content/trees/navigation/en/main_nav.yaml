@@ -35,6 +35,9 @@ tree:
       -
         id: 8c074637-f5a6-490b-8021-673bf656499c
         entry: 44cd9be8-fbe2-4241-93b4-47b5031ef7cc
+      -
+        id: 0f8a9b70-8950-4aae-b471-5c5fa1b1a1f1
+        entry: b6c75df9-4921-467b-9c3a-21dfb668b2ce
   -
     id: 6335cb86-1850-4d81-8b23-d369ab341ad2
     title: 'Exhibitor Information'
