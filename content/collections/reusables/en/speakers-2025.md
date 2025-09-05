@@ -67,7 +67,7 @@ speaker_replicator:
     type: new_set
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757057881
+updated_at: 1757068312
 speakers:
   - 1a2b3c4d-5e6f-7g8h-9i0j-k1l2m3n4o5p6
   - e5f0919d-1cc5-47d1-968f-781dcdd81bc8
@@ -109,4 +109,5 @@ speakers:
   - b4eedd8e-4115-45f8-bb8d-721f54c126f2
   - 5d3caa19-b1f7-42b4-b80d-418b677c6be5
   - cee693d5-462b-47fe-bd7f-5210465cd81a
+  - 9723320a-10e8-4ead-bf14-20ea0fa2552e
 ---
