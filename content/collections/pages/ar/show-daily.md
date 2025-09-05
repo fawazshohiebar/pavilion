@@ -109,7 +109,7 @@ page_builder:
           -
             id: mf6ki1se
             image:
-              - show-daily/cover-images/untitled-design-(11).png
+              - show-daily/cover-images/untitled-design-(10).png
             dynamic_button:
               button: 'https://d1v5cjer294zl8.cloudfront.net/adihex-assets/show-daily/adihex2025-show-daily-day-7.pdf'
               text: 'النشرة اليومية - اليوم 7'
@@ -127,5 +127,5 @@ page_builder:
     attrs:
       textAlign: left
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757060717
+updated_at: 1757060922
 ---
