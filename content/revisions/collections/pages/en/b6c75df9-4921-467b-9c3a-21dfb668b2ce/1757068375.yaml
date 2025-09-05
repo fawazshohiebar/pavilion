@@ -1,0 +1,31 @@
+action: revision
+date: 1757068375
+user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+attributes:
+  id: b6c75df9-4921-467b-9c3a-21dfb668b2ce
+  slug: adihex-show-guide-2025
+  published: false
+  date: null
+  data:
+    title: 'ADIHEX Show Guide 2025'
+    feature_banner_image: null
+    page_builder: null
+    parent: null
+    template: default
+    fine_seo_title: null
+    fine_seo_is_title_custom: false
+    fine_seo_description: null
+    fine_seo_image: null
+    fine_seo_preview: null
+    header_scripts_available_on: {  }
+    header_scripts:
+      code: null
+      mode: htmlmixed
+    body_start_scripts_available_on: {  }
+    body_start_scripts:
+      code: null
+      mode: htmlmixed
+    body_end_scripts_available_on: {  }
+    body_end_scripts:
+      code: null
+      mode: htmlmixed
