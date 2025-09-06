@@ -1,5 +1,6 @@
 ---
 id: 0ea78a89-78f4-487e-87e6-3d278252b4b4
+published: false
 blueprint: session
 title: 'Honoring Ceremony for Mizyoun Al Awsaaf & Arabic Calligraphy'
 start_time: '19:00'
