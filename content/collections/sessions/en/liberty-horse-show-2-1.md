@@ -1,5 +1,6 @@
 ---
 id: 43bba448-e893-4cd0-8351-37ed2cf11eef
+published: false
 blueprint: session
 title: 'LIBERTY HORSE SHOW'
 start_time: '17:30'
