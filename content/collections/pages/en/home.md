@@ -24,6 +24,7 @@ page_builder:
     type: set
     attrs:
       id: meed4hzu
+      enabled: false
       values:
         type: heading_group
         heading:
@@ -46,6 +47,7 @@ page_builder:
     type: set
     attrs:
       id: meed4kfk
+      enabled: false
       values:
         type: html_block
         available_on:
@@ -61,6 +63,7 @@ page_builder:
     type: set
     attrs:
       id: meed4rjd
+      enabled: false
       values:
         type: divider
         space_height: 180px
@@ -303,5 +306,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 070ddde5-0fa6-434d-abe9-7bfc92c53639
-updated_at: 1757258870
+updated_at: 1757264215
 ---
