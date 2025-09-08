@@ -1,7 +1,7 @@
 ---
 id: 9da38cbf-673a-4dee-af4f-f5d561dcc3d4
 origin: 37949eb0-4e08-4fb8-8142-58b586022cd1
-title: 'استفسر عن المشاركة'
+title: 'احجز مساحتك 2026'
 page_builder:
   -
     type: set
@@ -20,14 +20,14 @@ page_builder:
         redirect_to_url: 'entry::275ecc1e-5364-4ceb-906a-16601a396d77'
         heading:
           heading:
-            text: 'استفسر عن المشاركة'
+            text: 'احجز مساحتك 2026'
             size: small
             color: black
             tag: p
             uppercase: false
           subheading: null
           focus_icon: false
-          heading_focus_word: 'أديهكس 2025'
+          heading_focus_word: 'أديهكس 2026'
           icon: null
   -
     type: set
@@ -43,6 +43,6 @@ page_builder:
       textAlign: left
 fine_seo_title: 'استفسر عن المشاركة'
 fine_seo_description: 'يوفر لك المعرض الدولي للصيد والفروسية - أبوظبي 2025 منصة استراتيجية لعرض علامتك التجارية، والتواصل مع العملاء المحتملين، والانضمام إلى روّاد القطاع.'
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754588135
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1757310576
 ---
