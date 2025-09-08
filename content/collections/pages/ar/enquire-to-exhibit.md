@@ -15,7 +15,7 @@ page_builder:
           focus_icon: false
           heading_focus_word: null
           icon: null
-        form: book_your_stand
+        form: book_your_stand_2026
         show_labels: true
         redirect_to_url: 'entry::275ecc1e-5364-4ceb-906a-16601a396d77'
         heading:
@@ -43,6 +43,6 @@ page_builder:
       textAlign: left
 fine_seo_title: 'استفسر عن المشاركة'
 fine_seo_description: 'يوفر لك المعرض الدولي للصيد والفروسية - أبوظبي 2025 منصة استراتيجية لعرض علامتك التجارية، والتواصل مع العملاء المحتملين، والانضمام إلى روّاد القطاع.'
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757310576
+updated_by: c970e8d9-e297-424a-bad0-93b7dab4d61d
+updated_at: 1757313196
 ---
