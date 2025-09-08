@@ -126,6 +126,14 @@ page_builder:
   -
     type: set
     attrs:
+      id: mfarl9qm
+      values:
+        type: reusable_block
+        entry:
+          - 424afcd4-bbf9-488d-bc21-fe1343478187
+  -
+    type: set
+    attrs:
       id: mdyloxip
       values:
         type: exhibiting_brand
@@ -159,31 +167,7 @@ page_builder:
   -
     type: set
     attrs:
-      id: mfapjhe2
-      values:
-        type: reusable_block
-        entry:
-          - 424afcd4-bbf9-488d-bc21-fe1343478187
-  -
-    type: set
-    attrs:
-      id: mdwr4uxy
-      values:
-        type: reusable_block
-        entry:
-          - a1c926f4-9f14-404a-8bc4-fe0eb1bad1bd
-  -
-    type: set
-    attrs:
-      id: mdmra4mo
-      values:
-        type: reusable_block
-        entry:
-          - 6444f21f-a94b-4af6-8e4c-3b5f7e586afb
-  -
-    type: set
-    attrs:
-      id: mfapibza
+      id: mfarlx2j
       values:
         type: banner
         new_tab: true
@@ -200,6 +184,22 @@ page_builder:
           tag: p
           uppercase: true
         image_height: 300
+  -
+    type: set
+    attrs:
+      id: mdwr4uxy
+      values:
+        type: reusable_block
+        entry:
+          - a1c926f4-9f14-404a-8bc4-fe0eb1bad1bd
+  -
+    type: set
+    attrs:
+      id: mdmra4mo
+      values:
+        type: reusable_block
+        entry:
+          - 6444f21f-a94b-4af6-8e4c-3b5f7e586afb
   -
     type: set
     attrs:
@@ -292,5 +292,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757311042
+updated_at: 1757314463
 ---
