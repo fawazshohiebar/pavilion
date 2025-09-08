@@ -3,7 +3,7 @@ id: ad03629a-055b-41ff-bf87-d3910e80a3fb
 origin: 9fe7d3ea-4903-4391-9f52-df30bd35a89e
 style_config:
   padding: small
-  color: lite-primary
+  color: white
   size: normal
   variant: full
 heading:
@@ -74,7 +74,7 @@ cta_actions:
     type: button
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757334388
+updated_at: 1757334490
 ---
 يُعد معرض أبوظبي الدولي للصيد والفروسية 2026 بوابتك لاكتشاف تراث أبوظبي العريق وتقاليدها الأصيلة في الصيد والفروسية والثقافة. سواء كنت من الشغوفين بهذه المجالات أو من المهتمين بالتعرف على الإرث الثقافي للمنطقة، يدعوك المعرض لاستكشاف مجموعة نابضة بالحياة من المعارض الثقافية، والمسابقات الشيّقة، والعروض التقليدية الآسرة.
 
