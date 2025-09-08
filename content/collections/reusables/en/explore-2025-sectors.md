@@ -4,7 +4,7 @@ blueprint: content_with_info_cards
 title: 'Explore 2025 Sectors'
 heading:
   heading:
-    text: 'EXPLORE THE WORLD OF HERITAGE, HUNTING AND CULTURE - 2025 SECTORS'
+    text: 'EXPLORE THE WORLD OF HERITAGE, HUNTING AND CULTURE - SECTORS'
     size: small
     color: black
     tag: h2
@@ -16,11 +16,11 @@ heading:
     tag: p
     uppercase: false
   focus_icon: false
-  heading_focus_word: '2025 Sectors'
+  heading_focus_word: Sectors
   icon: null
 card_style: compact
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756301385
+updated_at: 1757330994
 info_cards:
   -
     id: mdvtxk9v
@@ -133,4 +133,4 @@ style_config:
   size: normal
   variant: grid
 ---
-ADIHEX 2025 brings together a diverse range of sectors that celebrate tradition, showcase culture, and connect global communities. From falconry, equestrian, and outdoor adventure to arts & crafts, weapons, and heritage conservation—each sector offers a unique experience for enthusiasts, professionals, and families alike. Discover the depth and diversity that make ADIHEX a one-of-a-kind destination.
+ADIHEX 2026 continues to bring together a diverse range of experiences that celebrate tradition, showcase culture, and connect global communities. From world-class exhibitions and live demonstrations to interactive family attractions and heritage showcases—every visitor will discover something unique. Step into a destination where heritage and innovation come together to inspire, engage, and connect.
