@@ -13,7 +13,7 @@ description: |-
 
   As enthusiasts of hunting and equestrian pursuits, ADIHEX is the event that celebrates shared passion while paying homage to our rich heritage.
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755060782
+updated_at: 1757310744
 flipped: false
 image: call_to_actions/main_cta.jpg
 buttons:
@@ -21,27 +21,13 @@ buttons:
     id: mdvfk921
     dynamic_button:
       button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
-      text: 'Book Your Stand'
-      button_options:
-        style: filled
-        color: primary
-        size: medium
-        new_tab: false
-        icon: paper-airplane
-        icon_position: end
-    type: button
-    enabled: false
-  -
-    id: mdvgezfs
-    dynamic_button:
-      button: 'entry::b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7'
-      text: null
+      text: 'Book Your Stand 2026'
       button_options:
         style: filled
         color: primary
         size: medium
         new_tab: true
-        icon: ticket
+        icon: paper-airplane
         icon_position: end
     type: button
     enabled: true
