@@ -5,7 +5,7 @@ title: 'Hero With Video'
 heading: 'THE LEGACY LIVES ON'
 video: AXw-tpvjrVY
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757310452
+updated_at: 1757310708
 icons:
   -
     id: mdwv396j
@@ -25,7 +25,7 @@ hero_actions:
     id: mdwv8omy
     dynamic_button:
       button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
-      text: null
+      text: 'BOOK YOUR STAND 2026'
       button_options:
         style: filled
         color: white
