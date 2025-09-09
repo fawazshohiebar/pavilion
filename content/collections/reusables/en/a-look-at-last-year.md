@@ -1,8 +1,8 @@
 ---
 id: ee31e894-fd13-4153-bcf9-5f4c896c0621
 blueprint: slicking_slider
-title: 'A LOOK AT LAST YEAR'
-title_feild: 'A LOOK AT LAST YEAR'
+title: 'Images from ADIHEX 2025'
+title_feild: 'Relive the Moments – ADIHEX 2025'
 images_and_text_replicator:
   -
     id: mdo4dkg7
@@ -105,6 +105,6 @@ images_and_text_replicator:
     type: new_set
     enabled: true
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757413967
+updated_at: 1757413999
 background_color: '#F9FAFC'
 ---
