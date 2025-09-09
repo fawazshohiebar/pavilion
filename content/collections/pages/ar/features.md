@@ -118,13 +118,14 @@ page_builder:
           size: normal
           variant: right_image
         heading:
-          text: 'قرية الصقارين الصغار ومنطقة تعلم الإتيكيت الإماراتي'
+          text: 'قرية الصقارين الصغار'
           size: small
           color: black
           tag: p
           uppercase: false
         description: 'منطقة تفاعلية مخصصة للأطفال تشمل ورش عمل لتعليمهم أنواع الصقور، كيفية التعامل معها، وصناعة أدوات الصقارة مثل البرقع والمسبقة والمرسل. كما تتضمن أنشطة فنية مستوحاة من عالم الصقور. وفي منطقة "الحظيرة"، يتعرف الأطفال على العادات الإماراتية مثل استقبال الضيوف وآداب المجلس والطريقة الصحيحة لتقديم القهوة العربية.'
-        image: features/dsc_6007-scaled.jpg
+        image: adiehx-2025-images/downloaded-image-(51).jpg
+        section_label: 'من تنظيم: أدنوك'
   -
     type: set
     attrs:
@@ -287,5 +288,5 @@ page_builder:
     attrs:
       textAlign: left
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1756528328
+updated_at: 1757414818
 ---
