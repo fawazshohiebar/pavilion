@@ -1,5 +1,5 @@
-action: revision
-date: 1757414921
+action: publish
+date: 1757415145
 user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
 attributes:
   id: 22227610-dc48-4f42-9394-c222c87592a8
@@ -321,4 +321,3 @@ attributes:
     header_scripts_available_on: {  }
     body_start_scripts_available_on: {  }
     body_end_scripts_available_on: {  }
-    parent: 8d69b283-c7f1-4131-8fca-237b82c25d3b
