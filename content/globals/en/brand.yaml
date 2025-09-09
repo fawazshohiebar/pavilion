@@ -32,6 +32,16 @@ location: 'ADNEC Centre Abu Dhabi'
 location_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
 date: '29 Aug - 6 Sept'
 time: '11 AM - 10 PM'
+hero_dynamic_button:
+  button: 'entry::37949eb0-4e08-4fb8-8142-58b586022cd1'
+  text: 'Book Your Stand'
+  button_options:
+    style: filled
+    color: primary
+    size: medium
+    new_tab: false
+    icon: null
+    icon_position: start
 logos:
   -
     id: mafjvh3f

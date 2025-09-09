@@ -142,6 +142,11 @@ tabs:
               display: 'Time Link'
               localizable: false
               width: 50
+          -
+            handle: hero_dynamic_button
+            field: basics.dynamic_button
+            config:
+              display: 'Hero Dynamic Button'
       -
         display: 'Footer Logos'
         fields:

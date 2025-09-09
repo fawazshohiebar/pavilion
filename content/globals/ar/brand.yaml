@@ -32,6 +32,16 @@ location: 'مركز أدنيك أبوظبي'
 location_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
 date: '29 أغسطس - 6 سبتمبر'
 time: '11 صباحاً - 10 مساءً'
+hero_dynamic_button:
+  button: 'entry::9da38cbf-673a-4dee-af4f-f5d561dcc3d4'
+  text: 'احجز مساحتك'
+  button_options:
+    style: filled
+    color: primary
+    size: medium
+    new_tab: false
+    icon: null
+    icon_position: start
 logos:
   -
     id: mafk076r
