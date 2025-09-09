@@ -1,0 +1,296 @@
+action: revision
+date: 1757414934
+user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+attributes:
+  id: abf1d00b-a591-44e5-8c71-b9701e33b901
+  slug: features
+  published: true
+  date: null
+  data:
+    title: الفعاليات
+    page_builder:
+      -
+        type: set
+        attrs:
+          id: mdy3tijj
+          enabled: false
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: transparent
+              size: normal
+              variant: left_image
+            heading:
+              text: 'Pet Fair'
+              size: small
+              color: black
+              tag: p
+              uppercase: false
+            description: 'Pet Fair debuts at ADIHEX 2025, uniting the pet industry, owners, and enthusiasts for the first time under one roof. This feature hosts exciting competitions and interactive activities for cat and dog lovers alike. It offers a unique opportunity to engage with the vibrant pet community and discover new trends and products.'
+            image: features/ks622965-scaled.jpg
+            buttons:
+              -
+                id: mdy3ups5
+                dynamic_button:
+                  button: 'https://map.adihex.com/directions?to=prNQGQJ5ogm5J&toPoiSlug=arena&mapId=jKkBVW5WgdZYQ'
+                  text: 'Arena Location'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: small
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+      -
+        type: set
+        attrs:
+          id: mdy66zud
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: lite-secondary
+              size: normal
+              variant: right_image
+            heading:
+              text: 'منطقة العروض الحية (الأرينا)'
+              size: small
+              color: black
+              tag: p
+              uppercase: false
+            description: 'تشكّل منطقة العروض الحية (الأرينا) القلب النابض للمعرض، إذ تقدّم تجربة عائلية تشمل عروضاً تعليمية وتفاعلية متنوعة ومناسبة لكل الأعمار. استمتعوا بالعروض العائلية اليومية والأنشطة وورش العمل ومسابقات الجمال والمزادات الشيّقة وغيرها الكثير. وتضم أبرز الفعاليات مزاد الصقور ومسابقة مزاين الصقور، ومسابقة الكلاب الدولية للسلالات المنفردة، ومزاد الهجن، ومسابقة ركوب الخيل لأصحاب الهمم، واستعراض الفروسية والموسيقى، وركوب المهر، ومركز فرسان عُمان للفروسية، إضافة إلى ورشة العمل الملهمة والعروض الموسيقية التي تقدمها الفارسة فاطمة البلوشي، واستعراض ركوب الخيل بالطريقة الرومانية مع الفارس عبدالله الغفري.'
+            image: added-images/dsc_4814-2048x1365.jpg
+            buttons:
+              -
+                id: mdy3ups5
+                dynamic_button:
+                  button: 'https://map.adihex.com/directions?to=prNQGQJ5ogm5J&toPoiSlug=arena&mapId=jKkBVW5WgdZYQ'
+                  text: 'مكان الأرينا'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: small
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+      -
+        type: set
+        attrs:
+          id: mdy7bi7z
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: white
+              size: normal
+              variant: left_image
+            heading:
+              text: 'مزادات الصقور'
+              size: small
+              color: black
+              tag: p
+              uppercase: false
+            description: 'امتداداً لإرث معرض أبوظبي الغني بالمزادات الناجحة، تُقام مزادات الصقور هذا العام قبل المعرض وخلاله. ستُعقد المزادات التمهيدية بتاريخ 16 و17 أغسطس و23 و24 أغسطس 2025 في قاعة المؤتمرات A. أما المزادات خلال المعرض فستُقام في 30 و31 أغسطس و6 و7 سبتمبر 2025، بدءًا من الساعة 7:30 مساءً. سيتم عرض جميع الصقور مسبقًا، مما يتيح للمشاركين مشاهدتها عن قرب والاطلاع على بياناتها الكاملة قبل الدخول في المزاد. ويتميز هذا العام بإتاحة المزاد عبر الإنترنت، ما يسمح للمشاركين بالمزايدة المباشرة من أي مكان في العالم.'
+            image: added-images/mb64231-768x511.jpg
+            buttons:
+              -
+                id: mdy3ups5
+                dynamic_button:
+                  button: 'https://map.adihex.com/directions?to=zJAkVkykrgYjD&toPoiSlug=falcon-auction-r&mapId=jKkBVW5WgdZYQ'
+                  text: 'مكان مزاد الصقور'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: small
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+      -
+        type: set
+        attrs:
+          id: mdy7ew1p
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: lite-secondary
+              size: normal
+              variant: right_image
+            heading:
+              text: 'قرية الصقارين الصغار'
+              size: small
+              color: black
+              tag: p
+              uppercase: false
+            description: 'منطقة تفاعلية مخصصة للأطفال تشمل ورش عمل لتعليمهم أنواع الصقور، كيفية التعامل معها، وصناعة أدوات الصقارة مثل البرقع والمسبقة والمرسل. كما تتضمن أنشطة فنية مستوحاة من عالم الصقور. وفي منطقة "الحظيرة"، يتعرف الأطفال على العادات الإماراتية مثل استقبال الضيوف وآداب المجلس والطريقة الصحيحة لتقديم القهوة العربية.'
+            image: adiehx-2025-images/downloaded-image-(51).jpg
+            section_label: 'من تنظيم: أدنوك'
+      -
+        type: set
+        attrs:
+          id: mdy7i8y7
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: white
+              size: normal
+              variant: left_image
+            heading:
+              text: 'مركز المعرفة'
+              size: small
+              color: black
+              tag: p
+              uppercase: false
+            description: 'يضم مركز المعرفة التابع للمعرض، يمكن للزوار الاستمتاع بالعروض الحية والمشاركة في ورش العمل العملية التي ستأخذهم في رحلة إلى أعماق التراث الإماراتي المرتبط بالصقارة والفروسية وفراسة الصحراء والمهارات البحرية واكتشاف أسرار العيش في الصحراء من كبار الخبراء. اكتشفوا كنوز التراث الإماراتي، وتعلّموا أهم مهارات السلامة والأمن في بيئة تعليمية ممتعة.'
+            image: added-images/dsc_6007-2048x1365.jpg
+            buttons:
+              -
+                id: mdy3ups5
+                dynamic_button:
+                  button: 'https://map.adihex.com/directions?to=z9NngXzoqVDy3&toPoiSlug=knowledge-hub&mapId=jKkBVW5WgdZYQ'
+                  text: 'موقع مركز المعرفة'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: small
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+      -
+        type: set
+        attrs:
+          id: mdy7m7yk
+          enabled: false
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: lite-secondary
+              size: normal
+              variant: right_image
+            heading:
+              text: 'ميدان الرماية من "تسليح"'
+              size: small
+              color: black
+              tag: p
+              uppercase: false
+            description: 'يمكنكم زيارة جناح شركة "تسليح" ضمن قسم "الصيد والرماية" للارتقاء بمهاراتكم في ميدان الرماية الحديثة. ويتيح الميدان المجهز بالكامل لكل من الرماة المتمرسين والمبتدئين فرصة لممارسة الرماية وإتقان التصويب. اختبروا متعة إصابة الهدف بدقة في بيئة تفاعلية مصممة لهواة الرماية من كل المستويات. انضموا إلينا في مغامرة مليئة بالتشويق تجتمع فيها المهارة مع الحماسة!'
+            image: features/dsc_1335-scaled.jpg
+            buttons:
+              -
+                id: mdy3ups5
+                dynamic_button:
+                  button: 'https://map.adihex.com/directions?to=LqyPgNPlpVxjo&toPoiSlug=adihex-tasleeh-shooting&mapId=jKkBVW5WgdZYQ'
+                  text: 'Click here for the location'
+                  button_options:
+                    style: outline
+                    color: primary
+                    size: small
+                    new_tab: true
+                    icon: null
+                    icon_position: start
+                type: button
+                enabled: true
+      -
+        type: set
+        attrs:
+          id: mdy7nkj1
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: white
+              size: normal
+              variant: right_image
+            heading:
+              text: 'ورش الترخيم والرسم الجداري'
+              size: small
+              color: black
+              tag: p
+              uppercase: false
+            description: 'في قاعة ICC، تتوفر أنشطة فنية لجميع الأعمار تشمل ورش الترخيم، تجربة الرسم الجداري المستوحاة من قطاعات المعرض، ومحطة تصميم السلاسل حيث يمكن للزوار تصميم أساورهم الخاصة واختيار القطع والزينة بأنفسهم. يمكن للمشاركين أخذ أعمالهم الفنية الشخصية كتذكار مميز.'
+            image: features/dsc_6008-scaled.jpg
+      -
+        type: set
+        attrs:
+          id: mdy7tzdy
+          enabled: false
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: lite-secondary
+              size: normal
+              variant: right_image
+            heading:
+              text: 'منطقة السلوقي العربي'
+              size: small
+              color: black
+              tag: p
+              uppercase: false
+            description: 'تقع في قاعة ICC، وتشمل ورش عمل وأنشطة فنية للأطفال لتصميم تذكارات مستوحاة من السلوقي العربي، بالإضافة إلى معرض صور يعرض أنواع السلوقي المختلفة ومعلومات عن أهميته التاريخية في التراث الإماراتي.'
+            image: features/1f4a2280-2.jpg
+      -
+        type: set
+        attrs:
+          id: mdy7u5a7
+          values:
+            type: call_to_action
+            style_config:
+              padding: small
+              color: white
+              size: normal
+              variant: left_image
+            heading:
+              text: 'فن ديكودن، الفسيفساء، ورش تلوين المصابيح الليلية'
+              size: small
+              color: black
+              tag: p
+              uppercase: false
+            description: 'منطقة فنية تفاعلية تضم أنشطة ممتعة لجميع الأعمار. تشمل تجربة "ديكودن" اليابانية، حيث يتم تزيين الإكسسوارات باستخدام مادة تشبه كريمة الزينة مع وضع الزينة المصغرة عليها. كما يمكن للزوار تلوين مصابيح ليلية بتصاميم زاهية من خلال استخدام ورق تتبع، والمشاركة في ورش الفسيفساء لصنع قواعد أكواب بتصميم شخصي.'
+            image: features/dsc_6008-scaled.jpg
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
+      -
+        type: set
+        attrs:
+          id: mdy36lgt
+          enabled: false
+          values:
+            type: buttons
+            style_config:
+              padding: none
+              color: white
+              size: normal
+              variant: flex_centered
+            buttons:
+              -
+                id: mdy363wl
+                dynamic_button:
+                  button: 'entry::b860fdc4-c1e8-4cf8-ab46-9978b43e1fb7'
+                  text: null
+                  button_options:
+                    style: filled
+                    color: primary
+                    size: large
+                    new_tab: true
+                    icon: ticket
+                    icon_position: end
+                type: button
+                enabled: false
+      -
+        type: paragraph
+        attrs:
+          textAlign: left
