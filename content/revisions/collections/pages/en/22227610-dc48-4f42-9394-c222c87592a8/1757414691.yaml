@@ -1,6 +1,7 @@
-action: revision
-date: 1757414676
+action: publish
+date: 1757414691
 user: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+message: 'ADDED ADNOC'
 attributes:
   id: 22227610-dc48-4f42-9394-c222c87592a8
   slug: features
@@ -315,7 +316,6 @@ attributes:
     body_end_scripts:
       code: null
       mode: htmlmixed
-    parent: 8d69b283-c7f1-4131-8fca-237b82c25d3b
     fine_seo_description: null
     fine_seo_image: null
     header_scripts_available_on: {  }

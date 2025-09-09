@@ -10,6 +10,7 @@ page_builder:
     type: set
     attrs:
       id: mdy3tijj
+      enabled: false
       values:
         type: call_to_action
         style_config:
@@ -133,7 +134,8 @@ page_builder:
           tag: p
           uppercase: false
         description: 'This exciting zone offers interactive workshops for children to learn about falcons, including handling techniques and making falconry tools like hoods, anklets, and jesses. Kids can also enjoy falcon-themed arts and crafts. In the Hadheera Area, they’ll explore Emirati customs such as greeting guests, majlis etiquette, and the proper way to serve Arabic coffee, including the order of serving based on seniority.'
-        image: features/dsc_6007-scaled.jpg
+        image: adiehx-2025-images/downloaded-image-(51).jpg
+        section_label: 'Organised by: ADNOC'
   -
     type: set
     attrs:
@@ -307,5 +309,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755843663
+updated_at: 1757414691
 ---
