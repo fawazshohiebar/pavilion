@@ -30,8 +30,8 @@ actions:
     icon: ticket
     type: button
     enabled: false
-updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
-updated_at: 1754584072
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1757415028
 flipped: false
 duplicated_from: 39f8c616-eb93-4ada-9310-0e1f4b0b324b
 image: call_to_actions/why_visit.jpg
@@ -54,5 +54,5 @@ buttons:
         icon: ticket
         icon_position: end
     type: button
-    enabled: true
+    enabled: false
 ---
