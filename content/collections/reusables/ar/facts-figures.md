@@ -15,7 +15,7 @@ heading:
 stats:
   -
     id: macfpfr4
-    value: '347000'
+    value: '379572'
     label: زائر
     icon: users
   -
@@ -39,5 +39,5 @@ stats:
     label: 'المشاركين والعلامات التجارية'
     icon: building-storefront
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1755943283
+updated_at: 1757575968
 ---
