@@ -1,0 +1,165 @@
+<section class="adnec-container video-sliderrr py-18">
+    {{ if heading_group }}
+        {{ partial:partials/sets/heading_group :heading="heading_group" }}
+    {{ /if }}
+    <div class="prose prose-lg prose-gray max-w-none text-center animate-fade-in mb-10">
+        {{ content }}
+    </div>
+    <div class="py-5">
+        <div class="swiper video-swiper-{{ title }}">
+            <div class="swiper-wrapper">
+                {{ video_previewer }}
+                    <div class="swiper-slide">
+                        {{ if video_source == 'youtube' }}
+                            <div class="h-90 w-full rounded-[8px] relative overflow-hidden">
+                                <iframe class="w-full h-full" src="https://www.youtube.com/embed/{{ video_id }}  "
+                                    title="YouTube video" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        {{ elseif video_source == 'google-drive' }}
+                            <div class="h-90 w-full rounded-[8px]  overflow-hidden">
+                                <iframe class="w-full h-full"
+                                    src="https://drive.google.com/file/d/{{ video_id }}/preview"
+                                    title="Google Drive video" frameborder="0" allowfullscreen>
+                                </iframe>
+                            </div>
+                        {{ /if }}
+                    </div>
+                {{ /video_previewer }}
+            </div>
+            <div class="flex justify-center gap-4 mt-4 mb-2 ">
+                <button
+                    class="video-swiper-prev-{{ title }} bg-white/90 hover:bg-primary-50 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center w-10 h-10"
+                    tabindex="0" aria-label="Previous slide">
+                    {{ heroicon variant="outline" icon="chevron-left" class="w-4 h-4 text-primary-600" }}
+                </button>
+                <button
+                    class="video-swiper-next-{{ title }} bg-white/90 hover:bg-primary-50 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center w-10 h-10"
+                    tabindex="0" aria-label="Next slide">
+                    {{ heroicon variant="outline" icon="chevron-right" class="w-4 h-4 text-primary-600" }}
+                </button>
+            </div>
+        </div>
+        <script>
+            if (!window.videoControlGlobals) {
+                window.videoControlGlobals = {
+                    currentPlayingVideo: null,
+                    allVideoWrappers: new Set(), 
+                    stopAllVideos: function() {
+                        this.currentPlayingVideo = null;
+                        this.allVideoWrappers.forEach(wrapper => {
+                            const iframe = wrapper.querySelector('iframe');
+                            if (!iframe) return;
+                            const src = iframe.getAttribute('src') || '';
+                            if (src.includes('youtube.com')) {
+                                const cleanSrc = src.split('?')[0];
+                                iframe.setAttribute('src', cleanSrc);
+                                if (iframe.contentWindow && iframe.contentWindow.postMessage) {
+                                    iframe.contentWindow.postMessage(JSON.stringify({ 
+                                        event: 'command', 
+                                        func: 'pauseVideo', 
+                                        args: [] 
+                                    }), '*');
+                                }
+                            } else if (src.includes('drive.google.com')) {
+                                const cleanSrc = src.split('?')[0];
+                                iframe.setAttribute('src', cleanSrc);
+                            }
+                            if (!wrapper.querySelector('.video-click-catcher')) {
+                                this.addClickCatcher(wrapper, iframe);
+                            }
+                        });
+                    },
+                    addClickCatcher: function(wrapper, iframe) {
+                        if (wrapper.querySelector('.video-click-catcher')) return;
+                        
+                        if (getComputedStyle(wrapper).position === 'static') {
+                            wrapper.style.position = 'relative';
+                        }
+                        const catcher = document.createElement('button');
+                        catcher.type = 'button';
+                        catcher.className = 'video-click-catcher';
+                        catcher.setAttribute('aria-label', 'Play video');
+                        Object.assign(catcher.style, {
+                            position: 'absolute',
+                            inset: '0',
+                            cursor: 'pointer',
+                            zIndex: '2',
+                            background: 'transparent',
+                            border: '0',
+                            padding: '0'
+                        });
+                        wrapper.appendChild(catcher);
+                        const activate = () => {
+                            if (this.currentPlayingVideo === iframe) return; 
+                            this.stopAllVideos();
+                            this.currentPlayingVideo = iframe;
+                            catcher.remove();
+
+                            const src = iframe.getAttribute('src') || '';
+                            const cleanSrc = src.split('?')[0];
+                            if (src.includes('youtube.com')) {
+                                iframe.setAttribute('src', cleanSrc + '?autoplay=1&enablejsapi=1&origin=' + location.origin);
+                            } else if (src.includes('drive.google.com')) {
+                                iframe.setAttribute('src', cleanSrc);
+                            }
+                        };
+                        catcher.addEventListener('click', activate);
+                        catcher.addEventListener('keydown', (e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                                e.preventDefault();
+                                activate();
+                            }
+                        });
+                    }
+                };
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                const globals = window.videoControlGlobals;
+                document.querySelectorAll('.video-sliderrr').forEach(section => {
+                    const swiperContainer = section.querySelector('.swiper');
+                    if (!swiperContainer) return;
+
+                    const swiperInstance = new Swiper(swiperContainer, {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                        loop: true,
+                        navigation: {
+                            nextEl: section.querySelector('.video-swiper-next-{{ title }}'),
+                            prevEl: section.querySelector('.video-swiper-prev-{{ title }}'),
+                        },
+                        breakpoints: {
+                            0: {
+                                slidesPerView: 1
+                            },
+                            768: {
+                                slidesPerView: 2
+                            },
+                            1024: {
+                                slidesPerView: 3
+                            }
+                        }
+                    });
+                    const iframes = Array.from(swiperContainer.querySelectorAll('iframe'));   
+                    const addCatcherToIframe = (iframe) => {
+                        const wrapper = iframe.parentElement;
+                        if (!wrapper) return;
+                        globals.allVideoWrappers.add(wrapper);
+                        globals.addClickCatcher(wrapper, iframe);
+                    };
+                    iframes.forEach(addCatcherToIframe);
+                    const nextBtn = section.querySelector('.video-swiper-next-{{ title }}');
+                    const prevBtn = section.querySelector('.video-swiper-prev-{{ title }}');
+                    [nextBtn, prevBtn].forEach(btn => {
+                        if (btn) {
+                            btn.addEventListener('click', globals.stopAllVideos.bind(globals));
+                        }
+                    });
+                    swiperInstance.on('slideChange', globals.stopAllVideos.bind(globals));
+                });
+            });
+        </script>
+    </div>
+</section>

@@ -277,6 +277,14 @@ page_builder:
         popup_image: banners/3.-falcon-auction-600x400-1.jpg
         popup_link: 'https://auction.adihex.com/'
   -
+    type: set
+    attrs:
+      id: mfdrw9s2
+      values:
+        type: reusable_block
+        entry:
+          - 1c0449e4-f8ee-4dc2-a95c-ed2cf6a143ee
+  -
     type: paragraph
     attrs:
       textAlign: left
@@ -291,6 +299,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1757414188
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1758019642
 ---
