@@ -1,5 +1,5 @@
 action: revision
-date: 1758086466
+date: 1758086498
 user: ac775259-f1c4-4a12-b768-668149cb0e1a
 attributes:
   id: home
@@ -287,6 +287,7 @@ attributes:
         type: set
         attrs:
           id: mfnja8t9
+          enabled: false
           values:
             type: reusable_block
             entry:
