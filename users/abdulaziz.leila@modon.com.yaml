@@ -10,3 +10,7 @@ preferences:
         - site
         - slug
         - status
+  forms:
+    book_your_stand_2026:
+      columns:
+        - datestamp
