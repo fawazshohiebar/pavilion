@@ -10,6 +10,7 @@ use App\Http\Controllers\GetAgendaByDateController;
 // ]);
 
 Route::permanentRedirect('/', '/en');
+// Route::permanentRedirect('/ar', '/en');
 
 
 Route::get('/{locale}/agenda/{agenda}/{date}', GetAgendaByDateController::class)->name('show_agenda_by_date');
