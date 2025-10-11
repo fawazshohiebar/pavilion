@@ -186,11 +186,64 @@ html {
 }
 
 
-
+/* 
 .dropdown-checkbox {
   display: none;
 }
 
 .dropdown-checkbox:checked + .dropdown-label + .dropdown-content {
   display: block;
+} */
+
+
+
+
+
+.dropdown-item {
+  position: relative;
+}
+
+/* hide checkbox visually but keep it for click fallback */
+.dropdown-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* dropdown base */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  margin-top: 0rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  z-index: 50;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity .2s ease, transform .2s ease;
+  pointer-events: none; /* prevents accidental hover until visible */
+}
+
+/* show dropdown on hover, checkbox, or focus */
+.dropdown-item:hover .dropdown-content,
+.dropdown-item:focus-within .dropdown-content,
+.dropdown-checkbox:checked + .dropdown-label + .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto; /* allow hover inside */
+}
+
+/* rotate icon when open */
+.dropdown-item:hover .dropdown-label svg,
+.dropdown-checkbox:checked + .dropdown-label svg {
+  transform: rotate(180deg);
+  transition: transform .2s ease;
 }
