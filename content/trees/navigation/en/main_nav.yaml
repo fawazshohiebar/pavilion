@@ -1,7 +1,7 @@
 tree:
   -
     id: 70307046-87d8-4280-905b-bd856e252beb
-    title: 'Visitor Information'
+    title: Visit
     children:
       -
         id: 973528a1-13eb-4d06-b64c-33d90508d5fc
@@ -23,7 +23,7 @@ tree:
         entry: 55a17f59-7802-4340-a541-fc27e4615018
   -
     id: 9fdcb5f9-b730-4c15-9264-d64cc314ff74
-    title: 'Exhibitor Information'
+    title: Exhibit
     children:
       -
         id: 0df8dab3-81f3-4813-8036-eabb6ea940a9
