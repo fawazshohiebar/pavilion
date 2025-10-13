@@ -235,24 +235,24 @@ page_builder:
           -
             id: mg93vaym
             icon: home-modern
-            info_title: 'Tackle Global Food Security Challenges'
-            info_description: 'Join high-level discussions focused on practical strategies and international cooperation to address global food security.'
+            info_title: 'Build Powerful Connections'
+            info_description: 'Meet and network with policymakers, industry leaders, and innovators across the agriculture and food value chains.'
             image: rectangle-9.png
             type: info
             enabled: true
           -
             id: mg93vd8h
             icon: home-modern
-            info_title: 'Tackle Global Food Security Challenges'
-            info_description: 'Join high-level discussions focused on practical strategies and international cooperation to address global food security.'
+            info_title: 'Take Part in Business Matchmaking'
+            info_description: 'Participate in tailored matchmaking sessions designed to help you connect with key decision-makers and industry stakeholders.'
             image: rectangle-9.png
             type: info
             enabled: true
           -
             id: mg93vess
             icon: home-modern
-            info_title: 'Tackle Global Food Security Challenges'
-            info_description: 'Join high-level discussions focused on practical strategies and international cooperation to address global food security.'
+            info_title: 'Discover Innovative Products and Solutions'
+            info_description: 'Explore a wide range of food, agricultural, and technology innovations presented by local and international exhibitors.'
             image: rectangle-9.png
             type: info
             enabled: true
@@ -643,6 +643,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760349053
+updated_at: 1760353595
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
