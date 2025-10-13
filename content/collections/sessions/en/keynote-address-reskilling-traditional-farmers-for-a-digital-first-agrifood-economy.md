@@ -8,5 +8,6 @@ event_date: '2025-10-21'
 agendas:
   - global-food-talks
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760357263
+updated_at: 1760361248
 ---
+<p>The future of farming isn’t just in the fields anymore. This session will explore how targeted reskilling programs can empower farmers to thrive in a digital-first agrifood economy, turning them into data-savvy growers, drone operators, and agri-tech entrepreneurs.</p>
