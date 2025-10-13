@@ -8,5 +8,6 @@ event_date: '2025-10-21'
 agendas:
   - global-food-talks
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760361351
+updated_at: 1760361386
 ---
+<p>As sustainability pressure mounts, the food industry is racing to ditch single-use plastics for next-gen, food-grade biomaterials that are safe, functional—and often compostable. This session will explore the innovators turning kitchen waste and natural polymers into packaging that doesn’t pollute.</p>
