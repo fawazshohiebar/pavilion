@@ -121,6 +121,37 @@ page_builder:
           11 Acceptance of Terms
           By using our services, you signify your acceptance of this Privacy Policy.
   -
+    type: set
+    attrs:
+      id: mgotje6q
+      values:
+        type: heading_and_sponsors
+        background: bgcolor
+        background_color: light-secondary
+        design: centered
+        heading:
+          -
+            type: heading
+            attrs:
+              level: 1
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'Partners & Sponsors 2025'
+        sponsors_entries:
+          - f6259b32-4d11-4ffe-9a0e-ee7404bc3523
+          - a4e2fc64-7be6-48b8-9733-91df64fe0c2b
+          - 9d9a8b49-cfb4-430c-a1db-5c2ff3dadb37
+          - bf598fe8-be8d-4694-8f7a-e242fdcf461b
+          - ed128775-d38c-4de9-a76a-39ee51e6474e
+          - 660c725b-57ab-4ab0-830c-327db4cb1730
+          - 7b79933c-59d1-4bbf-aa0c-f2c266e18f65
+          - 61726213-0604-4085-bfd1-8da37d46e3d0
+          - e1c7cddf-db04-43ae-b487-dd20f07e7dad
+  -
     type: paragraph
     attrs:
       textAlign: left
@@ -138,5 +169,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760340677
+updated_at: 1760341033
 ---
