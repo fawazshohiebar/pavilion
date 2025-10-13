@@ -8,5 +8,6 @@ event_date: '2025-10-22'
 agendas:
   - global-food-talks
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760358955
+updated_at: 1760363552
 ---
+<p>Harnessing consumer data is essential for launching successful food innovations. This session will explore insights and case studies of data-driven strategies—from targeted product launches and optimized packaging to refined formulations. Learn practical methods for gathering and applying consumer insights effectively, ensuring your innovations resonate with the market and maximize profitability.</p><p>Hassan Safi, Group Chief Executive Officer, Al Ain Farms Group (UAE)</p><p><strong>Moderator:</strong></p>
