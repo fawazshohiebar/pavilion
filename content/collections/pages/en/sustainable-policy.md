@@ -9,7 +9,7 @@ page_builder:
       id: mgotqcbh
       values:
         type: image_and_text
-        image: capital-events-colored-en-ar-logo.svg
+        image: capital-events-colored-en-ar-logo.png
         text_field: |-
           Capital Events LLC is a government owned business, a part of the ADNEC Group, specializing in the management of events across a variety of business sectors.
 
@@ -46,5 +46,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760341389
+updated_at: 1760341538
 ---
