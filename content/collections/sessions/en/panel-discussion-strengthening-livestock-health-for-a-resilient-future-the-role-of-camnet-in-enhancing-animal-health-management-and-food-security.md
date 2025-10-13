@@ -8,6 +8,6 @@ event_date: '2025-10-22'
 agendas:
   - global-food-talks
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760364350
+updated_at: 1760366107
 ---
-<p>Asma Abdi</p><p>Dr. Bernard Faye</p><p>Dr. Faisal AlMathen</p><p>Dr. Baker Alturief</p>
+<p></p>
