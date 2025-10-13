@@ -19,6 +19,21 @@ tabs:
               type: text
               display: Iframe
               localizable: false
+          -
+            handle: buttons
+            field:
+              type: replicator
+              display: Buttons
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    button_set:
+                      display: 'Button Set'
+                      fields:
+                        -
+                          import: fancy_button
   sidebar:
     display: Sidebar
     sections:

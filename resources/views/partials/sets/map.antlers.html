@@ -1,4 +1,6 @@
-<div class="bg-[#f5f2eb]">
+<div class="adnec-container mx-auto ">
+
+<div class="bg-[#f5f2eb] ">
     <div class="h-[380px] mx-auto relative"
          x-data="{ 
              mapActive: false,
@@ -34,23 +36,23 @@
             <div class="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 px-8 py-6 transform group-hover:scale-105 transition-all duration-300 max-w-sm mx-4">
                 <div class="flex items-center justify-center space-x-3 mb-3">
                     <!-- Click icon -->
-                    <div class="w-8 h-8 rounded-full bg-[#827654]/10 flex items-center justify-center group-hover:bg-[#827654]/20 transition-colors duration-300">
-                        <svg class="w-4 h-4 text-[#827654]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-8 h-8 rounded-full bg-blue flex items-center justify-center group-hover:bg-blue/80 transition-colors duration-300">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.122 2.122"/>
                         </svg>
                     </div>
                     
                     <!-- Map icon -->
-                    <div class="w-8 h-8 rounded-full bg-[#827654]/10 flex items-center justify-center group-hover:bg-[#827654]/20 transition-colors duration-300">
-                        <svg class="w-4 h-4 text-[#827654]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-8 h-8 rounded-full bg-blue flex items-center justify-center group-hover:bg-blue/80 transition-colors duration-300">
+                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 13V4m-6 3l6-3"/>
                         </svg>
                     </div>
                 </div>
                 
                 <div class="text-center">
-                    <p class="text-[#827654] font-medium text-sm mb-1">{{'Click to interact with map' | trans }}</p>
-                    <p class="text-gray-500 text-xs">{{'Zoom, pan and explore' | trans }}</p>
+                    <p class="text-primary font-medium text-sm mb-1">{{'Click to interact with map' | trans }}</p>
+                    <p class="text-accent text-xs">{{'Zoom, pan and explore' | trans }}</p>
                 </div>
                 
                 <!-- Subtle animated pulse -->
@@ -66,4 +68,14 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class=" flex justify-center py-10">
+
+{{buttons}}
+            {{ partial:partials/sets/fancy_button }}
+{{/buttons}}
+
+</div>
+
 </div>
