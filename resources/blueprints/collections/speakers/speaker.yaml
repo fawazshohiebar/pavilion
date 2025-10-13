@@ -22,6 +22,7 @@ tabs:
                 - image
                 - 'max_filesize:9216'
                 - 'mimes:png,jpg,jpeg,gif,webp'
+              folder: speakers
           -
             handle: position
             field:
