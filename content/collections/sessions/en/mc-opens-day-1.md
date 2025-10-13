@@ -1,12 +1,12 @@
 ---
 id: o5p6q7r8-s9t0-1234-5678-901234opqrst
 blueprint: session
-title: 'MC Opens'
-start_time: '08:45'
-end_time: '09:00'
+title: 'Opening Ceremony'
+start_time: '10:00'
+end_time: '10:10'
 event_date: '2025-10-21'
 agendas:
   - global-food-talks
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760020607
+updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
+updated_at: 1760356785
 ---
