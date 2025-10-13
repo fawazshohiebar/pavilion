@@ -14,7 +14,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760077755
+updated_at: 1760186099
 page_builder:
   -
     type: set
@@ -201,6 +201,7 @@ page_builder:
             enabled: true
             design: Orangenogradient
             button_size: lg
+            link: 'entry::e8c74d7b-e6bd-4fdc-be91-05c0d9b00e40'
   -
     type: set
     attrs:

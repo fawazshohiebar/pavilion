@@ -75,10 +75,6 @@ page_builder:
         section_image: partners/untitled-design-25-768x768.png
         background: bgcolor
         background_color: light-secondary
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
 template: default
 fine_seo_is_title_custom: false
 header_scripts:
@@ -91,7 +87,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1759748217
+updated_at: 1760185244
 fine_seo_title: 'Partners & Sponsors 2025'
 fine_seo_preview: 'Partners & Sponsors 2025'
 ---

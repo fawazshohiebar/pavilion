@@ -14,7 +14,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760077710
+updated_at: 1760184876
 page_builder:
   -
     type: set
@@ -64,7 +64,7 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: "For hotels not listed among our partners, you can still enjoy a special offer by using the promo code EYHGFW25 when booking through Etihad Holidays. Book your stay from 19-24 October to secure this exclusive deal and make the most of your show experience!"
+                text: 'For hotels not listed among our partners, you can still enjoy a special offer by using the promo code EYHGFW25 when booking through Etihad Holidays. Book your stay from 19-24 October to secure this exclusive deal and make the most of your show experience!'
   -
     type: set
     attrs:
@@ -91,41 +91,20 @@ page_builder:
                 button_size: fit
                 type: button_set
                 enabled: true
-            type: grid_set
-            enabled: true
-            number_of_stars: 4
-          -
-            id: mgf3af94
-            grid_images: features/andaz-hotel-jpg.png
-            grid_heading:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Andaz Capital Gate Abu Dhabi - A Concept by Hyatt'
-            book_button:
-              -
-                id: mgf32qrq
-                label: 'Book Now'
-                design: purpleoutine
-                open_new_tab: false
-                button_size: fit
-                type: button_set
-                enabled: true
+                link: 'https://book.etihadholidays.com/package/hotel/united-arab-emirates/abu-dhabi/453/andaz-capital-gate-abu-dhabi-by-hyatt/187951?To=453&DepartureDate=2025-10-19&ReturnDate=2025-10-24&Currency=AED&CultureCode=en-US&RoomCount=1&PaxInfos%5B0%5D.AdultCount=2&HotelCode=187951&ProductId=2688100e-9b5d-423d-846b-abb4d098e2b1&PromoCode=EYHGFW25'
             type: grid_set
             enabled: true
             number_of_stars: 5
           -
-            id: mgf3aios
-            grid_images: features/andaz-hotel-jpg.png
+            id: mgf3af94
+            grid_images: features/aloft-hotel-jpg-(1).png
             grid_heading:
               -
                 type: paragraph
                 content:
                   -
                     type: text
-                    text: 'Andaz Capital Gate Abu Dhabi - A Concept by Hyatt'
+                    text: 'Aloft Abu Dhabi'
             book_button:
               -
                 id: mgf32qrq
@@ -135,19 +114,20 @@ page_builder:
                 button_size: fit
                 type: button_set
                 enabled: true
+                link: 'https://book.etihadholidays.com/package/hotel/united-arab-emirates/abu-dhabi/453/aloft-abu-dhabi/148362?To=453&DepartureDate=2025-10-19&ReturnDate=2025-10-24&Currency=AED&CultureCode=en-US&RoomCount=1&PaxInfos%5B0%5D.AdultCount=2&HotelCode=148362&ProductId=2688100e-9b5d-423d-846b-abb4d098e2b1&PromoCode=EYHGFW25'
             type: grid_set
             enabled: true
-            number_of_stars: 3
+            number_of_stars: 4
           -
-            id: mgf3alb1
-            grid_images: features/andaz-hotel-jpg.png
+            id: mgf3aios
+            grid_images: features/pearl-rotana-jpg.png
             grid_heading:
               -
                 type: paragraph
                 content:
                   -
                     type: text
-                    text: 'Andaz Capital Gate Abu Dhabi - A Concept by Hyatt'
+                    text: 'Pearl Rotana Capital Centre'
             book_button:
               -
                 id: mgf32qrq
@@ -157,6 +137,30 @@ page_builder:
                 button_size: fit
                 type: button_set
                 enabled: true
+                link: 'https://book.etihadholidays.com/package/hotel/united-arab-emirates/abu-dhabi/453/pearl-rotana-capital-centre/2667402?To=453&DepartureDate=2025-10-19&ReturnDate=2025-10-24&Currency=AED&CultureCode=en-US&RoomCount=1&PaxInfos%5B0%5D.AdultCount=2&HotelCode=2667402&ProductId=2688100e-9b5d-423d-846b-abb4d098e2b1&PromoCode=EYHGFW25'
+            type: grid_set
+            enabled: true
+            number_of_stars: 4
+          -
+            id: mgf3alb1
+            grid_images: features/centro-jpg-(1).png
+            grid_heading:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Capital Centre Arjaan By Rotana'
+            book_button:
+              -
+                id: mgf32qrq
+                label: 'Book Now'
+                design: purpleoutine
+                open_new_tab: false
+                button_size: fit
+                type: button_set
+                enabled: true
+                link: 'https://book.etihadholidays.com/package/hotel/united-arab-emirates/abu-dhabi/453/centro-capital-center/220291?To=453&DepartureDate=2025-10-19&ReturnDate=2025-10-24&Currency=AED&CultureCode=en-US&RoomCount=1&PaxInfos%5B0%5D.AdultCount=2&HotelCode=220291&ProductId=2688100e-9b5d-423d-846b-abb4d098e2b1&PromoCode=EYHGFW25'
             type: grid_set
             enabled: true
             number_of_stars: 4
