@@ -63,6 +63,16 @@ highlights_images:
     image: 7.png
     type: highlighted_image
     enabled: true
+  -
+    id: mgqijhj5
+    image: 8.png
+    type: highlighted_image
+    enabled: true
+  -
+    id: mgqilbiw
+    image: 9.png
+    type: highlighted_image
+    enabled: true
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760443252
+updated_at: 1760443492
 ---
