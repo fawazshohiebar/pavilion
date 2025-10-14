@@ -38,6 +38,21 @@ highlights_images:
     image: 2.png
     type: highlighted_image
     enabled: true
+  -
+    id: mgqi55u6
+    image: 3.png
+    type: highlighted_image
+    enabled: true
+  -
+    id: mgqi8gej
+    image: 4.png
+    type: highlighted_image
+    enabled: true
+  -
+    id: mgqia5pu
+    image: 5.png
+    type: highlighted_image
+    enabled: true
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760442490
+updated_at: 1760443013
 ---
