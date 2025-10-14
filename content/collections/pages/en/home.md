@@ -226,7 +226,7 @@ page_builder:
             enabled: true
           -
             id: mg93vaym
-            icon: user
+            icon: link
             info_title: 'Build Powerful Connections'
             info_description: 'Meet and network with policymakers, industry leaders, and innovators across the agriculture and food value chains.'
             type: info
@@ -587,6 +587,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760446163
+updated_at: 1760446387
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
