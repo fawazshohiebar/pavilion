@@ -321,24 +321,24 @@ page_builder:
             id: mgafci4r
             icon_source: icon
             icon: home-modern
-            caption: 'Food Sourcing & Procurement'
-            description: 'Abu Dhabi International Food Exhibition (ADIFE)'
+            caption: 'Shaping Food Futures'
+            description: 'Global Food Talks'
             type: icon_box
             enabled: true
           -
             id: mgafcjop
             icon_source: icon
             icon: home-modern
-            caption: 'Food Sourcing & Procurement'
-            description: 'Abu Dhabi International Food Exhibition (ADIFE)'
+            caption: 'Heritage & Trade'
+            description: 'Abu Dhabi Date Palm Exhibition (ADDPE)'
             type: icon_box
             enabled: true
           -
             id: mgafcn5m
             icon_source: icon
             icon: home-modern
-            caption: 'Food Sourcing & Procurement'
-            description: 'Abu Dhabi International Food Exhibition (ADIFE)'
+            caption: 'Farming & Sustainability'
+            description: 'AgriTech & Farmers'
             type: icon_box
             enabled: true
         center_image: explore.png
@@ -628,6 +628,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760425316
+updated_at: 1760425635
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
