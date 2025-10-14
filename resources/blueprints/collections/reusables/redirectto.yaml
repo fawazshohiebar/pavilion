@@ -13,6 +13,8 @@ tabs:
           -
             handle: redirect_to_url
             field: form_box.redirect_to_url
+            config:
+              width: 100
   sidebar:
     display: Sidebar
     sections:
