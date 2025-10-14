@@ -1,7 +1,7 @@
 <div class="flex flex-row items-center justify-start relative w-full h-16 sm:h-20 bg-white border border-b-0 border-gray-200 rounded-t-md overflow-x-auto overflow-y-hidden scrollbar-hide">
         <template x-for="day in days" :key="day.number">
             <div 
-                class="flex-shrink-0 h-full min-w-[80px] sm:min-w-[100px] lg:flex-1 relative cursor-pointer transition-all duration-200"
+                class="flex-shrink h-full min-w-[80px] sm:min-w-[100px] flex-1 relative cursor-pointer transition-all duration-200"
                 :class="{
                     'bg-light-accent': selectedDay === day.number,
                     'bg-white hover:bg-gray-50': selectedDay !== day.number

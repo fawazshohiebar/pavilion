@@ -13,6 +13,22 @@ page_builder:
         end_date: '2025-10-23'
         agendas:
           - agritech-forum
+        replicator_titles:
+          -
+            id: mgqg28p1
+            title_field: helloooo
+            type: title_set
+            enabled: true
+          -
+            id: mgqg2aag
+            title_field: world
+            type: title_set
+            enabled: true
+          -
+            id: mgqg2c1s
+            title_field: 'ali awwad'
+            type: title_set
+            enabled: true
   -
     type: paragraph
     attrs:
@@ -29,5 +45,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760076837
+updated_at: 1760439422
+fine_seo_title: 'AgriTech Forum'
+fine_seo_preview: 'AgriTech Forum'
 ---

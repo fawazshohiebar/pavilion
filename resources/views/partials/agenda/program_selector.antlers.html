@@ -1,8 +1,9 @@
 <div
         class="flex flex-row items-center justify-between relative w-full h-16 sm:h-20 rounded-b-md overflow-x-auto overflow-y-hidden scrollbar-hide mb-6 sm:mb-8">
         <template x-for="(program, index) in programs" :key="index">
+            
             <div
-                class="flex-shrink-0 h-full min-w-[200px] sm:min-w-[250px] lg:flex-1 relative cursor-pointer transition-all duration-200 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12"
+                class="flex-shrink h-full min-w-[200px] sm:min-w-[250px] flex-1 relative cursor-pointer transition-all duration-200 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12"
                 :class="{
                     'bg-blue': selectedProgram === index,
                     'bg-primary-500 hover:bg-primary-600': selectedProgram !== index
@@ -20,7 +21,7 @@
                     x-transition:leave-start="opacity-100 transform scale-100"
                     x-transition:leave-end="opacity-0 transform scale-75"
                 ></div>
-
+ 
                 <div class="flex items-center justify-center w-full h-full">
                     <!-- Program Image -->
                     {{# <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden flex-shrink-0 ltr:mr-3 ltr:sm:mr-4 rtl:ml-3 rtl:sm:ml-4">
