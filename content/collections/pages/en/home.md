@@ -254,7 +254,7 @@ page_builder:
             enabled: true
           -
             id: mgq7ln62
-            icon: home-modern
+            icon: hand-thumb-up
             info_title: 'Forge Meaningful Partnerships'
             info_description: 'Connect with organizations, government bodies, and investors driving progress in food security and sustainable development.'
             type: info
@@ -587,6 +587,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760446387
+updated_at: 1760446516
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
