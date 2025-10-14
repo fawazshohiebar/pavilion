@@ -226,14 +226,14 @@ page_builder:
             enabled: true
           -
             id: mg93vaym
-            icon: globe-asia-australia
+            icon: user
             info_title: 'Build Powerful Connections'
             info_description: 'Meet and network with policymakers, industry leaders, and innovators across the agriculture and food value chains.'
             type: info
             enabled: true
           -
             id: mg93vd8h
-            icon: home-modern
+            icon: cursor-arrow-ripple
             info_title: 'Take Part in Business Matchmaking'
             info_description: 'Participate in tailored matchmaking sessions designed to help you connect with key decision-makers and industry stakeholders.'
             type: info
@@ -587,6 +587,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760445519
+updated_at: 1760445986
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
