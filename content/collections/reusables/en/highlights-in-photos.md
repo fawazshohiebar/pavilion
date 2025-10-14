@@ -5,7 +5,7 @@ title: 'Highlights In Photos'
 highlights_images:
   -
     id: mg9892fv
-    image: highlights/highlights-image.png
+    image: al4a6289-2-scaled-1.jpg
     type: highlighted_image
     enabled: true
   -
@@ -33,6 +33,6 @@ highlights_images:
     image: highlights/highlights-image.png
     type: highlighted_image
     enabled: true
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1759398292
+updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
+updated_at: 1760440302
 ---
