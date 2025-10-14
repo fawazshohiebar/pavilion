@@ -240,14 +240,14 @@ page_builder:
             enabled: true
           -
             id: mg93vess
-            icon: home-modern
+            icon: light-bulb
             info_title: 'Discover Innovative Products and Solutions'
             info_description: 'Explore a wide range of food, agricultural, and technology innovations presented by local and international exhibitors.'
             type: info
             enabled: true
           -
             id: mg93vgis
-            icon: home-modern
+            icon: arrow-trending-up
             info_title: 'Stay Ahead of Industry Trends'
             info_description: 'Gain insights into sustainable practices, technological advancements, and policy updates shaping the future of food systems.'
             type: info
@@ -587,6 +587,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760445986
+updated_at: 1760446163
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
