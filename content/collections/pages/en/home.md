@@ -527,18 +527,6 @@ page_builder:
                     attrs:
                       color: '#E08247'
                 text: 'Global Food Week 2024'
-        description:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                marks:
-                  -
-                    type: textColor
-                    attrs:
-                      color: '#211551'
-                text: 'Global Food Week brings together diverse sectors that showcase the full spectrum of the food and agriculture value chain.'
         highlights_entries:
           - 54512af2-7793-4939-8c7e-0f8ff1d58f8e
   -
@@ -616,6 +604,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760437771
+updated_at: 1760437920
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
