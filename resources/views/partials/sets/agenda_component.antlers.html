@@ -19,10 +19,27 @@
 )">
 
     {{# Agenda Days Selector #}}
+    
     {{ partial:agenda/day_selector }}
     {{# End Agenda Days Selector #}}
+    
     {{# Program Selector #}}
     {{ partial:agenda/program_selector }}
+
+<div class="mb-6  mt-[-35px] sm:mb-8 flex-shrink h-full flex-1 relative cursor-pointer transition-all duration-200 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 bg-light-accent">
+    {{ replicator_titles }}
+    <div class="text-center" 
+         :class="{ 'block': selectedDay === {{ index }} + 1, 'hidden': selectedDay !== {{ index }} + 1 }"
+         x-transition>
+        <h2 class="text-sm sm:text-base lg:text-lg font-semibold  text-accent py-5">
+            {{ title_field }}
+        </h2>
+    </div>
+    {{ /replicator_titles }}
+</div>
+
+
+
     {{# End Program Selector #}}
 
     {{# Loading State #}}

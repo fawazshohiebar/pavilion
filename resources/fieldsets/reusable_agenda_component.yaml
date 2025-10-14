@@ -22,3 +22,22 @@ fields:
       type: terms
       display: Agendas
       localizable: false
+  -
+    handle: replicator_titles
+    field:
+      type: replicator
+      display: 'Replicator Titles'
+      localizable: false
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            title_set:
+              display: 'Title Set'
+              fields:
+                -
+                  handle: title_field
+                  field:
+                    type: text
+                    display: 'Title Field'
+                    localizable: false
