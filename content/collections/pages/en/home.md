@@ -558,18 +558,6 @@ page_builder:
                       color: '#E08247'
                 text: ' Sponsors 2025'
         design: centered
-        description:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                marks:
-                  -
-                    type: textColor
-                    attrs:
-                      color: '#211551'
-                text: 'Global Food Week brings together diverse sectors that showcase the full spectrum of the food and agriculture value chain.'
         entries_field:
           - 6dac910e-d26c-4a22-a38f-ec58c24ae101
           - ed128775-d38c-4de9-a76a-39ee51e6474e
@@ -604,6 +592,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760437920
+updated_at: 1760438064
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
