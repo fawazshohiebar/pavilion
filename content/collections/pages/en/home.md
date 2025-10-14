@@ -222,7 +222,6 @@ page_builder:
             icon: home-modern
             info_title: 'Tackle Global Food Security Challenges'
             info_description: 'Join high-level discussions focused on practical strategies and international cooperation to address global food security.'
-            image: rectangle-9.png
             type: info
             enabled: true
           -
@@ -230,7 +229,6 @@ page_builder:
             icon: globe-asia-australia
             info_title: 'Build Powerful Connections'
             info_description: 'Meet and network with policymakers, industry leaders, and innovators across the agriculture and food value chains.'
-            image: rectangle-9.png
             type: info
             enabled: true
           -
@@ -238,7 +236,6 @@ page_builder:
             icon: home-modern
             info_title: 'Take Part in Business Matchmaking'
             info_description: 'Participate in tailored matchmaking sessions designed to help you connect with key decision-makers and industry stakeholders.'
-            image: rectangle-9.png
             type: info
             enabled: true
           -
@@ -246,7 +243,6 @@ page_builder:
             icon: home-modern
             info_title: 'Discover Innovative Products and Solutions'
             info_description: 'Explore a wide range of food, agricultural, and technology innovations presented by local and international exhibitors.'
-            image: rectangle-9.png
             type: info
             enabled: true
           -
@@ -254,7 +250,6 @@ page_builder:
             icon: home-modern
             info_title: 'Stay Ahead of Industry Trends'
             info_description: 'Gain insights into sustainable practices, technological advancements, and policy updates shaping the future of food systems.'
-            image: rectangle-9.png
             type: info
             enabled: true
           -
@@ -592,6 +587,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760438951
+updated_at: 1760440877
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
