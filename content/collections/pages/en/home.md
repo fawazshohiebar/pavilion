@@ -227,7 +227,7 @@ page_builder:
             enabled: true
           -
             id: mg93vaym
-            icon: home-modern
+            icon: globe-asia-australia
             info_title: 'Build Powerful Connections'
             info_description: 'Meet and network with policymakers, industry leaders, and innovators across the agriculture and food value chains.'
             image: rectangle-9.png
@@ -592,6 +592,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
-updated_at: 1760438064
+updated_at: 1760438951
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
