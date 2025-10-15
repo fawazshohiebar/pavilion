@@ -51,7 +51,7 @@ fields:
   -
     handle: section_image
     field:
-      container: collaterals
+      container: assets
       max_files: 1
       type: assets
       display: 'Section Image'
