@@ -2,9 +2,9 @@
 id: b3f71fb8-ce8b-4feb-931b-5116d438505a
 blueprint: speaker
 title: 'Jim Mellon'
-image: speakers/new-project-(34).png
+image: speakers/corporate-headshot-j..._imresizer.jpg
 position: 'Executive Chairman'
 company: Agronomics
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760360971
+updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
+updated_at: 1760526007
 ---
