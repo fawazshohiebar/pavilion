@@ -609,6 +609,7 @@ page_builder:
           - Boosting collaboration within Abu Dhabi’s ecosystem to drive innovation
         background: bgcolor
         background_color: secondary
+        section_label: "DISCOVER WHAT'S NEW THIS EDITION"
         section_image: features/dsc_4678-scaled-(1)-(1)-1760516940.png
   -
     type: paragraph
@@ -625,6 +626,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760517047
+updated_at: 1760517173
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
