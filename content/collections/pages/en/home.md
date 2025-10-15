@@ -603,7 +603,6 @@ page_builder:
           - Access to finance for scaling alternative protein ventures
           - The role of novel foods in strengthening food security
           - Boosting collaboration within Abu Dhabi’s ecosystem to drive innovation
-        section_image: features/dsc_4678-scaled-(1).webp
         background: bgcolor
         background_color: secondary
   -
@@ -621,6 +620,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760516728
+updated_at: 1760516787
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
