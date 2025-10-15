@@ -8,8 +8,8 @@ style_config:
   size: normal
   variant: image_left
 description: "Global Food Week is the region’s leading platform for dialogue, innovation, and partnerships around food security and agri-food systems. Whether you're a policymaker, industry expert, investor, or entrepreneur, connect with change-makers, discover transformative solutions, and shape a more resilient food future."
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1759741558
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1760512576
 heading_text:
   -
     type: heading
@@ -31,5 +31,5 @@ heading_text:
         type: text
         text: ' Transform.'
 text_image_alignment: v1
-image: features/visit.png
+section_image: 4.png
 ---
