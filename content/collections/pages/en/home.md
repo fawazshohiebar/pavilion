@@ -574,6 +574,37 @@ page_builder:
         entry:
           - a233c58e-ef66-4705-8e9f-32b8a638e1b5
   -
+    type: set
+    attrs:
+      id: mgrq1gmh
+      values:
+        type: call_to_action
+        text_image_alignment: v1
+        heading_text:
+          -
+            type: heading
+            attrs:
+              level: 2
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'Alternative Proteins (PALT)'
+        description: |-
+          Proteins Alternative (PALT) – a flagship initiative of Abu Dhabi Investment Office’s AGWA (AgriFood Growth and Water Abundance) cluster – will take place as a key feature at Global Food Week 2025.
+
+          PALT brings together the global alternative protein ecosystem – from pioneering startups and major F&B players to regulators and future-focused consumers – to explore how alternative proteins are reshaping the future of food.
+
+          Key topics include:
+
+          - Regulatory harmonization to accelerate market adoption
+          - Access to finance for scaling alternative protein ventures
+          - The role of novel foods in strengthening food security
+          - Boosting collaboration within Abu Dhabi’s ecosystem to drive innovation
+        section_image: features/dsc_4678-scaled-(1).webp
+  -
     type: paragraph
     attrs:
       textAlign: left
@@ -588,6 +619,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760512786
+updated_at: 1760516690
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
