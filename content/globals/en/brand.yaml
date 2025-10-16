@@ -53,15 +53,25 @@ ai_search_url: 'https://aisearch.adihex.com/'
 footer_sales:
   -
     id: mglex50w
-    sales_text: 'Sales : sales@globalfoodweek.ae'
-    icon: chat-bubble-left-right
+    sales_text: '21 October 2025 | 10:00 - 18:00'
+    icon: calendar-days
     type: sales_set
     enabled: true
-    link: 'mailto:sales@globalfoodweek.ae'
   -
     id: mglexqz2
-    sales_text: 'Marketing : marketing@globalfoodweek.ae'
-    icon: megaphone
+    sales_text: '22 October 2025 | 10:00 - 18:00'
+    icon: calendar-days
     type: sales_set
     enabled: true
-    link: 'mailto:marketing@globalfoodweek.ae'
+  -
+    id: mgt7o397
+    sales_text: '23 October 2025 | 10:00 - 17:00'
+    icon: calendar-days
+    type: sales_set
+    enabled: true
+  -
+    id: mgt7o8uf
+    sales_text: 'ADNEC Centre Abu Dhabi'
+    icon: map-pin
+    type: sales_set
+    enabled: true
