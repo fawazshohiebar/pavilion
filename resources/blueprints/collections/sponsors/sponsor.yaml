@@ -30,6 +30,14 @@ tabs:
               validate:
                 - image
                 - 'mimes:png,jpg,jpeg,gif,webp'
+          -
+            handle: sponsor_level
+            field:
+              taxonomies:
+                - sponsor_level
+              type: terms
+              display: 'Sponsor Level'
+              localizable: false
   sidebar:
     display: Sidebar
     sections:
