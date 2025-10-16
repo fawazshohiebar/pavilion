@@ -8,6 +8,12 @@ preferences:
       after_save: continue_editing
     reusables:
       after_save: continue_editing
+      columns:
+        - title
+        - site
+        - slug
+        - status
+        - design
     sessions:
       columns:
         - title
