@@ -59,3 +59,43 @@ redirects:
     url_old: /sectors-2025-2/abu-dhabi-date-palm-exhibition/
     internal_url: f834f13f-bd81-4b52-a459-5e9db1442de1
     response: 302
+  -
+    id: mgtoqlub
+    url_old: /sectors-2025-2/global-food-talks/
+    internal_url: e3099684-7556-4f09-919d-7c0ee72e3b46
+    response: 302
+  -
+    id: mgtotgsn
+    url_old: /sectors-2025-2/agritech-and-farmers/
+    internal_url: 963fcb50-ac26-44da-b763-6f72324493c1
+    response: 302
+  -
+    id: mgtouzpa
+    url_old: /global-food-talks-agenda/
+    internal_url: e8c74d7b-e6bd-4fdc-be91-05c0d9b00e40
+    response: 302
+  -
+    id: mgtoy7bf
+    url_old: /speakers/
+    internal_url: 1ff334dc-c1f5-4d1e-9348-98be5997681a
+    response: 302
+  -
+    id: mgtozghj
+    url_old: /media/media-registration/
+    external_url: 'https://registration.xporience.com/registration/?badge_name=media&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTQzMDQxODgsImRhdGEiOnsiZXZlbnQiOiIxNyIsImZvcm0iOiIxMDciLCJsYW5nIjoiZW4ifX0._703pf69jiv7Z3vXzdYkE1Xl2n3rZU3XwJ_kHlr-qc0'
+    response: 302
+  -
+    id: mgtp0guj
+    url_old: /media/promotional-materials/
+    internal_url: 356167c5-2214-4b03-ba1d-9690dc5c21c3
+    response: 302
+  -
+    id: mgtp1bcl
+    url_old: /media-partners/
+    internal_url: 4a871183-2799-426d-aebb-e60e255a11e9
+    response: 302
+  -
+    id: mgtp1yma
+    url_old: /contact-us/
+    internal_url: afbfc32a-ea2a-4b23-9c47-0437490f858c
+    response: 302
