@@ -12,3 +12,5 @@ preferences:
         - content
         - event_date
         - start_time
+    pages:
+      after_save: continue_editing
