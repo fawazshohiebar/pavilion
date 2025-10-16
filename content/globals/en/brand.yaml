@@ -1,6 +1,6 @@
-title: 'International Hunting & Equestrian Exhibition - Abu Dhabi'
+title: 'Global Good Week'
 logo: footer-logo/picture2.png.png
-patronage: 'Held under the patronage of His Highness Sheikh Hamdan bin Zayed Al Nahyan, Ruler’s Representative in Al Dhafra Region.'
+patronage: 'Held Under the Patronage of H.H Sheikh Mansour Bin Zayed Al Nahyan, Vice President, Deputy Prime Minister, Chairman of the Presidential Court, and Chairman of the Board of Directors of the Abu Dhabi Agriculture and Food Safety Authority (ADAFSA)'
 social_media:
   -
     id: macihl2y
@@ -45,7 +45,6 @@ logos:
     url: 'https://adnecgroup.ae'
     type: logo
     enabled: true
-ai_search_url: 'https://aisearch.adihex.com/'
 footer_sales:
   -
     id: mglex50w
