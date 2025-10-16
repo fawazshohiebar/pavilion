@@ -17,6 +17,9 @@ tree:
         title: 'Interactive Map'
         url: 'https://map.globalfoodweek.ae/?mapId=dX6zGKA0a7jNW'
       -
+        id: 18acf37d-e08e-4a57-b1b6-b8f7fb9f0131
+        entry: 1ff334dc-c1f5-4d1e-9348-98be5997681a
+      -
         id: 2f1a3b11-ce84-431e-a42b-3339754fc47f
         entry: 2242832a-d5e0-4f11-8327-9d08ac235a08
       -
