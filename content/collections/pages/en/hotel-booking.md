@@ -13,8 +13,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760605339
+updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
+updated_at: 1760611344
 page_builder:
   -
     type: set
@@ -236,7 +236,7 @@ page_builder:
             enabled: true
           -
             id: mgg48q4g
-            heading: 'Individual Hotel Bookings(50% Discount Code: EYHGFW25)'
+            heading: 'Individual Hotel Bookings (50% Discount Code: EYHGFW25)'
             icon_or_button: buttonlist
             button_list:
               -
