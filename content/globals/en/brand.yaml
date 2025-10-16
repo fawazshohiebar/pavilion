@@ -5,27 +5,23 @@ social_media:
   -
     id: macihl2y
     platform: instagram
-    social_media_link: 'https://www.instagram.com/adihex/?hl=en'
+    social_media_link: 'https://www.instagram.com/globalfoodweek.ae/?igsh=MXNva2p3aTFzZGk1eA%3D%3D#'
   -
     id: map2nygi
     platform: facebook
-    social_media_link: 'https://www.facebook.com/adihex/'
+    social_media_link: 'https://www.facebook.com/people/Global-Food-Week/61566508043880/?mibextid=LQQJ4d'
   -
     id: map2of2t
     platform: linkedin
-    social_media_link: 'https://www.linkedin.com/company/adihex/about/'
+    social_media_link: 'https://www.linkedin.com/company/global-food-week/'
   -
     id: map2oq30
     platform: youtube
-    social_media_link: 'https://www.youtube.com/channel/UCp3mg-yFzWguXXxhz69JYzQ'
+    social_media_link: 'https://www.youtube.com/@globalfoodweek'
   -
     id: mdsjn9cm
     platform: twitter
-    social_media_link: 'https://twitter.com/ADIHEX'
-  -
-    id: mdsjng1t
-    platform: tiktok
-    social_media_link: 'https://www.tiktok.com/@adihex_official'
+    social_media_link: 'https://x.com/gfoodweek'
 countdown_date_picker: '2025-08-30 08:00:00'
 location: 'ADNEC Centre Abu Dhabi'
 location_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
