@@ -631,13 +631,23 @@ page_builder:
           - 6dac910e-d26c-4a22-a38f-ec58c24ae101
           - ed128775-d38c-4de9-a76a-39ee51e6474e
         sponsors_entries:
+          - ed128775-d38c-4de9-a76a-39ee51e6474e
           - 9d9a8b49-cfb4-430c-a1db-5c2ff3dadb37
-          - 660c725b-57ab-4ab0-830c-327db4cb1730
-          - aa6cc42b-7f80-4377-ba6e-bf82e5c9d53d
-          - 5667643c-31f0-47f1-957d-3bb20c3bdbed
           - bf598fe8-be8d-4694-8f7a-e242fdcf461b
+          - 705a1dc0-7321-4478-a665-6ab6f92ba9bb
           - 61726213-0604-4085-bfd1-8da37d46e3d0
+          - e1c7cddf-db04-43ae-b487-dd20f07e7dad
           - f6259b32-4d11-4ffe-9a0e-ee7404bc3523
+          - bcd287a7-ec3b-4753-980a-48cecc8d81f8
+          - 7b79933c-59d1-4bbf-aa0c-f2c266e18f65
+          - 4f35ef3f-4a68-4c04-90f0-f0552b2f4925
+          - 5667643c-31f0-47f1-957d-3bb20c3bdbed
+          - 17427c29-225f-4a49-98c3-7865bc5209b2
+          - aa6cc42b-7f80-4377-ba6e-bf82e5c9d53d
+          - 809dd4f0-f1fe-47f7-b175-76a02aa79f01
+          - 12698fee-2f4f-487d-a1c7-2a1f63385757
+          - 660c725b-57ab-4ab0-830c-327db4cb1730
+          - c21960cf-dddb-492e-aa3f-0e584bfaab59
   -
     type: paragraph
     attrs:
@@ -652,7 +662,7 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760618796
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1760620774
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
