@@ -13,6 +13,10 @@ tree:
         id: 914663b3-0b37-4033-a7cf-19e2d7769267
         entry: 6eb3d5b6-4605-4436-8539-01fee306192b
       -
+        id: 1a72a4e6-e268-42ae-b2a4-279b0f07465b
+        title: 'Exhibitor List'
+        url: 'https://exhibitors.globalfoodweek.ae/global-food-week-2025/Exhibitor'
+      -
         id: 17e6116c-43cc-431e-9008-34d5f37321d5
         title: 'Interactive Map'
         url: 'https://map.globalfoodweek.ae/?mapId=dX6zGKA0a7jNW'

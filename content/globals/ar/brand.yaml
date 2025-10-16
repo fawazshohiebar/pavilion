@@ -1,7 +1,4 @@
-title: 'المعرض الدولي للصيد والفروسية - أبوظبي'
-logo: brand/image-(1).svg
-logo_dark: brand/image-(2).svg
-patronage: 'تحت رعاية سمو الشيخ حمدان بن زايد آل نهيان، ممثل الحاكم في منطقة الظفرة.'
+title: 'Global Food Week'
 social_media:
   -
     id: mdwxv1og
@@ -32,29 +29,3 @@ location: 'مركز أدنيك أبوظبي'
 location_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
 date: '29 أغسطس - 6 سبتمبر'
 time: '11 صباحاً - 10 مساءً'
-hero_dynamic_button:
-  button: 'entry::9da38cbf-673a-4dee-af4f-f5d561dcc3d4'
-  text: 'احجز مساحتك'
-  button_options:
-    style: filled
-    color: primary
-    size: medium
-    new_tab: false
-    icon: null
-    icon_position: start
-logos:
-  -
-    id: mafk076r
-    title: 'الشريك الإستراتيجي والمنظم'
-    image: added-images/adnec-group_logo_modon_white-1024x580-(1).png
-    url: 'https://adnecgroup.ae'
-    type: logo
-    enabled: true
-  -
-    id: mafk0j37
-    title: 'تابع لـِ'
-    image: brand/logos/efc-logo_white.png
-    url: '#'
-    type: logo
-    enabled: true
-ai_search_url: 'https://aisearch.adihex.com/'

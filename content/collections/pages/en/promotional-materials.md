@@ -13,8 +13,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760605232
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1760632854
 page_builder:
   -
     type: set
@@ -65,11 +65,12 @@ page_builder:
               -
                 id: mggfqeff
                 label: Download
-                open_new_tab: false
+                open_new_tab: true
                 type: button_set
                 enabled: true
                 design: Orangenogradient
                 button_size: fit
+                link: 'https://ce-food-week.s3.me-central-1.amazonaws.com/food-week-assets/uploads/2025/09/Global-Food-Week-Logos.zip'
             type: grid_item
             enabled: true
           -
@@ -80,11 +81,12 @@ page_builder:
               -
                 id: mggfqs58
                 label: Download
-                open_new_tab: false
+                open_new_tab: true
                 type: button_set
                 enabled: true
                 design: Orangenogradient
                 button_size: fit
+                link: 'https://ce-food-week.s3.me-central-1.amazonaws.com/food-week-assets/uploads/2025/09/GFW-2025-Promotional-Kit.zip'
             type: grid_item
             enabled: true
         heading:

@@ -1,12 +1,12 @@
 ---
-id: 8c3b3e06-b899-4532-9c0c-5b9c006107c2
+id: 276f29d6-51e3-4dcc-8a43-386b7922eb07
 blueprint: page
-title: Agenda
+title: Media
 page_builder:
   -
     type: set
     attrs:
-      id: mgtq2it0
+      id: mgtn6ju2
       values:
         type: redirect_to
         redirect_to: '@child'
@@ -25,8 +25,6 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760637440
-fine_seo_title: Agenda
-fine_seo_preview: Agenda
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1760632591
 ---

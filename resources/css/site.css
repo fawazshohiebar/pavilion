@@ -217,7 +217,7 @@ html {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 200px;
+  /* min-width: 200px; */
   margin-top: 0rem;
   background: #fff;
   border-radius: 0.5rem;
