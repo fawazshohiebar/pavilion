@@ -4,6 +4,9 @@ tree:
     title: 'Quick Links'
     children:
       -
+        id: 2e98a6d5-467c-485d-8e14-cdbbd6f71a7d
+        entry: home
+      -
         id: 3098e49c-128a-473d-9e81-0250be80a1b2
         entry: 070fa963-44a4-44f5-8091-5d2b360f9ba4
       -
