@@ -13,8 +13,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760617721
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760617840
 page_builder:
   -
     type: set
@@ -103,7 +103,7 @@ page_builder:
         type: cta_grid
         background: bgcolor
         background_color: light-secondary
-        grid_version: v3
+        grid_version: v2
         grid_heading:
           -
             type: heading
