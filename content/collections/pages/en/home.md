@@ -405,7 +405,7 @@ page_builder:
               -
                 type: text
                 text: 'Global Food Week brings together top exhibitors from across the food, agriculture, and innovation sectors. Visitors will meet industry leaders, explore cutting-edge products, and discover solutions that are shaping the future of global food systems.'
-        image: gfw_3108.two-pages-(3).png
+        image: gfw_3108.two-pages-(3)-(2).png
   -
     type: set
     attrs:
@@ -662,7 +662,7 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760616414
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760616891
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
