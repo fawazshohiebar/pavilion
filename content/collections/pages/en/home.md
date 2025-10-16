@@ -68,9 +68,9 @@ page_builder:
           - 6dac910e-d26c-4a22-a38f-ec58c24ae101
           - ed128775-d38c-4de9-a76a-39ee51e6474e
         sponsors_entries:
-          - bf598fe8-be8d-4694-8f7a-e242fdcf461b
-          - a4e2fc64-7be6-48b8-9733-91df64fe0c2b
           - ed128775-d38c-4de9-a76a-39ee51e6474e
+          - a4e2fc64-7be6-48b8-9733-91df64fe0c2b
+          - bf598fe8-be8d-4694-8f7a-e242fdcf461b
           - 61726213-0604-4085-bfd1-8da37d46e3d0
         background: bgimg
         image: backgrounds/vector-(3)-(1).png
@@ -95,23 +95,8 @@ page_builder:
                   -
                     type: textColor
                     attrs:
-                      color: '#fff'
-                text: '2024 Highlights'
-              -
-                type: hardBreak
-                marks:
-                  -
-                    type: bold
-              -
-                type: text
-                marks:
-                  -
-                    type: bold
-                  -
-                    type: textColor
-                    attrs:
-                      color: Orange
-                text: 'At a Glance'
+                      color: '#f47832'
+                text: 'GET READY FOR THE 2ND EDITION OF GLOBAL FOOD WEEK'
         buttons:
           -
             id: mg90cpk5
@@ -119,20 +104,20 @@ page_builder:
             design: whiteoutlined
             open_new_tab: false
             type: new_set
-            enabled: true
+            enabled: false
         statistics:
           -
             id: mg90d633
             icon: user-group
-            numbers: '34,437'
+            numbers: '34,437+'
             label: 'Global Attendees'
             type: statistics_set
             enabled: true
           -
             id: mg90dw5p
             icon: users
-            numbers: '3,500'
-            label: 'Conference Delegates'
+            numbers: '33,542'
+            label: 'Exhibition Space'
             type: statistics_set
             enabled: true
           -
@@ -141,26 +126,26 @@ page_builder:
             numbers: '80'
             label: 'Global & Local Speakers'
             type: statistics_set
-            enabled: true
+            enabled: false
           -
             id: mg90e030
             icon: building-office
-            numbers: '1,900'
-            label: 'Exhibitors & Brands'
+            numbers: '543'
+            label: 'New Companies & Brands'
             type: statistics_set
             enabled: true
           -
             id: mg90dz8d
             icon: globe-alt
-            numbers: '67'
+            numbers: '75'
             label: 'Participating Countries'
             type: statistics_set
             enabled: true
           -
             id: mg90f4gq
-            icon: banknotes
-            numbers: 6.2B
-            label: 'Deals & MOUs'
+            icon: check-circle
+            numbers: '2,070'
+            label: 'Companies & Brands'
             type: statistics_set
             enabled: true
         background: bgimg
@@ -266,7 +251,7 @@ page_builder:
             id: mgaqfpb8
             label: 'Register to Visit'
             design: whiteoutlined
-            open_new_tab: false
+            open_new_tab: true
             type: new_button
             enabled: true
             button_size: lg
@@ -306,12 +291,11 @@ page_builder:
         icon_box_replicator:
           -
             id: mgafbg8g
-            icon_source: image
+            icon_source: icon
             caption: 'Food Sourcing & Procurement'
             description: 'Abu Dhabi International Food Exhibition (ADIFE)'
             type: icon_box
             enabled: true
-            image: svgs/vector.svg
             icon_box_b:
               -
                 id: mgry5lzf
@@ -321,6 +305,15 @@ page_builder:
                 enabled: true
                 design: Orangenogradient
                 button_size: fit
+            icon_box_button:
+              -
+                id: mgtcnqy7
+                link: 'entry::689cc08b-acde-43af-93aa-531f386a48fe'
+                label: 'Explore More'
+                design: Orangenogradient
+                open_new_tab: true
+                type: btn_set
+                enabled: true
           -
             id: mgafci4r
             icon_source: icon
@@ -329,6 +322,15 @@ page_builder:
             description: 'Global Food Talks'
             type: icon_box
             enabled: true
+            icon_box_button:
+              -
+                id: mgtcpp8y
+                link: 'entry::e3099684-7556-4f09-919d-7c0ee72e3b46'
+                label: 'Explore More'
+                design: Orangenogradient
+                open_new_tab: true
+                type: btn_set
+                enabled: true
           -
             id: mgafcjop
             icon_source: icon
@@ -337,6 +339,15 @@ page_builder:
             description: 'Abu Dhabi Date Palm Exhibition (ADDPE)'
             type: icon_box
             enabled: true
+            icon_box_button:
+              -
+                id: mgtcqbn0
+                link: 'entry::f834f13f-bd81-4b52-a459-5e9db1442de1'
+                label: 'Explore More'
+                design: Orangenogradient
+                open_new_tab: true
+                type: btn_set
+                enabled: true
           -
             id: mgafcn5m
             icon_source: icon
@@ -345,6 +356,15 @@ page_builder:
             description: 'AgriTech & Farmers'
             type: icon_box
             enabled: true
+            icon_box_button:
+              -
+                id: mgtcr548
+                link: 'entry::963fcb50-ac26-44da-b763-6f72324493c1'
+                label: 'Explore More'
+                design: Orangenogradient
+                open_new_tab: true
+                type: btn_set
+                enabled: true
         center_image: explore.png
   -
     type: set
@@ -387,7 +407,7 @@ page_builder:
               -
                 type: text
                 text: 'Global Food Week brings together top exhibitors from across the food, agriculture, and innovation sectors. Visitors will meet industry leaders, explore cutting-edge products, and discover solutions that are shaping the future of global food systems.'
-        image: leaders.png
+        image: gfw_3108.two-pages-(3).png
   -
     type: set
     attrs:
@@ -497,6 +517,44 @@ page_builder:
   -
     type: set
     attrs:
+      id: mgtd6r6p
+      values:
+        type: call_to_action
+        text_image_alignment: v1
+        heading_text:
+          -
+            type: heading
+            attrs:
+              level: 3
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#2d4ea2'
+                text: 'Alternative Proteins (PALT)'
+        description: |-
+          Proteins Alternative (PALT) – a flagship initiative of Abu Dhabi Investment Office’s AGWA (AgriFood Growth and Water Abundance) cluster – will take place as a key feature at Global Food Week 2025.
+
+          PALT brings together the global alternative protein ecosystem – from pioneering startups and major F&B players to regulators and future-focused consumers – to explore how alternative proteins are reshaping the future of food.
+
+          Key topics include:
+
+          - Regulatory harmonization to accelerate market adoption
+          - Access to finance for scaling alternative protein ventures
+          - The role of novel foods in strengthening food security
+          - Boosting collaboration within Abu Dhabi’s ecosystem to drive innovation
+        background: bgcolor
+        background_color: secondary
+        section_label: "DISCOVER WHAT'S NEW THIS EDITION"
+        section_image: features/dsc_4678-scaled-(1)-(1)-1760516940.png
+  -
+    type: set
+    attrs:
       id: mg9ai62k
       values:
         type: highlights_carousel
@@ -583,44 +641,6 @@ page_builder:
         entry:
           - a233c58e-ef66-4705-8e9f-32b8a638e1b5
   -
-    type: set
-    attrs:
-      id: mgrq1gmh
-      values:
-        type: call_to_action
-        text_image_alignment: v1
-        heading_text:
-          -
-            type: heading
-            attrs:
-              level: 3
-            content:
-              -
-                type: text
-                marks:
-                  -
-                    type: bold
-                  -
-                    type: textColor
-                    attrs:
-                      color: '#2d4ea2'
-                text: 'Alternative Proteins (PALT)'
-        description: |-
-          Proteins Alternative (PALT) – a flagship initiative of Abu Dhabi Investment Office’s AGWA (AgriFood Growth and Water Abundance) cluster – will take place as a key feature at Global Food Week 2025.
-
-          PALT brings together the global alternative protein ecosystem – from pioneering startups and major F&B players to regulators and future-focused consumers – to explore how alternative proteins are reshaping the future of food.
-
-          Key topics include:
-
-          - Regulatory harmonization to accelerate market adoption
-          - Access to finance for scaling alternative protein ventures
-          - The role of novel foods in strengthening food security
-          - Boosting collaboration within Abu Dhabi’s ecosystem to drive innovation
-        background: bgcolor
-        background_color: secondary
-        section_label: "DISCOVER WHAT'S NEW THIS EDITION"
-        section_image: features/dsc_4678-scaled-(1)-(1)-1760516940.png
-  -
     type: paragraph
     attrs:
       textAlign: left
@@ -634,7 +654,7 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760605184
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1760615895
 fine_seo_image: favicon/ms-icon-70x70.png
 ---
