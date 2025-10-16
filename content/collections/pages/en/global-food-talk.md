@@ -1,7 +1,7 @@
 ---
 id: e3099684-7556-4f09-919d-7c0ee72e3b46
 blueprint: page
-title: 'Global Food Talk'
+title: 'Global Food Talks'
 template: default
 fine_seo_is_title_custom: false
 header_scripts:
@@ -13,8 +13,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760605234
+updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
+updated_at: 1760611831
 page_builder:
   -
     type: set
@@ -247,4 +247,5 @@ page_builder:
       textAlign: left
 fine_seo_title: 'Global Food Talk'
 fine_seo_preview: 'Global Food Talk'
+feature_banner_image: gft-banner.png
 ---
