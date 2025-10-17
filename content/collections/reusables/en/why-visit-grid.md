@@ -38,7 +38,7 @@ featured_activities:
   -
     id: GGaWQZW5
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760691657
+updated_at: 1760691673
 heading:
   -
     type: heading
@@ -69,4 +69,6 @@ buttons_groups:
     open_new_tab: true
     type: button
     enabled: true
+    design: Orangenogradient
+    button_size: lg
 ---
