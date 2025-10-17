@@ -10,7 +10,7 @@
 <meta name="description" content="{{ fine_seo_description }}">
 <meta property="og:title" content="{{ pageTitle }}">
 <meta property="og:description" content="{{ fine_seo_description }}">
-<meta property="og:image" content="{{ fine_seo_image ? fine_seo_image:url : (feature_banner_image? feature_banner_image:url : brand.logo:url) }}">
+<meta property="og:image" content="{{ permalink }}{{ fine_seo_image ? fine_seo_image:url : (feature_banner_image? feature_banner_image:url : brand.logo:url) }}">
 <meta property="og:url" content="{{ permalink }}">
 <meta property="og:type" content="{{ yield:og_type }}website{{ /yield:og_type }}">
 <meta property="og:site_name" content="{{ siteTitle }}">
