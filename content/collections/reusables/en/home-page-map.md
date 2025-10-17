@@ -4,7 +4,7 @@ blueprint: map
 title: 'Home Page Map'
 iframe: '<iframe src="https://map.globalfoodweek.ae/?mapId=dX6zGKA0a7jNW" width="100%" height="100%" style="border: none; position: relative; z-index: 2;" data-gtm-yt-inspected-12="true" data-gtm-yt-inspected-18="true"></iframe>'
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760615706
+updated_at: 1760700145
 buttons:
   -
     id: mgrz341f
@@ -17,9 +17,11 @@ buttons:
 design: centered
 heading:
   -
+    type: paragraph
+  -
     type: heading
     attrs:
-      level: 1
+      level: 2
     content:
       -
         type: text

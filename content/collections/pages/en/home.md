@@ -550,6 +550,36 @@ page_builder:
         background_color: secondary
         section_label: "DISCOVER WHAT'S NEW THIS EDITION"
         section_image: features/dsc_4678-scaled-(1)-(1)-1760516940.png
+        buttons:
+          -
+            id: mgus6o5t
+            link: 'entry::33b9a047-c86d-4d4d-9168-09a6adbeb567'
+            label: 'PALT Agenda'
+            design: Orangenogradient
+            open_new_tab: true
+            type: button_set
+            enabled: false
+  -
+    type: set
+    attrs:
+      id: mgur89s8
+      values:
+        type: banner
+        new_tab: true
+        width: full
+        image_style: contain
+        is_div: false
+        use_image_height: false
+        image: gfw25_download-app-now-(2)-1760692402.jpg
+        link: 'https://onelink.to/qh4jpg'
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
   -
     type: set
     attrs:
@@ -649,48 +679,6 @@ page_builder:
           - 660c725b-57ab-4ab0-830c-327db4cb1730
           - c21960cf-dddb-492e-aa3f-0e584bfaab59
   -
-    type: set
-    attrs:
-      id: mgumoeyo
-      values:
-        type: banner
-        new_tab: true
-        width: full
-        image_style: contain
-        is_div: false
-        use_image_height: false
-        image: gfw25_download-app-now-(2)-1760692402.jpg
-  -
-    type: set
-    attrs:
-      id: mguqvlv8
-      values:
-        type: speaker_section
-        design: centered
-        heading:
-          -
-            type: heading
-            attrs:
-              level: 2
-            content:
-              -
-                type: text
-                marks:
-                  -
-                    type: textColor
-                    attrs:
-                      color: '#2d4ea2'
-                text: 'Speakers 2025'
-        speakers_entries:
-          - 850cf28c-a9e1-4d27-bbb0-4ff9512e78d8
-          - eb11d88a-8534-460d-b96e-8599ea8463b5
-          - b6d7efe4-8cb2-4b8b-bca9-a9a826ab780c
-          - 71532e81-a025-472f-a95b-b2d58ce6e55f
-          - 93d9d6f6-7f5d-4219-8b5c-f04b29c2e029
-          - 551be99d-26ee-4e98-95d1-f12e35e81dea
-          - b26a5cf0-c22b-4dd3-991d-d16d646881ab
-          - 697d9187-d95e-4085-bdb4-b92ac32e8cc9
-  -
     type: paragraph
     attrs:
       textAlign: left
@@ -704,7 +692,7 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760701650
+updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
+updated_at: 1760701701
 fine_seo_image: global-food-week-logo-coloured-(1).png
 ---
