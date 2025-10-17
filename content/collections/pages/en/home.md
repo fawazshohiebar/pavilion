@@ -654,7 +654,6 @@ page_builder:
       id: mgumoeyo
       values:
         type: banner
-        image: banners/gfw25_download-app-now-(2).jpg
         new_tab: true
         width: full
         image_style: contain
@@ -675,6 +674,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760692266
+updated_at: 1760692291
 fine_seo_image: global-food-week-logo-coloured-(1).png
 ---
