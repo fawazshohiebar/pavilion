@@ -3,8 +3,7 @@ fields:
   -
     handle: image
     field:
-      container: collaterals
-      folder: banners
+      container: assets
       type: assets
       display: Image
       localizable: false
