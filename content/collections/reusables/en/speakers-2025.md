@@ -78,5 +78,5 @@ speakers:
   - ff5b7704-008c-41e5-aff7-9187ecf970ab
   - 3436e463-d379-4f3f-bd43-453b7bb87ec3
 updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
-updated_at: 1760704478
+updated_at: 1760704494
 ---
