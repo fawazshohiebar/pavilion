@@ -716,6 +716,8 @@ page_builder:
           - 660c725b-57ab-4ab0-830c-327db4cb1730
           - c21960cf-dddb-492e-aa3f-0e584bfaab59
           - a151a23a-9738-488b-8c14-99023026b999
+        background: bgcolor
+        background_color: secondary
   -
     type: paragraph
     attrs:
@@ -731,6 +733,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760707923
+updated_at: 1760707944
 fine_seo_image: global-food-week-logo-coloured-(1).png
 ---
