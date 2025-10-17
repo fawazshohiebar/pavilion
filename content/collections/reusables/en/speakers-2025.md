@@ -69,7 +69,6 @@ speakers:
   - 52a41849-cc7c-43f3-924c-61f42357a866
   - 502a596b-d0a0-4780-80a6-4fdb968de32e
   - 697d9187-d95e-4085-bdb4-b92ac32e8cc9
-  - f1d0408d-8dc1-442f-8ec3-692bc69a89ac
   - 71532e81-a025-472f-a95b-b2d58ce6e55f
   - ab19879c-e4d5-4573-9d98-58c1b1723dd7
   - 52cd7d43-9ff6-46a3-bdb5-d2ed73a014f0
@@ -79,5 +78,5 @@ speakers:
   - ff5b7704-008c-41e5-aff7-9187ecf970ab
   - 3436e463-d379-4f3f-bd43-453b7bb87ec3
 updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
-updated_at: 1760693860
+updated_at: 1760704464
 ---
