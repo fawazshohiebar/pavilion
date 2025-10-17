@@ -550,6 +550,15 @@ page_builder:
         background_color: secondary
         section_label: "DISCOVER WHAT'S NEW THIS EDITION"
         section_image: features/dsc_4678-scaled-(1)-(1)-1760516940.png
+        buttons:
+          -
+            id: mgus6o5t
+            link: 'entry::33b9a047-c86d-4d4d-9168-09a6adbeb567'
+            label: 'PALT Agenda'
+            design: Orangenogradient
+            open_new_tab: true
+            type: button_set
+            enabled: false
   -
     type: set
     attrs:
@@ -683,6 +692,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760699909
+updated_at: 1760701565
 fine_seo_image: global-food-week-logo-coloured-(1).png
 ---
