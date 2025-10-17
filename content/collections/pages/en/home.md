@@ -662,7 +662,7 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760620774
-fine_seo_image: favicon/ms-icon-70x70.png
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1760684070
+fine_seo_image: global-food-week-logo-coloured-(1).png
 ---
