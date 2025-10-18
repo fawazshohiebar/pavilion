@@ -21,5 +21,8 @@ preferences:
         - slug
         - status
         - agendas
+        - event_date
+        - start_time
+        - end_time
     reusables:
       after_save: continue_editing
