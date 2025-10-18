@@ -24,5 +24,15 @@ preferences:
         - event_date
         - start_time
         - end_time
+      filters:
+        global_food_talks:
+          display: 'global food talks'
+          filters:
+            site:
+              site: en
+            fields:
+              agendas:
+                operator: like
+                term: global-food-talks
     reusables:
       after_save: continue_editing
