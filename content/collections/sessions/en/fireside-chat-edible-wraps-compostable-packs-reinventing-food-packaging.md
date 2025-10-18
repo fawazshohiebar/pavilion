@@ -9,6 +9,6 @@ speakers:
   - 9cc8f001-fc1d-42e0-91ca-42adc69aa336
   - f34f1b28-650e-4d78-8f8d-d5745d7750db
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760802069
+updated_at: 1760813837
 ---
 <p>As sustainability pressure mounts, the food industry is racing to ditch single-use plastics for next-gen, food-grade biomaterials that are safe, functional—and often compostable. This session will explore the innovators turning kitchen waste and natural polymers into packaging that doesn’t pollute.</p>
