@@ -110,5 +110,5 @@ speakers:
   - 23b24b27-6162-412b-a8d6-7ce0facd5568
   - f34f1b28-650e-4d78-8f8d-d5745d7750db
 updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
-updated_at: 1760778038
+updated_at: 1760778712
 ---
