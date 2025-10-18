@@ -5,7 +5,8 @@ title: 'Dr. Daniel Annerose'
 position: CEO
 company: 'Manobi Africa'
 updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
-updated_at: 1760716656
+updated_at: 1760776475
+image: speakers/img-20251016-wa0004.jpg
 ---
 Daniel Annerose brings his passion of scientific expertise and business acumen as the CEO of pan-African company Manobi Africa. With a PhD in plant biology and a master's degree in computer science, Annerose has many years of experience as an agro-physiologist focused on improving agricultural production in arid climates and agricultural production modelling, earning his membership in Senegal's prestigious National Academy of Sciences and Techniques.
 
