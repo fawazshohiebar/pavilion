@@ -1,5 +1,6 @@
 ---
 id: c9d0e1f2-g3h4-5678-9012-345678cdefgh
+published: false
 blueprint: session
 title: 'Keynote Address - Reskilling Traditional Farmers for A Digital-First Agrifood Economy'
 start_time: '11:30'
