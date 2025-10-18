@@ -1,5 +1,6 @@
 ---
 id: aa68d1c3-de0e-454f-bfb2-6f26deb69f42
+published: false
 blueprint: session
 title: 'Panel Discussion - Strengthening Livestock Health for a resilient future: The Role of CAMNET in enhancing animal health, management and food security'
 start_time: '15:20'
