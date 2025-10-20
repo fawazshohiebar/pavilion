@@ -2,3 +2,16 @@ name: 'Eman Sanjuq'
 groups:
   - managers
 id: 8ba12c9a-1cdf-4f65-abaf-584b7ddd4984
+preferences:
+  collections:
+    sessions:
+      filters:
+        global_food_talks:
+          display: 'global food talks'
+          filters:
+            site:
+              site: en
+            fields:
+              agendas:
+                operator: like
+                term: global-food-talks
