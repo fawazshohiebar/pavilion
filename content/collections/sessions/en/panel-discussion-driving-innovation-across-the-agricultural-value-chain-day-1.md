@@ -1,14 +1,14 @@
 ---
 id: panel-discussion-driving-innovation-across-the-agricultural-value-chain-day-1
 blueprint: session
-title: 'Panel Discussion – Driving Innovation Across the Agricultural Value Chain'
-start_time: '12:05'
+title: 'Presentation – Driving Innovation Across the Agricultural Value Chain'
+start_time: '12:10'
 end_time: '12:40'
 event_date: '2025-10-21'
 agendas:
   - agritech-forum
-updated_by: efd29c2c-c871-42ae-9ec0-8929ce6ac11d
-updated_at: 1760427045
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1760946440
 speakers:
-  - 12adeae0-c9b9-404c-a3be-a287987a5a30
+  - 18bdace7-059f-466b-88a7-8b3e3319ffcc
 ---
