@@ -1,5 +1,6 @@
 ---
 id: cfdffa07-a3b1-4bcc-9d99-4144bc924410
+published: false
 blueprint: session
 title: 'Closing Speech'
 start_time: '13:45'
