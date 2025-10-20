@@ -5,5 +5,5 @@ title: 'Abdulrahman Rashid Al Shamsi'
 image: 'speakers/2,500--profile-image-placeholder-stock-illustrations____.png'
 company: 'Abu Dhabi Agricultural Club'
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760948125
+updated_at: 1760948132
 ---
