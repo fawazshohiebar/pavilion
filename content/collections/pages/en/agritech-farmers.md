@@ -14,7 +14,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760967050
+updated_at: 1760967259
 page_builder:
   -
     type: set
@@ -203,6 +203,7 @@ page_builder:
                     text: 'The largest gathering of outstanding farmers, livestock breeders, and honey producers in the United Arab Emirates. The platform brings together a distinguished group of award winners and participants in the agricultural innovation ecosystem. It serves as an interactive space to celebrate the achievements of the agricultural sector, highlight success stories, and exchange experiences and knowledge with pioneering leaders in the field. The platform contributes to enhancing the sustainability of agricultural production and reinforces the position of Abu Dhabi and the UAE as a regional hub for agricultural excellence.'
             type: grid_set
             enabled: true
+            grid_images: 3.png
           -
             id: mggkd327
             number_of_stars: '0'
