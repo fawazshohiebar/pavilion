@@ -51,6 +51,22 @@ replicator_media_partners:
     title: 'All Food Online'
     type: new_set
     enabled: true
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1759836026
+  -
+    id: mgyoaf1a
+    link: 'https://halalfocus.com/'
+    logo:
+      - media-partners/halalfocus-240-x-145px-01.png
+    title: 'Halal Focus'
+    type: new_set
+    enabled: true
+  -
+    id: mgyob5z6
+    link: 'https://www.instagram.com/destinationabudhabi/'
+    logo:
+      - media-partners/dad-logo-phase-2-1.png
+    title: 'Destination Abu Dhabi'
+    type: new_set
+    enabled: true
+updated_by: 4d25b1f6-2153-41a7-9460-d89cdfaa8fa1
+updated_at: 1760936847
 ---
