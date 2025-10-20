@@ -15,3 +15,10 @@ preferences:
               agendas:
                 operator: like
                 term: global-food-talks
+        palt:
+          display: palt
+          filters:
+            fields:
+              agendas:
+                operator: like
+                term: palt
