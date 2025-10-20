@@ -1,5 +1,6 @@
 ---
 id: scaling-controlled-environment-agriculture-day-1
+published: false
 blueprint: session
 title: 'Scaling Controlled Environment Agriculture'
 start_time: '13:10'
