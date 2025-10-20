@@ -43,5 +43,15 @@ preferences:
               agendas:
                 operator: like
                 term: agritech-forum
+        palt:
+          display: Palt
+          filters:
+            site:
+              site: en
+            fields:
+              agendas:
+                operator: like
+                term: palt
+              'null': null
     reusables:
       after_save: continue_editing
