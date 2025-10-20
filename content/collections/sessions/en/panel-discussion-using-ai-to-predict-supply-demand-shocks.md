@@ -2,13 +2,13 @@
 id: x4y5z6a7-b8c9-0123-4567-890123xyzabc
 blueprint: session
 title: 'Panel Discussion - Using AI to Predict Supply & Demand Shocks'
-start_time: '15:00'
-end_time: '15:30'
+start_time: '15:10'
+end_time: '15:50'
 event_date: '2025-10-21'
 agendas:
   - global-food-talks
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760802007
+updated_by: 8ba12c9a-1cdf-4f65-abaf-584b7ddd4984
+updated_at: 1760991079
 speakers:
   - 3b960829-d03b-43c0-85a2-992d020c08d8
   - 2f7e99c8-d580-4fe8-b22d-0f5c60be50a0
