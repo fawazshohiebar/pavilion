@@ -6,5 +6,5 @@ image: 'speakers/2,500--profile-image-placeholder-stock-illustrations____.png'
 position: 'Director General'
 company: ADAFSA
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760947248
+updated_at: 1760947251
 ---
