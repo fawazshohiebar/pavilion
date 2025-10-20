@@ -22,3 +22,10 @@ preferences:
               agendas:
                 operator: like
                 term: palt
+        agritech:
+          display: Agritech
+          filters:
+            fields:
+              agendas:
+                operator: like
+                term: agritech-forum
