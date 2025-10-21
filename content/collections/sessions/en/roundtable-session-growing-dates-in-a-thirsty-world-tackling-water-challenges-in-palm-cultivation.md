@@ -1,5 +1,6 @@
 ---
 id: q7r8s9t0-u1v2-3456-7890-123456qrstuv
+published: false
 blueprint: session
 title: 'Roundtable Session: Growing Dates in a Thirsty World: Tackling Water Challenges in Palm Cultivation'
 start_time: '14:00'
