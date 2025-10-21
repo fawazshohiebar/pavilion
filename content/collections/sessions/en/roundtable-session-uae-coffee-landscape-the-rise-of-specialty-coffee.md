@@ -1,5 +1,6 @@
 ---
 id: s9t0u1v2-w3x4-5678-9012-345678stuvwx
+published: false
 blueprint: session
 title: 'Roundtable Session: UAE Coffee Landscape: The Rise of Specialty Coffee'
 start_time: '13:00'
