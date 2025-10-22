@@ -14,6 +14,6 @@ speakers:
 agendas:
   - palt
 updated_by: 8ba12c9a-1cdf-4f65-abaf-584b7ddd4984
-updated_at: 1761139491
+updated_at: 1761140348
 ---
 <p>Technology and investment mean little without consumer buy-in. This session explores what’s winning on the shelf today, what drives repeat purchase, and how retailers and brands are building consumer trust in new food formats. From taste and price to culture and convenience, the panel examines how alternative proteins can move from trial to habit in everyday diets.</p>
