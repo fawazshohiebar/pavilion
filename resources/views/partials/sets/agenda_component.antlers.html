@@ -69,13 +69,13 @@
 
             init() {
                 this.generateDays();
+                // Filter days to only those with sessions, then load sessions for first valid day
+                this.filterDays();
 
-                // Load initial data
-                this.loadSessions();
-
-                // Watch for changes
                 this.$watch('selectedProgram', () => {
-                    this.loadSessions();
+                    this.generateDays();
+                    this.selectedDay = 1;
+                    this.filterDays();
                 });
 
                 this.$watch('selectedDay', () => {
@@ -109,6 +109,47 @@
                 }
 
                 this.days = days;
+            },
+
+            async filterDays() {
+                const program = this.programs[this.selectedProgram];
+                if (!program || !this.days.length) return;
+                this.loading = true;
+                const locale = '{{ site:short_locale }}';
+                const original = [...this.days];
+                const kept = [];
+
+                for (const day of original) {
+                    const dateString = day.fullDate.toISOString().split('T')[0];
+                    try {
+                        const resp = await fetch(`/${locale}/agenda/${program.handle}/${dateString}`);
+                        if (!resp.ok) continue;
+                        const data = await resp.json();
+                        if (Array.isArray(data) && data.length > 0) {
+                            kept.push(day);
+                        }
+                    } catch (e) {
+                        // ignore network errors for filtering
+                    }
+                }
+
+                this.days = kept.map((d, i) => ({ ...d, number: i + 1 }));
+
+                if (!this.days.length) {
+                    // No days with sessions
+                    this.selectedDay = 1;
+                    this.sessions = [];
+                    this.schedule = [];
+                    this.loading = false;
+                    return;
+                }
+
+                if (!this.days.find(d => d.number === this.selectedDay)) {
+                    this.selectedDay = 1;
+                }
+
+                await this.loadSessions();
+                this.loading = false;
             },
 
             getApiUrl() {
