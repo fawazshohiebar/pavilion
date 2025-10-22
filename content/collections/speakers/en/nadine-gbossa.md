@@ -4,6 +4,7 @@ blueprint: speaker
 title: 'Nadine Gbossa'
 position: 'Director of Food Systems Coordination'
 company: 'IFAD (Benin)'
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760811139
+updated_by: d832e06b-c283-46c1-8e6b-6bad25b4dc42
+updated_at: 1761115826
+image: speakers/photo-37.jpg
 ---
