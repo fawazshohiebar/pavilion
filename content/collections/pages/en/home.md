@@ -719,6 +719,83 @@ page_builder:
         background: bgcolor
         background_color: secondary
   -
+    type: set
+    attrs:
+      id: mh2zl4xq
+      values:
+        type: popup_image
+        popup_width: 600
+        popup_height: 300
+        close_color: white
+        popup_position: center
+        popup_image: backgrounds/background.png
+        popup_text:
+          -
+            type: heading
+            attrs:
+              level: 4
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: 'Today is your final chance to visit Global Food Week 2025 '
+          -
+            type: heading
+            attrs:
+              level: 6
+            content:
+              -
+                type: hardBreak
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: 'Today (23 October 2025)'
+              -
+                type: hardBreak
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: '10:00 AM – 5:00 PM (Last Entry at 4:00 PM) '
+              -
+                type: hardBreak
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+              -
+                type: text
+                marks:
+                  -
+                    type: textColor
+                    attrs:
+                      color: '#fff'
+                text: 'Location: Halls 4–10 & Atrium, ADNEC Centre Abu Dhabi'
+  -
     type: paragraph
     attrs:
       textAlign: left
@@ -733,6 +810,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1760708762
+updated_at: 1761199247
 fine_seo_image: global-food-week-logo-coloured-(1).png
 ---

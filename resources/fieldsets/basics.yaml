@@ -992,6 +992,22 @@ fields:
                     display: 'Popup Link'
                     localizable: false
                     width: 50
+                -
+                  handle: popup_text
+                  field:
+                    buttons:
+                      - color
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - bold
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Popup Text'
+                    localizable: false
         exhibition:
           display: Exhibition
           icon: arrow-roadmap-path-flow

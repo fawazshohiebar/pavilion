@@ -1,7 +1,6 @@
-
 {{# Generate unique ID for this popup #}}
-{{ popup_id = 'popup-' ~ random:string:length:8 }}
-
+{{ popup_id = 'popup-'
+ ~random:string:length:8 }}
 {{# Preload critical popup image for better LCP #}}
 {{ if popup_image }}
   {{ max_width = popup_width ?? 1200 }}
@@ -9,7 +8,6 @@
   {{ preload_image = {glide :src="popup_image" width="{ max_width }" height="{ max_height }" fit="contain" format="webp" quality="85"} }}
   <link rel="preload" as="image" href="{{ preload_image }}" fetchpriority="high">
 {{ /if }}
-
 {{# Set position classes based on popup_position #}}
 {{ if popup_position === 'center' }}
   {{ position_classes = 'items-center justify-center' }}
@@ -22,33 +20,31 @@
 {{ else }}
   {{ position_classes = 'items-center justify-center' }}
 {{ /if }}
-
 {{# Set close button colors #}}
 {{ if close_color === 'black' }}
   {{ close_btn_classes = 'text-black hover:text-gray-700 bg-white/80 hover:bg-white' }}
 {{ else }}
   {{ close_btn_classes = 'text-white hover:text-gray-200 bg-black/80 hover:bg-black' }}
 {{ /if }}
-
 {{ if popup_image }}
-{{# Modal popup #}}
+  {{# Modal popup #}}
   <el-dialog open>
-    <dialog id="{{ popup_id }}" class="fixed inset-0 size-auto max-h-none max-w-none overflow-hidden bg-transparent backdrop:bg-transparent">
+    <dialog id="{{ popup_id }}"
+      class="fixed inset-0 size-auto max-h-none max-w-none overflow-hidden bg-transparent backdrop:bg-transparent">
       {{# Backdrop #}}
-      <el-dialog-backdrop class="fixed inset-0 bg-black/75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"></el-dialog-backdrop>
+      <el-dialog-backdrop
+        class="fixed inset-0 bg-black/75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in">
+      </el-dialog-backdrop>
 
       {{# Modal container #}}
       <div tabindex="0" class="flex min-h-full p-4 focus:outline-none {{ position_classes }}">
-        <el-dialog-panel class="relative transform transition-all data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in data-closed:scale-95 inline-block min-w-0 min-h-0">
-          
+        <el-dialog-panel
+          class="relative transform transition-all data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in data-closed:scale-95 inline-block min-w-0 min-h-0">
+
           {{# Close button #}}
-          <button 
-            type="button" 
-            command="close" 
-            commandfor="{{ popup_id }}" 
+          <button type="button" command="close" commandfor="{{ popup_id }}"
             class="absolute -top-2 -right-2 z-10 flex items-center justify-center w-8 h-8 rounded-full transition-colors {{ close_btn_classes }}"
-            aria-label="Close popup"
-          >
+            aria-label="Close popup">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
@@ -58,42 +54,56 @@
           {{# Set max dimensions with fallbacks #}}
           {{ max_width = popup_width ?? 1200 }}
           {{ max_height = popup_height ?? 800 }}
-          
           {{# Pre-generate optimized image URLs with Glide #}}
           {{ optimized_image = {glide :src="popup_image" width="{ max_width }" height="{ max_height }" fit="contain" format="webp" quality="85"} }}
           {{ fallback_image = {glide :src="popup_image" width="{ max_width }" height="{ max_height }" fit="contain" format="jpg" quality="85"} }}
-          
           <div class="popup-image-container">
             {{ if popup_link }}
               <a href="{{ popup_link }}" class="block" target="_blank">
-                <picture>
-                  <source srcset="{{ optimized_image }}" type="image/webp">
-                  <img 
-                    src="{{ fallback_image }}"
-                    alt="{{ popup_image:alt ?? 'Popup image' }}"
-                    class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)] object-contain"
-                    width="{{ popup_image:width }}"
-                    height="{{ popup_image:height }}"
-                    loading="eager"
-                    decoding="sync"
-                    fetchpriority="high"
-                  >
-                </picture>
+               
+               
+                {{ if popup_text }}
+                  <picture>
+                    <source srcset="{{ optimized_image }}" type="image/webp">
+                    <img src="{{ fallback_image }}" alt="{{ popup_image:alt ?? 'Popup image' }}"
+                      class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)] object-contain"
+                      width="{{ popup_image:width }}" height="{{ popup_image:height }}" loading="eager"
+                      decoding="sync" fetchpriority="high">
+                  </picture>
+              
+                  <div  class="custom absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    {{ popup_text }}
+                  </div>
+                {{ else }}
+                  <picture>
+                    <source srcset="{{ optimized_image }}" type="image/webp">
+                    <img src="{{ fallback_image }}" alt="{{ popup_image:alt ?? 'Popup image' }}"
+                      class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)] object-contain"
+                      width="{{ popup_image:width }}" height="{{ popup_image:height }}" loading="eager"
+                      decoding="sync" fetchpriority="high">
+                  </picture>
+                {{ /if }}
               </a>
             {{ else }}
-              <picture>
-                <source srcset="{{ optimized_image }}" type="image/webp">
-                <img 
-                  src="{{ fallback_image }}"
-                  alt="{{ popup_image:alt ?? 'Popup image' }}"
-                  class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)] object-contain"
-                  width="{{ popup_image:width }}"
-                  height="{{ popup_image:height }}"
-                  loading="eager"
-                  decoding="sync"
-                  fetchpriority="high"
-                >
-              </picture>
+              {{ if popup_text }}
+
+                    <div class="  w-[90vw] lg:w-[60vw] " style="background-image: image-set(
+    url('{{ optimized_image }}') type('image/webp'),
+    url('{{ fallback_image }}') type('image/jpeg')
+  ); background-size:cover;">
+                <div class=" custom text-center py-20 px-10">
+                  {{popup_text}}
+                </div>
+                </div>
+              {{ else }}
+                <picture>
+                  <source srcset="{{ optimized_image }}" type="image/webp">
+                  <img src="{{ fallback_image }}" alt="{{ popup_image:alt ?? 'Popup image' }}"
+                    class="rounded-lg shadow-2xl block max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)] object-contain"
+                    width="{{ popup_image:width }}" height="{{ popup_image:height }}" loading="eager" decoding="sync"
+                    fetchpriority="high">
+                </picture>
+              {{ /if }}
             {{ /if }}
           </div>
 
