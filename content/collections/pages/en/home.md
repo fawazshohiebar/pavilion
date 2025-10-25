@@ -722,6 +722,7 @@ page_builder:
     type: set
     attrs:
       id: mh2zl4xq
+      enabled: false
       values:
         type: popup_image
         popup_width: 600
@@ -810,7 +811,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: 8ba12c9a-1cdf-4f65-abaf-584b7ddd4984
-updated_at: 1761386423
+updated_at: 1761387644
 fine_seo_image: global-food-week-logo-coloured-(1).png
 reusable_popup: false
 ---
