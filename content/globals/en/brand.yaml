@@ -48,19 +48,19 @@ logos:
 footer_sales:
   -
     id: mglex50w
-    sales_text: '21 October 2025 | 09:30 – 18:00'
+    sales_text: '24 November 2026 | 09:30 – 18:00'
     icon: calendar-days
     type: sales_set
     enabled: true
   -
     id: mglexqz2
-    sales_text: '22 October 2025 | 09:30 – 18:00'
+    sales_text: '25 November 2026 | 09:30 – 18:00'
     icon: calendar-days
     type: sales_set
     enabled: true
   -
     id: mgt7o397
-    sales_text: '23 October 2025 | 09:30 – 17:00'
+    sales_text: '26 November 2026 | 09:30 – 17:00'
     icon: calendar-days
     type: sales_set
     enabled: true
