@@ -29,8 +29,6 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1761203868
-reusable_popup: true
-popup:
-  - 7d7fced4-32e8-4278-af51-3c6cd8fb79cf
+updated_at: 1761388566
+reusable_popup: false
 ---
