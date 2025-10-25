@@ -14,7 +14,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1761203768
+updated_at: 1761388511
 page_builder:
   -
     type: set
@@ -271,7 +271,5 @@ page_builder:
 fine_seo_title: 'Global Food Talk'
 fine_seo_preview: 'Global Food Talk'
 feature_banner_image: gft-banner.png
-reusable_popup: true
-popup:
-  - 7d7fced4-32e8-4278-af51-3c6cd8fb79cf
+reusable_popup: false
 ---
