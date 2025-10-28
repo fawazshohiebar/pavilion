@@ -2,7 +2,7 @@ title: 'Book Your Stand 2025'
 email:
   -
     id: mamg6evf
-    to: khaled.taha@adnec.ae
+    to: 'rita.ziade@adnec.ae , musab.abdo@adnec.ae , shiny.john@adnec.ae'
     mailer: smtp
     markdown: true
     subject: 'New Book Your Stand Enquiry'
