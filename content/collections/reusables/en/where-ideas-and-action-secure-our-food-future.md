@@ -13,8 +13,8 @@ icons:
     id: mgahe18v
     icon: calendar-days
     label: '24 - 26 November 2026'
-updated_by: 8ba12c9a-1cdf-4f65-abaf-584b7ddd4984
-updated_at: 1761651224
+updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
+updated_at: 1761652256
 hero_actions:
   -
     id: mgaip1jp
