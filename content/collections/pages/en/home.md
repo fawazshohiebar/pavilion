@@ -247,13 +247,13 @@ page_builder:
         replicator_button:
           -
             id: mgaqfpb8
-            label: 'Register to Visit'
+            label: 'Book Your Stand'
             design: whiteoutlined
             open_new_tab: true
             type: new_button
             enabled: true
             button_size: lg
-            link: 'https://registration.xporience.com/registration/?badge_name=visitor&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTM3MDI1OTMsImRhdGEiOnsiZXZlbnQiOiIxNyIsImZvcm0iOiIxMDQiLCJsYW5nIjoiZW4ifX0.jZrm5yyl9xOXHHDD5gjH5FmeBMQjdpR8GuJVzStmyLc'
+            link: 'entry::2e6b47be-50f5-4525-8f15-50a33a601800'
   -
     type: set
     attrs:
@@ -811,7 +811,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1761657289
+updated_at: 1761657320
 fine_seo_image: global-food-week-logo-coloured-(1).png
 reusable_popup: false
 ---
