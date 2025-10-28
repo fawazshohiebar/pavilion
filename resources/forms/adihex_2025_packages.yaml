@@ -1,9 +1,0 @@
-title: 'ADIHEX 2025 Packages'
-email:
-  -
-    id: metsg70x
-    to: waleed.helal@tourism365.ae
-    subject: 'New Media Partner Enquiry'
-    html: emails/new_enquiry
-    markdown: true
-    mailer: smtp
