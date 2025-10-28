@@ -30,13 +30,13 @@ time: '11 AM - 10 PM'
 button_replicator:
   -
     id: mglevgrk
-    label: 'Register to Visit'
+    label: 'Book Your Stand'
     design: Orangenogradient
     open_new_tab: false
     button_size: fit
     type: button
     enabled: true
-    link: 'entry::89c7e639-b0f5-446a-aab4-b7981d52edc8'
+    link: 'entry::2e6b47be-50f5-4525-8f15-50a33a601800'
 logos:
   -
     id: mafjvh3f
