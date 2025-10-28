@@ -14,7 +14,7 @@ icons:
     icon: calendar-days
     label: '24 - 26 November 2026'
 updated_by: 8ba12c9a-1cdf-4f65-abaf-584b7ddd4984
-updated_at: 1761651201
+updated_at: 1761651224
 hero_actions:
   -
     id: mgaip1jp
