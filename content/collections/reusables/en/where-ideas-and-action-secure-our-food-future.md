@@ -14,7 +14,7 @@ icons:
     icon: calendar-days
     label: '24 - 26 November 2026'
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1761652256
+updated_at: 1761652880
 hero_actions:
   -
     id: mgaip1jp
@@ -23,7 +23,7 @@ hero_actions:
     open_new_tab: true
     type: button
     enabled: true
-    link: 'entry::89c7e639-b0f5-446a-aab4-b7981d52edc8'
+    link: 'entry::2e6b47be-50f5-4525-8f15-50a33a601800'
   -
     id: mgaipa2f
     label: 'Watch Video'
