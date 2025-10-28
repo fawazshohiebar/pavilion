@@ -60,10 +60,10 @@ page_builder:
                 marks:
                   -
                     type: bold
-                text: 'Global Food Week 2025'
+                text: 'Global Food Week '
               -
                 type: text
-                text: " unites five critical sectors shaping the future of food, from agriculture and food manufacturing to food security and hospitality. This powerful platform showcases the UAE’s leadership in food resilience and its role as a global hub for sourcing, investment, and innovation. Global Food Week offers business matchmaking,\_high-impact networking, and knowledge exchange all\_under one roof, ensuring you maximize your ROI while\_exploring industry trends."
+                text: "unites five critical sectors shaping the future of food, from agriculture and food manufacturing to food security and hospitality. This powerful platform showcases the UAE’s leadership in food resilience and its role as a global hub for sourcing, investment, and innovation. Global Food Week offers business matchmaking,\_high-impact networking, and knowledge exchange all\_under one roof, ensuring you maximize your ROI while\_exploring industry trends."
         entries_field:
           - 6dac910e-d26c-4a22-a38f-ec58c24ae101
           - ed128775-d38c-4de9-a76a-39ee51e6474e
@@ -810,8 +810,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1761388759
+updated_by: 8ba12c9a-1cdf-4f65-abaf-584b7ddd4984
+updated_at: 1761651051
 fine_seo_image: global-food-week-logo-coloured-(1).png
 reusable_popup: false
 ---
