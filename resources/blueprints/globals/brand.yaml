@@ -44,6 +44,39 @@ tabs:
                 - image
                 - 'mimes:jpg,jpeg,png,gif,webp,svg'
           -
+            handle: header_date
+            field:
+              type: replicator
+              display: 'Header Date'
+              localizable: false
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: event_place
+                          field:
+                            type: text
+                            display: 'Event Place'
+                            localizable: false
+                        -
+                          handle: event_start
+                          field:
+                            type: date
+                            display: 'Event Start'
+                            localizable: false
+                            width: 50
+                        -
+                          handle: event_end
+                          field:
+                            type: date
+                            display: 'Event End'
+                            localizable: false
+                            width: 50
+          -
             handle: patronage
             field:
               type: text
@@ -157,6 +190,29 @@ tabs:
                       fields:
                         -
                           import: fancy_button
+      -
+        display: Footer
+        fields:
+          -
+            import: bread_crumbs
+          -
+            handle: footer_text
+            field:
+              buttons:
+                - h2
+                - h3
+                - quote
+                - color
+                - h1
+                - h4
+                - h5
+                - h6
+              remove_empty_nodes: false
+              type: bard
+              display: 'Footer Text'
+              localizable: false
+          -
+            import: form_box
       -
         display: 'Footer Logos'
         fields:

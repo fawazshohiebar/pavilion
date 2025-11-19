@@ -4,7 +4,7 @@
         pb-5 md:pb-10  grid xl:grid-cols-[50%_35%]  md:grid-cols-[50%_40%] md:gap-0 gap-5  justify-between 
         {{ elseif design == 'alignleft' }}  
         flex-col justify-start
-        md:w-[330px] lg:w-[450px]
+        
         flex
         {{else }}
         items-center
@@ -29,7 +29,7 @@
             <div class="custom ">{{ description }}</div>
         {{ /if }}
         {{ if buttons }}
-        <div class="flex flex-row gap-5 flex-wrap justify-center">
+        <div class="flex flex-row gap-5 flex-wrap justify-start">
             {{ buttons }}
                 {{ partial:partials/sets/fancy_button }}
             {{ /buttons }}

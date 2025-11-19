@@ -28,14 +28,14 @@
                     </div>
                 {{ /if }}
                 {{ if heading }}
-                    <h1 class="ltr:text-2xl ltr:lg:leading-16 rtl:leading-snug rtl:text-3xl ltr:md:text-5xl rtl:md:text-5xl ltr:lg:text-6xl rtl:lg:text-6xl font-bold text-white  opacity-0  transition-all duration-200 transform ease-linear motion-reduce:opacity-100 motion-reduce:translate-y-0"
+                    <h1 class="ltr:text-2xl ltr:lg:leading-[100%] rtl:leading-relaxed rtl:text-3xl ltr:md:text-5xl rtl:md:text-5xl ltr:lg:text-8xl rtl:lg:text-8xl font-bold text-white  opacity-0  transition-all duration-200 max-w-xl transform ease-linear motion-reduce:opacity-100 motion-reduce:translate-y-0"
                         x-data="{ show: false }" x-init="setTimeout(() => show = true, 0)"
                         :class="{ 'opacity-100 translate-y-0': show }" style="text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
-                        {{ heading | widont(2) }}
+                        {{ heading | widont(1) }}
                     </h1>
                 {{ /if }}
                 {{ if subheading }}
-                    <p class="text-white/90 text-lg md:text-xl block mb-8 max-w-xl opacity-0  transition-all duration-200 transform ease-linear delay-150 motion-reduce:opacity-100 motion-reduce:translate-y-0"
+                    <p class="text-white text-lg md:text-xl block mb-8 max-w-xl opacity-0  transition-all duration-200 transform ease-linear delay-150 motion-reduce:opacity-100 motion-reduce:translate-y-0"
                         x-data="{ show: false }" x-init="setTimeout(() => show = true, 150)"
                         :class="{ 'opacity-100 translate-y-0': show }" style="text-shadow: 0 1px 2px rgba(0,0,0,0.2);">
                         {{ subheading }}

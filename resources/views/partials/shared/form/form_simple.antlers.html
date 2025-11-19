@@ -1,0 +1,7 @@
+
+
+           <div x-data="{ show: false }" x-intersect:enter="show = true"
+                :class="show ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'"
+                class="bg-gray-200/5 backdrop-blur-md rounded-xl border border-gray-300/10 shadow-lg transition-all duration-1000 ease-out-cubic">
+                {{ partial:shared.form.form_alpine }}
+            </div>

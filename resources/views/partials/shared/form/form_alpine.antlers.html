@@ -1,5 +1,4 @@
-{{ nocache }}
-    {{ form id="{{form:handle}}" :handle="form" attr:x-ref="form" js="alpine" class="px-2 py-10 lg:px-8" enctype="multipart/form-data" }}
+{{ form id="{{form:handle}}" :handle="form" attr:x-ref="form" js="alpine" class="px-2 py-10 lg:px-8" enctype="multipart/form-data" }}
         <div x-data='{
             checkingCaptcha: true,
             captchaError: "",
@@ -256,4 +255,3 @@
             </template>
         </div>
     {{ /form }}
-{{ /nocache }}

@@ -1,5 +1,20 @@
-title: 'Global Good Week'
-logo: footer-logo/picture2.png.png
+title: Pavilion
+logo: brand/frame-4.svg
+header_date:
+  -
+    id: mi5tdn42
+    event_place: 'BANGKOK THAILAND'
+    event_start: '2025-11-19'
+    event_end: '2025-11-21'
+    type: new_set
+    enabled: true
+  -
+    id: mi5te1y1
+    event_place: 'MOROCCO EGYPT'
+    event_start: '2025-10-22'
+    event_end: '2025-10-25'
+    type: new_set
+    enabled: true
 patronage: 'Held Under the Patronage of H.H Sheikh Mansour Bin Zayed Al Nahyan, Vice President, Deputy Prime Minister, Chairman of the Presidential Court, and Chairman of the Board of Directors of the Abu Dhabi Agriculture and Food Safety Authority (ADAFSA)'
 social_media:
   -
@@ -36,12 +51,40 @@ button_replicator:
     button_size: fit
     type: button
     enabled: true
-    link: 'entry::2e6b47be-50f5-4525-8f15-50a33a601800'
+    icon_src: none
+breadcrumb_text:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: textColor
+            attrs:
+              color: '#fff'
+        text: 'GET IN TOUCH'
+footer_text:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, '
+      -
+        type: hardBreak
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'quis nostrum exercitationem ullam corporis suscipit laboriosam.'
+form: become_a_media_partner
+show_labels: true
 logos:
   -
     id: mafjvh3f
-    title: 'Strategic Partner & Organiser'
-    image: footer-logo/picture2.png.png
+    title: 'ORGANIZED BY'
+    image: layer_1-(1).svg
     url: 'https://adnecgroup.ae'
     type: logo
     enabled: true

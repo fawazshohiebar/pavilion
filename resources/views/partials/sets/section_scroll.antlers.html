@@ -1,0 +1,71 @@
+  <section id="{{breadcrumb_text | strip_tags | lower | replace:' ':'-'}}" class=" bg-[#2C2C2C] py-14">
+      <div class="adnec-container">
+        <div class="grid lg:grid-cols-[330px_auto] md:grid-cols-[230px_auto] grid-cols-1 gap-5">
+          {{ partial:sets/bread_crumbs }}
+          <div class=" text-lg custom">{{section_text}}</div>
+          </div>
+          <div class="flex md:min-h-screen  text-white">
+              <!-- Sidebar -->
+              <div class=" lg:w-[330px] md:w-[230px] hidden md:block p-5">
+                  <span id="section-number" class="sticky top-25 text-[8vw] font-medium opacity-90">01</span>
+              </div>
+
+              <!-- Content -->
+              <div class="flex-1 ">
+                  {{ section_replicator }}
+                      <section id="section-{{ index }}"
+                          class="min-h-[auto] pt-[50px] pb-15 {{ unless last }}border-b border-white/10{{ /unless }}">
+                          {{ if section_image }}
+                              <div class="w-full ">
+                                  {{ section_image }}
+                                      <img src="{{ url }}" class="object-cover w-full md:h-[400px] h-55 block" />
+                                  {{ /section_image }}
+                              </div>
+                          {{ /if }}
+                          <div class="max-w-[600px] pt-5">
+                              <p class="text-[#aaaaaa] mb-1">
+                                  {{ if start_date }}
+                                      {{ start_date | format:j }}
+                                      {{ if end_date && start_date != end_date }}
+                                          –{{ end_date | format:j }}
+                                      {{ /if }}
+                                      {{ start_date | format:F Y }}
+                                  {{ /if }}
+                              </p>
+                              {{ if section_heading }}
+                                  <h3 class="text-xl md:text-2xl  lg:text-3xl my-2 mb-5">
+                                      {{ section_heading }}
+                                  </h3>
+                              {{ /if }}
+                              {{partial:sets/fancy_button}}
+                          </div>
+                      </section>
+                  {{ /section_replicator }}
+              </div>
+          </div>
+      </div>
+
+  </section>
+  <script>
+      document.addEventListener("DOMContentLoaded", () => {
+          const numberEl = document.getElementById("section-number");
+          const sections = document.querySelectorAll("section[id^='section-']");
+
+          const observer = new IntersectionObserver(
+              (entries) => {
+                  entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                          const num = entry.target.id.split("-")[1].padStart(2, "0");
+                          numberEl.textContent = num;
+                      }
+                  });
+              }, {
+                  threshold: 0.5
+              }
+          );
+
+          sections.forEach((s) => observer.observe(s));
+      });
+  </script>
+
+

@@ -14,11 +14,7 @@ tabs:
               validate:
                 - required
           -
-            handle: title_feild
-            field:
-              type: text
-              display: 'Title Feild'
-              localizable: true
+            import: bread_crumbs
           -
             handle: images_and_text_replicator
             field:
@@ -46,6 +42,26 @@ tabs:
                             type: text
                             display: Text
                             localizable: false
+                        -
+                          handle: slide_link
+                          field:
+                            type: link
+                            display: 'Slide Link'
+                            localizable: false
+                        -
+                          handle: start_date
+                          field:
+                            type: date
+                            display: 'Start Date'
+                            localizable: false
+                            width: 50
+                        -
+                          handle: end_date
+                          field:
+                            type: date
+                            display: 'End Date'
+                            localizable: false
+                            width: 50
           -
             handle: background_color
             field:

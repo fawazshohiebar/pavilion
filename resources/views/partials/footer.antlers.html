@@ -14,69 +14,61 @@
     </nav> sections
 #}}
 
-<footer class="bg-primary pt-5 lg:pt-16 ">
-    
-    <div class="bg-brand-black text-white adnec-container">
-        <div class="brand-container py-12 sm:py-16">
-            <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-8">
-                {{# Logo Section #}}
-                <div class="w-full lg:w-80 flex justify-center lg:justify-start">
-                    <div class="w-64 h-28  ">
-                        {{ brand:logos }}
-                            <img src="{{ image }}" alt="Olympia Logo" class="w-full h-full object-contain">
-                        {{ /brand:logos }}
-                    </div>
+<footer id="{{brand:breadcrumb_text | strip_tags | lower | replace:' ':'-'}}" class="bg-black pt-5  lg:pt-16 ">
+    <div class=" ">
+        <div class="justify-center flex text-[15vw] xl:text-[10w] font-normal text-[#1F1F1F]  leading-[130%] text-outline">Contact</div>
+
+        <div class="w-full h-0 opacity-10 outline outline-1 outline-offset-[-0.50px] outline-white"></div>
+
+
+        <div class="grid  xl:grid-cols-[40%_auto] lg:grid-cols-[45%_auto]  grid-cols-1 adnec-container gap-10 py-10">
+
+            <div class=" flex flex-col justify-between">
+                <div class="flex flex-col gap-10">
+                {{ brand }}
+                    {{ partial:sets/bread_crumbs }}
+                {{ /brand }}
+                <div class="text-zinc-500 text-lg"> {{ brand:footer_text }} </div>
+                <div class="grid grid-cols-2 ">
+                    {{ brand:logos }}
+                        <div class="text-red-600 text-base font-normal uppercase">{{ title }}</div>
+
+                        <img src="{{ image }}" alt="Olympia Logo" class="w-[180px] h-full object-contain">
+                    {{ /brand:logos }}
                 </div>
-
-                {{# Navigation Columns #}}
-                <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-10 lg:gap-12">
-                    {{# Dynamic Navigation Columns #}}
-                    {{ nav:footer_nav }}
-                        <div class="space-y-3 sm:space-y-4">
-                            <h3 class="text-base sm:text-lg font-outfit font-bold leading-relaxed text-white">
-                                {{ title }}
-                            </h3>
-                            {{ if children }}
-                                <nav class="space-y-1 sm:space-y-2">
-                                    {{ children }}
-                                        <a href="{{ url }}"
-                                            class="block text-sm sm:text-base lg:text-lg font-outfit font-light leading-relaxed hover:text-gray-300 transition-colors">{{ title }}</a>
-                                    {{ /children }}
-                                </nav>
-                            {{ /if }}
-                        </div>
-                    {{ /nav:footer_nav }}
-
-                    {{# Partner Logo Column #}}
-                    <div
-                        class="flex flex-col  space-y-3 sm:space-y-4  mt-8 sm:mt-0">
-                        <h3 class="text-base  sm:text-lg font-outfit font-bold leading-relaxed text-white">
-                            </h3>
-                        <div class="flex flex-col">
-                        {{ brand:footer_sales }}
-                            <div class="grid grid-cols-[20px_auto] items-center gap-2">
-                                {{ heroicon variant="outline" :icon="icon" class="!h-5 !w-5 text-white" }}
-                                <a class="block text-sm sm:text-base lg:text-lg font-outfit font-light leading-relaxed hover:text-gray-300 transition-colors mb-2" href="{{ link }}"> {{ sales_text }} </a>
-                            </div>
-                        {{ /brand:footer_sales }}
-                        </div>
-
-                    </div>
-
-
-
                 </div>
+            <div class=" hidden lg:flex-col lg:flex">
+                {{ partial:footer_social_media }}
+                <p class="text-zinc-500 text-lg font-normal">© uaepavilion 2025-2026</p>
             </div>
+            </div>
+
+
+
+
+            <div>
+                {{ brand }}
+                    {{ if form }}
+                        {{ partial:shared.form.form_simple }}
+                    {{ /if }}
+                {{ /brand }}
+            </div>
+            <div class=" lg:hidden flex-col flex">
+                {{ partial:footer_social_media }}
+                <p class="text-zinc-500 text-lg font-normal">© uaepavilion 2025-2026</p>
+            </div>
+
+
         </div>
 
-        {{# Footer Bottom #}}
-        <div class="brand-container">
-            <div class="py-6 sm:py-8  flex md:flex-row flex-col  gap-5 justify-between border-t border-gray-200/10">
-                <p class="text-sm sm:text-base font-outfit font-light leading-relaxed text-white">
-                    © 2025. All rights reserved.
-                </p>
-                 {{ partial:footer_social_media }}
-            </div>
-        </div>
     </div>
 </footer>
+<style>
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255 255 255 / 51%);
+  }
+</style>
+
+
+

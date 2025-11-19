@@ -1,4 +1,11 @@
       <a class=" h-auto py-3  px-5 gap-4 w-fit 
+ flex items-center
+
+{{if icon_position=="left"}}
+flex !flex-row-reverse items-center
+{{elseif icon_position=="right"}}
+flex !flex-row items-center
+{{/if}}
 
       {{if button_size == 'fit'}}
         px-5
@@ -6,7 +13,6 @@
       flex justify-center
         px-10 lg:px-20    
       {{/if}}
-
         {{ if design == 'orangefilled' }} 
           text-white text-base bg-gradient-to-br from-orange-400 via-amber-700 to-orange-400 leading-normal [text-shadow:_0px_0px_10px_rgb(0_0_0_/_0.30)]
         {{ elseif design == 'whitefilled' }}
@@ -17,12 +23,29 @@
             outline outline-1 outline-offset-[-1px] outline-indigo-950 text-indigo-950 text-base
         {{elseif design=='Orangenogradient'}}
           text-white text-base bg-accent leading-normal 
+           {{elseif design=='blackbg'}}
+           text-white bg-black
+                   font-bold flex flex-row !py-0  !px-0 items-center !gap-0
+           {{elseif design=='blackishbg'}}
+          text-white bg-primary !py-2  !px-2 md:!py-3  md:!px-5
             {{ /if }}
-        font-bold flex flex-row
+
          " {{ if open_new_tab }}target="_blank" rel="noopener noreferrer"{{ /if }} href="{{ link }}">
 
+        <div class=" {{if design=='blackbg'}}py-3 px-5{{/if}}">
           {{ label }}
+        </div>
+        {{ if icon_src == "icon" }}
           {{ if icon != "none" }}
+            <div class=" {{if design=='blackbg'}}py-3 px-4 bg-accent{{/if}}">
               {{ heroicon variant="outline" icon="{{icon}}" class="w-5 h-6 " /}}
+            </div>
           {{ /if }}
+        {{ elseif  icon_src=="image" }}
+          <div class=" w-10 h-10 md:w-12 md:h-12  {{if design=='blackbg'}}py-3 px-4 bg-accent{{/if}}">
+            {{ btn_img }}
+              <img src="{{ url }}" alt="">
+            {{ /btn_img }}
+          </div>
+        {{ /if }}
       </a>

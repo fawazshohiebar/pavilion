@@ -505,6 +505,146 @@ fields:
                     localizable: false
                     collections:
                       - speakers
+            heading_with_multiple_texts:
+              display: 'Heading With Multiple Texts'
+              fields:
+                -
+                  import: bread_crumbs
+                -
+                  import: heading_group_component
+                -
+                  handle: divided_text
+                  field:
+                    buttons:
+                      - h1
+                      - h2
+                      - h3
+                      - h4
+                      - h5
+                      - h6
+                      - color
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Divided Text'
+                    localizable: false
+            section_scroll:
+              display: 'Section Scroll'
+              fields:
+                -
+                  import: bread_crumbs
+                -
+                  handle: section_text
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - color
+                      - h1
+                      - h4
+                      - h5
+                      - h6
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Section Text'
+                    localizable: false
+                -
+                  handle: section_replicator
+                  field:
+                    type: replicator
+                    display: 'Section Replicator'
+                    localizable: false
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          section:
+                            display: Section
+                            fields:
+                              -
+                                handle: section_image
+                                field:
+                                  container: assets
+                                  type: assets
+                                  display: 'Section Image'
+                                  localizable: false
+                              -
+                                handle: start_date
+                                field:
+                                  type: date
+                                  display: 'Start Date'
+                                  localizable: false
+                                  width: 50
+                              -
+                                handle: end_date
+                                field:
+                                  type: date
+                                  display: 'End Date'
+                                  localizable: false
+                                  width: 50
+                              -
+                                handle: section_heading
+                                field:
+                                  type: text
+                                  display: 'Section Heading'
+                                  localizable: false
+                              -
+                                import: fancy_button
+            sponsors_v2:
+              display: 'Sponsors V2'
+              fields:
+                -
+                  import: bread_crumbs
+                -
+                  handle: heading_text
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - color
+                      - h1
+                      - h4
+                      - h5
+                      - h6
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Heading Text'
+                    localizable: false
+                -
+                  handle: sub_text
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - color
+                      - h1
+                      - h4
+                      - h5
+                      - h6
+                    remove_empty_nodes: false
+                    type: bard
+                    display: 'Sub Text'
+                    localizable: false
+                -
+                  import: fancy_button
+                -
+                  handle: sponsors_rep
+                  field:
+                    type: replicator
+                    display: 'Sponsors Rep'
+                    localizable: false
+                    max_sets: 5
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: 'New Set'
+                            fields:
+                              -
+                                handle: image
+                                field: basics.image
         forms:
           display: Forms
           icon: form-drop-down-menu

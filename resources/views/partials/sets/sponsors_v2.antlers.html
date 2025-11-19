@@ -1,0 +1,30 @@
+<div id="{{breadcrumb_text | strip_tags | lower | replace:' ':'-'}}" class="bg-gray-100 py-15 ">
+    <div class="adnec-container">
+        <div class="  flex items-center gap-2 mb-6">
+
+            {{ partial:sets/bread_crumbs }}
+        </div>
+        <div class="   grid lg:grid-cols-[30%_auto] md:grid-cols-1 gap-10 items-center">
+
+            <div class="flex flex-col gap-10">
+                <div class="custom md:min-w-[35vw]">{{ heading_text }}</div>
+                <div class="custom">{{ sub_text }}</div>
+            {{ partial:sets/fancy_button }}
+            </div>
+
+            <!-- Right Logos Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-0">
+                <div></div>
+              {{sponsors_rep}}
+              
+                <div class="bg-gray-200 flex items-center justify-center h-40 md:h-60 p-5">
+                  {{image}}
+                    <img src="{{url}}"  class="w-full h-full object-contain ">
+                    {{/image}}
+                </div>
+             {{/sponsors_rep}}
+            </div>
+
+        </div>
+    </div>
+</div>

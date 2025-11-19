@@ -1,4 +1,4 @@
-<section class="relative min-h-dvh md:min-h-[800px] h-dvh overflow-hidden -mt-34 pt-46.3 flex items-center ">    <!-- YouTube Video Background -->
+<section id="hero" class="relative min-h-dvh md:min-h-[800px] h-dvh overflow-hidden -mt-34 pt-46.3 flex items-center ">    <!-- YouTube Video Background -->
     <div class="absolute inset-0 w-full h-full z-0 video-container">
         <div class="youtube-player" id="youtube-player" data-video-id="{{video}}" data-start-time="{{starting_time}}" data-end-time="{{ending_time}}">
             <!-- YouTube iframe will be inserted here -->
@@ -8,8 +8,8 @@
     </div>
     
     {{partial:hero/content}}
-
-    {{ partial:hero/scroll }}
+{{# 
+    {{ partial:hero/scroll }} #}}
 </section>
 
 <!-- Load YouTube IFrame API for timing control -->

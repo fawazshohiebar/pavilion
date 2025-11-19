@@ -33,15 +33,51 @@ fields:
         -
           key: Orangenogradient
           value: 'Orange without gradient'
+        -
+          key: blackbg
+          value: 'Black Bg'
+        -
+          key: blackishbg
+          value: 'blackish Bg'
       type: select
       display: Design
       localizable: false
-      width: 25
+      width: 33
+  -
+    handle: icon_src
+    field:
+      options:
+        -
+          key: icon
+          value: Icn
+        -
+          key: image
+          value: img
+        -
+          key: none
+          value: Non
+      type: button_group
+      display: 'Icon Src'
+      localizable: false
+      width: 33
+      default: none
   -
     handle: icon
     field: basics.icon
     config:
-      width: 25
+      width: 33
+      if:
+        icon_src: 'equals icon'
+  -
+    handle: btn_img
+    field:
+      container: assets
+      type: assets
+      display: 'Btn Img'
+      localizable: false
+      width: 33
+      if:
+        icon_src: 'equals image'
   -
     handle: open_new_tab
     field:
@@ -62,4 +98,18 @@ fields:
       type: select
       display: 'Button Size'
       localizable: false
+      width: 25
+  -
+    handle: icon_position
+    field:
+      options:
+        -
+          key: left
+          value: L
+        -
+          key: right
+          value: R
+      type: button_group
+      display: 'icon Position'
+      localizable: true
       width: 25

@@ -1,115 +1,114 @@
-<header class="sticky top-0 left-0 flex flex-col w-full z-40 h-auto"
+<header class=" relative flex flex-col w-full z-999 h-auto  pt-5"
     {{# x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })" #}}
-class="opacity-60 bg-slate-900"
+class="opacity-0 "
 >
-{{ partial:patronage }}
-<nav class="w-full {{if !is_homepage}} bg-primary {{/if}} flex-grow transition-all duration-300 ease-in-out" x-data="{ scrolled: false }"
-    x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })" x-cloak
-    {{if is_homepage}}
-    :class="scrolled ? 'bg-primary ' : 'bg-slate-900/60 '"
-    {{/if}}
-    >
-    <div
-        class="adnec-container h-full pt-0 gap-2 mx-auto lg:grid lg:grid-cols-[250px_auto] md:items-center md:justify-between grid grid-cols-[65%_35%]">
-        <!-- Logo and Event Info -->
+{{# {{ partial:patronage }} #}}
+<nav class="w-full {{if !is_homepage}} bg-primary {{/if}} flex-grow transition-all duration-300 ease-in-out"
+    x-data="{ scrolled: false }" x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 10 })"
+    x-cloak {{if is_homepage}}
+    :class="scrolled ? ' ' : ' '"
+    {{/if}}>
+    <div class="adnec-container-header h-full pt-0 gap-2 mx-auto lg:grid lg:grid-cols-[250px_auto] md:items-center md:justify-between grid grid-cols-[65%_35%]">
+
 
         <div class="flex items-center">
+
             <a href="{{ site:url }}" class="">
                 {{ brand:logo }}
-                    <img src="{{ url }}" alt="globalfoodweek Logo" class="xl:w-80 md:w-55 w-40 h-full object-contain">
+                    <img src="{{ url }}" alt="globalfoodweek Logo" class="xl:w-60   w-50 h-auto object-contain">
                 {{ /brand:logo }}
             </a>
 
         </div>
-       <div class="lg:grid grid-cols-[auto_auto] items-center py-4  gap-2 xl:gap-5 hidden">
-
-
-        
-        {{# <div class="flex flex-row  flex-wrap xl:gap-4 gap-3">
+        <div class="lg:grid grid-cols-[auto_auto] items-center py-4 top-1/2   -translate-y-1/2 nav-auto-contrast left-[80%] fixed z-999 gap-2 xl:gap-5 hidden">
+            <div class="   flex flex-col gap-y-1 flex-wrap xl:gap-2     ">
             {{ nav:main_nav }}
-                <div class="relative dropdown-item">
-                    {{ if children }}
-                        <!-- Hidden checkbox -->
-                        <input type="radio" name="nav-dropdown" id="dropdown-{{ index }}" class="dropdown-checkbox">
+            <div class=" relative dropdown-item">
+                {{ if children }}
+                    <input type="checkbox" id="dropdown-{{ index }}" class="dropdown-checkbox">
 
-                        <!-- Label acts as clickable parent -->
-                        <label for="dropdown-{{ index }}"
-                            class="dropdown-label text-white xl:text-base lg:text-sm font-medium leading-relaxed  cursor-pointer flex items-center gap-1">
-                            <p>{{ title }}</p>
-                            {{ heroicon variant="outline" icon="chevron-down" class="h-5 w-5 text-white" }}
-                        </label>
+                    <label for="dropdown-{{ index }}" tabindex="0"
+                        class="dropdown-label py-3 text-white xl:text-base lg:text-sm font-medium leading-relaxed cursor-pointer flex items-center gap-1">
+                        <p>{{ title }}</p>
+                        {{ heroicon variant="outline" icon="chevron-down" class="h-5 w-5 text-white transition-transform duration-300" }}
+                    </label>
 
-                        <!-- Dropdown menu -->
-                        <div
-                            class="dropdown-content hidden absolute bg-white mt-2 rounded-lg shadow-lg min-w-[200px] z-10">
-                            {{ children }}
-                                <a href="{{ url }}"
-                                    class="block px-4 py-2 xl:text-base lg:text-sm text-gray-800 hover:bg-gray-100 transition-colors font-outfit font-light">
-                                    {{ title }}
-                                </a>
-                            {{ /children }}
-                        </div>
-                    {{ else }}
-                        <h3 class="text-white xl:text-base lg:text-sm font-medium">
-                            <a href="{{ url }}" class="hover:text-gray-300 transition-colors">
+                    <div
+                        class="dropdown-content absolute bg-white mt-2 rounded-lg shadow-lg min-w-[200px] md:min-w-[300px] z-10 overflow-hidden">
+                        {{ children }}
+                            <a href="{{ url }}"
+                                class="block px-4 py-2 xl:text-base lg:text-sm text-gray-800  transition-colors font-outfit font-light">
+                                {{ title }}
+                            </a>
+                        {{ /children }}
+                    </div>
+                {{ else }}
+                    <div class="flex flex-row gap-3 items-center">
+                        <div class="h-[30px] w-[30px] bg-accent nav-indicator" style="display: none;"></div>
+                        <h3 class="text-white py-3 xl:text-3xl lg:text-xl font-medium items-center">
+                            <a href="{{ url }}" class=" transition-colors"
+                                data-section-link="{{ url | replace:#:'' }}">
                                 {{ title }}
                             </a>
                         </h3>
-                    {{ /if }}
-                </div>
+                    </div>
+                {{ /if }}
+            </div>
             {{ /nav:main_nav }}
-        </div> #}}
-
-
-
-<div class="flex flex-row gap-y-1 flex-wrap xl:gap-4 gap-3">
-  {{ nav:main_nav }}
-    <div class="relative dropdown-item">
-      {{ if children }}
-        <input type="checkbox" id="dropdown-{{ index }}" class="dropdown-checkbox">
-
-        <label for="dropdown-{{ index }}" tabindex="0"
-          class="dropdown-label py-3 text-white xl:text-base lg:text-sm font-medium leading-relaxed cursor-pointer flex items-center gap-1">
-          <p>{{ title }}</p>
-          {{ heroicon variant="outline" icon="chevron-down" class="h-5 w-5 text-white transition-transform duration-300" }}
-        </label>
-
-        <div class="dropdown-content absolute bg-white mt-2 rounded-lg shadow-lg min-w-[200px] md:min-w-[300px] z-10 overflow-hidden">
-          {{ children }}
-            <a href="{{ url }}"
-              class="block px-4 py-2 xl:text-base lg:text-sm text-gray-800 hover:bg-gray-100 transition-colors font-outfit font-light">
-              {{ title }}
-            </a>
-          {{ /children }}
         </div>
-      {{ else }}
-        <h3 class="text-white py-3 xl:text-base lg:text-sm font-medium">
-          <a href="{{ url }}" class="hover:text-gray-300 transition-colors">
-            {{ title }}
-          </a>
-        </h3>
-      {{ /if }}
-    </div>
-  {{ /nav:main_nav }}
-</div>
+        </div>
 
 
 
 
+        {{#
+            {{ brand:button_replicator }}
+                {{ partial:partials/sets/fancy_button }}
+            {{ /brand:button_replicator }}
+        #}}
+<div class="lg:block hidden">
+        <div class="swiper mySwiper h-[60px] relative   ">
+            <!-- set height as needed -->
+            <div class="swiper-wrapper">
+                {{ brand:header_date }}
+                    <div class="swiper-slide">
+                        <div class="text-white grid grid-cols-[45px_45px_45px_145px] items-center gap-2">
+                            <!-- Month -->
+                            <div>{{ event_start format="M" }}</div>
 
-        {{ brand:button_replicator }}
-            {{ partial:partials/sets/fancy_button }}
-        {{ /brand:button_replicator }}
+                            <!-- Start day -->
+                            <div
+                                class="w-11 h-11 bg-zinc-800 rounded-[48px] flex justify-center items-center text-white text-xl">
+                                {{ event_start format="j" }}
+                            </div>
+
+                            <!-- End day -->
+                            <div
+                                class="w-11 h-11 bg-white rounded-[48px] flex justify-center items-center text-zinc-950 text-xl">
+                                {{ event_end format="j" }}
+                            </div>
+
+                            <!-- Place -->
+                            <div>{{ event_place }}</div>
+                        </div>
+                    </div>
+                {{ /brand:header_date }}
+            </div>
+
 
         </div>
+        </div>
+
+        <!-- Swiper JS -->
+
+
 
 
         <!-- Mobile Menu Button -->
-       <div class="lg:hidden items-center py-4 gap-2 block">
+        <div class="lg:hidden items-center py-4 gap-2 block">
 
             <div class="flex justify-end gap-2 lg:gap-4 items-center">
                 {{ partial:partials/sets/countdown_date_picker countdown_end="{brand:countdown_date_picker format='Y-m-d\TH:i:s'}" }}
- 
                 {{ if brand:ai_search_url }}
                     <a title="{{ 'AI Search' | trans }}" href="{{ brand:ai_search_url }}" target="_blank"
                         class="text-white hover:underline flex gap-2 items-center">
@@ -123,9 +122,165 @@ class="opacity-60 bg-slate-900"
                     {{ heroicon variant="outline" icon="bars-3" class=" w-8 h-8" /}}
                 </button>
             </div>
-        {{ partial:partials/header/menu_drawer }}
-    </div>
+            {{ partial:partials/header/menu_drawer }}
+        </div>
 
-   
+
 </nav>
 </header>
+
+
+
+<script>
+    function updateNavContrast() {
+        const nav = document.querySelector('.nav-auto-contrast');
+        if (!nav) return;
+
+        // Temporarily hide nav to detect background behind it
+        nav.style.visibility = 'hidden';
+
+        // Detect the element exactly behind the center of the nav
+        const rect = nav.getBoundingClientRect();
+        const el = document.elementFromPoint(
+            rect.left + rect.width / 2,
+            rect.top + rect.height / 2
+        );
+
+        // Restore nav visibility
+        nav.style.visibility = 'visible';
+
+        if (!el) return;
+
+        // Detect background color (check element and its parents)
+        let bgColor = 'rgba(0, 0, 0, 0)';
+        let currentEl = el;
+
+        while (currentEl && bgColor === 'rgba(0, 0, 0, 0)') {
+            const computedStyle = window.getComputedStyle(currentEl);
+            bgColor = computedStyle.backgroundColor;
+            currentEl = currentEl.parentElement;
+        }
+
+        // If still transparent, default to white
+        if (bgColor === 'rgba(0, 0, 0, 0)') {
+            bgColor = 'rgb(255, 255, 255)';
+        }
+
+        // Extract RGB values with error handling
+        const rgbMatch = bgColor.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
+        if (!rgbMatch) return;
+
+        const rgb = [parseInt(rgbMatch[1]), parseInt(rgbMatch[2]), parseInt(rgbMatch[3])];
+
+        // Calculate brightness using standard formula
+        const brightness = (rgb[0] * 0.299 + rgb[1] * 0.587 + rgb[2] * 0.114);
+
+        // Apply contrasting text color
+        const allTextElements = nav.querySelectorAll('p, h3, a, svg');
+
+        if (brightness < 128) {
+            // Dark background - use white text
+            nav.classList.add("text-white");
+            nav.classList.remove("text-black");
+            allTextElements.forEach(el => {
+                el.classList.add("text-white");
+                el.classList.remove("text-black");
+            });
+        } else {
+            // Light background - use black text  
+            nav.classList.add("text-black");
+            nav.classList.remove("text-white");
+            allTextElements.forEach(el => {
+                el.classList.add("text-black");
+                el.classList.remove("text-white");
+            });
+        }
+    }
+
+    // Navigation indicator functionality
+    function updateNavigationIndicators() {
+        const indicators = document.querySelectorAll('.nav-indicator');
+        const links = document.querySelectorAll('[data-section-link]');
+
+        links.forEach((link, index) => {
+            const sectionId = link.getAttribute('data-section-link');
+            const section = document.getElementById(sectionId);
+            const indicator = indicators[index];
+
+            if (section && indicator) {
+                const rect = section.getBoundingClientRect();
+                const viewportCenter = window.innerHeight / 2;
+
+                // Check if section is currently visible at the viewport center (where nav is positioned)
+                if (rect.top <= viewportCenter && rect.bottom >= viewportCenter) {
+                    indicator.style.display = 'block';
+                } else {
+                    indicator.style.display = 'none';
+                }
+            }
+        });
+    }
+
+    // Update on scroll and resize
+    let updateTimeout;
+
+    function throttledUpdate() {
+        clearTimeout(updateTimeout);
+        updateTimeout = setTimeout(() => {
+            updateNavContrast();
+            updateNavigationIndicators();
+        }, 10);
+    }
+
+    window.addEventListener('scroll', throttledUpdate);
+    window.addEventListener('resize', throttledUpdate);
+    window.addEventListener('load', () => {
+        updateNavContrast();
+        updateNavigationIndicators();
+    });
+
+    // Also update when page content changes
+    const observer = new MutationObserver(throttledUpdate);
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+</script>
+
+
+<script>
+    // Initialize Swiper when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+        const swiper = new Swiper(".mySwiper", {
+            direction: "vertical", // Vertical slider
+            loop: true, // Infinite loop (only works with multiple slides)
+            slidesPerView: 1, // Show 1 slide at a time
+            spaceBetween: 20, // Space between slides
+            autoplay: {
+                delay: 3000, // Auto-slide every 3 seconds
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            mousewheel: {
+                enabled: true,
+                forceToAxis: true,
+            },
+            // Only enable loop if there are multiple slides
+            on: {
+                init: function() {
+                    if (this.slides.length <= 1) {
+                        this.allowTouchMove = false;
+                        this.autoplay.stop();
+                    }
+                }
+            }
+        });
+    });
+</script>

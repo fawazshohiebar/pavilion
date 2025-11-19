@@ -1,0 +1,18 @@
+title: 'Bread Crumbs'
+fields:
+  -
+    handle: breadcrumb_text
+    field:
+      buttons:
+        - h1
+        - h2
+        - h3
+        - h4
+        - h5
+        - h6
+        - bold
+        - color
+      remove_empty_nodes: false
+      type: bard
+      display: 'BreadCrumb Text'
+      localizable: false

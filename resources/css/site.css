@@ -15,10 +15,10 @@ html {
 
 :root {
 
-  --color-primary: #211551;
+  --color-primary: #2C2C2C;
   --color-secondary: #F2F9FC;
-  --color-accent: #f47832;
-  --color-blue: #2d4ea2;
+  --color-accent: #CE202E;
+  --color-blue: #fff;
   --color-light-accent: #fff7ef;
   --color-light-secondary: #f0f5ff;
 }
@@ -27,10 +27,10 @@ html {
   --font-mont: "montserrat", sans-serif;
   --font-noto: "noto-sans-arabic", sans-serif;
 
-  --color-primary: #211551;
+  --color-primary: #2C2C2C;
   --color-secondary: #F2F9FC;
-  --color-accent: #f47832;
-  --color-blue: #2d4ea2;
+  --color-accent: #CE202E;
+  --color-blue: #fff;
   --color-light-accent: #fff7ef;
   --color-light-secondary: #f0f5ff;
 
@@ -130,7 +130,12 @@ html {
 
   .adnec-container,
   .umex-stata {
-    @apply mx-auto px-[5%] md:px-[5%] xl:px-[5%] max-w-[1536px] relative;
+    @apply   mx-auto lg:mx-0  max-w-[90%] lg:max-w-[70%] relative  lg:ml-[5%] px-[5%] lg:px-0 ;
+  }
+
+  .adnec-container-header,
+  .umex-stata {
+    @apply  max-w-[90%] xl:max-w-[90%] relative px-[5%] md:px-[5%] xl:px-[0%];
   }
 
   .colored-text-secondary {
@@ -182,7 +187,7 @@ html {
 }
 
 .custom h2 {
-  @apply xl:text-5xl md:text-4xl text-3xl font-semibold;
+  @apply xl:text-7xl md:text-5xl text-3xl font-normal font-['Arial'];
 }
 
 .custom h3 {

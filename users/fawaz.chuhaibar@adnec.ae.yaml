@@ -53,5 +53,8 @@ preferences:
                 operator: like
                 term: palt
               'null': null
+      per_page: 500
     reusables:
       after_save: continue_editing
+    speakers:
+      per_page: 500

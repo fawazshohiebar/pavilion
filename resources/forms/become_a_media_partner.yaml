@@ -1,8 +1,8 @@
-title: 'Become a Media Partner'
+title: 'pavilion footer'
 email:
   -
     id: mamg6evf
-    to: khaled.taha@adnec.ae
+    to: fawaz.chuhaibar@adnec.ae
     mailer: smtp
     markdown: true
     subject: 'New Media Partner Enquiry'
