@@ -271,3 +271,14 @@ html {
   transform: rotate(180deg);
   transition: transform .2s ease;
 }
+
+.feildcon{
+  border: 1px solid white;
+  color: white!important;
+}
+.feildcon:last-of-type {
+border: 0px!important;
+}
+.container-form{
+  border: 0px!important;
+}

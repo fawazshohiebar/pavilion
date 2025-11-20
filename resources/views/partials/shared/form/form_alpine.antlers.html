@@ -16,7 +16,7 @@
             addToken(e) {
                 $nextTick(() => {
                     this.form.turnstile_token = e.detail.token; // Explicitly set the token in form data
-                    this.checkingCaptcha = false;
+                    this.checkingCaptcha = false;   
                 });
             },
             init() {
@@ -199,8 +199,8 @@
             </template>
             <template x-if="!success">
                 <div class="mx-auto">
-                    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                        {{ widthClasses = ['100' => 'sm:col-span-2', '50' => 'sm:col-span-1', ] }}
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 container-form">
+                        {{ widthClasses = ['100' => 'sm:col-span-2 feildcon', '50' => 'sm:col-span-1 feildcon', ] }}
                         {{ fields }}
                             <div class="{{ widthClasses[width] }}">
                                 {{ if show_labels && input_type !== 'hidden' }}
