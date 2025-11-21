@@ -1,4 +1,6 @@
+<section>
 <div id="{{breadcrumb_text | strip_tags | lower | replace:' ':'-'}}"  style="background-color: {{ background_color }}" >
+     {{ partial:partials/sets/background_category }}
     <div class="adnec-container mx-auto  relative pt-[50px] md:pb-[70px] pb-[100px] ">
            <div class="mb-5">
              {{ partial:sets/bread_crumbs }}
@@ -134,3 +136,4 @@
 
     </div>
 </div>
+</section>

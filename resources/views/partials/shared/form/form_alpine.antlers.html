@@ -231,25 +231,28 @@
                     </div>
                     {{ partial:shared/form/turnstile_badge }}
                     <div class="mt-8 flex justify-end">
-                        {{ partial:shared/button button_type="button" style="filled" size="medium" color="primary" icon="" }}
-                            {{ slot:attributes }}
-                                type="submit"
-                                x-bind:disabled="form.processing || checkingCaptcha || form.validating"
-                                x-bind:class="{'opacity-20 !cursor-not-allowed': form.processing || checkingCaptcha ||
-                                form.validating}"
-                            {{ /slot:attributes }}
-                            <div class="flex items-center gap-2">
+                        <button 
+                            type="submit"
+                            x-bind:disabled="form.processing || checkingCaptcha || form.validating"
+                            x-bind:class="{'opacity-50 !cursor-not-allowed': form.processing || checkingCaptcha || form.validating}"
+                            class="h-auto gap-4 w-fit flex items-center    text-white bg-primary  "
+                            >
+                            <span class="text-white !py-2  !px-2 md:!py-3  md:!px-5">
+                                {{ 'Submit' | trans }}
+                            </span>
+                            <div>
                                 <template x-if="form.processing">
-                                    {{ heroicon:outline:arrow-path class="w-4 h-4 animate-spin" }}
+                                     <div class="py-3 px-4 bg-accent">  
+                                    {{ heroicon:outline:arrow-path class="w-5 h-6 animate-spin" }}
+                                    </div>
                                 </template>
                                 <template x-if="!form.processing">
-                                    {{ heroicon:outline:chevron-right class="w-4 h-4 rtl:rotate-180" }}
+                                  <div class="py-3 px-4 bg-accent">  
+                                    {{ heroicon:outline:chevron-right class="w-5 h-6 rtl:rotate-180" }}
+                                    </div>
                                 </template>
-                                <span>
-                                    {{ 'Submit' | trans }}
-                                </span>
                             </div>
-                        {{ /partial:shared/button }}
+                        </button>
                     </div>
                 </div>
             </template>

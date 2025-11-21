@@ -6,6 +6,8 @@ tabs:
       -
         fields:
           -
+            import: background_category
+          -
             handle: title
             field:
               type: text

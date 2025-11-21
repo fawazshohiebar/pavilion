@@ -33,7 +33,7 @@ images_and_text_replicator:
     end_date: '2025-11-18'
 background_color: '#fff'
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1763467633
+updated_at: 1763711788
 breadcrumb_text:
   -
     type: paragraph
@@ -41,4 +41,5 @@ breadcrumb_text:
       -
         type: text
         text: 'WHATS NEW'
+background_state: white
 ---

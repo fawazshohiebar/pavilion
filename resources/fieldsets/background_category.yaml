@@ -1,0 +1,15 @@
+title: 'Background Category'
+fields:
+  -
+    handle: background_state
+    field:
+      options:
+        -
+          key: white
+          value: null
+        -
+          key: black
+          value: null
+      type: select
+      display: 'background state'
+      localizable: false

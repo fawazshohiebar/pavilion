@@ -16,7 +16,7 @@ html {
 :root {
 
   --color-primary: #2C2C2C;
-  --color-secondary: #F2F9FC;
+  --color-secondary: #4C4C4C;
   --color-accent: #CE202E;
   --color-blue: #fff;
   --color-light-accent: #fff7ef;
@@ -28,7 +28,7 @@ html {
   --font-noto: "noto-sans-arabic", sans-serif;
 
   --color-primary: #2C2C2C;
-  --color-secondary: #F2F9FC;
+  --color-secondary: #4C4C4C;
   --color-accent: #CE202E;
   --color-blue: #fff;
   --color-light-accent: #fff7ef;
@@ -130,12 +130,12 @@ html {
 
   .adnec-container,
   .umex-stata {
-    @apply   mx-auto lg:mx-0  max-w-[90%] lg:max-w-[70%] relative  lg:ml-[5%] px-[5%] lg:px-0 ;
+    @apply mx-auto lg:mx-0 max-w-[90%] lg:max-w-[70%] relative lg:ml-[5%] px-[5%] lg:px-0;
   }
 
   .adnec-container-header,
   .umex-stata {
-    @apply  max-w-[90%] xl:max-w-[90%] relative px-[5%] md:px-[5%] xl:px-[0%];
+    @apply max-w-[90%] xl:max-w-[90%] relative px-[5%] md:px-[5%] xl:px-[0%];
   }
 
   .colored-text-secondary {
@@ -203,7 +203,7 @@ html {
 }
 
 .speakerss-pagination .speakerss-bullets-active {
-    @apply bg-primary;
+  @apply bg-primary;
 
 }
 
@@ -272,13 +272,37 @@ html {
   transition: transform .2s ease;
 }
 
-.feildcon{
-  border: 1px solid white;
-  color: white!important;
+.feildcon {
+  border-radius: 5px;
+  border: 1px solid #4C4C4C;
+  padding: 8px;
+  color: white !important;
+  background-color: #1B1B1B;
 }
+
+.feildcon label {
+  color: white;
+}
+
+.feildcon input,
+.feildcon select,
+.feildcon textarea {
+  border: 0px;
+  outline: none;
+  box-shadow: none;
+  color: white;
+  padding: 5px;
+}
+
+
 .feildcon:last-of-type {
-border: 0px!important;
+  border: 0px !important;
+  display: none;
 }
-.container-form{
-  border: 0px!important;
+
+.container-form {
+  border: 0px !important;
+}
+.form-conn >form{
+  padding: 0px;
 }
