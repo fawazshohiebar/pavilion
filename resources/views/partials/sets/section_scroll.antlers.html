@@ -1,4 +1,5 @@
   <section id="{{breadcrumb_text | strip_tags | lower | replace:' ':'-'}}" class=" bg-[#2C2C2C] py-14">
+     {{ partial:partials/sets/background_category }}
       <div class="adnec-container">
         <div class="grid lg:grid-cols-[330px_auto] md:grid-cols-[230px_auto] grid-cols-1 gap-5">
           {{ partial:sets/bread_crumbs }}
@@ -13,7 +14,7 @@
               <!-- Content -->
               <div class="flex-1 ">
                   {{ section_replicator }}
-                      <section id="section-{{ index }}"
+                      <section id="section-{{ count }}"
                           class="min-h-[auto] pt-[50px] pb-15 {{ unless last }}border-b border-white/10{{ /unless }}">
                           {{ if section_image }}
                               <div class="w-full ">

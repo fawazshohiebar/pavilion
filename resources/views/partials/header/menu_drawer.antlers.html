@@ -10,7 +10,7 @@
                 class="rtl:mr-auto rtl:ml-0 ltr:ml-auto block size-full max-w-sm sm:max-w-md transform transition duration-500 ease-in-out rtl:data-closed:-translate-x-full data-closed:translate-x-full sm:duration-700">
                 <div class="flex h-full flex-col overflow-y-auto bg-white shadow-2xl">
                     <!-- Header -->
-                    <div class="bg-blue px-6 py-4">
+                    <div class=" px-6 py-4 bg-primary">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <div class="h-8 w-8 bg-white/20 rounded-lg flex items-center justify-center">
@@ -45,11 +45,11 @@
                                                         class="h-5 w-5 text-gray-400 group-hover:text-[#827654] transition-colors" />
                                                 {{ else }}
                                                     <div
-                                                        class="h-2 w-2 bg-gray-300 rounded-full group-hover:bg-blue transition-colors">
+                                                        class="h-2 w-2 bg-gray-300 rounded-full group-hover:bg-secondary transition-colors">
                                                     </div>
                                                 {{ /if }}
                                                 <span
-                                                    class="text-blue group-hover:text-blue text-base">{{ title }}</span>
+                                                    class="text-blue group-hover:text-primary text-base">{{ title }}</span>
                                             </span>
                                             <div class="flex items-center">
                                                 {{ heroicon:ouline:chevron-down class="h-5 w-5 text-gray-400 transition-all duration-200 group-hover:text-blue" x-bind:class="open ? 'rotate-180' : ''" }}
@@ -83,7 +83,7 @@
                                 {{ else }}
                                     <!-- Single Item -->
                                     <a href="{{ url }}"
-                                        class="{{ is_current || is_parent ? 'text-[#827654] font-semibold' : 'text-gray-700 hover:text-blue hover:bg-gray-50 border-transparent' }} flex items-center gap-3 py-4 px-3 -mx-3 rounded-lg transition-all duration-200 relative group">
+                                        class="{{ is_current || is_parent ? 'text-[#827654] font-semibold' : 'text-gray-700 hover:text-blue hover:bg-primary border-transparent' }} flex items-center gap-3 py-4 px-3 -mx-3 rounded-lg transition-all duration-200 relative group">
                                         {{ if url == '/' }}
                                             <x-dynamic-component component="icons.home"
                                                 class="h-5 w-5 {{ is_current || is_parent ? 'text-blue' : 'text-gray-400 group-hover:text-blue' }} transition-colors" />
@@ -131,7 +131,7 @@
                     </div>
 
                     <!-- Footer -->
-                    <div class="px-6 py-4 bg-gray-50 border-t border-gray-200">
+                    <div class="px-6 py-4 bg-primary border-t border-gray-200">
                         <div class="text-center">
                             <p class="text-xs text-gray-500 mb-2">{{ 'Follow us for updates' | trans }}</p>
                             <div class="flex justify-center">

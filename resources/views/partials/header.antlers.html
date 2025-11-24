@@ -136,49 +136,59 @@ class="opacity-0 "
         const nav = document.querySelector('.nav-auto-contrast');
         if (!nav) return;
 
-        // Temporarily hide nav to detect background behind it
-        nav.style.visibility = 'hidden';
-
-        // Detect the element exactly behind the center of the nav
+        // Get the viewport center position where the nav is located
         const rect = nav.getBoundingClientRect();
-        const el = document.elementFromPoint(
-            rect.left + rect.width / 2,
-            rect.top + rect.height / 2
-        );
+        const navCenterY = rect.top + rect.height / 2;
 
-        // Restore nav visibility
-        nav.style.visibility = 'visible';
+        // Find all sections on the page
+        const sections = document.querySelectorAll('section, [id]');
+        let currentSection = null;
 
-        if (!el) return;
+        // Determine which section the nav is currently over
+        sections.forEach(section => {
+            const sectionRect = section.getBoundingClientRect();
+            if (sectionRect.top <= navCenterY && sectionRect.bottom >= navCenterY) {
+                currentSection = section;
+            }
+        });
 
-        // Detect background color (check element and its parents)
-        let bgColor = 'rgba(0, 0, 0, 0)';
-        let currentEl = el;
+        if (!currentSection) return;
 
-        while (currentEl && bgColor === 'rgba(0, 0, 0, 0)') {
-            const computedStyle = window.getComputedStyle(currentEl);
-            bgColor = computedStyle.backgroundColor;
-            currentEl = currentEl.parentElement;
+        // Look for elements with id="black" or id="white" within the current section
+        const blackIndicator = currentSection.querySelector('#black');
+        const whiteIndicator = currentSection.querySelector('#white');
+
+        // Determine text color based on which indicator is found
+        let useWhiteText = false;
+
+        if (blackIndicator) {
+            // If "black" indicator found, use white text (dark background)
+            useWhiteText = true;
+        } else if (whiteIndicator) {
+            // If "white" indicator found, use black text (light background)
+            useWhiteText = false;
+        } else {
+            // Default: check if we can find either indicator in parent elements
+            let parent = currentSection.parentElement;
+            while (parent && !blackIndicator && !whiteIndicator) {
+                const parentBlack = parent.querySelector('#black');
+                const parentWhite = parent.querySelector('#white');
+                
+                if (parentBlack) {
+                    useWhiteText = true;
+                    break;
+                } else if (parentWhite) {
+                    useWhiteText = false;
+                    break;
+                }
+                parent = parent.parentElement;
+            }
         }
-
-        // If still transparent, default to white
-        if (bgColor === 'rgba(0, 0, 0, 0)') {
-            bgColor = 'rgb(255, 255, 255)';
-        }
-
-        // Extract RGB values with error handling
-        const rgbMatch = bgColor.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
-        if (!rgbMatch) return;
-
-        const rgb = [parseInt(rgbMatch[1]), parseInt(rgbMatch[2]), parseInt(rgbMatch[3])];
-
-        // Calculate brightness using standard formula
-        const brightness = (rgb[0] * 0.299 + rgb[1] * 0.587 + rgb[2] * 0.114);
 
         // Apply contrasting text color
         const allTextElements = nav.querySelectorAll('p, h3, a, svg');
 
-        if (brightness < 128) {
+        if (useWhiteText) {
             // Dark background - use white text
             nav.classList.add("text-white");
             nav.classList.remove("text-black");

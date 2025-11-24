@@ -144,6 +144,8 @@ fields:
               icon: align-object-center
               fields:
                 -
+                  import: background_category
+                -
                   import: reusable_hero
             about:
               display: About
@@ -509,6 +511,8 @@ fields:
               display: 'Heading With Multiple Texts'
               fields:
                 -
+                  import: background_category
+                -
                   import: bread_crumbs
                 -
                   import: heading_group_component
@@ -530,6 +534,8 @@ fields:
             section_scroll:
               display: 'Section Scroll'
               fields:
+                -
+                  import: background_category
                 -
                   import: bread_crumbs
                 -
@@ -592,6 +598,8 @@ fields:
             sponsors_v2:
               display: 'Sponsors V2'
               fields:
+                -
+                  import: background_category
                 -
                   import: bread_crumbs
                 -

@@ -29,6 +29,7 @@ page_builder:
             icon_position: right
             icon: chevron-right
             button_size: fit
+        background_state: black
   -
     type: set
     attrs:
@@ -119,6 +120,7 @@ page_builder:
               -
                 type: text
                 text: 'Driven by a commitment to excellence and collaboration, the Pavilion highlights the UAE’s dedication to building advanced solutions, fostering international partnerships, and shaping the future of the industry.'
+        background_state: white
   -
     type: set
     attrs:
@@ -182,6 +184,7 @@ page_builder:
                     attrs:
                       color: '#fff'
                 text: 'The UAE Pavilion brings together the nation’s leading defense, aerospace, and security innovators, proudly showcasing Emirati expertise and world-class technologies on the global stage.'
+        background_state: black
   -
     type: set
     attrs:
@@ -258,6 +261,7 @@ page_builder:
             image: sponsors/award.png
             type: new_set
             enabled: true
+        background_state: white
   -
     type: paragraph
     attrs:
@@ -284,7 +288,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1763542264
+updated_at: 1763712441
 fine_seo_image: global-food-week-logo-coloured-(1).png
 reusable_popup: false
 ---
