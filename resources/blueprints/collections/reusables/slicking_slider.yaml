@@ -64,6 +64,12 @@ tabs:
                             display: 'End Date'
                             localizable: false
                             width: 50
+                        -
+                          handle: location
+                          field:
+                            type: text
+                            display: Location
+                            localizable: false
           -
             handle: background_color
             field:
