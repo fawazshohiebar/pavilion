@@ -15,8 +15,8 @@ page_builder:
       values:
         type: hero
         heading: 'Discover the Future of Defense'
-        subheading: "Showcasing Emirati innovation and global partnerships at Asia's leading  tri-service defense and security exhibition in Bangkok, 10–13 November 2025."
-        video: '-7UEOvhBAt8'
+        subheading: "Showcasing Emirati innovation and global partnerships at Egypt's leading tri-service defense exhibition, 1–4 December 2025."
+        video: 'https://youtu.be/P_kAbfxZbio'
         hero_actions:
           -
             id: mhszdeb2
@@ -113,13 +113,31 @@ page_builder:
             content:
               -
                 type: text
-                text: 'The UAE Pavilion brings together the nation’s leading defense, aerospace, and security innovators, proudly showcasing Emirati expertise and world-class technologies on the global stage.'
+                text: 'The UAE National Pavilion brings together the nation’s leading defense, aerospace, and security innovators, proudly presenting Emirati expertise and world-class technologies on the global stage.'
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'Driven by a commitment to excellence and collaboration, the Pavilion highlights the UAE’s dedication to building advanced solutions, fostering international partnerships, and shaping the future of the industry.'
+                text: 'Driven by a commitment to excellence and collaboration, the Pavilion showcases the UAE’s dedication to developing advanced solutions, fostering international partnerships, and shaping the future of these strategic industries.'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'As a fully integrated platform, the Pavilion features cutting-edge ‘Made in UAE’ products and solutions, uniting leading Emirati companies and specialized institutions that exemplify the nation’s growing industrial and technological capabilities.'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'The Pavilion reflects the UAE’s strategic vision to build a world-class national defense sector—one that empowers local industries, enhances global competitiveness, and strengthens international collaboration.'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Through innovation, advanced manufacturing, and strategic partnerships, the UAE National Pavilion embodies the nation’s aspiration for a sustainable, globally recognized defense and aerospace ecosystem.'
         background_state: white
   -
     type: set
@@ -142,20 +160,21 @@ page_builder:
         section_replicator:
           -
             id: mhw06a2d
-            section_heading: 'IMPACT Exhibition & Convention Center, Bangkok'
+            section_heading: 'Egypt International Exhibition Centre (EIEC)'
             label: 'Learn More'
             design: blackbg
             icon_src: icon
             icon: chevron-right
-            open_new_tab: false
+            open_new_tab: true
             button_size: fit
             icon_position: right
             type: section
             enabled: true
             section_image:
-              - features/andaz-hotel-jpg.png
-            start_date: '2025-11-12'
-            end_date: '2025-11-12'
+              - eiec-photo.png
+            start_date: '2025-12-01'
+            end_date: '2025-12-04'
+            link: 'https://www.egyptdefenceexpo.com/'
           -
             id: mhw0700a
             section_heading: "Egypt International Exhibition Center (EIEC)\_in Cairo"
@@ -170,20 +189,37 @@ page_builder:
             enabled: true
             section_image:
               - sectors/10807-jpg.png
-            start_date: '2025-11-12'
-            end_date: '2025-11-21'
+            start_date: '2025-12-01'
+            end_date: '2025-12-04'
+          -
+            id: mipm1qq0
+            section_heading: "Egypt International Exhibition Center (EIEC)\_in Cairo"
+            label: 'Learn More'
+            design: blackbg
+            icon_src: icon
+            icon: chevron-right
+            open_new_tab: false
+            button_size: fit
+            icon_position: right
+            type: section
+            enabled: true
+            section_image:
+              - sectors/10807-jpg.png
+            start_date: '2025-12-01'
+            end_date: '2025-12-04'
         section_text:
           -
             type: paragraph
             content:
               -
                 type: text
-                marks:
-                  -
-                    type: textColor
-                    attrs:
-                      color: '#fff'
-                text: 'The UAE Pavilion brings together the nation’s leading defense, aerospace, and security innovators, proudly showcasing Emirati expertise and world-class technologies on the global stage.'
+                text: 'The 4th edition of Egypt Defence Expo (EDEX), the leading defense and security event covering Africa and the Middle East, will take place from 1–4 December 2025 at the Egypt International Exhibition Centre (EIEC). EDEX offers a unique platform to witness the latest technologies, equipment, and systems across land, sea, and air.'
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'The UAE National Pavilion will be proudly participating, showcasing Emirati expertise and world-class innovations in defense, aerospace, and security. Visitors can explore cutting-edge ‘Made in UAE’ solutions and discover the nation’s growing industrial and technological capabilities.'
         background_state: black
   -
     type: set
@@ -214,21 +250,11 @@ page_builder:
                 text: 'Bringing together some of the nation’s most innovative companies'
         sub_text:
           -
-            type: heading
-            attrs:
-              level: 5
+            type: paragraph
             content:
               -
                 type: text
-                text: 'Driven by a commitment to excellence and collaboration, the Pavilion highlights the UAE’s dedication'
-          -
-            type: heading
-            attrs:
-              level: 5
-            content:
-              -
-                type: text
-                text: ' to building advanced solutions, fostering international partnerships.'
+                text: 'Guided by the UAE’s commitment to innovation, collaboration, and global engagement, the UAE Pavilion brings together organizations that contribute to the nation’s growing defense, aerospace, and security ecosystem. Companies interested in joining this collective national presence are welcome to take part.'
         label: 'Become a participant'
         design: blackbg
         icon_src: none
@@ -238,29 +264,29 @@ page_builder:
         sponsors_rep:
           -
             id: mi4itb7k
-            image: sponsors/award.png
+            image: uae-pavilion-(bangkok2).jpg
             type: new_set
             enabled: true
           -
             id: mi4iylo8
-            image: sponsors/award.png
+            image: uae-pavilion-(bangkok3).jpg
             type: new_set
             enabled: true
           -
             id: mi4iykju
             image: sponsors/award.png
             type: new_set
-            enabled: true
+            enabled: false
           -
             id: mi4iyt7n
             image: sponsors/award.png
             type: new_set
-            enabled: true
+            enabled: false
           -
             id: mi4iyvqu
             image: sponsors/award.png
             type: new_set
-            enabled: true
+            enabled: false
         background_state: white
   -
     type: paragraph
@@ -287,8 +313,8 @@ body_start_scripts:
 body_end_scripts:
   code: null
   mode: htmlmixed
-updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1763712441
+updated_by: 7fed8dcc-a53f-489c-b670-4be3392dc465
+updated_at: 1764742404
 fine_seo_image: global-food-week-logo-coloured-(1).png
 reusable_popup: false
 ---
