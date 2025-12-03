@@ -79,7 +79,10 @@
                                 {{# {{ if slide_link }} #}}
                                     <a class=" text-red-600 2xl:text-2xl xl:text-xl text-lg font-normal font-['Arial'] underline leading-8" href="{{ slide_link.url }}">Learn more</a>
                                 {{# {{ /if }} #}}
-                                <p class="absolute px-2 top-5 bg-white text-black text-xl capitalize ">{{ start_date format="j" }}–{{ end_date format="j F Y" }}</p>
+                                <p class="absolute px-2 top-5 bg-white text-black text-xl capitalize ">{{ start_date format="j" }}–{{ end_date format="j" }} {{ trans :key="end_date | format:M" }} {{ end_date format="Y" }}</p>
+                               {{if location}}
+                                <p class="absolute px-2 bottom-40 ltr:right-4 rtl:left-4 bg-white text-black text-xl capitalize"> {{location}}</p>
+                                {{/if}}
                             </div>
                         </div>
                     {{ /images_and_text_replicator }}
@@ -87,7 +90,7 @@
             </div>
 
             <!-- Navigation Buttons -->
-            <div class=" flex flex-row absolute  top-82 z-99999 bg-black p-1 right-[-20px]">
+            <div class=" flex ltr:flex-row rtl:flex-row-reverse absolute  top-82 z-99999 bg-black p-1 ltr:right-[-20px] rtl:left-[-20px]">
             <div class="slicking-button-prev     z-10 cursor-pointer">
                   <div class="w-12 h-12 bg-black group hover:bg-white hover:text-black shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
                  {{ heroicon variant="outline" icon="arrow-left" class="h-5 w-5 text-white hover:text-black" /}}

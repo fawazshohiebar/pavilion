@@ -130,7 +130,7 @@ html {
 
   .adnec-container,
   .umex-stata {
-    @apply mx-auto lg:mx-0 max-w-[90%] lg:max-w-[70%] relative lg:ml-[5%] px-[5%] lg:px-0;
+    @apply mx-auto lg:mx-0 max-w-[90%] lg:max-w-[70%] relative lg:ml-[5%] rtl:lg:mr-[5%] rtl:lg:ml-[0%] px-[5%] lg:px-0;
   }
 
   .adnec-container-header,
