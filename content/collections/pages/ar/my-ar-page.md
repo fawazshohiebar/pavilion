@@ -14,9 +14,5 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-<<<<<<< HEAD
 updated_at: 1764742789
-=======
-updated_at: 1764743843
->>>>>>> 14a454a9e6812de5b45be0d8cdbb9a8f6fdbaf7c
 ---
