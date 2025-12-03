@@ -9,11 +9,11 @@ use App\Http\Controllers\GetAgendaByDateController;
 //    'title' => 'Example'
 // ]);
 
-Route::permanentRedirect('/', '/en');
+// Route::permanentRedirect('/', '/en');
 // Route::permanentRedirect('/ar', '/en');
 
 
 Route::get('/{locale}/agenda/{agenda}/{date}', GetAgendaByDateController::class)->name('show_agenda_by_date');
 
 // redirect all /ar starting routes to homepage (including /ar)
-Route::permanentRedirect('/ar/{any?}', '/en')->where('any', '.*');
+// Route::permanentRedirect('/ar/{any?}', '/en')->where('any', '.*');

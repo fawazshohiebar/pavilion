@@ -11,12 +11,14 @@ images_and_text_replicator:
     enabled: true
     start_date: '2025-11-17'
     end_date: '2025-11-19'
+    location: Thailand
   -
     id: mhx3nc5m
     image: 2.png
     text: 'Emirati Companies Announced for Egypt Defense Exhibition 2026'
     type: new_set
     enabled: true
+    location: America
   -
     id: mhx628p8
     image: 2.png
@@ -33,7 +35,7 @@ images_and_text_replicator:
     end_date: '2025-11-18'
 background_color: '#fff'
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1763711788
+updated_at: 1764761609
 breadcrumb_text:
   -
     type: paragraph

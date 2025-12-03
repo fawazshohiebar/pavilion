@@ -1,4 +1,21 @@
-title: 'Global Food Week'
+title: Pavilion
+logo: brand/frame-4.svg
+header_date:
+  -
+    id: mipn5lsx
+    event_place: 'BANGKOK THAILAND'
+    event_start: '2026-02-02'
+    event_end: '2026-02-13'
+    type: new_set
+    enabled: true
+  -
+    id: mipn5rwn
+    event_place: 'يسنتبسي سيشسي'
+    event_start: '2025-12-17'
+    event_end: '2025-12-20'
+    type: new_set
+    enabled: true
+patronage: 'Held Under the Patronage of H.H Sheikh Mansour Bin Zayed Al Nahyan, Vice President, Deputy Prime Minister, Chairman of the Presidential Court, and Chairman of the Board of Directors of the Abu Dhabi Agriculture and Food Safety Authority (ADAFSA)'
 social_media:
   -
     id: mdwxv1og
@@ -29,3 +46,40 @@ location: 'مركز أدنيك أبوظبي'
 location_link: 'https://maps.app.goo.gl/QfKJxAySQC8fabao9?g_st=iw'
 date: '29 أغسطس - 6 سبتمبر'
 time: '11 صباحاً - 10 مساءً'
+breadcrumb_text:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'GET IN TOUCH'
+footer_text:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, '
+      -
+        type: hardBreak
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'quis nostrum exercitationem ullam corporis suscipit laboriosam.'
+form: become_a_media_partner
+show_labels: true
+logos:
+  -
+    id: mipqhx8v
+    title: 'ORGANIZED BY'
+    image: layer_1-(1).svg
+    url: 'https://adnecgroup.ae'
+    type: logo
+    enabled: true
+footer_sales:
+  -
+    id: mipqj01z
+    sales_text: '24 November 2026 | 09:30 – 18:00'
+    type: sales_set
+    enabled: true
