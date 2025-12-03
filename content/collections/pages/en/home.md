@@ -14,7 +14,7 @@ page_builder:
       id: mhszda1l
       values:
         type: hero
-        heading: 'Discover the Future of Defenseeeee'
+        heading: 'Discover the Future of Defense'
         subheading: "Showcasing Emirati innovation and global partnerships at Egypt's leading tri-service defense exhibition, 1–4 December 2025."
         video: 'https://youtu.be/P_kAbfxZbio'
         hero_actions:
@@ -314,7 +314,7 @@ body_end_scripts:
   code: null
   mode: htmlmixed
 updated_by: ac775259-f1c4-4a12-b768-668149cb0e1a
-updated_at: 1764762384
+updated_at: 1764762554
 fine_seo_image: global-food-week-logo-coloured-(1).png
 reusable_popup: false
 ---
