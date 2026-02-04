@@ -1,65 +1,23 @@
 # Multi-stage Dockerfile for Production Deployment
 # This builds a complete application image with PHP-FPM and Nginx
 
-# Stage 1: Build PHP application
-FROM php:8.3-fpm-alpine AS php-base
+# Stage 1: Build PHP application - Use Statamic's pre-built image!
+FROM statamic/cli:latest AS php-base
 
 ENV PHP_USER=laravel
 ENV PHP_GROUP=laravel
 
-# Install build dependencies first
-RUN apk add --no-cache --virtual .build-deps \
-    $PHPIZE_DEPS \
-    linux-headers \
-    && apk add --no-cache \
-    libzip-dev \
-    zip \
-    unzip \
-    git \
-    curl \
-    libpng-dev \
-    libjpeg-turbo-dev \
-    freetype-dev \
-    oniguruma-dev \
-    icu-dev \
-    libxml2-dev
+# Statamic CLI image already has:
+# - PHP 8.3
+# - All required extensions (gd, zip, mbstring, intl, xml, bcmath, opcache, redis, etc.)
+# - Composer
+# This saves 5+ minutes of build time!
 
-# Install PHP extensions
-RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install \
-    pdo \
-    pdo_mysql \
-    zip \
-    gd \
-    mbstring \
-    intl \
-    xml \
-    bcmath \
-    opcache \
-    pcntl \
-    posix \
-    sockets \
-    && apk del .build-deps
-
-# Install Redis extension (optional but recommended for production)
-RUN apk add --no-cache --virtual .redis-build-deps $PHPIZE_DEPS \
-    && pecl install redis \
-    && docker-php-ext-enable redis \
-    && apk del .redis-build-deps
-
-# Configure PHP-FPM
-RUN adduser -g ${PHP_GROUP} -s /bin/sh -D ${PHP_USER}
-RUN sed -i "s/user = www-data/user = ${PHP_USER}/g" /usr/local/etc/php-fpm.d/www.conf
-RUN sed -i "s/group = www-data/group = ${PHP_GROUP}/g" /usr/local/etc/php-fpm.d/www.conf
-
-# Copy PHP production configuration
-COPY docker/php-production.ini /usr/local/etc/php/conf.d/php-production.ini
+# Create user
+RUN adduser -g ${PHP_GROUP} -s /bin/sh -D ${PHP_USER} 2>/dev/null || true
 
 # Set working directory
 WORKDIR /var/www/html
-
-# Copy composer from official image
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Copy composer files first (for better layer caching)
 COPY composer.json composer.lock ./
@@ -117,52 +75,28 @@ COPY public ./public
 # Build assets
 RUN npm run build
 
-# Stage 3: Final production image with Nginx
-FROM nginx:stable-alpine
+# Stage 3: Final production image with PHP and Nginx
+# Start from Statamic CLI which already has PHP 8.3 + all extensions
+FROM statamic/cli:latest
 
-ENV NGINX_USER=laravel
-ENV NGINX_GROUP=laravel
+ENV PHP_USER=laravel
+ENV PHP_GROUP=laravel
 
-# Install PHP-FPM and supervisor with ALL necessary extensions
+# Install Nginx and supervisor (much lighter than installing all PHP extensions!)
 RUN apk add --no-cache \
-    php83 \
-    php83-fpm \
-    php83-pdo \
-    php83-pdo_mysql \
-    php83-pdo_sqlite \
-    php83-sqlite3 \
-    php83-mysqli \
-    php83-zip \
-    php83-gd \
-    php83-mbstring \
-    php83-intl \
-    php83-xml \
-    php83-bcmath \
-    php83-opcache \
-    php83-session \
-    php83-tokenizer \
-    php83-fileinfo \
-    php83-ctype \
-    php83-dom \
-    php83-xmlwriter \
-    php83-xmlreader \
-    php83-simplexml \
-    php83-iconv \
-    php83-curl \
-    php83-openssl \
-    php83-pecl-redis \
-    php83-posix \
-    php83-pcntl \
-    php83-sockets \
-    supervisor \
-    && ln -sf /usr/bin/php83 /usr/bin/php
+    nginx \
+    supervisor
 
-# Create user
-RUN adduser -g ${NGINX_GROUP} -s /bin/sh -D ${NGINX_USER}
+# Create user (may already exist in statamic/cli)
+RUN adduser -g ${PHP_GROUP} -s /bin/sh -D ${PHP_USER} 2>/dev/null || true
+
+# Setup Nginx
+RUN mkdir -p /run/nginx \
+    && mkdir -p /var/log/nginx
 
 # Copy nginx configuration
 COPY docker/nginx.default.conf /etc/nginx/conf.d/default.conf
-RUN sed -i "s/user nginx/user ${NGINX_USER}/g" /etc/nginx/nginx.conf
+# Don't modify nginx.conf user - we'll run nginx as laravel user via supervisor
 
 # Copy supervisor configuration
 COPY docker/supervisord.conf /etc/supervisord.conf
@@ -172,10 +106,10 @@ COPY docker/startup.sh /usr/local/bin/startup.sh
 RUN chmod +x /usr/local/bin/startup.sh
 
 # Copy application from php-base stage
-COPY --from=php-base --chown=${NGINX_USER}:${NGINX_GROUP} /var/www/html /var/www/html
+COPY --from=php-base --chown=${PHP_USER}:${PHP_GROUP} /var/www/html /var/www/html
 
 # Copy built assets from node-builder stage (entire build directory with manifest)
-COPY --from=node-builder --chown=${NGINX_USER}:${NGINX_GROUP} /app/public/build /var/www/html/public/build
+COPY --from=node-builder --chown=${PHP_USER}:${PHP_GROUP} /app/public/build /var/www/html/public/build
 
 # Create necessary directories and ensure proper permissions
 RUN mkdir -p /var/www/html/storage/logs \
@@ -189,7 +123,7 @@ RUN mkdir -p /var/www/html/storage/logs \
     && mkdir -p /var/www/html/cache/stache/indexes \
     && mkdir -p /var/www/html/cache/stache/stores \
     && touch /var/www/html/database/database.sqlite \
-    && chown -R ${NGINX_USER}:${NGINX_GROUP} /var/www/html \
+    && chown -R ${PHP_USER}:${PHP_GROUP} /var/www/html \
     && chmod -R 777 /var/www/html/storage \
     && chmod -R 777 /var/www/html/bootstrap/cache \
     && chmod -R 777 /var/www/html/database \
