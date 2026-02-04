@@ -1,0 +1,152 @@
+# Multi-stage Dockerfile for Production Deployment
+# This builds a complete application image with PHP-FPM and Nginx
+
+# Stage 1: Build PHP application
+FROM php:8.3-fpm-alpine AS php-base
+
+ENV PHP_USER=laravel
+ENV PHP_GROUP=laravel
+
+# Install system dependencies and PHP extensions
+RUN apk add --no-cache \
+    libzip-dev \
+    zip \
+    unzip \
+    git \
+    curl \
+    libpng-dev \
+    libjpeg-turbo-dev \
+    freetype-dev \
+    oniguruma-dev \
+    icu-dev \
+    libxml2-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install \
+    pdo \
+    pdo_mysql \
+    zip \
+    gd \
+    mbstring \
+    intl \
+    xml \
+    bcmath \
+    opcache
+
+# Install Redis extension (optional but recommended for production)
+RUN apk add --no-cache pcre-dev $PHPIZE_DEPS \
+    && pecl install redis \
+    && docker-php-ext-enable redis \
+    && apk del pcre-dev $PHPIZE_DEPS
+
+# Configure PHP-FPM
+RUN adduser -g ${PHP_GROUP} -s /bin/sh -D ${PHP_USER}
+RUN sed -i "s/user = www-data/user = ${PHP_USER}/g" /usr/local/etc/php-fpm.d/www.conf
+RUN sed -i "s/group = www-data/group = ${PHP_GROUP}/g" /usr/local/etc/php-fpm.d/www.conf
+
+# Copy PHP production configuration
+COPY docker/php-production.ini /usr/local/etc/php/conf.d/php-production.ini
+
+# Set working directory
+WORKDIR /var/www/html
+
+# Copy composer from official image
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Copy application files
+COPY --chown=${PHP_USER}:${PHP_GROUP} . .
+
+# Install composer dependencies (production optimized)
+RUN composer install \
+    --no-dev \
+    --no-interaction \
+    --no-progress \
+    --no-scripts \
+    --prefer-dist \
+    --optimize-autoloader
+
+# Run post-autoload-dump scripts
+RUN composer run-script post-autoload-dump
+
+# Set proper permissions
+RUN chown -R ${PHP_USER}:${PHP_GROUP} /var/www/html \
+    && chmod -R 755 /var/www/html/storage \
+    && chmod -R 755 /var/www/html/bootstrap/cache \
+    && chmod -R 755 /var/www/html/public
+
+# Stage 2: Build Node.js assets
+FROM node:20-alpine AS node-builder
+
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm ci
+
+# Copy application files needed for build
+COPY . .
+
+# Build assets
+RUN npm run build
+
+# Stage 3: Final production image with Nginx
+FROM nginx:stable-alpine
+
+ENV NGINX_USER=laravel
+ENV NGINX_GROUP=laravel
+
+# Install PHP-FPM and supervisor
+RUN apk add --no-cache \
+    php83 \
+    php83-fpm \
+    php83-pdo \
+    php83-pdo_mysql \
+    php83-mysqli \
+    php83-zip \
+    php83-gd \
+    php83-mbstring \
+    php83-intl \
+    php83-xml \
+    php83-bcmath \
+    php83-opcache \
+    php83-session \
+    php83-tokenizer \
+    php83-fileinfo \
+    php83-ctype \
+    php83-dom \
+    php83-xmlwriter \
+    php83-xmlreader \
+    supervisor
+
+# Create user
+RUN adduser -g ${NGINX_GROUP} -s /bin/sh -D ${NGINX_USER}
+
+# Copy nginx configuration
+COPY docker/nginx.default.conf /etc/nginx/conf.d/default.conf
+RUN sed -i "s/user nginx/user ${NGINX_USER}/g" /etc/nginx/nginx.conf
+
+# Copy supervisor configuration
+COPY docker/supervisord.conf /etc/supervisord.conf
+
+# Copy application from php-base stage
+COPY --from=php-base --chown=${NGINX_USER}:${NGINX_GROUP} /var/www/html /var/www/html
+
+# Copy built assets from node-builder stage
+COPY --from=node-builder --chown=${NGINX_USER}:${NGINX_GROUP} /app/public/build /var/www/html/public/build
+
+# Create necessary directories
+RUN mkdir -p /var/www/html/storage/logs \
+    && mkdir -p /var/www/html/bootstrap/cache \
+    && chown -R ${NGINX_USER}:${NGINX_GROUP} /var/www/html/storage \
+    && chown -R ${NGINX_USER}:${NGINX_GROUP} /var/www/html/bootstrap/cache
+
+# Expose port
+EXPOSE 80
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=40s --retries=3 \
+    CMD wget --no-verbose --tries=1 --spider http://localhost/health || exit 1
+
+# Use supervisor to manage both nginx and php-fpm
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
