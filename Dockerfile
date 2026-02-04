@@ -184,9 +184,9 @@ RUN mkdir -p /var/www/html/storage/logs \
 # Expose port
 EXPOSE 80
 
-# Health check - force IPv4 with 127.0.0.1
+# Health check - use /health endpoint which returns 200 OK
 HEALTHCHECK --interval=30s --timeout=3s --start-period=40s --retries=3 \
-    CMD wget --no-verbose --tries=1 --spider http://127.0.0.1:80/ || exit 1
+    CMD wget --no-verbose --tries=1 --spider http://127.0.0.1:80/health || exit 1
 
 # Use startup script to initialize app and then start supervisor
 CMD ["/usr/local/bin/startup.sh"]
