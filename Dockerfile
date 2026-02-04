@@ -7,8 +7,11 @@ FROM php:8.3-fpm-alpine AS php-base
 ENV PHP_USER=laravel
 ENV PHP_GROUP=laravel
 
-# Install system dependencies and PHP extensions
-RUN apk add --no-cache \
+# Install build dependencies first
+RUN apk add --no-cache --virtual .build-deps \
+    $PHPIZE_DEPS \
+    linux-headers \
+    && apk add --no-cache \
     libzip-dev \
     zip \
     unzip \
@@ -19,8 +22,10 @@ RUN apk add --no-cache \
     freetype-dev \
     oniguruma-dev \
     icu-dev \
-    libxml2-dev \
-    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    libxml2-dev
+
+# Install PHP extensions
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install \
     pdo \
     pdo_mysql \
@@ -33,13 +38,14 @@ RUN apk add --no-cache \
     opcache \
     pcntl \
     posix \
-    sockets
+    sockets \
+    && apk del .build-deps
 
 # Install Redis extension (optional but recommended for production)
-RUN apk add --no-cache pcre-dev $PHPIZE_DEPS \
+RUN apk add --no-cache --virtual .redis-build-deps $PHPIZE_DEPS \
     && pecl install redis \
     && docker-php-ext-enable redis \
-    && apk del pcre-dev $PHPIZE_DEPS
+    && apk del .redis-build-deps
 
 # Configure PHP-FPM
 RUN adduser -g ${PHP_GROUP} -s /bin/sh -D ${PHP_USER}
