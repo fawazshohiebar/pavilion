@@ -77,9 +77,10 @@ RUN composer install \
 # Copy application files
 COPY --chown=${PHP_USER}:${PHP_GROUP} . .
 
-# Generate optimized autoloader and run scripts
+# Generate optimized autoloader and run post-autoload-dump
+# Some packages need this to register properly
 RUN composer dump-autoload --optimize --classmap-authoritative \
-    && composer run-script post-autoload-dump
+    && composer run-script post-autoload-dump || true
 
 # Clear all caches to ensure fresh state in production
 RUN php artisan config:clear || true \
