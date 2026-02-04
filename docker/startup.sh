@@ -76,11 +76,28 @@ php artisan statamic:stache:clear 2>/dev/null || true
 echo "🔥 Warming up caches..."
 php artisan statamic:stache:warm 2>/dev/null || true
 
-# Ensure proper permissions
+# Create all necessary directories (including Statamic cache)
+echo "📁 Creating required directories..."
+mkdir -p /var/www/html/storage/logs
+mkdir -p /var/www/html/storage/framework/cache
+mkdir -p /var/www/html/storage/framework/sessions
+mkdir -p /var/www/html/storage/framework/views
+mkdir -p /var/www/html/bootstrap/cache
+mkdir -p /var/www/html/database
+mkdir -p /var/www/html/cache/lock
+mkdir -p /var/www/html/cache/stache
+mkdir -p /var/www/html/cache/stache/indexes
+mkdir -p /var/www/html/cache/stache/stores
+
+# Ensure proper permissions (777 for all writable directories)
 echo "🔐 Setting permissions..."
 chmod -R 777 /var/www/html/storage
 chmod -R 777 /var/www/html/bootstrap/cache
 chmod -R 777 /var/www/html/database
+chmod -R 777 /var/www/html/cache
+
+# Ensure cache directory ownership is correct
+chown -R laravel:laravel /var/www/html/cache || true
 
 # Ensure SQLite database exists
 if [ ! -f /var/www/html/database/database.sqlite ]; then

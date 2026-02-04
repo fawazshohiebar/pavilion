@@ -176,10 +176,16 @@ RUN mkdir -p /var/www/html/storage/logs \
     && mkdir -p /var/www/html/storage/framework/views \
     && mkdir -p /var/www/html/bootstrap/cache \
     && mkdir -p /var/www/html/database \
+    && mkdir -p /var/www/html/cache/lock \
+    && mkdir -p /var/www/html/cache/stache \
+    && mkdir -p /var/www/html/cache/stache/indexes \
+    && mkdir -p /var/www/html/cache/stache/stores \
     && touch /var/www/html/database/database.sqlite \
+    && chown -R ${NGINX_USER}:${NGINX_GROUP} /var/www/html \
     && chmod -R 777 /var/www/html/storage \
     && chmod -R 777 /var/www/html/bootstrap/cache \
-    && chmod -R 777 /var/www/html/database
+    && chmod -R 777 /var/www/html/database \
+    && chmod -R 777 /var/www/html/cache
 
 # Expose port
 EXPOSE 80
