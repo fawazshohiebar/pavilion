@@ -79,6 +79,16 @@ RUN apk add --no-cache \
 # Create laravel user
 RUN adduser -g laravel -s /bin/sh -D laravel 2>/dev/null || true
 
+# Configure PHP-FPM to listen on 127.0.0.1:9000 (not socket)
+RUN echo "[www]" > /usr/local/etc/php-fpm.d/zz-docker.conf \
+    && echo "listen = 127.0.0.1:9000" >> /usr/local/etc/php-fpm.d/zz-docker.conf \
+    && echo "pm = dynamic" >> /usr/local/etc/php-fpm.d/zz-docker.conf \
+    && echo "pm.max_children = 20" >> /usr/local/etc/php-fpm.d/zz-docker.conf \
+    && echo "pm.start_servers = 2" >> /usr/local/etc/php-fpm.d/zz-docker.conf \
+    && echo "pm.min_spare_servers = 1" >> /usr/local/etc/php-fpm.d/zz-docker.conf \
+    && echo "pm.max_spare_servers = 3" >> /usr/local/etc/php-fpm.d/zz-docker.conf \
+    && echo "clear_env = no" >> /usr/local/etc/php-fpm.d/zz-docker.conf
+
 # Setup Nginx directories
 RUN mkdir -p /run/nginx /var/log/nginx
 
