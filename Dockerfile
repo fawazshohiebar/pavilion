@@ -1,140 +1,123 @@
-# Multi-stage Dockerfile for Production Deployment
-# This builds a complete application image with PHP-FPM and Nginx
+# Multi-stage Dockerfile for Laravel/Statamic Production
+# Optimized for fast builds and reliability
 
-# Stage 1: Build PHP application - Use Statamic's pre-built image!
-FROM statamic/cli:latest AS php-base
+# Stage 1: Install PHP dependencies with Composer
+FROM composer:latest AS composer-base
 
-ENV PHP_USER=laravel
-ENV PHP_GROUP=laravel
+WORKDIR /app
 
-# Statamic CLI image already has:
-# - PHP 8.3
-# - All required extensions (gd, zip, mbstring, intl, xml, bcmath, opcache, redis, etc.)
-# - Composer
-# This saves 5+ minutes of build time!
-
-# Create user
-RUN adduser -g ${PHP_GROUP} -s /bin/sh -D ${PHP_USER} 2>/dev/null || true
-
-# Set working directory
-WORKDIR /var/www/html
-
-# Copy composer files first (for better layer caching)
+# Copy composer files first (layer caching)
 COPY composer.json composer.lock ./
 
-# Install composer dependencies (production optimized)
-# This layer will be cached if composer files haven't changed
+# Install PHP dependencies
 RUN composer install \
     --no-dev \
     --no-interaction \
     --no-progress \
     --no-scripts \
     --no-autoloader \
-    --prefer-dist
+    --prefer-dist \
+    --ignore-platform-reqs
 
-# Copy application files
-COPY --chown=${PHP_USER}:${PHP_GROUP} . .
+# Copy application code
+COPY . .
 
-# Generate optimized autoloader and run post-autoload-dump
-# Some packages need this to register properly
-RUN composer dump-autoload --optimize --classmap-authoritative \
-    && composer run-script post-autoload-dump || true
+# Generate optimized autoloader
+RUN composer dump-autoload --optimize --classmap-authoritative
 
-# Clear all caches to ensure fresh state in production
-RUN php artisan config:clear || true \
-    && php artisan cache:clear || true \
-    && php artisan view:clear || true \
-    && php artisan route:clear || true \
-    && php artisan statamic:stache:clear || true \
-    && rm -rf bootstrap/cache/*.php || true \
-    && rm -rf storage/framework/cache/data/* || true \
-    && rm -rf storage/framework/views/* || true
-
-# Set proper permissions
-RUN chown -R ${PHP_USER}:${PHP_GROUP} /var/www/html \
-    && chmod -R 755 /var/www/html/storage \
-    && chmod -R 755 /var/www/html/bootstrap/cache \
-    && chmod -R 755 /var/www/html/public
-
-# Stage 2: Build Node.js assets
+# Stage 2: Build frontend assets
 FROM node:20-alpine AS node-builder
 
 WORKDIR /app
 
-# Copy package files first (for better layer caching)
 COPY package*.json ./
-
-# Install dependencies (this layer will be cached if package.json hasn't changed)
 RUN npm ci --no-audit --no-fund
 
-# Copy only necessary files for build (not entire project)
 COPY resources ./resources
 COPY vite.config.js ./
 COPY public ./public
 
-# Build assets
 RUN npm run build
 
-# Stage 3: Final production image with PHP and Nginx
-# Start from Statamic CLI which already has PHP 8.3 + all extensions
-FROM statamic/cli:latest
+# Stage 3: Final production image
+# Use PHP-FPM Alpine and install pre-built PHP extensions from Alpine repos
+FROM php:8.3-fpm-alpine
 
-ENV PHP_USER=laravel
-ENV PHP_GROUP=laravel
-
-# Install Nginx and supervisor (much lighter than installing all PHP extensions!)
+# Install ALL necessary PHP extensions + Nginx + Supervisor
+# Using Alpine's pre-built packages (NO compilation needed!)
 RUN apk add --no-cache \
+    php83-pdo \
+    php83-pdo_mysql \
+    php83-pdo_sqlite \
+    php83-mysqli \
+    php83-zip \
+    php83-gd \
+    php83-mbstring \
+    php83-intl \
+    php83-xml \
+    php83-bcmath \
+    php83-opcache \
+    php83-session \
+    php83-tokenizer \
+    php83-fileinfo \
+    php83-ctype \
+    php83-dom \
+    php83-xmlwriter \
+    php83-xmlreader \
+    php83-simplexml \
+    php83-iconv \
+    php83-curl \
+    php83-openssl \
+    php83-pecl-redis \
+    php83-posix \
+    php83-pcntl \
+    php83-sockets \
     nginx \
-    supervisor
+    supervisor \
+    && ln -sf /usr/bin/php83 /usr/bin/php
 
-# Create user (may already exist in statamic/cli)
-RUN adduser -g ${PHP_GROUP} -s /bin/sh -D ${PHP_USER} 2>/dev/null || true
+# Create laravel user
+RUN adduser -g laravel -s /bin/sh -D laravel 2>/dev/null || true
 
-# Setup Nginx
-RUN mkdir -p /run/nginx \
-    && mkdir -p /var/log/nginx
+# Setup Nginx directories
+RUN mkdir -p /run/nginx /var/log/nginx
 
-# Copy nginx configuration
-COPY docker/nginx.default.conf /etc/nginx/conf.d/default.conf
-# Don't modify nginx.conf user - we'll run nginx as laravel user via supervisor
-
-# Copy supervisor configuration
+# Copy configs
+COPY docker/nginx.default.conf /etc/nginx/http.d/default.conf
 COPY docker/supervisord.conf /etc/supervisord.conf
-
-# Copy startup script
 COPY docker/startup.sh /usr/local/bin/startup.sh
 RUN chmod +x /usr/local/bin/startup.sh
 
-# Copy application from php-base stage
-COPY --from=php-base --chown=${PHP_USER}:${PHP_GROUP} /var/www/html /var/www/html
+# Copy application from composer-base
+COPY --from=composer-base --chown=laravel:laravel /app /var/www/html
 
-# Copy built assets from node-builder stage (entire build directory with manifest)
-COPY --from=node-builder --chown=${PHP_USER}:${PHP_GROUP} /app/public/build /var/www/html/public/build
+# Copy built assets from node-builder
+COPY --from=node-builder --chown=laravel:laravel /app/public/build /var/www/html/public/build
 
-# Create necessary directories and ensure proper permissions
-RUN mkdir -p /var/www/html/storage/logs \
-    && mkdir -p /var/www/html/storage/framework/cache \
-    && mkdir -p /var/www/html/storage/framework/sessions \
-    && mkdir -p /var/www/html/storage/framework/views \
-    && mkdir -p /var/www/html/bootstrap/cache \
-    && mkdir -p /var/www/html/database \
-    && mkdir -p /var/www/html/cache/lock \
-    && mkdir -p /var/www/html/cache/stache \
-    && mkdir -p /var/www/html/cache/stache/indexes \
-    && mkdir -p /var/www/html/cache/stache/stores \
+# Create all necessary directories with proper permissions
+RUN mkdir -p \
+    /var/www/html/storage/logs \
+    /var/www/html/storage/framework/cache \
+    /var/www/html/storage/framework/sessions \
+    /var/www/html/storage/framework/views \
+    /var/www/html/bootstrap/cache \
+    /var/www/html/database \
+    /var/www/html/cache/lock \
+    /var/www/html/cache/stache \
+    /var/www/html/cache/stache/indexes \
+    /var/www/html/cache/stache/stores \
     && touch /var/www/html/database/database.sqlite \
-    && chown -R ${PHP_USER}:${PHP_GROUP} /var/www/html \
+    && chown -R laravel:laravel /var/www/html \
     && chmod -R 777 /var/www/html/storage \
     && chmod -R 777 /var/www/html/bootstrap/cache \
     && chmod -R 777 /var/www/html/database \
     && chmod -R 777 /var/www/html/cache
 
-# Expose port
+WORKDIR /var/www/html
+
 EXPOSE 80
 
-# Health check - use /health endpoint which returns 200 OK
 HEALTHCHECK --interval=30s --timeout=3s --start-period=40s --retries=3 \
     CMD wget --no-verbose --tries=1 --spider http://127.0.0.1:80/health || exit 1
 
-# Use startup script to initialize app and then start supervisor
 CMD ["/usr/local/bin/startup.sh"]
