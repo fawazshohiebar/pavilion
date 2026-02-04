@@ -111,8 +111,6 @@ RUN npm ci --no-audit --no-fund
 # Copy only necessary files for build (not entire project)
 COPY resources ./resources
 COPY vite.config.js ./
-COPY tailwind.config.js ./
-COPY postcss.config.js ./
 COPY public ./public
 
 # Build assets
