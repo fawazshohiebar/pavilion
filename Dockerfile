@@ -153,9 +153,9 @@ RUN mkdir -p /var/www/html/storage/logs \
 # Expose port
 EXPOSE 80
 
-# Health check
+# Health check - force IPv4 with 127.0.0.1
 HEALTHCHECK --interval=30s --timeout=3s --start-period=40s --retries=3 \
-    CMD wget --no-verbose --tries=1 --spider http://localhost/health || exit 1
+    CMD wget --no-verbose --tries=1 --spider http://127.0.0.1:80/ || exit 1
 
 # Use supervisor to manage both nginx and php-fpm
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]

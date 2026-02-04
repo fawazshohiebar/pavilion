@@ -5,6 +5,14 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GetAgendaByDateController;
 
+// Health check endpoint for Docker/Coolify
+Route::get('/health', function () {
+    return response()->json([
+        'status' => 'ok',
+        'timestamp' => now()->toISOString()
+    ]);
+});
+
 // Route::statamic('example', 'example-view', [
 //    'title' => 'Example'
 // ]);
