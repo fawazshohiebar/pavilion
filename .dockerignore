@@ -47,7 +47,9 @@ storage/logs/*
 .phpunit.result.cache
 
 # Build artifacts
-/public/build
+# Note: We rebuild assets in Docker, so we don't need local build files
+/public/build/*
+!public/build/.gitkeep
 /public/hot
 
 # Cache
