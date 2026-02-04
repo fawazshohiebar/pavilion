@@ -30,7 +30,10 @@ RUN apk add --no-cache \
     intl \
     xml \
     bcmath \
-    opcache
+    opcache \
+    pcntl \
+    posix \
+    sockets
 
 # Install Redis extension (optional but recommended for production)
 RUN apk add --no-cache pcre-dev $PHPIZE_DEPS \
