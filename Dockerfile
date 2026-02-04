@@ -144,11 +144,17 @@ COPY --from=php-base --chown=${NGINX_USER}:${NGINX_GROUP} /var/www/html /var/www
 # Copy built assets from node-builder stage
 COPY --from=node-builder --chown=${NGINX_USER}:${NGINX_GROUP} /app/public/build /var/www/html/public/build
 
-# Create necessary directories
+# Create necessary directories and ensure proper permissions
 RUN mkdir -p /var/www/html/storage/logs \
+    && mkdir -p /var/www/html/storage/framework/cache \
+    && mkdir -p /var/www/html/storage/framework/sessions \
+    && mkdir -p /var/www/html/storage/framework/views \
     && mkdir -p /var/www/html/bootstrap/cache \
-    && chown -R ${NGINX_USER}:${NGINX_GROUP} /var/www/html/storage \
-    && chown -R ${NGINX_USER}:${NGINX_GROUP} /var/www/html/bootstrap/cache
+    && mkdir -p /var/www/html/database \
+    && touch /var/www/html/database/database.sqlite \
+    && chmod -R 777 /var/www/html/storage \
+    && chmod -R 777 /var/www/html/bootstrap/cache \
+    && chmod -R 777 /var/www/html/database
 
 # Expose port
 EXPOSE 80
