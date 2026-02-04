@@ -61,20 +61,25 @@ WORKDIR /var/www/html
 # Copy composer from official image
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Copy application files
-COPY --chown=${PHP_USER}:${PHP_GROUP} . .
+# Copy composer files first (for better layer caching)
+COPY composer.json composer.lock ./
 
 # Install composer dependencies (production optimized)
+# This layer will be cached if composer files haven't changed
 RUN composer install \
     --no-dev \
     --no-interaction \
     --no-progress \
     --no-scripts \
-    --prefer-dist \
-    --optimize-autoloader
+    --no-autoloader \
+    --prefer-dist
 
-# Run post-autoload-dump scripts
-RUN composer run-script post-autoload-dump
+# Copy application files
+COPY --chown=${PHP_USER}:${PHP_GROUP} . .
+
+# Generate optimized autoloader and run scripts
+RUN composer dump-autoload --optimize --classmap-authoritative \
+    && composer run-script post-autoload-dump
 
 # Clear all caches to ensure fresh state in production
 RUN php artisan config:clear || true \
@@ -97,14 +102,18 @@ FROM node:20-alpine AS node-builder
 
 WORKDIR /app
 
-# Copy package files
+# Copy package files first (for better layer caching)
 COPY package*.json ./
 
-# Install dependencies
-RUN npm ci
+# Install dependencies (this layer will be cached if package.json hasn't changed)
+RUN npm ci --no-audit --no-fund
 
-# Copy application files needed for build
-COPY . .
+# Copy only necessary files for build (not entire project)
+COPY resources ./resources
+COPY vite.config.js ./
+COPY tailwind.config.js ./
+COPY postcss.config.js ./
+COPY public ./public
 
 # Build assets
 RUN npm run build
@@ -166,8 +175,9 @@ RUN chmod +x /usr/local/bin/startup.sh
 # Copy application from php-base stage
 COPY --from=php-base --chown=${NGINX_USER}:${NGINX_GROUP} /var/www/html /var/www/html
 
-# Copy built assets from node-builder stage
+# Copy built assets from node-builder stage (entire build directory with manifest)
 COPY --from=node-builder --chown=${NGINX_USER}:${NGINX_GROUP} /app/public/build /var/www/html/public/build
+COPY --from=node-builder --chown=${NGINX_USER}:${NGINX_GROUP} /app/.vite /var/www/html/.vite
 
 # Create necessary directories and ensure proper permissions
 RUN mkdir -p /var/www/html/storage/logs \

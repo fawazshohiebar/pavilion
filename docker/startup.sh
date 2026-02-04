@@ -24,6 +24,8 @@ APP_LOCALE="${APP_LOCALE:-en}"
 APP_FALLBACK_LOCALE="${APP_FALLBACK_LOCALE:-en}"
 APP_FAKER_LOCALE="${APP_FAKER_LOCALE:-en_US}"
 
+ASSET_URL="${ASSET_URL:-${APP_URL}}"
+
 APP_MAINTENANCE_DRIVER="${APP_MAINTENANCE_DRIVER:-file}"
 
 LOG_CHANNEL="${LOG_CHANNEL:-stack}"
@@ -66,6 +68,17 @@ VITE_APP_NAME="${VITE_APP_NAME:-\${APP_NAME}}"
 EOF
 
 echo "✅ .env file created successfully"
+
+# Verify Vite build files exist
+echo "🔍 Verifying Vite build files..."
+if [ -f /var/www/html/public/build/manifest.json ]; then
+    echo "✅ Vite manifest found"
+    ls -lh /var/www/html/public/build/ | head -10
+else
+    echo "⚠️  WARNING: Vite manifest NOT found! CSS/JS will not load!"
+    echo "Looking for build files..."
+    find /var/www/html/public -name "*.css" -o -name "*.js" | head -10
+fi
 
 # Clear all caches to ensure fresh state with production env vars
 echo "🧹 Clearing caches..."
