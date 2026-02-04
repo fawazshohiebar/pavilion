@@ -76,6 +76,16 @@ RUN composer install \
 # Run post-autoload-dump scripts
 RUN composer run-script post-autoload-dump
 
+# Clear all caches to ensure fresh state in production
+RUN php artisan config:clear || true \
+    && php artisan cache:clear || true \
+    && php artisan view:clear || true \
+    && php artisan route:clear || true \
+    && php artisan statamic:stache:clear || true \
+    && rm -rf bootstrap/cache/*.php || true \
+    && rm -rf storage/framework/cache/data/* || true \
+    && rm -rf storage/framework/views/* || true
+
 # Set proper permissions
 RUN chown -R ${PHP_USER}:${PHP_GROUP} /var/www/html \
     && chmod -R 755 /var/www/html/storage \
@@ -105,12 +115,14 @@ FROM nginx:stable-alpine
 ENV NGINX_USER=laravel
 ENV NGINX_GROUP=laravel
 
-# Install PHP-FPM and supervisor
+# Install PHP-FPM and supervisor with ALL necessary extensions
 RUN apk add --no-cache \
     php83 \
     php83-fpm \
     php83-pdo \
     php83-pdo_mysql \
+    php83-pdo_sqlite \
+    php83-sqlite3 \
     php83-mysqli \
     php83-zip \
     php83-gd \
@@ -126,7 +138,16 @@ RUN apk add --no-cache \
     php83-dom \
     php83-xmlwriter \
     php83-xmlreader \
-    supervisor
+    php83-simplexml \
+    php83-iconv \
+    php83-curl \
+    php83-openssl \
+    php83-pecl-redis \
+    php83-posix \
+    php83-pcntl \
+    php83-sockets \
+    supervisor \
+    && ln -sf /usr/bin/php83 /usr/bin/php
 
 # Create user
 RUN adduser -g ${NGINX_GROUP} -s /bin/sh -D ${NGINX_USER}
@@ -137,6 +158,10 @@ RUN sed -i "s/user nginx/user ${NGINX_USER}/g" /etc/nginx/nginx.conf
 
 # Copy supervisor configuration
 COPY docker/supervisord.conf /etc/supervisord.conf
+
+# Copy startup script
+COPY docker/startup.sh /usr/local/bin/startup.sh
+RUN chmod +x /usr/local/bin/startup.sh
 
 # Copy application from php-base stage
 COPY --from=php-base --chown=${NGINX_USER}:${NGINX_GROUP} /var/www/html /var/www/html
@@ -163,5 +188,5 @@ EXPOSE 80
 HEALTHCHECK --interval=30s --timeout=3s --start-period=40s --retries=3 \
     CMD wget --no-verbose --tries=1 --spider http://127.0.0.1:80/ || exit 1
 
-# Use supervisor to manage both nginx and php-fpm
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
+# Use startup script to initialize app and then start supervisor
+CMD ["/usr/local/bin/startup.sh"]
