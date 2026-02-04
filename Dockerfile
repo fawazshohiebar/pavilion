@@ -175,7 +175,6 @@ COPY --from=php-base --chown=${NGINX_USER}:${NGINX_GROUP} /var/www/html /var/www
 
 # Copy built assets from node-builder stage (entire build directory with manifest)
 COPY --from=node-builder --chown=${NGINX_USER}:${NGINX_GROUP} /app/public/build /var/www/html/public/build
-COPY --from=node-builder --chown=${NGINX_USER}:${NGINX_GROUP} /app/.vite /var/www/html/.vite
 
 # Create necessary directories and ensure proper permissions
 RUN mkdir -p /var/www/html/storage/logs \
